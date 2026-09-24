@@ -25,7 +25,8 @@
 |---|---|---|
 | `catalog/收录总目录.md` | 正式收录范围 | registry / research |
 | `catalog/README.md` | 编目规则 | catalog metadata |
-| `docs/居家本草编纂凡例-v1.0.md` | 研究规则 | research skill / dossier |
+| `docs/居家本草编纂凡例-v1.0.md` | 研究规则 | 搜 / 整 |
+| `docs/生产流程.md` | 单条目唯一生产主线 | 搜 → 整 → 判 → 写 |
 | `skills/home-materia-research/` | 研究执行器 | dossier |
 | `skills/home-materia-jev-mapping/` | Jev 四气/五味/五脏归经 + 每经阴阳增减主方向判定器 | Jev score + M 双轴 mapping record |
 | `skills/.../tcm-concepts-and-databases.md` | 中医资料路由 | concepts / dossier |
@@ -38,38 +39,49 @@
 | `okf/` | RM-TASK-002（已建立最小项目地图） |
 | `concepts/` | RM-TASK-003/010 |
 | `catalog/entries.yaml` | RM-TASK-011 |
-| `references/entries/` | RM-PHASE-020 |
+| `references/entries/` | research.md / summary.md / mapping.md |
 | `skills/home-materia-writing/` | RM-PHASE-030 |
 | `entries/` / `scenes/` | RM-PHASE-030/060 |
 | `qa/` | RM-PHASE-040/070 |
 
 ## 三、标准生产链
 
+权威流程：`docs/生产流程.md`
+
 ```text
 Catalog entry
-  → Scope / R level
-  → Identity Card
-  → Core questions
-  → Search log
-  → Evidence records + D
-  → Outcome synthesis + E
-  → Concept Trace
-  → Materia mapping + M
-  → Jev mapping（四气/五味/归经/阴阳±主方向；与 M 独立）
-  → Safety
-  → Claim Ledger
-  → Research ready
-  → Draft entry
-  → QA
-  → Publish ready
+  ↓
+搜：收集资料
+  → research.md
+  → Identity / Search / Evidence / D / Safety
+  ↓
+整：整理总结
+  → summary.md
+  → Synthesis / E / Concept Trace / conflicts / stop
+  ↓
+判：Jev v0.4 分类
+  → 四气 / 五味 / 五脏归经 / 每经阴阳±主方向
+  → mapping.md
+  → 再对分类逐项标 M
+  ↓
+写：根据资料 + 分类撰写正文
+  → entries/<entry-id>.md
+  ↓
+QA
+  ↓
+Publish ready
 ```
+
+Claim Ledger 是“判 → 写”的交接工具，不是第五个平级阶段。
 
 ## 四、变更路由
 
 - 同一食品重复 → Catalog；
 - R/D/E/M 规则问题 → 凡例；
 - 中医词义不清 → Concepts；
-- 某条研究不完整 → Dossier；
+- 搜索 / 证据不完整 → `research.md`；
+- 整理失真 / Jev 输入不完整 → `summary.md`；
+- 分类 / M 问题 → `mapping.md`；
 - 正文夸大 → Entry；
 - 多条共同漂移 → QA 提交项目级问题；
 - skill 行为错误 → 先确认规则属于哪一层，再修拥有规则的来源。
@@ -95,6 +107,7 @@ Catalog entry
 | RM-TASK-031 Jev 现代食品 domain-transfer test | done (v0.1) | 5 个现有 dossier；验证 Jev score 与 M grade 可明显分离，采用双轴展示；`docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md` |
 | RM-TASK-032 Jev mapping skill 与双轴输出 | done | `skills/home-materia-jev-mapping/`；Jev score 与 M grade 并列，不互相修正 |
 | RM-TASK-033 Jev 五脏阴阳增减主方向 | done (v0.4) | 语义级连、计算同步；5 个 direction Choice；中药回归 10/10×3，现代食品 domain transfer 通过 |
+| RM-TASK-034 四阶段生产流程 | done | `docs/生产流程.md`；搜→整→判→写；research/summary/mapping/entry 四层接口 |
 | RM-TASK-010 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 

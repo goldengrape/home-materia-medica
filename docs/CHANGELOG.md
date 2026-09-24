@@ -32,6 +32,10 @@
 - 完成 Jev 现代食品 domain-transfer v0.1：冻结 v0.3.1 rules + five-shot，测试开心果、黑巧克力、咖啡、酸奶、方便面。确认 Jev 判定倾向与 M 证据等级应采用双轴展示：例如酸奶可同时记录“脾 Jev 0.58–0.61｜M-0”；不使用 M gate 压低或隐藏 Jev 结果，也不因 Jev score 提升 M。
 - 完成 Jev v0.4：在每个五脏归经后增加一个 `阴- / 阴+ / 阳- / 阳+` 主方向 Choice；采用“语义上级连、计算上同步”的单次调用结构。5 味中药 held-out 三次重复中四气、五味、归经均 5/5，10 个有效归经主方向 10/10；现代食品迁移中开心果得到脾阳+/肾阳+，咖啡与酸奶得到脾阳+，黑巧克力与方便面无主归经。传统“疏肝、健脾、润肺、温中、化湿、生津”等下沉为原子分类后的派生用词。
 
+- 冻结单条目统一生产主流程：**搜 → 整 → 判 → 写**。新增 `docs/生产流程.md`；正式条目推荐使用 `research.md`（资料）、`summary.md`（Jev 输入说明文档）、`mapping.md`（Jev 分类 + 后置 M 标注）、`entries/<entry-id>.md`（正文）四层接口。
+- 调整 M 的位置：M 不再在 Jev 之前充当映射 gate；先保存 Jev v0.4 原始分类，再回查 Research Dossier 对分类命题逐项标 M。Jev score 与 M grade 仍保持独立。
+- 重构 research skill 为“搜 + 整”，Jev mapping skill 为“判”；写作层只根据资料与分类表达，不重新研究或重分类。
+
 ### Current
 
 - RM-TASK-001 项目级规划：done。

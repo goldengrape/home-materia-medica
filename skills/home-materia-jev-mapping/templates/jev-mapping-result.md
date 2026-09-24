@@ -4,8 +4,9 @@
 
 ```yaml
 entry_id:
-target_document_ref:
-target_document_hash:
+research_ref:
+summary_ref:
+summary_hash:
 reasoning_version: jev-tcm-reasoning-v0.4
 five_shot_version: jev-tcm-pilot-fixtures-v0.4
 requested_model: jev-latest
@@ -82,6 +83,23 @@ derived_wording:
 > 五味候选：  
 > 归经与主方向：  
 > Jev score / probability 反映模型判断倾向；M grade 反映可追溯证据链强度，两者不是同一指标。
+
+## M annotation
+
+M 在 Jev 原始分类保存后评定。每个主要分类命题至少记录：
+
+```yaml
+mapping_claim:
+jev_value:
+jev_score_or_probability:
+m_grade:
+support:
+contrary_evidence:
+alternative_explanations:
+allowed_wording:
+```
+
+不得用 M 修改 Jev 原始值，也不得用 Jev 高分提升 M。
 
 ## Claim Ledger handoff
 
