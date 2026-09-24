@@ -12,7 +12,15 @@ entries:
       - whole_food_evidence
       - processing_variants
       - sparse_traditional_mapping
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/pistachio/research.md
+    pilot_qa: qa/pilot/pistachio-r2.md
+    pilot_findings:
+      - traditional_sources_stronger_than_expected
+      - no_reliable_explicit_channel_tropism_found
+      - meta_analyses_share_underlying_trials
+      - post_cutoff_trials_show_context_dependent_glycemic_effects
 
   - id: dark-chocolate
     name: 黑巧克力
