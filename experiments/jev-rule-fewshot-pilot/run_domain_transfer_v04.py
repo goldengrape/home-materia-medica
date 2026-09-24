@@ -7,6 +7,7 @@ import importlib.util
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -40,6 +41,20 @@ def assert_no_boundary_leakage(state: str, domain: dict[str, Any]) -> None:
         dossier = case["meta"]["dossier"]
         if dossier in state:
             raise AssertionError(f"Dossier path leaked into state: {dossier}")
+
+
+def api_json_with_retry(base, method: str, path: str, api_key: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+    delays = [2, 4, 8]
+    for attempt in range(len(delays) + 1):
+        try:
+            return base.api_json(method, path, api_key, payload)
+        except RuntimeError as exc:
+            msg = str(exc)
+            transient = "HTTP 529" in msg or "system_overloaded" in msg
+            if not transient or attempt >= len(delays):
+                raise
+            time.sleep(delays[attempt])
+    raise AssertionError("unreachable")
 
 
 def case_summary(v04, answers: dict[str, Any]) -> dict[str, Any]:
@@ -81,7 +96,7 @@ def main() -> int:
     requested_model = os.environ.get("JEV_MODEL", base.DEFAULT_MODEL)
     repeat_count = int(os.environ.get("JEV_REPEATS", "3"))
 
-    models = base.api_json("GET", "/v1/models", api_key)
+    models = api_json_with_retry(base, "GET", "/v1/models", api_key)
     available = {item["name"] for item in models["models"]}
     if requested_model not in available:
         raise RuntimeError(
@@ -97,7 +112,8 @@ def main() -> int:
             state = v04.build_state(fixtures, case)
             assert_no_boundary_leakage(state, domain)
 
-            response = base.api_json(
+            response = api_json_with_retry(
+                base,
                 "POST",
                 "/v1/systemone",
                 api_key,
