@@ -14,7 +14,7 @@
 
 ## Phase 1 — Identity
 
-建立 **Identity Card**：
+建立 **Identity Card**。若正式检索说明原 Catalog 对象过宽、过窄或身份错误，允许在本阶段提出 Identity Revision；不得为了保留原 entry name 而继续研究一个不稳定对象：
 
 ```yaml
 entry_id:
@@ -84,6 +84,21 @@ R1 / R2 / R3。
 食品加工 / 成分问题可用：
 
 > food matrix × processing/factor × measured outcome
+
+---
+
+## Phase 2.5 — Composition & Exposure（复合食品优先）
+
+对复合食品或商品差异很大的对象，正式 health-outcome 检索前先建立真实暴露图：
+
+- common serving；
+- sugar / sodium / caffeine / alcohol 等关键暴露；
+- 产品间变异；
+- 配方和加工；
+- customization / toppings；
+- 直接检测或权威市场调查。
+
+这类组成证据不强行给 E 等级。
 
 ---
 
@@ -192,6 +207,22 @@ R1 / R2 / R3。
 - substitution / comparator；
 - residual confounding；
 - reverse causality。
+
+---
+
+## Phase 6.5 — Evidence-base overlap
+
+若多个 systematic review / meta-analysis 结论一致，检查它们是否大量纳入同一批基础研究。
+
+记录：
+
+```yaml
+evidence_base_overlap:
+  level:
+  note:
+```
+
+综述篇数不是独立重复次数。
 
 ---
 
