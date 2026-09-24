@@ -144,7 +144,11 @@
 
 ## Actions 运行记录
 
-待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+- Workflow run 36002479730：success；stage artifact 10809205309、native Jev artifact 10809010717，保留至 2026-10-24。
+- 检查发现首轮配置列出的条目检索词共 38 条，而 Exa 统计为 31 次调用。已将配置和研究底稿的 query 列表校正为 31 条；批次统计为 31 次检索、145 条结果。
+- Workflow run 36002836267：success；stage artifact 10808528750、native Jev artifact 10808628357，保留至 2026-10-24。冻结摘要哈希未改变，运行器验证并复用了十份有效原始结果。
+- 补全榛子与巴西坚果正文参考文献后，Workflow run 36003283893：success；stage artifact 10809286478、native Jev artifact 10809600316，保留至 2026-10-24。冻结摘要仍相同；运行器继续复用哈希有效的原始结果。
+- 当前分支中的研究底稿、摘要、冻结快照、原始 JSON、映射和正文使用校正后的检索词及补齐的正文参考文献。
 
 ## 判与写完成记录
 
