@@ -1,0 +1,527 @@
+{
+  "batch": {
+    "id": "09-chilled-confections",
+    "title": "冰沙、凝冻甜品与糖果",
+    "catalog_order": 9,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher pages, institutional repository, official food-safety guidance, standards and food-composition databases",
+    "exa_search_calls": 21,
+    "exa_hits": 128,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-09-chilled-confections",
+    "identity_red_team": [
+      "冰沙按半冻结饮品界定，不能与含完整果泥的 smoothie、冰棒或冰淇淋混作同一食品；甘油安全信号仅涉及部分含甘油 slush ice drinks。",
+      "奶昔按甜味乳基混合饮品处理，与糖尿病专用营养配方 shake、蛋白粉饮料及医用全营养配方区分。",
+      "布丁条目以杯装甜味凝冻/蛋奶或淀粉基产品为主；Riceberry 米布丁研究是吞咽困难饮食的相邻品类，不能当作普通奶布丁试验。",
+      "果冻的琼脂果汁凝冻急性试验不等于明胶商业果冻；仙草冻和椰奶冻分立，且不与仙草药材、椰果 nata de coco 混淆。",
+      "木糖醇软糖试验研究的是特定剂量与口腔细菌代理指标；无蔗糖硬糖试验样本小且未以临床龋齿发生为结局。",
+      "棉花糖条目指糖果 marshmallow，不指药用植物 marshmallow root；太妃糖不与焦糖或奶糖配方自动互换。",
+      "糖果标准和数据库记录用于产品身份/组成背景；不得写成消费该品类的临床效果。"
+    ]
+  },
+  "entries": {
+    "ice-slush": {
+      "name": "冰沙",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "semi-frozen-beverage",
+      "research_depth": "R2",
+      "shared_parent": "soft-drink-base",
+      "identity": "本条指机器搅拌或半冻结的 slush/slushy 饮品，水或饮料基料中保留细小冰晶；不以浓稠果泥 smoothie 为主。菜单用“冰沙”时配方可能不同，含甘油的机器冰饮只是其中一类。",
+      "variables": "糖/果汁或糖浆、非糖甜味剂、甘油 E422、基料、份量、冰晶比例、机器调配、饮用速度、年龄和体重。",
+      "composition": "英国 FSA 说明部分低糖或无糖 slush ice drinks 使用甘油（E422）维持半冻结质地，产品甘油浓度会因配方而变。含甘油 slush 与水果冰沙、雪泥冰棒或无甘油饮品不可互换。",
+      "direct": "Brothwell 等回顾英国和爱尔兰 21 名饮用含甘油 slush 后急性不适的儿童；该回顾描述临床安全信号，不是随机试验或对所有冰沙的风险估计。FSA 风险评估指出一般人群不良反应报告少、证据不确定性中等，但儿童低体重者可能更易受影响。",
+      "specific": "病例回顾中 21 名儿童年龄 2 至 6 岁 9 个月，93% 在饮用后 60 分钟内发病；症状包括意识下降、低血糖和乳酸性酸中毒。FSA 当前英国消费者建议针对含甘油产品：7 岁以下避免，10 岁以下每天最多一杯 350 mL。该建议有地域与产品成分边界。",
+      "safety": "若面向儿童，先问售卖者/看标签确认是否含甘油；按当地官方建议处理。英国 FSA 对含甘油 slush 建议 7 岁以下不饮用，10 岁以下不超过每日一杯 350 mL；这不是对不含甘油冰沙的普遍限制。若儿童饮后出现嗜睡、意识混乱或明显不适，及时寻求医疗帮助。",
+      "body": "“冰沙”常指带冰晶的搅拌饮品，但配方并不统一。需要特别分清的是部分低糖或无糖 slush ice drinks：其中可能用甘油（E422）维持冰沙质地。Brothwell 等回顾了 21 名饮用含甘油 slush 后急性不适的儿童，这是安全病例系列，不代表所有冰沙都有同样风险。英国 FSA 对含甘油产品的建议是 7 岁以下避免，10 岁以下每天最多一杯 350 mL；此建议只对应其辖区和含甘油饮品。",
+      "evidence_body": "病例系列为 D0（与含甘油 slush 饮品直接相关的临床病例），但无对照组、病例选择和剂量信息不完整，不能估计一般风险；FSA 风险评估的重点是特定添加剂、儿童体重与份量。",
+      "care": "含甘油与否不能从“无糖”字样判断；核对配料或询问商家。英国 FSA 的年龄/份量建议针对含甘油 slush，所在地应遵循本地现行官方指引。",
+      "taste_m": {
+        "甘": "产品可能以糖、果汁、糖浆或甜味剂调味；半冻结温度也会影响感官甜度。"
+      },
+      "queries": [
+        "glycerol intoxication syndrome slush ice drinks children 21 case series DOI",
+        "FSA glycerol slush ice drinks current advice under seven under ten 350ml",
+        "slushie drink ingredients glycerol sugar free composition variation",
+        "slush ice beverages randomized clinical outcomes adults"
+      ],
+      "search_log": [
+        "检索并核对 Brothwell 等 2025 年 Arch Dis Child 论文题名、DOI、21 例回顾、年龄和急性结局。",
+        "查阅英国 FSA 消费者建议与快速风险评估，保留地域、含甘油产品和不确定性范围；未将其扩写为所有冰沙的风险。"
+      ],
+      "refs": [
+        "Brothwell SLC, Fitzsimons PE, Gerrard A, et al. “Glycerol intoxication syndrome in young children, following the consumption of slush ice drinks.” Archives of Disease in Childhood. 2025;110(8):592–596. DOI: https://doi.org/10.1136/archdischild-2024-328109.",
+        "UK Food Standards Agency. “Glycerol.” Published 2025-07-16; updated 2025-08-28. https://www.food.gov.uk/safety-hygiene/glycerol. Accessed 2026-09-24.",
+        "UK Food Standards Agency. “Rapid Risk Assessment for Glycerol in Slushed Ice Drink Products.” FSA Research and Evidence. Published 2025-06-20. https://science.food.gov.uk/article/140678-rapid-risk-assessment-for-glycerol-in-slushed-ice-drink-products. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Brothwell SLC, Fitzsimons PE, Gerrard A, et al. “Glycerol intoxication syndrome in young children, following the consumption of slush ice drinks.” Archives of Disease in Childhood. 2025;110(8):592–596. DOI: https://doi.org/10.1136/archdischild-2024-328109.",
+        "UK Food Standards Agency. “Glycerol.” Published 2025-07-16; updated 2025-08-28. https://www.food.gov.uk/safety-hygiene/glycerol. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "英国与爱尔兰 9 个中心的回顾性病例系列。",
+          "population": "21 名饮用 slush 后急性不适儿童；年龄 2 岁至 6 岁 9 个月。",
+          "exposure": "病例报告涉及含甘油 slush ice drinks；逐例剂量/体重数据不完整。",
+          "result": "论文报告多数病例出现急性意识下降、低血糖和乳酸性酸中毒等；多数随后避免饮用而未复发。",
+          "limits": "病例系列无对照组、缺少剂量估计，不能估计发生率或一般风险；不同品牌配方不同。",
+          "distance": "D0（临床相关饮料类别病例；具体浓度并非逐例核实）"
+        },
+        {
+          "ref": 3,
+          "design": "官方快速风险评估，综合暴露情景、病例资料和危害阈值。",
+          "population": "不同体重儿童和成人的模型化消费场景。",
+          "exposure": "含甘油 slush 饮品的不同浓度与单次份量。",
+          "result": "指出产品甘油浓度/份量变化和低体重儿童潜在风险，并说明不确定性。",
+          "limits": "模型依赖假设且病例剂量不完整；英国风险管理建议不能自动视作其他国家法规。",
+          "distance": "D0（添加剂与 slush 产品风险评估）"
+        }
+      ],
+      "unknowns": "各国家/品牌甘油含量、份量与消费速度；症状病例的剂量关系和个体易感因素；不含甘油冰沙的成品健康结局。",
+      "tradition": "冰沙是现代饮品类别；此处安全证据讨论的是具体含甘油半冻结饮品，不依据寒冷感受推导传统四气。"
+    },
+    "milkshake": {
+      "name": "奶昔",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-dairy-beverage",
+      "research_depth": "R1",
+      "shared_parent": "fortified-and-sweetened-beverages",
+      "identity": "本条指以牛奶或植物饮为基础，常加入冰淇淋、冰块、糖浆/风味料并搅打的甜味混合饮品；不包括糖尿病专用营养配方 shake、代餐/蛋白饮或特殊医学用途配方。",
+      "variables": "乳或植物饮基底、冰淇淋、糖浆/水果、份量、搅打空气量、品牌、配方、配餐或替代情境。",
+      "composition": "USDA FoodData Central 可按 milk shake 检索不同食品类型和数据来源；商品、快餐店和自制奶昔配方差异大。数据库记录不能代表所有门店份量或当前标签。",
+      "direct": "本轮未找到可代表一般甜味奶昔、并证明其改善长期健康结局的直接人体干预研究。糖尿病专用营养 shake 或蛋白代餐饮品是不同产品类别，相关试验不能当作奶昔证据。",
+      "specific": "本条关注普通甜品/饮品奶昔，不把配方固定的临床营养制剂纳入身份。牛奶、冰淇淋、糖浆或水果的比例会明显改变营养组成。",
+      "safety": "牛奶基奶昔可能含乳，部分也含蛋、坚果、大豆或小麦；植物饮替代品的蛋白、糖和强化营养素依标签而异。注意实际杯量与加料。",
+      "body": "奶昔通常把牛奶或植物饮与冰淇淋、糖浆或水果搅打在一起，但门店和家庭配方差别很大。USDA FoodData Central 中的检索记录只能代表相应数据库食品，不能代替某家门店当前的大杯配方。本轮未找到一般甜品奶昔改善长期健康结局的直接人体证据；糖尿病专用营养 shake 与蛋白代餐饮品不是同一类食品。",
+      "evidence_body": "USDA 记录为 D0（限定数据库食品）；医疗/代餐型 shakes 与普通奶昔身份不同，至多为邻近类别证据。普通奶昔临床健康结局证据本轮未建立（E-0）。",
+      "care": "核对杯量、糖浆/冰淇淋加料、乳及其他过敏原；“植物基”也不表示低糖或成分统一。",
+      "taste_m": {
+        "甘": "糖浆、冰淇淋、果泥或甜味植物饮可提供甜味，配方决定甜度。"
+      },
+      "queries": [
+        "USDA FoodData Central milk shake composition food types",
+        "milkshake dessert beverage direct randomized clinical health outcome trial",
+        "diabetes-specific nutrition shake distinguish ordinary milkshake clinical trial"
+      ],
+      "search_log": [
+        "检索 USDA FDC milk shake 组成记录和奶昔成品直接人体研究。",
+        "区分普通甜品奶昔与糖尿病专用营养配方、代餐或蛋白 shake；未将营养配方试验作为奶昔成品证据。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: milk shake. https://fdc.nal.usda.gov/food-search/?query=milk%20shake. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: milk shake. https://fdc.nal.usda.gov/food-search/?query=milk%20shake. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品组成数据库检索入口。",
+          "population": "milk shake 搜索结果中的具体食品记录。",
+          "exposure": "各记录所列配方/标签营养信息。",
+          "result": "支持定位具体数据库食品组成。",
+          "limits": "不是全国门店市场抽样；品牌、年份、杯量和数据源不同。",
+          "distance": "D0（仅对应各具体数据库记录）"
+        }
+      ],
+      "unknowns": "中国及其他市场奶昔的品牌/门店配方和份量分布；普通奶昔成品直接长期临床结局；自制与外食配方差异。",
+      "tradition": "奶昔是现代混合饮品；不把乳品、果汁或冰淇淋单独的传统记载相加为成品分类。"
+    },
+    "pudding": {
+      "name": "布丁",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "set-dessert",
+      "research_depth": "R2",
+      "shared_parent": "gelled-desserts-base",
+      "identity": "本条以杯装甜味凝冻/布丁为主，常见奶基、蛋奶或淀粉/凝胶配方；不包含咸味布丁、婴幼儿特殊配方和所有谷物布丁。中文商品名覆盖的质地和成分可能不同。",
+      "variables": "牛奶/植物饮、蛋、淀粉/明胶/琼脂、糖或甜味剂、谷物/果料、份量、冷藏方式和产品地区。",
+      "composition": "Suttireung 等研究的是 Riceberry 米布丁，作为吞咽困难 texture-modified diet 开发；随机交叉试验纳入 12 名健康志愿者，比较原味/高纤 Riceberry 布丁与白面包等碳水份量。此研究不是通常牛奶/蛋奶杯装甜布丁的产品试验。",
+      "direct": "存在一项小样本、单次餐后 Riceberry 米布丁试验：12 名健康志愿者中，特定米布丁的餐后反应低于相同碳水量白面包；原味与高纤布丁的调整 GI 差异未显著。研究目的是吞咽困难质地饮食，不能推广至普通甜味奶布丁。",
+      "specific": "Riceberry 布丁按 IDDSI 第 3/4 级设计，样品、米种和用途与常见奶基杯装甜点不同。结果只描述该配方的质地和急性血糖反应。",
+      "safety": "奶基布丁可能含乳、蛋；谷物、坚果、豆类、明胶来源与其他配料因品牌而异。需冷藏产品按包装说明保存。",
+      "body": "“布丁”既可能是奶基杯装甜点，也可能是谷物或专为吞咽困难设计的软质食物。一项 12 名健康志愿者参加的交叉试验研究了特定 Riceberry 米布丁；它作为质地改良的吞咽饮食，与等碳水白面包比较，原味和高纤版本的调整 GI 并无显著差别。这个小样本单次试验不等于普通奶布丁的血糖或长期健康证据。",
+      "evidence_body": "Riceberry 试验为 D2（同名但成分/用途不同的谷物布丁），仅覆盖特定质地饮食和急性餐后终点；不能外推普通布丁类别。",
+      "care": "按实际配方与份量查看糖、淀粉、乳/蛋和坚果等过敏原；专为吞咽困难设计的质地应遵循专业照护建议，不等于普通零食。",
+      "taste_m": {
+        "甘": "糖、乳和风味料可能带来甜味；各凝胶剂和配方改变质地。"
+      },
+      "queries": [
+        "Riceberry rice puddings rice-based low glycemic dysphagia diets 12 healthy volunteers DOI",
+        "ordinary milk custard pudding direct randomized clinical outcomes",
+        "USDA FoodData Central pudding vanilla composition"
+      ],
+      "search_log": [
+        "核对 Riceberry 米布丁论文 DOI、卷期页码、样本数、碳水匹配、IDDSI 质地和急性结果。",
+        "将米制吞咽饮食研究标作相邻品类，不将其转写为普通奶布丁功效；检索 FDC 布丁食品记录。"
+      ],
+      "refs": [
+        "Suttireung P, Winuprasith T, Srichamnong W, Paemuang W, Phonyiam T, Trachootham D. “Riceberry rice puddings: rice-based low glycemic dysphagia diets.” Asia Pacific Journal of Clinical Nutrition. 2019;28(3):467–475. DOI: https://doi.org/10.6133/apjcn.201909_28(3).0006.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: pudding. https://fdc.nal.usda.gov/food-search/?query=pudding. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Suttireung P, Winuprasith T, Srichamnong W, Paemuang W, Phonyiam T, Trachootham D. “Riceberry rice puddings: rice-based low glycemic dysphagia diets.” Asia Pacific Journal of Clinical Nutrition. 2019;28(3):467–475. DOI: https://doi.org/10.6133/apjcn.201909_28(3).0006."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉对照餐后试验，并以体外消化估算 GI。",
+          "population": "12 名健康志愿者。",
+          "exposure": "原味或高纤 Riceberry 米布丁与相同 40 g 碳水量白面包参照；设置清洗期。",
+          "result": "两种米布丁的餐后反应相对白面包较低；原味和高纤布丁的调整 GI 差异不显著。",
+          "limits": "特定泰国米种、吞咽困难质地配方、小样本健康志愿者和单次餐后结局；不是普通奶基布丁。",
+          "distance": "D2（同属布丁名称，食品基质与用途不同）"
+        }
+      ],
+      "unknowns": "中国零售布丁的奶基/淀粉/凝胶配方分布；普通布丁成品直接人体研究；不同份量和食用情境的长期结局。",
+      "tradition": "现代杯装布丁是复合甜点类别；本轮没有把名称或单一原料等同为传统本草食品。"
+    },
+    "jelly": {
+      "name": "果冻",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "gelled-fruit-dessert",
+      "research_depth": "R2",
+      "shared_parent": "gelled-desserts-base",
+      "identity": "本条指甜味果冻/果味凝冻，可由明胶、琼脂、果胶或其他胶体定型；与果酱、仙草冻、奶冻和软糖型凝胶糖果分别处理。配方可含果汁、香精、糖或甜味剂。",
+      "variables": "凝胶剂、果汁与酸度、糖/甜味剂、份量、杯装形态、是否含果肉、产品标准与品牌。",
+      "composition": "Clegg 与 Shafat 的小型随机对照交叉试验比较同组成的果味饮料与加入 4 g 琼脂的果味果冻，两者各提供 50 g 可利用碳水化合物。琼脂果冻延迟胃排空并改变主观食欲指标，但血糖反应与餐后产热没有显著差异；样品不是常见商业明胶果冻。",
+      "direct": "一项 11 名健康志愿者的急性交叉试验显示琼脂凝冻与相同液体配方相比延迟胃排空、增加若干食欲评分，但未显示血糖反应差异。试验不能证明商业果冻增加饱腹或改善体重/血糖。",
+      "specific": "试验凝冻为果汁/葡萄糖基底加 4 g 琼脂，非通用的明胶杯装果冻；其结果主要反映胶体和黏度在该配方中的急性作用。",
+      "safety": "按配料核对明胶来源、乳、坚果或其他过敏原；果味不保证高果汁含量或低添加糖。防止误将杯装果冻与小型凝胶糖果混为一类。",
+      "body": "果冻可以用明胶、琼脂或果胶定型，果汁和糖的比例也不同。一个 11 人的小型交叉试验比较了琼脂果冻和同配方液体：琼脂版本延迟胃排空并改变食欲评分，但两者的血糖反应没有显著差异。这不是商业果冻减重或控糖的证明，因为研究用的是加入琼脂的特定果汁/葡萄糖配方。",
+      "evidence_body": "该试验为 D1（特定琼脂果汁凝冻），短期胃排空和食欲指标；对不同凝胶剂的商业果冻仅为 D2。",
+      "care": "看每杯克数、糖/甜味剂和果汁信息，核对过敏原；小型凝胶糖果的进食安全需按年龄与产品标签判断。",
+      "taste_m": {
+        "甘": "糖、果汁或甜味剂提供甜味，酸度与香精会改变感官表现。"
+      },
+      "queries": [
+        "Clegg Shafat agar jelly randomized control crossover 11 healthy volunteers glycemic response DOI",
+        "commercial jelly gelatin dessert composition and human clinical outcomes",
+        "GB 19299-2015 jelly China national food safety standard"
+      ],
+      "search_log": [
+        "核对 Clegg 与 Shafat 论文题名、DOI、11 人交叉设计、4 g agar、50 g available carbohydrate 和主要终点。",
+        "以 NHC 标准目录核查 GB 19299-2015《果冻》条目；区分琼脂果汁试验与明胶商业果冻。"
+      ],
+      "refs": [
+        "Clegg ME, Shafat A. “The effect of agar jelly on energy expenditure, appetite, gastric emptying and glycaemic response.” European Journal of Nutrition. 2014;53(2):533–539. DOI: https://doi.org/10.1007/s00394-013-0559-x.",
+        "National Health Commission of the People’s Republic of China. “食品安全国家标准目录（截至2025年9月共1725项）” [Food Safety National Standards Catalogue, 1,725 standards as of September 2025]. Lists GB 19299-2015, National Food Safety Standard—Jelly. https://www.nhc.gov.cn/sps/spaqmu/202601/b8bc7bf0fd6243c1914d8c0708d9929a/files/%E9%A3%9F%E5%93%81%E5%AE%89%E5%85%A8%E5%9B%BD%E5%AE%B6%E6%A0%87%E5%87%86%E7%9B%AE%E5%BD%95%EF%BC%88%E6%88%AA%E8%87%B32025%E5%B9%B49%E6%9C%88%E5%85%B11725%E9%A1%B9%EF%BC%89.pdf."
+      ],
+      "body_refs": [
+        "Clegg ME, Shafat A. “The effect of agar jelly on energy expenditure, appetite, gastric emptying and glycaemic response.” European Journal of Nutrition. 2014;53(2):533–539. DOI: https://doi.org/10.1007/s00394-013-0559-x."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照交叉急性进食试验。",
+          "population": "11 名健康志愿者。",
+          "exposure": "同组成果味液体或加入 4 g 琼脂的凝冻；两种均提供 50 g 可利用碳水。",
+          "result": "琼脂果冻延迟胃排空并改变多个食欲评分；血糖反应与餐后产热无显著差异。",
+          "limits": "小样本、单次、特制果汁/葡萄糖/琼脂配方；不能外推商业明胶果冻或长期体重变化。",
+          "distance": "D1（指定琼脂果冻试验配方）"
+        }
+      ],
+      "unknowns": "中国市场不同凝胶剂与果汁比例的果冻配方；常见商业杯装果冻的直接人体结局；不同份量/年龄的食用影响。",
+      "tradition": "普通果冻、仙草冻和药材凝胶是不同食品/原料对象；本条不把食用胶体研究当作传统本草属性。"
+    },
+    "grass-jelly": {
+      "name": "仙草冻",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "herbal-plant-gel-dessert",
+      "research_depth": "R2",
+      "shared_parent": "gelled-desserts-base",
+      "identity": "本条指以仙草（Mesona chinensis/相关加工原料）煎煮或提取液凝固成的食用凝冻甜品；糖浆、配料和植物品种/加工因地区而异。与仙草干品、浓缩提取物、药用剂量和其他名为 grass jelly 的植物分开。",
+      "variables": "植物品种、煎煮/提取浓度、胶体、糖浆/配料、份量、与葡萄糖或复杂碳水同食及成品加工。",
+      "composition": "Lim 等研究纳入 15 名健康中国男性，比较葡萄糖液、仙草液加葡萄糖、仙草凝胶加葡萄糖，追踪 180 分钟血糖和胰岛素。与葡萄糖对照相比，三组增量曲线下面积差异未达统计显著；该研究不是含糖配料各异的市售仙草冻试验。",
+      "direct": "目前有一个小样本人体交叉试验涉及仙草饮/凝胶与葡萄糖共同摄入；该研究未发现血糖和胰岛素增量曲线显著差异。论文提及复杂碳水的既往研究，但不能据此宣称普通仙草冻降血糖。",
+      "specific": "试验对象为指定 Mesona chinensis 制备物和葡萄糖负荷；仙草冻商品可能另加糖、奶、芋圆或其他材料。植物材料/体外酶学与甜品成品不是同一暴露。",
+      "safety": "查看糖浆、配料及过敏原；不要把食品份量仙草冻与植物提取物、药材剂量或治疗用途混同。现有小样本试验不足以支持以仙草冻替代糖尿病治疗。",
+      "body": "仙草冻是以仙草加工液制成的甜品，不等于仙草药材或高浓缩提取物。Lim 等让 15 名健康男性分别摄入葡萄糖液、仙草液加葡萄糖或仙草凝胶加葡萄糖；三组血糖和胰岛素曲线面积没有显著差异。研究很小，试验配方也不等于加糖、加料的市售仙草冻，因此不能把它写成降血糖食品。",
+      "evidence_body": "该人体试验为 D1（指定仙草液/凝胶和葡萄糖共摄），但小样本和单一急性指标；普通仙草冻成品的长期临床结局证据未建立。",
+      "care": "留意糖浆、奶和其他加料的实际份量；不可将食品研究扩展成植物药用建议或停用降糖治疗的依据。",
+      "taste_m": {
+        "甘": "仙草本身带有草本/微苦感，市售甜品常配糖浆或甜味材料，整体甜味取决于配方。"
+      },
+      "queries": [
+        "Effects of grass jelly on glycemic control hydrocolloids may inhibit gut carbohydrase DOI 10.6133/apjcn.042017.16",
+        "Mesona chinensis grass jelly 15 healthy Chinese men glucose jelly gel crossover 180 min",
+        "grass jelly dessert direct long term clinical outcomes"
+      ],
+      "search_log": [
+        "核对 PubMed 记录的标题、作者、卷期页码、DOI、15 人、试验组及 180 分钟结果。",
+        "分开记录仙草液/凝胶、复杂碳水背景和市售仙草冻；本轮没有把原料或体外机制升格为成品疗效。"
+      ],
+      "refs": [
+        "Lim J, Adisakwattana S, Henry CJ. “Effects of grass jelly on glycemic control: hydrocolloids may inhibit gut carbohydrase.” Asia Pacific Journal of Clinical Nutrition. 2018;27(2):336–340. DOI: https://doi.org/10.6133/apjcn.042017.16."
+      ],
+      "body_refs": [
+        "Lim J, Adisakwattana S, Henry CJ. “Effects of grass jelly on glycemic control: hydrocolloids may inhibit gut carbohydrase.” Asia Pacific Journal of Clinical Nutrition. 2018;27(2):336–340. DOI: https://doi.org/10.6133/apjcn.042017.16."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三条件急性人体交叉/重复摄入试验，测量毛细血管血糖与静脉血浆胰岛素 180 分钟。",
+          "population": "15 名健康中国男性。",
+          "exposure": "葡萄糖液、仙草（Mesona chinensis）液加葡萄糖、仙草凝胶加葡萄糖。",
+          "result": "三组血糖与胰岛素增量曲线下面积差异未达到统计学显著；文章推测仙草作用可能依赖与复杂碳水共同摄入。",
+          "limits": "样本小、健康男性、单次急性试验、没有代表市售加糖仙草冻；复杂碳水推测需独立证据。",
+          "distance": "D1（指定仙草制备物与葡萄糖共同摄入）"
+        }
+      ],
+      "unknowns": "不同品种/加工浓度和商品配料的变化；普通仙草冻的长期健康结局；与复杂碳水共同食用的可复制性和临床意义。",
+      "tradition": "仙草食品原料与传统药材剂量、制法或药用结论需分开；本条只记录食用凝冻及目标研究暴露。"
+    },
+    "coconut-jelly": {
+      "name": "椰奶冻",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "plant-milk-gel-dessert",
+      "research_depth": "R1",
+      "shared_parent": "gelled-desserts-base",
+      "identity": "本条指以椰奶/椰乳或含椰植物饮作为液体基底，再以琼脂、明胶或其他方式凝固的甜味凝冻；不是椰果（nata de coco）、椰肉或椰子水冻。",
+      "variables": "椰乳浓度、糖、凝胶剂、乳制品/植物饮混合、份量、果料/淋酱和冷藏时间。",
+      "composition": "Ratchapakdee 等比较由低乳糖牛奶、杏仁、椰、燕麦和豆乳制成的奶冻，使用色度及 60 人（18–50 岁）感官/购买意向评价。椰奶冻在该样品组中较受偏好；研究没有评估人体代谢或疾病结局。",
+      "direct": "本轮未发现普通椰奶冻直接临床健康结局研究。现有论文是不同植物饮奶冻的感官和消费者接受度比较，不是对椰奶冻健康效果的试验。",
+      "specific": "该研究使用特定商业饮料基底和琼脂制作奶冻，消费者偏好不能推成营养优越或健康效果；椰乳浓度、糖和凝胶剂会改变实际成品。",
+      "safety": "椰子配方是否另含牛奶、坚果/植物饮、大豆或明胶由商品决定；检查标签并按冷藏说明储存。",
+      "body": "椰奶冻是椰奶或椰乳基底凝固成的甜品，不是发酵椰果。2024 年一项研究让 60 人评价用椰、燕麦、豆、杏仁和低乳糖牛奶制作的奶冻，比较口味、颜色、质地和购买意向；椰奶冻在那组配方中较受偏好。它研究的是感官接受度，没有证明椰奶冻有健康效果。",
+      "evidence_body": "消费者感官研究为 D1（研究配方中的椰奶冻样品），仅说明感官/购买意向；临床健康结局证据未建立（E-0）。",
+      "care": "查看椰奶与额外乳、坚果、大豆或明胶配料，以及糖和份量；椰奶名称不保证植物基配方只有椰子。",
+      "taste_m": {
+        "甘": "椰乳本身的香气与添加糖共同影响甜味；各凝胶剂改变口感。"
+      },
+      "queries": [
+        "Sensory profile and consumer perception of plant-based non-dairy milk jellies coconut milk jelly DOI",
+        "coconut milk jelly dessert consumer sensory panel 60 participants 2024",
+        "coconut jelly nata de coco distinguish milk jelly"
+      ],
+      "search_log": [
+        "核对 Food Research 论文的作者、卷期页码、DOI、60 人面板及对比基底。",
+        "将其结论限于研究样品的感官/购买意向；区分椰奶冻与 nata de coco 发酵椰果。"
+      ],
+      "refs": [
+        "Ratchapakdee P, Akrawutpornpat S, Akesowan A. “Sensory profile and consumer perception of plant-based non-dairy milk jellies.” Food Research. 2024;8(3):92–96. DOI: https://doi.org/10.26656/fr.2017.8(3).259."
+      ],
+      "body_refs": [
+        "Ratchapakdee P, Akrawutpornpat S, Akesowan A. “Sensory profile and consumer perception of plant-based non-dairy milk jellies.” Food Research. 2024;8(3):92–96. DOI: https://doi.org/10.26656/fr.2017.8(3).259."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "不同基底奶冻的仪器色度分析、感官喜好与购买意向调查。",
+          "population": "60 名 18–50 岁、常食用琼脂凝冻的非训练消费者。",
+          "exposure": "低乳糖牛奶、杏仁饮、椰奶、燕麦饮和豆乳基奶冻。",
+          "result": "消费者对颜色、口味和风味的偏好影响接受度；研究中的椰奶冻较受偏好。",
+          "limits": "特定泰国品牌/配方与一组消费者；测量感官/购买意向，不测人体健康结局。",
+          "distance": "D1（研究配方中的椰奶凝冻）"
+        }
+      ],
+      "unknowns": "各地椰奶冻的乳脂/椰乳比例、糖和凝胶剂分布；商业配方对感官的可复制性；成品人体代谢与长期结局。",
+      "tradition": "椰奶冻是现代凝冻甜品；不与椰肉、椰子水、椰果或传统单味原料互换。"
+    },
+    "gummy-candy": {
+      "name": "软糖",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "gelled-candy",
+      "research_depth": "R2",
+      "shared_parent": "sugar-confections-base",
+      "identity": "本条指由糖/糖浆或甜味剂与明胶、果胶、淀粉等制成的柔软凝胶糖果；含胶基的咀嚼糖果、维生素软糖及果冻杯是相邻而非自动相同对象。",
+      "variables": "蔗糖/糖醇类型、明胶/果胶/淀粉、酸味剂、每粒重量、食用频次、儿童或成人、额外营养强化。",
+      "composition": "Ly 等的学校随机试验以木糖醇或麦芽糖醇软糖作为定量口腔暴露。154 名小学生随机分配不同日剂量并在校内每天分三次吃，研究 6 周后观察牙菌斑中的变形链球菌/乳杆菌；三组变形链球菌都下降，组间差异不显著。",
+      "direct": "一项 6 周试验研究了特定木糖醇/麦芽糖醇软糖对儿童牙菌斑细菌的影响。结局是细菌计数等代理指标，不是新发龋齿；研究未发现各组变形链球菌减少幅度存在显著组间差异，不能证明一般软糖防龋。",
+      "specific": "试验软糖的糖醇类型和每日剂量远比一般糖果受到控制；研究结论不应用于含蔗糖普通软糖或不同剂量的产品。",
+      "safety": "普通软糖常以糖或糖浆为基料；无蔗糖/糖醇软糖仍需核对配料、份量和能量信息。小粒软糖对幼儿还涉及吞咽/噎食风险，按年龄与包装提示选择。",
+      "body": "软糖可能以蔗糖、糖浆或糖醇为甜味来源，凝胶剂也有明胶、果胶和淀粉等。一项学校随机试验给儿童每日分次提供木糖醇或麦芽糖醇软糖，六周后检查牙菌斑细菌；各组变形链球菌都减少，但组间差异不显著，而且结局不是龋齿发生。因此这项试验不能支持“普通软糖防龋”。",
+      "evidence_body": "该 RCT 为 D1（特定糖醇软糖及儿童口腔代理指标），持续六周；不适用于普通含糖软糖，也未以龋齿为终点。",
+      "care": "查看每粒/每份糖与糖醇含量和食用频次，特别注意儿童吞咽安全；口腔细菌指标不能替代防龋评估。",
+      "taste_m": {
+        "甘": "糖、糖浆或糖醇赋予甜味，酸味剂和香精会改变甜酸平衡。"
+      },
+      "queries": [
+        "Xylitol gummy bear snacks a school-based randomized clinical trial 154 children 6 weeks DOI",
+        "gummy candy cariogenic bacteria dental caries human trial xylitol maltitol",
+        "commercial gummy candy composition gelatin pectin sugar variation"
+      ],
+      "search_log": [
+        "核对 BMC Oral Health/PubMed 论文 DOI、154 人随机分组、糖醇剂量、六周和牙菌斑菌群终点。",
+        "保留其代理结局与组间差异限制，不把木糖醇软糖试验外推到普通含糖软糖或龋齿预防。"
+      ],
+      "refs": [
+        "Ly KA, Riedy CA, Milgrom P, Rothen M, Roberts MC, Zhou L. “Xylitol gummy bear snacks: a school-based randomized clinical trial.” BMC Oral Health. 2008;8:20. DOI: https://doi.org/10.1186/1472-6831-8-20.",
+        "World Health Organization. “Sugars and dental caries.” Updated 2025-08-14. https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries."
+      ],
+      "body_refs": [
+        "Ly KA, Riedy CA, Milgrom P, Rothen M, Roberts MC, Zhou L. “Xylitol gummy bear snacks: a school-based randomized clinical trial.” BMC Oral Health. 2008;8:20. DOI: https://doi.org/10.1186/1472-6831-8-20."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "学校环境中的三组随机临床试验。",
+          "population": "154 名小学一年级至五年级儿童，分配至木糖醇或麦芽糖醇组。",
+          "exposure": "每日 11.7 g 或 15.6 g 木糖醇软糖，或 44.7 g 麦芽糖醇软糖，分三次在校食用，持续 6 周。",
+          "result": "各组牙菌斑变形链球菌计数均下降，但组间下降幅度无统计显著差异；乳杆菌结果不确定。",
+          "limits": "特定高剂量糖醇软糖、小学生、短期口腔微生物代理结局；并非新发龋齿结局，且不能外推普通含糖软糖。",
+          "distance": "D1（特定糖醇软糖形式和剂量）"
+        }
+      ],
+      "unknowns": "不同类型普通软糖的市场组成；无糖软糖长期口腔结局；糖醇剂量、使用频次和实际龋齿发生之间的关系。",
+      "tradition": "本条是现代糖果软糖，不与草药软膏、维生素软糖或果冻杯自动视为相同食品。"
+    },
+    "hard-candy": {
+      "name": "硬糖",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sugar-confection",
+      "research_depth": "R2",
+      "shared_parent": "sugar-confections-base",
+      "identity": "本条指煮制糖/糖醇玻璃态形成的硬质糖果，可为含蔗糖或无蔗糖版本；夹心、棒棒糖、薄荷糖及药用含片需要按各自配方和用途区分。",
+      "variables": "蔗糖/糖醇/甜味剂、草本提取物、酸味剂、表面涂层、单粒质量、溶解速度、使用频次和口腔风险。",
+      "composition": "Gad 等随机分配 48 名高龋风险埃及大学生至四种硬糖：甘草提取物、木糖醇、甜菊糖甜味剂或含蔗糖对照；40 人完成。每日两粒、持续 10 天，观察唾液变形链球菌计数和 pH，在短期与后续时间点采样。",
+      "direct": "小型随机研究报告某些无蔗糖含甘草/木糖醇硬糖与唾液细菌计数或 pH 变化相关；研究测的是 40 名完成者中的代理口腔指标，并非临床龋齿新发/减少。不能推断普通硬糖或所有无蔗糖硬糖具有防龋效果。",
+      "specific": "不同试验组同时改变甜味剂与添加物；样本小、有退出，结果不能单独归因于硬糖外形，也不能推及含蔗糖硬糖或日常一般商品。",
+      "safety": "含蔗糖硬糖可增加游离糖暴露；无蔗糖品也需查甜味剂和其他配料。硬质小糖对幼儿有噎食风险，含片/药用糖果遵从适用用法。",
+      "body": "硬糖可以含蔗糖，也可以使用糖醇或其他甜味剂。一项小型随机研究比较四种不同配方的硬糖，40 名高龋风险学生完成试验；它观察唾液中的细菌计数和 pH，没有把新发龋齿作为结局。由于不同组还同时使用了甘草、木糖醇或甜菊糖，这项研究不能证明一般硬糖或所有无蔗糖硬糖能防龋。",
+      "evidence_body": "该 RCT 为 D1（特定无蔗糖硬糖配方与高龋风险大学生口腔代理指标），样本小且仅 40 人完成；没有临床龋齿结局。",
+      "care": "核对是否含蔗糖、甜味剂及单粒用量；高龋风险的口腔照护不能由糖果替代，硬糖不宜给有噎食风险的幼儿。",
+      "taste_m": {
+        "甘": "糖、糖醇或高倍甜味剂提供甜味，酸味/薄荷或草本配料改变味感。"
+      },
+      "queries": [
+        "Evaluation of Antibacterial Effect of Different Sucrose Free Hard Candies in High-Risk Patients DOI",
+        "hard candy randomized trial 48 students 40 completed salivary Streptococcus mutans pH 10 days",
+        "hard candy dental caries clinical outcome study"
+      ],
+      "search_log": [
+        "核对 Al-Azhar Dental Journal for Girls 论文标题、作者、DOI、48 名入组/40 名完成及研究配方、时间点和唾液终点。",
+        "将唾液菌群/pH 视作代理指标，不写成临床龋齿预防；按配方组同时差异保留限制。"
+      ],
+      "refs": [
+        "Gad DM, Niazy M, Mohamed HF. “Evaluation of Antibacterial Effect of Different Sucrose Free Hard Candies in High-Risk Patients.” Al-Azhar Dental Journal for Girls. 2021. DOI: https://doi.org/10.21608/adjg.2021.48691.1320.",
+        "World Health Organization. “Sugars and dental caries.” Updated 2025-08-14. https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries."
+      ],
+      "body_refs": [
+        "Gad DM, Niazy M, Mohamed HF. “Evaluation of Antibacterial Effect of Different Sucrose Free Hard Candies in High-Risk Patients.” Al-Azhar Dental Journal for Girls. 2021. DOI: https://doi.org/10.21608/adjg.2021.48691.1320."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "四组随机硬糖干预研究。",
+          "population": "48 名 16–22 岁高龋风险大学生入组，40 人完成（每组约 10 人）。",
+          "exposure": "含甘草/甜菊糖的无蔗糖糖、含木糖醇糖、单纯甜菊糖硬糖与蔗糖硬糖对照；每日两粒 10 天。",
+          "result": "报告某些无蔗糖组的唾液变形链球菌计数与 pH 出现变化。",
+          "limits": "小样本、有退出，配方组同时改变多种成分；主要为细菌计数和 pH 代理指标，未证明龋齿发生降低。",
+          "distance": "D1（特定试验硬糖配方）"
+        }
+      ],
+      "unknowns": "普通零售硬糖配方和摄入频率分布；无蔗糖硬糖对临床龋齿发生的高质量长期证据；各甜味剂独立贡献。",
+      "tradition": "硬糖是现代糖果；加入草本风味或植物提取物不能据此当作药用制剂或传统本草功效。"
+    },
+    "marshmallow": {
+      "name": "棉花糖",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "aerated-sugar-confection",
+      "research_depth": "R1",
+      "shared_parent": "sugar-confections-base",
+      "identity": "本条指由糖浆、糖或甜味剂与凝胶剂打发充气制成的软质糖果 marshmallow；不指药用植物 marshmallow root（Althaea officinalis）或其草药制品。",
+      "variables": "糖浆/甜味剂、明胶或其他胶体、打发空气、产品尺寸、表面淀粉/糖粉、夹层和品牌。",
+      "composition": "USDA FoodData Central 有棉花糖食品组成检索记录；具体糖、明胶和份量因配方而变。药用植物根部和糖果棉花糖不是同一个对象。",
+      "direct": "本轮未找到棉花糖糖果成品改善临床健康结局的直接人体干预证据。关于 marshmallow root 的草药研究与糖果食品无关，不纳入本条直接证据。",
+      "specific": "数据库条目可给出某种参考棉花糖的组成，不能代表含夹心、包衣、无糖或地区特定产品。",
+      "safety": "查看糖/糖浆和明胶来源及其他配料；有食物过敏者核对标签。棉花糖质地黏软，儿童进食时根据年龄与吞咽安全判断。",
+      "body": "棉花糖糖果通常由甜味基底打发成轻软结构，但糖浆、凝胶剂、大小和夹心会改变配方。USDA 食品成分库的棉花糖条目只是具体参考食品，不是所有品牌的统一值。这里说的是糖果 marshmallow，不是同名的药用植物 marshmallow root；本轮没有找到糖果成品改善健康结局的直接人体试验。",
+      "evidence_body": "食品数据库记录为 D0（指定条目组成）；对市场整体仅为有限参考，糖果成品临床效果证据未建立（E-0）。",
+      "care": "查看单粒重量、糖和夹心配料；药用植物根部资料不适用于糖果棉花糖。",
+      "taste_m": {
+        "甘": "糖浆或其他甜味剂为主要甜味来源，夹心和表面材料会改变口感。"
+      },
+      "queries": [
+        "USDA FoodData Central marshmallows food composition candy",
+        "marshmallow candy direct human clinical health outcome study",
+        "distinguish marshmallow confection marshmallow root Althaea officinalis"
+      ],
+      "search_log": [
+        "检索 USDA FoodData Central 棉花糖糖果条目及成品人体研究。",
+        "身份核查排除药用植物 marshmallow root 作为糖果证据；未发现成品健康结局试验。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: marshmallows. https://fdc.nal.usda.gov/food-search/?query=marshmallows. Accessed 2026-09-24.",
+        "World Health Organization. “Sugars and dental caries.” Updated 2025-08-14. https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: marshmallows. https://fdc.nal.usda.gov/food-search/?query=marshmallows. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品组成数据库检索入口。",
+          "population": "Marshmallows 搜索结果中具体糖果食品条目。",
+          "exposure": "数据库营养组成字段。",
+          "result": "提供指定棉花糖糖果记录供组成查询。",
+          "limits": "不代表所有品牌/产品，也不等于药用植物根部或市场抽样。",
+          "distance": "D0（数据库中的指定棉花糖糖果）"
+        }
+      ],
+      "unknowns": "本地不同品牌棉花糖配方分布；无糖或夹心类型的营养差异；成品健康结局。",
+      "tradition": "棉花糖糖果不能与药用植物 Althaea officinalis 或其根部制品混同。"
+    },
+    "toffee": {
+      "name": "太妃糖",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sugar-confection",
+      "research_depth": "R1",
+      "shared_parent": "sugar-confections-base",
+      "identity": "本条指通过加热煮制糖/糖浆和乳脂/黄油等形成的硬或软质太妃糖；配方可含炼乳、坚果、盐、巧克力或糖衣。与焦糖、牛轧糖和奶糖分别处理，但市场名称存在重叠。",
+      "variables": "糖种类、奶油/黄油比例、煮制温度和含水量、软硬度、坚果/巧克力、单粒大小和品牌。",
+      "composition": "USDA FoodData Central 可按 toffee 查询具体食品记录；不同地区将 toffee、caramel 或奶糖命名与配方可能交叉，数据库单条记录不代表整个品类。",
+      "direct": "本轮未发现太妃糖成品改善疾病或长期健康结局的直接人体干预研究。糖果原料的研究或食品数据库记录不等同于太妃糖消费试验。",
+      "specific": "软硬太妃糖和焦糖式产品含水量、乳脂、糖及坚果涂层不同；没有代表性市场分析时不能给出统一营养值。",
+      "safety": "常见配方可能含乳、坚果、大豆；牙科与游离糖背景见 WHO 糖与龋齿资料。查看标签、每份大小及实际配料。",
+      "body": "太妃糖的软硬度取决于糖浆与乳脂配方和煮制程度；坚果、巧克力或盐也会改变成品。USDA FoodData Central 可以定位具体 toffee 数据记录，但“太妃糖”“焦糖”在市场命名上可能重叠，单一条目不能代表所有品牌。本轮未发现太妃糖成品带来长期健康获益的直接人体研究。",
+      "evidence_body": "数据库记录为 D0（指定食品条目），但不足以代表市场总体；太妃糖成品长期临床结局证据未建立（E-0）。",
+      "care": "核对每份大小及乳、坚果、大豆等过敏原；不要把焦糖或奶糖配方套用到所有太妃糖。",
+      "taste_m": {
+        "甘": "煮制糖和乳脂/黄油通常形成甜味与焦香；盐和坚果会改变化感。"
+      },
+      "queries": [
+        "USDA FoodData Central toffee candy food composition",
+        "toffee confection direct randomized clinical health outcomes",
+        "toffee versus caramel recipe ingredients composition"
+      ],
+      "search_log": [
+        "检索 USDA FoodData Central toffee 糖果食品记录及太妃糖成品人体研究。",
+        "按市场称呼可能重叠的身份限制解释；未将焦糖或乳脂成分研究移作太妃糖成品功效。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: toffee. https://fdc.nal.usda.gov/food-search/?query=toffee. Accessed 2026-09-24.",
+        "World Health Organization. “Sugars and dental caries.” Updated 2025-08-14. https://www.who.int/news-room/fact-sheets/detail/sugars-and-dental-caries."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: toffee. https://fdc.nal.usda.gov/food-search/?query=toffee. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品组成数据库检索入口。",
+          "population": "Toffee 搜索结果中具体食品组成条目。",
+          "exposure": "所列产品的营养和食品属性。",
+          "result": "支持定位单一数据库产品，而非全部品牌平均值。",
+          "limits": "产品命名与焦糖/奶糖可能交叉；不是现售市场随机抽样，也不是人体健康试验。",
+          "distance": "D0（具体数据库食品记录）"
+        }
+      ],
+      "unknowns": "不同市场太妃糖与焦糖/奶糖的商品划界；品牌和软硬配方组成分布；成品直接长期健康结局。",
+      "tradition": "太妃糖是现代煮制糖果；不把糖、黄油或奶单项资料拼接成太妃糖的传统本草结论。"
+    }
+  }
+}
