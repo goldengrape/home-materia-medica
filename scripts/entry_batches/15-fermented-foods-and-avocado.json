@@ -1,0 +1,641 @@
+{
+  "batch": {
+    "id": "15-fermented-foods-and-avocado",
+    "title": "发酵食品与牛油果",
+    "catalog_order": 15,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; publisher and PubMed/PMC pages; Codex; FDA; USDA FoodData Central; BCCDC; NCHFP; Japanese Food Composition Database",
+    "exa_search_calls": 24,
+    "exa_hits": 141,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-15-fermented-foods-and-avocado",
+    "identity_red_team": [
+      "奶盖是饮品配料层；单独打发奶油试验不能代表复合茶饮奶盖。",
+      "开菲尔研究的菌群、产品、剂量和人群差异大；系统综述多数研究有较高偏倚风险。",
+      "纳豆是整粒发酵大豆，MK-7与华法林相互作用必须单独保留；骨标志物变化不是骨折获益。",
+      "韩式泡菜品类多；特定泡菜粉试验不能代表日常新鲜泡菜。",
+      "酸黄瓜可以是醋酸化或盐水发酵，商品名不能说明活菌状态。",
+      "德国酸菜的两份主要报告来自同一87人队列，不得当作独立重复。",
+      "味噌酱与味噌汤不同；降夜间血压结果来自小型特殊产品研究，且比较食品钠量不等。",
+      "普通大豆天贝与豆渣天贝胶（tempeh gembus）不是同一成品。",
+      "Kochujang含发酵豆类/谷物，不能代表广义发酵辣椒酱；加工研究不是人体结局。",
+      "牛油果临床试验研究整果并采用替代膳食或控制喂养；不可推成减肥或疾病治疗。"
+    ]
+  },
+  "entries": {
+    "milk-cap": {
+      "id": "milk-cap",
+      "name": "奶盖",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "dairy-topping",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指加在茶或其他饮品表面的奶制泡沫/奶盖。餐饮产品可能使用淡奶油、奶油奶酪、乳粉或复配奶基，也可能加入糖、盐和非乳基配料；不同门店和预制产品差异很大。它不是整杯奶茶、单一淡奶油或奶油奶酪的同义词。",
+      "variables": "乳脂与奶基比例、奶油奶酪/乳粉/非乳基配料、糖和盐、打发方式、每份用量、搭配饮料及整杯饮料中的糖。",
+      "composition": "奶盖没有统一的标准配方。Codex和美国法规对奶油类产品有身份定义，但不能据产品名推断奶盖的脂肪、糖、钠或能量；具体数值应看门店配方或包装标签。奶盖所用乳成分会带入牛奶过敏原。",
+      "direct": "本轮未检得将标准化奶盖本身作为独立暴露、并检验长期健康结局的人体试验。一项47名健康成人的随机交叉餐食研究比较含相近脂肪量的黄油、奶酪、打发奶油和酸奶油餐（每餐约45 g脂肪），考察餐后甘油三酯；它没有研究茶饮奶盖，属于邻近的短期餐后指标证据。",
+      "specific": "打发奶油餐研究不能代表加入糖/盐、奶油奶酪或非乳基配料的茶饮奶盖；Codex奶油标准及美国重奶油法规只用于界定一种可能配料的身份，不是成品营养或功效证据。",
+      "safety": "对乳过敏者核对牛奶及复配配料；乳糖不耐受与牛奶蛋白过敏不是一回事。奶盖与整杯饮料应分别查看配料、糖和份量；目前没有理由因“奶盖”名称推定低糖、低脂或特殊保健效果。",
+      "body": "奶盖是加在茶饮上的配方层，不是统一配方的单一食品。它可能由淡奶油、奶油奶酪、乳粉或复配基底打发而成，糖、盐和份量也因店家而异。我们没有找到把标准化奶盖本身作为独立暴露、并检验长期健康结局的人体试验。一项47名健康成人的餐食交叉研究比较了含打发奶油等不同乳品的高脂餐，观察的是一次进食后的甘油三酯变化，不能直接代表奶盖茶。选购时把配料、乳过敏原、糖和整杯份量一起核对。",
+      "evidence_body": "本条无奶盖成品的直接长期人体结局证据（E-0）。47名健康成人的含打发奶油餐交叉试验为D2邻近资料，暴露是约45 g脂肪的单餐，终点为餐后甘油三酯而非疾病结局。",
+      "care": "确认奶盖基底是否含乳、奶油奶酪或其他过敏原，并按整杯配方查看糖与份量。短时餐后血脂变化不是长期风险或奶盖功效的证明。",
+      "taste_m": {},
+      "search_log": [
+        "检索奶盖/cheese foam/cream foam茶饮的人体研究与配方资料；未找到把独立奶盖成品作为标准化暴露的人体结局试验。",
+        "将47人乳品餐后交叉试验定位为打发奶油餐的邻近证据，不将结果迁移为奶盖茶效应。",
+        "以Codex奶油标准、eCFR奶油定义和FDA过敏原资料核对身份与照护边界。"
+      ],
+      "refs": [
+        "Hansson P, et al. “Meals with Similar Fat Content from Different Dairy Products Induce Different Postprandial Triglyceride Responses in Healthy Adults: A Randomized Controlled Cross-Over Trial.” The Journal of Nutrition. 2019. DOI: https://doi.org/10.1093/jn/nxy291.",
+        "Codex Alimentarius Commission. “CODEX STANDARD FOR CREAM AND PREPARED CREAMS.” CXS 288-1976. https://www.fao.org/input/download/standards/180/CXS_288e.pdf.",
+        "U.S. Electronic Code of Federal Regulations. “21 CFR § 131.150 — Heavy cream.” https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131/subpart-B/section-131.150.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Codex Alimentarius Commission. “CODEX STANDARD FOR CREAM AND PREPARED CREAMS.” CXS 288-1976. https://www.fao.org/input/download/standards/180/CXS_288e.pdf.",
+        "U.S. Electronic Code of Federal Regulations. “21 CFR § 131.150 — Heavy cream.” https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131/subpart-B/section-131.150.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "Hansson P, et al. “Meals with Similar Fat Content from Different Dairy Products Induce Different Postprandial Triglyceride Responses in Healthy Adults: A Randomized Controlled Cross-Over Trial.” The Journal of Nutrition. 2019. DOI: https://doi.org/10.1093/jn/nxy291."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉餐食干预；比较黄油、奶酪、打发奶油和酸奶油餐。",
+          "population": "47名健康成人。",
+          "exposure": "每种试餐约45 g脂肪；打发奶油为单餐配料，不是奶盖茶。",
+          "result": "研究比较餐后甘油三酯等指标，提示不同乳品矩阵下急性餐后反应有差异。",
+          "limits": "急性餐后替代指标；非奶盖配方、非长期摄入或疾病结局，不能外推为奶盖功效。",
+          "distance": "D2（打发奶油作为邻近配料）"
+        }
+      ],
+      "unknowns": "各门店和包装产品的标准化配方、每份乳脂/添加糖/钠分布及奶盖单独与整杯饮料的实际份量；缺少奶盖成品的人体长期研究。",
+      "tradition": "未建立奶盖茶奶盖这一现代配方层与特定古代食疗条目的可靠对应；不将乳、酪传统资料移作奶盖成品分类。",
+      "queries": [
+        "Human randomized clinical studies or nutrition analyses of dairy/cream foam toppings ('cheese foam' or milk cap) on tea; separate the topping from milk tea and from cream cheese. Prefer exact composition and DOI.",
+        "Official standards and food composition for whipped dairy cream, cream cheese foam or tea toppings; dairy allergen and added sugar labeling. Distinguish topping recipes from beverages."
+      ]
+    },
+    "kefir": {
+      "id": "kefir",
+      "name": "开菲尔",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指由开菲尔粒等复合菌群发酵乳制成的发酵乳饮品。商品菌群、发酵时长、热处理、过滤、糖和乳脂各异；本条不包括水开菲尔，也不将普通酸奶或分离的益生菌胶囊当作同一暴露。",
+      "variables": "菌种/菌株与活菌量、乳基底、发酵和热处理、储存、乳糖残留、添加糖、每次饮用量与临床结局。",
+      "composition": "开菲尔是乳基发酵饮品，但产品的菌群和配方并不统一；是否含活菌、糖量及乳糖相关信息须看具体标签。发酵饮品身份本身不能说明菌量或健康效果。",
+      "direct": "一项系统综述纳入截至2021年7月的18篇报告、16项开菲尔随机试验；12项研究总体偏倚风险高，仅5篇报告评估安全性。作者认为部分口腔、幽门螺杆菌或代谢结局有潜在线索，但高质量证据仍不足。一项125名1至5岁使用抗生素儿童的双盲安慰剂对照试验未发现开菲尔能预防抗生素相关腹泻（18%对21.9%；RR 0.82，95% CI 0.54–1.43）。",
+      "specific": "系统综述中的干预产品、人群和终点差异很大，不能归纳为所有市售开菲尔的稳定疗效；儿童抗生素相关腹泻试验为特定年龄和情境，结果也不支持预防效应。",
+      "safety": "开菲尔通常以乳为基底，牛奶过敏者应避免相关产品并留意交叉接触；乳糖不耐受者查看标签并按个人耐受选择。高质量试验的安全报告有限，不以其替代治疗或预防感染的建议。",
+      "body": "开菲尔是由复合菌群发酵而成的乳饮品，不同产品的菌种、活菌状态和配方并不相同。对随机试验的系统综述纳入16项研究，但12项总体偏倚风险高，安全性只在其中5篇报告中评估，因而还不足以支持普遍的健康建议。一个125名幼儿的试验也没有发现开菲尔能预防抗生素相关腹泻。现有结果应限定在研究产品和特定人群；购买时核对乳成分、糖和个人耐受。",
+      "evidence_body": "开菲尔人体证据按结局仍有限（E-C至E-0）：系统综述纳入16项RCT、12项总体高偏倚风险；儿童抗生素相关腹泻RCT未见预防效果。不同菌群和产品不可合并成单一疗效。",
+      "care": "乳过敏者避免含乳开菲尔并注意交叉接触；乳糖耐受因人和剂量而异。开菲尔不替代抗生素相关腹泻的预防或治疗建议。",
+      "taste_m": {
+        "酸": "开菲尔常有发酵酸味，甜度随添加糖和发酵程度变化；仅为感官描述。"
+      },
+      "refs": [
+        "Kairey L, Leech B, El-Assaad F, Bugarčić A, Dawson D, Lauche R. “The effects of kefir consumption on human health: a systematic review of randomized controlled trials.” Nutrition Reviews. 2023;81(3):273–286. DOI: https://doi.org/10.1093/nutrit/nuac054.",
+        "Merenstein D, Foster J, d’Amico F. “A Randomized Clinical Trial Measuring the Influence of Kefir on Antibiotic-Associated Diarrhea.” Archives of Pediatrics & Adolescent Medicine. 2009;163(8):750–754. DOI: https://doi.org/10.1001/archpediatrics.2009.119.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Kairey L, Leech B, El-Assaad F, Bugarčić A, Dawson D, Lauche R. “The effects of kefir consumption on human health: a systematic review of randomized controlled trials.” Nutrition Reviews. 2023;81(3):273–286. DOI: https://doi.org/10.1093/nutrit/nuac054.",
+        "Merenstein D, Foster J, d’Amico F. “A Randomized Clinical Trial Measuring the Influence of Kefir on Antibiotic-Associated Diarrhea.” Archives of Pediatrics & Adolescent Medicine. 2009;163(8):750–754. DOI: https://doi.org/10.1001/archpediatrics.2009.119.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述；检索四个数据库至2021-07，纳入随机对照试验并评估偏倚风险。",
+          "population": "18篇报告、16项涉及不同成人/儿童人群和健康结局的开菲尔RCT。",
+          "exposure": "各试验产品、剂量和时长不同；研究对象为发酵乳开菲尔。",
+          "result": "部分口腔、幽门螺杆菌辅助治疗及代谢结局存在潜在信号。",
+          "limits": "12项研究总体高偏倚风险；仅5/18篇报告评估安全性；研究异质且证据不足以提出普遍建议。",
+          "distance": "D0（开菲尔RCT总体；产品/结局异质）"
+        },
+        {
+          "ref": 2,
+          "design": "双盲、随机、安慰剂对照临床试验，随访14天。",
+          "population": "125名1–5岁、在基层医疗就诊并接受抗生素的儿童。",
+          "exposure": "商业开菲尔饮料对照热灭活匹配安慰剂。",
+          "result": "腹泻率18%对21.9%；RR 0.82，95% CI 0.54–1.43，未显示显著组间差异。",
+          "limits": "仅限幼儿抗生素使用情境和特定产品；未支持预防抗生素相关腹泻。",
+          "distance": "D0（具体开菲尔产品）"
+        }
+      ],
+      "unknowns": "不同开菲尔产品菌群、储存与活菌量；长期临床结局及高质量安全资料；不同人群与剂量的产品特异效果。",
+      "tradition": "本轮未建立现代开菲尔菌群饮品与中医古籍乳类条目的一一对应；一般乳制品史料不能替代开菲尔成品证据。",
+      "queries": [
+        "Systematic reviews and randomized controlled human trials of kefir consumption on gastrointestinal symptoms, lipids, glycemia or blood pressure; exact English titles, DOI, sample, dose, duration and limits.",
+        "Human intervention studies specific to kefir, not yogurt or probiotic supplements; composition and dairy allergy/lactose safety from official sources. Prioritize primary trials and DOI."
+      ],
+      "search_log": [
+        "检索开菲尔随机试验系统综述及特定临床问题；综述检索至2021-07，纳入16项RCT，记录高偏倚风险比例与有限的安全性报告。",
+        "核对抗生素相关腹泻儿童试验的设计、人群、14天腹泻率与置信区间；未把不同菌株/产品的研究合并为普遍功效。",
+        "用乳品母页和FDA过敏原资料限定乳基底、过敏和标签信息。"
+      ]
+    },
+    "natto": {
+      "id": "natto",
+      "name": "纳豆",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-soy",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指以整粒大豆经枯草芽孢杆菌发酵制成的纳豆。黏丝、菌种、发酵和包装方式影响产品特征；不等于豆豉、味噌、天贝或纳豆激酶补充剂。",
+      "variables": "大豆品种、菌株、发酵/熟成、加热或再加工、纳豆激酶与维生素K2/MK-7含量、份量和食用频率。",
+      "composition": "纳豆是发酵整粒大豆食品，含维生素K2形式之一MK-7；MK-7含量受菌株及制程影响。单一商品的营养组成不能代表所有纳豆。",
+      "direct": "一项73名健康绝经前女性的随机研究按不食、每月一次、每周一次或每周三次纳豆分组并随访1年；超声骨硬度指数没有显著组间变化，但部分骨转换标志物出现组间差异。研究未证明骨折预防或骨密度改善。",
+      "specific": "骨转换标志物不是骨折结局。纳豆与华法林存在重要维生素K相互作用背景；NIH膳食补充剂办公室提醒维生素K摄入变化可影响华法林，特殊低MK-7纳豆仅有10名华法林患者、7天的早期试验，不代表一般纳豆可自行用于治疗期间。",
+      "safety": "纳豆含大豆过敏原，且MK-7丰富可能改变华法林抗凝效果。服用华法林者不应自行开始、停用或大幅改变纳豆摄入；应与抗凝治疗团队协商并保持维生素K摄入稳定。不得用普通纳豆替代骨质疏松治疗。",
+      "body": "纳豆是发酵整粒大豆食品，和纳豆激酶补充剂不是同一暴露。73名健康绝经前女性的一年随机研究没有观察到骨硬度指数的显著差异，虽有部分骨转换标志物变化，但没有证明减少骨折。需要特别留意的是，纳豆中的维生素K2（MK-7）可能影响华法林抗凝；服用华法林者不要自行改变纳豆摄入，应先与治疗团队确认。",
+      "evidence_body": "纳豆骨骼证据来自73名绝经前女性一年试验，骨硬度指数无显著差异、仅部分替代性骨转换指标变化（E-C）；未测骨折获益。维生素K—华法林相互作用属于明确照护边界。",
+      "care": "大豆过敏者应避免；华法林使用者保持维生素K摄入稳定，并在改变纳豆摄入前咨询抗凝治疗团队。研究中的低MK-7产品不能视为普通纳豆的通用安全许可。",
+      "taste_m": {},
+      "refs": [
+        "Katsuyama H, Ideguchi S, Fukunaga M, Fukunaga T, Saijoh K, Sunami S. “Promotion of Bone Formation by Fermented Soybean (Natto) Intake in Premenopausal Women.” Journal of Nutritional Science and Vitaminology. 2004;50(2):114–120. DOI: https://doi.org/10.3177/jnsv.50.114.",
+        "Homma K, Wakana N, Suzuki Y, Nukui M, Daimatsu T, Tanaka E, et al. “Treatment of Natto, a Fermented Soybean Preparation, to Prevent Excessive Plasma Vitamin K Concentrations in Patients Taking Warfarin.” Journal of Nutritional Science and Vitaminology. 2006;52(4):297–301. DOI: https://doi.org/10.3177/jnsv.52.297.",
+        "Nakajima T, Taya Y, Nishikawa T, Kitamura Y, Kato H, Mathis BJ, et al. “First Clinical Trial of a Newly Developed, Low Menaquinone-7, Fermented Soybean Natto in Warfarin-Dependent Patients.” Journal of Medicinal Food. 2022;25(1):61–67. DOI: https://doi.org/10.1089/jmf.2021.0036.",
+        "National Institutes of Health, Office of Dietary Supplements. “Vitamin K — Health Professional Fact Sheet.” https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Katsuyama H, Ideguchi S, Fukunaga M, Fukunaga T, Saijoh K, Sunami S. “Promotion of Bone Formation by Fermented Soybean (Natto) Intake in Premenopausal Women.” Journal of Nutritional Science and Vitaminology. 2004;50(2):114–120. DOI: https://doi.org/10.3177/jnsv.50.114.",
+        "National Institutes of Health, Office of Dietary Supplements. “Vitamin K — Health Professional Fact Sheet.” https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "四组随机分配并随访1年；比较不同食用频次。",
+          "population": "73名健康绝经前女性。",
+          "exposure": "午餐食用纳豆：无、每月一次、每周一次或每周三次。",
+          "result": "定量超声骨硬度指数无显著差异；高频组部分骨转换标志物与低频组存在差异。",
+          "limits": "样本小、人群局限；主要结果包括替代性标志物，不等同骨密度/骨折获益。",
+          "distance": "D0（纳豆食品）"
+        },
+        {
+          "ref": 3,
+          "design": "低MK-7特殊纳豆临床试验，7天摄入测试。",
+          "population": "10名依赖华法林治疗的患者。",
+          "exposure": "专门开发、MK-7约为普通纳豆19–24%的产品；比较10或20 g/day。",
+          "result": "20 g/day可提高血浆MK-7但PT-INR未改变；10 g/day未见MK-7显著上升。",
+          "limits": "小样本、时间短、特殊工程化制品；不能推断普通纳豆或长期安全性。",
+          "distance": "D1（特殊低MK-7纳豆，不代表一般商品）"
+        }
+      ],
+      "unknowns": "日常不同纳豆的MK-7实际含量分布；更大且更长的人体骨骼结局研究；非日本人群和不同抗凝治疗背景下的安全边界。",
+      "tradition": "纳豆为日本发酵食品；本轮未建立其与某一中医古籍大豆加工品条目的可靠直接对应，不把大豆母条分类移作纳豆定论。",
+      "queries": [
+        "Randomized or prospective human studies directly testing natto consumption and blood pressure, bone or cardiovascular outcomes; exact dose, sample, duration, DOI.",
+        "Natto nutrient composition, vitamin K2 and warfarin interaction from primary studies or official clinical guidance; distinguish natto from isolated menaquinone supplements."
+      ],
+      "search_log": [
+        "检索整粒纳豆的人体研究与MK-7/华法林安全性；区分食品、纳豆激酶补充剂及特殊低MK-7产品。",
+        "核对73名绝经前女性的一年频次分组试验；骨硬度指标未见显著差异，骨转换标志物变化仅作替代结局。",
+        "用NIH ODS维生素K专业资料补充华法林相互作用边界；特殊低MK-7试验仅作安全探索。"
+      ]
+    },
+    "kimchi": {
+      "id": "kimchi",
+      "name": "韩式泡菜",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-vegetables",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指韩式kimchi类盐渍并发酵的蔬菜制品，常见白菜或萝卜，也可使用黄瓜等蔬菜，并加入辣椒、蒜、姜等调味；不是单一配方。新鲜即食、充分发酵、巴氏处理和不同蔬菜版本需分别识别。",
+      "variables": "蔬菜种类、盐量、发酵时间/温度/pH、菌种、辣椒蒜姜等配料、是否巴氏处理、储存和份量。",
+      "composition": "盐渍蔬菜经乳酸菌发酵是常见工艺，但盐分、糖、辣度、活菌及酸度因产品和加工而异。未发酵或热处理产品不能自动视为含活菌；标签和储存说明优先。",
+      "direct": "2024年单中心双盲随机试验纳入90名BMI 23–30的参与者，连续12周每日摄入3 g自发发酵或特定菌株发酵泡菜粉，乳糖为安慰剂；两泡菜粉组相较安慰剂的体脂量下降。产品是标准化粉末，并非普通新鲜泡菜的一份。另一项100名年轻成人宿舍试验比较每日15 g与210 g泡菜仅7天；两组多项代谢指标均前后变化，剂量对照和短期设计不能证明长期临床获益。",
+      "specific": "泡菜综述所纳入研究数量有限、产品与人群异质；试验结果只适用于具体发酵工艺与摄入量。不能把白菜营养、分离乳酸菌或泡菜粉试验直接当作所有韩式泡菜功效。",
+      "safety": "韩式泡菜常有较高盐分，关注实际份量和标签。自制/未巴氏处理泡菜需遵循可靠的盐渍、发酵、酸度控制及冷藏卫生流程；错误发酵或污染可能带来食品安全风险。",
+      "body": "韩式泡菜有白菜、萝卜、黄瓜等多种版本，盐量、发酵程度和是否热处理都不一样。一个90人的随机试验使用每天3克标准化泡菜粉持续12周，并报告体脂量相较乳糖安慰剂下降；这不能直接代表日常一碟新鲜泡菜。另一个为期7天的年轻成人研究也不足以说明长期疾病获益。把泡菜当作调味配菜时，仍应留意钠摄入；自制时按可靠的发酵和冷藏卫生流程操作。",
+      "evidence_body": "特定泡菜粉RCT为D0但属于产品特异研究：n=90、3 g/day、12周、体脂量为结局；对普通零售/家制泡菜的长期疾病效果仍不确定（E-C/E-0）。短期7天剂量对照不能证明临床获益。",
+      "care": "注意每份钠和食用量；确认是否未发酵、充分发酵或经热处理。家庭发酵避免随意降低盐量或缩短发酵，按权威工艺与冷藏要求操作。",
+      "taste_m": {
+        "酸": "酸味随发酵阶段变化。",
+        "辛": "辣度由辣椒及配方决定。",
+        "咸": "盐渍工艺与品牌使咸度差异明显。"
+      },
+      "refs": [
+        "Lee W, Kwon MS, Yun YR, Choi H, Jung MJ, Hwang H, et al. “Effects of kimchi consumption on body fat and intestinal microbiota in overweight participants: A randomized, double-blind, placebo-controlled, single-center clinical trial.” Journal of Functional Foods. 2024;120:106401. DOI: https://doi.org/10.1016/j.jff.2024.106401.",
+        "Choi IH, Noh JS, Han JS, Kim HJ, Han ES, Song YO. “Kimchi, a Fermented Vegetable, Improves Serum Lipid Profiles in Healthy Young Adults: Randomized Clinical Trial.” Journal of Medicinal Food. 2013;16(3):223–229. DOI: https://doi.org/10.1089/jmf.2012.2563.",
+        "British Columbia Centre for Disease Control. “Fermented Foods Guideline 3.3: Kimchi.” https://www.bccdc.ca/resource-gallery/Documents/Educational%20Materials/EH/FPS/Food/Fermented/Fermented%20Foods%20Guideline%20-%203.3%20Kimchi.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Lee W, Kwon MS, Yun YR, Choi H, Jung MJ, Hwang H, et al. “Effects of kimchi consumption on body fat and intestinal microbiota in overweight participants: A randomized, double-blind, placebo-controlled, single-center clinical trial.” Journal of Functional Foods. 2024;120:106401. DOI: https://doi.org/10.1016/j.jff.2024.106401.",
+        "British Columbia Centre for Disease Control. “Fermented Foods Guideline 3.3: Kimchi.” https://www.bccdc.ca/resource-gallery/Documents/Educational%20Materials/EH/FPS/Food/Fermented/Fermented%20Foods%20Guideline%20-%203.3%20Kimchi.pdf."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、安慰剂对照、单中心干预，12周。",
+          "population": "90名BMI 23–30 kg/m²的超重或偏重参与者。",
+          "exposure": "每天3 g自发发酵泡菜粉或特定Leuconostoc mesenteroides菌株发酵泡菜粉；乳糖安慰剂对照。",
+          "result": "两个泡菜粉组相较安慰剂体脂量下降；报告部分肠道微生物组成改变。",
+          "limits": "产品为标准化粉末且仅一项小型单中心研究，不能代表不同新鲜泡菜，也未证明长期疾病预防/治疗。",
+          "distance": "D0（试验用泡菜粉；与市售/自制泡菜有配方距离）"
+        },
+        {
+          "ref": 2,
+          "design": "宿舍饮食环境中的两剂量短期比较，7天。",
+          "population": "100名年轻成人，低摄入组和高摄入组各50人。",
+          "exposure": "每日15 g或210 g泡菜，提供相同主餐。",
+          "result": "两组若干血糖和血脂指标均出现前后变化；高摄入组部分变化更大。",
+          "limits": "只有不同剂量组而无不吃泡菜的平行对照；短期替代指标、不能证明长期因果。",
+          "distance": "D0（具体泡菜摄入；人群/时间和健康终点有限）"
+        }
+      ],
+      "unknowns": "各类泡菜钠含量、发酵状态和活菌量的市场分布；普通份量下长期安全与临床结局；跨地区配方、人群可重复性。",
+      "tradition": "韩式泡菜是特定地区与工艺形成的现代饮食制品；本轮不将白菜或其他单味蔬菜传统条目移作泡菜的药性定论。",
+      "queries": [
+        "Randomized controlled human studies and systematic reviews specifically on kimchi intake and metabolic outcomes; exact study design, Korean product, dose, DOI and limitations.",
+        "Kimchi sodium and fermentation composition studies plus authoritative fermented food safety guidance; distinguish kimchi from cabbage or probiotic supplements."
+      ],
+      "search_log": [
+        "检索泡菜特异人体试验及系统综述，区分日常泡菜、标准化泡菜粉和分离菌株。",
+        "核对90人12周双盲试验的制品、每日剂量、对照与体脂结局；把7天两剂量研究限定为短期替代指标。",
+        "用BCCDC泡菜指南核实发酵、冷藏、酸度与食品安全条件；不将营养效应写成益生菌类别效应。"
+      ]
+    },
+    "pickled-cucumber": {
+      "id": "pickled-cucumber",
+      "name": "酸黄瓜",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "pickled-vegetables",
+      "research_depth": "R1",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指经盐水自然/控制发酵，或经醋及其他食用酸酸化的黄瓜制品。Codex标准将发酵盐水黄瓜与酸化黄瓜都列入腌黄瓜类别；因此商品名“酸黄瓜”并不保证经历活菌发酵。",
+      "variables": "盐水发酵或醋酸化、酸度/pH、盐和钠、香辛料、热处理/冷藏、发酵菌、糖和食用份量。",
+      "composition": "腌黄瓜可以来自自然或控制发酵，也可以通过醋等酸化并再巴氏处理；不同做法的微生物、钠和口感不同。标签或工艺说明是判断具体产品的依据。",
+      "direct": "本轮未找到以普通发酵黄瓜为明确干预、并测量可靠临床结局的试验。一个44名有便秘倾向女大学生的两周试验使用每日30 g含Lactobacillus brevis的腌菜，比较活菌、热灭活菌和去菌对照；一些肠道症状和免疫指标变化主要出现在灭活菌组。文章没有把研究食品明确为常见发酵黄瓜，因此只作D2邻近证据，不视为酸黄瓜功效。",
+      "specific": "2025年巴基斯坦社区试验研究多种植物发酵腌菜，并非黄瓜专属；Codex分类则覆盖发酵和酸化的不同制品。两者均不能证明普通瓶装酸黄瓜改善健康。",
+      "safety": "腌制或发酵黄瓜通常含盐，按标签核对钠和食用量。自制时使用经验证的盐水发酵/酸化配方和卫生操作；醋腌与自然发酵不是同一过程。",
+      "body": "“酸黄瓜”可能是盐水发酵，也可能是加醋酸化后保存的黄瓜；Codex标准同时覆盖这两类做法，所以仅凭酸味或名称不能判断是否含活菌。当前没有找到普通发酵黄瓜直接改善人体健康结局的试验。腌菜研究中有一项针对女大学生的两周试验，但食品未明确为黄瓜，且部分结果出现在灭活菌组，不能移作酸黄瓜功效。购买时看配料和钠；家制产品应使用经过验证的腌制或发酵流程。",
+      "evidence_body": "普通酸黄瓜的人体健康结局证据不足（E-0）。腌菜/L. brevis试验为D2（n=44、30 g/day、2周、非黄瓜特异），部分结果在灭活菌组出现；不构成本条临床功效证据。",
+      "care": "区分醋腌与盐水发酵，核对钠和份量；自制不随意减少盐或改变时间温度，避免未经验证的发酵/罐藏方法。",
+      "taste_m": {
+        "酸": "酸味可由乳酸发酵或外加醋酸形成。",
+        "咸": "盐水和品牌配方决定钠与咸度。"
+      },
+      "refs": [
+        "Codex Alimentarius Commission. “Standard for Pickled Cucumbers.” CXS 115-1981. https://workspace.fao.org/sites/codex/Standards/CXS%20115-1981/CXS_115e.pdf.",
+        "Takii Y, Nishimura S, Yoshida-Yamamoto S, Kobayashi Y, Nagayoshi E. “Effects of Intake of Pickles Containing Lactobacillus brevis on Immune Activity and Bowel Symptoms in Female Students.” Journal of Nutritional Science and Vitaminology. 2013;59(5):402–408. DOI: https://doi.org/10.3177/jnsv.59.402.",
+        "Hafeez SH, Khalid A, Ahmed S, Umrani F, Qureshi AK, Ahmed K, et al. “Fermented pickles improve gut microbiota and immune profile in women in a community trial in rural Pakistan.” Scientific Reports. 2025;15:34712. DOI: https://doi.org/10.1038/s41598-025-17721-8.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Codex Alimentarius Commission. “Standard for Pickled Cucumbers.” CXS 115-1981. https://workspace.fao.org/sites/codex/Standards/CXS%20115-1981/CXS_115e.pdf.",
+        "Takii Y, Nishimura S, Yoshida-Yamamoto S, Kobayashi Y, Nagayoshi E. “Effects of Intake of Pickles Containing Lactobacillus brevis on Immune Activity and Bowel Symptoms in Female Students.” Journal of Nutritional Science and Vitaminology. 2013;59(5):402–408. DOI: https://doi.org/10.3177/jnsv.59.402."
+      ],
+      "evidence_records": [
+        {
+          "ref": 2,
+          "design": "三组两周腌菜干预：活菌、热灭活菌和去除乳酸菌的对照。",
+          "population": "44名有便秘倾向的女大学生。",
+          "exposure": "每日30 g含L. brevis腌菜；试验产品不是明确的酸黄瓜标准制品。",
+          "result": "部分排便/免疫指标变化主要见于灭活菌组；活菌组结果不一致。",
+          "limits": "样本小、时间短、受试者局限且腌菜并非黄瓜特异；不能推及商业酸黄瓜。",
+          "distance": "D2（未明确蔬菜种类的含菌腌菜）"
+        }
+      ],
+      "unknowns": "各地区酸黄瓜中盐水发酵、醋酸化和巴氏处理产品的比例；普通发酵黄瓜本身的人体健康结局试验；不同商品钠与酸度。",
+      "tradition": "酸黄瓜的具体加工路径高度现代化且跨地区不同；未建立与古籍中瓜类条目的直接配方对应。",
+      "queries": [
+        "Human trials of naturally fermented cucumbers or fermented pickles; distinguish lactic-acid fermented brined cucumbers from vinegar pickles and report exact DOI.",
+        "Official food safety guidance for fermented cucumbers, sodium content and composition of pickles; no extrapolation from vinegar or probiotic supplements."
+      ],
+      "search_log": [
+        "检索发酵黄瓜/酸黄瓜人体研究；未找到明确以普通黄瓜腌制品为干预的临床结局试验。",
+        "以Codex腌黄瓜标准区分盐水发酵与醋/食用酸酸化，避免从商品名称推断活菌。",
+        "核对含L. brevis腌菜小试验和多植物发酵腌菜研究；由于蔬菜种类不明或非黄瓜特异，全部降为邻近证据。"
+      ]
+    },
+    "sauerkraut": {
+      "id": "sauerkraut",
+      "name": "德国酸菜",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-vegetables",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指以切碎或切丝卷心菜经盐渍和乳酸发酵制成的德式酸菜；新鲜未发酵卷心菜、醋渍卷心菜及经巴氏/罐装的成品不是同一暴露。",
+      "variables": "卷心菜品种、盐量、切碎程度、菌群、温度/发酵时长、是否巴氏处理/罐装、储存与每份量。",
+      "composition": "成品的盐、酸度和活菌状态随工艺、热处理及储存变化。鲜发酵产品与巴氏处理罐装产品不可默认相同。",
+      "direct": "同一登记的87名健康成人交叉试验队列发表了至少两份结果报告，不应视为独立重复研究。参与者每日摄入100 g新鲜或巴氏处理酸菜、每阶段4周并设4周洗脱；微生物报告仅见部分物种变化，巴氏处理组血清短链脂肪酸上升。另一报告显示两种酸菜均与小幅收缩压下降相关，亚组才出现部分炎症/糖代谢指标变化，肠屏障标志物无变化；作者认为4周摄入未带来可观的系统性健康获益。",
+      "specific": "结果来自健康成人、短期和特定酸菜产品；两个论文报告来自同一87人试验，不能计作两次独立复制。菌群或短链脂肪酸变化不是临床获益本身。",
+      "safety": "盐量因自制、冷藏鲜品、罐装和品牌而异；关注标签和份量。家庭发酵应遵循可靠配方与温度/时间流程；未巴氏处理产品须冷藏并保持卫生。",
+      "body": "一项87名健康成人参与的交叉试验比较了每天100克新鲜和巴氏处理德国酸菜，每阶段4周。两篇论文分别报告肠道菌群/代谢物及血压、炎症等结果，但来自同一批参与者，并非两次独立验证。研究发现部分菌群或指标变化，也报告小幅收缩压下降；肠屏障指标没有变化，研究者认为整体系统性健康获益并不明显。结果只适用于短期试验产品，不能说明所有酸菜都能降压或“改善肠道”。",
+      "evidence_body": "新鲜/巴氏德国酸菜短期RCT为D0；n=87，100 g/day、各4周并洗脱。报告有小幅收缩压变化和部分替代指标，未见肠屏障变化，作者认为健康成人中无可观系统效益（E-C）。两篇报告同一队列，不作独立重复计数。",
+      "care": "查看每份钠、是否巴氏处理和冷藏要求；高盐饮食需结合整体钠摄入评估。家庭发酵按经验证的盐量、容器、时间和温度处理。",
+      "taste_m": {
+        "酸": "发酵程度影响酸味。",
+        "咸": "配方和盐渍过程影响咸味与钠。"
+      },
+      "refs": [
+        "Schropp N, Bauer A, Stanislas V, Huang KD, Lesker TR, Bielecka AA, et al. “The impact of regular sauerkraut consumption on the human gut microbiota: a crossover intervention trial.” Microbiome. 2025;13:31. DOI: https://doi.org/10.1186/s40168-024-02016-3.",
+        "Schropp N, Bauer A, Stanislas V, Michels KB. “Fermented foods and inflammation: a crossover intervention trial with fresh and pasteurized sauerkraut.” European Journal of Clinical Nutrition. 2026. DOI: https://doi.org/10.1038/s41430-026-01776-5.",
+        "British Columbia Centre for Disease Control. “Fermented Foods Guideline 3.2: Sauerkraut.” https://www.bccdc.ca/resource-gallery/Documents/Educational%20Materials/EH/FPS/Food/Fermented/Fermented%20Foods%20Guideline%20-%203.2%20Sauerkraut.pdf.",
+        "National Center for Home Food Preservation. “Sauerkraut.” https://nchfp.uga.edu/how/pickle/fermented-pickles/sauerkraut/."
+      ],
+      "body_refs": [
+        "Schropp N, Bauer A, Stanislas V, Huang KD, Lesker TR, Bielecka AA, et al. “The impact of regular sauerkraut consumption on the human gut microbiota: a crossover intervention trial.” Microbiome. 2025;13:31. DOI: https://doi.org/10.1186/s40168-024-02016-3.",
+        "Schropp N, Bauer A, Stanislas V, Michels KB. “Fermented foods and inflammation: a crossover intervention trial with fresh and pasteurized sauerkraut.” European Journal of Clinical Nutrition. 2026. DOI: https://doi.org/10.1038/s41430-026-01776-5.",
+        "British Columbia Centre for Disease Control. “Fermented Foods Guideline 3.2: Sauerkraut.” https://www.bccdc.ca/resource-gallery/Documents/Educational%20Materials/EH/FPS/Food/Fermented/Fermented%20Foods%20Guideline%20-%203.2%20Sauerkraut.pdf."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉干预；每天摄入新鲜或巴氏酸菜，每阶段4周，阶段间洗脱4周。",
+          "population": "87名健康成人；与同一登记的后续炎症报告属于同一队列。",
+          "exposure": "每日100 g新鲜或巴氏处理酸菜。",
+          "result": "部分肠道细菌物种发生变化；仅巴氏酸菜阶段血清SCFA增加。",
+          "limits": "短期、健康人群、组学及替代终点；菌群变化不等于临床获益。",
+          "distance": "D0（具体德国酸菜试验制品）"
+        },
+        {
+          "ref": 2,
+          "design": "同一87人交叉试验的另一份结局报告；干预100 g/day、每阶段4周，洗脱4周。",
+          "population": "87名健康成人。",
+          "exposure": "新鲜与巴氏处理酸菜。",
+          "result": "两阶段均与小幅收缩压下降相关；亚组观察到部分标志物变化，未见肠屏障变化。",
+          "limits": "没有可观的系统性健康效益；亚组/替代指标、短期且不能作为两个独立试验计数。",
+          "distance": "D0（同一队列的不同报告）"
+        }
+      ],
+      "unknowns": "长期摄入、疾病人群、品牌间盐与菌体状态差异；对临床事件、症状及长期血压的影响。",
+      "tradition": "德国酸菜是特定食材和乳酸发酵工艺形成的饮食制品；不从一般卷心菜传统记载推出该制品的性味或功效。",
+      "queries": [
+        "Direct human intervention studies of sauerkraut consumption and health outcomes, randomized or controlled designs, exact citations and product/process details.",
+        "Fermented cabbage/sauerkraut sodium and microbiological safety guidance; distinguish raw unpasteurized sauerkraut from canned/pasteurized products and cabbage."
+      ],
+      "search_log": [
+        "检索德国酸菜人体交叉试验及工艺安全资料，区分鲜发酵与巴氏/罐装制品。",
+        "核对2024微生物报告和2026炎症/血压报告的登记号、队列、剂量与洗脱；确认两篇报告共享87人试验，不算独立重复。",
+        "以BCCDC与NCHFP资料核实家庭发酵、冷藏、盐量及时间温度边界。"
+      ]
+    },
+    "miso": {
+      "id": "miso",
+      "name": "味噌",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-soy",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指以大豆、曲菌种曲及盐发酵熟成的味噌酱；米味噌、麦味噌、豆味噌及混合型配方不同。味噌酱与冲调后的味噌汤不是相同摄入量，人体研究多以味噌汤为暴露。",
+      "variables": "曲种/原料、发酵与熟成时间、盐和钠、汤的稀释与其他配料、每份用量、巴氏处理和食用频率。",
+      "composition": "味噌是高盐调味酱类别，蛋白质及其他成分随类型、原料和成熟度而异；味噌汤钠量还取决于加入量和汤量。使用具体包装标签或成分数据库，不能把某一种豆味噌数值当成全品类。",
+      "direct": "一项40名40–69岁高正常血压或I期高血压成人的8周随机试验比较特定味噌混合物与大豆食品；日间血压未变，夜间血压下降，血脂和血糖代谢无影响。研究产品为32 g特殊味噌组合，研究比较餐的钠/纤维量并不相等，且样本小。另一项527名50–81岁日本成人横断面研究未发现味噌汤频率与血压相关；较高频率与较低心率相关，不能推为因果。",
+      "specific": "味噌试验的暴露为特定产品及味噌汤，而非所有味噌酱；血压结果为夜间测量且单项小型研究。横断面结果存在自报摄入及残余混杂。",
+      "safety": "味噌酱和味噌汤可贡献较多钠，注意份量、包装钠标签及整体饮食；盐限制或高血压管理应以个人医疗/膳食建议为准。含大豆产品还需核对大豆过敏原。",
+      "body": "味噌是一类发酵调味酱，米曲、麦曲、豆味噌、盐量和熟成时间都可能不同；味噌酱本身也不同于一碗味噌汤。一项40人的8周随机试验用特定味噌汤配方，报告夜间血压下降、日间血压未变；比较食品的钠量不同，且试验规模较小。另有527名日本成人的横断面研究没有发现味噌汤频率与血压相关。现有结果不能说明所有味噌能降压；日常使用主要留意每份钠和总盐摄入。",
+      "evidence_body": "味噌直接人体资料有限：小型特定配方试验报告夜间血压变化，日间血压无变化且比较食品钠量不同；横断面研究未见血压关联。不能归纳为降压功效（E-C/E-0）。",
+      "care": "核对每份钠和味噌汤的实际用量；高血压或需限钠者按整体膳食建议安排。注意大豆过敏。",
+      "taste_m": {
+        "咸": "咸度主要受盐量、类型和冲调比例影响。"
+      },
+      "refs": [
+        "Kondo H, Sakuyama Tomari H, Yamakawa S, Kitagawa M, Yamada M, Itou S, et al. “Long-term intake of miso soup decreases nighttime blood pressure in subjects with high-normal blood pressure or stage I hypertension.” Hypertension Research. 2019;42:1757–1767. DOI: https://doi.org/10.1038/s41440-019-0304-9.",
+        "Ito K, Miyata K, Mohri M, Origuchi H, Yamamoto H. “The Effects of the Habitual Consumption of Miso Soup on the Blood Pressure and Heart Rate of Japanese Adults: A Cross-sectional Study of a Health Examination.” Internal Medicine. 2017;56(1):23–29. DOI: https://doi.org/10.2169/internalmedicine.56.7538.",
+        "Ministry of Education, Culture, Sports, Science and Technology, Japan. “Japanese Food Composition Database: Miso (soybean-koji miso).” https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17048_7&MODE=1.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Kondo H, Sakuyama Tomari H, Yamakawa S, Kitagawa M, Yamada M, Itou S, et al. “Long-term intake of miso soup decreases nighttime blood pressure in subjects with high-normal blood pressure or stage I hypertension.” Hypertension Research. 2019;42:1757–1767. DOI: https://doi.org/10.1038/s41440-019-0304-9.",
+        "Ito K, Miyata K, Mohri M, Origuchi H, Yamamoto H. “The Effects of the Habitual Consumption of Miso Soup on the Blood Pressure and Heart Rate of Japanese Adults: A Cross-sectional Study of a Health Examination.” Internal Medicine. 2017;56(1):23–29. DOI: https://doi.org/10.2169/internalmedicine.56.7538.",
+        "Ministry of Education, Culture, Sports, Science and Technology, Japan. “Japanese Food Composition Database: Miso (soybean-koji miso).” https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17048_7&MODE=1."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机分组、8周干预；自动血压监测日夜血压。",
+          "population": "40名40–69岁高正常血压或I期高血压成人。",
+          "exposure": "每日32 g特定两种味噌组合；对照为大豆食品。研究报告试验餐盐量约3.8 g/day与0.2 g/day，纤维和钠并非等量。",
+          "result": "与对照相比，日间血压未变；夜间血压下降；血脂或血糖代谢没有改变。",
+          "limits": "样本小、单一特殊产品、比较食物的钠/纤维不等，不能推广至全部味噌或作医疗建议。",
+          "distance": "D1（味噌汤/特殊味噌配方，不是各类味噌酱直接效果）"
+        },
+        {
+          "ref": 2,
+          "design": "健康检查横断面观察研究。",
+          "population": "527名50–81岁日本成人。",
+          "exposure": "按每周味噌汤食用频次分组。",
+          "result": "频次与血压无显著关联；较高频率与较低心率有关联。",
+          "limits": "横断面、自报暴露、存在混杂；不能证明味噌造成心率变化。",
+          "distance": "D1（味噌汤的习惯性摄入）"
+        }
+      ],
+      "unknowns": "不同味噌类型、钠量和份量的人体影响；较大样本随机试验及长期心血管临床结局。",
+      "tradition": "味噌为日本发酵调味品，本轮未建立其与传统中医古籍酱类条目的直接等同；不将酱、豉等记载转写成味噌结论。",
+      "queries": [
+        "Human randomized or prospective studies of miso or miso soup consumption and blood pressure, metabolic or gastrointestinal outcomes; exact evidence and DOI.",
+        "Miso sodium/nutrient composition, fermentation and safety from official data or human market studies; distinguish miso paste and miso soup."
+      ],
+      "search_log": [
+        "检索味噌酱/味噌汤的人体血压及心代谢研究，区分特定味噌试验、习惯性味噌汤和横断面关联。",
+        "核对40人8周随机试验的年龄、产品、对照、钠差异及日夜血压；并核对527人横断面研究不将关联写成因果。",
+        "使用日本食品成分数据库作为产品组成参考；味噌汤钠量仍需结合配方、冲调量和标签。"
+      ]
+    },
+    "tempeh": {
+      "id": "tempeh",
+      "name": "天贝",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-soy",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指大豆经Rhizopus等霉菌发酵、菌丝结合成饼状的印尼天贝（tempeh）。它不同于豆腐、豆豉或由豆渣制成的天贝胶/tempeh gembus。",
+      "variables": "大豆品种、接种菌、发酵成熟、压制/烹调、蛋白质及份量；tempeh gembus的豆渣原料需要单独区分。",
+      "composition": "普通大豆天贝与天贝胶使用不同底物；配料、含水量、成熟和烹调方式会改变实际组成。大豆属于主要食物过敏原。",
+      "direct": "一项42名血胆固醇偏高印尼成年人的三组平行干预研究比较对照、豆坚果和大豆天贝；天贝组每日摄入约66 g、持续6周，报告总胆固醇平均下降约0.40 mmol/L但组间结果未达统计显著。样本小、对照未摄入匹配食品且参与者为单一职场人群，不能据此认定天贝可降胆固醇。",
+      "specific": "若干短期天贝胶（tempeh gembus）研究使用大豆加工副产品豆渣，不是普通大豆天贝；其结果仅为邻近证据，不并入本条成品效果。",
+      "safety": "大豆过敏者避免食用并核对复合配料。发酵与烹调不等同于灭菌；按包装冷藏/加热说明处理，避免将未熟或变质制品视为安全。",
+      "body": "天贝是由发酵菌丝把整粒大豆结合成饼的食品；天贝胶（tempeh gembus）则以豆渣为主要原料，不应混作同一产品。一项42名胆固醇偏高印尼成人的小型研究中，天贝组每天约66克、持续6周，总胆固醇虽下降，但与对照的结果未达统计显著。现有资料不足以说天贝能降胆固醇；购买时核对大豆过敏原，并按标签冷藏和充分加热。",
+      "evidence_body": "普通大豆天贝人体证据来自一项小型6周研究：天贝组TC变化约−0.40 mmol/L但差异不显著（E-C/E-0）。天贝胶研究使用豆渣副产品，属D2，不替代普通天贝证据。",
+      "care": "检查大豆过敏原与储存说明；天贝胶不是普通天贝，研究结果不可混用。对胆固醇的医疗管理不能由单项小试验替代。",
+      "taste_m": {},
+      "refs": [
+        "Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.",
+        "Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.",
+        "Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三组平行干预研究，6周；对照未摄入匹配样品。",
+          "population": "42名总胆固醇≥4.92 mmol/L的印尼成年职工。",
+          "exposure": "天贝组每日约66 g大豆天贝；研究目标为提供约25 g/d大豆蛋白。",
+          "result": "天贝组总胆固醇平均变化约−0.40±1.19 mmol/L；与对照差异未显著。",
+          "limits": "样本小、单一地区/职场、对照未匹配食品，且报告成分和依从性受限；不支持确定降脂结论。",
+          "distance": "D0（大豆天贝）"
+        },
+        {
+          "ref": 2,
+          "design": "准实验或短期对照干预；样本和设计随论文而异。",
+          "population": "高脂血症女性或肥胖绝经前女性。",
+          "exposure": "103–206 g/day或150 g/day的tempeh gembus（豆渣天贝胶）。",
+          "result": "部分短期血脂、甘油三酯或胰岛素抵抗指标变化。",
+          "limits": "原料是豆渣副产品、研究小而短，不能归因于普通大豆天贝。",
+          "distance": "D2（相关发酵豆制食品，但底物不同）"
+        }
+      ],
+      "unknowns": "不同商业普通天贝的营养组成；更大且设置匹配对照的人体试验；长期结局及烹饪方式影响。",
+      "tradition": "天贝为印尼发酵大豆食品；本轮未建立与中医古籍豆类条目的直接工艺对应，不用豆类母条替代成品判断。",
+      "queries": [
+        "Human controlled trials specifically using tempeh (not soy protein or tofu) for metabolic, lipid, bone or gastrointestinal outcomes; exact DOI, sample, dose and limits.",
+        "Tempeh composition and food safety/fermentation evidence from primary sources or official agencies; separate fermented soybean from other soy foods.",
+        "randomized controlled human trial conventional soybean tempeh (not tempeh gembus) health effects DOI participants dose"
+      ],
+      "search_log": [
+        "先检索天贝人体研究并发现多篇命中为tempeh gembus；追加按常规大豆天贝限定的定向检索，确认一项小型三组6周研究。",
+        "区分大豆天贝与豆渣天贝胶；后者短期试验只作为D2邻近证据。",
+        "核对天贝试验中高胆固醇人群、约66 g/day暴露和不显著总胆固醇比较；不将豆坚果结果迁移到天贝。"
+      ]
+    },
+    "fermented-chili-sauce": {
+      "id": "fermented-chili-sauce",
+      "name": "发酵辣椒酱",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "fermented-condiment",
+      "research_depth": "R2",
+      "shared_parent": "fermented-plant-foods-base",
+      "identity": "本条指以辣椒为重要原料、经盐渍/乳酸等发酵制成的酱类调味品。各地配方可加入豆类、谷物、蒜、糖、油和多种菌种；韩式Kochujang是含发酵大豆/谷物的相近但并非同义产品。普通现制辣酱或仅酸化辣椒不自动属于发酵辣椒酱。",
+      "variables": "辣椒种类与辣度、盐量、发酵菌和时间、是否加大豆/谷物/糖/油、熟化和巴氏处理、每份用量及钠。",
+      "composition": "发酵辣椒酱不是统一配方。低盐发酵研究比较8%、10%、12%盐制品并发现低盐与较高生物胺生成相关；这是食品工艺指标，不是人体健康结局，也不证明所有低盐产品有相同风险。",
+      "direct": "本轮未找到能够代表广义发酵辣椒酱的人体临床试验。邻近资料包括一项对超重/肥胖成人比较传统高/低有益微生物量Kochujang与商业产品的小型随机研究（共54人；19、18、17人三组），报告部分腰围、血脂或内脏脂肪变化；它未测试单纯辣椒发酵酱，且三组均为Kochujang，无法提供广义类别的非发酵对照。",
+      "specific": "Kochujang含发酵大豆/谷物且成品、菌群与食用剂量不同，不能代表其他辣椒发酵酱。低盐辣椒酱研究测的是理化、挥发物和生物胺，不是人体效果。",
+      "safety": "调味酱可能含较多钠，且复配款可能含大豆、小麦等过敏原；按配料和每份钠标签选择。自制发酵酱应按可靠工艺控制盐、卫生和发酵时间，不因“低盐”标签假定微生物安全或健康获益。",
+      "body": "发酵辣椒酱是一个配方跨度很大的调味品类别，辣椒、盐、菌种和是否加入豆类或谷物都可能不同。我们没有找到能代表整个类别的人体临床试验。一个54人的Kochujang小型随机研究比较了不同韩国发酵辣椒/大豆酱产品，但Kochujang不等于所有发酵辣酱，且没有非发酵酱对照。另有低盐辣椒酱工艺研究测到生物胺等变化，并非健康试验。购买时看钠和过敏原；自制发酵时使用可靠工艺。",
+      "evidence_body": "广义发酵辣椒酱的人体结局证据不足（E-0）；Kochujang小型比较试验为D2相邻产品，低盐酱研究是食品工艺而非人体证据，均不能证明本条广义功效。",
+      "care": "注意每份钠、实际辣度及大豆/小麦等过敏原；自制产品遵循可靠的发酵和储存工艺。食品工艺指标不是人体安全或疗效证明。",
+      "taste_m": {
+        "辛": "辣味主要取决于辣椒类型与用量。",
+        "咸": "盐量和产品配方决定咸度。"
+      },
+      "refs": [
+        "Han AL, Jeong SJ, Ryu MS, Yang HJ, Jeong DY, Park DS, et al. “Anti-Obesity Effects of Traditional and Commercial Kochujang in Overweight and Obese Adults: A Randomized Controlled Trial.” Nutrients. 2022;14(14):2783. DOI: https://doi.org/10.3390/nu14142783.",
+        "Wang J, Tang J, Huang Y, Yin J, Zhang M, Qi C, et al. “Enhancing flavor and quality in low-salt fermented chili sauce: impact on microbial communities, biogenic amines, and key volatile compounds.” Food Science and Technology Research. 2025;31(5):455–468. DOI: https://doi.org/10.3136/fstr.fstr-d-25-00020.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Han AL, Jeong SJ, Ryu MS, Yang HJ, Jeong DY, Park DS, et al. “Anti-Obesity Effects of Traditional and Commercial Kochujang in Overweight and Obese Adults: A Randomized Controlled Trial.” Nutrients. 2022;14(14):2783. DOI: https://doi.org/10.3390/nu14142783.",
+        "Wang J, Tang J, Huang Y, Yin J, Zhang M, Qi C, et al. “Enhancing flavor and quality in low-salt fermented chili sauce: impact on microbial communities, biogenic amines, and key volatile compounds.” Food Science and Technology Research. 2025;31(5):455–468. DOI: https://doi.org/10.3136/fstr.fstr-d-25-00020.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三组随机对照产品比较。",
+          "population": "54名超重或肥胖成年人；传统高微生物量组n=19、传统低微生物量组n=18、商业Kochujang组n=17。",
+          "exposure": "传统与商业Kochujang；配方含发酵大豆/谷物及辣椒。",
+          "result": "不同组报告腰围、血脂和内脏脂肪等指标的部分变化。",
+          "limits": "试验小且为特定Kochujang产品；各组都食用Kochujang，缺乏广义辣椒酱或未发酵对照；不得外推。",
+          "distance": "D2（邻近的发酵豆辣酱产品）"
+        },
+        {
+          "ref": 2,
+          "design": "不同盐浓度和菌种接种的食品发酵/理化分析研究。",
+          "population": "无人体参与者。",
+          "exposure": "盐浓度8%、10%和12%的实验室低盐发酵辣椒酱。",
+          "result": "降低盐浓度伴随若干风味挥发物变化，也与较高生物胺产生相关。",
+          "limits": "食品工艺研究，不测人体摄入、疾病风险或安全事件；特定配方和菌种。",
+          "distance": "D3（制程/成分资料）"
+        }
+      ],
+      "unknowns": "市售发酵辣椒酱分类和盐量分布、活菌/热处理状态、不同配方的人体摄入剂量及直接临床结果。",
+      "tradition": "发酵辣椒酱为依地区和工艺形成的现代复合调味品；不以传统辣椒、豆豉或酱类条目替代此成品的本草分类。",
+      "queries": [
+        "Human controlled studies specifically of fermented chili sauce or fermented hot pepper sauce and health outcomes; distinguish capsaicin supplement and fresh chili.",
+        "Fermented chili sauce identity, sodium, fermentation microbiology and safety from primary/official sources; product recipe variability."
+      ],
+      "search_log": [
+        "后续按英文全题名核对J-STAGE记录，确认本研究DOI为10.3136/fstr.fstr-d-25-00020。"
+      ]
+    },
+    "avocado": {
+      "id": "avocado",
+      "name": "牛油果",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fruit",
+      "research_depth": "R2",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指新鲜牛油果可食果肉（Persea americana）；不同品种、成熟度和大小会改变脂肪、能量及口感。牛油果油、粉末/提取物、复合蘸酱和牛油果沙拉不等同整果果肉。",
+      "variables": "品种、成熟度、可食部重量、食用份量、完整果肉或加工品，以及是替代其他食物还是额外增加能量。",
+      "composition": "牛油果与多数低脂水果不同，果肉含较多单不饱和脂肪、膳食纤维及能量；实际营养随品种和可食重量变化。食用方式若是替代某些碳水食品，与在原饮食上额外添加的暴露不同。",
+      "direct": "一项45名超重/肥胖成人的随机交叉控制喂养试验比较三种降胆固醇膳食，每阶段5周；中等脂肪牛油果组每天含136 g哈斯牛油果，LDL-C和非HDL-C相较基线下降。另一项93名超重/肥胖且有胰岛素抵抗成人的12周随机试验要求用牛油果能量替代碳水食品；主要胰岛素敏感性终点组间差异不显著（P=0.1092），体重/体成分无变化，CRP等个别标志物有变化。",
+      "specific": "两项试验都采用明确膳食替代或控制喂养，参加者样本有限且不是自由添加牛油果的长期结局研究。12周试验主要终点未达组间显著；不能推为牛油果治疗胰岛素抵抗、减重或预防心血管事件。",
+      "safety": "牛油果能量密度高于许多常见水果，份量及替代关系会影响整体能量摄入。以整果食用和选择具体果肉份量为判断对象，不把牛油果油或补充剂试验混入。",
+      "body": "牛油果果肉含较多不饱和脂肪和纤维，研究结果取决于它替代什么食物。一项45人的控制喂养交叉试验每天提供136克哈斯牛油果、持续5周，牛油果膳食的LDL-C下降幅度较大；另一项93人的12周试验将牛油果能量替代日常碳水食品，但主要胰岛素敏感性终点没有显著组间差异，体重也未改变。因此，研究不支持把牛油果说成减肥或治疗方法；更适合把它作为有份量意识的食物替代选择。",
+      "evidence_body": "全果牛油果RCT结果按结局并不一致：控制喂养试验报告LDL-C变化，12周自由生活替代试验的主要胰岛素敏感性终点未显著且体重无变化（E-C）。结论限于研究膳食方案，不外推为减重或疾病治疗。",
+      "care": "记录可食部和份量，并考虑其是替代还是额外添加；健康结局试验使用整果膳食，不代表牛油果油、提取物或补充剂。",
+      "taste_m": {
+        "甘": "成熟果肉可有轻微甘味和乳脂样口感，品种与成熟度影响明显；仅作感官描述。"
+      },
+      "refs": [
+        "Wang L, Bordi PL, Fleming JA, Hill AM, Kris-Etherton PM. “Effect of a Moderate Fat Diet With and Without Avocados on Lipoprotein Particle Number, Size and Subclasses in Overweight and Obese Adults: A Randomized, Controlled Trial.” Journal of the American Heart Association. 2015;4(1):e001355. DOI: https://doi.org/10.1161/JAHA.114.001355.",
+        "Zhang X, Xiao D, Maldonado Guzmán G, Edirisinghe I, Burton-Freeman B. “Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors: A Randomized Controlled Trial in Adults with Overweight or Obesity and Insulin Resistance.” The Journal of Nutrition. 2022;152(11):2472–2483. DOI: https://doi.org/10.1093/jn/nxac126.",
+        "Ford NA, Spagnuolo P, Kraft J, Bauer E. “Nutritional Composition of Hass Avocado Pulp.” Foods. 2023;12(13):2516. DOI: https://doi.org/10.3390/foods12132516.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Wang L, Bordi PL, Fleming JA, Hill AM, Kris-Etherton PM. “Effect of a Moderate Fat Diet With and Without Avocados on Lipoprotein Particle Number, Size and Subclasses in Overweight and Obese Adults: A Randomized, Controlled Trial.” Journal of the American Heart Association. 2015;4(1):e001355. DOI: https://doi.org/10.1161/JAHA.114.001355.",
+        "Zhang X, Xiao D, Maldonado Guzmán G, Edirisinghe I, Burton-Freeman B. “Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors: A Randomized Controlled Trial in Adults with Overweight or Obesity and Insulin Resistance.” The Journal of Nutrition. 2022;152(11):2472–2483. DOI: https://doi.org/10.1093/jn/nxac126.",
+        "Ford NA, Spagnuolo P, Kraft J, Bauer E. “Nutritional Composition of Hass Avocado Pulp.” Foods. 2023;12(13):2516. DOI: https://doi.org/10.3390/foods12132516."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、控制喂养、三期交叉试验；每期5周。",
+          "population": "45名超重或肥胖成人，基线LDL-C位于第25至90百分位。",
+          "exposure": "每日一个136 g鲜哈斯牛油果的中等脂肪膳食，对照为匹配脂肪酸的中等脂肪油脂膳食及低脂膳食。",
+          "result": "相较基线，牛油果膳食LDL-C下降约13.5 mg/dL，非HDL-C下降约14.6 mg/dL；部分脂蛋白指标也变化。",
+          "limits": "样本小、严格控制喂养、每期仅5周；不能直接推断长期心血管事件或日常额外添加的效果。",
+          "distance": "D0（整果哈斯牛油果膳食）"
+        },
+        {
+          "ref": 2,
+          "design": "单中心两组随机、对照、平行试验，12周。",
+          "population": "93名超重/肥胖并有胰岛素抵抗的成年人。",
+          "exposure": "用牛油果能量替代日常碳水食品，或使用等能量低脂低纤维对照食品。",
+          "result": "主要MISI变化组间差异未显著（P=0.1092）；体重和体成分无变化；CRP及部分次级生物标志物有变化。",
+          "limits": "自由生活膳食替代，样本有限；主要终点阴性、多个次级指标；不证明减重或治疗效益。",
+          "distance": "D0（牛油果整果替代膳食）"
+        }
+      ],
+      "unknowns": "品种和成熟度的市场营养差异；长期实际生活中将牛油果替代不同食物的临床结局；更大样本和不同人群可重复性。",
+      "tradition": "牛油果为现代引入的新果蔬，本轮未建立与传统本草古籍条目的直接对应；不将其他油脂或水果的传统资料套用于牛油果果肉。",
+      "queries": [
+        "Randomized controlled trials of whole fresh avocado consumption in adults and LDL cholesterol, glycemia or weight; exact dose, comparator, duration and DOI.",
+        "Systematic reviews of avocado intake randomized trials and official nutrient composition; distinguish whole avocado from avocado oil and supplements.",
+        "Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors DOI journal randomized controlled trial NCT02695433"
+      ],
+      "search_log": [
+        "检索全果牛油果的随机控制喂养研究与12周自由生活膳食替代研究；排除牛油果油、提取物和补充剂作为直接证据。",
+        "核实45人试验中的136 g/day、5周与膳食比较，并核实12周研究主要MISI终点组间差异未显著。",
+        "补充核实全题名与DOI；以哈斯牛油果成分综述/FoodData Central说明品种和可食重量差异。"
+      ]
+    }
+  }
+}
