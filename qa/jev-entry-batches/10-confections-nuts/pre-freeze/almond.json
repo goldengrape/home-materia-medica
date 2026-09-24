@@ -1,0 +1,10 @@
+{
+  "batch_id": "10-confections-nuts",
+  "entry_id": "almond",
+  "summary_ref": "references/entries/almond/summary.md",
+  "summary_sha256": "38acc89e6c8331be345490b7e2a5f65bd0afb87a86482482657c07fc8bc49b5e",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 巴旦木\n\n**身份。** 本条指甜扁桃（Prunus dulcis）可食种仁，中文商品常称巴旦木或甜杏仁；不与传统本草和中药语境中的“杏仁”（多指杏 Prunus armeniaca 核仁）直接等同。产品可为生、烘烤、盐焗或调味形态。\n\n**组成与暴露。** USDA FoodData Central 按生杏仁和烘烤/盐渍杏仁记录。商品上的“巴旦木”若为调味零食，应按具体配料和营养标签处理；临床试验的生杏仁不能代表糖衣或盐焗产品。 甜扁桃物种确认、是否去皮/烘烤/盐渍、每日份量、能量替代零食、人群基线HbA1c及干预时长。\n\n**直接人体证据。** 2024年16周随机平行试验纳入81名HbA1c偏高、糖尿病风险增加的成人，比较每日2盎司生杏仁与能量匹配零食。组间HbA1c及血糖指标未见显著差异；杏仁组饮食质量改善且试验未显示体重增加。样本、时长和替代零食限定了结论。\n\n**产品/成分证据。** 研究对象是糖尿病风险升高的成年人，暴露为每日2盎司原味生杏仁，比较对象为能量匹配零食。结果不能证明杏仁可降HbA1c，也不能推广到加糖杏仁零食或杏仁饮料。\n\n**共享背景。** 参见 tree-nuts-base；共享结论不自动等于本成品结论。\n\n**安全。** 巴旦木/甜扁桃属于树坚果过敏原；注意盐焗、糖衣及份量。若要讨论传统“杏仁”的止咳或润肺记载，应核对物种，不能直接套用给甜扁桃仁。\n\n**传统来源。** 只把本条识别为 Prunus dulcis 甜扁桃仁。本草“杏仁”通常涉及杏/山杏等核仁，未确认其与现代巴旦木为同一物，不继承传统功效或归经。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}

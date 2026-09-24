@@ -1,16 +1,18 @@
 # 开心果
 
-剥开硬壳，吃到的是一粒油润而略带甜味的种仁。本条主要谈原味开心果；盐焗品多了钠，糖衣品多了糖，不能把原味试验的结论原样搬给它们。
+开心果的临床资料主要来自糖尿病前期成人。2014年的4个月交叉试验以每日57克开心果构成等热量饮食，观察到空腹血糖、胰岛素和胰岛素抵抗指标下降；但整套饮食的脂肪与碳水比例也有改变。2024年的睡前加餐试验则未发现血糖、HbA1c或血脂的组间差异，只观察到饮食质量分数提高。两项研究都不能证明普通人吃开心果必然降糖；盐焗、糖衣和原味产品也不是同一种暴露。
 
-开心果在古书里并非全无踪迹。《本草拾遗》的文字经《本草纲目》转引，记它“辛、温、涩”，并提到去冷气等；《饮膳正要》则记必思答“甘”，有调中顺气之说。两组记录不完全一样，也没有查到可确认的古籍归经原文。本轮 Jev 分类偏向温、甘、辛；这些模型分数只表示分类倾向。传统记载可以如实并列，现代商品的性味仍需注意原料与加工差异。
+两项随机饮食试验均为 D0（开心果直接暴露），但限糖尿病前期人群、短期替代/加餐方案及代谢代理终点；结果不一致，不能推断长期疾病预防（E-C）。
 
-现代人体试验更容易回答的是具体指标。在部分代谢风险人群中，每天摄入数十克开心果并替代饮食中的其他食物，血脂、部分血糖指标或收缩压可能小幅改善（各结局 E-B）。血糖试验也有阴性结果，食用时机与对照餐很重要。数周至数月的试验没有发现把它合理纳入饮食就必然增重；这并非额外无限加量的保证。没有证据证明开心果能预防心血管病或糖尿病临床事件（E-0）。
+**安全与选择。** 先确认树坚果过敏；留意盐焗/糖衣产品的钠和糖。把开心果作为替代零食还是额外加餐，会改变总能量暴露。
 
-**本草按。** Jev 给出脾经及阳+方向的候选，但传统功用记录不是明确归脾的原文，现代代谢指标也不是中医证候；这一映射为 M-0，不写作“健脾”定论。已知开心果或腰果过敏者尤其要留意交叉反应；需要控制钠摄入时还应区分无盐与盐焗品。
+**本草按。** Jev v0.4 的四气 Choice 为**平**（原生倾向分数 0.99；Choice confidence 0.99），该项 M：M-0。五味原生分数靠前的是甘 0.13、咸 0.08；感官类推标为（甘 M-IV）。最高归经 Noul 为脾 0.08，完整方向结果见 Mapping 与 raw JSON。模型分数不是现实世界概率，也不能推成临床效应。
 
-研究底稿：[research.md](../references/entries/pistachio/research.md) · 分类与 M 记录：[mapping.md](../references/entries/pistachio/mapping.md)。
+现代常见开心果种仁不在本轮可核实的传统本草核心样本中；不借“坚果甘润”等类推建立稳定传统归经。
+
+研究底稿：[research.md](../references/entries/pistachio/research.md) · 冻结摘要：[summary.md](../references/entries/pistachio/summary.md) · Jev 与 M 记录：[mapping.md](../references/entries/pistachio/mapping.md)。
 
 **参考文献**
 
-1. Hadi A, et al. “Consumption of pistachio nuts positively affects lipid profiles: A systematic review and meta-analysis of randomized controlled trials.” *Critical Reviews in Food Science and Nutrition*. 2023;63(21):5358–5371. [doi:10.1080/10408398.2021.2018569](https://doi.org/10.1080/10408398.2021.2018569)
-2. Ashwini K, et al. “Effect of Premeal Pistachio Supplementation on Cardiometabolic Risk Factors among Asian Indian Adults with Prediabetes: A Randomized Controlled Trial.” *The Journal of Nutrition*. 2025. [doi:10.1016/j.tjnut.2024.12.005](https://doi.org/10.1016/j.tjnut.2024.12.005)
+1. Hernández-Alonso P, Salas-Salvadó J, Baldrich-Mora M, Juanola-Falgarona M, Bulló M. “Beneficial Effect of Pistachio Consumption on Glucose Metabolism, Insulin Resistance, Inflammation, and Related Metabolic Risk Markers: A Randomized Clinical Trial.” Diabetes Care. 2014;37(11):3098–3105. DOI: https://doi.org/10.2337/dc14-1431.
+2. Riley TM, Kris-Etherton PM, Hart T, Petersen K. “Intake of Pistachios as a Nighttime Snack Has Similar Effects on Short- and Longer-Term Glycemic Control Compared with Education to Consume 1–2 Carbohydrate Exchanges in Adults with Prediabetes: A 12-Wk Randomized Crossover Trial.” The Journal of Nutrition. 2024. DOI: https://doi.org/10.1016/j.tjnut.2024.01.021.
