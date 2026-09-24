@@ -1,4 +1,5 @@
 name: Jev coffee and soda batch v0.4
+# Keep all stage outputs committed to the batch branch for review.
 
 on:
   push:
