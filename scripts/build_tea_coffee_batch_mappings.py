@@ -9,6 +9,8 @@ from build_tea_coffee_batch_stage12 import PROFILES
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "qa/jev-tea-coffee-batch/raw"
+WORKFLOW_RUN_ID = 35977224331
+WORKFLOW_ARTIFACT_ID = 10798164414
 
 
 def render(entry_id: str, profile: dict) -> str:
@@ -61,8 +63,8 @@ requested_model: {data['requested_model']}
 actual_model: {run['actual_model']}
 repeat_count: {len(data['runs'])}
 run_timestamp_utc: {data['run_timestamp_utc']}
-workflow_run_id:  # filled from Actions metadata in QA log
-workflow_artifact_id:  # filled from Actions metadata in QA log
+workflow_run_id: {WORKFLOW_RUN_ID}
+workflow_artifact_id: {WORKFLOW_ARTIFACT_ID}
 native_result_ref: qa/jev-tea-coffee-batch/raw/{entry_id}.json
 ```
 

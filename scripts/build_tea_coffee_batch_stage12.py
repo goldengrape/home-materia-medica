@@ -184,7 +184,7 @@ PROFILES = {
         "evidence_body": "现有咖啡人体研究多测黑咖啡或按问卷估算混合咖啡；本轮 R1 未找到拿铁本身的直接临床试验。",
         "care": "按具体奶基底、shot数、糖浆和容量核对；有乳过敏或乳糖耐受问题者查看配料。",
         "body_refs": [
-            'Yong L, et al. “Quantitative probabilistic assessment of caffeine intake from tea in Chinese adult consumers based on nationwide caffeine content determination and tea consumption survey.” *Food and Chemical Toxicology*. 2022;165:113102. DOI: [10.1016/j.fct.2022.113102](https://doi.org/10.1016/j.fct.2022.113102). This measured tea-leaf samples, not sparkling tea.',
+            'Grioni S, Agnoli C, Sieri S, et al. “Espresso Coffee Consumption and Risk of Coronary Heart Disease in a Large Italian Cohort.” *PLOS ONE*. 2015;10(5):e0126550. DOI: [10.1371/journal.pone.0126550](https://doi.org/10.1371/journal.pone.0126550). The questionnaire estimated latte/cappuccino as 20% coffee and 80% milk; this was a study-specific assumption, not a universal recipe.',
         ],
         "taste_m": {"苦": "咖啡基底可能呈苦，牛乳、植物饮或糖浆改变风味，仅作感官类推。", "甘": "牛乳/植物饮与糖浆可产生甜感，具体产品不同，仅作感官类推。"},
     },

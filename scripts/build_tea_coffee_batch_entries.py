@@ -72,7 +72,9 @@ def main() -> None:
 
 **安全与选择。** {profile['care']}
 
-**本草按。** {reader_layer(entry_id)} {tradition}
+**本草按。** {reader_layer(entry_id, profile)}
+
+{tradition}
 
 研究底稿：[research.md](../references/entries/{entry_id}/research.md) · 冻结摘要：[summary.md](../references/entries/{entry_id}/summary.md) · Jev 与 M 记录：[mapping.md](../references/entries/{entry_id}/mapping.md)。
 
