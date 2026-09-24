@@ -71,13 +71,23 @@
 
 ### Evidence card 2 — source 2
 
-- **Design:** 准实验或短期对照干预；样本和设计随论文而异。
-- **Population:** 高脂血症女性或肥胖绝经前女性。
-- **Exposure:** 103–206 g/day或150 g/day的tempeh gembus（豆渣天贝胶）。
-- **Result:** 部分短期血脂、甘油三酯或胰岛素抵抗指标变化。
-- **Limits:** 原料是豆渣副产品、研究小而短，不能归因于普通大豆天贝。
-- **Distance:** D2（相关发酵豆制食品，但底物不同）
+- **Design:** 非等价对照组准实验；营养教育后干预14天。
+- **Population:** 41名高脂血症女性。
+- **Exposure:** 每日103 g或206 g豆渣天贝胶（tempeh gembus）；另设对照组。
+- **Result:** 两个剂量组的LDL-C和总胆固醇较基线下降；甘油三酯轻度上升。
+- **Limits:** 样本小、非随机等价对照、仅14天；原料为豆渣副产品而非普通大豆天贝。
+- **Distance:** D2（tempeh gembus，原料与普通天贝不同）
 - **Reference:** Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.
+
+### Evidence card 3 — source 3
+
+- **Design:** 随机前后对照组干预，28天。
+- **Population:** 40名肥胖的绝经前女性。
+- **Exposure:** 每日150 g加工tempeh gembus，并与等能量标准饮食比较。
+- **Result:** 研究报告甘油三酯与胰岛素抵抗指标在干预组出现短期变化。
+- **Limits:** 样本小、短期和特定豆渣制品；不能推及普通大豆天贝或长期临床结局。
+- **Distance:** D2（tempeh gembus，底物不同）
+- **Reference:** Nadia FS, Wati DA, Isnawati M, Sulchan M, Afifah DN. “The effect of processed Tempeh Gembus to triglycerides levels and insulin resistance status in women with obesity.” Food Research. 2020. DOI: https://doi.org/10.26656/fr.2017.4(4).415.
 
 
 样品、产地、品牌、剂量、研究时间、比较组和终点不得超出原研究外推；体外或标签分析不升级为人群效应。若原文报告利益冲突或产品/菌株特异性，按限制项保留。
@@ -102,5 +112,6 @@
 
 1. Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.
 2. Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.
-3. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
-4. U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/.
+3. Nadia FS, Wati DA, Isnawati M, Sulchan M, Afifah DN. “The effect of processed Tempeh Gembus to triglycerides levels and insulin resistance status in women with obesity.” Food Research. 2020. DOI: https://doi.org/10.26656/fr.2017.4(4).415.
+4. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+5. U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/.
