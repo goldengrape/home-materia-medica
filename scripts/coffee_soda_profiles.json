@@ -1,0 +1,243 @@
+{
+  "caramel-macchiato": {
+    "name": "焦糖玛奇朵",
+    "family": "coffee",
+    "identity": "espresso、牛乳、香草糖浆与焦糖酱组合的咖啡馆饮品；不等同传统 espresso macchiato。冷热与门店配方不同。",
+    "variables": "shot数、奶量/奶种、糖浆、焦糖酱、杯型改变咖啡因、糖、能量及过敏原。",
+    "composition": "无统一配方或营养值；Starbucks 热款只是单品牌例子，列有牛乳、espresso、香草糖浆、焦糖酱。",
+    "direct": "R1 未找到固定焦糖玛奇朵的人体干预或长期结局。咖啡店 latte/latte macchiato 样品不是加糖浆后的本条成品。",
+    "specific": "特许咖啡店样品研究发现咖啡因/多酚剂量随杯量变化；没有分析所有焦糖玛奇朵配方。",
+    "safety": "按杯型、shot、糖浆及奶类查看配料表。",
+    "body": "焦糖玛奇朵是配方型咖啡饮品，常见组合包含 espresso、牛乳、香草糖浆与焦糖酱；不同店家的做法并不相同。咖啡因随 shot 数改变，糖和能量随酱料与杯型改变。",
+    "evidence_body": "门店样品调查不代表全部品牌；未找到本条配方临床试验。",
+    "care": "以当前商品标签核对杯型、shot、奶类和糖浆/酱料。",
+    "taste_m": {
+      "苦": "espresso 可呈苦，奶与糖浆改变感官，仅作类推。",
+      "甘": "糖浆与焦糖酱形成甜感，因店而异，仅作类推。"
+    },
+    "refs": [
+      "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231.",
+      "Caramel Macchiato: Nutrition. Starbucks Coffee Company. https://www.starbucks.com/menu/product/413/hot/nutrition. Single-product recipe example; accessed 2026-09-24."
+    ],
+    "body_refs": [
+      "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231.",
+      "Caramel Macchiato: Nutrition. Starbucks Coffee Company. https://www.starbucks.com/menu/product/413/hot/nutrition. Single-product recipe example; accessed 2026-09-24."
+    ]
+  },
+  "oat-latte": {
+    "name": "燕麦拿铁",
+    "family": "coffee",
+    "identity": "以 espresso 和燕麦饮调制的拿铁；燕麦饮的糖、油脂、β-葡聚糖、盐和强化营养素依品牌而异。",
+    "variables": "shot数、杯量、燕麦饮品牌、是否加糖浆及冷热制法改变成分。",
+    "composition": "没有统一营养值；不能仅凭植物来源推定无糖或低能量。",
+    "direct": "未找到燕麦拿铁本身的临床试验。燕麦饮替代牛乳试验不是 espresso 复合成品。",
+    "specific": "小型成人研究比较燕麦饮、大豆饮与牛乳；2026 年试验比较燕麦饮与牛乳，均非燕麦拿铁干预。",
+    "safety": "查看燕麦饮配料、添加糖、咖啡因和杯量；替代乳品不等于营养等量。",
+    "body": "燕麦拿铁由 espresso 与燕麦饮调制；燕麦饮品牌、是否加糖和杯型会改变成分。小型燕麦饮替代牛乳研究测试的是单独饮品，不能据此认定燕麦拿铁有特定临床效果。",
+    "evidence_body": "未找到燕麦拿铁成品人体试验；燕麦饮替代研究属相邻证据。",
+    "care": "核对燕麦饮糖、脂肪、盐、强化营养素及 espresso shot 数。",
+    "taste_m": {
+      "苦": "咖啡基底可呈苦，燕麦饮影响口感，仅作类推。",
+      "甘": "燕麦饮或添加糖可带甜感，产品不同，仅作类推。"
+    },
+    "refs": [
+      "Önning G, Åkesson B, Öste R, Lundquist I. “Effects of Consumption of Oat Milk, Soya Milk, or Cow’s Milk on Plasma Lipids and Antioxidative Capacity in Healthy Subjects.” Annals of Nutrition and Metabolism. 1998;42(4):211–220. DOI: https://doi.org/10.1159/000012736.",
+      "Rosendahl-Riise H, et al. “Cow’s Milk Compared to Oat Drink and Its Implications for Lipid Profile—A Pilot Randomized Controlled Trial.” Nutrition Journal. 2026. DOI: https://doi.org/10.1186/s12937-026-01314-w. Tested oat drink, not oat latte."
+    ],
+    "body_refs": [
+      "Önning G, Åkesson B, Öste R, Lundquist I. “Effects of Consumption of Oat Milk, Soya Milk, or Cow’s Milk on Plasma Lipids and Antioxidative Capacity in Healthy Subjects.” Annals of Nutrition and Metabolism. 1998;42(4):211–220. DOI: https://doi.org/10.1159/000012736.",
+      "Rosendahl-Riise H, et al. “Cow’s Milk Compared to Oat Drink and Its Implications for Lipid Profile—A Pilot Randomized Controlled Trial.” Nutrition Journal. 2026. DOI: https://doi.org/10.1186/s12937-026-01314-w. Tested oat drink, not oat latte."
+    ]
+  },
+  "coconut-latte": {
+    "name": "椰乳拿铁",
+    "family": "coffee",
+    "identity": "espresso 与椰基饮品组合；饮料型椰子基底与罐装椰浆稀释品的脂肪和能量可能差别很大。",
+    "variables": "椰基类型、稀释度、脂肪、糖、稳定剂、shot 数与杯量改变组成。",
+    "composition": "无统一营养值；咖啡馆椰子饮与烹调椰浆不是同一配方。",
+    "direct": "未找到椰乳拿铁人体临床试验。其他椰子饮或普通咖啡研究不能直接说明复合饮品效果。",
+    "specific": "2026 实验室研究比较牛乳、大豆、杏仁与椰子基底在咖啡中的理化与感官指标，没有人体干预。",
+    "safety": "查看椰基产品配料、添加糖、脂肪与每份咖啡因。",
+    "body": "椰乳拿铁以 espresso 和椰基饮品组合，但咖啡馆的椰子饮与高脂椰浆并非同一配方。实验室咖啡混合研究观察到植物基种类与比例会影响理化和感官表现；本轮未找到本条饮品人体试验。",
+    "evidence_body": "实验室样品不是人体试验，也不能代表所有配方。",
+    "care": "核对椰基产品成分、糖、脂肪、espresso shot 数和杯型。",
+    "taste_m": {
+      "苦": "咖啡可呈苦，椰基饮改变风味，仅作类推。",
+      "甘": "椰基饮或糖浆可带甜感，因产品而异，仅作类推。"
+    },
+    "refs": [
+      "“Comparative Effects of Dairy and Plant-Based Milk Addition on Physicochemical, Functional, and Sensory Properties of Coffee Beverage.” Applied Food Research. 2026. DOI: https://doi.org/10.1016/j.afres.2026.101926.",
+      "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231."
+    ],
+    "body_refs": [
+      "“Comparative Effects of Dairy and Plant-Based Milk Addition on Physicochemical, Functional, and Sensory Properties of Coffee Beverage.” Applied Food Research. 2026. DOI: https://doi.org/10.1016/j.afres.2026.101926.",
+      "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231."
+    ]
+  },
+  "instant-coffee": {
+    "name": "速溶咖啡",
+    "family": "coffee",
+    "identity": "经萃取、浓缩与干燥制成的咖啡产品；纯咖啡颗粒与含糖植脂末预混包是不同对象。",
+    "variables": "品牌、豆种、冻干/喷雾干燥、每杯粉量、奶糖与冲调量影响咖啡因和营养。",
+    "composition": "咖啡因和加工产物随产品而异；预混包还含糖、奶精等。",
+    "direct": "通用咖啡研究不等于某款速溶咖啡；未找到类别级直接长期试验。",
+    "specific": "HPLC 检测马来西亚市场 15 款速溶咖啡，每份咖啡因 36.43–183.33 mg。其他研究检测速溶样品丙烯酰胺，不能从化学含量推定疾病风险。",
+    "safety": "区分纯速溶咖啡与三合一；按标签粉量与杯数合计咖啡因。",
+    "body": "速溶咖啡以干燥咖啡萃取物冲调；马来西亚市场 15 款样品的每份咖啡因差异较大，约 36–183 mg，不能视为所有品牌固定值。三合一预混品另含糖或奶精。",
+    "evidence_body": "成分样本有地域和品牌边界；未找到纯速溶咖啡类别级临床因果试验。",
+    "care": "阅读是否含糖、奶精及每包冲调份量；咖啡因按多杯总量核算。",
+    "taste_m": {
+      "苦": "黑速溶咖啡可呈苦，浓度因冲调而变，仅作感官类推。"
+    },
+    "refs": [
+      "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5.",
+      "“Acrylamide and HMF Occurrence and Bioaccessibility in Instant Coffee and Coffee Substitutes. A Study on Isolated and Milk-Combined Beverages.” Food Research International. 2024. DOI: https://doi.org/10.1016/j.foodres.2024.114886."
+    ],
+    "body_refs": [
+      "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5.",
+      "“Acrylamide and HMF Occurrence and Bioaccessibility in Instant Coffee and Coffee Substitutes. A Study on Isolated and Milk-Combined Beverages.” Food Research International. 2024. DOI: https://doi.org/10.1016/j.foodres.2024.114886."
+    ]
+  },
+  "three-in-one-coffee": {
+    "name": "三合一咖啡",
+    "family": "coffee",
+    "identity": "通常将速溶咖啡、糖和植脂末/奶精预混的即冲粉；品牌配方可能不同。",
+    "variables": "咖啡粉、糖/甜味剂、植脂末、包重与冲水量改变咖啡因、糖、能量与脂肪。",
+    "composition": "无统一糖或咖啡因值。马来西亚抽样 13 款咖啡预混粉，总糖 29–90.33 g/100 g；粉末每 100 克不可直接当作一包冲调值。",
+    "direct": "未找到三合一咖啡固定配方临床试验。",
+    "specific": "马来西亚一项 HPLC 研究分析 34 款即冲预混饮（13 款咖啡）；包装标示与检测值并非总是一致。样本不代表现售全球品牌。",
+    "safety": "核对每包糖、奶精、饱和脂肪与冲调份量；一包一杯不表示含量低。",
+    "body": "三合一咖啡通常将速溶咖啡、糖和奶精预混，但品牌配方不同。马来西亚产品抽样测到咖啡类预混粉糖量差异很大；粉末每 100 克不能直接替代一包冲调后的营养值。",
+    "evidence_body": "产品成分抽样不是人体试验，也不代表现售全球品牌。",
+    "care": "按包重和标签计算糖、能量、脂肪、咖啡因；不要套用纯黑速溶咖啡数据。",
+    "taste_m": {
+      "苦": "咖啡底可能呈苦，配料改变强度，仅作类推。",
+      "甘": "该类预混包常含糖，甜感随品牌变化，仅作类推。"
+    },
+    "refs": [
+      "Ahmad NN. “Sugar Composition Profile Analysis on Ready Pre-Packaged Beverage Drinks.” Universiti Sains Malaysia, 2015. https://erepo.usm.my/handle/123456789/19011.",
+      "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5."
+    ],
+    "body_refs": [
+      "Ahmad NN. “Sugar Composition Profile Analysis on Ready Pre-Packaged Beverage Drinks.” Universiti Sains Malaysia, 2015. https://erepo.usm.my/handle/123456789/19011.",
+      "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5."
+    ]
+  },
+  "decaf-coffee": {
+    "name": "无咖啡因咖啡",
+    "family": "coffee",
+    "identity": "经脱咖啡因加工、仍保留咖啡其他成分；名称通常不意味着分析值严格为零。",
+    "variables": "脱因方法、豆种、批次、粉量、萃取和杯型影响残余咖啡因。",
+    "composition": "残余咖啡因无通用杯量值；零售和门店样品可测到不同浓度。",
+    "direct": "随机交叉试验纳入 63 名自认咖啡因敏感成人，比较晚餐后 90 mg 咖啡因咖啡与含 4.5 mg 咖啡因脱因咖啡；前者睡眠较差。结果只对应所测样品。",
+    "specific": "门店抽样的 16 oz 脱因咖啡测得 0–13.9 mg 咖啡因；旧样本不代表今天所有品牌，但说明不是必然零。",
+    "safety": "敏感者仍考虑残余量和其他来源；具体含量看品牌或检测。",
+    "body": "脱咖啡因咖啡经加工降低咖啡因，但不能只凭名称认定为零。门店样本分析曾在 16 oz 脱因咖啡中测到 0–13.9 mg；品种、份量和制作会造成差异。",
+    "evidence_body": "小型交叉试验只比较特定晚间咖啡剂量与脱因样品，不代表所有脱因产品统一睡眠效果。",
+    "care": "咖啡因敏感者仍把残余咖啡因和其他来源计入。",
+    "taste_m": {
+      "苦": "脱因咖啡仍是咖啡饮品，可有苦味，仅作感官类推。"
+    },
+    "refs": [
+      "McCusker RR, Goldberger BA, Cone EJ. “Caffeine Content of Decaffeinated Coffee.” Journal of Analytical Toxicology. 2006;30(8):611–613. DOI: https://doi.org/10.1093/jat/30.8.611.",
+      "Lloret-Linares C, et al. “Does a Single Cup of Coffee at Dinner Alter the Sleep? A Controlled Cross-Over Randomised Trial in Real-Life Conditions.” Nutrition & Dietetics. 2012. DOI: https://doi.org/10.1111/j.1747-0080.2012.01601.x."
+    ],
+    "body_refs": [
+      "McCusker RR, Goldberger BA, Cone EJ. “Caffeine Content of Decaffeinated Coffee.” Journal of Analytical Toxicology. 2006;30(8):611–613. DOI: https://doi.org/10.1093/jat/30.8.611.",
+      "Lloret-Linares C, et al. “Does a Single Cup of Coffee at Dinner Alter the Sleep? A Controlled Cross-Over Randomised Trial in Real-Life Conditions.” Nutrition & Dietetics. 2012. DOI: https://doi.org/10.1111/j.1747-0080.2012.01601.x."
+    ]
+  },
+  "cola": {
+    "name": "可乐",
+    "family": "soda",
+    "identity": "本条默认常规含糖可乐，无糖可乐已有独立条目；以碳酸水、甜味来源、酸味剂与香料组成。",
+    "variables": "容量、糖、磷酸/柠檬酸、咖啡因与品牌改变暴露。",
+    "composition": "品牌配方不同；本轮未做市场营养抽样，含糖和咖啡因以标签为准。",
+    "direct": "224 名超重/肥胖青少年参与减少多种含糖饮料的一年干预；一年 BMI 增加较小，但两年主要结局无组间差异。研究非可乐专属。",
+    "specific": "体外牙齿实验比较特定 Coca-Cola、Coca-Cola light、Sprite 等；连续浸泡七天不等于日常口腔暴露。",
+    "safety": "查看每份糖、能量、酸味剂和咖啡因；少做长时间反复啜饮。",
+    "body": "本条指常规含糖可乐；无糖可乐另有独立条目。一项青少年随机干预研究考察减少多种含糖饮料，未单独测试可乐；一年 BMI 增幅差异在两年随访时不再显著。品牌配方需看标签。",
+    "evidence_body": "含糖饮料试验不是可乐专属；牙釉质数据来自特定样品体外暴露。",
+    "care": "按标签看每份糖、容量和咖啡因；常规款与无糖款不互相代替研究结论。",
+    "taste_m": {
+      "甘": "含糖可乐有甜味依据，甜味来源依品牌，仅作感官类推。"
+    },
+    "refs": [
+      "Ebbeling CB, Feldman HA, Chomitz VR, et al. “A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight.” New England Journal of Medicine. 2012;367:1407–1416. DOI: https://doi.org/10.1056/NEJMoa1203388.",
+      "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462."
+    ],
+    "body_refs": [
+      "Ebbeling CB, Feldman HA, Chomitz VR, et al. “A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight.” New England Journal of Medicine. 2012;367:1407–1416. DOI: https://doi.org/10.1056/NEJMoa1203388.",
+      "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462."
+    ]
+  },
+  "lemon-soda": {
+    "name": "柠檬汽水",
+    "family": "soda",
+    "identity": "以柠檬/柑橘风味和碳酸水为核心；可能含糖、甜味剂、柠檬酸或其他酸味剂。",
+    "variables": "果汁比例、糖、酸度、容量与频率改变营养和牙齿酸暴露；柠檬味不证明含果汁。",
+    "composition": "未找到代表全品类的糖/酸度抽样；看标签与配料。",
+    "direct": "未找到柠檬汽水本身的人体临床结局试验。一般含糖饮料干预或柠檬汁研究不等于本条成品。",
+    "specific": "牙釉质实验包含一种 lemon-lime soda（Sprite）与其他饮料，连续体外暴露后样品侵蚀不同；不能代表所有柠檬汽水。",
+    "safety": "查看添加糖与酸味剂；减少整日持续啜饮酸性饮料。",
+    "body": "柠檬汽水可能含糖/甜味剂及柠檬酸，具体配方不统一。体外牙釉质实验测过一种 lemon-lime 汽水，但长时间浸泡不能换算为真实饮用者牙齿损伤或全品类效果。",
+    "evidence_body": "指定品牌的体外样品不能代表全品类，也没有临床结局。",
+    "care": "看配料和每份糖；避免整日持续啜饮并保持口腔护理。",
+    "taste_m": {
+      "酸": "柠檬风味/酸味剂可形成酸感，强度依配方，仅作类推。",
+      "甘": "许多商业款含甜味来源，但无糖款存在，仅作类推。"
+    },
+    "refs": [
+      "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462.",
+      "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x."
+    ],
+    "body_refs": [
+      "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462.",
+      "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x."
+    ]
+  },
+  "soda-water": {
+    "name": "苏打水",
+    "family": "soda",
+    "identity": "商业名称可能指含碳酸氢钠/矿物盐的水，也可能泛指加压碳酸水；依标签确认矿物质。",
+    "variables": "碳酸氢钠、其他矿物质、是否充气、糖/香料决定钠与成分。",
+    "composition": "不是单一标准配方；含碳酸氢钠时钠量按标签，本轮无代表性抽样。",
+    "direct": "未找到普通商业苏打水类别临床试验。富碳酸氢盐矿泉水试验不能转用于任意苏打水。",
+    "specific": "家用苏打机碳酸水曾用于预处理牙釉质材料的实验；不是健康完整牙齿临床试验，也不代表所有矿盐商品。",
+    "safety": "限钠者查看钠含量；不凭“苏打”推断调酸或治疗疾病。",
+    "body": "“苏打水”可能指含碳酸氢盐/矿物盐的水，也可能泛称碳酸水；应看钠与矿物质含量。R1 未找到普通苏打水类别临床试验；特定矿泉水研究不能移作任意商品效果。",
+    "evidence_body": "预处理牙釉质实验不等于完整牙齿临床结局；特定矿泉水也不是普通商品直接证据。",
+    "care": "限钠者查看每份钠量；不要把普通苏打水当作治疗剂。",
+    "taste_m": {},
+    "refs": [
+      "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48.",
+      "Labenz J, Anschütz M, Walstab J, et al. “Heartburn Relief with Bicarbonate-Rich Mineral Water: Results of the Randomised, Placebo-Controlled Phase-III Trial STOMACH STILL.” BMJ Open Gastroenterology. 2023;10:e001048. DOI: https://doi.org/10.1136/bmjgast-2022-001048. This composition-defined mineral water is not generic soda water."
+    ],
+    "body_refs": [
+      "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48.",
+      "Labenz J, Anschütz M, Walstab J, et al. “Heartburn Relief with Bicarbonate-Rich Mineral Water: Results of the Randomised, Placebo-Controlled Phase-III Trial STOMACH STILL.” BMJ Open Gastroenterology. 2023;10:e001048. DOI: https://doi.org/10.1136/bmjgast-2022-001048. This composition-defined mineral water is not generic soda water."
+    ]
+  },
+  "sparkling-water": {
+    "name": "气泡水",
+    "family": "soda",
+    "identity": "水中溶解二氧化碳形成气泡；可为无添加原味、矿泉水型或另加香料/果酸/甜味剂的调味型。",
+    "variables": "水源矿物质、CO₂、果酸、糖/甜味剂与品牌不同；品名不决定配方。",
+    "composition": "原味与调味款应区分；未找到覆盖全品类营养/酸度抽样。",
+    "direct": "未找到气泡水本身的人体长期临床结局。气体口感或补水用途不等同疾病预防。",
+    "specific": "英国市场数种调味气泡水的体外样品 pH 2.74–3.34 并显示侵蚀潜力；该结果不是无添加原味气泡水酸度。",
+    "safety": "区分原味与调味款，查看果酸、糖/甜味剂；按个人耐受选择。",
+    "body": "气泡水可能是无添加原味水，也可能另含香料、果酸或甜味剂。英国市场调味气泡水的实验样品呈酸性并显示体外侵蚀潜力；这不等于原味气泡水或日常个人牙齿损伤。",
+    "evidence_body": "牙釉质结果来自有限品牌的调味水或实验碳酸水，不是临床健康试验。",
+    "care": "查看具体商品酸味剂和甜味成分；不把原味和调味品混同。",
+    "taste_m": {},
+    "refs": [
+      "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x.",
+      "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48."
+    ],
+    "body_refs": [
+      "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x.",
+      "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48."
+    ]
+  }
+}

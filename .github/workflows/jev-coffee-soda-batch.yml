@@ -1,0 +1,65 @@
+name: Jev coffee and soda batch v0.4
+
+on:
+  push:
+    branches:
+      - feat/coffee-soda-beverage-batch-2026-09-24
+    paths:
+      - .github/workflows/jev-coffee-soda-batch.yml
+      - scripts/build_coffee_soda_batch_stage12.py
+      - scripts/freeze_coffee_soda_batch.py
+      - scripts/run_jev_coffee_soda_batch.py
+      - scripts/build_coffee_soda_batch_results.py
+      - scripts/coffee_soda_profiles.json
+      - qa/coffee-soda-summary-sha256.txt
+      - qa/jev-coffee-soda-batch/pre-freeze/*.json
+      - references/entries/*/summary.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify environment secret
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        run: |
+          test -n "${JEV_API_KEY:-}" || { echo "::error::API_KEYS did not provide JEV_API_KEY"; exit 1; }
+      - name: Build research dossiers and summaries
+        run: python scripts/build_coffee_soda_batch_stage12.py
+      - name: Freeze stage-2 summaries
+        run: python scripts/freeze_coffee_soda_batch.py
+      - name: Classify ten frozen summaries
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-latest
+          JEV_REPEATS: "1"
+        run: python scripts/run_jev_coffee_soda_batch.py
+      - name: Preserve untouched native Jev responses
+        id: raw
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jev-coffee-soda-native-v0.4
+          path: qa/jev-coffee-soda-batch/raw/*.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Build mappings and reader entries
+        if: success() && steps.raw.outputs.artifact-id != ''
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          WORKFLOW_ARTIFACT_ID: ${{ steps.raw.outputs.artifact-id }}
+        run: python scripts/build_coffee_soda_batch_results.py --workflow-run-id "$WORKFLOW_RUN_ID" --workflow-artifact-id "$WORKFLOW_ARTIFACT_ID"
+      - name: Commit all stage outputs to feature branch
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/jev-coffee-soda-batch.yml scripts/coffee_soda_profiles.json scripts/build_coffee_soda_batch_stage12.py scripts/freeze_coffee_soda_batch.py scripts/run_jev_coffee_soda_batch.py scripts/build_coffee_soda_batch_results.py qa/coffee-soda-batch-2026-09-24.md qa/coffee-soda-summary-sha256.txt qa/jev-coffee-soda-batch references/shared/soft-drink-base/research.md references/entries entries
+          git diff --cached --quiet || { git commit -m "Preserve Jev coffee and soda batch outputs" && git push origin "HEAD:${GITHUB_REF_NAME}"; }
