@@ -143,7 +143,15 @@
 
 ## Actions 运行记录
 
-- 首轮完整运行 35997042911：success；stage artifact 10806229213（entry-10-confections-nuts-stages-1-2），native Jev artifact 10806612454（entry-10-confections-nuts-native-jev-v0.4），30 天保留。
-- 修订摘要后的运行 35998139288：failure；stage artifact 10806528205，native artifact 10807360083（均 30 天保留）。流水线校验发现既有开心果 raw JSON 对应旧摘要 SHA-256，因此未把旧答案冒充新摘要结果；该原始响应已归档至 raw/superseded/，本次重新分类会基于更新摘要运行。
-- 补充 Exa 检索核验 2025 开心果餐前 RCT：1 次查询，返回 5 条；详情及纳入/排除判断见 stage/pistachio-source-check-2026-09-24.md。
-- 原始响应与摘要按 SHA-256 绑定；首轮校验通过的其他九项响应按各自冻结摘要复用。本次 Actions 成功后补记当前 artifact、模型版本、raw 哈希和最终 QA 结果。
+待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+
+## 判与写完成记录
+
+- Workflow run: 35998620791; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10807635500; uploaded by this run with 30-day retention.
+- Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
+- Per-file raw JSON SHA-256: qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt.
+- Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
+- Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
+- catalog/entries.yaml updated with this batch's ten frozen entries.
+- Workflow run 35998620791: status success; intermediate and native artifacts are retained for 30 days where uploaded.

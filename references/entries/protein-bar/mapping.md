@@ -15,8 +15,8 @@ requested_model: jev-latest
 actual_model: jev-1.13.0
 repeat_count: 1
 run_timestamp_utc: 2026-09-24T12:07:09.801128+00:00
-workflow_run_id: 35997042911
-workflow_artifact_id: 10806612454
+workflow_run_id: 35998620791
+workflow_artifact_id: 10807635500
 native_result_ref: qa/jev-entry-batches/10-confections-nuts/raw/protein-bar.json
 
 ## 四气
