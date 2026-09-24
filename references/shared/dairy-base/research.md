@@ -1,7 +1,7 @@
 # Research Parent — 牛乳与发酵乳
 
 > entry_type: research_parent；publish: false；evidence_cutoff: 2026-09-24  
-> child_entries: fresh-milk, low-fat-milk, skim-milk, a2-milk, high-protein-milk, lactose-free-milk, greek-yogurt, high-protein-yogurt  
+> child_entries: fresh-milk, low-fat-milk, skim-milk, a2-milk, high-protein-milk, lactose-free-milk, greek-yogurt, high-protein-yogurt   , milk-cap, kefir
 > inheritance_rule: regrade_D_on_use
 
 ## 共享身份边界
