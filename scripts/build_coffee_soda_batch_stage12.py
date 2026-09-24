@@ -147,6 +147,10 @@ Each child entry must independently judge identity, dose and directness. No sing
 - 柠檬汽水实验只代表指定品牌与体外条件。
 - 苏打水按标签确认矿物盐/碳酸氢盐；气泡水区分原味与调味。
  
+## 初次运行记录
+
+- 2026-09-24，workflow run 35981400606 首次尝试在 Research Dossier 阶段因配置缺少 `queries` 字段中止；`API_KEYS/JEV_API_KEY` 预检通过，冻结、Jev 分类、Mapping 与正文阶段均未执行，因此没有产生原始分类结果。修复配置后重跑。
+
 ## Actions 与写作 QA
 
 待补录 workflow run、artifact、raw 哈希、模型版本、答案数与正文检查结果。

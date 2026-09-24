@@ -22,6 +22,11 @@
     "body_refs": [
       "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231.",
       "Caramel Macchiato: Nutrition. Starbucks Coffee Company. https://www.starbucks.com/menu/product/413/hot/nutrition. Single-product recipe example; accessed 2026-09-24."
+    ],
+    "queries": [
+      "Starbucks Caramel Macchiato ingredients nutrition official",
+      "caramel macchiato coffee caffeine sugar clinical study",
+      "Polyphenols vs Caffeine in Coffee from Franchise Coffee Shops 2024"
     ]
   },
   "oat-latte": {
@@ -47,6 +52,11 @@
     "body_refs": [
       "Önning G, Åkesson B, Öste R, Lundquist I. “Effects of Consumption of Oat Milk, Soya Milk, or Cow’s Milk on Plasma Lipids and Antioxidative Capacity in Healthy Subjects.” Annals of Nutrition and Metabolism. 1998;42(4):211–220. DOI: https://doi.org/10.1159/000012736.",
       "Rosendahl-Riise H, et al. “Cow’s Milk Compared to Oat Drink and Its Implications for Lipid Profile—A Pilot Randomized Controlled Trial.” Nutrition Journal. 2026. DOI: https://doi.org/10.1186/s12937-026-01314-w. Tested oat drink, not oat latte."
+    ],
+    "queries": [
+      "Effects of Consumption of Oat Milk Soya Milk Cow's Milk plasma lipids healthy subjects 1998",
+      "Cow's Milk Compared to Oat Drink randomized controlled trial Nutrition Journal 2026",
+      "oat latte espresso oat drink clinical trial"
     ]
   },
   "coconut-latte": {
@@ -72,6 +82,11 @@
     "body_refs": [
       "“Comparative Effects of Dairy and Plant-Based Milk Addition on Physicochemical, Functional, and Sensory Properties of Coffee Beverage.” Applied Food Research. 2026. DOI: https://doi.org/10.1016/j.afres.2026.101926.",
       "Wierzejska RE, Gielecińska I, Hallmann E, Wojda B. “Polyphenols vs. Caffeine in Coffee from Franchise Coffee Shops: Which Serving of Coffee Provides the Optimal Amount of This Compounds to the Body.” Molecules. 2024;29(10):2231. DOI: https://doi.org/10.3390/molecules29102231."
+    ],
+    "queries": [
+      "Comparative Effects Dairy Plant-Based Milk Addition coffee coconut 2026 Applied Food Research",
+      "coconut beverage latte nutrition ingredients coffee clinical study",
+      "coffee shop espresso milk caffeine serving size study"
     ]
   },
   "instant-coffee": {
@@ -96,6 +111,11 @@
     "body_refs": [
       "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5.",
       "“Acrylamide and HMF Occurrence and Bioaccessibility in Instant Coffee and Coffee Substitutes. A Study on Isolated and Milk-Combined Beverages.” Food Research International. 2024. DOI: https://doi.org/10.1016/j.foodres.2024.114886."
+    ],
+    "queries": [
+      "High-Performance Liquid Chromatography Caffeine Trigonelline Instant Coffee Malaysian Market Study 2025",
+      "Acrylamide HMF Occurrence Bioaccessibility Instant Coffee 2024",
+      "instant coffee caffeine mg per serving market survey"
     ]
   },
   "three-in-one-coffee": {
@@ -121,6 +141,11 @@
     "body_refs": [
       "Ahmad NN. “Sugar Composition Profile Analysis on Ready Pre-Packaged Beverage Drinks.” Universiti Sains Malaysia, 2015. https://erepo.usm.my/handle/123456789/19011.",
       "Lee YM, Cheng CCX, Wong LC. “High-Performance Liquid Chromatography Analysis of Caffeine and Trigonelline in Instant Coffee: A Malaysian Market Study.” Malaysian Journal of Science. 2025;44(4). DOI: https://doi.org/10.22452/mjs.vol44no4.5."
+    ],
+    "queries": [
+      "Sugar Composition Profile Analysis Ready Pre-Packaged Beverage Drinks 2015 Ahmad",
+      "three in one coffee premix sugar content HPLC Malaysia",
+      "instant coffee creamer sugar label sugar composition premixed beverage"
     ]
   },
   "decaf-coffee": {
@@ -145,6 +170,11 @@
     "body_refs": [
       "McCusker RR, Goldberger BA, Cone EJ. “Caffeine Content of Decaffeinated Coffee.” Journal of Analytical Toxicology. 2006;30(8):611–613. DOI: https://doi.org/10.1093/jat/30.8.611.",
       "Lloret-Linares C, et al. “Does a Single Cup of Coffee at Dinner Alter the Sleep? A Controlled Cross-Over Randomised Trial in Real-Life Conditions.” Nutrition & Dietetics. 2012. DOI: https://doi.org/10.1111/j.1747-0080.2012.01601.x."
+    ],
+    "queries": [
+      "Caffeine Content of Decaffeinated Coffee McCusker 2006 DOI",
+      "Does a Single Cup of Coffee at Dinner Alter the Sleep decaffeinated coffee 2012 crossover",
+      "decaffeinated coffee residual caffeine serving analysis"
     ]
   },
   "cola": {
@@ -169,6 +199,11 @@
     "body_refs": [
       "Ebbeling CB, Feldman HA, Chomitz VR, et al. “A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight.” New England Journal of Medicine. 2012;367:1407–1416. DOI: https://doi.org/10.1056/NEJMoa1203388.",
       "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462."
+    ],
+    "queries": [
+      "A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight 2012 DOI",
+      "Coca-Cola original product ingredients nutrition caffeine sugar official",
+      "cola sugar beverage trial cola-specific clinical outcomes"
     ]
   },
   "lemon-soda": {
@@ -194,6 +229,11 @@
     "body_refs": [
       "Zimmer S, Kirchner G, Bizhang M, Benedix M. “Influence of Various Acidic Beverages on Tooth Erosion: Evaluation by a New Method.” PLOS ONE. 2015;10(6):e0129462. DOI: https://doi.org/10.1371/journal.pone.0129462.",
       "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x."
+    ],
+    "queries": [
+      "lemon soda beverage nutrition citric acid ingredients official",
+      "Influence of Various Acidic Beverages on Tooth Erosion Sprite Coca-Cola 2015 in vitro",
+      "soft drink lemon flavor dental erosion beverage experiment"
     ]
   },
   "soda-water": {
@@ -216,6 +256,11 @@
     "body_refs": [
       "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48.",
       "Labenz J, Anschütz M, Walstab J, et al. “Heartburn Relief with Bicarbonate-Rich Mineral Water: Results of the Randomised, Placebo-Controlled Phase-III Trial STOMACH STILL.” BMJ Open Gastroenterology. 2023;10:e001048. DOI: https://doi.org/10.1136/bmjgast-2022-001048. This composition-defined mineral water is not generic soda water."
+    ],
+    "queries": [
+      "bicarbonate-rich mineral water heartburn randomized trial 2022 DOI 10.1136/bmjgast-2022-001048",
+      "Effect of Carbonated Water Manufactured by a Soda Carbonator enamel 2018",
+      "soda water sodium bicarbonate product label ingredients"
     ]
   },
   "sparkling-water": {
@@ -238,6 +283,11 @@
     "body_refs": [
       "Brown CJ, Smith G, Shaw L, Parry J, Smith AJ. “The Erosive Potential of Flavoured Sparkling Water Drinks.” International Journal of Paediatric Dentistry. 2007;17(2):86–91. DOI: https://doi.org/10.1111/j.1365-263X.2006.00784.x.",
       "Ryu H, Kim Y, Heo S, Kim S. “Effect of Carbonated Water Manufactured by a Soda Carbonator on Etched or Sealed Enamel.” The Korean Journal of Orthodontics. 2018;48(1):48–56. DOI: https://doi.org/10.4041/kjod.2018.48.1.48."
+    ],
+    "queries": [
+      "The Erosive Potential of Flavoured Sparkling Water Drinks 2007 DOI",
+      "Effect of carbonated water on enamel in vitro Ryu 2018",
+      "plain unflavoured sparkling water dental erosion ingredient comparison"
     ]
   }
 }
