@@ -1,0 +1,10 @@
+1795f9ffd7fbc457e92013ed45dbe9dbc1608830f02a85cf459a7e0bdce24ebf  qa/jev-entry-batches/09-chilled-confections/raw/ice-slush.json
+6b32121e22374d81c1c448072fa4af5d80ef01793ab4df344504949af6e6d37a  qa/jev-entry-batches/09-chilled-confections/raw/milkshake.json
+1bbf5614d943ee71b37cfa186a52c7f29015fe91adbf75078f863eae1cba167f  qa/jev-entry-batches/09-chilled-confections/raw/pudding.json
+8402879256cefd1d76bde1eb70ef77cb899364d82aa12e150713d72f7905514d  qa/jev-entry-batches/09-chilled-confections/raw/jelly.json
+0271a41f4ac3fa3a4f75e2b69ba93a1107652328d91a5b832c1532faeac950cf  qa/jev-entry-batches/09-chilled-confections/raw/grass-jelly.json
+182938eb3c6c9e18ff9018f3944de35cfcbae82fb22525803d06c81672f38570  qa/jev-entry-batches/09-chilled-confections/raw/coconut-jelly.json
+b29ab7fa0d6cb21d9cc8f71cc597fff551bc28cd74d8dc289758aacb94a23f90  qa/jev-entry-batches/09-chilled-confections/raw/gummy-candy.json
+451b709b31535111770bd1e365d40ae2ac93d4ac3f725ca9d4252c38e5a160ba  qa/jev-entry-batches/09-chilled-confections/raw/hard-candy.json
+d8d844c7ee30f88fb8994f5ab666557efef38549bc10dffaadecf830ca530c85  qa/jev-entry-batches/09-chilled-confections/raw/marshmallow.json
+388de35c63c90eec88224f321391531c82b876deb6b47bb5653650312d6654d9  qa/jev-entry-batches/09-chilled-confections/raw/toffee.json

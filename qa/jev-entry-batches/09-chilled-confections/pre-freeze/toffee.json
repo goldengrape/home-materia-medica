@@ -1,0 +1,10 @@
+{
+  "batch_id": "09-chilled-confections",
+  "entry_id": "toffee",
+  "summary_ref": "references/entries/toffee/summary.md",
+  "summary_sha256": "4bc811865eaa956393f9ec8a159c98747ffa42a2311f24a826c76d83c4b29072",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 太妃糖\n\n**身份。** 本条指通过加热煮制糖/糖浆和乳脂/黄油等形成的硬或软质太妃糖；配方可含炼乳、坚果、盐、巧克力或糖衣。与焦糖、牛轧糖和奶糖分别处理，但市场名称存在重叠。\n\n**组成与暴露。** USDA FoodData Central 可按 toffee 查询具体食品记录；不同地区将 toffee、caramel 或奶糖命名与配方可能交叉，数据库单条记录不代表整个品类。 糖种类、奶油/黄油比例、煮制温度和含水量、软硬度、坚果/巧克力、单粒大小和品牌。\n\n**直接人体证据。** 本轮未发现太妃糖成品改善疾病或长期健康结局的直接人体干预研究。糖果原料的研究或食品数据库记录不等同于太妃糖消费试验。\n\n**产品/成分证据。** 软硬太妃糖和焦糖式产品含水量、乳脂、糖及坚果涂层不同；没有代表性市场分析时不能给出统一营养值。\n\n**共享背景。** 参见 sugar-confections-base；共享结论不自动等于本成品结论。\n\n**安全。** 常见配方可能含乳、坚果、大豆；牙科与游离糖背景见 WHO 糖与龋齿资料。查看标签、每份大小及实际配料。\n\n**传统来源。** 太妃糖是现代煮制糖果；不把糖、黄油或奶单项资料拼接成太妃糖的传统本草结论。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}
