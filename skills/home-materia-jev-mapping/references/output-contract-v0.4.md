@@ -1,11 +1,11 @@
 # Jev Output Contract v0.4-draft
 
-> 基于 v0.3.1；新增五脏阴阳增减向量。
-> 状态：draft，尚未替换 production baseline。
+> 语义上级连，计算上同步。
+> 每个五脏归经新增一个主方向 Choice。
 
-## 1. 四气
+## 四气
 
-Choice：
+`qi`：Choice
 
 - 寒
 - 凉
@@ -13,149 +13,97 @@ Choice：
 - 温
 - 热
 
-保存 selected choice 与全部 probabilities。
+## 五味
 
-## 2. 五味
+5 个独立 Noul：
 
-五个独立 Noul：
+- `taste_sour`
+- `taste_bitter`
+- `taste_sweet`
+- `taste_pungent`
+- `taste_salty`
 
-- 酸
-- 苦
-- 甘
-- 辛
-- 咸
+## 五脏归经
 
-## 3. 五脏归经
+5 个独立 Noul：
 
-五个独立 Noul：
+- `meridian_heart`
+- `meridian_liver`
+- `meridian_spleen`
+- `meridian_lung`
+- `meridian_kidney`
 
-- 心
-- 肝
-- 脾
-- 肺
-- 肾
+## 每经主方向
 
-## 4. 五脏阴阳方向
+5 个 Choice：
 
-每个脏分别增加四个独立 Noul。
+- `heart_direction`
+- `liver_direction`
+- `spleen_direction`
+- `lung_direction`
+- `kidney_direction`
 
-### 心
+每个 Choice 的固定值：
 
-- `heart_yin_decrease`
-- `heart_yin_increase`
-- `heart_yang_decrease`
-- `heart_yang_increase`
+- 阴-
+- 阴+
+- 阳-
+- 阳+
 
-### 肝
+保存：
 
-- `liver_yin_decrease`
-- `liver_yin_increase`
-- `liver_yang_decrease`
-- `liver_yang_increase`
+- selected choice；
+- 四个原生 probabilities。
 
-### 脾
+## 解释规则
 
-- `spleen_yin_decrease`
-- `spleen_yin_increase`
-- `spleen_yang_decrease`
-- `spleen_yang_increase`
+归经 Noul = 位置倾向。
 
-### 肺
+direction Choice = 如果讨论该经，最主要的作用方向。
 
-- `lung_yin_decrease`
-- `lung_yin_increase`
-- `lung_yang_decrease`
-- `lung_yang_increase`
-
-### 肾
-
-- `kidney_yin_decrease`
-- `kidney_yin_increase`
-- `kidney_yang_decrease`
-- `kidney_yang_increase`
-
-## 5. 为什么不用一个四选一 Choice
-
-四个方向允许同时成立。
-
-例如一个对象可能同时：
-
-- 滋阴：阴+；
-- 清热：阳-。
-
-因此各方向独立保留原生 score。
-
-## 6. 推理与展示
-
-模型调用：
-
-```text
-同步
-```
-
-一次 request 同时输出归经和全部方向。
-
-展示：
-
-```text
-可级连
-```
+两者在同一个 request 中计算，但展示时按归经组织。
 
 例如：
 
-```text
-肝：0.82
-  阳-：0.76
-  阴+：0.18
-  阴-：0.12
-  阳+：0.09
+```yaml
+liver:
+  meridian_score: 0.82
+  direction:
+    choice: 阳-
+    probabilities:
+      阴-: 0.10
+      阴+: 0.12
+      阳-: 0.70
+      阳+: 0.08
 ```
 
-低归经 score 的方向可以在读者界面折叠，但研究记录必须保留。
+如果 `meridian_liver` 很低，仍保存 `liver_direction`，但不把该方向单独当成读者结论。
 
-## 7. 结构一致性 QA
+## 混合效应
 
-如果出现：
+同一经可能同时具有多个方向。
 
-```text
-某经 < 0.5
-但该经某一阴阳方向 >= 0.5
-```
+v0.4 一级 schema 仍只选“主方向”，其余方向通过 Choice probabilities 保留。
 
-记录：
+因此：
 
 ```text
-location_direction_disagreement: true
+肺阴+ 0.55
+肺阳- 0.40
 ```
 
-不自动修改任一 Jev 原始 score。
+可以解释为：
 
-## 8. Jev score 与 M grade
+> 肺经主方向偏阴+，同时有较明显阳-次方向。
 
-规则不变：
+不需要 20 个独立 Noul。
+
+## Jev score 与 M
+
+继续：
 
 ```text
 Jev score != M grade
 ```
 
-例如：
-
-```text
-脾：Jev 0.61｜M-0
-脾阳+：Jev 0.68｜M-IV
-```
-
-允许同时存在。
-
-## 9. 后续习惯术语
-
-“疏肝、健脾、安神、润燥、清热、温中、化湿、生津”等不作为一级 Jev 输出。
-
-后续单独维护：
-
-```text
-五脏位置 + 阴阳方向
-→ 习惯术语
-```
-
-该派生层不得改写原始 Jev score。
+不做 post-hoc probability correction。
