@@ -107,8 +107,8 @@ def append_catalog(data, cutoff):
         additions += [
             f"- id: {entry_id}",
             f"  name: {p['name']}",
-            "  volume: 饮品部",
-            "  entry_type: beverage",
+            f"  volume: {p.get('volume', '饮品部')}",
+            f"  entry_type: {p.get('entry_type', 'beverage')}",
             f"  research_depth: {p['research_depth']}",
             f"  status: summary_frozen_{p['research_depth']}",
             f"  evidence_cutoff: {cutoff}",

@@ -38,12 +38,12 @@ def dossier(entry_id, p):
     refs = "\n".join(f"{n}. {x}" for n, x in enumerate(p["refs"], 1))
     tradition = p.get(
         "tradition",
-        "本条是现代加工或复合饮料。本轮未发现足以支持其特定配方与古籍条目一一对应的直接材料；传统食疗记录不转写为现代产品的药性或疗效。"
+        "本条是现代加工食品或复合食品。本轮未发现足以支持其特定配方与古籍条目一一对应的直接材料；传统食疗记录不转写为现代产品的药性或疗效。"
     )
     return f"""# Research Dossier — {p['name']}
 
 > entry_id: {entry_id}
-> entry_type: catalog beverage
+> entry_type: {p.get('entry_type', 'beverage')}
 > research_depth: {p['research_depth']}
 > status: research_ready_{p['research_depth']}
 > evidence_cutoff: {CUTOFF}
@@ -138,7 +138,7 @@ def summary(entry_id, p):
 
 **安全。** {p['safety']}
 
-**传统来源。** {p.get('tradition', '现代饮品资料不等于古籍对具体商品的专门分类。')}
+**传统来源。** {p.get('tradition', '现代加工食品资料不等于古籍对具体商品的专门分类。')}
 
 本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 {p['research_depth']} 检索范围。
 """
@@ -208,11 +208,12 @@ def main():
         "",
         "## 身份红队",
         "",
-        "- 汤力水按奎宁调味、糖/代糖及药用奎宁用途区分。",
-        "- 能量饮料、运动饮料、电解质饮料、维生素饮料分别按刺激成分、运动场景、ORS 配方和强化剂量建档。",
-        "- 乳酸菌饮料只将指定菌株与配方研究保留为产品特异证据。",
-        "- 果味饮料与 100% 果汁区分。",
-        "- 杏仁饮、豆乳饮料、纸盒椰奶饮料与整颗原料、分离蛋白、罐装椰浆区分。",
+    ]
+    for note in batch.get("identity_red_team", []):
+        lines.append(f"- {note}")
+    if not batch.get("identity_red_team"):
+        lines.append("- 按本批每个条目的身份、加工形态和相邻品类逐项核查，避免将共享原料或相似食品证据视为成品直接证据。")
+    lines += [
         "",
         "## Actions 运行记录",
         "",
