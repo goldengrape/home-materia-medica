@@ -1,0 +1,667 @@
+{
+  "batch": {
+    "id": "06-nuts-cocoa-chocolate",
+    "title": "谷物坚果饮品与可可巧克力",
+    "catalog_order": 6,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, journal pages, official regulator, database and manufacturer verification",
+    "exa_search_calls": 33,
+    "exa_hits": 130,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-06-nuts-cocoa-chocolate",
+    "identity_red_team": [
+      "米浆按即饮稻米饮料与米粥/米汤区分，并单列砷风险和儿童建议。",
+      "花生乳与整花生/花生酱区分；保留花生过敏原边界。",
+      "核桃乳与整核桃/核桃油区分；实验室豆乳混配不转成品功效。",
+      "混合植物饮不是标准食品类别；豆-乳蛋白混合代餐不能替代纯植物市售饮料证据。",
+      "可可粉需注明天然或碱化加工；牛奶/白巧克力严格分开。",
+      "中文目录“生巧克力”按日式 nama chocolate/奶油 ganache 处理，不误作 raw/unroasted cacao。",
+      "巧克力酱与可可冲饮分开；可可榛子酱按复合涂抹食品而非整榛子或可可粉处理。"
+    ]
+  },
+  "entries": {
+    "rice-beverage": {
+      "name": "米浆",
+      "volume": "饮品部",
+      "entry_type": "beverage",
+      "family": "cereal-plant-beverage",
+      "research_depth": "R2",
+      "shared_parent": "plant-beverage-base",
+      "identity": "本条指以大米、水为主要原料、作为即饮植物饮品出售的米浆/米乳；可含植物油、酶解米浆、糖、盐、稳定剂或钙等强化成分。与米粥、米汤、发酵米饮及婴幼儿配方食品分开。",
+      "variables": "大米品种与比例、是否酶解、稀释度、糖和油、强化钙/维生素、品牌与地区、份量，以及稻米来源和无机砷水平。",
+      "composition": "2024 年欧盟市场 10 款米饮研究报告每 100 mL 能量 37–55 kcal、碳水 8–11 g、蛋白质均不超过 0.5 g；多数产品的强化情况不同。2023 年中国线上标签调查仅纳入 4 款米饮，不能代表所有品牌。2026 年意大利 25 款米饮检测均符合欧盟无机砷最高限量，但早幼儿高摄入暴露估计仍显示较小暴露裕度。",
+      "direct": "一项 2026 年系统评价与网络荟萃分析纳入 14 项 RCT、543 人，比较豆、米、燕麦饮与牛乳；总体差异不多，证据确定性主要偏低或很低。它提供植物饮类别的比较证据，不能支持任一品牌米浆的普遍疗效；未发现米浆可用于治疗疾病的直接证据。",
+      "specific": "米饮成品的组成分析与砷监测直接针对饮品，但市场样品、国家、年份和分析方法不同。2026 年意大利研究检测 25 款产品，样品均符合该地欧盟限量；较早的 2008 年英国/欧洲市场调查报告过较高的无机砷水平，旧样品不能代表现售商品，二者应并列理解。",
+      "safety": "英国食品标准局建议 5 岁以下儿童不要用米饮替代母乳、婴儿配方奶或牛奶，以减少无机砷暴露；这是英国官方建议，不等于成人需避免米浆。儿童需换奶时应由医生或营养师协助。选购时还需核对蛋白质、钙/维生素强化、糖和份量。",
+      "body": "米浆是米与水做成的饮品，稀释度、是否酶解、加糖和强化会让不同品牌差别很大。对欧盟市场 10 款米饮的分析显示，每 100 mL 约含 37–55 kcal、8–11 g 碳水，蛋白质均不超过 0.5 g；这说明它不能仅凭“植物奶”名称就当成营养与牛奶相同的替代品。",
+      "evidence_body": "2026 年意大利 25 款米饮样品均符合欧盟无机砷最高限量，但该研究也提示早幼儿高摄入情境需留意暴露。英国官方仍建议 5 岁以下儿童不要用米饮替代母乳、配方奶或牛奶。植物饮料 RCT 综合结果整体有限，不能将类别比较写成米浆的治疗作用。",
+      "care": "给 5 岁以下儿童选奶饮替代品时遵循当地官方建议并咨询儿科医生或营养师；成人选购时看蛋白质、钙和维生素强化、糖与份量，并避免将某次市场抽样等同于所有产品的砷水平。",
+      "taste_m": {
+        "甘": "米淀粉经制浆/酶解后可呈谷物甜味；添加糖另看标签，仅作感官描述。"
+      },
+      "queries": [
+        "rice beverage market composition protein carbohydrate fortification study",
+        "rice milk inorganic arsenic survey current retail products 2026",
+        "plant based drinks rice milk randomized controlled trial systematic review",
+        "rice drinks children under five arsenic Food Standards Agency current advice"
+      ],
+      "search_log": [
+        "检索中国市场植物蛋白饮料标签调查、欧盟 10 款米饮组成研究、2026 年意大利米饮无机砷监测、早期米饮砷调查及 FSA 当前儿童建议；对照 2026 年植物饮料 RCT 网络荟萃分析。",
+        "将市场标签/化学检测、人体 RCT 综合与监管建议分层；标明地区、样本数、年代与适用人群，避免将符合限量等同于零暴露。"
+      ],
+      "refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595.",
+        "Najman K, Ponikowska P, Sadowska A, Hallmann E, Wasiak-Zys G, Świderski F, et al. “Physicochemical Properties and Nutritional Relevance of Rice Beverages Available on the Market.” Applied Sciences. 2024;14(19):9150. DOI: https://doi.org/10.3390/app14199150.",
+        "D’Amato M, Turco AC, D’Amore T, Vitale F, Marini F, Stacchini P, Sorbo A. “Inorganic Arsenic in Rice-Based Beverages: Occurrence in Products Available on the Italian Market and Dietary Exposure Assessment.” Foods. 2026;15(2):383. DOI: https://doi.org/10.3390/foods15020383.",
+        "Food Standards Agency. “Arsenic in rice.” GOV.UK. Published 2018-01-09; last updated 2025-05-29. https://www.food.gov.uk/safety-hygiene/arsenic-in-rice. Accessed 2026-09-24.",
+        "Meharg AA, Deacon C, Campbell RCJ, Carey AM, Williams PN, Feldmann J, et al. “Inorganic arsenic levels in rice milk exceed EU and US drinking water standards.” Journal of Environmental Monitoring. 2008. DOI: https://doi.org/10.1039/b800981c."
+      ],
+      "body_refs": [
+        "Najman K, Ponikowska P, Sadowska A, et al. “Physicochemical Properties and Nutritional Relevance of Rice Beverages Available on the Market.” Applied Sciences. 2024;14(19):9150. DOI: https://doi.org/10.3390/app14199150.",
+        "D’Amato M, Turco AC, D’Amore T, et al. “Inorganic Arsenic in Rice-Based Beverages: Occurrence in Products Available on the Italian Market and Dietary Exposure Assessment.” Foods. 2026;15(2):383. DOI: https://doi.org/10.3390/foods15020383.",
+        "Food Standards Agency. “Arsenic in rice.” GOV.UK. Last updated 2025-05-29. https://www.food.gov.uk/safety-hygiene/arsenic-in-rice.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国线上市场横断面标签调查。",
+          "population": "251 款中国线上植物蛋白饮料；其中米饮 4 款。",
+          "exposure": "读取市售包装营养标签及电商产品信息。",
+          "result": "各植物饮料成分差异明显；米饮子样本很小，研究支持核对配料和标签，不提供临床效果。",
+          "limits": "非随机市场样本；仅 4 款米饮，结果不能代表中国所有品牌或其他市场。",
+          "distance": "D0（米饮商品组成标签；非人体疗效）"
+        },
+        {
+          "ref": 4,
+          "design": "意大利市售产品的实验室无机/有机砷形态检测与膳食暴露评估。",
+          "population": "25 款意大利市场米饮，并结合当地消费数据分年龄估计暴露。",
+          "exposure": "测定 iAs、AB、DMA、MMA；评估米饮摄入。",
+          "result": "样品均符合欧盟米饮无机砷最高限量；一般人群贡献较小，但高摄入的早幼儿亚组估计暴露裕度较小。",
+          "limits": "意大利样本及当地消费数据；符合最高限量不表示零砷或可用于所有地区消费建议。",
+          "distance": "D0（具体市场米饮检测；安全/暴露而非疗效）"
+        },
+        {
+          "ref": 5,
+          "design": "英国政府食品安全指导。",
+          "population": "英国英格兰、北爱尔兰和威尔士消费者；特别涉及 5 岁以下儿童。",
+          "exposure": "以米饮替代母乳、婴儿配方奶或牛奶。",
+          "result": "建议 5 岁以下儿童不要用米饮作上述替代品，以减少无机砷暴露。",
+          "limits": "官方建议有明确地区与年龄边界；不等于成人禁饮，也不代表每款产品砷超标。",
+          "distance": "D0（监管/风险沟通）"
+        },
+        {
+          "ref": 2,
+          "design": "系统评价与网络荟萃分析；纳入 14 项 RCT、543 名参与者。",
+          "population": "成人，试验持续至少 3 周。",
+          "exposure": "比较豆、米、燕麦饮与彼此或牛奶。",
+          "result": "总体心代谢差异有限；多数证据确定性低，部分比较很不确定。",
+          "limits": "饮品配方和试验较少；不能推出所有品牌或儿童结果。",
+          "distance": "D0/D1（米饮类别比较；非单一市售品牌）"
+        }
+      ],
+      "unknowns": "不同地区现售米浆的砷含量分布、品牌配方、强化水平及长期成品特异临床结果。",
+      "tradition": "米与水制成的现代饮品不同于古籍中米粥、米汤或米浆用法的具体语境；本轮不据此拟定传统药性。"
+    },
+    "peanut-beverage": {
+      "name": "花生乳",
+      "volume": "饮品部",
+      "entry_type": "beverage",
+      "family": "nut-plant-beverage",
+      "research_depth": "R1",
+      "shared_parent": "plant-beverage-base",
+      "identity": "以花生和水制成、作为即饮饮品销售的花生乳/花生饮料；可添加糖、油、乳化稳定剂、香料或其他蛋白。与花生酱冲饮、整粒花生、花生油及花生配方粉区分。",
+      "variables": "花生比例、浸泡/焙炒/去皮/发芽处理、研磨与过滤、加水比、是否加糖/植物油、稳定剂、是否混入大豆或乳成分、热处理和份量。",
+      "composition": "2023 年中国线上市场调查的 251 款植物蛋白饮料中有 5 款花生饮料；这类标签样本只能说明市售产品身份多样，不能代表全部市场。实验室配方研究显示浸泡、焙炒、发芽、加水比例和温度会改变成品营养与感官性质。",
+      "direct": "本轮未检得以常见市售花生乳为干预、评估疾病或临床健康结局的可靠人体试验。花生的整体营养或花生过敏免疫治疗不能当作花生乳的疗效证据。",
+      "specific": "两项食品工艺研究分别改变花生乳制备方式，或用响应面法优化浸泡、加水比例和制浆温度；它们评估营养指标与小型感官试吃，不是疾病结局试验。",
+      "safety": "花生是主要食物过敏原。对花生过敏者不应因产品经过研磨、过滤或稀释便假定安全；核对过敏原声明并按过敏专科建议处理。配方如含乳、大豆等也需检查标签。",
+      "body": "花生乳是加工饮品，不等于把整粒花生的营养或研究结果直接装进杯子。中国线上市场调查仅收录 5 款花生饮料；实验室研究还显示，浸泡、焙炒、加水比例和热处理都会改变花生乳的组成与口感。",
+      "evidence_body": "截至本轮检索，未找到常见市售花生乳本身带来临床健康结局的可靠人体证据。产品应按实际花生含量、蛋白质、糖和添加配料逐款判断。",
+      "care": "花生过敏者避开花生乳并仔细核对配料及交叉接触提示；其他读者看每份蛋白质、添加糖、配方及是否含乳或大豆，勿按整粒花生的营养值估算。",
+      "taste_m": {
+        "甘": "花生本身具有坚果香和轻甜感，甜度也受添加糖影响，仅属感官类推。"
+      },
+      "queries": [
+        "peanut milk beverage processing nutritional composition sensory study",
+        "peanut beverage human randomized clinical trial health outcomes",
+        "FDA peanut major food allergen labeling guidance"
+      ],
+      "search_log": [
+        "检索并交叉核对花生乳工艺/营养分析、花生乳成品人体试验及 FDA 过敏原标示指南。",
+        "将实验配方与整花生/花生酱分开；本轮未检得以常见花生乳为干预并评估健康结局的直接人体试验。"
+      ],
+      "refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Özpalas B, Özer E. “Optimization of Process Parameters for Peanut Milk Based on Nutritional and Sensory Characteristics.” 2021. DOI: https://doi.org/10.12739/nwsa.2021.16.4.1a0476.",
+        "Siva Sakthi T, Meenakshi V, Kanchana S, Vellaikumar S. “Effect of Different Processing Methods on the Nutritional Composition and Antinutritional Factors of Peanut Milk.” Madras Agricultural Journal. 2021. DOI: https://doi.org/10.29321/maj.10.000492.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国线上市场横断面营养标签调查。",
+          "population": "251 款市售植物蛋白饮料，花生饮料子类 n=5。",
+          "exposure": "包装营养标签与零售页面记录。",
+          "result": "显示花生饮料在市场调查中占一小类；其他植物饮料营养成分差异较大。",
+          "limits": "5 款样本不足以描述全市场；没有花生乳人体健康结局。",
+          "distance": "D0（标签组成）"
+        },
+        {
+          "ref": 2,
+          "design": "食品工艺优化实验，响应面设计；另有小型感官评价。",
+          "population": "研究制备的花生乳样品及 10 名受训感官评定者。",
+          "exposure": "改变浸泡时间、加水比和水温；优化点为浸泡 15 小时、加水比约 4.86、水温 68°C。",
+          "result": "工艺条件与样品营养、感官接受度有关。",
+          "limits": "研究样品非市售通用配方；感官评价不是人体健康结局。",
+          "distance": "D1（实验室配方）"
+        },
+        {
+          "ref": 4,
+          "design": "美国 FDA 食物过敏原法规与行业指导。",
+          "population": "FDA 监管食品及食物过敏消费者。",
+          "exposure": "花生作为主要食物过敏原的配料标示和识别。",
+          "result": "花生列入美国主要食物过敏原，消费者应核对配料与过敏原标示。",
+          "limits": "法规适用于美国受监管食品；不提供个体诊断或治疗意见。",
+          "distance": "D0（过敏原/标示安全）"
+        }
+      ],
+      "unknowns": "各地市售花生乳的花生比例、蛋白质含量和实际过敏交叉接触控制；成品直接人体结局证据。",
+      "tradition": "花生传统记载针对原料或传统制法，不能直接对应含水、过滤和配料各异的现代花生乳。"
+    },
+    "walnut-beverage": {
+      "name": "核桃乳",
+      "volume": "饮品部",
+      "entry_type": "beverage",
+      "family": "nut-plant-beverage",
+      "research_depth": "R1",
+      "shared_parent": "plant-beverage-base",
+      "identity": "以核桃仁和水制成并作为即饮饮料销售的核桃乳；常有糖、稳定剂或其他植物乳混配。与整粒核桃、核桃油、核桃粉和核桃酱分开。",
+      "variables": "核桃仁占比、烘焙与否、打浆/过滤、加水比、稳定剂、糖、是否混入大豆等其他饮料、均质与热处理、每份容量。",
+      "composition": "中国线上标签调查纳入 14 款核桃饮料；样本提示不能将核桃乳视为固定配方。实验室研究显示未加稳定剂的核桃乳在均质与加热时会发生油体/蛋白聚集；加入原豆浆可改变稳定性与蛋白质含量。",
+      "direct": "本轮未检得市售核桃乳本身的随机人体健康结局试验。整核桃试验使用的原料、纤维/脂肪剂量与核桃乳过滤、稀释后的食品矩阵不同，不能直接外推为核桃乳功效。",
+      "specific": "一项核桃乳与生豆浆混配实验研究均质后加热的分散稳定性与组成，报告商业核桃乳通常蛋白质低于 1%，实验混配饮料约 2%；这是食品工艺与配方研究，不是人体试验。",
+      "safety": "核桃可引发坚果过敏；对核桃过敏者避免核桃乳并核对标签。糖、植物油、稳定剂和混合原料依产品而异；不要用核桃乳替代需完整营养配方的婴幼儿食品。",
+      "body": "核桃乳的“核桃”二字不能说明每杯含有多少核桃。中国线上标签调查记录了 14 款核桃饮料；实验室配方研究发现，均质和加热会影响核桃乳中油体与蛋白的稳定性，混入豆浆又会改变蛋白水平。因此它与整核桃不是同一种暴露。",
+      "evidence_body": "没有找到可代表市售核桃乳的直接人体健康结局试验。整核桃的临床研究不能越过过滤、稀释和加料过程直接转写为核桃乳功效。",
+      "care": "核桃过敏者避免并查看交叉接触提示；选购时看核桃成分排序、蛋白质、糖和份量。核桃乳不是婴幼儿配方食品。",
+      "taste_m": {
+        "甘": "核桃仁的坚果香常伴轻甜感，糖的甜度依产品而异，仅属感官类推。"
+      },
+      "queries": [
+        "walnut milk commercial beverage composition China market label survey",
+        "walnut milk homogenization heating stability protein 2014 study",
+        "walnut beverage randomized human trial clinical outcomes",
+        "walnut milk walnut allergy safety labeling"
+      ],
+      "search_log": [
+        "检索中国市售植物饮标签调查、核桃乳均质/加热配方研究，以及是否存在核桃乳成品人体结局试验。",
+        "区分整核桃或核桃油人体研究与稀释、过滤、混配后的核桃乳；将实验室稳定性结果限制在食品工艺层。"
+      ],
+      "refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Chen Y, Lu Y, Yu A, Kong X, Hua Y. “Stable Mixed Beverage is Produced from Walnut Milk and Raw Soymilk by Homogenization with Subsequent Heating.” Food Science and Technology Research. 2014;20(3):583–591. DOI: https://doi.org/10.3136/fstr.20.583.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Chen Y, Lu Y, Yu A, Kong X, Hua Y. “Stable Mixed Beverage is Produced from Walnut Milk and Raw Soymilk by Homogenization with Subsequent Heating.” Food Science and Technology Research. 2014;20(3):583–591. DOI: https://doi.org/10.3136/fstr.20.583."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国线上市场横断面标签调查。",
+          "population": "251 款植物蛋白饮料；核桃饮料子类 n=14。",
+          "exposure": "市售产品标签与电商信息。",
+          "result": "研究展示植物饮料原料与营养差异明显；核桃饮料不是单一配方。",
+          "limits": "标签抽样非实测，且不测健康结局；不代表所有品牌。",
+          "distance": "D0（核桃乳市场身份/组成）"
+        },
+        {
+          "ref": 2,
+          "design": "食品胶体/工艺实验。",
+          "population": "实验室制备核桃乳及核桃乳-生豆浆混配饮料。",
+          "exposure": "均质后加热，测油体聚集、分散稳定性及组成。",
+          "result": "混入生豆浆可改善分散稳定性；实验混合饮料蛋白质约 2%，高于该文引用的中国商业核桃乳常见低于 1%。",
+          "limits": "非随机人体试验；研究配方不代表所有市售核桃乳。",
+          "distance": "D1（实验室核桃饮配方/稳定性）"
+        }
+      ],
+      "unknowns": "商品中核桃实际比例、不同品牌蛋白与糖的代表性分布；核桃乳成品的健康结局、安全暴露与长期替代效果。",
+      "tradition": "核桃原料的传统记录不自动适用于稀释、过滤并可能混配豆乳的现代成品。"
+    },
+    "mixed-plant-protein-beverage": {
+      "name": "植物蛋白混合饮",
+      "volume": "饮品部",
+      "entry_type": "beverage",
+      "family": "mixed-plant-beverage",
+      "research_depth": "R1",
+      "shared_parent": "plant-beverage-base",
+      "identity": "本条指以两种或以上植物原料或植物蛋白制成的即饮混合饮品，常见如混合坚果、谷物-豆类或多种植物基饮料；不包括单一来源豆浆、蛋白粉、运动补剂或乳-植物混合的专用营养品。",
+      "variables": "原料种类与比例、整料或分离蛋白、加水比、纤维与油脂、添加糖、钙等强化、热处理、过滤、份量和品牌。",
+      "composition": "中国线上市场标签研究纳入 251 款植物蛋白饮料，其中混合饮料 48 款、混合坚果饮料 5 款；研究显示不同原料与配方的营养构成有显著差异。标签类别宽，不能视为一个标准化食品。",
+      "direct": "针对“任意植物蛋白混合饮”这一宽泛类别的直接人体结局证据不足。一个 16 名成年男性的随机交叉研究比较 30 g 蛋白质的豆-乳混合代餐饮与乳清饮，观察的是餐后血浆氨基酸和代谢物，不是一般市售纯植物混合饮，也没有临床疾病终点。",
+      "specific": "2026 年植物饮料网络荟萃分析纳入豆、米、燕麦饮和牛乳，未建立多种植物蛋白混合饮的统一效果估计。市场调查支持关注营养标签；蛋白质来源混配研究的配方、蛋白剂量与产品目的均不同。",
+      "safety": "不同植物蛋白饮料可能同时含花生、坚果、大豆或芝麻；按自身过敏原核对配料和交叉接触说明。不要仅凭“混合蛋白”宣传推定蛋白质足量、氨基酸完整或适合婴幼儿。",
+      "body": "“植物蛋白混合饮”不是固定配方。中国线上调查中的 48 款混合饮料和 5 款混合坚果饮料，原料及营养标签差异明显。豆-乳混合代餐的餐后氨基酸试验不等于普通纯植物混合饮的临床效果；目前不能给这一大类统一贴上健康功效。",
+      "evidence_body": "现有研究能说明配方、蛋白来源和营养标签的差异，但不足以支持所有混合饮料有相同的健康结果。选择时应以成分表、每份蛋白质和糖、强化营养素及过敏原为准。",
+      "care": "逐款查看原料顺序、每份蛋白质、糖、强化钙和过敏原；若用于儿童、疾病营养或代餐，需选有相应用途和完整营养标识的产品，并按专业意见使用。",
+      "taste_m": {
+        "甘": "谷物、坚果和豆类常有轻甜或坚果香，添加糖影响更大，仅属感官类推。"
+      },
+      "queries": [
+        "China online market mixed plant protein beverage label cross sectional 48 products",
+        "blended plant protein beverage human randomized trial plant-only versus dairy blends",
+        "plant based drink cardiometabolic network meta-analysis soy rice oat scope",
+        "mixed nuts beverage product composition and nutrition label"
+      ],
+      "search_log": [
+        "检索中国线上 251 款植物饮料标签调查、混合蛋白饮品随机交叉试验与 2026 植物饮料网络荟萃分析的纳入类别。",
+        "将豆-乳混合代餐、单一植物饮和商品混合饮分开，不把氨基酸短期指标写成临床健康效应。"
+      ],
+      "refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595.",
+        "Wegrzyn TF, Henare S, Ahlborn N, Nasef NA, Samuelsson LM, Loveday SM. “The plasma amino acid response to blended protein beverages: a randomised crossover trial.” British Journal of Nutrition. 2022. DOI: https://doi.org/10.1017/S0007114521004591."
+      ],
+      "body_refs": [
+        "Zhang J, Cai Q, Ji W. “Nutritional Composition of Plant Protein Beverages on China’s Online Market: A Cross-Sectional Analysis.” Nutrients. 2023;15(12):2701. DOI: https://doi.org/10.3390/nu15122701.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595.",
+        "Wegrzyn TF, Henare S, Ahlborn N, et al. “The plasma amino acid response to blended protein beverages: a randomised crossover trial.” British Journal of Nutrition. 2022. DOI: https://doi.org/10.1017/S0007114521004591."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国线上市场横断面营养标签调查。",
+          "population": "251 款植物蛋白饮料，其中混合饮料 48 款、混合坚果饮料 5 款。",
+          "exposure": "商品包装及电商信息中的营养标签。",
+          "result": "调查显示植物饮料营养组成差异大，强化率较低；混合类并非同配方。",
+          "limits": "线上标签抽样、类别宽且非化学实测；不评价临床结局。",
+          "distance": "D0（市场标签和产品异质性）"
+        },
+        {
+          "ref": 3,
+          "design": "单盲随机交叉餐后试验。",
+          "population": "16 名 50–70 岁男性。",
+          "exposure": "三种含 30 g 蛋白质的餐替饮料：两种豆-乳混合比例与乳清；测 0–300 分钟血浆氨基酸与尿代谢谱。",
+          "result": "豆-乳饮料总体餐后氨基酸响应相近，若干氨基酸 AUC 与乳清组不同。",
+          "limits": "研究为含乳代餐、蛋白剂量高、样本小且仅测餐后指标；不能代表纯植物商品混合饮或疾病获益。",
+          "distance": "D3（不同配方的混合蛋白代餐）"
+        },
+        {
+          "ref": 2,
+          "design": "系统评价及网络荟萃分析，14 项 RCT、543 人。",
+          "population": "成人植物饮替代研究。",
+          "exposure": "豆、米、燕麦饮与牛乳/彼此比较。",
+          "result": "报告植物饮整体有限的心代谢差异，未建立多植物蛋白混合饮类别估计。",
+          "limits": "纳入类别与配方有限，不能迁移至任意混合饮。",
+          "distance": "D2（相邻植物饮类别）"
+        }
+      ],
+      "unknowns": "混合饮料的统一定义、代表性市场配方、蛋白质质量/剂量及成品的随机健康结局研究。",
+      "tradition": "本条是多原料现代复合饮料；不同配比不存在可直接对应的单一古籍对象。"
+    },
+    "cocoa-powder": {
+      "name": "可可粉",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "cocoa-ingredient",
+      "research_depth": "R2",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "本条指可可豆加工后压榨部分可可脂、再粉碎得到的无糖可可粉；区分天然可可粉、碱化/荷兰加工可可粉与添加糖、乳粉的冲调可可粉。",
+      "variables": "可可豆产地与发酵/干燥/烘焙、压榨去脂程度、是否碱化、粉末份量、冲调时加入牛奶/糖/脂肪及其他配料。",
+      "composition": "商业分析发现天然可可粉总黄烷醇平均约 34.6 mg/g，轻度碱化约 13.8 mg/g，中度约 7.8 mg/g，重度约 3.9 mg/g；不同工艺造成数倍差异。该研究的实验室黄烷醇数值不是所有品牌标签值。",
+      "direct": "一项 12 名健康非吸烟者的随机双盲交叉试验比较非碱化与碱化可可饮料，采血至 6 小时，关注黄烷醇代谢物而非疾病终点。两种可可后的儿茶素多数不可检测；表儿茶素结果存在不确定性。它不能证明一般可可粉有临床治疗作用。",
+      "specific": "碱化会显著降低可可粉中的多酚/黄烷醇，天然可可粉与重度碱化粉不是等量活性物。成品饮料中的糖、乳脂和实际可可粉剂量还会改变入口暴露。",
+      "safety": "区分无糖可可粉和调制可可冲饮；后者可能额外含大量糖、奶粉或脂肪。可可粉作为烘焙/饮品原料的研究剂量和提取物、胶囊或高黄烷醇巧克力不相同。",
+      "body": "可可粉的颜色深浅和“可可”字样不能告诉人黄烷醇含量。商业粉末分析发现，天然粉与轻、中、重度碱化粉的平均总黄烷醇含量逐级下降；一项小型人体交叉试验只研究了可可饮料中的短时血浆代谢物，并未检验疾病治疗效果。",
+      "evidence_body": "研究用的标准化高黄烷醇可可、提取物或黑巧克力不等于一勺普通可可粉。若用作饮料，还须把加入的糖、乳制品和份量另算。",
+      "care": "买粉时看是否无糖、是否碱化以及配料表；冲饮时另计糖与奶。不要按试验中标准化黄烷醇剂量推断普通粉末的效果。",
+      "taste_m": {
+        "苦": "无糖可可粉常有明显苦味和焙烤香；碱化与配方会改变感官，仅属感官描述。"
+      },
+      "queries": [
+        "commercial cocoa powders alkalization total flavanol content Miller 2008",
+        "natural versus alkalized cocoa powder randomized crossover human beverage trial metabolites",
+        "cocoa powder direct randomized clinical outcome trial food matrix"
+      ],
+      "search_log": [
+        "检索可可粉碱化/黄烷醇原始分析与使用非碱化或碱化可可粉冲饮的人体随机试验。",
+        "核对研究实际检测的是商品粉末含量还是人体临床结局；对临床功效主张按食品形态、剂量和结局设限。"
+      ],
+      "refs": [
+        "Miller KB, Hurst WJ, Payne MJ, Stuart DA, Apgar J, Sweigart DS, Ou B. “Impact of Alkalization on the Antioxidant and Flavanol Content of Commercial Cocoa Powders.” Journal of Agricultural and Food Chemistry. 2008;56(18):8527–8533. DOI: https://doi.org/10.1021/jf801670p.",
+        "Ellinger S, Reusch A, Henckes L, Ritter C, Zimmermann BF, Ellinger J, et al. “Low Plasma Appearance of (+)-Catechin and (−)-Catechin Compared with Epicatechin after Consumption of Beverages Prepared from Nonalkalized or Alkalized Cocoa—A Randomized, Double-Blind Trial.” Nutrients. 2020;12(1):231. DOI: https://doi.org/10.3390/nu12010231."
+      ],
+      "body_refs": [
+        "Miller KB, Hurst WJ, Payne MJ, Stuart DA, Apgar J, Sweigart DS, Ou B. “Impact of Alkalization on the Antioxidant and Flavanol Content of Commercial Cocoa Powders.” Journal of Agricultural and Food Chemistry. 2008;56(18):8527–8533. DOI: https://doi.org/10.1021/jf801670p.",
+        "Ellinger S, Reusch A, Henckes L, Ritter C, Zimmermann BF, Ellinger J, et al. “Low Plasma Appearance of (+)-Catechin and (−)-Catechin Compared with Epicatechin after Consumption of Beverages Prepared from Nonalkalized or Alkalized Cocoa—A Randomized, Double-Blind Trial.” Nutrients. 2020;12(1):231. DOI: https://doi.org/10.3390/nu12010231."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "对天然、轻度/中度/重度碱化商业可可粉的成分分析。",
+          "population": "研究所选的一组市售天然与碱化可可粉。",
+          "exposure": "按可提取 pH 分组，测总多酚、抗氧化指标与黄烷醇。",
+          "result": "报告总黄烷醇均值依次约为 34.6、13.8、7.8、3.9 mg/g；随碱化程度上升而下降。",
+          "limits": "成分分析不是摄食人体试验；样品来自研究收集的商业粉，且作者关联可可企业/实验室，需注意研究资助背景。",
+          "distance": "D0（特定商品粉末成分；非疗效）"
+        },
+        {
+          "ref": 2,
+          "design": "随机、双盲、交叉急性试验。",
+          "population": "12 名健康非吸烟者。",
+          "exposure": "分别饮用由非碱化或碱化可可粉制成的乳基饮料，采血至摄入后 6 小时。",
+          "result": "血浆中表儿茶素为主要可检测单体；两种处理对增量 AUC 的差异不明确，儿茶素多数不可检测。",
+          "limits": "样本小、观察短、只测代谢动力学代理指标，不是血管或临床疾病结局；配方含乳。",
+          "distance": "D0（可可粉饮料急性吸收）"
+        }
+      ],
+      "unknowns": "现售不同地区可可粉的批次黄烷醇/甲基黄嘌呤差异、日常剂量临床结局，以及冲调配料对暴露的长期影响。",
+      "tradition": "可可粉是近现代加工原料；本轮未找到可将现售无糖粉末直接对应到某一传统药材条文的证据。"
+    },
+    "milk-chocolate": {
+      "name": "牛奶巧克力",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "chocolate-confectionery",
+      "research_depth": "R2",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "含可可原料、糖和乳成分的固体或半固体巧克力；可可固形物、乳粉/乳脂、糖与可可脂比例依标准、地区和品牌而异。与高可可黑巧克力、白巧克力和热可可饮料分开。",
+      "variables": "可可固形物比例、黄烷醇含量、乳成分与可可脂、添加糖、每份重量、可可豆和碱化加工、食用时间及所替代食品。",
+      "composition": "一般牛奶巧克力不是固定黄烷醇剂量食品；特殊高黄烷醇牛奶巧克力可被实验性富集，但不能代表超市常规产品。牛奶巧克力通常兼有糖、脂肪、乳成分和可可原料。",
+      "direct": "一项 2017 年博士论文报告两项小型随机干预，其中 33 名健康男性连续 2 周摄入特定高黄烷醇牛奶巧克力（约 35 mg 表儿茶素/日）或低黄烷醇对照，并报告高黄烷醇组血流介导扩张改善；这不是普通市售牛奶巧克力的试验，且为论文研究。另一项 22 人交叉试验以 7.5 g 牛奶巧克力作对照，比较高黄烷醇黑巧克力的短时视觉结局，未见组间视觉或视网膜灌注差异；不能据此推断牛奶巧克力带来长期健康收益。",
+      "specific": "与黄烷醇相关的结果针对特定强化巧克力、时间点和代理指标。糖、乳脂和总能量构成的整体食物矩阵与可可提取物不同；成人常规食用量也不等于研究强化剂量。",
+      "safety": "牛奶巧克力常含乳过敏原、添加糖和饱和脂肪；关注份量及与其他甜食的替代关系。高可可比例或特殊黄烷醇试验不可直接给普通牛奶巧克力背书。",
+      "body": "牛奶巧克力把可可、乳成分和糖组合在一起，品牌间的可可和糖比例不同。曾有一项小样本博士论文研究特定高黄烷醇配方，报告健康男性的血流介导扩张变化；这不是普通牛奶巧克力的普遍结论。另一项小型试验只把牛奶巧克力当对照，未显示黑巧克力在两小时后改善视觉或视网膜灌注。",
+      "evidence_body": "可可黄烷醇研究往往使用专门配制的高黄烷醇食品；试验剂量和研究人群不足以说明常规牛奶巧克力有长期心血管或其他临床获益。",
+      "care": "查看每份糖、饱和脂肪和重量；乳过敏者核对标签。不要为了试验中的可可成分而忽略巧克力的总糖、脂肪和能量。",
+      "taste_m": {
+        "甘": "糖与乳成分带来明显甜味和奶香，甜度随品牌配方而异，仅作感官描述。"
+      },
+      "queries": [
+        "milk chocolate randomized controlled human trial flow mediated dilation high flavanol milk chocolate",
+        "milk versus dark chocolate randomized trial human visual function retinal perfusion",
+        "milk chocolate cocoa solids sugar milk composition labeling standard"
+      ],
+      "search_log": [
+        "检索牛奶巧克力直接人体试验/对照试验、特定高黄烷醇牛奶巧克力的研究论文与常规食品边界。",
+        "单独标明 2017 博士论文的特殊配方与试验剂量；不将黑巧克力试验的对照组当作牛奶巧克力功效试验。"
+      ],
+      "refs": [
+        "Castle SM. “Pure (−)-Epicatechin and High-Flavanol Milk Chocolate Improves Flow-Mediated Dilatation in Healthy Men: A Clinical Trial-Based Investigation.” PhD thesis. University of Reading; 2017. https://centaur.reading.ac.uk/73500.",
+        "Siedlecki J, Mohr N, Luft N, Schworm B, Keidel L, Priglinger SG. “Effects of Flavanol-Rich Dark Chocolate on Visual Function and Retinal Perfusion Measured With Optical Coherence Tomography Angiography: A Randomized Clinical Trial.” JAMA Ophthalmology. 2019;137(12):1373–1379. DOI: https://doi.org/10.1001/jamaophthalmol.2019.3731."
+      ],
+      "body_refs": [
+        "Castle SM. “Pure (−)-Epicatechin and High-Flavanol Milk Chocolate Improves Flow-Mediated Dilatation in Healthy Men: A Clinical Trial-Based Investigation.” PhD thesis. University of Reading; 2017. https://centaur.reading.ac.uk/73500.",
+        "Siedlecki J, Mohr N, Luft N, et al. “Effects of Flavanol-Rich Dark Chocolate on Visual Function and Retinal Perfusion Measured With Optical Coherence Tomography Angiography: A Randomized Clinical Trial.” JAMA Ophthalmology. 2019;137(12):1373–1379. DOI: https://doi.org/10.1001/jamaophthalmol.2019.3731."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "大学博士论文所含的临床试验型研究；急性与短期随机干预。",
+          "population": "论文报告两项研究，牛奶巧克力干预包括 33 名 18–40 岁健康男性。",
+          "exposure": "高黄烷醇牛奶巧克力约 35 mg (−)-epicatechin/日，对照为低黄烷醇牛奶巧克力，双日摄入 2 周。",
+          "result": "论文报告高黄烷醇组血流介导扩张出现短时及两周后的改善。",
+          "limits": "博士论文而非一般品牌产品试验；特殊可可黄烷醇剂量、样本小、仅健康男性、血管代理指标，不支持普通牛奶巧克力的临床获益。",
+          "distance": "D1（特制高黄烷醇牛奶巧克力）"
+        },
+        {
+          "ref": 2,
+          "design": "双盲随机交叉临床试验。",
+          "population": "22 名健康参与者。",
+          "exposure": "20 g 含 400 mg 黄烷醇的黑巧克力与 7.5 g 牛奶巧克力比较，摄入后 2 小时测视觉功能与 OCT-A 视网膜灌注。",
+          "result": "未观察到黑巧克力相对牛奶巧克力的主要灌注或视觉结局差异。",
+          "limits": "研究主要检验黑巧克力，不是牛奶巧克力健康获益试验；样本小且只测短时结果。",
+          "distance": "D0（牛奶巧克力为比较组）"
+        }
+      ],
+      "unknowns": "常见牛奶巧克力品牌实际黄烷醇剂量、日常长期摄入与临床结局；高黄烷醇制品结果向普通配方迁移的程度。",
+      "tradition": "现代牛奶巧克力是糖、乳成分与可可原料的复合食品，不等同于古籍中的乳食或可可饮品。"
+    },
+    "white-chocolate": {
+      "name": "白巧克力",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "chocolate-confectionery",
+      "research_depth": "R1",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "在美国法规标准中，白巧克力以可可脂、乳固形物、糖及其他适宜配料制成，不含非脂可可固形物；因此它与可可粉或含可可固形物的黑/牛奶巧克力不是同一组成。",
+      "variables": "可可脂比例、乳粉/乳脂、添加糖、香料、法规市场、每份量和是否与坚果/饼干等组合。",
+      "composition": "美国 21 CFR §163.124 对白巧克力设有身份标准，包括至少 20% 可可脂、至少 14% 总乳固形物、至少 3.5% 乳脂，且不含非脂可可固形物；其他市场规则及白色复合涂层产品可不同。",
+      "direct": "2026 年一项 15 天随机对照研究由 36 名健康成人完成，以约 50 g/日白巧克力作为等能量对照，并比较两种 70% 黑巧克力。白巧克力组皮肤血流指标下降，未见总抗氧化能力变化；试验不是白巧克力的长期临床获益研究。",
+      "specific": "白巧克力含可可脂，但标准配方没有非脂可可固形物；不能将黑巧克力或可可粉中的黄烷醇研究转给白巧克力。2026 小试验的终点与时长有限。",
+      "safety": "通常含糖和乳成分；注意总份量、饱和脂肪及乳过敏。白色复合涂层可能不是法规意义上的标准白巧克力，应看配料和当地名称标准。",
+      "body": "白巧克力的“可可”主要来自可可脂。美国身份标准要求其不含非脂可可固形物，并规定乳固形物等组成，因此可可粉或黑巧克力中的黄烷醇证据不能直接套用。一个 36 人、15 天的小试验把白巧克力作为等能量对照，没有显示它带来稳定的血管或抗氧化获益。",
+      "evidence_body": "2026 年试验里白巧克力组有单一皮肤血流指标下降，其他多项指标未见一致改善；样本和随访都不足以判断长期效果。",
+      "care": "核对配料中是可可脂还是植物油替代脂；按份量看糖、饱和脂肪和乳成分。",
+      "taste_m": {
+        "甘": "糖与乳成分构成主要甜味，产品间甜度不同，仅作感官描述。"
+      },
+      "queries": [
+        "21 CFR 163.124 white chocolate identity standard cocoa butter nonfat cacao solids",
+        "white chocolate randomized trial human cardiometabolic markers 2026",
+        "white chocolate direct human health effects randomized study"
+      ],
+      "search_log": [
+        "核对美国 eCFR 白巧克力身份标准及 2026 年比较白巧克力/黑巧克力的人体随机试验。",
+        "明确白巧克力保留可可脂但排除非脂可可固形物；将黑巧克力的黄烷醇研究排除为非直接证据。"
+      ],
+      "refs": [
+        "U.S. Food and Drug Administration. “21 CFR § 163.124—White chocolate.” Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163/section-163.124. Accessed 2026-09-24.",
+        "Chatagnier L, Orsa C, Plumlee D, Wright A, Hong MY. “Comparative effects of regular, bloomed or white chocolate on cardiovascular and antioxidant markers in healthy adults.” Metabolism Open. 2026;30:100465. DOI: https://doi.org/10.1016/j.metop.2026.100465."
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. “21 CFR § 163.124—White chocolate.” Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163/section-163.124.",
+        "Chatagnier L, Orsa C, Plumlee D, Wright A, Hong MY. “Comparative effects of regular, bloomed or white chocolate on cardiovascular and antioxidant markers in healthy adults.” Metabolism Open. 2026;30:100465. DOI: https://doi.org/10.1016/j.metop.2026.100465."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国联邦食品身份标准。",
+          "population": "在美国以“white chocolate”名称销售的标准化食品。",
+          "exposure": "可可脂、乳固形物、甜味剂及其他许可配料；不含非脂可可固形物。",
+          "result": "法规列出可可脂/乳固形物/乳脂的最低含量并定义可用名称。",
+          "limits": "适用于美国法规；不能代表所有国家的命名规则或每个白色涂层商品。",
+          "distance": "D0（美国产品身份标准）"
+        },
+        {
+          "ref": 2,
+          "design": "15 天随机平行对照试验。",
+          "population": "36 名完成干预的健康成人。",
+          "exposure": "约 50 g/日等能量白巧克力对照，比较普通及脂霜化 70% 黑巧克力。",
+          "result": "白巧克力组皮肤血流下降（P=.015）；抗氧化总能力没有变化。",
+          "limits": "白巧克力是比较/控制组；短期、小样本，不能解释临床意义或长期效应。",
+          "distance": "D0（同食品对照组；研究问题主要针对黑巧克力）"
+        }
+      ],
+      "unknowns": "标准白巧克力与白色复合涂层在各市场的配方分布；长期成品直接人体结局。",
+      "tradition": "白巧克力没有非脂可可固形物，不能将可可粉、黑巧克力或传统乳食记载套用为本品药性。"
+    },
+    "raw-chocolate": {
+      "name": "生巧克力",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "fresh-cream-chocolate",
+      "research_depth": "R1",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "按中文目录常见用法，本条指日式生巧克力（nama chocolate）：在巧克力生地中加入鲜奶油等含水可食物、质地柔软并需按标签保藏的 ganache 类甜食；不是英语营销中所称的未烘焙“raw cacao chocolate”。日本行业公平竞争规则给生巧克力规定了组成门槛。",
+      "variables": "巧克力生地比例、鲜奶油和总水分、添加酒/果泥等含水配料、可可粉表面层、卫生与冷链、开封后时间及标签保存条件。",
+      "composition": "日本行业规则规定可称作生巧克力的配方门槛：巧克力生地不少于总重量 60%，奶油不少于 10%，总水分不少于 10%；此定义是日本的行业标示规则，不是全球通用。高水分使其保质期通常短于普通硬质巧克力。",
+      "direct": "本轮未检得以日式生巧克力成品为干预、评估临床健康结局的人体研究。可可黄烷醇或未烘焙可可研究不是此类含奶油 ganache 甜食的直接证据。",
+      "specific": "日本巧克力行业协会将生巧克力解释为含鲜奶油或洋酒等含水可食物、柔软且保质期较短的巧克力；行业法规给出成分门槛。具体品牌仍应遵循自身冷藏与保质期标签。",
+      "safety": "此处“生”不是无加工生可可，也不意味着生食未经加工豆类；奶油和水分使保藏要求更重要。依包装标签冷藏、留意日期与开封后时限；乳过敏者核对成分。",
+      "body": "中文目录里的“生巧克力”通常说的是日式 nama chocolate：软滑的 ganache 加入鲜奶油等含水配料，再冷却定型。日本行业标示规则要求巧克力生地至少占 60%、奶油至少占 10%、水分至少占 10%。这里的“生”不是未烘焙的生可可；它水分较高，保质期也比普通硬巧克力短。",
+      "evidence_body": "未找到日式生巧克力成品的临床功效试验。可可粉或黑巧克力研究不能直接转给含奶油、糖和水分的冷藏甜品。",
+      "care": "按包装要求冷藏并遵守保质期；乳过敏者检查标签。不要用“生”字推定更天然、更安全或更有可可黄烷醇。",
+      "taste_m": {
+        "甘": "巧克力与鲜奶油配方通常带明显甜味和奶香，按产品而异，仅作感官描述。"
+      },
+      "queries": [
+        "Japan nama chocolate official definition cream moisture chocolate base fair competition code",
+        "Japanese Chocolate and Cocoa Association nama chocolate short shelf life cream",
+        "nama chocolate randomized clinical trial human health effects"
+      ],
+      "search_log": [
+        "检索日本巧克力可可协会术语词典与全国巧克力业公平交易协议，核对生巧克力的日式商品身份、配方门槛和保质期特征。",
+        "红队区分“生巧克力/nama chocolate”与 raw/unroasted cacao chocolate；按前者处理目录条目，避免英文直译引起身份漂移。"
+      ],
+      "refs": [
+        "Japan Chocolate and Cocoa Association. “Chocolate Glossary: Nama Chocolate (生チョコレート).” http://www.chocolate-cocoa.com/dictionary/word/chocorate.html. Accessed 2026-09-24.",
+        "National Chocolate Industry Fair Trade Council. “Fair Competition Code and Enforcement Regulations for Labeling of Chocolate Products” (チョコレート類の表示に関する公正競争規約及び施行規則). https://www.chocokoutori.org/cont3/13.html. Accessed 2026-09-24.",
+        "Miller KB, Hurst WJ, Payne MJ, Stuart DA, Apgar J, Sweigart DS, Ou B. “Impact of Alkalization on the Antioxidant and Flavanol Content of Commercial Cocoa Powders.” Journal of Agricultural and Food Chemistry. 2008;56(18):8527–8533. DOI: https://doi.org/10.1021/jf801670p.",
+        "Ellinger S, Reusch A, Henckes L, Ritter C, Zimmermann BF, Ellinger J, et al. “Low Plasma Appearance of (+)-Catechin and (−)-Catechin Compared with Epicatechin after Consumption of Beverages Prepared from Nonalkalized or Alkalized Cocoa—A Randomized, Double-Blind Trial.” Nutrients. 2020;12(1):231. DOI: https://doi.org/10.3390/nu12010231."
+      ],
+      "body_refs": [
+        "Japan Chocolate and Cocoa Association. “Chocolate Glossary: Nama Chocolate (生チョコレート).” http://www.chocolate-cocoa.com/dictionary/word/chocorate.html.",
+        "National Chocolate Industry Fair Trade Council. “Fair Competition Code and Enforcement Regulations for Labeling of Chocolate Products” (チョコレート類の表示に関する公正競争規約及び施行規則). https://www.chocokoutori.org/cont3/13.html."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "日本巧克力可可行业协会的产品术语说明。",
+          "population": "日本市场中的生巧克力商品用语。",
+          "exposure": "巧克力生地混入鲜奶油、酒等含水可食物并加工成柔软 ganache 类甜品。",
+          "result": "协会说明此类产品水分较多，通常保质期较短；为日本特定商品概念。",
+          "limits": "协会术语资料不是临床证据；不等同于所有国家对“生巧克力”的用法。",
+          "distance": "D0（目录中文商品身份/定义）"
+        },
+        {
+          "ref": 2,
+          "design": "日本行业公平竞争标示规则。",
+          "population": "在日本以生巧克力名义标示的产品。",
+          "exposure": "巧克力生地、奶油及水分比例。",
+          "result": "规则门槛包括巧克力生地≥60%、奶油≥10%、水分≥10%。",
+          "limits": "日本行业规则，不是国际标准；具体产品仍以其配料与标签为准。",
+          "distance": "D0（身份与标签规则）"
+        }
+      ],
+      "unknowns": "不同地区“生巧克力”译名与商品定义、品牌水分和实际冷藏要求；日式生巧克力成品临床研究。",
+      "tradition": "本条是按日本行业定义处理的近现代乳脂巧克力甜品，不是古籍所载生可可或可可药材。"
+    },
+    "chocolate-sauce": {
+      "name": "巧克力酱",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-sauce",
+      "research_depth": "R1",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "本条指可淋在冰淇淋、面包或甜点上的即食甜味巧克力酱/糖浆；常以糖浆、水、糖和可可粉为基础，部分产品含巧克力浆、乳化剂或增稠剂。与热可可、融化巧克力和烘焙巧克力分开。",
+      "variables": "糖浆类型、可可粉/可可浆比例、是否碱化、糖/代糖、增稠剂、份量和搭配的甜点。",
+      "composition": "USDA SR Legacy 的通用“Beverages, chocolate syrup”项目每 100 g 约 279 kcal、碳水 65.1 g、总糖 49.65 g、脂肪 1.13 g、蛋白质 2.1 g；它是数据库中的一般类别参考，不代表当前所有品牌或餐饮配方。",
+      "direct": "本轮未检得以巧克力酱/巧克力糖浆成品为干预的临床健康结局人体试验。可可粉、黑巧克力或高黄烷醇饮料证据不能直接转为甜酱的效果。",
+      "specific": "市售巧克力酱可能主要由糖浆/糖和水构成，仅含少量可可粉或巧克力；具体可可量和糖量依配方。数据库通用条目与品牌标签都需按各自适用范围使用。",
+      "safety": "巧克力酱通常以甜味糖浆为主要部分，注意每份用量和总添加糖；如有乳、大豆或坚果配料，按标签处理过敏原。",
+      "body": "巧克力酱常是甜味糖浆加少量可可粉或巧克力，并不等于一杯无糖可可。USDA 的通用巧克力糖浆条目每 100 g 约含 49.7 g 糖和 65.1 g 碳水；实际品牌配方有差异，应以瓶身营养标签和实际淋用量为准。",
+      "evidence_body": "未找到巧克力酱成品带来健康结局的直接人体试验。可可粉或巧克力中的成分研究不能越级证明甜酱具有相同作用。",
+      "care": "把淋酱量计入甜点总糖；看配料表中糖浆、糖、可可粉与乳/大豆过敏原。餐饮店的一泵或一圈淋酱不等同于数据库标准份量。",
+      "taste_m": {
+        "甘": "糖浆和糖提供主要甜味，可可粉仅调节苦香，具体比例依配方。"
+      },
+      "queries": [
+        "USDA FoodData Central chocolate syrup generic composition sugar carbohydrate FDC 174117",
+        "commercial chocolate sauce syrup ingredients nutrition label cocoa proportion",
+        "chocolate sauce syrup direct randomized human health trial"
+      ],
+      "search_log": [
+        "核对 USDA FoodData Central SR Legacy 通用巧克力糖浆条目与市售巧克力酱配料/营养标签；检索成品人体健康结局试验。",
+        "将通用数据库记录仅作为类别参考，不外推至品牌、餐饮配方或实际食用份量。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Beverages, chocolate syrup.” FoodData Central, SR Legacy, FDC ID 174117. https://fdc.nal.usda.gov/food-details/174117/nutrients. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/. Accessed 2026-09-24.",
+        "Miller KB, Hurst WJ, Payne MJ, Stuart DA, Apgar J, Sweigart DS, Ou B. “Impact of Alkalization on the Antioxidant and Flavanol Content of Commercial Cocoa Powders.” Journal of Agricultural and Food Chemistry. 2008;56(18):8527–8533. DOI: https://doi.org/10.1021/jf801670p.",
+        "Ellinger S, Reusch A, Henckes L, Ritter C, Zimmermann BF, Ellinger J, et al. “Low Plasma Appearance of (+)-Catechin and (−)-Catechin Compared with Epicatechin after Consumption of Beverages Prepared from Nonalkalized or Alkalized Cocoa—A Randomized, Double-Blind Trial.” Nutrients. 2020;12(1):231. DOI: https://doi.org/10.3390/nu12010231."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Beverages, chocolate syrup.” FoodData Central, SR Legacy, FDC ID 174117. https://fdc.nal.usda.gov/food-details/174117/nutrients. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "USDA SR Legacy 通用食品成分数据库条目。",
+          "population": "数据库中的通用巧克力糖浆食品类别。",
+          "exposure": "每 100 g 的成分记录。",
+          "result": "能量约 279 kcal、碳水 65.1 g、总糖 49.65 g、脂肪 1.13 g、蛋白质 2.1 g。",
+          "limits": "历史数据库类别，不是当前某品牌标签；餐饮淋酱和份量会不同。",
+          "distance": "D0/D1（通用糖浆类别成分参考）"
+        }
+      ],
+      "unknowns": "不同市场的巧克力酱品类边界、当前品牌配方和餐饮常用份量；成品直接人体健康结局。",
+      "tradition": "巧克力酱是含糖现代复合调味甜品，不对应古籍中的可可原料记载。"
+    },
+    "cocoa-hazelnut-spread": {
+      "name": "可可榛子酱",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "nut-cocoa-spread",
+      "research_depth": "R1",
+      "shared_parent": "cocoa-chocolate-base",
+      "identity": "以糖、植物油、榛子、可可粉及常见乳/乳化成分制成的抹酱；Nutella 是常见实例但不代表所有品牌。与榛子酱、可可酱、整榛子和可可粉分开。",
+      "variables": "榛子与可可比例、糖和植物油类型、奶粉/乳清、乳化剂、品牌和地区版本、涂抹份量、搭配的面包/饼干。",
+      "composition": "以美国 Nutella 标签为品牌实例：每 37 g（2 汤匙）含 200 kcal、总脂肪 11 g（饱和脂肪 4 g）、总糖 21 g（其中添加糖 19 g）、蛋白质 2 g；配料说明中榛子 13%、脱脂乳粉 8.7%、可可 7.4%。不同品牌和地区配方不相同。",
+      "direct": "本轮未检得常规可可榛子抹酱改善疾病或临床健康结局的已发表人体试验。ClinicalTrials.gov 登记过比较减糖替代抹酱与 Nutella 的 1 型糖尿病研究方案；研究方案不是已验证疗效，也不代表普通可可榛子酱。",
+      "specific": "美国 Nutella 官网营养表和配料仅代表该产品/地区。整榛子研究、可可粉研究及专门减糖配方不能直接用于所有可可榛子酱。",
+      "safety": "常见配方含榛子、乳成分和大豆来源乳化剂，并有较多添加糖与脂肪；核对过敏原、份量和地区标签。对榛子过敏者避免。",
+      "body": "可可榛子酱不只是“可可加坚果”：常见配方还含糖和植物油。以美国 Nutella 标签为例，每 37 g 有 21 g 总糖、11 g 脂肪，榛子约占 13%、可可约占 7.4%；这是一个品牌的标签，其他产品要逐项查看。",
+      "evidence_body": "没有足以支持普通可可榛子酱临床功效的直接人体证据。已登记的减糖抹酱对照研究属于特定替代配方和糖尿病人群，不能当作常规抹酱结果。",
+      "care": "按实际涂抹量核算糖和脂肪；榛子、乳及大豆过敏者核对当地完整配料和交叉接触信息。标签实例不代表同类所有品牌。",
+      "taste_m": {
+        "甘": "糖是常见主要甜味来源，烘焙榛子和可可提供香气，依品牌而异。"
+      },
+      "queries": [
+        "cocoa hazelnut spread Nutella official ingredients nutrition facts per serving",
+        "ClinicalTrials.gov NCT06334302 hazelnut cocoa spread Nutella registered trial results",
+        "cocoa hazelnut spread direct human randomized health outcome trial",
+        "FDA tree nut hazelnut milk soy allergen labeling"
+      ],
+      "search_log": [
+        "检索美国 Nutella 官方配料/营养标签、NCT06334302 注册试验及成品临床研究；将标签限于该品牌和市场。",
+        "区分整榛子、可可粉、常规可可榛子酱与特定减糖对照配方；登记方案未作为临床疗效结果。"
+      ],
+      "refs": [
+        "Ferrero U.S.A. “Nutella® Classic—Product Page and Nutrition Information.” https://www.nutella.com/us/en/products/spread/nutella. Accessed 2026-09-24.",
+        "Ferrero. “Nutella® FAQs.” https://www.nutella.com/us/en/inside-nutella/faqs. Accessed 2026-09-24.",
+        "ClinicalTrials.gov. “The Effect of Omega Galil Hazelnut Chocolate Spread ‘O’Sweet Spread’ With 80% Reduced Sucrose on Glucose Response of People With TID.” NCT06334302. https://clinicaltrials.gov/study/NCT06334302. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Ferrero U.S.A. “Nutella® Classic—Product Page and Nutrition Information.” https://www.nutella.com/us/en/products/spread/nutella.",
+        "Ferrero. “Nutella® FAQs.” https://www.nutella.com/us/en/inside-nutella/faqs. Accessed 2026-09-24.",
+        "ClinicalTrials.gov. “The Effect of Omega Galil Hazelnut Chocolate Spread ‘O’Sweet Spread’ With 80% Reduced Sucrose on Glucose Response of People With TID.” NCT06334302. https://clinicaltrials.gov/study/NCT06334302.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Nutella 美国制造商的单品牌营养成分表。",
+          "population": "美国标签上的 1 份 37 g 产品。",
+          "exposure": "品牌配料和营养标签。",
+          "result": "每 37 g 约 200 kcal、总糖 21 g、添加糖 19 g、脂肪 11 g、饱和脂肪 4 g、蛋白质 2 g；配方列出榛子、乳粉和可可。",
+          "limits": "仅为美国某品牌标签；其他市场或品牌可能不同。",
+          "distance": "D0（单一商业配方）"
+        },
+        {
+          "ref": 3,
+          "design": "ClinicalTrials.gov 注册的随机、双盲、交叉对照研究方案。",
+          "population": "方案针对 1 型糖尿病患者；登记计划约 30 人。",
+          "exposure": "20 g 减糖 O’Sweet spread 与 Nutella 对照，关注餐后血糖及感官接受度。",
+          "result": "登记资料描述试验计划；本轮未将登记方案作为阳性或阴性疗效结果。",
+          "limits": "特制减糖产品并非普通可可榛子酱；未以登记方案替代已报告的研究结果。",
+          "distance": "D1（特定对照方案；非普通产品已证疗效）"
+        }
+      ],
+      "unknowns": "不同品牌的榛子/可可比例、糖油配方和实际份量；常规产品成品的临床健康结局及注册试验结果状态。",
+      "tradition": "这是近现代榛子、可可、糖与油脂构成的复合抹酱，不对应整榛子或传统可可单品的原文记载。"
+    }
+  }
+}

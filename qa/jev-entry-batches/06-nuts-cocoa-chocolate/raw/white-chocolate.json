@@ -1,0 +1,129 @@
+{
+  "batch_id": "06-nuts-cocoa-chocolate",
+  "entry_id": "white-chocolate",
+  "summary_ref": "references/entries/white-chocolate/summary.md",
+  "summary_sha256": "c46ac3b2b61febc00cb259e94e69a84d6829c8f9bb9d9a23c3d920ddaf554616",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "requested_model": "jev-latest",
+  "run_timestamp_utc": "2026-09-24T10:44:21.250880+00:00",
+  "runs": [
+    {
+      "index": 1,
+      "actual_model": "jev-1.13.0",
+      "native_answers": {
+        "qi": {
+          "type": "choice",
+          "choice": "平",
+          "confidence": 0.99,
+          "probabilities": {
+            "温": 0.01,
+            "热": 0.0,
+            "凉": 0.0,
+            "寒": 0.0,
+            "平": 0.99
+          }
+        },
+        "taste_sour": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "taste_bitter": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "taste_sweet": {
+          "type": "noul",
+          "noul": 0.46
+        },
+        "taste_pungent": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "taste_salty": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "meridian_heart": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "meridian_liver": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "meridian_spleen": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "meridian_lung": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "meridian_kidney": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "heart_direction": {
+          "type": "choice",
+          "choice": "阳-",
+          "confidence": 0.15,
+          "probabilities": {
+            "阳+": 0.3,
+            "阴+": 0.18,
+            "阳-": 0.36,
+            "阴-": 0.16
+          }
+        },
+        "liver_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.18,
+          "probabilities": {
+            "阳+": 0.19,
+            "阴+": 0.1,
+            "阳-": 0.32,
+            "阴-": 0.39
+          }
+        },
+        "spleen_direction": {
+          "type": "choice",
+          "choice": "阳+",
+          "confidence": 0.14,
+          "probabilities": {
+            "阳+": 0.36,
+            "阴+": 0.33,
+            "阳-": 0.03,
+            "阴-": 0.28
+          }
+        },
+        "lung_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.14,
+          "probabilities": {
+            "阳+": 0.13,
+            "阴+": 0.29,
+            "阳-": 0.23,
+            "阴-": 0.35
+          }
+        },
+        "kidney_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.16,
+          "probabilities": {
+            "阳+": 0.16,
+            "阴+": 0.33,
+            "阳-": 0.13,
+            "阴-": 0.38
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 8665,
+        "output_tokens": 480
+      }
+    }
+  ]
+}
