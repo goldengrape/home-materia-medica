@@ -33,7 +33,15 @@ entries:
       - food_vs_extract
       - mood_effects
       - materia_mapping
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/dark-chocolate/research.md
+    pilot_qa: qa/pilot/dark-chocolate-r3.md
+    pilot_findings:
+      - large_high_quality_extract_trials_can_still_be_D2
+      - mood_signals_do_not_establish_shugan
+      - anshen_not_supported
+      - no_channel_tropism_supported
 
   - id: milk-tea
     name: 奶茶

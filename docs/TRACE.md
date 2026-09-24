@@ -81,8 +81,8 @@ Catalog entry
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 | RM-TASK-012 Pilot 范围 | done | `docs/Pilot测试计划-v1.md` + `catalog/pilot-v1.yaml` |
 | RM-TASK-020 开心果 R2 | done | `references/entries/pistachio/research.md` |
-| RM-TASK-021 黑巧克力 R3 | next | `references/entries/dark-chocolate/research.md` |
-| RM-TASK-022 奶茶 R2 | queued | `references/entries/milk-tea/research.md` |
+| RM-TASK-021 黑巧克力 R3 | done | `references/entries/dark-chocolate/research.md` |
+| RM-TASK-022 奶茶 R2 | next | `references/entries/milk-tea/research.md` |
 | RM-TASK-023~025 后三项 Pilot | queued | coffee / yogurt / instant-noodles dossiers |
 
 ## 六、追踪原则
