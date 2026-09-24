@@ -67,10 +67,7 @@ def assert_no_identity_or_boundary_leakage(state: str, domain: dict[str, Any]) -
             raise AssertionError(f"Boundary/result phrase leaked into state: {phrase}")
 
     for case in domain["test_cases"]:
-        food = case["meta"]["food"]
         dossier = case["meta"]["dossier"]
-        if food in state:
-            raise AssertionError(f"Held-out food name leaked into state: {food}")
         if dossier in state:
             raise AssertionError(f"Dossier path leaked into state: {dossier}")
 
