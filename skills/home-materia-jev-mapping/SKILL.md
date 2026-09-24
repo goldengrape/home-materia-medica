@@ -38,6 +38,7 @@ Jev score != M grade
 3. `references/reasoning-rules.md`
 4. `references/five-shot-v0.3.1.md`
 5. `references/output-contract.md`
+6. `references/runtime.md`
 
 若当前仓库自动化可用，Jev v0.3.1 的已验证参考实现为：
 
