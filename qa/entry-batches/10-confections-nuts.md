@@ -143,15 +143,15 @@
 
 ## Actions 运行记录
 
-待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+- 首轮完整运行 35997042911：success；stage artifact 10806229213（stage 1/2），native artifact 10806612454；二者保留 30 天。
+- 开心果摘要修订后的首次重跑 35998139288：failure；stage artifact 10806528205、native artifact 10807360083 均已留存。运行检测到开心果既有 raw JSON 绑定旧摘要 SHA-256 后停止，未将旧分类当作新摘要结果；旧响应已归档在 `qa/jev-entry-batches/10-confections-nuts/raw/superseded/pistachio-35997042911.json`。
+- 补充 Exa 核验餐前试验：本批累计 28 次查询、151 条返回；查询、5 条命中和筛选判断见 `qa/jev-entry-batches/10-confections-nuts/stage/pistachio-source-check-2026-09-24.md`。
+- 最终重跑 35998620791：success；stage artifact 10807745138（entry-10-confections-nuts-stages-1-2），native artifact 10807635500（entry-10-confections-nuts-native-jev-v0.4），均保留 30 天。Jev 实际模型为 `jev-1.13.0`。
 
 ## 判与写完成记录
 
-- Workflow run: 35998620791; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
-- Native artifact ID: 10807635500; uploaded by this run with 30-day retention.
-- Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
-- Per-file raw JSON SHA-256: qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt.
-- Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
-- Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
-- catalog/entries.yaml updated with this batch's ten frozen entries.
-- Workflow run 35998620791: status success; intermediate and native artifacts are retained for 30 days where uploaded.
+- 十份冻结摘要的 SHA-256 均与 pre-freeze 快照及对应 Mapping 一致。
+- 十份原生 Jev JSON 均绑定当前冻结摘要；每份一轮、16 个原生答案，实际模型均为 `jev-1.13.0`。逐文件原始 JSON SHA-256 见 `qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt`，复核全部通过。
+- 开心果正文保留2014、2024、2025年试验的不同结果、传统文献转引关系和过敏安全信息；正文参考文献保留英文题名及可用 DOI。
+- 十份 Mapping 保留原始 probabilities、Noul、confidence、方向 probabilities，M 标注独立列示；十份读者正文逐一匹配配置中的 body references。
+- 研究底稿、整理摘要、pre-freeze 快照、raw JSON、Mapping、正文及阶段检索记录均保存在分支中；`catalog/entries.yaml` 已登记本批十项。
