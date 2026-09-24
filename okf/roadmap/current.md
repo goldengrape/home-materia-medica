@@ -21,6 +21,12 @@ source_ids: [RM-TASK-001, RM-TASK-002, RM-TASK-003]
 - 然后建立 `catalog/entries.yaml` 的 pilot registry。
 - 再确定第一批 pilot 条目并进入真实 research dossier。
 
+## Publishing contract
+
+- GitHub Pages：网页电子书。
+- GitHub Release：Markdown 包 + EPUB。
+- 不设图片。
+
 ## Not now
 
 - 不批量研究全部目录。
