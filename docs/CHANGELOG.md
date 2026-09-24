@@ -17,8 +17,11 @@
 - 增加中医 Concept Trace 与中医药公共数据库指南。
 - 取消强制独立人工复审门槛，改为公开、可追溯的参考资料链。
 - 参考 `goldengrape/vibe-coding-skill` 建立项目级规划体系。
+- 建立最小 `okf/` 项目地图，索引项目目标、权威层级、标准生产链与当前路线。
 
 ### Current
 
 - 当前工作分支：`plan/project-roadmap-v1`
-- 当前任务：RM-TASK-001 项目级规划。
+- RM-TASK-001 项目级规划：done。
+- RM-TASK-002 最小 OKF：done。
+- 下一任务：RM-TASK-003 中医概念骨架。
