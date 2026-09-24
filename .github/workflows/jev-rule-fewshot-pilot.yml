@@ -6,7 +6,6 @@ on:
       - feat/jev-rule-fewshot-pilot
     paths:
       - "experiments/jev-rule-fewshot-pilot/**"
-      - "docs/jev-rule-fewshot-pilot/**"
       - ".github/workflows/jev-rule-fewshot-pilot.yml"
   workflow_dispatch:
 
