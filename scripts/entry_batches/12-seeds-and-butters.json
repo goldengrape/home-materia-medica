@@ -1,0 +1,587 @@
+{
+  "batch": {
+    "id": "12-seeds-and-butters",
+    "title": "种子、籽类与坚果酱",
+    "catalog_order": 12,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher pages, institutional repository, official food-safety guidance and food-composition databases",
+    "exa_search_calls": 46,
+    "exa_hits": 167,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-12-seeds-and-butters",
+    "identity_red_team": [
+      "奇亚籽、亚麻籽、南瓜籽与葵花籽仁分别按物种和可食部位确认；整籽、研磨籽、籽油、提取物与蛋白粉不是同一暴露。",
+      "藜麦脆是膨化/挤压的加工零食；藜麦饼干、全藜麦和加工论文仅作邻近/组成证据，不当作藜麦脆人体试验。",
+      "火麻仁蛋白限定种仁来源的食品粉；FDA 对申报条件下 GRAS 结论“无异议”不等于所有大麻制品的通用批准，也不等同 CBD/THC 产品。",
+      "花生属于豆科；花生酱和树坚果酱的身份不同，并需独立核对主要过敏原和交叉接触。",
+      "杏仁酱按巴旦木 Prunus dulcis 识别，不把“杏仁核/苦杏仁”的传统记载自动移植；腰果整仁研究不当作腰果酱 D0 证据。",
+      "坚果果干混合配方无统一基质；果干试验、单味坚果试验与固定商品混合配方分别记录，不把替代零食研究写成额外加食效果。",
+      "《本草纲目》“亚麻”与“胡麻/油麻”分别记录；《本草纲目》“葵”条不能确认等同向日葵籽仁；未核实的南瓜籽传统说法不采纳。"
+    ]
+  },
+  "entries": {
+    "nut-fruit-mix": {
+      "name": "坚果果干混合",
+      "volume": "坚果种仁部",
+      "entry_type": "composite_food",
+      "family": "nut-fruit-snack",
+      "research_depth": "R2",
+      "shared_parent": "nut-fruit-snack-base",
+      "identity": "本条指零售或自配的坚果与果干混合零食，不限某一固定品牌或配方；坚果种类、果干种类、是否加糖/盐/油、是否含巧克力或谷物均会变化。不是单独的坚果、单独果干或营养棒。",
+      "variables": "坚果与果干比例和种类、添加糖/盐/油、是否含巧克力、份量、是否替代其他零食或额外添加、研究人群和干预时长。",
+      "composition": "混合产品没有统一营养组成。坚果通常贡献脂肪与蛋白质，果干贡献碳水化合物与糖；具体数据须按配料表、每份重量和 USDA FoodData Central 对应条目核验，不能由名称推定。",
+      "direct": "截至本轮检索，未找到对“坚果+果干混合成品”本身的随机试验。一个 55 名心代谢风险较高成人的交叉试验只测试混合果干（李子、无花果、椰枣、葡萄干）对照等热量、等碳水零食，未测试坚果混合；4 周后血脂未见组间差异，空腹血糖相对对照增加 0.08 mmol/L。该结果不能证明混合坚果果干的获益或风险。",
+      "specific": "“Pairing nuts and dried fruit for cardiometabolic health”是讨论两类食品证据的综述，不是对固定混合零食的临床试验。单独坚果、单独果干或自选混合配方均属不同暴露。",
+      "safety": "若含花生或树坚果，需核对过敏原和交叉接触；盐焗、糖渍或巧克力包衣会改变钠、添加糖与能量。小包装或按克称量更便于识别实际份量。",
+      "body": "坚果果干混合不是组成固定的一味食品：坚果与果干比例、是否裹糖或加盐，都会改变每份的脂肪、碳水、糖和钠。本轮未找到针对这种混合成品的临床试验。已有一项 55 名心代谢风险较高成人的交叉试验研究的是混合果干，不含坚果；在 4 周内，它与等热量、等碳水零食相比没有显示血脂差异，空腹血糖则平均高 0.08 mmol/L。这个结果不能直接外推为坚果果干混合的效果。",
+      "evidence_body": "混合坚果果干成品：本轮未检得 D0 人体试验（E-0）。唯一较近的人体试验为混合果干而非坚果果干混合：55 人、每期 4 周、¾ 杯/日，对照为等热量等碳水零食；血脂无组间差异，空腹血糖相对对照 +0.08 mmol/L（D2，E-C）。",
+      "care": "购买时看坚果/果干比例、添加糖盐和每份重量；对花生或树坚果过敏者核对配方与交叉接触。邻近食品试验不构成对混合成品的功效承诺。",
+      "taste_m": {
+        "甘": "果干提供甜味，坚果带油脂香；配方与烘烤/调味会改变风味。"
+      },
+      "queries": [
+        "Nut and dried fruit mix snack direct human randomized controlled feeding trial cardiometabolic outcomes DOI composition product-specific evidence",
+        "Nut and dried fruit mix snack direct human randomized controlled feeding trial cardiometabolic outcomes DOI composition product-specific evidence",
+        "Pairing nuts and dried fruit for cardiometabolic health randomized trial mixed nuts dried fruit DOI 2016",
+        "nuts dried fruit combination randomized controlled feeding cardiometabolic trial adults snack exact product not review"
+      ],
+      "search_log": [
+        "先检索复合零食本身的随机试验，再追查坚果与果干配对综述；没有把综述当作直接成品试验。",
+        "补查混合果干交叉试验，确认其不含坚果并仅作为 D2 邻近证据。",
+        "核对配方差异与每份标签信息；不由类别名称推算单一营养值。",
+        "本批日志合计 46 次 Exa 查询尝试，167 条搜索结果逐条保存在 stage/exa-results-preserved.json；初始 10 条查询因结果解析问题原样重跑，首次响应未单独重复保存；两条 429 请求已逐条重试。"
+      ],
+      "refs": [
+        "“Dried fruit consumption and cardiometabolic health: a randomized crossover trial.” British Journal of Nutrition. 2020;124(9):912–921. DOI: https://doi.org/10.1017/S0007114520002007. PMID: 32513313; PMCID: PMC7554183.",
+        "Carughi A, Feeney MJ, Kris-Etherton PM, Fulgoni VL, Kendall CWC, Bulló M, et al. “Pairing nuts and dried fruit for cardiometabolic health.” Nutrition Journal. 2016;15:23. DOI: https://doi.org/10.1186/s12937-016-0142-4."
+      ],
+      "body_refs": [
+        "“Dried fruit consumption and cardiometabolic health: a randomized crossover trial.” British Journal of Nutrition. 2020;124(9):912–921. DOI: https://doi.org/10.1017/S0007114520002007. PMID: 32513313; PMCID: PMC7554183.",
+        "Carughi A, Feeney MJ, Kris-Etherton PM, Fulgoni VL, Kendall CWC, Bulló M, et al. “Pairing nuts and dried fruit for cardiometabolic health.” Nutrition Journal. 2016;15:23. DOI: https://doi.org/10.1186/s12937-016-0142-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉试验，两个各 4 周饮食阶段。",
+          "population": "55 名 BMI 升高且至少另有一项心代谢风险因素的成年人。",
+          "exposure": "每天 ¾ 杯混合果干（李子、无花果、椰枣、葡萄干），对照为等热量、等碳水零食；不含坚果。",
+          "result": "血脂/脂蛋白未见组间差异；空腹血糖相对对照增加 0.08 mmol/L；体重变化未见组间差异。",
+          "limits": "研究对象是果干而非坚果果干混合；样本小、时间短，风险指标不能说明疾病结局。",
+          "distance": "D2（共享果干部分；不能代表完整混合零食）"
+        }
+      ],
+      "unknowns": "不同商业配方的代表性摄入、坚果与果干配比的人体试验、添加糖/盐对长期结局的独立影响。",
+      "tradition": "本轮未找到与现代坚果果干混合产品一一对应的传统本草条目；单味坚果或果实记载不自动转移到现代复合零食。"
+    },
+    "chia-seed": {
+      "name": "奇亚籽",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "seed-kernel",
+      "research_depth": "R2",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指奇亚（Salvia hispanica L.）成熟种子，包含完整籽、研磨籽及其食品配料；不包括奇亚籽油、提取物或特定复配补充剂。",
+      "variables": "整粒/研磨/油形态、日摄入量、是否替代其他食物、液体与膳食背景、基线代谢状况和干预时长。",
+      "composition": "奇亚籽含膳食纤维、脂肪（包括 α-亚麻酸）与蛋白质；实际含量受品种、加工与食品数据库样品影响。食品形态和剂量不能与油或提取物互换。",
+      "direct": "一项双盲随机试验纳入 77 名超重或肥胖的 2 型糖尿病患者，双方均接受限能量饮食；奇亚组按每 1000 kcal 配 30 g Salba-chia，对照为每 1000 kcal 配 36 g 燕麦麸，随访 6 个月。研究报告奇亚组体重和腰围下降较多，但比较属于特定饮食计划和患者群体，不能外推成一般人日常添加奇亚籽必然减重。",
+      "specific": "系统综述的整体结果并不完全一致：2017 年综述将多数证据评为低或极低确定性；2024 年综述对血脂和血糖总体未见稳定合并效应，但另有剂量反应综述报告血压下降信号。结局、纳入试验和分析方法不一，因此不能把单个荟萃分析当作确定功效。",
+      "safety": "不同食品形态可产生不同口感与吸水稠化表现；对籽类过敏者应避免相关暴露。当前材料不能给所有人推定通用治疗剂量；如作为补充剂使用，应同时核对产品标签和自身膳食背景。",
+      "body": "奇亚籽的人体证据要结合人群和吃法看。一项 6 个月随机试验纳入 77 名超重或肥胖的 2 型糖尿病患者，在限能量饮食中比较 Salba-chia（每 1000 千卡配 30 克）与燕麦麸。奇亚组的体重和腰围下降较多，但结果只适用于这套饮食方案和患者人群。系统综述对血脂、血糖和血压的合并结论并不一致；现有样本和研究质量不足以把奇亚籽写成普遍减重或降压手段。",
+      "evidence_body": "Salba-chia RCT 为 D0，77 名超重/肥胖且患 2 型糖尿病成人、限能量饮食中 30 g/1000 kcal、6 个月；对比 36 g/1000 kcal 燕麦麸，体重和腰围下降较多。综述结果不一致且确定性有限（E-C）。",
+      "care": "如食用，注意实际份量及产品形态；研究剂量是限能量饮食的一部分，不是独立处方。过敏者按产品配料与标签避免暴露。",
+      "taste_m": {
+        "甘": "种子味淡、带轻微坚果感；此为现代感官描述，不等同于传统性味。"
+      },
+      "queries": [
+        "Chia seed supplementation randomized controlled trial adults cardiometabolic outcomes dose duration systematic review DOI primary human trial",
+        "Chia seed supplementation randomized controlled trial adults cardiometabolic outcomes dose duration systematic review DOI primary human trial",
+        "Chia seed supplementation randomized controlled trial adults cardiometabolic outcomes dose duration systematic review DOI primary human trial",
+        "Salba chia randomized controlled trial overweight obese type 2 diabetes 77 adults 30 g 1000 kcal 6 months DOI",
+        "Chia seed supplementation randomized controlled trial adults cardiometabolic outcomes dose duration systematic review DOI primary human trial"
+      ],
+      "search_log": [
+        "检索直接随机试验与系统综述，并对 2017 与 2024 年综述中不同结局的结论作并列核对。",
+        "记录一项 77 人、6 个月、糖尿病人群的阳性体重/腰围结果，同时保留人群和限能量饮食边界。",
+        "额外的重复检索用于核对 Exa 返回格式；重复结果不作为新的独立研究。"
+      ],
+      "refs": [
+        "Vuksan V, Jenkins AL, Brissette C, Choleva L, Jovanovski E, Gibbs AL, et al. “Salba-chia (Salvia hispanica L.) in the treatment of overweight and obese patients with type 2 diabetes: A double-blind randomized controlled trial.” Nutrition, Metabolism and Cardiovascular Diseases. DOI: https://doi.org/10.1016/j.numecd.2016.11.124. PMID: 28089080.",
+        "Teoh SL, Lai NM, Vanichkulpitak P, Vuksan V, Ho H, Chaiyakunapruk N. “Clinical evidence on dietary supplementation with chia seed (Salvia hispanica L.): a systematic review and meta-analysis.” Nutrition Reviews. 2017;76(4):219–242. DOI: https://doi.org/10.1093/nutrit/nux071.",
+        "Karimi M, et al. “Effects of chia seed (Salvia hispanica L.) supplementation on cardiometabolic health in overweight subjects: a systematic review and meta-analysis of RCTs.” Nutrition & Metabolism. 2024;21:74. DOI: https://doi.org/10.1186/s12986-024-00847-3.",
+        "TaghipourSheshdeh F, et al. “The Effect of Chia Seed on Blood Pressure, Body Composition, and Glycemic Control: A GRADE-Assessed Systematic Review and Dose-Response Meta-Analysis of Randomized Controlled Trials.” Nutrition Reviews. 2024. DOI: https://doi.org/10.1093/nutrit/nuae113."
+      ],
+      "body_refs": [
+        "Vuksan V, Jenkins AL, Brissette C, Choleva L, Jovanovski E, Gibbs AL, et al. “Salba-chia (Salvia hispanica L.) in the treatment of overweight and obese patients with type 2 diabetes: A double-blind randomized controlled trial.” Nutrition, Metabolism and Cardiovascular Diseases. DOI: https://doi.org/10.1016/j.numecd.2016.11.124. PMID: 28089080.",
+        "Teoh SL, Lai NM, Vanichkulpitak P, Vuksan V, Ho H, Chaiyakunapruk N. “Clinical evidence on dietary supplementation with chia seed (Salvia hispanica L.): a systematic review and meta-analysis.” Nutrition Reviews. 2017;76(4):219–242. DOI: https://doi.org/10.1093/nutrit/nux071.",
+        "Karimi M, et al. “Effects of chia seed (Salvia hispanica L.) supplementation on cardiometabolic health in overweight subjects: a systematic review and meta-analysis of RCTs.” Nutrition & Metabolism. 2024;21:74. DOI: https://doi.org/10.1186/s12986-024-00847-3.",
+        "TaghipourSheshdeh F, et al. “The Effect of Chia Seed on Blood Pressure, Body Composition, and Glycemic Control: A GRADE-Assessed Systematic Review and Dose-Response Meta-Analysis of Randomized Controlled Trials.” Nutrition Reviews. 2024. DOI: https://doi.org/10.1093/nutrit/nuae113."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲平行组随机对照试验，6 个月。",
+          "population": "77 名超重或肥胖的 2 型糖尿病成人。",
+          "exposure": "限能量饮食中 Salba-chia 30 g/1000 kcal，对照为燕麦麸 36 g/1000 kcal。",
+          "result": "奇亚组体重与腰围下降较多；论文报告炎症/脂联素指标变化。",
+          "limits": "患者群体、限能量背景与产品剂量具体；不证明一般人单独加食奇亚籽的效果。",
+          "distance": "D0（Salba-chia 籽食品直接试验）"
+        },
+        {
+          "ref": 3,
+          "design": "随机对照试验系统综述与 Meta-analysis。",
+          "population": "10 项试验、424 名超重受试者（各研究人群不同）。",
+          "exposure": "不同奇亚籽补充方案。",
+          "result": "合并血脂与血糖结局未显示稳定显著变化；部分血压/腰围/炎症指标有统计信号。",
+          "limits": "研究数与总样本有限，方案、剂量和结局异质；另一 2024 综述的血压分析不同。",
+          "distance": "D1（奇亚籽补充剂；接近但不等于所有商品形态）"
+        }
+      ],
+      "unknowns": "不同剂量与整粒/研磨形态的长期人体结局；各项 2024 年 Meta-analysis 对血压结果不一致的原因；疾病事件和生活质量结局。",
+      "tradition": "奇亚籽为美洲来源作物，本轮未确认可安全对应的传统中药本草母条；不借用其他鼠尾草属药材的性味或功效。"
+    },
+    "flaxseed": {
+      "name": "亚麻籽",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "seed-kernel",
+      "research_depth": "R2",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指亚麻（Linum usitatissimum L.）成熟种子及其整粒或研磨食品形态；亚麻籽油、木酚素提取物与亚麻籽粉虽共享原料但属于不同暴露。",
+      "variables": "整粒/研磨/油/木酚素提取物、每日克数、食品载体、替代关系、基线血压/血脂/血糖、并用药物和干预时间。",
+      "composition": "亚麻籽提供 α-亚麻酸、木酚素和膳食纤维。整籽、研磨籽、脱脂饼粕及油的纤维与脂肪暴露不同，不能将油试验结果套用于整籽或反向套用。",
+      "direct": "一项双盲安慰剂随机试验纳入 110 名外周动脉疾病患者，连续 6 个月每天摄入含 30 g 磨碎亚麻籽的多种食品或安慰剂。6 个月时亚麻籽组收缩压约低 10 mmHg、舒张压约低 7 mmHg；基线收缩压≥140 mmHg 的亚组报告约 15/7 mmHg 的下降。该结果来自疾病人群和特定高剂量磨碎食品，不能视作普遍降压方案。",
+      "specific": "随机试验综述提示，亚麻籽产品形态会影响血脂等结果；部分分析中整籽或木酚素的结果不同于亚麻籽油。不同 Meta-analysis 的人群、产品和终点有异质性，不能合并成“亚麻籽对所有代谢指标有效”。",
+      "safety": "需按实际食用量和形态看膳食纤维与脂肪摄入；整籽、研磨籽和油不可按克数简单互换。用药者若计划长期大剂量补充，应向临床人员核对与个人治疗安排的适配性。",
+      "body": "亚麻籽有一项较直接的降压随机试验：110 名外周动脉疾病患者每天摄入含 30 克磨碎亚麻籽的食品，持续 6 个月；与安慰剂相比，收缩压约低 10 mmHg、舒张压约低 7 mmHg，基线血压较高者变化更大。这是特定患者、高剂量和磨碎形态下的结果。综述还提示整籽、木酚素和亚麻籽油的结局并不相同，不能把一种形态的发现直接移到另一种产品。",
+      "evidence_body": "Rodriguez-Leyva 等 RCT 为 D0（磨碎亚麻籽食品）：110 名外周动脉疾病患者，30 g/日，6 个月；收缩压约 −10 mmHg、舒张压约 −7 mmHg，较高基线 SBP 亚组约 −15/−7 mmHg。适用范围窄，且研究剂量高（E-C）。",
+      "care": "研究中的 30 克/日为磨碎籽食品、用于外周动脉疾病患者的研究方案；不应据此自行替代降压治疗。购买时辨认整籽、研磨籽与油。",
+      "taste_m": {
+        "甘": "籽粒有淡淡坚果香和油润感；感官记录与古籍药性分别呈现。"
+      },
+      "queries": [
+        "Flaxseed supplementation randomized controlled trial adults blood pressure lipids glycemia systematic review meta-analysis primary study DOI ground whole flaxseed",
+        "Flaxseed supplementation randomized controlled trial adults blood pressure lipids glycemia systematic review meta-analysis primary study DOI ground whole flaxseed",
+        "flaxseed supplementation randomized trial 30 g daily 6 months blood pressure lipids adults DOI ground flaxseed",
+        "《本草纲目》 亚麻子 胡麻 亚麻籽 植物身份 原文 Wikisource",
+        "Flaxseed dietary intervention trial blood pressure peripheral artery disease 110 patients 30 g/day 6 months DOI Hypertension 2013"
+      ],
+      "search_log": [
+        "按外周动脉疾病、磨碎籽、30 g/日和 6 个月核对主要随机试验的样本与血压结果。",
+        "对 2021、2017 和 2023 年产品特异 Meta-analysis 按油、整籽、木酚素等形态区分。",
+        "查阅《本草纲目》谷部“亚麻”与“胡麻/油麻”并列条目，避免将亚麻籽误作芝麻。"
+      ],
+      "refs": [
+        "Rodriguez-Leyva D, Weighell W, Edel AL, LaVallee R, Dibrov E, Pinneker R, et al. “Potent antihypertensive action of dietary flaxseed in hypertensive patients.” Hypertension. 2013;62(6):1081–1089. DOI: https://doi.org/10.1161/HYPERTENSIONAHA.113.02094. PMID: 24126178.",
+        "Yang C, Xia H, Wan M, Lü Y, Xu D, Yang X, et al. “Comparisons of the effects of different flaxseed products consumption on lipid profiles, inflammatory cytokines and anthropometric indices in patients with dyslipidemia related diseases: systematic review and a dose–response meta-analysis of randomized controlled trials.” Food & Function. 2021. PMCID: PMC8504108. https://pmc.ncbi.nlm.nih.gov/articles/PMC8504108/.",
+        "“Flaxseed supplementation on glucose control and insulin sensitivity: a systematic review and meta-analysis of 25 randomized, placebo-controlled trials.” Nutrition Reviews. 2017. DOI: https://doi.org/10.1093/nutrit/nux052.",
+        "“Effect of flaxseed supplementation on blood pressure: a systematic review and dose–response meta-analysis of randomized clinical trials.” Food & Function. 2023. DOI: https://doi.org/10.1039/D2FO02566C.",
+        "李时珍.《本草綱目》谷部·亞麻条（含释名、集解、气味、主治）；维基文库所录文本：https://zh.wikisource.org/wiki/本草綱目/穀之一. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Rodriguez-Leyva D, Weighell W, Edel AL, LaVallee R, Dibrov E, Pinneker R, et al. “Potent antihypertensive action of dietary flaxseed in hypertensive patients.” Hypertension. 2013;62(6):1081–1089. DOI: https://doi.org/10.1161/HYPERTENSIONAHA.113.02094. PMID: 24126178.",
+        "“Flaxseed supplementation on glucose control and insulin sensitivity: a systematic review and meta-analysis of 25 randomized, placebo-controlled trials.” Nutrition Reviews. 2017. DOI: https://doi.org/10.1093/nutrit/nux052.",
+        "“Effect of flaxseed supplementation on blood pressure: a systematic review and dose–response meta-analysis of randomized clinical trials.” Food & Function. 2023. DOI: https://doi.org/10.1039/D2FO02566C.",
+        "李时珍.《本草綱目》谷部·亞麻条（含释名、集解、气味、主治）；维基文库所录文本：https://zh.wikisource.org/wiki/本草綱目/穀之一. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲、安慰剂对照随机试验，6 个月。",
+          "population": "110 名外周动脉疾病患者。",
+          "exposure": "每日 30 g 磨碎亚麻籽，通过多种食物提供；对照为安慰剂食品。",
+          "result": "6 个月时 SBP 约低 10 mmHg、DBP 约低 7 mmHg；基线 SBP≥140 mmHg 亚组约下降 15/7 mmHg。",
+          "limits": "疾病人群、短期风险指标、高剂量和磨碎食品；不等于健康人群或亚麻籽油。",
+          "distance": "D0（亚麻籽磨碎食品直接干预）"
+        },
+        {
+          "ref": 2,
+          "design": "不同亚麻籽产品随机试验的系统综述与剂量反应 Meta-analysis。",
+          "population": "血脂异常相关疾病患者的多项随机试验。",
+          "exposure": "不同亚麻籽产品（整籽、粉、油、木酚素等）。",
+          "result": "部分产品和血脂/体重结局出现改善信号，产品间结果并不一致。",
+          "limits": "人群和产品差异、异质性及不同终点限制外推。",
+          "distance": "D0-D1（亚麻籽产品，但需分形态）"
+        }
+      ],
+      "unknowns": "一般无外周动脉疾病人群的长期血压效应；整籽、磨碎籽、油和提取物之间的剂量转换；长期疾病结局。",
+      "tradition": "《本草纲目》谷部另立“亚麻”条，记有“甘，微温，无毒”，并将胡麻（今常称油麻/芝麻）分列。该条是历史文本记录，不能直接变成现代食疗或临床功效；物种与旧名的对应仍须谨慎。"
+    },
+    "pumpkin-seeds": {
+      "name": "南瓜籽",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "seed-kernel",
+      "research_depth": "R2",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指南瓜（Cucurbita spp.）可食种子仁，含去壳仁、带壳籽和烘烤籽等常见形态；不包括南瓜籽油或标准化提取物。",
+      "variables": "Cucurbita 物种与品种、带壳/去壳、烘烤/盐焗、籽仁份量、南瓜籽油或提取物、研究人群及干预时长。",
+      "composition": "南瓜籽仁含脂肪、蛋白质和多种矿物质；不同品种、去壳方式、产地、烘烤与盐焗会改变每份组成，具体摄入应以商品标签或对应 FoodData Central 条目为准。",
+      "direct": "本轮找到的人体研究主要是一篇学位论文中的小型随机比较：27 名非高血压绝经后女性，被分到每天 4.1 g 南瓜籽或每天 2 g 南瓜籽油，干预 12 周；没有安慰剂或未补充组。论文报告籽组 SBP 下降约 3%，两组 DBP 均有组内下降。因样本小、主动比较且无空白对照，不能确认变化由籽仁本身造成，也不足以外推一般人。",
+      "specific": "南瓜籽仁与南瓜籽油、提取物、南瓜粉不是同一研究暴露。虽检索了临床试验注册和传统来源，本轮未找到可核验、直接对应现代南瓜籽仁的高质量综述或较大人体试验；一次古籍搜索曾限流，无法据此断言传统来源不存在。",
+      "safety": "盐焗产品的钠含量和份量需看标签；籽仁与油的能量密度较高。若对南瓜籽或产品中其他籽类过敏，应避免相应暴露。",
+      "body": "南瓜籽仁的人体证据很有限。本轮可核实的一项小型随机比较来自学位论文：27 名非高血压绝经后女性连续 12 周食用每天 4.1 克南瓜籽，另一组使用南瓜籽油；研究没有安慰剂或不补充组。籽组收缩压和两组舒张压出现组内下降，但这种设计不足以确认南瓜籽仁本身的因果效果。籽仁、籽油和提取物也不能互相替代。",
+      "evidence_body": "Maiya 学位论文研究为 D0/D1（南瓜籽 vs 籽油主动对照），27 名非高血压绝经后女性、4.1 g/日、12 周；无安慰剂组，报告 SBP/DBP 组内变化。单项小样本学位研究仅为低确定性信号（E-C）。",
+      "care": "研究所用约 4.1 克/日并非通用建议；盐焗籽注意钠和份量。不要把籽油或提取物研究当成籽仁的证据。",
+      "taste_m": {
+        "甘": "籽仁有烘烤后的坚果香与油润感；盐焗会改变感官与钠摄入。"
+      },
+      "queries": [
+        "Whole pumpkin seed kernels human randomized clinical trial cardiometabolic outcomes distinguish pumpkin seed oil extract DOI",
+        "Whole pumpkin seed kernels human randomized clinical trial cardiometabolic outcomes distinguish pumpkin seed oil extract DOI",
+        "NCT02727036 pumpkin seed versus pumpkin seed oil published results randomized trial postmenopausal women blood pressure DOI",
+        "《本草纲目》 南瓜子 原文 南瓜子味甘性温 本草拾遗 原典",
+        "Madhura Maiya pumpkin seed oil versus pumpkin seeds blood pressure menopausal symptoms dissertation 2017 sample 4.1 g results DOI",
+        "《本草纲目》 南瓜子 原文 南瓜子味甘性温 本草拾遗 原典"
+      ],
+      "search_log": [
+        "查找整粒/籽仁人体研究，并把籽仁与籽油、提取物分开；只找到小型学位论文随机比较。",
+        "核对 ClinicalTrials.gov NCT02727036 与大学机构库论文记录、剂量和无安慰剂限制。",
+        "追查南瓜子传统原典的检索遇到 Exa 429；重试后获得《本草纲目拾遗》关于南瓜蒂/瓜瓤的结果，但没有证据支持籽仁药性，不据此立论。"
+      ],
+      "refs": [
+        "Maiya M. “Effect of supplementation with pumpkin seed oil versus pumpkin seeds on blood pressure and menopausal symptoms in non-hypertensive postmenopausal women.” Dissertation, Texas Woman’s University. 2017. Institutional repository: https://twu-ir.tdl.org/items/839a4eb3-7fd9-4aab-8241-51ccfcf22b4f. ClinicalTrials.gov: NCT02727036."
+      ],
+      "body_refs": [
+        "Maiya M. “Effect of supplementation with pumpkin seed oil versus pumpkin seeds on blood pressure and menopausal symptoms in non-hypertensive postmenopausal women.” Dissertation, Texas Woman’s University. 2017. Institutional repository: https://twu-ir.tdl.org/items/839a4eb3-7fd9-4aab-8241-51ccfcf22b4f. ClinicalTrials.gov: NCT02727036."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机两组比较，学位论文报告 12 周结果；无安慰剂或不补充组。",
+          "population": "27 名非高血压绝经后女性。",
+          "exposure": "南瓜籽 4.1 g/日，对比南瓜籽油 2 g/日。",
+          "result": "籽组 SBP 组内约下降 3%；籽组和油组 DBP 均出现组内下降。",
+          "limits": "小样本、单一人群、主动对照、无空白/安慰剂组；学位论文而非大型同行评议试验。",
+          "distance": "D0（南瓜籽组）/D1（籽油对照）"
+        }
+      ],
+      "unknowns": "可重复的籽仁随机试验、普通人群剂量和长期结局；传统文献中籽仁的可靠条目；不同品种、烘烤和盐焗形态。",
+      "tradition": "本轮未确认南瓜籽仁可与传统本草条目一一对应。可检索到的《本草纲目拾遗》片段讨论南瓜蒂与瓜瓤而非籽仁，不能移作种子的性味或功效。"
+    },
+    "sunflower-seed-kernels": {
+      "name": "葵花籽仁",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "seed-kernel",
+      "research_depth": "R2",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指向日葵（Helianthus annuus L.）可食种仁，常见去壳、生/烘烤或盐焗形态；不包括葵花籽油、油籽提取物或含籽复合零食。",
+      "variables": "去壳/带壳、烘烤与盐焗、每日籽仁重量、是否替代其他坚果、并行饮食、研究人群和干预时长。",
+      "composition": "葵花籽仁含油脂与蛋白质，品种和去壳/烘烤/盐焗会改变每份营养与钠。数据库的生籽和烘烤样品不是所有市售产品的统一代表。",
+      "direct": "一项随机交叉喂养试验纳入 22 名绝经后且患 2 型糖尿病的女性，个体化膳食中分别加入 30 g/日葵花籽仁或杏仁，两个阶段各 3 周并洗脱 4 周。相较杏仁阶段，葵花籽仁阶段 HDL-C、甘油三酯及载脂蛋白 A1/B100 较低；总胆固醇和 LDL-C 在两饮食阶段均较基线降低，组间没有差异。研究小而短，且主动比较不能说明它优于不吃籽。",
+      "specific": "上述是籽仁直接摄入试验，不是葵花籽油试验；结果来自 2 型糖尿病的绝经后女性和精确的 30 克/日方案。未找到足以独立确定普通人长期效应的直接证据总体。",
+      "safety": "盐焗产品的钠和份量需按标签判断；剥壳后实际摄入重量与带壳产品销售重量不同。对籽类过敏或需要控制钠摄入者需留意配料与份量。",
+      "body": "葵花籽仁有一项直接喂养试验：22 名绝经后且患 2 型糖尿病的女性，在个体化膳食中分别加入每天 30 克葵花籽仁或杏仁，每阶段 3 周，中间洗脱 4 周。与杏仁阶段相比，葵花籽仁阶段 HDL-C、甘油三酯及载脂蛋白 A1/B100 较低；两阶段的总胆固醇和 LDL-C 均较基线下降，但两者之间没有差异。样本小、时间短，不能据此推断一般人长期吃葵花籽的效果。",
+      "evidence_body": "Richmond 等随机交叉喂养试验为 D0（葵花籽仁），22 名绝经后 2 型糖尿病女性、30 g/日、每期 3 周、洗脱 4 周；与杏仁比较时 HDL-C、TG、apoA1 与 apoB100 较低，TC/LDL 两阶段均较基线下降但组间无差。小样本短期指标（E-C）。",
+      "care": "留意是否为籽仁、盐焗与真实食用重量；不要把籽仁结果替换成葵花籽油结果。",
+      "taste_m": {
+        "甘": "籽仁有烘烤坚果香与油润感；加盐/烘烤改变风味和钠含量。"
+      },
+      "queries": [
+        "Sunflower seed kernels human randomized controlled trial direct consumption cardiometabolic outcomes nutrition composition DOI",
+        "Sunflower seed kernels human randomized controlled trial direct consumption cardiometabolic outcomes nutrition composition DOI",
+        "sunflower kernels feeding study 22 postmenopausal women type 2 diabetes randomized crossover DOI results",
+        "《本草纲目》 向日葵子 葵花籽 原文 本草 古籍",
+        "Markers of Cardiovascular Risk in Postmenopausal Women with Type 2 Diabetes Improved by Daily Almonds or Sunflower Kernels feeding study DOI 22 dose results",
+        "Sunflower seed kernels human randomized controlled trial direct consumption cardiometabolic outcomes nutrition composition DOI"
+      ],
+      "search_log": [
+        "以籽仁而非籽油检索，锁定 22 人、30 g/日随机交叉喂养试验并逐项核对对照与各脂质结果。",
+        "另查《本草纲目》“葵”条；该条描述传统葵菜，与现代向日葵种仁并非可确认同物，不用于赋予葵花籽仁性味。",
+        "直接人体证据局限于特定糖尿病女性人群、短期替代比较。"
+      ],
+      "refs": [
+        "Richmond K, Williams S, Mann J, Brown R, Chisholm A. “Markers of Cardiovascular Risk in Postmenopausal Women with Type 2 Diabetes Are Improved by the Daily Consumption of Almonds or Sunflower Kernels: A Feeding Study.” ISRN Nutrition. 2013;2013:626414. DOI: https://doi.org/10.5402/2013/626414. PMCID: PMC4045277."
+      ],
+      "body_refs": [
+        "Richmond K, Williams S, Mann J, Brown R, Chisholm A. “Markers of Cardiovascular Risk in Postmenopausal Women with Type 2 Diabetes Are Improved by the Daily Consumption of Almonds or Sunflower Kernels: A Feeding Study.” ISRN Nutrition. 2013;2013:626414. DOI: https://doi.org/10.5402/2013/626414. PMCID: PMC4045277."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉喂养试验，两阶段各 3 周，4 周洗脱。",
+          "population": "22 名绝经后 2 型糖尿病女性。",
+          "exposure": "个体化饮食加入 30 g/日葵花籽仁或杏仁，所有食物由研究提供。",
+          "result": "与杏仁阶段相比，葵花籽仁阶段 HDL-C、TG、apoA1 和 apoB100 较低；TC/LDL 两阶段均较基线下降，组间无差异。",
+          "limits": "样本少、周期短、研究人群特殊、主动比较；不能判断一般食用或长期疾病结局。",
+          "distance": "D0（葵花籽仁直接干预）"
+        }
+      ],
+      "unknowns": "普通人群和更长期的籽仁试验；籽仁与油的独立效果；加盐、烘烤对实际暴露的影响。",
+      "tradition": "《本草纲目》中的“葵”主要指传统葵菜/冬葵等，不是可确认的现代向日葵籽仁条目；不将其记录移植到葵花籽仁。"
+    },
+    "quinoa-crisps": {
+      "name": "藜麦脆",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "puffed-grain-snack",
+      "research_depth": "R1",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指膨化、挤压或烘焙制成的藜麦脆粒/零食配料，不包括煮熟藜麦、藜麦粉、藜麦饼干或含藜麦的复合餐食。",
+      "variables": "藜麦比例、挤压/膨化/烘焙工艺、是否加油糖盐、与其他谷物混合情况、份量和食用场景。",
+      "composition": "藜麦脆的原料配比与加工法因产品而异，可能含藜麦以外的谷物、糖、油或盐。整粒藜麦或膨化藜麦加工研究只能说明原料或工艺，不能定义每种商业零食的营养组成。",
+      "direct": "本轮没有找到藜麦脆这一成品的临床试验。可检索到的近邻随机交叉研究使用的是藜麦粉占比明确的饼干，而不是藜麦脆；约 40 名 50–75 岁成人每日吃 60 g 藜麦强化饼干 4 周，再换到对照饼干。即使该研究对某些心血管风险指标有变化，也不能归因于膨化脆粒或推广到所有品牌。",
+      "specific": "膨化藜麦的物理、化学和营养特征研究属于加工/成分证据；USDA FoodData Central 可查具体样品，但未见可代表所有“藜麦脆”的统一记录。配方标签比类别名称更适合估算实际摄入。",
+      "safety": "注意配料表中添加糖、钠、油脂及可能混入的小麦等谷物；有特定食物过敏、乳糜泻或需要控制某种成分者，应按具体商品标签判断。",
+      "body": "“藜麦脆”通常是经膨化、挤压或烘焙的商品类别，藜麦含量和加油、加糖、加盐情况会随配方变化。本轮没有找到针对藜麦脆成品的临床试验。可找到的近邻人体研究使用藜麦粉制成的饼干，不是膨化脆粒；因此不能把该试验结果写成藜麦脆的健康效果。购买时以实际配料表和每份营养标示为准。",
+      "evidence_body": "藜麦脆成品未检得 D0 人体研究（E-0）。近邻研究为藜麦强化饼干随机交叉试验，40 名 50–75 岁成人、每日 60 g、每期 4 周，不是藜麦脆，故仅 D2 邻近产品证据；加工论文为机制/组成资料，不是人体功效证据。",
+      "care": "看藜麦比例、油糖盐及过敏原标示；不要用全藜麦或藜麦饼干研究替代特定脆零食的证据。",
+      "taste_m": {
+        "甘": "膨化后口感松脆、谷物香明显；调味会改变甜咸表现。"
+      },
+      "queries": [
+        "Quinoa crisps puffed quinoa snack direct human clinical trial composition FoodData Central DOI distinguish whole quinoa",
+        "Quinoa crisps puffed quinoa snack direct human clinical trial composition FoodData Central DOI distinguish whole quinoa",
+        "USDA FoodData Central quinoa puffs crisped quinoa nutrition composition human trial",
+        "quinoa-enriched biscuits improve cardiovascular risk markers older adults randomized crossover trial DOI 2018 participants results"
+      ],
+      "search_log": [
+        "检索直接临床试验、膨化藜麦加工研究和官方食品成分数据库；未发现以藜麦脆作为干预的临床试验。",
+        "追踪一项 40 人藜麦强化饼干交叉试验，明确其为不同食品形态，仅作 D2。",
+        "排除预印本和产品页面作为人体功效证据；配方层面以标签/数据库为准。"
+      ],
+      "refs": [
+        "Pourshahidi LK, Caballero E, Osses A, Hyland BW, Ternan NG, Gill CIR. “Modest improvement in CVD risk markers in older adults following quinoa (Chenopodium quinoa Willd.) consumption: a randomized-controlled crossover study with a novel food product.” European Journal of Nutrition. 2020;59(7):3313–3323. DOI: https://doi.org/10.1007/s00394-019-02169-0. PMID: 31919583.",
+        "“Physical, chemical and nutritional characteristics of puffed quinoa.” International Journal of Food Science & Technology. DOI: https://doi.org/10.1111/ijfs.14290.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central: Food Search.” Search term: quinoa snacks. https://fdc.nal.usda.gov/food-search. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Pourshahidi LK, Caballero E, Osses A, Hyland BW, Ternan NG, Gill CIR. “Modest improvement in CVD risk markers in older adults following quinoa (Chenopodium quinoa Willd.) consumption: a randomized-controlled crossover study with a novel food product.” European Journal of Nutrition. 2020;59(7):3313–3323. DOI: https://doi.org/10.1007/s00394-019-02169-0. PMID: 31919583.",
+        "“Physical, chemical and nutritional characteristics of puffed quinoa.” International Journal of Food Science & Technology. DOI: https://doi.org/10.1111/ijfs.14290.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central: Food Search.” Search term: quinoa snacks. https://fdc.nal.usda.gov/food-search. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机双盲交叉试验，干预和对照各 4 周，中间洗脱 6 周。",
+          "population": "约 40 名 50–75 岁成年人。",
+          "exposure": "每天 60 g 藜麦强化饼干（含藜麦粉），与等能量小麦饼干比较；不是藜麦脆。",
+          "result": "研究观察 CVD 风险标志物，标题报告 modest improvement。",
+          "limits": "产品为饼干，样本与周期有限；不能外推到挤压/膨化藜麦脆。",
+          "distance": "D2（共享藜麦原料，但食品基质不同）"
+        }
+      ],
+      "unknowns": "商业藜麦脆的代表性配方和营养分布；不同膨化工艺、盐糖油的独立影响；藜麦脆本身的人体试验。",
+      "tradition": "藜麦是安第斯传统作物，但本轮未找到能直接对应现代膨化藜麦脆的传统本草条目；不把全藜麦或藜麦饼干的资料移植为藜麦脆药性。"
+    },
+    "hemp-protein-food": {
+      "name": "火麻仁蛋白食品",
+      "volume": "坚果种仁部",
+      "entry_type": "supplement",
+      "family": "hemp-seed-protein",
+      "research_depth": "R2",
+      "shared_parent": "seed-grain-base",
+      "identity": "本条指由工业大麻（Cannabis sativa L.）种仁脱脂/加工得到的蛋白粉及以其为主的食品；不包括大麻花叶、CBD/THC 产品、火麻仁油或传统火麻仁药材的全部用法。",
+      "variables": "原料品种、是否去壳与脱脂、每份蛋白质克数、氨基酸配方、与大豆/乳清等的比较、训练背景、产品中残留成分与法域法规。",
+      "composition": "FDA 对特定申报条件下的去壳大麻籽、蛋白粉和籽油 GRAS 结论表示无异议；该表述限于预期用途与规格，不是对所有大麻产品的普遍批准。蛋白质及微量 THC/CBD 等含量取决于加工和产品规格。",
+      "direct": "一项随机双盲训练试验纳入 34 名受训年轻成人（22 男、12 女），在每周约 4 次抗阻训练期间每天使用 60 g 火麻仁粉（约 40 g 蛋白质、9 g 油）或等蛋白/能量大豆粉，持续 8 周。报告了性别分层的肌肉厚度或疲劳相关指标差异；单项小样本、主动比较结果不能证明火麻仁蛋白普遍优于大豆或乳清。",
+      "specific": "受试品为火麻仁粉补充剂，与蛋白分离物、混合蛋白饮料或一般含火麻仁食品不同。FDA 的 GRAS ‘无异议’仅对应申报的预期用途和规格，不等同药品审批或对所有品牌安全有效的保证。",
+      "safety": "核对产品来源、蛋白含量、配料与适用法规；FDA 提到种子在收获/加工时可能接触植物其他部位而带有微量 THC/CBD。不能把籽类食品的法规结论延伸到大麻花叶或 CBD 产品。",
+      "body": "火麻仁蛋白食品的直接人体证据仍少。一项小型随机双盲试验让 34 名受训年轻成人在抗阻训练 8 周期间每天摄入 60 克火麻仁粉（约含 40 克蛋白质），并与等蛋白、等能量的大豆粉比较；结果有性别分层的肌肉或疲劳指标信号。样本小、比较对象特定，不能据此说火麻仁蛋白普遍优于其他蛋白。FDA 对特定大麻籽蛋白粉预期用途的 GRAS 结论是“无异议”，不是对所有大麻制品的通用批准。",
+      "evidence_body": "Kaviani 等为 D0（火麻仁粉）随机双盲主动对照训练试验：34 名受训年轻成人，60 g/日（约 40 g 蛋白），对比大豆粉，8 周抗阻训练；结果呈性别分层且单项小样本，不能推广为普遍优效（E-C）。",
+      "care": "按实际蛋白克数与配方比较产品；区分食品用种子蛋白、火麻仁油与 CBD/THC 制品。药物/反兴奋剂或法规要求较严者核对产品检测和适用规则。",
+      "taste_m": {
+        "甘": "粉末风味偏籽仁、草本与坚果调；配方常用甜味剂或香料调整。"
+      },
+      "queries": [
+        "Hemp seed protein human randomized trial muscle protein synthesis athletes compare whey soy dose DOI distinguish hemp seed foods",
+        "Hemp seed protein human randomized trial muscle protein synthesis athletes compare whey soy dose DOI distinguish hemp seed foods",
+        "NCT02529917 hemp powder 8 week resistance training results peer reviewed publication DOI",
+        "FDA hemp seed-derived ingredients hulled hemp seed hemp seed protein powder GRAS notice official",
+        "Kaviani Shaw Candow Effects of hemp supplementation during resistance training in trained young adults 2023 DOI sample results"
+      ],
+      "search_log": [
+        "查找 ClinicalTrials.gov NCT02529917 对应论文，并核对已发表 34 人研究的样本、60 g/日、8 周和大豆主动对照。",
+        "补查 FDA 三项 GRAS 通知官方说明；保留预期用途与规格边界，未写成 blanket approval。",
+        "排除植物蛋白混合物与乳清研究作为火麻仁蛋白直接证据。"
+      ],
+      "refs": [
+        "Kaviani M, Shaw KA, Candow DG, Farthing JP, Chilibeck PD. “Effects of hemp supplementation during resistance training in trained young adults.” European Journal of Applied Physiology. 2024;124(4):1097–1107. DOI: https://doi.org/10.1007/s00421-023-05337-7. PMID: 37847288.",
+        "U.S. Food and Drug Administration. “FDA Responds to Three GRAS Notices for Hemp Seed-Derived Ingredients for Use in Human Food.” 2018-12-20. https://www.fda.gov/food/hfp-constituent-updates/fda-responds-three-gras-notices-hemp-seed-derived-ingredients-use-human-food. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Kaviani M, Shaw KA, Candow DG, Farthing JP, Chilibeck PD. “Effects of hemp supplementation during resistance training in trained young adults.” European Journal of Applied Physiology. 2024;124(4):1097–1107. DOI: https://doi.org/10.1007/s00421-023-05337-7. PMID: 37847288.",
+        "U.S. Food and Drug Administration. “FDA Responds to Three GRAS Notices for Hemp Seed-Derived Ingredients for Use in Human Food.” 2018-12-20. https://www.fda.gov/food/hfp-constituent-updates/fda-responds-three-gras-notices-hemp-seed-derived-ingredients-use-human-food. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲随机主动对照试验，8 周抗阻训练期间补充。",
+          "population": "34 名受训年轻成人，22 男、12 女。",
+          "exposure": "每天 60 g 火麻仁粉（约 40 g 蛋白、9 g 油）对比匹配蛋白/能量的大豆粉。",
+          "result": "报告性别分层的肌肉厚度与疲劳扭矩指标变化。",
+          "limits": "单项小样本、受训年轻成人、特定补充剂和训练方案；不等于一般膳食或其他火麻仁产品。",
+          "distance": "D0（火麻仁粉直接干预）"
+        }
+      ],
+      "unknowns": "不同火麻仁蛋白加工与氨基酸评分下的长期试验；与乳清/大豆的直接可重复比较；普通人群和其他训练人群结局。",
+      "tradition": "传统火麻仁（大麻成熟种仁）与现代脱脂蛋白粉在加工、剂量和食品用途上不同；不能直接继承传统药材功能或性味。"
+    },
+    "peanut-butter": {
+      "name": "花生酱",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "legume-spread",
+      "research_depth": "R2",
+      "shared_parent": "nut-butters-base",
+      "identity": "本条指研磨花生制成的可涂抹酱，包含纯花生、加盐/糖/油或稳定剂的常见商品；不包括整粒花生、花生油、花生饮料或花生糖。",
+      "variables": "花生品种与烘烤、研磨程度、是否加盐/糖/氢化或其他油、份量、食用时间、与其他食物替代/添加及研究人群。",
+      "composition": "花生酱含花生来源脂肪、蛋白质和能量，商品配方可额外含糖、盐、植物油或稳定剂；成分应以具体标签和对应食品成分数据库记录为准。",
+      "direct": "2026 年一项试点随机对照试验将 40 名全职消防员（其中 1 名女性）分为睡前吃一份花生酱、每周至少 5 天、持续 7 周，或维持日常饮食。血压没有显著组别×时间交互，体脂、脂肪量和瘦体重也无显著组间变化。该研究时间短且人群高度特定。",
+      "specific": "花生酱与整粒花生共享原料，但研磨、配方和进食速度/场景不同；整粒花生或其他坚果的人体证据只作为相邻背景。花生属于 FDA 列出的主要食物过敏原之一。",
+      "safety": "花生可引发严重食物过敏反应，过敏者应避免，并核对交叉接触和标签。商品间糖、盐、油和稳定剂不同；睡前试验不是对个人饮食安排的建议。",
+      "body": "花生酱有一项 2026 年短期试点随机试验：40 名全职消防员在睡前吃一份花生酱、每周至少 5 天，持续 7 周；对照组维持日常饮食。研究没有发现血压或身体组成的显著组间×时间变化。样本几乎全为男性消防员，不能说明其他人群、长期结局或不同配方。对花生过敏者应避免食用，并留意交叉接触。",
+      "evidence_body": "Kohler 等试点 RCT 为 D0（花生酱），40 名消防员、7 周、每周至少 5 次睡前一份；血压与身体组成未见显著组别×时间差异。样本极小、几乎全男性、时间短（E-C）。",
+      "care": "花生是主要食物过敏原；严重过敏者避免并检查交叉接触。按配方看添加糖、钠、油和一份的实际重量。",
+      "taste_m": {
+        "甘": "烘烤花生酱味浓、略甜或略咸；添加配料和研磨程度改变感官特征。"
+      },
+      "queries": [
+        "Peanut butter randomized controlled trial adults human cardiometabolic weight outcomes direct peanut butter DOI",
+        "Peanut butter randomized controlled trial adults human cardiometabolic weight outcomes direct peanut butter DOI",
+        "2026 pilot randomized controlled trial nighttime peanut butter firefighters blood pressure body composition DOI results",
+        "Kohler 2026 A Pilot Randomized Controlled Trial of Nighttime Peanut Butter Supplementation in Firefighters 40 participants 7 weeks dose outcomes DOI"
+      ],
+      "search_log": [
+        "检索特指花生酱的人体试验，识别到 2026 年消防员睡前补充试点；另将花生整体消费试验分为相邻证据。",
+        "核对样本、每周频次、7 周、血压与体组成交互结果。",
+        "用 FDA 食物过敏原资料核对花生的过敏提示。"
+      ],
+      "refs": [
+        "Kohler AA, Shuler DH, Adeleye LO, Moore AR, Peritore N, Holland AM. “A Pilot Randomized, Controlled Trial of Nighttime Peanut Butter Supplementation in Firefighters: Blood Pressure and Body Composition Outcomes.” Diseases. 2026;14(4):135. DOI: https://doi.org/10.3390/diseases14040135.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Kohler AA, Shuler DH, Adeleye LO, Moore AR, Peritore N, Holland AM. “A Pilot Randomized, Controlled Trial of Nighttime Peanut Butter Supplementation in Firefighters: Blood Pressure and Body Composition Outcomes.” Diseases. 2026;14(4):135. DOI: https://doi.org/10.3390/diseases14040135.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "试点随机对照研究，7 周。",
+          "population": "40 名全职消防员，其中 1 名女性。",
+          "exposure": "花生酱组每周至少 5 天睡前食用一份；对照组保持通常饮食。",
+          "result": "血压无显著组别×时间交互；体脂、脂肪量和瘦体重无显著组间变化。",
+          "limits": "短期、样本小、人群职业和性别构成特殊；未验证长期疾病终点。",
+          "distance": "D0（花生酱直接干预）"
+        }
+      ],
+      "unknowns": "不同花生酱配方、份量和日常食用/替代关系的长期研究；女性及普通人群结果；对比整粒花生时的独立加工效应。",
+      "tradition": "花生为现代全球食品原料，花生酱是近现代研磨加工品；本轮不把其他豆类、种仁或花生整粒的传统记载转移成花生酱的专属分类。"
+    },
+    "almond-butter": {
+      "name": "杏仁酱",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "tree-nut-spread",
+      "research_depth": "R2",
+      "shared_parent": "nut-butters-base",
+      "identity": "本条指以巴旦木（Prunus dulcis）研磨制成的杏仁酱/巴旦木酱，可为纯坚果或含盐、糖、油、乳化剂的商业配方；不包括杏仁奶、杏仁油或传统中药语境中未明确同种的“杏仁”。",
+      "variables": "巴旦木物种/品种、是否去皮、烘烤/生制、研磨程度、加盐糖油、一次份量、替代关系、受试人群和急性/长期结局。",
+      "composition": "杏仁酱的主要原料是巴旦木，含脂肪与蛋白质，零售配方可能另加盐、糖或油。需区分巴旦木（sweet almond）与苦杏仁/杏仁核等不同原料名称。",
+      "direct": "直接食品形态研究包括一项 38 名高胆固醇成人的 4 周饮食试验，参与者在健康饮食中摄入每日 100 g 的生杏仁、烘烤杏仁或烘烤杏仁酱；三组 LDL 均较基线下降，杏仁酱组总胆固醇下降未达显著且该组人数较少。另一项仅 14 名糖耐量受损成人的急性交叉研究也比较不同杏仁形式，包括杏仁酱。两项都样本小，前者剂量高，后者只测短时餐后指标。",
+      "specific": "上述结果来自特定烘烤杏仁酱/实验餐，不适用于任意加糖商品，也不是杏仁奶、杏仁油或“杏仁核”研究。植物食物整体饮食背景和高剂量也限制一般化。",
+      "safety": "核对杏仁/树坚果过敏原和交叉接触；若使用加糖、加盐或复合油脂的产品，应看实际配料表。研究中的 100 g/日剂量远高于常见小份量，不是推荐量。",
+      "body": "杏仁酱不是“杏仁研究”的统一替代品，但确有少量直接产品试验。一项 38 名高胆固醇成人的 4 周饮食研究比较生杏仁、烘烤杏仁与烘烤杏仁酱，每天提供 100 克；各组 LDL 均较基线下降，杏仁酱组总胆固醇变化未达显著，而且该组人数较少。另一项 14 人的急性交叉研究比较了不同杏仁形态，包括杏仁酱，但只能回答短时餐后反应。研究剂量、配方和人群都限制外推。",
+      "evidence_body": "Spiller 等 38 人、4 周饮食试验含 D0 烘烤杏仁酱组，剂量 100 g/日、背景为心脏健康饮食；各组 LDL 较基线下降，杏仁酱组 TC 未显著变化且人数较少。Mori 等 14 人急性交叉试验含杏仁酱形式（E-C）。",
+      "care": "注意树坚果过敏和交叉接触；100 g/日研究剂量不可当作常见份量建议。区分巴旦木酱与苦杏仁/杏仁核产品。",
+      "taste_m": {
+        "甘": "巴旦木酱有坚果香与油润感；烘烤、去皮和添加糖盐改变口味。"
+      },
+      "queries": [
+        "Almond butter human randomized controlled trial adults clinical health outcomes direct almond butter versus whole almonds DOI",
+        "Almond butter human randomized controlled trial adults clinical health outcomes direct almond butter versus whole almonds DOI",
+        "almond butter randomized trial 14 impaired glucose tolerance adults acute second meal DOI 38 hypercholesterolemic serum lipoproteins DOI",
+        "Effects of plant-based diets high in raw or roasted almonds or roasted almond butter on serum lipoproteins in humans 2003 DOI results 38 participants"
+      ],
+      "search_log": [
+        "核对 2003 年含杏仁酱的高胆固醇人群饮食研究和 2011 年 14 人急性交叉研究。",
+        "记录前者 100 g/日和小样本/组别限制，后者只支持急性餐后端点。",
+        "核对食品名称差异，避免把巴旦木酱误称为杏仁核药材或杏仁饮品。"
+      ],
+      "refs": [
+        "Spiller GA, Miller A, Olivera K, Reynolds J, Miller B, Morse SJ, et al. “Effects of Plant-Based Diets High in Raw or Roasted Almonds, or Roasted Almond Butter on Serum Lipoproteins in Humans.” Journal of the American College of Nutrition. 2003. DOI: https://doi.org/10.1080/07315724.2003.10719293. PMID: 12805245.",
+        "Mori A, Considine RV, Mattes RD. “Acute and second-meal effects of almond form in impaired glucose tolerant adults: a randomized crossover trial.” Nutrition & Metabolism. 2011;8:6. DOI: https://doi.org/10.1186/1743-7075-8-6. PMCID: PMC3042001."
+      ],
+      "body_refs": [
+        "Spiller GA, Miller A, Olivera K, Reynolds J, Miller B, Morse SJ, et al. “Effects of Plant-Based Diets High in Raw or Roasted Almonds, or Roasted Almond Butter on Serum Lipoproteins in Humans.” Journal of the American College of Nutrition. 2003. DOI: https://doi.org/10.1080/07315724.2003.10719293. PMID: 12805245.",
+        "Mori A, Considine RV, Mattes RD. “Acute and second-meal effects of almond form in impaired glucose tolerant adults: a randomized crossover trial.” Nutrition & Metabolism. 2011;8:6. DOI: https://doi.org/10.1186/1743-7075-8-6. PMCID: PMC3042001."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三种杏仁形态的 4 周饮食研究。",
+          "population": "38 名高胆固醇自由生活成人（12 男、26 女）。",
+          "exposure": "健康饮食中每日 100 g 生杏仁、烘烤盐焗杏仁或烘烤杏仁酱之一。",
+          "result": "三组 LDL 较基线下降；杏仁酱组 TC 变化未达显著，且该组样本较少。",
+          "limits": "剂量远高于普通小份，受试者高胆固醇，饮食整体结构共同影响。",
+          "distance": "D0（烘烤杏仁酱直接食品形态）"
+        },
+        {
+          "ref": 2,
+          "design": "五组随机交叉急性/第二餐试验。",
+          "population": "14 名糖耐量受损成人。",
+          "exposure": "不同杏仁形态，包括杏仁酱，以及无杏仁对照。",
+          "result": "比较单餐后和第二餐的血糖/代谢反应。",
+          "limits": "极小样本、短时代理终点；不代表长期疾病风险或市售甜味杏仁酱。",
+          "distance": "D0（杏仁酱形态；急性研究）"
+        }
+      ],
+      "unknowns": "更常见份量、更大样本、不同甜咸配方杏仁酱长期试验；杏仁酱与整粒巴旦木在相同饮食背景下的对照。",
+      "tradition": "现代商品多由巴旦木（Prunus dulcis）研磨；传统“杏仁”名称可能指杏属种仁或不同药材来源，未确认同物前不继承其传统性味与功效。"
+    },
+    "cashew-butter": {
+      "name": "腰果酱",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "tree-nut-spread",
+      "research_depth": "R2",
+      "shared_parent": "nut-butters-base",
+      "identity": "本条指腰果（Anacardium occidentale）可食种仁研磨形成的腰果酱，包括纯腰果酱和可能加盐、糖、油的商品；不包括整粒腰果、腰果油、腰果饮料或调味腰果。",
+      "variables": "烘烤程度、研磨细度、是否脱皮、盐糖油添加、每份腰果比例、剂量、作为替代还是额外摄入和目标人群。",
+      "composition": "腰果酱由腰果种仁研磨制成，具体脂肪、蛋白质、能量与钠取决于配方和份量。整粒腰果、腰果粉及酱化加工后食品基质和可食用速度不同。",
+      "direct": "截至本轮 R2 定向检索，未找到腰果酱本身的人体随机试验。可找到的腰果人体试验针对整粒腰果，例如受控喂养交叉试验研究轻度高胆固醇成人的血脂，或小型 2 型糖尿病试验研究氧化应激指标；这些属于共享原料的相邻证据，不能称为腰果酱有效。",
+      "specific": "酱化加工可能改变食物结构与食用量；整粒腰果的剂量结果不能直接迁移到酱。腰果酱配方中常见添加油、盐、糖，需逐品核对。",
+      "safety": "腰果属于树坚果，过敏者避免并留意交叉接触；含盐、糖或其他油脂的商品按配料和实际份量判断。整粒腰果研究不构成腰果酱的食疗剂量建议。",
+      "body": "本轮没有找到腰果酱本身的人体随机试验。腰果的临床研究主要测试整粒种仁，例如一项受控喂养交叉试验观察高胆固醇成人的血脂；这类结果只能作为腰果酱的相邻证据，不能写成腰果酱的直接效果。研磨加工和配方会改变质地、食用量及添加盐糖油，选购应以配料表和每份营养标示为准。",
+      "evidence_body": "腰果酱成品未检得 D0 人体研究（E-0）。整粒腰果 RCT 为 D2（共享原料但食品基质不同），包括约 51 名轻度高胆固醇成人的随机交叉受控喂养试验；不得改写为腰果酱证据。",
+      "care": "树坚果过敏者避免并核对交叉接触；检查是否加盐、糖或其他油。整粒腰果试验不能为腰果酱提供剂量建议。",
+      "taste_m": {
+        "甘": "腰果酱口感细腻、坚果甜香明显；配方添加物会改变咸甜和能量。"
+      },
+      "queries": [
+        "Cashew butter human randomized controlled trial direct cashew butter clinical outcomes DOI distinguish whole cashews",
+        "Cashew butter human randomized controlled trial direct cashew butter clinical outcomes DOI distinguish whole cashews",
+        "cashew butter human clinical trial randomized controlled feeding glycemic blood lipid study DOI direct product"
+      ],
+      "search_log": [
+        "以“cashew butter”专搜临床试验；检索结果多为整粒腰果试验或配方/感官加工研究。",
+        "将整粒腰果 RCT 作为 D2 共享原料背景，未转换成腰果酱的直接功效。",
+        "按标签变量记录研磨、添加盐糖油和份量。"
+      ],
+      "refs": [
+        "Kendall CWC, West SG, Augustin LSA, Esfahani A, Vidgen E, Artz WE, et al. “Cashew consumption reduces total and LDL cholesterol: a randomized, crossover, controlled-feeding trial.” The American Journal of Clinical Nutrition. 2017;105(5):1070–1078. DOI: https://doi.org/10.3945/ajcn.116.150037.",
+        "Damavandi RD, et al. “Effects of Daily Consumption of Cashews on Oxidative Stress and Atherogenic Indices in Patients with Type 2 Diabetes: A Randomized, Controlled-Feeding Trial.” International Journal of Endocrinology and Metabolism. 2019;17(1):e70744. DOI: https://doi.org/10.5812/ijem.70744."
+      ],
+      "body_refs": [
+        "Kendall CWC, West SG, Augustin LSA, Esfahani A, Vidgen E, Artz WE, et al. “Cashew consumption reduces total and LDL cholesterol: a randomized, crossover, controlled-feeding trial.” The American Journal of Clinical Nutrition. 2017;105(5):1070–1078. DOI: https://doi.org/10.3945/ajcn.116.150037."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、交叉、受控喂养试验，整粒腰果与等能量对照食品比较。",
+          "population": "约 51 名轻度高胆固醇成人。",
+          "exposure": "整粒腰果约占能量 11%，每日约 28–64 g，研究阶段 4 周。",
+          "result": "论文报告总胆固醇、LDL 与非 HDL 胆固醇的变化。",
+          "limits": "试验研究整粒腰果而非腰果酱，不能用于确认研磨商品的同样结果。",
+          "distance": "D2（共享腰果原料；食品矩阵不同）"
+        }
+      ],
+      "unknowns": "腰果酱直接人体试验；不同研磨与配方对食用量、血脂和血糖的影响；整粒与酱的同剂量对照。",
+      "tradition": "本轮未确认现代腰果酱与传统本草条目间的直接对应；不把其他坚果、种仁或现代整粒腰果研究转写成专属传统功效。"
+    }
+  }
+}
