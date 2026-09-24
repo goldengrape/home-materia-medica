@@ -1,0 +1,10 @@
+e99785be243a76058fe0e24bd59f615d31edcf1f5b2500b784944c2773d13464  qa/jev-entry-batches/12-seeds-and-butters/raw/nut-fruit-mix.json
+a2249fc0a74089cc545892d58c759219489b1293ebf4420935fbd418a5aa685c  qa/jev-entry-batches/12-seeds-and-butters/raw/chia-seed.json
+10fdc7aed77c7f6e5af0064ae552c4ed1f1bbcb9151c63353406f23534514e9c  qa/jev-entry-batches/12-seeds-and-butters/raw/flaxseed.json
+5e455faf175915399cbde10f12f1c4075c82418423a22abe3104018166b2feb5  qa/jev-entry-batches/12-seeds-and-butters/raw/pumpkin-seeds.json
+fdd39a996f377f82c6347361fcba3f33f68a8e598f9c21c8cefdc785a9a559e7  qa/jev-entry-batches/12-seeds-and-butters/raw/sunflower-seed-kernels.json
+f881b5a74c25f01e9c27b8807f29ed2cc15cc83afd6d1aec33f89b36eb99c491  qa/jev-entry-batches/12-seeds-and-butters/raw/quinoa-crisps.json
+94e8245c3298bdbd918ae92c2ce52d557b03e6b3f4b793842aed8050771ad30e  qa/jev-entry-batches/12-seeds-and-butters/raw/hemp-protein-food.json
+95492d4874105c1457bb12926defef5402ab4b90693bfe0424bb1dfd82251570  qa/jev-entry-batches/12-seeds-and-butters/raw/peanut-butter.json
+10b2d05b0ed54919769d42fcf5df9bf6ec1fd4cfea5f95c5c7d6378aafb51274  qa/jev-entry-batches/12-seeds-and-butters/raw/almond-butter.json
+06499f1051b1e2de6b54ee9bcaea02716e7d32353ee1a66020005fc9513182c9  qa/jev-entry-batches/12-seeds-and-butters/raw/cashew-butter.json

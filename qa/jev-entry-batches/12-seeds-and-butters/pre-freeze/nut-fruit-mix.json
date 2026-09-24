@@ -1,0 +1,10 @@
+{
+  "batch_id": "12-seeds-and-butters",
+  "entry_id": "nut-fruit-mix",
+  "summary_ref": "references/entries/nut-fruit-mix/summary.md",
+  "summary_sha256": "53a10c35ed7fa2a70e1b546a04e50a88df89457a54e0388d926169f33ecb74f5",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 坚果果干混合\n\n**身份。** 本条指零售或自配的坚果与果干混合零食，不限某一固定品牌或配方；坚果种类、果干种类、是否加糖/盐/油、是否含巧克力或谷物均会变化。不是单独的坚果、单独果干或营养棒。\n\n**组成与暴露。** 混合产品没有统一营养组成。坚果通常贡献脂肪与蛋白质，果干贡献碳水化合物与糖；具体数据须按配料表、每份重量和 USDA FoodData Central 对应条目核验，不能由名称推定。 坚果与果干比例和种类、添加糖/盐/油、是否含巧克力、份量、是否替代其他零食或额外添加、研究人群和干预时长。\n\n**直接人体证据。** 截至本轮检索，未找到对“坚果+果干混合成品”本身的随机试验。一个 55 名心代谢风险较高成人的交叉试验只测试混合果干（李子、无花果、椰枣、葡萄干）对照等热量、等碳水零食，未测试坚果混合；4 周后血脂未见组间差异，空腹血糖相对对照增加 0.08 mmol/L。该结果不能证明混合坚果果干的获益或风险。\n\n**产品/成分证据。** “Pairing nuts and dried fruit for cardiometabolic health”是讨论两类食品证据的综述，不是对固定混合零食的临床试验。单独坚果、单独果干或自选混合配方均属不同暴露。\n\n**共享背景。** 参见 nut-fruit-snack-base；共享结论不自动等于本成品结论。\n\n**安全。** 若含花生或树坚果，需核对过敏原和交叉接触；盐焗、糖渍或巧克力包衣会改变钠、添加糖与能量。小包装或按克称量更便于识别实际份量。\n\n**传统来源。** 本轮未找到与现代坚果果干混合产品一一对应的传统本草条目；单味坚果或果实记载不自动转移到现代复合零食。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}
