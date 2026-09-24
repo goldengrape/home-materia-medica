@@ -4,8 +4,8 @@ description: >
   为《居家本草》把已经完成研究整理的自然语言说明文档交给 Jev，
   按 v0.4 reasoning rules + five-shot 判断四气、五味、五脏归经，
   并为每个五脏归经给出阴-/阴+/阳-/阳+的主作用方向 Choice。
-  保存 Jev 原生 score / probability，并与 Research Dossier 中独立评定的 M-I～M-0 证据等级并列输出。
-  本 skill 不负责检索证据，不用 M 修改 Jev score，也不把 Jev score 当作证据强度。
+  保存 Jev 原生 score / probability；分类完成后再回查 Research Dossier，对分类命题逐项标 M-I～M-0。
+  本 skill 不负责重新检索证据，不用 M 修改 Jev score，也不把 Jev score 当作证据强度。
 ---
 
 # Home Materia Jev Mapping v0.4
@@ -471,7 +471,7 @@ writing 层读取 `summary.md + mapping.md`，根据资料与分类选择读者�
 
 ## 完成前检查
 
-- [ ] 输入来自已完成 Research Dossier？
+- [ ] 输入是否为阶段二冻结的 `summary.md`，且能追溯到对应 `research.md`？
 - [ ] 没有为 Jev 补写答案导向句？
 - [ ] 使用 v0.4 rules / five-shot / contract？
 - [ ] 保存 Choice 全部 probabilities？
