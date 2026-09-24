@@ -23,6 +23,8 @@
 - 完成 Pilot v1 六个样例：开心果、黑巧克力、珍珠奶茶、咖啡共享研究母页、酸奶、方便面。
 - Pilot v1 总复盘通过：保留 R/D/E/M 与停止规则。
 - 根据 Pilot 正式加入 Identity Revision、Composition & Exposure、Evidence-base overlap、Research Parent、Claim Mode 与消费者端服食法/加工变量。
+- 建立 Jev 四气五味归经 rule + few-shot 技术 pilot：匿名 held-out、gold 隔离、原生概率留存、GitHub Actions secret 注入。
+- 完成 Jev pilot v0.1：四气 5/5，五味 micro-F1 0.857，归经 micro-F1 0.824；暂不设生产阈值，不引入概率修正函数。
 
 ### Current
 
