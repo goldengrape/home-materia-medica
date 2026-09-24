@@ -22,7 +22,7 @@
 
 ### macadamia｜夏威夷果
 
-检索词：macadamia nut randomized crossover trial adults cardiometabolic risk factors 2023 DOI；macadamia nut composition FoodData Central raw roasted exact food records；macadamia tree nut allergy official food allergen guidance
+检索词：macadamia randomized controlled trial macadamia nuts consumption adults hypercholesterolemia lipid profile dose study DOI；Systematic review meta-analysis randomized controlled trials macadamia nut consumption cardiometabolic outcomes DOI；Macadamia nut cardiometabolic randomized trials
 
 - 核对 Jones 等随机交叉试验的样本、两阶段时长、干预能量比例、洗脱期和各组间结局；保留阴性结果。
 - 按 FoodData Central 的具体食品记录讨论组成，不把不同加工形态合并成市场平均值；未找到可映射的传统本草母条。
@@ -32,7 +32,7 @@
 
 ### hazelnut｜榛子
 
-检索词：hazelnut systematic review Bayesian meta-analysis LDL randomized studies DOI 2016；hazelnut cardiometabolic risk systematic review 2022 DOI；raw versus dry roasted lightly salted hazelnuts randomized crossover trial 72 participants DOI；Bencao Gangmu volume 30 zhen hazelnut historical botanical identity
+检索词：Hazelnut enriched diet randomized controlled trial adults lipid profile glucose blood pressure DOI；Systematic review randomized controlled trials hazelnut consumption cardiometabolic outcomes DOI；Hazelnut trial and systematic review；《本草纲目》 榛子 榛实 古籍 原文 Corylus avellana 榛子本草
 
 - 核对 2016 年荟萃分析纳入数、摄入范围、随机研究 LDL 合并估计与区间；同时检视 2022 年综述的研究数和局限。
 - 核查 72 人生榛子/干烤轻盐交叉试验；标明烘烤与盐捆绑。查阅《本草纲目》卷三十“榛”条，保留历史条名并对现代物种对应加注。
@@ -42,7 +42,7 @@
 
 ### brazil-nut｜巴西坚果
 
-检索词：Brazil nut randomized acute crossover 0 5 20 50 g healthy volunteers DOI 2013；Brazil nuts selenium status lipids meta-analysis randomized clinical trials 2022 DOI；Brazil nut partially defatted granulate 13 g 91 hypertensive dyslipidemic 12 weeks DOI；NIH ODS selenium Brazil nuts 68 91 mcg RDA UL official
+检索词：Brazil nut consumption randomized controlled trial adults selenium biomarkers lipid profile clinical trial dose DOI；Brazil nut supplementation systematic review randomized clinical trial selenium cardiometabolic DOI；Brazil nut selenium randomized controlled trial 13g daily 12 weeks hypertensive dyslipidemic 91 participants DOI meta；NIH Office of Dietary Supplements selenium upper limit Brazil nut content；Whole Brazil-nut human trial
 
 - 核对 2013 年 10 人交叉研究各次剂量、采样时点与急性指标，避免把短期血脂变化描述为临床获益。
 - 核对 2022 年随机研究综述的纳入数及硒/血脂合并结局；另外区分 91 人、13 g/日、部分脱脂颗粒试验和整仁。
@@ -53,7 +53,7 @@
 
 ### pine-nut-kernels｜松子仁
 
-检索词：whole pine nut kernel randomized human trial versus pine nut oil appetite DOI；Korean pine nut oil PinnoThin randomized trial lunch intake 42 women DOI；Korean pine nut triacylglycerol no effects satiety energy intake trial DOI；Bencao Gangmu volume 31 haisongzi new Silla pine source
+检索词：Pine nut kernel consumption randomized clinical trial humans appetite satiation body weight DOI distinguish pine nut oil；Pinolenic acid Korean pine nut oil randomized controlled trial appetite human study DOI pine nut kernels；Whole pine nut kernel trial versus pine nut oil human appetite；《本草纲目》 松子 海松子 卷 原文 性味 归经 Wikisource 松子仁；《本草纲目》 木部 松子 松实 松子仁 卷 原文 海松子 五鬣松 中国松子 甘小温
 
 - 定向查找整仁人体试验，并将结果与松子油、pinolenic acid 或单体提取物区分；未发现可直接支持整仁临床效果的试验。
 - 核对 2008 年 42 人油剂研究与 2011 年甘油三酯研究各自产品、暴露量与结果，保留不一致及间接性。
@@ -64,7 +64,7 @@
 
 ### salted-nuts｜盐焗坚果
 
-检索词：salted roasted hazelnuts randomized crossover 72 adults sodium blood pressure DOI；salted tree nuts direct human clinical trial blood pressure category；USDA FoodData Central salted mixed nuts sodium composition；FDA tree nut food allergy labeling official
+检索词：Human randomized controlled trial salted versus unsalted nuts sodium blood pressure nut snack study DOI；Salted roasted nuts trial versus unsalted blood pressure sodium and roasted hazelnut crossover
 
 - 检索盐渍/烘烤坚果人体研究，核对 72 人榛子试验及其同时改变的烘烤、轻盐因素；不把其结果独立归于钠。
 - 检索盐焗树坚果品类的直接临床研究，未找到可代表整类的长期试验；用 USDA 具体样品记录与商品标签提示解释组成差异。
@@ -74,7 +74,7 @@
 
 ### honey-roasted-nuts｜蜂蜜坚果
 
-检索词：honey roasted tree nuts direct human randomized trial composition health outcomes；randomized peanut flavorings trial 151 adults 42 g 12 weeks DOI；honey roasted nuts USDA FoodData Central nutrition product composition；honey added sugars labeling FDA consumer
+检索词：Honey roasted nuts clinical trial human health outcomes composition study DOI honey roasted almonds peanuts direct human study；Honey-roasted nuts studies or composition；A randomized trial on the effects of flavorings on the health benefits of daily peanut consumption participant DOI sample
 
 - 检索蜂蜜烤制树坚果直接人体试验与组成资料；未找到能隔离蜂蜜涂层作用的树坚果临床研究。
 - 核对花生调味随机试验样本与剂量，将花生明确列为邻近/非树坚果证据，不把它写成蜂蜜坚果效果。
@@ -84,7 +84,7 @@
 
 ### sugar-coated-nuts｜糖衣坚果
 
-检索词：USDA FDC sugar-coated almonds FDC 170656 nutrients；sugar coated tree nuts clinical trial compare plain nuts human；sugar-coated almonds food composition product records FDA tree nut allergy
+检索词：Sugar coated nuts candy coated almonds randomized human clinical trial health outcomes composition study；USDA FoodData Central sugar-coated almond FDC 170656 nutrients
 
 - 查询 USDA FoodData Central 的糖衣杏仁具体记录并保留 FDC ID、每 100 g 营养数值，限定为单条样品。
 - 检索糖衣树坚果对照原味坚果的人体研究，未找到可代表该成品类别的直接临床结局研究。
@@ -94,7 +94,7 @@
 
 ### cocoa-coated-nuts｜可可坚果
 
-检索词：cocoa coated nuts direct randomized clinical trial human health outcomes；dark chocolate almonds randomized controlled feeding trial 48 31 DOI 2017；USDA FoodData Central cocoa covered almonds product composition；FDA food allergy tree nuts milk labeling
+检索词：Cocoa coated almonds nuts randomized controlled feeding clinical trial human health outcomes chocolate coating；Dark chocolate and almonds randomized controlled-feeding trial 2017
 
 - 检索可可包衣树坚果成品临床试验，未找到直接研究。
 - 核对 Lee 等 2017 控制喂养试验的随机/完成样本、四个处理、摄入剂量和周期；明确其成分组合而非涂层商品。
@@ -104,7 +104,7 @@
 
 ### spicy-nuts｜辣味坚果
 
-检索词：spicy seasoned tree nuts randomized human clinical trial health outcome；chili seasoned nut snacks sodium sugar composition food database；capsaicin trial nut product directness distinguish；tree nut allergy official FDA food allergy
+检索词：Spicy seasoned nuts capsaicin nut snack composition sodium；Spicy or seasoned nuts randomized clinical trial
 
 - 检索辣味/香辛料树坚果的人体临床研究和产品组成；未找到可代表辣味坚果成品的随机试验。
 - 审查辣椒素与辣椒研究的产品基底和暴露，作为间接资料，不把机制或补充剂研究升级为成品效应。
@@ -114,7 +114,7 @@
 
 ### mixed-nuts｜混合坚果
 
-检索词：mixed nut consumption randomized trial 250 kcal pretzels 8 weeks 48 adults DOI；mixed nuts 42.5 g 16 weeks 29 adults LDL lipoprotein(a) trial DOI；mixed nuts fixed formulation cardiometabolic risk overweight obese 2023 DOI；USDA FoodData Central mixed nuts salted composition
+检索词：Randomized controlled trial mixed nuts snack intervention adults cardiometabolic outcomes exact nut mixture DOI；Mixed nuts retail product composition survey sodium added sugar allergens official database nut mixture studies；Mixed nuts 42.5 g/day 16 week randomized clinical trial cardiometabolic outcomes DOI
 
 - 核对 2019 年混合坚果与椒盐脆饼等能量试验的人数、时长和体重/血脂结果。
 - 核对 2023 年 29 人、42.5 g/日固定配方、16 周试验成分、对照及血脂和次要指标；明确含花生并限定为一种配方。
@@ -148,11 +148,11 @@
 
 ## 判与写完成记录
 
-- Workflow run: 36002479730; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
-- Native artifact ID: 10809010717; uploaded by this run with 30-day retention.
+- Workflow run: 36002836267; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10808628357; uploaded by this run with 30-day retention.
 - Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
 - Per-file raw JSON SHA-256: qa/jev-entry-batches/11-tree-nut-snacks/native-json-sha256.txt.
 - Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
 - Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
 - catalog/entries.yaml updated with this batch's ten frozen entries.
-- Workflow run 36002479730: status success; intermediate and native artifacts are retained for 30 days where uploaded.
+- Workflow run 36002836267: status success; intermediate and native artifacts are retained for 30 days where uploaded.

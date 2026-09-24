@@ -21,10 +21,8 @@
 
 **定向检索词：**
 
-- cocoa coated nuts direct randomized clinical trial human health outcomes
-- dark chocolate almonds randomized controlled feeding trial 48 31 DOI 2017
-- USDA FoodData Central cocoa covered almonds product composition
-- FDA food allergy tree nuts milk labeling
+- Cocoa coated almonds nuts randomized controlled feeding clinical trial human health outcomes chocolate coating
+- Dark chocolate and almonds randomized controlled-feeding trial 2017
 
 **本轮检索记录：**
 

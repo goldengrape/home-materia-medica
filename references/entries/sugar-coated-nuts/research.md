@@ -21,9 +21,8 @@
 
 **定向检索词：**
 
-- USDA FDC sugar-coated almonds FDC 170656 nutrients
-- sugar coated tree nuts clinical trial compare plain nuts human
-- sugar-coated almonds food composition product records FDA tree nut allergy
+- Sugar coated nuts candy coated almonds randomized human clinical trial health outcomes composition study
+- USDA FoodData Central sugar-coated almond FDC 170656 nutrients
 
 **本轮检索记录：**
 

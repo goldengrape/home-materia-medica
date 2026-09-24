@@ -21,10 +21,8 @@
 
 **定向检索词：**
 
-- spicy seasoned tree nuts randomized human clinical trial health outcome
-- chili seasoned nut snacks sodium sugar composition food database
-- capsaicin trial nut product directness distinguish
-- tree nut allergy official FDA food allergy
+- Spicy seasoned nuts capsaicin nut snack composition sodium
+- Spicy or seasoned nuts randomized clinical trial
 
 **本轮检索记录：**
 

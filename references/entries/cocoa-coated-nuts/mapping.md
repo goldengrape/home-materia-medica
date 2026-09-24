@@ -15,8 +15,8 @@ requested_model: jev-latest
 actual_model: jev-1.13.0
 repeat_count: 1
 run_timestamp_utc: 2026-09-24T12:58:20.741041+00:00
-workflow_run_id: 36002479730
-workflow_artifact_id: 10809010717
+workflow_run_id: 36002836267
+workflow_artifact_id: 10808628357
 native_result_ref: qa/jev-entry-batches/11-tree-nut-snacks/raw/cocoa-coated-nuts.json
 
 ## 四气

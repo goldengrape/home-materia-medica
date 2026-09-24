@@ -21,10 +21,11 @@
 
 **定向检索词：**
 
-- Brazil nut randomized acute crossover 0 5 20 50 g healthy volunteers DOI 2013
-- Brazil nuts selenium status lipids meta-analysis randomized clinical trials 2022 DOI
-- Brazil nut partially defatted granulate 13 g 91 hypertensive dyslipidemic 12 weeks DOI
-- NIH ODS selenium Brazil nuts 68 91 mcg RDA UL official
+- Brazil nut consumption randomized controlled trial adults selenium biomarkers lipid profile clinical trial dose DOI
+- Brazil nut supplementation systematic review randomized clinical trial selenium cardiometabolic DOI
+- Brazil nut selenium randomized controlled trial 13g daily 12 weeks hypertensive dyslipidemic 91 participants DOI meta
+- NIH Office of Dietary Supplements selenium upper limit Brazil nut content
+- Whole Brazil-nut human trial
 
 **本轮检索记录：**
 

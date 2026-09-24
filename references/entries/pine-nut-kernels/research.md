@@ -21,10 +21,11 @@
 
 **定向检索词：**
 
-- whole pine nut kernel randomized human trial versus pine nut oil appetite DOI
-- Korean pine nut oil PinnoThin randomized trial lunch intake 42 women DOI
-- Korean pine nut triacylglycerol no effects satiety energy intake trial DOI
-- Bencao Gangmu volume 31 haisongzi new Silla pine source
+- Pine nut kernel consumption randomized clinical trial humans appetite satiation body weight DOI distinguish pine nut oil
+- Pinolenic acid Korean pine nut oil randomized controlled trial appetite human study DOI pine nut kernels
+- Whole pine nut kernel trial versus pine nut oil human appetite
+- 《本草纲目》 松子 海松子 卷 原文 性味 归经 Wikisource 松子仁
+- 《本草纲目》 木部 松子 松实 松子仁 卷 原文 海松子 五鬣松 中国松子 甘小温
 
 **本轮检索记录：**
 

@@ -21,10 +21,8 @@
 
 **定向检索词：**
 
-- salted roasted hazelnuts randomized crossover 72 adults sodium blood pressure DOI
-- salted tree nuts direct human clinical trial blood pressure category
-- USDA FoodData Central salted mixed nuts sodium composition
-- FDA tree nut food allergy labeling official
+- Human randomized controlled trial salted versus unsalted nuts sodium blood pressure nut snack study DOI
+- Salted roasted nuts trial versus unsalted blood pressure sodium and roasted hazelnut crossover
 
 **本轮检索记录：**
 

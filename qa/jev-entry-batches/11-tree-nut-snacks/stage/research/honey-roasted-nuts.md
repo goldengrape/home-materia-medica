@@ -21,10 +21,9 @@
 
 **定向检索词：**
 
-- honey roasted tree nuts direct human randomized trial composition health outcomes
-- randomized peanut flavorings trial 151 adults 42 g 12 weeks DOI
-- honey roasted nuts USDA FoodData Central nutrition product composition
-- honey added sugars labeling FDA consumer
+- Honey roasted nuts clinical trial human health outcomes composition study DOI honey roasted almonds peanuts direct human study
+- Honey-roasted nuts studies or composition
+- A randomized trial on the effects of flavorings on the health benefits of daily peanut consumption participant DOI sample
 
 **本轮检索记录：**
 

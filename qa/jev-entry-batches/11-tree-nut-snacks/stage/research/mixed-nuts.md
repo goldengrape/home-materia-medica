@@ -21,10 +21,9 @@
 
 **定向检索词：**
 
-- mixed nut consumption randomized trial 250 kcal pretzels 8 weeks 48 adults DOI
-- mixed nuts 42.5 g 16 weeks 29 adults LDL lipoprotein(a) trial DOI
-- mixed nuts fixed formulation cardiometabolic risk overweight obese 2023 DOI
-- USDA FoodData Central mixed nuts salted composition
+- Randomized controlled trial mixed nuts snack intervention adults cardiometabolic outcomes exact nut mixture DOI
+- Mixed nuts retail product composition survey sodium added sugar allergens official database nut mixture studies
+- Mixed nuts 42.5 g/day 16 week randomized clinical trial cardiometabolic outcomes DOI
 
 **本轮检索记录：**
 

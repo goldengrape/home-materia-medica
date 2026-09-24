@@ -21,9 +21,9 @@
 
 **定向检索词：**
 
-- macadamia nut randomized crossover trial adults cardiometabolic risk factors 2023 DOI
-- macadamia nut composition FoodData Central raw roasted exact food records
-- macadamia tree nut allergy official food allergen guidance
+- macadamia randomized controlled trial macadamia nuts consumption adults hypercholesterolemia lipid profile dose study DOI
+- Systematic review meta-analysis randomized controlled trials macadamia nut consumption cardiometabolic outcomes DOI
+- Macadamia nut cardiometabolic randomized trials
 
 **本轮检索记录：**
 

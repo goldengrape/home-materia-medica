@@ -21,10 +21,10 @@
 
 **定向检索词：**
 
-- hazelnut systematic review Bayesian meta-analysis LDL randomized studies DOI 2016
-- hazelnut cardiometabolic risk systematic review 2022 DOI
-- raw versus dry roasted lightly salted hazelnuts randomized crossover trial 72 participants DOI
-- Bencao Gangmu volume 30 zhen hazelnut historical botanical identity
+- Hazelnut enriched diet randomized controlled trial adults lipid profile glucose blood pressure DOI
+- Systematic review randomized controlled trials hazelnut consumption cardiometabolic outcomes DOI
+- Hazelnut trial and systematic review
+- 《本草纲目》 榛子 榛实 古籍 原文 Corylus avellana 榛子本草
 
 **本轮检索记录：**
 
