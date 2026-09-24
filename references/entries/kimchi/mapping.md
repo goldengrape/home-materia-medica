@@ -8,15 +8,15 @@ batch_id: 15-fermented-foods-and-avocado
 entry_id: kimchi
 research_ref: references/entries/kimchi/research.md
 summary_ref: references/entries/kimchi/summary.md
-summary_sha256: 4e8e103b6fcbc538fd690d9ec064ff9a70fe4f28f23ad94ad24f4cc84d569c9d
+summary_sha256: 6cb6ce9377b4291053de5d8126b875ef85add0f07d53c7f822a3c7657d06a8e4
 reasoning_version: jev-tcm-reasoning-v0.4
 five_shot_version: jev-tcm-pilot-fixtures-v0.4
 requested_model: jev-latest
 actual_model: jev-1.13.0
 repeat_count: 1
-run_timestamp_utc: 2026-09-24T15:14:21.696949+00:00
-workflow_run_id: 36018666716
-workflow_artifact_id: 10815098771
+run_timestamp_utc: 2026-09-24T15:23:45.009934+00:00
+workflow_run_id: 36019837801
+workflow_artifact_id: 10816226594
 native_result_ref: qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/kimchi.json
 
 ## 四气
@@ -24,32 +24,32 @@ native_result_ref: qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/kimch
 | 候选 | 原生 probability | M |
 |---|---:|---|
 | 寒 | 0.02 | M-0 |
-| 凉 | 0.07 | M-0 |
-| 平 | 0.89 | M-0 |
+| 凉 | 0.06 | M-0 |
+| 平 | 0.90 | M-0 |
 | 温 | 0.02 | M-0 |
 | 热 | 0.00 | M-0 |
 
-Jev Choice：**平**（Choice confidence 0.87）。模型分类倾向不替代本条传统直接证据。
+Jev Choice：**平**（Choice confidence 0.88）。模型分类倾向不替代本条传统直接证据。
 
 ## 五味
 
 | 候选 | 原生 Noul | M | 注释 |
 |---|---:|---|---|
-| 酸 | 0.40 | M-IV | 酸味随发酵阶段变化。 |
-| 苦 | 0.08 | M-0 | 本轮未建立稳定、可追溯的感官映射依据。 |
+| 酸 | 0.39 | M-IV | 酸味随发酵阶段变化。 |
+| 苦 | 0.07 | M-0 | 本轮未建立稳定、可追溯的感官映射依据。 |
 | 甘 | 0.09 | M-0 | 本轮未建立稳定、可追溯的感官映射依据。 |
-| 辛 | 0.36 | M-IV | 辣度由辣椒及配方决定。 |
+| 辛 | 0.32 | M-IV | 辣度由辣椒及配方决定。 |
 | 咸 | 0.37 | M-IV | 盐渍工艺与品牌使咸度差异明显。 |
 
 ## 五脏归经与各经主方向
 
 | 经 | Noul | 主方向 Choice | Choice confidence | 阴- | 阴+ | 阳- | 阳+ | M |
 |---|---:|---|---:|---:|---:|---:|---:|---|
-| 心 | 0.05 | 阴- | 0.21 | 0.40 | 0.05 | 0.37 | 0.18 | M-0 |
-| 肝 | 0.08 | 阴- | 0.45 | 0.58 | 0.02 | 0.34 | 0.06 | M-0 |
-| 脾 | 0.14 | 阴- | 0.59 | 0.69 | 0.02 | 0.03 | 0.26 | M-0 |
-| 肺 | 0.06 | 阴- | 0.45 | 0.58 | 0.13 | 0.22 | 0.07 | M-0 |
-| 肾 | 0.07 | 阴- | 0.73 | 0.79 | 0.05 | 0.08 | 0.08 | M-0 |
+| 心 | 0.05 | 阴- | 0.27 | 0.45 | 0.04 | 0.30 | 0.21 | M-0 |
+| 肝 | 0.08 | 阴- | 0.47 | 0.60 | 0.02 | 0.31 | 0.07 | M-0 |
+| 脾 | 0.13 | 阴- | 0.60 | 0.70 | 0.02 | 0.02 | 0.26 | M-0 |
+| 肺 | 0.06 | 阴- | 0.50 | 0.63 | 0.10 | 0.20 | 0.07 | M-0 |
+| 肾 | 0.06 | 阴- | 0.78 | 0.84 | 0.04 | 0.06 | 0.06 | M-0 |
 
 所有方向概率与 Choice 均保留；展示线不隐藏原始结果或提高 M。方向 Choice 不表示已确证归经。
 

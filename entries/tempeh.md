@@ -16,4 +16,5 @@
 
 1. Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.
 2. Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.
-3. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+3. Nadia FS, Wati DA, Isnawati M, Sulchan M, Afifah DN. “The effect of processed Tempeh Gembus to triglycerides levels and insulin resistance status in women with obesity.” Food Research. 2020. DOI: https://doi.org/10.26656/fr.2017.4(4).415.
+4. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

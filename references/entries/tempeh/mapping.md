@@ -15,8 +15,8 @@ requested_model: jev-latest
 actual_model: jev-1.13.0
 repeat_count: 1
 run_timestamp_utc: 2026-09-24T15:14:23.242777+00:00
-workflow_run_id: 36018666716
-workflow_artifact_id: 10815098771
+workflow_run_id: 36019837801
+workflow_artifact_id: 10816226594
 native_result_ref: qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/tempeh.json
 
 ## 四气
