@@ -10,7 +10,7 @@
 | URD-REQ-002 规则 + few-shot，无训练 | ADD-DP-002 / DEC-001 | TDD-TEST-004 |
 | URD-REQ-003 原生概率 | ADD-DP-004 / DEC-001 | TDD-TEST-003 |
 | URD-REQ-004 测试与示例分离、匿名 | ADD-DP-001 / DEC-002 / DEC-003 | TDD-TEST-001 / TDD-NEG-002 |
-| URD-REQ-005 保留不确定性 | DEC-006 | TDD-TEST-002 |
+| URD-REQ-005 封闭字段强制分类 | DEC-006 / DEC-007 / DEC-008 | TDD-TEST-002 / TDD-TEST-010~012 |
 | URD-REQ-006 重复运行稳定性 | ADD-DP-006 | TDD-TEST-009 |
 | URD-CON-001 记录模型版本 | ADD-DP-006 | TDD-TEST-007 |
 | URD-CON-002 Secret 不入库 | ADD-DP-005 | TDD-TEST-005 / TDD-NEG-001 |
@@ -20,11 +20,11 @@
 
 | Artifact | Role |
 |---|---|
-| `experiments/jev-rule-fewshot-pilot/fixtures.json` | few-shot + 5 个 held-out 测试夹具，gold 与 packet 分离 |
-| `experiments/jev-rule-fewshot-pilot/run_pilot.py` | 构造 Jev requests、检查泄漏、保存原生概率、评分 |
+| `experiments/jev-rule-fewshot-pilot/fixtures-v0.2.json` | five-shot + 5 个新 held-out；封闭 schema；gold 与 packet 分离 |
+| `experiments/jev-rule-fewshot-pilot/run_pilot_v02.py` | 构造 11-key 封闭 requests、schema/leakage 检查、3 次重复、保存原生概率、评分 |
 | `.github/workflows/jev-rule-fewshot-pilot.yml` | 通过 API_KEYS Environment 运行 pilot |
-| Actions artifact `jev-rule-fewshot-results` | 单次 run 的 `results.json` |
-| `docs/jev-rule-fewshot-pilot/RESULTS-v0.1.md` | 实际 run 后的人类可读结果 |
+| Actions artifact `jev-rule-fewshot-results-v0.2` | v0.2 三次重复的 `results-v0.2.json` |
+| `docs/jev-rule-fewshot-pilot/RESULTS-v0.2.md` | v0.2 封闭字段实际结果；v0.1 保留为历史工程记录 |
 
 ## 3. Build Order
 
@@ -35,7 +35,7 @@ URD / ADD / TDD
   -> workflow
   -> run
   -> inspect results
-  -> RESULTS-v0.1
+  -> RESULTS-v0.2
   -> root TRACE / CHANGELOG / OKF minimal update
 ```
 
