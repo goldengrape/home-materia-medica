@@ -143,7 +143,7 @@
 
 ## Actions 运行记录
 
-待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+完整 run、artifact、模型版本、原始 JSON SHA-256 与阶段核验结果见下方“判与写完成记录”和 Actions 运行记录。
 
 ## 判与写完成记录
 
