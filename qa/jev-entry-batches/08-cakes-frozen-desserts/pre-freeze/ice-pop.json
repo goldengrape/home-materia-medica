@@ -1,0 +1,10 @@
+{
+  "batch_id": "08-cakes-frozen-desserts",
+  "entry_id": "ice-pop",
+  "summary_ref": "references/entries/ice-pop/summary.md",
+  "summary_sha256": "db8aa1331ed2edce1b5caac7e8bbb6e234f3a54bc85edd8a88ab1910f57695a0",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 冰棒\n\n**身份。** 本条指冻结成型、通常以水、果汁/果味基料或糖浆为主体并可插棒持握的冷食；有的商品会加入乳、果肉或其他配料。与雪糕及冰淇淋分开。\n\n**组成与暴露。** Codex GSFA 食品分类系统把 sorbet、sherbet 等列在 03.0 edible ices 下，可作为宽类别参考；分类不能代表每种冰棒的具体配方。USDA FoodData Central 可检索 water ice 等相关数据库食品记录，但不能据此推定当地商品组成。 水/果汁/果味基料、糖和甜味剂、果肉、乳配料、份量、冻制方式、品牌和地区标准。\n\n**直接人体证据。** 本轮未发现冰棒成品改善疾病或长期健康结局的直接人体干预证据。水果、果汁或某种甜味剂研究不能自动当作冰棒成品证据。\n\n**产品/成分证据。** “冰棒”是外形和消费习惯名称，可能覆盖水基、果汁基和含乳复合产品；需按标签区分总糖、果汁含量及配料。\n\n**共享背景。** 参见 frozen-desserts-base；共享结论不自动等于本成品结论。\n\n**安全。** 有些产品含牛奶、大豆、坚果或其他过敏原；对幼儿应考虑产品大小与进食安全，遵循包装储存要求。水基或水果风味名称不保证无添加糖。\n\n**传统来源。** 冰棒是现代冻结食品类别；其温度感受不直接决定传统四气，具体分类仍应等待独立判定阶段。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}
