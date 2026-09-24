@@ -107,6 +107,7 @@ Claim Ledger 是“判 → 写”的交接工具，不是第五个平级阶段�
 | RM-TASK-031 Jev 现代食品 domain-transfer test | done (v0.1) | 5 个现有 dossier；验证 Jev score 与 M grade 可明显分离，采用双轴展示；`docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md` |
 | RM-TASK-032 Jev mapping skill 与双轴输出 | done | `skills/home-materia-jev-mapping/`；Jev score 与 M grade 并列，不互相修正 |
 | RM-TASK-033 Jev 五脏阴阳增减主方向 | done (v0.4) | 语义级连、计算同步；5 个 direction Choice；中药回归 10/10×3，现代食品 domain transfer 通过 |
+| RM-TASK-034 四阶段生产流程 | done | `docs/生产流程.md`；搜→整→判→写；research/summary/mapping/entry 四层接口 |
 | RM-TASK-010 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 
