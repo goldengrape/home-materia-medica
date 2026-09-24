@@ -20,9 +20,13 @@
 - 建立最小 `okf/` 项目地图，索引项目目标、权威层级、标准生产链与当前路线。
 - 冻结发布契约：GitHub Pages 网页电子书 + GitHub Release Markdown 包 + EPUB；全书不设图片。
 
+- 完成 Pilot v1 六个样例：开心果、黑巧克力、珍珠奶茶、咖啡共享研究母页、酸奶、方便面。
+- Pilot v1 总复盘通过：保留 R/D/E/M 与停止规则。
+- 根据 Pilot 正式加入 Identity Revision、Composition & Exposure、Evidence-base overlap、Research Parent、Claim Mode 与消费者端服食法/加工变量。
+
 ### Current
 
 - 当前工作分支：`plan/project-roadmap-v1`
 - RM-TASK-001 项目级规划：done。
 - RM-TASK-002 最小 OKF：done。
-- 下一任务：RM-TASK-003 中医概念骨架。
+- 下一任务：RM-TASK-010 / RM-TASK-003 中医概念骨架；随后建立正式 Entry Registry。
