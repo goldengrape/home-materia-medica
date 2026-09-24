@@ -92,7 +92,7 @@ Catalog entry
 | RM-TASK-025 方便面 R2 | done | `references/entries/instant-noodles/research.md` |
 | RM-TASK-027 六项 Pilot 总复盘 | done | `qa/pilot/final-review.md` |
 | RM-TASK-030 Jev 四气五味归经 rule+few-shot pilot | done (v0.3.1) | 自然语言说明文档 + reasoning rules + five-shot；`docs/jev-rule-fewshot-pilot/RESULTS-v0.3.1.md` |
-| RM-TASK-031 Jev 现代食品 domain-transfer test | done (v0.1) | 5 个现有 dossier；发现归经 over-mapping；`docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md` |
+| RM-TASK-031 Jev 现代食品 domain-transfer test | done (v0.1) | 5 个现有 dossier；验证 Jev score 与 M grade 可明显分离，采用双轴展示；`docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md` |
 | RM-TASK-032 Jev mapping skill 与双轴输出 | done | `skills/home-materia-jev-mapping/`；Jev score 与 M grade 并列，不互相修正 |
 | RM-TASK-010 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
