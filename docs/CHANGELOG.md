@@ -27,7 +27,8 @@
 - Jev v0.1 保留为工程历史记录；其十二经输出空间与项目真实封闭契约不一致，不再用 v0.1 归经指标评价方案。
 - 完成 Jev pilot v0.2：封闭输出字段正确，但 target 仍为结构化 packet；归经 recall 偏低。
 - 重构 Jev pilot v0.3/v0.3.1：rules 改为症候→功能群→四气/五味/五脏归经的推理链，target 与 five-shot 改为自然语言说明文档；v0.3 #11 因 gold 投影和样本说明一致性问题标记 invalid。
-- 完成 Jev pilot v0.3.1：采用五脏功能群工作投影并修正 reasoning-complete held-out，Actions #14 三次重复均达到四气 5/5、五味 5/5 exact、五脏归经 5/5 exact；不把该结果解释为生产准确率，下一步转入现代食品 domain-transfer test。
+- 完成 Jev pilot v0.3.1：采用五脏功能群工作投影并修正 reasoning-complete held-out，Actions #14 三次重复均达到四气 5/5、五味 5/5 exact、五脏归经 5/5 exact；不把该结果解释为生产准确率。
+- 完成 Jev 现代食品 domain-transfer v0.1：冻结 v0.3.1 rules + five-shot，测试开心果、黑巧克力、咖啡、酸奶、方便面。发现黑巧克力/方便面可保持无归经，但开心果与酸奶出现稳定归经过度映射，咖啡脾经处于 0.5 边界；确认下一版需要把 M-I～M-0 证据门槛加入 reasoning chain，而不是做概率修正。
 
 ### Current
 
