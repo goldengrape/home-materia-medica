@@ -310,6 +310,40 @@ M 等级：
 
 ---
 
+## Phase 10.5 — Jev mapping（可选但推荐）
+
+在 Phase 10 已经独立完成 M 等级之后，可以调用：
+
+`skills/home-materia-jev-mapping/SKILL.md`
+
+输入应是由当前 Research Dossier 形成的自然语言说明文档，而不是为 Jev 临时拼接的特征 JSON。
+
+Jev 输出与 M 分级保持双轴：
+
+```text
+Jev score = 模型在固定 rules + five-shot + 当前说明文档下的判定倾向
+M grade   = 项目证据链强度
+```
+
+允许：
+
+```text
+归经候选：脾
+Jev score：0.58–0.61
+M：M-0
+```
+
+禁止：
+
+- 因 Jev score 高而提升 M；
+- 因 M 低而修改 / 压低 Jev 原生 score；
+- 把 Jev score 写成经过经验校准的真实概率；
+- 用 Jev 结果反向改写已提取的研究事实。
+
+Jev mapping 结果可进入 Claim Ledger 的模型判断记录，但正文如何展示仍受凡例和 writing skill 控制。
+
+---
+
 ## Phase 11 — Safety
 
 安全单独一节，避免被“总体有益”叙事淹没。

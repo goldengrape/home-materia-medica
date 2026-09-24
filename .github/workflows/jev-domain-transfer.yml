@@ -1,0 +1,51 @@
+name: Jev Food Domain Transfer
+
+on:
+  push:
+    branches:
+      - feat/jev-rule-fewshot-pilot
+    paths:
+      - "experiments/jev-rule-fewshot-pilot/domain-transfer-fixtures-v0.1.json"
+      - "experiments/jev-rule-fewshot-pilot/run_domain_transfer_v01.py"
+      - "experiments/jev-rule-fewshot-pilot/run_pilot_v031.py"
+      - "experiments/jev-rule-fewshot-pilot/fixtures-v0.3.1.json"
+      - ".github/workflows/jev-domain-transfer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  domain-transfer:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify API secret
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${JEV_API_KEY:-}" || {
+            echo "::error::JEV_API_KEY is unavailable."
+            exit 1
+          }
+          echo "JEV_API_KEY is available (value hidden)."
+
+      - name: Run existing-food domain transfer
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-latest
+          JEV_REPEATS: "3"
+        run: python experiments/jev-rule-fewshot-pilot/run_domain_transfer_v01.py
+
+      - name: Upload domain-transfer results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jev-food-domain-transfer-v0.1
+          path: experiments/jev-rule-fewshot-pilot/domain-transfer-results-v0.1.json
+          if-no-files-found: error
+          retention-days: 30

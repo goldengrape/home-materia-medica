@@ -15,5 +15,6 @@ okf_version: "0.1"
 
 ## Current
 - [当前路线](/roadmap/current.md) — 现在做到哪一步，下一步是什么。
+- [Jev 四气五味归经 Pilot](/decisions/jev-rule-fewshot-pilot.md) — 规则 + few-shot 的设计、首轮结果与限制。
 
 正式规则请回到 `docs/`、`catalog/`、`concepts/` 和 `references/entries/`。
