@@ -25,7 +25,9 @@
 - 根据 Pilot 正式加入 Identity Revision、Composition & Exposure、Evidence-base overlap、Research Parent、Claim Mode 与消费者端服食法/加工变量。
 - 建立 Jev 四气五味归经 rule + few-shot 技术 pilot：匿名 held-out、gold 隔离、原生概率留存、GitHub Actions secret 注入。
 - Jev v0.1 保留为工程历史记录；其十二经输出空间与项目真实封闭契约不一致，不再用 v0.1 归经指标评价方案。
-- 完成 Jev pilot v0.2：四气固定寒/凉/平/温/热并强制五选一；五味固定酸/苦/甘/辛/咸；归经固定心/肝/脾/肺/肾。3 次重复中四气均 4/5，五味均 5/5 exact（micro-F1=1.0），五脏归经 micro-F1 为 0.720–0.769；仍不设生产阈值，不引入概率修正函数。
+- 完成 Jev pilot v0.2：封闭输出字段正确，但 target 仍为结构化 packet；归经 recall 偏低。
+- 重构 Jev pilot v0.3/v0.3.1：rules 改为症候→功能群→四气/五味/五脏归经的推理链，target 与 five-shot 改为自然语言说明文档；v0.3 #11 因 gold 投影和样本说明一致性问题标记 invalid。
+- 完成 Jev pilot v0.3.1：采用五脏功能群工作投影并修正 reasoning-complete held-out，Actions #14 三次重复均达到四气 5/5、五味 5/5 exact、五脏归经 5/5 exact；不把该结果解释为生产准确率，下一步转入现代食品 domain-transfer test。
 
 ### Current
 
