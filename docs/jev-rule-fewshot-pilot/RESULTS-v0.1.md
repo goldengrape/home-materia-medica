@@ -1,5 +1,7 @@
 # RESULTS v0.1 — Jev 四气五味归经规则 + Few-shot Pilot
 
+> **历史记录**：v0.1 的归经输出空间错误地开放了十二经，并包含“证据不足”四气选项；与项目真实封闭输出契约不一致。v0.1 只保留用于验证 API、匿名化、gold 隔离和重复运行机制，不再用其归经指标评价方案。当前规范见 `V0.2-DESIGN.md` 与 `RESULTS-v0.2.md`。
+
 > run: GitHub Actions `Jev TCM Rule Few-shot Pilot #3`  
 > prompt_version: `jev-tcm-rule-fewshot-v0.1`  
 > fixture_version: `jev-tcm-pilot-fixtures-v0.1`  
