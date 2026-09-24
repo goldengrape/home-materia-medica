@@ -1,0 +1,45 @@
+name: Jev ten-entry batch v0.4
+
+on:
+  push:
+    branches:
+      - feat/ten-entry-batch-2026-09-24
+    paths:
+      - ".github/workflows/jev-ten-entry-batch.yml"
+      - "scripts/run_jev_ten_batch.py"
+      - "qa/ten-entry-summary-sha256.txt"
+      - "references/entries/**/summary.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify environment secret is available
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        run: |
+          test -n "${JEV_API_KEY:-}" || {
+            echo "::error::The API_KEYS environment did not supply JEV_API_KEY."
+            exit 1
+          }
+      - name: Classify ten frozen summaries
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-latest
+          JEV_REPEATS: "1"
+        run: python scripts/run_jev_ten_batch.py
+      - name: Keep native outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jev-ten-entry-native-v0.4
+          path: qa/jev-ten-batch/raw/*.json
+          if-no-files-found: warn
+          retention-days: 30
