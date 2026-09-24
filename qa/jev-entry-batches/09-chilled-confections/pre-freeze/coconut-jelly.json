@@ -1,0 +1,10 @@
+{
+  "batch_id": "09-chilled-confections",
+  "entry_id": "coconut-jelly",
+  "summary_ref": "references/entries/coconut-jelly/summary.md",
+  "summary_sha256": "7f798e68a3827f4603b1a3bf0985073740f923e39f4ed7bca53b50f1ae18c9f1",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 椰奶冻\n\n**身份。** 本条指以椰奶/椰乳或含椰植物饮作为液体基底，再以琼脂、明胶或其他方式凝固的甜味凝冻；不是椰果（nata de coco）、椰肉或椰子水冻。\n\n**组成与暴露。** Ratchapakdee 等比较由低乳糖牛奶、杏仁、椰、燕麦和豆乳制成的奶冻，使用色度及 60 人（18–50 岁）感官/购买意向评价。椰奶冻在该样品组中较受偏好；研究没有评估人体代谢或疾病结局。 椰乳浓度、糖、凝胶剂、乳制品/植物饮混合、份量、果料/淋酱和冷藏时间。\n\n**直接人体证据。** 本轮未发现普通椰奶冻直接临床健康结局研究。现有论文是不同植物饮奶冻的感官和消费者接受度比较，不是对椰奶冻健康效果的试验。\n\n**产品/成分证据。** 该研究使用特定商业饮料基底和琼脂制作奶冻，消费者偏好不能推成营养优越或健康效果；椰乳浓度、糖和凝胶剂会改变实际成品。\n\n**共享背景。** 参见 gelled-desserts-base；共享结论不自动等于本成品结论。\n\n**安全。** 椰子配方是否另含牛奶、坚果/植物饮、大豆或明胶由商品决定；检查标签并按冷藏说明储存。\n\n**传统来源。** 椰奶冻是现代凝冻甜品；不与椰肉、椰子水、椰果或传统单味原料互换。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}
