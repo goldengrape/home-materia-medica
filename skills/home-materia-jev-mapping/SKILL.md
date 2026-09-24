@@ -39,6 +39,8 @@ Jev score != M grade
 4. `references/five-shot-v0.3.1.md`
 5. `references/output-contract.md`
 6. `references/runtime.md`
+7. `references/reasoning-rules-v0.4.md`（draft）
+8. `references/output-contract-v0.4.md`（draft）
 
 若当前仓库自动化可用，Jev v0.3.1 的已验证参考实现为：
 
@@ -124,6 +126,8 @@ rules 只教授推理，不重复“必须选一个”“只能输出这些字�
 
 ### Step 2｜固定 questions
 
+当前 production baseline 为 v0.3.1。v0.4 draft 计划在同一次 Jev request 中，把“归经位置”和“该经阴阳增减方向”同步判断：语义上分层，计算上同步。
+
 四气：
 
 - Choice：寒 / 凉 / 平 / 温 / 热
@@ -147,6 +151,27 @@ rules 只教授推理，不重复“必须选一个”“只能输出这些字�
 - 肾
 
 每经为独立 Noul。
+
+v0.4 draft 在每经后增加四个独立 Noul：
+
+- 阴-
+- 阴+
+- 阳-
+- 阳+
+
+例如肝：
+
+```text
+meridian_liver
+liver_yin_decrease
+liver_yin_increase
+liver_yang_decrease
+liver_yang_increase
+```
+
+四个方向不互斥，可同时得到较高 score。
+
+推理不采用两次 API 级连；归经和方向在同一 request 中同步判断。展示层可以按归经把四个方向折叠在其下。
 
 Jev question schema 已经限定输出空间，因此 reasoning rules 不需要再次描述“只能选什么”。
 
@@ -360,6 +385,7 @@ Research skill 负责：
 10. 每项对应 M grade；
 11. 支持、反证和替代解释；
 12. 一句面向读者的解释。
+13. v0.4 以后还需保存每经阴-/阴+/阳-/阳+四个原生 score，以及 location-direction disagreement QA 标记。
 
 ---
 
@@ -380,3 +406,29 @@ Research skill 负责：
 只要最后两轴仍然分离，允许输出：
 
 > **模型倾向明确，但证据等级很低。**
+
+
+---
+
+## v0.4 draft｜习惯术语下沉为派生层
+
+“疏肝、健脾、安神、润燥、清热、温中、化湿、生津”等不再优先作为一级分类概念。
+
+v0.4 的底层本草作用表示为：
+
+```text
+五脏位置
++
+阴-/阴+/阳-/阳+
+```
+
+例如项目约定：
+
+```text
+肝 + 阳-
+→ 后续可派生“疏肝”等习惯表达
+```
+
+传统习惯词的选择放到后续 wording / lexicon 层；同一底层向量可以根据语境派生不同传统用词。
+
+v0.4 仍需经过已知中药回归测试与现代食品 domain-transfer 测试后，才可取代 v0.3.1 production baseline。
