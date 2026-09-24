@@ -1,0 +1,673 @@
+{
+  "batch": {
+    "id": "13-pistachio-and-dairy",
+    "title": "坚果酱与乳品",
+    "catalog_order": 13,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher pages, USDA FoodData Central, official FDA/CDC/NIDDK guidance, eCFR and classical-text repositories",
+    "exa_search_calls": 44,
+    "exa_hits": 220,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-13-pistachio-and-dairy",
+    "identity_red_team": [
+      "开心果酱的人体证据必须与整粒开心果分开；研磨、加糖盐油会改变暴露。",
+      "芝麻坚果混合酱没有统一配方；纯tahini、坚果酱、芝麻油和固定复配成品是不同对象，芝麻/花生/树坚果需分别核对过敏原。",
+      "鲜牛奶按巴氏杀菌液态牛乳讨论，不将生乳或乳粉试验冒充鲜奶证据；全脂、低脂和脱脂是不同脂肪等级。",
+      "A2描述β-酪蛋白型，不是无乳糖或低过敏；无乳糖处理也不移除牛奶蛋白。",
+      "高蛋白乳/酸奶是配方异质的商品类别；研究用的强化饮料、Greek-style yogurt和Kashk不能代表所有品牌。",
+      "希腊酸奶的直接证据主要是单份急性试验；一般酸奶研究只作邻近证据，不写成长程减重或疾病疗效。",
+      "《本草纲目》牛乳、酪条目按历史原文保留；古代动物乳、制法和现代工业品并不一一对应。"
+    ]
+  },
+  "entries": {
+    "pistachio-butter": {
+      "name": "开心果酱",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "nut-butters",
+      "research_depth": "R2",
+      "shared_parent": "nut-butters-base",
+      "identity": "本条指以开心果（Pistacia vera L.）种仁研磨制成、可涂抹或舀取的酱；是否烘烤、去皮、加盐、糖、油或其他坚果，因品牌而异。不是整粒开心果、开心果油、开心果冰淇淋或甜点馅料。",
+      "variables": "原料比例、去皮与烘烤、研磨细度、添加油糖盐、份量、作为替代还是额外加食，以及研究人群与时长。",
+      "composition": "开心果酱无统一营养组成。纯坚果酱与加入糖、盐、油或巧克力的抹酱不同；需按具体标签/USDA FoodData Central 产品记录核对，不能把整仁每100克数据直接当作所有酱品。",
+      "direct": "截至2026-09-24，本轮未检得开心果酱本身的人体干预试验。最接近的是一项54名糖尿病前期成人的随机交叉试验：每日57克整粒开心果、每期4个月，等能量对照；报告空腹血糖、胰岛素和HOMA-IR等指标下降。它检验的是整粒坚果和替代饮食，不是磨碎的酱，不能证明开心果酱有同样效果。",
+      "specific": "一篇食品科学研究开发了开心果抹酱配方，属于产品/加工研究，不是人体健康试验。开心果的系统综述汇总的是整粒坚果干预；将其用于本条只作共享原料的邻近背景（D2）。",
+      "safety": "开心果属于树坚果过敏原；过敏者应核对配料及交叉接触。看配料表中的添加糖、钠与额外油脂，并按实际份量食用。含油种仁研磨产品需按标签保存，避免酸败。",
+      "body": "开心果磨成酱后，原料仍是开心果，吃法和配方却变了。整粒开心果的人体试验不能直接算作开心果酱的试验：一项54名糖尿病前期成人的交叉研究使用每日57克整仁，观察到部分血糖与胰岛素指标变化，但没有测试抹酱。市售产品还可能加糖、盐或油，因此先看配料表和每份重量，比把“坚果有研究”套成酱品功效更可靠。",
+      "evidence_body": "开心果酱本身：本轮未检得D0人体试验，成品健康效应为E-0。邻近证据是一项54名糖尿病前期成人的整粒开心果交叉试验（57克/日、每期4个月；D2），不能据此断言酱品有效。",
+      "care": "核对开心果比例及糖、盐、油添加；树坚果过敏者避免食用并留意交叉接触。整仁试验不构成对开心果酱的功效承诺。",
+      "taste_m": {
+        "甘": "未加糖的开心果酱通常有坚果香、微甘；烘烤和配方会改变味感。此处仅为感官描述。"
+      },
+      "queries": [
+        "Pistachio butter randomized controlled trial human adults health outcomes direct pistachio spread clinical evidence DOI",
+        "Pistachio spread composition nutrient profile whole pistachio randomized feeding trials adults cardiometabolic review DOI",
+        "pistachio butter pistachio paste randomized human clinical trial feeding study spread clinical evidence DOI",
+        "USDA FoodData Central pistachio butter tahini whole cow milk low fat skim Greek yogurt composition official source data"
+      ],
+      "search_log": [
+        "先检索开心果酱/抹酱本身的人体干预；Exa结果出现整粒开心果试验和一篇产品开发研究，未找到直接酱品临床试验。",
+        "核对整仁RCT及开心果RCT系统综述；明确标为共享原料的D2证据，不外推成酱品D0。",
+        "按食品数据库检索配方/组成；营养值随添加油、糖、盐及具体产品变化。",
+        "本条检索卡和全文摘录留存在本批 stage 文件；全批44次Exa查询、220条结果卡。"
+      ],
+      "refs": [
+        "Hernández-Alonso P, et al. “Beneficial Effect of Pistachio Consumption on Glucose Metabolism, Insulin Resistance, Inflammation, and Related Metabolic Risk Markers: A Randomized Clinical Trial.” Diabetes Care. 2015;38(6):1095–1101. DOI: https://doi.org/10.2337/dc14-1431.",
+        "Asbaghi O, et al. “Pistachios and cardiometabolic risk factors: A systematic review and meta-analysis of randomized controlled clinical trials.” Complementary Therapies in Medicine. 2021;56:102513. DOI: https://doi.org/10.1016/j.ctim.2020.102513.",
+        "“Development of Pistachio (Pistacia vera L.) Spread.” Journal of Food Science. 2013. DOI: https://doi.org/10.1111/1750-3841.12045.",
+        "USDA. “FoodData Central.” Product-specific food composition database. https://fdc.nal.usda.gov/.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Hernández-Alonso P, et al. “Beneficial Effect of Pistachio Consumption on Glucose Metabolism, Insulin Resistance, Inflammation, and Related Metabolic Risk Markers: A Randomized Clinical Trial.” Diabetes Care. 2015;38(6):1095–1101. DOI: https://doi.org/10.2337/dc14-1431.",
+        "Asbaghi O, et al. “Pistachios and cardiometabolic risk factors: A systematic review and meta-analysis of randomized controlled clinical trials.” Complementary Therapies in Medicine. 2021;56:102513. DOI: https://doi.org/10.1016/j.ctim.2020.102513.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉饮食试验；两种等能量饮食各4个月，中间有洗脱期。",
+          "population": "54名糖尿病前期成人。",
+          "exposure": "每日57克整粒开心果作为饮食方案的一部分，对照为匹配能量的非开心果饮食。",
+          "result": "开心果阶段空腹血糖、胰岛素及HOMA-IR等指标下降；一些炎症/氧化相关指标也有变化。",
+          "limits": "小样本、特定代谢风险人群；研究的是整粒坚果，不是开心果酱，且饮食替代关系不可忽略。",
+          "distance": "D2（共享开心果原料；加工形态和食用方式不同）"
+        }
+      ],
+      "unknowns": "不同品牌开心果酱的配方与实际暴露分布；纯开心果酱相对整仁的进食速度、剂量及健康结局；添加油糖盐的独立影响。",
+      "tradition": "本轮未核实到传统本草对现代开心果研磨抹酱的直接记载。即使整粒开心果有现代食品研究，也不能据此补写该加工品的古籍药性。"
+    },
+    "sesame-nut-mix-butter": {
+      "name": "芝麻坚果混合酱",
+      "volume": "坚果种仁部",
+      "entry_type": "composite_food",
+      "family": "nut-butters",
+      "research_depth": "R1",
+      "shared_parent": "nut-butters-base",
+      "identity": "本条指以芝麻酱/芝麻糊为基底，并混入一种或多种花生、树坚果或其酱制成的复合抹酱；无统一配方。纯芝麻酱（tahini）、单一坚果酱、糖果馅料和芝麻油均为不同对象。",
+      "variables": "芝麻与坚果种类/比例、是否烘烤或去皮、研磨方式、糖盐油添加、每份重量、是否替代其他食物、研究人群。",
+      "composition": "芝麻坚果复配产品的脂肪、蛋白质、纤维、钠和添加糖随配方变化。营养资料须对照具体商品；芝麻、花生和各类树坚果的成分及过敏原身份不能互相替代。",
+      "direct": "本轮未检得针对固定“芝麻+坚果混合酱”的人体临床试验。较近的是芝麻单一原料酱（tahini）：20名健康男性单次食用50克、4小时观察的前后比较研究；另有41名2型糖尿病患者以约30克/日芝麻酱替代部分早餐、持续6周的小型对照研究。两者均未测试芝麻与坚果混合配方。",
+      "specific": "2025年芝麻产品/成分的人体试验系统综述汇总13项、521名参与者，干预含不同芝麻制品及生物活性成分；结果不能识别芝麻坚果混合酱这一成品的效果。芝麻酱急性前后比较无对照，结果只能视为初步观察。",
+      "safety": "芝麻是主要食物过敏原；复配物还可能含花生或树坚果。对任一种过敏者都应逐项核对标签和交叉接触。额外糖盐油会改变产品营养特征。",
+      "body": "“芝麻坚果混合酱”没有固定配方，芝麻比例、坚果种类和添加物都会改变它。人体资料目前主要来自纯芝麻酱：一项20名健康男性的单次食用研究报告了餐后血压、脉搏和血管指标变化，但没有平行对照；另一项小型糖尿病患者研究也测试的是芝麻酱替代部分早餐，而非混合酱。这些结果不足以给芝麻坚果混合酱贴上明确功效标签，购买时更应先核对配方与过敏原。",
+      "evidence_body": "芝麻坚果混合酱成品：未检得D0人体研究，健康效应为E-0。纯芝麻酱属于D2邻近证据：单次50克前后比较（20名男性、4小时）和一项41人、6周小型研究均无法代表芝麻加坚果的固定成品。",
+      "care": "查看芝麻及具体坚果成分、交叉接触提示和每份糖盐；对芝麻、花生或树坚果过敏者不要因产品名笼统而推定安全。邻近的芝麻酱研究不代表复配酱。",
+      "taste_m": {},
+      "queries": [
+        "Sesame nut butter blend human randomized controlled clinical trial cardiometabolic effects evidence DOI tahini nut spread",
+        "Sesame paste tahini human randomized controlled trial cardiometabolic outcomes sesame allergy food labeling official",
+        "sesame peanut butter mixed nut sesame paste spread clinical trial randomized human tahini paste trial DOI",
+        "\"Tahini consumption affects blood pressure and endothelial function in healthy males\" DOI journal pages PMID 34707227"
+      ],
+      "search_log": [
+        "检索固定芝麻+坚果混合酱成品的人体研究；未找到可确认配方的D0试验。",
+        "回查纯芝麻酱/tahini研究，分别记录单次前后比较与小型对照研究；不把芝麻油、芝麻籽或坚果研究当作混合酱试验。",
+        "核验芝麻主要过敏原标签信息；与花生、树坚果过敏原分别记录。",
+        "本条原始查询与结果卡见 stage/exa-results-preserved-*.json；全批共44次Exa查询、220条卡片。"
+      ],
+      "refs": [
+        "“Tahini consumption affects blood pressure and endothelial function in healthy males.” Journal of Human Hypertension. 2022;36(12):1128–1132. DOI: https://doi.org/10.1038/s41371-021-00624-2. PMID: 34707227.",
+        "Bahadoran Z. “A Sesame Seeds-Based Breakfast Could Attenuate Sub-Clinical Inflammation in Type 2 Diabetic Patients: A Randomized Controlled Trial.” International Journal of Nutrition and Food Sciences. 2015. DOI: https://doi.org/10.11648/j.ijnfs.s.2015040201.11.",
+        "“Clinical evidence of sesame (Sesamum indicum L.) products and its bioactive compounds on anthropometric measures, blood pressure, glycemic control, inflammatory biomarkers, lipid profile, and oxidative stress parameters in humans: a GRADE-assessed systematic review and dose–response meta-analysis.” Nutrition & Metabolism. 2025. DOI: https://doi.org/10.1186/s12986-025-00910-7.",
+        "U.S. FDA. “The FASTER Act: Sesame Is the Ninth Major Food Allergen.” https://www.fda.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "“Tahini consumption affects blood pressure and endothelial function in healthy males.” Journal of Human Hypertension. 2022;36(12):1128–1132. DOI: https://doi.org/10.1038/s41371-021-00624-2. PMID: 34707227.",
+        "U.S. FDA. “The FASTER Act: Sesame Is the Ninth Major Food Allergen.” https://www.fda.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen.",
+        "Bahadoran Z. “A Sesame Seeds-Based Breakfast Could Attenuate Sub-Clinical Inflammation in Type 2 Diabetic Patients: A Randomized Controlled Trial.” International Journal of Nutrition and Food Sciences. 2015. DOI: https://doi.org/10.11648/j.ijnfs.s.2015040201.11.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "单次食用、基线与餐后前后比较；无平行随机对照。",
+          "population": "20名健康男性，平均年龄28岁。",
+          "exposure": "空腹后一次食用50克纯芝麻酱（tahini），观察4小时。",
+          "result": "餐后舒张压和脉搏下降、血流介导扩张增加，同时血清甘油三酯上升；其他测量指标未见变化。",
+          "limits": "样本小、单一性别、单次观察且无对照；多项餐后指标不能证明长期效果。芝麻酱不含本条所指的混合坚果。",
+          "distance": "D2（纯芝麻酱；不是芝麻+坚果混合酱）"
+        },
+        {
+          "ref": 2,
+          "design": "小型随机对照饮食研究，持续6周。",
+          "population": "41名2型糖尿病患者。",
+          "exposure": "芝麻酱约30克/日，替代部分平常早餐；对照组维持日常早餐。",
+          "result": "芝麻酱组hs-CRP报告下降；空腹血糖、胰岛素及胰岛素抵抗指数变化不显著。",
+          "limits": "小样本、食品替代与其他早餐差异难以拆分；研究产品是纯芝麻酱，不能外推混合坚果酱。",
+          "distance": "D2（纯芝麻酱；配方和对照均不同）"
+        }
+      ],
+      "unknowns": "芝麻种类/比例与坚果配比明确的商业混合酱人体试验；不同坚果配方对过敏原和营养暴露的影响；长期效果。",
+      "tradition": "芝麻、花生和树坚果各有不同的食物与传统文献脉络。本轮未发现可直接对应现代芝麻坚果混合酱固定配方的古籍条目；不把单味芝麻或坚果记载转写为复配成品定性。"
+    },
+    "fresh-milk": {
+      "name": "鲜牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "food",
+      "family": "dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条以日常饮用的巴氏杀菌、未调味液态牛乳为核心；目录中的“鲜”用于区分粉末、发酵乳和复配饮料，不表示生乳。常见全脂产品作为本轮重点；脂肪等级、乳源和处理方式以标签为准。",
+      "variables": "脂肪含量、巴氏或其他热处理、是否强化维生素、乳源、饮用量、是否替代其他食物、研究人群与时长。",
+      "composition": "液态牛乳提供乳蛋白、乳糖、脂肪和矿物质；脂肪等级与强化配方会改变营养数据。USDA FoodData Central 将不同脂肪等级和加工形态分开记录；应按具体产品核对。",
+      "direct": "一项健康成人随机交叉研究比较全脂奶（3.5%脂肪）与脱脂奶（0.1%脂肪）：18人入组、17人完成，每日0.5升、各持续3周。全脂阶段HDL胆固醇较高，其他空腹血脂、血糖和胰岛素未见显著差异。该试验规模小、时间短，比较的是两种脂肪等级，不足以回答长期疾病结局。",
+      "specific": "2023年网络Meta分析纳入19项、1427人的乳制品RCT（干预至少12周），整体包含不同脂肪等级、牛奶、酸奶和其他乳制品；其结果只能提供乳制品背景，不能当作某一品牌或热处理方式的鲜牛奶专属效应。",
+      "safety": "优先选择经过巴氏杀菌的牛奶。CDC指出生乳可携带多种病原体，儿童、孕妇、老年人及免疫低下者更易发生严重感染。牛奶也是主要食物过敏原；乳糖不耐受与牛奶蛋白过敏是不同问题。",
+      "body": "鲜牛奶看起来简单，实际还受脂肪等级、热处理和强化配方影响。一个17名健康成人完成的短期交叉试验比较全脂与脱脂奶，每天饮用0.5升、各持续3周；全脂奶阶段HDL较高，其余测量的血脂和血糖没有显著差异。乳制品综述覆盖的产品更广，不能替某一瓶鲜奶下长期结论。《本草纲目》记有牛乳的传统性味，这是历史文本，不是现代临床效果证明。",
+      "evidence_body": "全脂液态奶与脱脂奶的短期对比：17名完成者、0.5升/日、每期3周，HDL有组间差异，其余所测指标未见显著差异（D0，单个小型RCT，E-C）。长期健康结局和具体鲜奶加工方式仍不明。",
+      "care": "购买与饮用优先选择巴氏杀菌产品并按标签冷藏；生乳的病原风险不因“天然”或外观而消失。对牛奶过敏者须避免乳蛋白，乳糖不耐受者可按个体耐受及医嘱选择产品。",
+      "taste_m": {
+        "甘": "乳糖带来轻微甜味，脂肪等级会影响口感；此处是感官描述，不等于传统药味或功效。"
+      },
+      "queries": [
+        "Fresh pasteurized cow milk human randomized trial systematic review adults cardiometabolic health whole milk dose outcomes DOI",
+        "USDA FoodData Central whole milk pasteurized composition FDA raw milk safety official guidance",
+        "randomized controlled feeding trial low fat milk whole milk skim milk adults LDL BP direct milk only dose duration 2019",
+        "fresh whole cow milk randomized crossover trial whole milk versus skim milk adults fat amount 2018 DOI blood lipids",
+        "本草纲目 牛乳 原文 甘寒 牛乳 本草 经文 古籍 卷次 版本"
+      ],
+      "search_log": [
+        "检索液态巴氏奶及全脂与脱脂对照RCT，并与乳制品网络Meta分析的干预类别对照。",
+        "查USDA FoodData Central中不同脂肪等级记录；不以一个数据库条目代表所有鲜奶商品。",
+        "单独核对CDC/FDA生乳与巴氏杀菌安全信息；传统牛乳原文只记录为历史背景。",
+        "保存原始Exa结果卡和关键来源摘录；全批44次查询、220条结果。"
+      ],
+      "refs": [
+        "Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5. PMID: 29229955.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004. PMID: 36914032; PMCID: PMC10201829.",
+        "CDC. “Raw Milk.” https://www.cdc.gov/food-safety/foods/raw-milk.html.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "USDA. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c."
+      ],
+      "body_refs": [
+        "Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.",
+        "CDC. “Raw Milk.” https://www.cdc.gov/food-safety/foods/raw-milk.html.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、受控、2×3周交叉饮食干预。",
+          "population": "18名健康成人入组，17人完成。",
+          "exposure": "每日0.5升全脂奶（3.5%脂肪）或脱脂奶（0.1%脂肪），各3周，作为日常饮食的一部分。",
+          "result": "全脂阶段HDL胆固醇较高；总胆固醇、LDL、甘油三酯、胰岛素和葡萄糖无显著组间差异。",
+          "limits": "样本小、干预短、健康且正常胆固醇人群；研究未测试长期疾病，也未比较不同巴氏工艺或品牌。",
+          "distance": "D0（液态牛奶；具体产品与商品标签仍有限定）"
+        }
+      ],
+      "unknowns": "不同巴氏/超高温处理和脂肪等级的长期比较；不同乳源、强化配方及实际日常份量的结果；以液态鲜奶为唯一暴露的长期疾病结局。",
+      "tradition": "《本草纲目》卷五十下“牛乳”条记“气味甘，微寒，无毒”，并转引《别录》等旧说。此为历史本草记录，不是现代临床试验证据；古籍没有区分今日的巴氏杀菌、超高温处理及脂肪等级。"
+    },
+    "low-fat-milk": {
+      "name": "低脂牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "food",
+      "family": "dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指脂肪含量低于全脂奶、但仍保留部分乳脂的未调味液态牛乳。不同国家和标签对“低脂”范围的界定可能不同；本轮人体研究中明确标注的1%奶单独记录，不把脱脂奶或加味奶混入。",
+      "variables": "具体乳脂百分比、热处理、强化成分、每次/每日量、是否替代全脂奶或其他饮料、总饮食能量与随访时长。",
+      "composition": "减脂主要改变乳脂与能量密度，不等同于去除乳糖或乳蛋白。不同市场的低脂等级和维生素强化不同，按当地标签与USDA FDC具体记录核对。",
+      "direct": "一项55名高正常日间血压成人的随机交叉受控喂养研究比较无乳制品饮食、每日3份1%牛奶饮食、以及GABA天然较高的全脂切达奶酪饮食，每期6周。1%牛奶方案未降低日间血压；与无乳饮食相比甘油三酯较高、HDL较低，血糖/胰岛素指标无显著差异。该对照并非全脂牛奶，不能单独解释乳脂等级的长期影响。",
+      "specific": "另一项62名高血压前期或1期高血压成人的5周交叉试验，把1%牛奶与低脂奶酪、低脂酸奶合成一个低脂乳制品组合；整体血压、血管功能和脂质未见显著改善。此为组合暴露，不能归因于牛奶单品。乳制品NMA的分组也较宽。",
+      "safety": "低脂并不等于无乳糖或无牛奶蛋白；牛奶过敏者仍须避免。查看是否加糖、香精或营养强化，并按产品标签储存。生乳安全边界见共享乳品母页。",
+      "body": "低脂牛奶只说明乳脂比全脂奶少，不说明它不含乳糖或牛奶蛋白。受控试验中，55名高正常血压成人每天喝3份1%牛奶、持续6周，日间血压没有下降；血脂出现的变化也不能被当作长期疾病结果。另一项研究把牛奶、奶酪和酸奶合并成低脂乳制品组合，无法拆出牛奶单品的作用。选购时应看脂肪等级、是否加糖及过敏原标签。",
+      "evidence_body": "1%低脂液态奶：一项55人、每日3份、6周RCT未见日间血压差异；甘油三酯较无乳对照高、HDL较低（D0，单项短期试验，E-C）。将奶、奶酪和酸奶合用的研究属D2，不能归因于牛奶。",
+      "care": "根据目标选择脂肪等级并查看添加糖/强化成分；牛奶蛋白过敏者仍应避免，乳糖不耐受与牛奶过敏不可混为一谈。",
+      "taste_m": {
+        "甘": "乳糖仍提供轻微甜味，去除部分乳脂会改变口感；仅作感官描述。"
+      },
+      "queries": [
+        "Low-fat milk versus whole milk randomized trial systematic review meta-analysis adults cardiometabolic outcomes DOI",
+        "Low-fat dairy milk randomized controlled feeding trial adults LDL cholesterol blood pressure dose duration",
+        "randomized controlled feeding trial low fat milk whole milk skim milk adults LDL BP direct milk only dose duration 2019",
+        "Effects of low-fat dairy intake on blood pressure endothelial function lipoprotein lipids prehypertension stage 1 hypertension 23901280"
+      ],
+      "search_log": [
+        "优先找仅含1%液态奶的受控喂养研究，再区分“低脂乳制品组合”试验。",
+        "核对55人、3份/日、6周试验及其无乳对照；不把结果写作相对全脂奶的比较。",
+        "参照乳制品NMA时保留其牛奶/酸奶/奶酪混合类别与低确定性。",
+        "原始Exa查询与结果卡保存在本批stage；本条有效查询词列于上。"
+      ],
+      "refs": [
+        "Rancourt-Bouchard M, et al. “Effects of regular-fat and low-fat dairy consumption on daytime ambulatory blood pressure and other cardiometabolic risk factors: a randomized controlled feeding trial.” American Journal of Clinical Nutrition. 2020. DOI: https://doi.org/10.1093/ajcn/nqz251. PMID: 31584063.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.",
+        "Maki KC, et al. “Effects of low-fat dairy intake on blood pressure, endothelial function, and lipoprotein lipids in subjects with prehypertension or stage 1 hypertension.” Vascular Health and Risk Management. 2013;9:369–379. DOI: https://doi.org/10.2147/VHRM.S45684. PMID: 23901280.",
+        "USDA. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Rancourt-Bouchard M, et al. “Effects of regular-fat and low-fat dairy consumption on daytime ambulatory blood pressure and other cardiometabolic risk factors: a randomized controlled feeding trial.” American Journal of Clinical Nutrition. 2020. DOI: https://doi.org/10.1093/ajcn/nqz251.",
+        "Maki KC, et al. “Effects of low-fat dairy intake on blood pressure, endothelial function, and lipoprotein lipids in subjects with prehypertension or stage 1 hypertension.” Vascular Health and Risk Management. 2013;9:369–379. DOI: https://doi.org/10.2147/VHRM.S45684.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉、受控喂养；三种等能量饮食各6周。",
+          "population": "55名健康男性与女性，日间血压偏高正常。",
+          "exposure": "1%低脂液态牛奶饮食每天3份；对照为无乳饮食；第三组为GABA天然较高的全脂切达奶酪。",
+          "result": "日间收缩压、舒张压及葡萄糖/胰岛素指标无显著饮食差异；牛奶阶段甘油三酯较对照高9.9%、HDL较对照低4.1%。",
+          "limits": "对照不是全脂牛奶；同一研究多饮食与多终点，6周不能说明长期临床结局。",
+          "distance": "D0（1%牛奶为明确液态产品；结论限于该剂量/人群）"
+        },
+        {
+          "ref": 3,
+          "design": "随机交叉试验，低脂乳制品和非乳制品各5周。",
+          "population": "62名高血压前期或1期高血压成人。",
+          "exposure": "每天1份1%牛奶、低脂奶酪和低脂酸奶的组合，对照为苹果汁、椒盐脆饼和谷物棒组合。",
+          "result": "整体样本血压、血管功能和血脂未见显著组间差异。",
+          "limits": "多种乳品与多种非乳食品合并，无法归因于低脂牛奶单品。",
+          "distance": "D2（乳制品组合，不是低脂牛奶单品）"
+        }
+      ],
+      "unknowns": "长期单独低脂牛奶与全脂奶的临床结局；不同国家低脂标签与强化配方；低脂牛奶替代其他饮料时的真实效果。",
+      "tradition": "传统牛乳条目没有现代低脂等级区分；不能把古代牛乳记载当作低脂加工品的专属药性或临床效果。"
+    },
+    "skim-milk": {
+      "name": "脱脂牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "food",
+      "family": "dairy",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指去除大部分乳脂的液态牛乳；不同地区的“脱脂/skim/nonfat”标准和残余脂肪量不同。核心是未调味产品，不包括脱脂奶粉、加糖饮料或乳糖水解奶。",
+      "variables": "残余脂肪、乳糖与蛋白含量、维生素A/D强化、热处理、每份量、替代对象和人群。",
+      "composition": "去除乳脂降低每体积脂肪和能量，但乳糖和乳蛋白一般仍在；是否强化维生素及具体营养值应查产品标签和USDA FDC。",
+      "direct": "最直接的比较是一项全脂（3.5%）与脱脂奶（0.1%）的随机交叉研究：17名健康成人完成，每日0.5升、各3周；全脂奶阶段HDL较高，其余所测血脂、葡萄糖和胰岛素无显著差异。另一项16周研究测试的是同时强化铁和维生素D的脱脂奶，参与者为铁储备偏低的年轻女性；强化与对照组的血压变化无显著组间差异，不能把结果归因于脱脂本身。",
+      "specific": "乳制品网络Meta分析纳入的低脂/高脂奶类较广，随访至少12周，但不是脱脂牛奶专属结论。脱脂并不意味着无乳糖或低过敏性。",
+      "safety": "脱脂奶仍含牛奶蛋白和通常存在的乳糖；牛奶过敏者不能因去脂而视其安全。查看额外糖、维生素强化和当地脂肪标示。",
+      "body": "脱脂是去掉大部分乳脂，不是把牛奶里的乳糖或蛋白质一并去掉。全脂与脱脂奶的短期交叉试验只有17名完成者，每天饮用0.5升、各3周；两者在多数测量的血脂和血糖指标上没有显著差异，全脂奶阶段HDL较高。另一项研究使用同时强化铁和维生素D的脱脂奶，不能用来单独判断脱脂的效果。若因过敏或乳糖不耐受选奶，去脂并不能解决这两类问题。",
+      "evidence_body": "脱脂与全脂对比：17人完成、0.5升/日、每期3周；除全脂奶HDL较高外，其他所测指标未见显著差异（D0，短期小型RCT，E-C）。强化铁/维生素D脱脂奶试验的组间差异不支持归因于脱脂本身。",
+      "care": "看残余乳脂、强化维生素、添加糖和保存标签；对牛奶蛋白过敏者仍需避免。脱脂奶不是无乳糖奶。",
+      "taste_m": {
+        "甘": "乳糖仍在，味道常有轻微甜感；脂肪减少会令口感较清淡。仅作感官描述。"
+      },
+      "queries": [
+        "Skim milk randomized controlled trial adults cardiometabolic lipid profile blood pressure body weight DOI",
+        "Skim milk intervention systematic review meta-analysis randomized trials health outcomes adults dairy fat replacement",
+        "Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults 3-week randomized crossover study DOI s41430-017-0042-5",
+        "USDA FoodData Central pistachio butter tahini whole cow milk low fat skim Greek yogurt composition official source data"
+      ],
+      "search_log": [
+        "检索脱脂液态奶的直接人体研究，并核对全脂/脱脂短期对照的脂肪比例、剂量与完成样本。",
+        "单列维生素D与铁强化的脱脂奶试验，避免将强化产品结果归因于脱脂。",
+        "使用乳制品NMA作为较宽背景，不宣称其可单独回答skim milk。",
+        "查询响应、全文摘录和核对清单均保存在本批stage目录。"
+      ],
+      "refs": [
+        "Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5. PMID: 29229955.",
+        "Toxqui L, et al. “Changes in Blood Pressure and Lipid Levels in Young Women Consuming a Vitamin D-Fortified Skimmed Milk: A Randomised Controlled Trial.” Nutrients. 2013;5(12):4966–4977. DOI: https://doi.org/10.3390/nu5124966.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.",
+        "USDA. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5.",
+        "Toxqui L, et al. “Changes in Blood Pressure and Lipid Levels in Young Women Consuming a Vitamin D-Fortified Skimmed Milk: A Randomised Controlled Trial.” Nutrients. 2013;5(12):4966–4977. DOI: https://doi.org/10.3390/nu5124966.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、受控、2×3周交叉干预。",
+          "population": "18名健康成人入组，17名完成。",
+          "exposure": "每日0.5升全脂奶（3.5%脂肪）与脱脂奶（0.1%脂肪），各3周。",
+          "result": "全脂奶阶段HDL胆固醇较高；总胆固醇、LDL、甘油三酯、胰岛素和葡萄糖未见显著差异。",
+          "limits": "小样本、短期健康成人试验；不能说明长期疾病风险。",
+          "distance": "D0（同为液态牛奶，明确比较脱脂与全脂）"
+        },
+        {
+          "ref": 2,
+          "design": "双盲、安慰剂对照、平行随机试验，16周。",
+          "population": "年轻女性；铁储备低者随机分组，另设铁储备充足参考组。",
+          "exposure": "强化铁及200 IU/日（5 μg）维生素D的脱脂奶，n=55；不含维生素D的对照奶，n=54；参考组n=56。",
+          "result": "不同组间多项脂质/血压变化无显著差异；强化组内收缩压和舒张压下降不能据此归因于脱脂奶。",
+          "limits": "产品同时强化铁和维生素D，且研究对象为低铁储备年轻女性。",
+          "distance": "D1（强化脱脂奶，不能拆分脱脂与强化成分）"
+        }
+      ],
+      "unknowns": "长期不强化脱脂奶与全脂奶的直接比较；残余脂肪等级和强化配方对不同人群的影响。",
+      "tradition": "古代牛乳记载未区分脱脂与全脂；不将历史牛乳描述视作脱脂加工的专属属性。"
+    },
+    "a2-milk": {
+      "name": "A2牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指β-酪蛋白主要/仅含A2变体的牛乳产品，与同时含A1及A2 β-酪蛋白的常规牛奶相区别。品牌、脂肪等级和加工方式各异；A2标签描述的是酪蛋白型，不代表无乳糖、低乳蛋白或低过敏。",
+      "variables": "A1/A2酪蛋白比例、总乳蛋白、乳糖含量、脂肪等级、每次饮用量、乳糖消化状态、受试者是否自报不耐受及干预时长。",
+      "composition": "A2奶仍是牛乳，通常含乳糖、乳清蛋白及牛奶过敏原；其与常规奶的主要区别是β-酪蛋白变体。不能把A2奶视作乳糖酶处理或脱乳糖产品。",
+      "direct": "人体研究结果涉及特定人群与不同方案。2017年中国多中心双盲交叉试验纳入600名自述牛奶不耐受成人，比较300毫升A2 β-酪蛋白奶与常规A1/A2奶，若干胃肠症状评分较低。2020年单餐交叉研究在25名符合不耐受标准者及8名乳糖消化不良者中比较四种奶；A2奶相对常规奶的部分症状更轻，但它仍含乳糖。2026年70名健康成人的7周试验每日两份、每份250毫升、每种奶干预2周，报告部分肠鸣和胀气差异；多项症状并未都出现组间差异。",
+      "specific": "2017年系统综述指出，A1/A2胃肠效应的人体研究仍有限，文献同时含动物与体外资料。不同论文的人群、产品、症状量表和乳糖耐受状态不一致；结果不等同于治疗乳糖不耐受、牛奶过敏或其他疾病。",
+      "safety": "A2奶仍可能导致乳糖不耐受症状，也仍含牛奶蛋白；牛奶蛋白过敏者不应把A2标签当作安全保证。若症状明显，应按医疗建议鉴别乳糖不耐受与牛奶过敏。",
+      "body": "A2描述的是牛奶中的β-酪蛋白类型，不是乳糖含量。研究中，一些自述不耐受者饮用A2奶后胃肠症状评分低于常规奶，但试验人群、饮用量和观察指标不同；一项2020年单餐研究也把无乳糖奶作为独立比较产品。A2奶仍含乳糖和牛奶蛋白，因此不能当作无乳糖奶或牛奶过敏者的替代品。",
+      "evidence_body": "A2奶与常规奶的部分胃肠症状比较：600人多中心交叉试验及小型单餐试验报告部分症状差异；2026年70人试验也有部分症状差别，但并非所有症状一致（D0，产品特异研究；偏倚、异质性与重复性限制结论，E-C）。A2不代表无乳糖或低过敏。",
+      "care": "确认包装上的A2说明与乳糖含量是两个不同信息；牛奶蛋白过敏者仍需避免。持续或严重腹痛、腹泻等症状应由专业人员评估。",
+      "taste_m": {
+        "甘": "A2奶仍是牛乳，乳糖通常仍在；味觉取决于脂肪、热处理和商品配方。此处仅感官描述。"
+      },
+      "queries": [
+        "A2 milk versus conventional A1 A2 milk randomized controlled trials systematic review meta-analysis gastrointestinal symptoms DOI",
+        "A2 beta-casein milk human randomized double blind crossover study lactose intolerance symptoms primary trial DOI",
+        "A2 beta-casein milk improves gastrointestinal symptoms in healthy adults 7-week randomized double-blind crossover trial 2026 107222 sample dose results",
+        "Milk Containing A2 β-Casein ONLY as a Single Meal lactose-free milk crossover 2020 DOI 10.3390/nu12123855"
+      ],
+      "search_log": [
+        "按A1/A2 β-酪蛋白变体检索随机人体研究与系统综述，逐项区分自述不耐受、乳糖消化不良及健康人群。",
+        "补查2026年7周试验并核对两种奶各2周、每日2×250毫升及年龄分层结果。",
+        "核对单餐研究中的乳糖-free奶对照；明确A2奶与乳糖水解是不同产品属性。",
+        "将症状试验与牛奶过敏/安全信息分开；全文检索卡和原始查询在stage文件保存。"
+      ],
+      "refs": [
+        "He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;16:94. DOI: https://doi.org/10.1186/s12937-017-0275-0. PMCID: PMC5657040.",
+        "“Milk Containing A2 β-Casein ONLY, as a Single Meal, Causes Fewer Symptoms of Lactose Intolerance than Milk Containing A1 and A2 β-Caseins in Subjects with Lactose Maldigestion and Intolerance: A Randomized, Double-Blind, Crossover Trial.” Nutrients. 2020;12(12):3855. DOI: https://doi.org/10.3390/nu12123855. PMCID: PMC7766938.",
+        "Wang Z, et al. “A2 β-casein milk improves gastrointestinal symptoms in healthy adults: A 7-week randomized, double-blind, crossover trial.” Journal of Functional Foods. 2026. DOI: https://doi.org/10.1016/j.jff.2026.107222.",
+        "“Systematic Review of the Gastrointestinal Effects of A1 Compared with A2 β-Casein.” Advances in Nutrition. 2017. DOI: https://doi.org/10.3945/an.116.013953.",
+        "NIDDK. “Treatment for Lactose Intolerance.” https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/treatment.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;16:94. DOI: https://doi.org/10.1186/s12937-017-0275-0.",
+        "“Milk Containing A2 β-Casein ONLY, as a Single Meal, Causes Fewer Symptoms of Lactose Intolerance than Milk Containing A1 and A2 β-Caseins in Subjects with Lactose Maldigestion and Intolerance: A Randomized, Double-Blind, Crossover Trial.” Nutrients. 2020;12(12):3855. DOI: https://doi.org/10.3390/nu12123855.",
+        "Wang Z, et al. “A2 β-casein milk improves gastrointestinal symptoms in healthy adults: A 7-week randomized, double-blind, crossover trial.” Journal of Functional Foods. 2026. DOI: https://doi.org/10.1016/j.jff.2026.107222.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "多中心、随机、双盲、交叉试验；基线3日乳制品洗脱，交替产品间7日洗脱。",
+          "population": "600名自述乳糖不耐受的中国成人。",
+          "exposure": "300毫升仅含A2 β-酪蛋白的奶与常规A1/A2 β-酪蛋白奶按随机顺序比较。",
+          "result": "A2奶后1小时和3小时六种胃肠症状评分较低；12小时仍有部分症状差异。",
+          "limits": "自述不耐受样本；症状量表与短期结果不能证明长期疾病预防或乳糖不耐受治疗；产品/资助利益关系需结合原文声明审查。",
+          "distance": "D0（A2牛奶与常规奶的直接产品比较）"
+        },
+        {
+          "ref": 2,
+          "design": "随机、双盲、交叉单餐试验；餐后观察6小时。",
+          "population": "25名乳糖不耐受且乳糖消化不良者，以及8名乳糖消化不良但不符合不耐受标准者。",
+          "exposure": "分别饮用A2奶、Jersey奶、常规奶、无乳糖奶；单次进食。",
+          "result": "在符合不耐受标准者中，A2奶相对常规奶的腹痛总评分较低；无乳糖奶是独立对照，论文不能据此把A2等同于无乳糖。",
+          "limits": "样本很小、单餐和6小时观察；无法估计长期耐受或疾病结局。",
+          "distance": "D0（同类产品直接比较）"
+        },
+        {
+          "ref": 3,
+          "design": "随机、双盲、交叉试验；两种牛奶分别干预2周，中间2周洗脱；总观察7周。",
+          "population": "70名25–65岁健康成人，随机分为两种顺序。",
+          "exposure": "每日两份、每份250毫升A2A2奶或常规A1A2奶；两类奶除β-酪蛋白型外营养组成相近。",
+          "result": "报告部分年龄组肠鸣、胀气和排便/菌群变化；整体未见腹胀、粪便性状等所有症状均一致变化。",
+          "limits": "多终点与年龄分层分析；健康成人不能代表确诊乳糖不耐受患者，尚需独立重复。",
+          "distance": "D0（产品变体直接比较）"
+        }
+      ],
+      "unknowns": "确诊乳糖不耐受人群中有临床意义、可重复的长期效果；非胃肠健康结局；品牌间A1/A2比例、乳糖与脂肪配方差异。",
+      "tradition": "传统牛乳文献不区分A1与A2 β-酪蛋白，也不讨论现代品种筛选；不可把通用牛乳记载改写为A2牛奶的专属传统属性。"
+    },
+    "high-protein-milk": {
+      "name": "高蛋白牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "dairy",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指通过浓缩、过滤或加入乳蛋白等方式提高蛋白质含量的液态牛乳/乳饮料；不同商品蛋白克数、脂肪、糖、乳糖和其他配料差异较大，不存在仅凭“高蛋白”名称确定的单一配方。",
+      "variables": "每份蛋白质克数与蛋白来源、液体容量、脂肪和糖、是否强化维生素/矿物质、运动配合、每日总蛋白、年龄与基线体能。",
+      "composition": "应使用商品营养标签核对每份蛋白质和总能量；部分运动/老年研究产品按每瓶或每日额外蛋白计量，不能推算到所有零售高蛋白奶。",
+      "direct": "两项老年人随机研究提示效果依赖配方、运动及人群。37名健康活跃、50岁及以上成人完成的12周研究中，高蛋白乳饮每天两次、合计额外30克蛋白，另设阻力训练因素；单靠乳饮未进一步增强瘦体重、力量、爆发力或功能表现的训练效果，阻力训练与乳饮并用在最大力量上有增幅。另一项≥70岁、体力较弱/功能较低的研究随机50人、36人完成，每天两次各0.4升、每次20克蛋白的强化乳，与等能量碳水对照12周，肌肉量、力量及功能没有显著组间差异。",
+      "specific": "这些试验测试的是特定强化乳饮或蛋白富集牛奶，并非市面所有“高蛋白牛奶”。结果主要涉及老年人的肌肉结局；不能推成普遍增肌、减脂或疾病预防效果。",
+      "safety": "蛋白质摄入需结合总膳食、肾脏状况、年龄和产品配方考虑；对牛奶蛋白过敏者仍须避免。注意添加糖、钠、乳糖及每瓶容量。",
+      "body": "“高蛋白牛奶”是商品类别，不是统一剂量。老年人试验中，一种乳饮每天提供额外30克蛋白、持续12周；它没有单独增加瘦体重或功能表现，也未进一步扩大阻力训练对多数指标的作用。另一项小型强化奶试验同样没有发现肌肉量、力量或功能的显著组间差异。具体商品是否适合，先看每份蛋白质、糖和容量，再结合整体饮食，而不是只看正面标签。",
+      "evidence_body": "特定高蛋白乳饮在老年人肌肉结局上的RCT结果有限：37人12周、30克额外蛋白/日的研究显示阻力训练是主要作用来源；50人随机、36人完成的强化奶研究未见肌肉量/力量/功能的组间优势（D1，产品异质、样本小，E-C）。",
+      "care": "比对每瓶蛋白克数、糖、能量与乳糖；有牛奶蛋白过敏者避免，特殊肾脏疾病或需限制蛋白者按医生建议选择。",
+      "taste_m": {},
+      "queries": [
+        "High protein milk fortified dairy drink randomized controlled trial older adults muscle strength nutrition outcomes DOI",
+        "Protein-enriched milk beverage randomized trial older adults muscle function systematic review dairy drink",
+        "high protein dairy milk beverage randomized controlled trial older adults trial protein amount 12 weeks 644865 29188875 exact results",
+        "\"The Effects of a High-Protein Dairy Milk Beverage\" 644865 results fat free mass muscle strength randomized 37 groups outcomes"
+      ],
+      "search_log": [
+        "分别核对高蛋白乳饮与蛋白强化奶两项老年人RCT的实际蛋白剂量、运动设计、失访和结局。",
+        "把阻力训练与乳饮效应分开报告；不将产品特异配方外推到所有商品。",
+        "查乳制品NMA作为一般背景，但该综述并不专门分析高蛋白奶。",
+        "全批原始查询及结果卡和source excerpt在本批stage留存。"
+      ],
+      "refs": [
+        "Huschtscha Z, et al. “The Effects of a High-Protein Dairy Milk Beverage With or Without Progressive Resistance Training on Fat-Free Mass, Skeletal Muscle Strength and Power, and Functional Performance in Healthy Active Older Adults: A 12-Week Randomized Controlled Trial.” Frontiers in Nutrition. 2021;8:644865. DOI: https://doi.org/10.3389/fnut.2021.644865. PMID: 33816540.",
+        "Ottestad I, et al. “Intake of a Protein-Enriched Milk and Effects on Muscle Mass and Strength. A 12-Week Randomized Placebo Controlled Trial among Community-Dwelling Older Adults.” The Journal of Nutrition, Health & Aging. 2017;21(10):1160–1169. DOI: https://doi.org/10.1007/s12603-016-0856-1. PMID: 29188875.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Huschtscha Z, et al. “The Effects of a High-Protein Dairy Milk Beverage With or Without Progressive Resistance Training on Fat-Free Mass, Skeletal Muscle Strength and Power, and Functional Performance in Healthy Active Older Adults: A 12-Week Randomized Controlled Trial.” Frontiers in Nutrition. 2021;8:644865. DOI: https://doi.org/10.3389/fnut.2021.644865.",
+        "Ottestad I, et al. “Intake of a Protein-Enriched Milk and Effects on Muscle Mass and Strength. A 12-Week Randomized Placebo Controlled Trial among Community-Dwelling Older Adults.” The Journal of Nutrition, Health & Aging. 2017;21(10):1160–1169. DOI: https://doi.org/10.1007/s12603-016-0856-1.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "12周2×2析因随机试验（乳饮、阻力训练、两者结合、对照）。",
+          "population": "37名完成者，健康且活跃，年龄≥50岁。",
+          "exposure": "高蛋白乳饮每日2次，合计约30克蛋白/日；阻力训练为每周3次的独立干预因素。",
+          "result": "额外蛋白乳饮未进一步增强阻力训练对瘦体重、爆发力或身体功能的效果；与训练合用时最大力量变化更高。",
+          "limits": "小样本、健康活跃老年人、特定研究配方；训练与乳饮的交互不可外推为单独饮奶增肌。",
+          "distance": "D1（研究用强化乳饮与目录商品类别相近但不统一）"
+        },
+        {
+          "ref": 2,
+          "design": "双盲随机安慰剂对照试验，12周。",
+          "population": "50名≥70岁社区老人随机，36人完成；入选者体力或功能较低。",
+          "exposure": "强化奶每天2×0.4升，每次含20克蛋白；对照为等能量碳水饮料。",
+          "result": "胸推两组均有改善但无组间差异；腿推、肌肉量及功能测验也未见显著组间差异。",
+          "limits": "筛选与完成样本较小，干预12周；产品强化配方不等同于所有高蛋白奶。",
+          "distance": "D1（特定蛋白富集奶；商品配方不一）"
+        }
+      ],
+      "unknowns": "一般成年人/运动人群的独立长期效果；不同蛋白来源、乳糖、糖和脂肪配方之间的差异；按每份蛋白含量与日常总摄入分层的研究。",
+      "tradition": "传统牛乳记载不涉及现代过滤、浓缩或加乳清蛋白的高蛋白商品；不把普通牛乳的古籍属性转移为强化饮料的专属结论。"
+    },
+    "lactose-free-milk": {
+      "name": "无乳糖牛奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指经过乳糖酶水解或其他方式降低乳糖的牛乳产品。不同国家“无乳糖/低乳糖”标签定义和残余乳糖量可不同；它仍可能含牛奶蛋白、脂肪和其他乳成分，不等于植物饮料或无奶过敏原产品。",
+      "variables": "乳糖处理方式和残余量、脂肪等级、乳蛋白/酪蛋白变体、一次饮用量、确诊乳糖消化不良与否、其他食物和症状评估方式。",
+      "composition": "乳糖水解会改变糖的组成和甜味感；其他营养素需按标签核对。单凭“无乳糖”不能推断A1/A2酪蛋白、蛋白过敏性或脂肪水平。",
+      "direct": "一项1995年双盲交叉研究纳入30名自述严重乳糖不耐受者，其中21人经检测为乳糖吸收不良；每天随早餐饮用240毫升2%脂肪普通奶或乳糖水解奶，各1周。症状总体轻微，两种奶的腹胀、腹痛、腹泻和排气评分没有显著差异。2025年一项五周交叉研究有48名成人完成，比较普通无乳糖奶、A2奶及A2无乳糖奶；多数胃肠症状很轻，呼气氢与乳糖含量相关，但产品同时改变了酪蛋白与乳糖因素。",
+      "specific": "NIDDK指出，乳糖不耐受管理可因人调整乳糖摄入，乳糖酶产品能帮助部分人降低症状；有些人只需减少份量。实验结果不能保证每个人在任意饮用量下耐受相同。",
+      "safety": "无乳糖奶仍含牛奶蛋白，不能用于牛奶蛋白过敏者。若出现严重或持续症状，应评估其他原因，避免自行把所有胃肠不适归因乳糖不耐受。",
+      "body": "无乳糖牛奶把乳糖处理掉或降下来，但仍是牛奶。一项30人的双盲交叉研究中，参与者每天饮用240毫升普通奶或乳糖水解奶各一周，症状总体轻微，两者没有显著差别；更大的饮用量或不同人群可能不同。近年的交叉试验比较了无乳糖奶和A2相关产品，发现多数症状也较轻，但同时改变了酪蛋白类型，难以拆分单一因素。牛奶蛋白过敏者仍不能把无乳糖奶当作安全替代品。",
+      "evidence_body": "乳糖水解奶：30名自述严重不耐受者、其中21名为乳糖吸收不良者，在240毫升/日、各1周条件下未见乳糖水解奶与普通奶的总体症状差异（D0，短期小样本，E-C）。2025年产品比较受A2酪蛋白因素影响；无乳糖不等于无牛奶过敏原。",
+      "care": "按包装核对残余乳糖和乳脂；牛奶蛋白过敏者应避免。个体耐受可受份量、同餐食物及其他病因影响；严重症状应就医评估。",
+      "taste_m": {
+        "甘": "乳糖酶水解后甜味可能更明显；具体感受取决于产品及添加物。仅作感官描述。"
+      },
+      "queries": [
+        "Lactose-free cow milk randomized controlled trial lactose maldigestion symptoms adults conventional milk dose duration DOI",
+        "NIH NIDDK lactose intolerance diagnosis treatment lactose-free milk guidance official",
+        "randomized crossover clinical trial lactose-free cow milk versus regular milk lactose intolerance adults GI symptoms dose duration DOI",
+        "Lactase-Treated A2 Milk as a Feasible Conventional Milk Alternative randomized controlled crossover tolerance gastrointestinal distress 2025"
+      ],
+      "search_log": [
+        "检索乳糖水解奶对照普通奶的临床试验；核验经典240毫升/日双盲交叉研究并保留其阴性/低症状结果。",
+        "补查2025年含A2因素的乳糖酶处理奶研究，注明同时改变酪蛋白，避免因果归因。",
+        "查NIDDK官方管理说明与FDA牛奶过敏原要求；区分乳糖不耐受和牛奶蛋白过敏。",
+        "全部查询响应与来源摘录随批次stage保存。"
+      ],
+      "refs": [
+        "Suarez FL, Savaiano DA, Levitt MD. “A Comparison of Symptoms after the Consumption of Milk or Lactose-Hydrolyzed Milk by People with Self-Reported Severe Lactose Intolerance.” New England Journal of Medicine. 1995;333(1):1–4. DOI: https://doi.org/10.1056/NEJM199507063330101.",
+        "“Lactase-Treated A2 Milk as a Feasible Conventional Milk Alternative: Results of a Randomized Controlled Crossover Trial to Assess Tolerance, Gastrointestinal Distress, and Preference for Milks Varying in Casein Types and Lactose Content.” Nutrients. 2025;17(12):1946. DOI: https://doi.org/10.3390/nu17121946.",
+        "NIDDK. “Treatment for Lactose Intolerance.” https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/treatment.",
+        "FDA. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Suarez FL, Savaiano DA, Levitt MD. “A Comparison of Symptoms after the Consumption of Milk or Lactose-Hydrolyzed Milk by People with Self-Reported Severe Lactose Intolerance.” New England Journal of Medicine. 1995;333(1):1–4. DOI: https://doi.org/10.1056/NEJM199507063330101.",
+        "“Lactase-Treated A2 Milk as a Feasible Conventional Milk Alternative: Results of a Randomized Controlled Crossover Trial to Assess Tolerance, Gastrointestinal Distress, and Preference for Milks Varying in Casein Types and Lactose Content.” Nutrients. 2025;17(12):1946. DOI: https://doi.org/10.3390/nu17121946.",
+        "NIDDK. “Treatment for Lactose Intolerance.” https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/treatment.",
+        "FDA. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、交叉试验；两种奶各连续1周。",
+          "population": "30名自述严重乳糖不耐受者；21人检测为乳糖吸收不良。",
+          "exposure": "每日随早餐饮用240毫升2%脂肪乳糖水解奶或甜味匹配的普通奶。",
+          "result": "两种奶期间腹胀、腹痛、腹泻和排气症状整体很轻，严重度评分无显著差异。",
+          "limits": "样本小、时间短、只测试240毫升/日；参与者自报严重症状但多数试验期间症状轻。",
+          "distance": "D0（乳糖水解奶与普通奶直接比较）"
+        },
+        {
+          "ref": 2,
+          "design": "5周双盲、双交叉试验；递增饮用量，每个产品多个日剂量。",
+          "population": "53人随机，48名成人完成；33人被归为乳糖不耐受。",
+          "exposure": "比较常规无乳糖奶（Lactaid）、A2奶、A2无乳糖奶；每种奶分别安排多日递增剂量阶段。",
+          "result": "总体胃肠症状较少；呼气氢反应与乳糖含量相关。不同产品间部分腹胀/排气评分差异并不一致。",
+          "limits": "常规无乳糖奶与A2无乳糖奶同时改变了酪蛋白型；乳糖不耐受人群以实验分层判断，主要为短期耐受/偏好研究。",
+          "distance": "D0（具体乳糖处理产品；不能单独估计乳糖处理的因果效应）"
+        }
+      ],
+      "unknowns": "不同品牌残余乳糖量、不同份量和同餐条件下的长期症状；对确诊人群的比较效果；不同地区标签阈值与检测方法。",
+      "tradition": "古代牛乳资料不讨论乳糖酶水解或现代无乳糖标示；传统牛乳记载不能作为乳糖不耐受治疗证据。"
+    },
+    "greek-yogurt": {
+      "name": "希腊酸奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "cultured-dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指以牛乳发酵后再过滤/浓缩、质地较厚的希腊式酸奶；产品脂肪、蛋白质、糖、菌种及是否加味不一。以无添加调味的原味产品为讨论核心，不把希腊式酸奶与普通酸奶、奶酪或酸奶补充剂等同。",
+      "variables": "发酵菌种、过滤程度、牛乳脂肪等级、蛋白质与糖含量、是否加果料/甜味剂、每份量和比较食物。",
+      "composition": "过滤程度会影响固形物、蛋白质与乳糖浓度；市售产品存在差异。需查具体品牌营养标签和USDA FDC条目，不从“希腊式”名称推定高蛋白或低糖。",
+      "direct": "一项60人随机交叉急性试验比较一份原味2%脂肪希腊酸奶、脱脂奶、全脂奶、切达奶酪和水；参与者为30名健康年轻成人及30名健康/超重老年成人。酸奶在餐后3小时的主观食欲AUC低于两种牛奶，但研究只观察单餐后的食欲与血糖/胰岛素，不是长期体重或疾病试验。2023年乳制品NMA中的“酸奶”类别较广，不能确定为希腊酸奶。",
+      "specific": "普通酸奶综述汇总成人慢性病风险标志物的少量试验；菌种、发酵方式、脂肪和糖不同，不能自动代表希腊式酸奶。单份酸奶的效果也不等同于额外增加每日能量。",
+      "safety": "牛奶过敏者须避免乳蛋白；乳糖含量因过滤程度与产品不同，不能假设所有希腊酸奶均无乳糖。含糖、果料或配料的产品需按标签核对。",
+      "body": "希腊酸奶常因过滤而质地厚，但品牌间脂肪、蛋白质和糖含量并不一致。一项60人的随机交叉试验用一份原味2%希腊酸奶与牛奶、奶酪和水比较，酸奶餐后3小时的主观食欲低于两种牛奶；这只是单餐观察，不能说明长期减重或防病。更广泛的酸奶综述也包含不同菌种和配方，不能当作希腊酸奶专属结论。看标签比只看“希腊式”名称更有用。",
+      "evidence_body": "原味2%希腊酸奶：60名年轻与较年长成人单份随机交叉试验显示餐后主观食欲AUC低于两种牛奶；仅属急性替代比较，不支持长期体重/疾病效果（D0，单餐，E-C）。乳制品NMA与一般酸奶综述为D2背景。",
+      "care": "查看每份蛋白质、添加糖、脂肪和配料；乳糖耐受因产品与个人而异，牛奶蛋白过敏者仍须避免。",
+      "taste_m": {
+        "酸": "原味发酵酸奶有酸味，甜味与酸度受菌种、过滤及加糖影响；这是味觉描述。"
+      },
+      "queries": [
+        "Greek yogurt randomized controlled trial adults glycemic cardiometabolic outcomes systematic review meta-analysis DOI",
+        "Greek yogurt human randomized trial type 2 diabetes satiety glycemic response systematic review",
+        "Greek yogurt acute feeding trial postprandial glycemia satiety adults single serving randomized crossover serving size DOI 31039320",
+        "Role of single serving form of dairy 31039320 Greek yogurt 2% serving size grams ml package label trial full text"
+      ],
+      "search_log": [
+        "优先检索希腊酸奶本身的临床试验；找到的直接研究为原味2%产品单份急性交叉比较。",
+        "核对该研究为60人、单次食用、按制造商标签定义份量；未将结果改写为慢性减重或糖尿病治疗。",
+        "系统综述/网络Meta分析覆盖的是一般酸奶或乳制品类别，作为D2背景列出。",
+        "相关检索结果和原始查询均保存在本批stage。"
+      ],
+      "refs": [
+        "Vien S, et al. “Role of single serving form of dairy on satiety and postprandial glycaemia in young and older healthy adults.” Applied Physiology, Nutrition, and Metabolism. 2019. DOI: https://doi.org/10.1139/apnm-2018-0887. PMID: 31039320.",
+        "“A systematic review of the effect of yogurt consumption on chronic diseases risk markers in adults.” European Journal of Nutrition. 2017;56:1375–1392. DOI: https://doi.org/10.1007/s00394-016-1341-7.",
+        "Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.",
+        "USDA. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c."
+      ],
+      "body_refs": [
+        "Vien S, et al. “Role of single serving form of dairy on satiety and postprandial glycaemia in young and older healthy adults.” Applied Physiology, Nutrition, and Metabolism. 2019. DOI: https://doi.org/10.1139/apnm-2018-0887.",
+        "“A systematic review of the effect of yogurt consumption on chronic diseases risk markers in adults.” European Journal of Nutrition. 2017;56:1375–1392. DOI: https://doi.org/10.1007/s00394-016-1341-7.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、非盲、受控、重复测量交叉设计；不同食品按随机顺序、间隔约1周。",
+          "population": "30名健康年轻成人与30名健康/超重较年长成人。",
+          "exposure": "空腹后单份原味希腊酸奶（2%脂肪；按标签份量）与脱脂奶、全脂奶、切达奶酪和水比较；观察3小时食欲、2小时血糖/胰岛素。",
+          "result": "所有乳品的食欲AUC较水低；希腊酸奶AUC较脱脂奶低9%、较全脂奶低7%。血糖/胰岛素还受年龄及产品形态影响。",
+          "limits": "单份急性主观食欲与代谢指标；单一产品，非长期自由生活进食/体重结局；非盲设计。",
+          "distance": "D0（研究直接测试原味希腊酸奶，但只限单份急性结局）"
+        }
+      ],
+      "unknowns": "不同品牌/蛋白质与糖含量的希腊酸奶长期人体试验；确切过滤程度、乳糖量与菌种的影响；替代 vs 额外加食的长期结局。",
+      "tradition": "《本草纲目》有“酪”等传统乳制品记录，但古代制法、动物乳源和发酵/浓缩过程未必等同现代希腊酸奶。本轮不把古代“酪”的记载直接映射为希腊酸奶的药性。"
+    },
+    "high-protein-yogurt": {
+      "name": "高蛋白酸奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "cultured-dairy",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指通过过滤浓缩或添加乳蛋白等方式提高蛋白质含量的酸奶；希腊式产品可能属于其中一类，但品牌和每份蛋白质差异明显。加糖、代糖、益生菌、乳清/酪蛋白强化及脱脂配方均需分开识别。",
+      "variables": "每份蛋白质与能量、过滤/浓缩或蛋白添加、菌种、脂肪和糖、份量、食用时机、对照食品及总饮食。",
+      "composition": "没有单一的高蛋白酸奶配方。按营养标签记录克数/份和其他配料；研究中使用的14克蛋白希腊式酸奶、蛋白益生菌浓缩酸奶Kashk与普通零售产品并不完全相同。",
+      "direct": "一项32名健康女性的急性随机交叉研究比较160千卡的希腊式高蛋白酸奶（14克蛋白质）与等能量普通酸奶（5克蛋白质）。高蛋白产品多出的9克蛋白未显著改变餐后饥饿/饱腹评分、晚餐请求时间或随后自由进食量。另一项70名超重/肥胖女性8周研究将50克高蛋白、益生菌浓缩酸奶Kashk加入低能量饮食，对照为低能量饮食；由于同时涉及减能饮食、益生菌和其他营养差异，不能把结果归因于蛋白质或普通高蛋白酸奶。",
+      "specific": "现有人体试验不足以证明所有高蛋白酸奶都会增加饱腹、减重或改善代谢。功能性菌种、浓缩乳制品及蛋白质补充方案应分别记录，不与日常产品类别混合。",
+      "safety": "牛奶蛋白过敏者须避免；不同产品可能含添加糖、代糖或额外配料。蛋白质摄入需放在全天总量和个体健康状况中看，不能把单品宣传当作治疗建议。",
+      "body": "高蛋白酸奶的名字并不代表统一配方或同一剂量。32名健康女性的随机交叉研究比较了160千卡、14克蛋白的希腊式酸奶与5克蛋白的普通酸奶；多出的9克蛋白没有明显改变饥饿感、晚餐时间或随后进食量。另一项研究把蛋白和益生菌浓缩酸奶放入低能量饮食中，无法单独归因于酸奶或蛋白质。选购时应看每份蛋白质、糖和能量，并注意牛奶过敏原。",
+      "evidence_body": "高蛋白希腊式酸奶：32名健康女性、14克对5克蛋白、等能量急性对照，食欲及随后摄食未见差异（D0，单次试验，E-C）。Kashk研究有低能量饮食和益生菌等共干预（D1），不能归因于普通高蛋白酸奶。",
+      "care": "核对蛋白克数、每份能量、糖及配料；牛奶蛋白过敏者避免。不要把单次饱腹研究写成减重效果。",
+      "taste_m": {},
+      "queries": [
+        "High protein yogurt randomized controlled trial human adults cardiometabolic satiety body composition dose DOI",
+        "Protein-fortified yogurt clinical trial older adults type 2 diabetes high protein dairy randomized controlled",
+        "high protein Greek yogurt randomized crossover clinical trial body composition appetite satiety diabetes adults dose DOI",
+        "The effects of increased dietary protein yogurt snack in afternoon appetite control eating initiation healthy women 2013 DOI 10.1186/1475-2891-12-71 full trial details",
+        "\"Effect of a low energy diet, containing a high protein, probiotic condensed yogurt\" randomized controlled trial sample arms duration yogurt protein"
+      ],
+      "search_log": [
+        "直接酸奶试验中区分14克希腊式产品与5克普通酸奶的等能量急性交叉研究。",
+        "另查Kashk蛋白/益生菌浓缩酸奶试验，记录其低能量饮食共干预和仅50克产品剂量。",
+        "排除蛋白饮料、乳清补充剂和注册但未发表结果的临床试验作为本品证据。",
+        "全批原始查询及结果卡、抓取摘要均保存在stage目录。"
+      ],
+      "refs": [
+        "Ortinau LC, et al. “The effects of increased dietary protein yogurt snack in the afternoon on appetite control and eating initiation in healthy women.” Nutrition Journal. 2013;12:71. DOI: https://doi.org/10.1186/1475-2891-12-71. PMCID: PMC3684523.",
+        "Razmpoosh E, et al. “Effect of a low energy diet, containing a high protein, probiotic condensed yogurt, on biochemical and anthropometric measurements among women with overweight/obesity: A randomised controlled trial.” Clinical Nutrition ESPEN. 2020;35:194–200. DOI: https://doi.org/10.1016/j.clnesp.2019.10.001.",
+        "USDA. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c."
+      ],
+      "body_refs": [
+        "Ortinau LC, et al. “The effects of increased dietary protein yogurt snack in the afternoon on appetite control and eating initiation in healthy women.” Nutrition Journal. 2013;12:71. DOI: https://doi.org/10.1186/1475-2891-12-71.",
+        "Razmpoosh E, et al. “Effect of a low energy diet, containing a high protein, probiotic condensed yogurt, on biochemical and anthropometric measurements among women with overweight/obesity: A randomised controlled trial.” Clinical Nutrition ESPEN. 2020;35:194–200. DOI: https://doi.org/10.1016/j.clnesp.2019.10.001.",
+        "FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "急性、随机交叉试验；不同日期重复测试。",
+          "population": "32名健康女性，平均年龄约27岁。",
+          "exposure": "标准午餐后3小时给予160千卡希腊式高蛋白酸奶（14克蛋白）或等能量普通酸奶（5克蛋白）。",
+          "result": "两种酸奶食用后饥饿/饱腹评分改善，但组间无差异；要求晚餐的时间与自由进食晚餐能量也无显著差异。",
+          "limits": "仅单次观察、样本小且仅健康年轻女性；不能回答长期体重、代谢或其他人群结局。",
+          "distance": "D0（直接测试高蛋白酸奶，但只针对该具体配方与急性食欲结局）"
+        },
+        {
+          "ref": 2,
+          "design": "随机平行研究，持续8周；两组均采用低能量饮食。",
+          "population": "70名超重/肥胖女性。",
+          "exposure": "干预组低能量饮食加每日50克高蛋白、益生菌浓缩酸奶Kashk；对照组低能量饮食不加Kashk。",
+          "result": "作者报告部分人体测量及生化指标改善。",
+          "limits": "饮食能量、酸奶、蛋白质、益生菌、钙等同时变化；开放/盲法信息与产品组成限制对普通高蛋白酸奶的外推。",
+          "distance": "D1（特定浓缩发酵乳；不是常规零售高蛋白酸奶）"
+        }
+      ],
+      "unknowns": "不同蛋白水平、菌种、过滤与强化方式的长期对照试验；不同年龄/性别及代谢风险人群；等能量且控制其他成分的慢性试验。",
+      "tradition": "现代高蛋白酸奶依赖过滤或蛋白强化，传统“酪”条目不能直接代表此产品，也没有传统来源对现代蛋白克数或其健康效果的记载。"
+    }
+  }
+}
