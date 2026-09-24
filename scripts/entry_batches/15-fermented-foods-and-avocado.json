@@ -216,7 +216,7 @@
       "variables": "蔬菜种类、盐量、发酵时间/温度/pH、菌种、辣椒蒜姜等配料、是否巴氏处理、储存和份量。",
       "composition": "盐渍蔬菜经乳酸菌发酵是常见工艺，但盐分、糖、辣度、活菌及酸度因产品和加工而异。未发酵或热处理产品不能自动视为含活菌；标签和储存说明优先。",
       "direct": "2024年单中心双盲随机试验纳入90名BMI 23–30的参与者，连续12周每日摄入3 g自发发酵或特定菌株发酵泡菜粉，乳糖为安慰剂；两泡菜粉组相较安慰剂的体脂量下降。产品是标准化粉末，并非普通新鲜泡菜的一份。另一项100名年轻成人宿舍试验比较每日15 g与210 g泡菜仅7天；两组多项代谢指标均前后变化，剂量对照和短期设计不能证明长期临床获益。",
-      "specific": "泡菜综述所纳入研究数量有限、产品与人群异质；试验结果只适用于具体发酵工艺与摄入量。不能把白菜营养、分离乳酸菌或泡菜粉试验直接当作所有韩式泡菜功效。",
+      "specific": "本条的人体资料仍是少数产品特异研究：2024年试验使用每日3 g标准化泡菜粉；2013年研究仅7天且比较15 g与210 g两个摄入量。结果不能直接代表所有新鲜、盐渍、巴氏处理或自制泡菜。",
       "safety": "韩式泡菜常有较高盐分，关注实际份量和标签。自制/未巴氏处理泡菜需遵循可靠的盐渍、发酵、酸度控制及冷藏卫生流程；错误发酵或污染可能带来食品安全风险。",
       "body": "韩式泡菜有白菜、萝卜、黄瓜等多种版本，盐量、发酵程度和是否热处理都不一样。一个90人的随机试验使用每天3克标准化泡菜粉持续12周，并报告体脂量相较乳糖安慰剂下降；这不能直接代表日常一碟新鲜泡菜。另一个为期7天的年轻成人研究也不足以说明长期疾病获益。把泡菜当作调味配菜时，仍应留意钠摄入；自制时按可靠的发酵和冷藏卫生流程操作。",
       "evidence_body": "特定泡菜粉RCT为D0但属于产品特异研究：n=90、3 g/day、12周、体脂量为结局；对普通零售/家制泡菜的长期疾病效果仍不确定（E-C/E-0）。短期7天剂量对照不能证明临床获益。",
@@ -470,12 +470,14 @@
       "refs": [
         "Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.",
         "Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.",
+        "Nadia FS, Wati DA, Isnawati M, Sulchan M, Afifah DN. “The effect of processed Tempeh Gembus to triglycerides levels and insulin resistance status in women with obesity.” Food Research. 2020. DOI: https://doi.org/10.26656/fr.2017.4(4).415.",
         "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
         "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
       ],
       "body_refs": [
         "Zulaikha HN, Muliadi RD, Kartawidjajaputra F, Antono L. “Cholesterol-lowering Effect of Soy Nuts and Tempeh on Hypercholesterolemic Subjects.” Journal of Food and Nutrition Research. 2023;4(2). DOI: https://doi.org/10.33555/jffn.v4i2.100.",
         "Afifah D, Nabilah N, Supraba GT, Pratiwi SN, Nuryanto N, Sulchan M. “The Effects of Tempeh Gembus, an Indonesian Fermented Food, on Lipid Profiles in Women with Hyperlipidemia.” Current Nutrition & Food Science. 2020. DOI: https://doi.org/10.2174/1573401314666180807112549.",
+        "Nadia FS, Wati DA, Isnawati M, Sulchan M, Afifah DN. “The effect of processed Tempeh Gembus to triglycerides levels and insulin resistance status in women with obesity.” Food Research. 2020. DOI: https://doi.org/10.26656/fr.2017.4(4).415.",
         "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
       ],
       "evidence_records": [
@@ -490,12 +492,21 @@
         },
         {
           "ref": 2,
-          "design": "准实验或短期对照干预；样本和设计随论文而异。",
-          "population": "高脂血症女性或肥胖绝经前女性。",
-          "exposure": "103–206 g/day或150 g/day的tempeh gembus（豆渣天贝胶）。",
-          "result": "部分短期血脂、甘油三酯或胰岛素抵抗指标变化。",
-          "limits": "原料是豆渣副产品、研究小而短，不能归因于普通大豆天贝。",
-          "distance": "D2（相关发酵豆制食品，但底物不同）"
+          "design": "非等价对照组准实验；营养教育后干预14天。",
+          "population": "41名高脂血症女性。",
+          "exposure": "每日103 g或206 g豆渣天贝胶（tempeh gembus）；另设对照组。",
+          "result": "两个剂量组的LDL-C和总胆固醇较基线下降；甘油三酯轻度上升。",
+          "limits": "样本小、非随机等价对照、仅14天；原料为豆渣副产品而非普通大豆天贝。",
+          "distance": "D2（tempeh gembus，原料与普通天贝不同）"
+        },
+        {
+          "ref": 3,
+          "design": "随机前后对照组干预，28天。",
+          "population": "40名肥胖的绝经前女性。",
+          "exposure": "每日150 g加工tempeh gembus，并与等能量标准饮食比较。",
+          "result": "研究报告甘油三酯与胰岛素抵抗指标在干预组出现短期变化。",
+          "limits": "样本小、短期和特定豆渣制品；不能推及普通大豆天贝或长期临床结局。",
+          "distance": "D2（tempeh gembus，底物不同）"
         }
       ],
       "unknowns": "不同商业普通天贝的营养组成；更大且设置匹配对照的人体试验；长期结局及烹饪方式影响。",
