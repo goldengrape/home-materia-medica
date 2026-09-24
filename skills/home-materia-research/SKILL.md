@@ -295,7 +295,15 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 
 默认在：
 
+正式条目默认在：
+
 `references/entries/<entry-id>/research.md`
+
+若对象是 `entry_type: research_parent` 且 `publish: false`，则使用：
+
+`references/shared/<entry-id>/research.md`
+
+Research Parent 只保存多个子条共用的背景证据；任何子条引用时必须重新判断 D。
 
 建立或更新研究底稿。
 
@@ -319,7 +327,7 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 - 主要反证 / 冲突；
 - 未知；
 - 证据饱和 / 停止理由；
-- Claim Ledger（正文允许写到什么强度，以及对应引用）。
+- Claim Ledger（正文允许写到什么强度、`claim_mode`、以及对应引用）。
 
 ---
 
@@ -337,6 +345,7 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 - [ ] 每项关键证据是否标 D0–D4？
 - [ ] 是否把孤立成分与真实食品区分开？
 - [ ] E 是否按具体 outcome / claim 评定，而不是给食品总分？
+- [ ] Claim 是否标明 effect / association / composition / safety / traditional / mapping，避免写作时改变事实类型？
 - [ ] M 是否在 E 之后独立推演？
 - [ ] 关键数字、DOI / PMID、古籍版本和数据库入口是否完整列出，便于复核？
 - [ ] 是否记录 evidence cutoff？
