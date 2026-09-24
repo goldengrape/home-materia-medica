@@ -79,7 +79,7 @@ Catalog entry
 | RM-TASK-002 最小 OKF | done | `okf/` |
 | RM-TASK-003 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
-| RM-TASK-012 Pilot 范围 | queued | pilot metadata |
+| RM-TASK-012 Pilot 范围 | done | `docs/Pilot测试计划-v1.md` + `catalog/pilot-v1.yaml` |
 | RM-TASK-020~022 Pilot dossier | queued | `references/entries/*/research.md` |
 
 ## 六、追踪原则
