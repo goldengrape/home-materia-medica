@@ -1,0 +1,10 @@
+{
+  "batch_id": "12-seeds-and-butters",
+  "entry_id": "sunflower-seed-kernels",
+  "summary_ref": "references/entries/sunflower-seed-kernels/summary.md",
+  "summary_sha256": "dda0644c66dc4a8abba8b0bc40f0fbc1301ca68fd4134cfaea1a0b2f6fbb72e0",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 葵花籽仁\n\n**身份。** 本条指向日葵（Helianthus annuus L.）可食种仁，常见去壳、生/烘烤或盐焗形态；不包括葵花籽油、油籽提取物或含籽复合零食。\n\n**组成与暴露。** 葵花籽仁含油脂与蛋白质，品种和去壳/烘烤/盐焗会改变每份营养与钠。数据库的生籽和烘烤样品不是所有市售产品的统一代表。 去壳/带壳、烘烤与盐焗、每日籽仁重量、是否替代其他坚果、并行饮食、研究人群和干预时长。\n\n**直接人体证据。** 一项随机交叉喂养试验纳入 22 名绝经后且患 2 型糖尿病的女性，个体化膳食中分别加入 30 g/日葵花籽仁或杏仁，两个阶段各 3 周并洗脱 4 周。相较杏仁阶段，葵花籽仁阶段 HDL-C、甘油三酯及载脂蛋白 A1/B100 较低；总胆固醇和 LDL-C 在两饮食阶段均较基线降低，组间没有差异。研究小而短，且主动比较不能说明它优于不吃籽。\n\n**产品/成分证据。** 上述是籽仁直接摄入试验，不是葵花籽油试验；结果来自 2 型糖尿病的绝经后女性和精确的 30 克/日方案。未找到足以独立确定普通人长期效应的直接证据总体。\n\n**共享背景。** 参见 seed-grain-base；共享结论不自动等于本成品结论。\n\n**安全。** 盐焗产品的钠和份量需按标签判断；剥壳后实际摄入重量与带壳产品销售重量不同。对籽类过敏或需要控制钠摄入者需留意配料与份量。\n\n**传统来源。** 《本草纲目》中的“葵”主要指传统葵菜/冬葵等，不是可确认的现代向日葵籽仁条目；不将其记录移植到葵花籽仁。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}
