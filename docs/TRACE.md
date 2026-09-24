@@ -32,7 +32,7 @@
 
 | 组件 | 任务 |
 |---|---|
-| `okf/` | RM-TASK-002 |
+| `okf/` | RM-TASK-002（已建立最小项目地图） |
 | `concepts/` | RM-TASK-003/010 |
 | `catalog/entries.yaml` | RM-TASK-011 |
 | `references/entries/` | RM-PHASE-020 |
@@ -74,9 +74,9 @@ Catalog entry
 
 | Task | 状态 | 输出 |
 |---|---|---|
-| RM-TASK-001 项目级规划 | in_progress | `docs/*.md` |
-| RM-TASK-002 最小 OKF | next | `okf/` |
-| RM-TASK-003 中医概念骨架 | queued | `concepts/` |
+| RM-TASK-001 项目级规划 | done | `docs/*.md` |
+| RM-TASK-002 最小 OKF | done | `okf/` |
+| RM-TASK-003 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 | RM-TASK-012 Pilot 范围 | queued | pilot metadata |
 | RM-TASK-020~022 Pilot dossier | queued | `references/entries/*/research.md` |
