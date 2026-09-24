@@ -1,68 +1,106 @@
 ---
 type: Decision
-title: Jev 四气五味归经规则 + Five-shot Pilot
-description: 当前采用自然语言说明文档 + 推理规则 + five-shot；Jev score 与 M grade 作为独立双轴并列展示。
-resource: ../../docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md
-tags: [jev, materia-mapping, few-shot, reasoning, narrative, pilot, derived]
+title: Jev 四气五味归经 + 阴阳增减主方向
+description: 当前采用自然语言说明文档 + v0.4 reasoning rules + five-shot；每个五脏归经增加阴-/阴+/阳-/阳+主方向 Choice；Jev score 与 M grade 独立。
+resource: ../../docs/jev-rule-fewshot-pilot/RESULTS-v0.4.md
+tags: [jev, materia-mapping, few-shot, reasoning, yin-yang, pilot, derived]
 status: derived
-source_ids: [URD-REQ-001, URD-REQ-002, URD-REQ-007, URD-REQ-008, DEC-011, DEC-012, DEC-014]
+source_ids: [URD-REQ-001, URD-REQ-008, URD-REQ-009, URD-REQ-010, URD-REQ-011, DEC-017, DEC-018]
 ---
 
-# Jev 判定 Pilot
+# Jev 判定
 
-当前路线：
+当前生产候选：
 
 ```text
 Research Dossier
 → 自然语言说明文档
-→ 推理规则 + narrative five-shot
-→ Jev 固定 questions
-→ 原生概率
-→ Materia mapping / Claim Ledger
+→ v0.4 reasoning rules + five-shot
+→ Jev 16 questions
+→ 四气 / 五味 / 五脏归经
+→ 每经 阴-/阴+/阳-/阳+ 主方向
+→ native probabilities
+→ 与 M grade 并列
+→ 派生传统用词
 ```
 
-不训练 Jev，不使用 post-hoc probability calibration function。
+## 设计决定
 
-## 当前有效版本：v0.3.1
+### 语义级连、计算同步
 
-核心变化：
+语义：
 
-- rules 不再重复“只能选什么”等接口限制，只教如何推理；
-- target 与 five-shot 都使用连续说明文档；
-- 四气推理从证候寒热与纠偏强弱出发；
-- 五味结合感官与“散/泄/补/收/软”等功能模式；
-- 五脏归经先做功能群识别，再按五字段工作投影；
-- 胃→脾、胆→肝、大肠→肺、小肠→心、膀胱→肾；三焦按具体语境。
+```text
+先归经
+→ 再判断该经主方向
+```
 
-v0.3.1 五个 reasoning-complete held-out，3 次重复：
+实现：
 
-- 四气：5/5 × 3；
-- 五味 exact：5/5 × 3；
-- 五脏归经 exact：5/5 × 3；
-- 三类 micro-F1 均为 1.0 × 3。
+> 一次 Jev request 同时计算归经和五个 direction Choice。
 
-这只说明在说明文档本身包含充分桥梁时，Jev 可以稳定执行规则；不代表现代食品生产准确率。
+不使用 threshold 后第二次 API 级连。
+
+### 主方向 Choice
+
+每经固定：
+
+```text
+阴-
+阴+
+阳-
+阳+
+```
+
+只输出一个主方向，同时保存四项 probabilities，以保留混合效应。
+
+### 传统用词下沉
+
+“疏肝、健脾、润肺、温中、化湿、生津”等不是一级分类。
+
+示例：
+
+```text
+肝 + 阳- → 疏肝等候选表达
+脾 + 阳+ → 健脾 / 温中等候选表达
+肺 + 阴+ → 润肺 / 生津等候选表达
+```
+
+最终用词仍取决于语境。
+
+### Jev / M 双轴
+
+```text
+Jev score != M grade
+```
+
+M 不修改 Jev；
+Jev 不提升 M。
+
+## 验证
+
+### 中药
+
+v0.4 regression，3 次：
+
+- 四气：5/5；
+- 五味：5/5；
+- 五脏归经：5/5；
+- 10 个有效归经主方向：10/10。
+
+actual model：`jev-1.13.0`。
+
+### 现代食品
+
+- 开心果：脾阳+、肾阳+；
+- 咖啡：脾阳+；
+- 酸奶：脾阳+为主，但 probability 较分散；
+- 黑巧克力 / 方便面：无主归经。
 
 ## 历史
 
-- v0.1：验证 API / secret / 匿名化；输出空间设计错误。
-- v0.2：封闭字段正确，但 target 仍是结构化 packet。
-- v0.3 #11：narrative + reasoning 首测，发现 gold 投影和样本一致性 bug，判 invalid。
-- v0.3.1 #14：修正后有效。
-
-## Food domain transfer v0.1
-
-使用开心果、黑巧克力、咖啡、酸奶、方便面五个现有 Research Dossier，冻结 v0.3.1 rules + five-shot。
-
-主要发现：
-
-- 黑巧克力、方便面没有被强行归经，与现有 M-0 边界兼容；
-- 开心果被稳定推为脾、肾，明显高于项目当前归经证据门槛；
-- 酸奶被稳定推为脾，而项目当前只允许“健脾”作 M-IV 类比，现代酸奶归经仍 M-0；
-- 咖啡脾经约 0.49–0.52，在“健胃→脾”的映射边界上来回翻转。
-
-这些结果显示 Jev 候选与项目证据强度可以明显分离；例如酸奶可记录 `脾 0.58–0.61｜M-0`。
-
-## Next
-
-现行策略不加入 M gate：Jev 按 frozen reasoning rules 给出候选和原生 score；Research Dossier 独立给 M-I～M-0。两者不互相修正，交由后续写作层并列呈现。
+- v0.1：API proof，旧十二经 schema。
+- v0.2：封闭输出，但结构化 target。
+- v0.3.1：自然语言 + reasoning rules 稳定。
+- v0.4 early：20 direction Noul，已废弃。
+- v0.4 current：5 direction Choice。
