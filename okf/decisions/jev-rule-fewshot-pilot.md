@@ -1,8 +1,8 @@
 ---
 type: Decision
 title: Jev 四气五味归经规则 + Five-shot Pilot
-description: 当前采用自然语言说明文档 + 推理规则 + five-shot；不微调、不做概率修正。
-resource: ../../docs/jev-rule-fewshot-pilot/RESULTS-v0.3.1.md
+description: 当前采用自然语言说明文档 + 推理规则 + five-shot；现代食品迁移测试发现归经 over-mapping，需加入 M-level gate。
+resource: ../../docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md
 tags: [jev, materia-mapping, few-shot, reasoning, narrative, pilot, derived]
 status: derived
 source_ids: [URD-REQ-001, URD-REQ-002, URD-REQ-007, URD-REQ-008, DEC-011, DEC-012, DEC-014]
@@ -50,6 +50,19 @@ v0.3.1 五个 reasoning-complete held-out，3 次重复：
 - v0.3 #11：narrative + reasoning 首测，发现 gold 投影和样本一致性 bug，判 invalid。
 - v0.3.1 #14：修正后有效。
 
+## Food domain transfer v0.1
+
+使用开心果、黑巧克力、咖啡、酸奶、方便面五个现有 Research Dossier，冻结 v0.3.1 rules + five-shot。
+
+主要发现：
+
+- 黑巧克力、方便面没有被强行归经，与现有 M-0 边界兼容；
+- 开心果被稳定推为脾、肾，明显高于项目当前归经证据门槛；
+- 酸奶被稳定推为脾，而项目当前只允许“健脾”作 M-IV 类比，现代酸奶归经仍 M-0；
+- 咖啡脾经约 0.49–0.52，在“健胃→脾”的映射边界上来回翻转。
+
+核心缺口：v0.3.1 能识别“功能属于哪个脏腑功能群”，但没有再判断“这种证据是否足够升级成归经”。
+
 ## Next
 
-进入现代食品 domain-transfer test：直接从真实 Research Dossier 形成正式风格说明文档，用 frozen v0.3.1 rules + five-shot 判断。
+下一版应把 M-I～M-0 证据门槛写入 reasoning rules，形成 **functional relevance → M-level gate → meridian** 两阶段推理；不做概率修正函数。
