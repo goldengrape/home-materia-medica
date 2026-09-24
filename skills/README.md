@@ -5,7 +5,7 @@
 ## 当前 skills
 
 - [home-materia-research](./home-materia-research/SKILL.md)：单个食品 / 饮品 / 现代加工品 / 生活场景的科研检索、证据评估、本草映射准备与研究底稿生成。
-- [home-materia-jev-mapping](./home-materia-jev-mapping/SKILL.md)：读取已经完成的自然语言说明文档，用 Jev reasoning rules + five-shot 输出四气、五味、五脏归经原生 score，并与独立 M 等级并列记录。
+- [home-materia-jev-mapping](./home-materia-jev-mapping/SKILL.md)：读取已经完成的自然语言说明文档，用 Jev v0.4 reasoning rules + five-shot 输出四气、五味、五脏归经及每经阴-/阴+/阳-/阳+主方向，并与独立 M 等级并列记录。
 
 ## 设计原则
 
