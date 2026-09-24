@@ -2,22 +2,28 @@
 name: home-materia-jev-mapping
 description: >
   为《居家本草》把已经完成研究整理的自然语言说明文档交给 Jev，
-  按固定 reasoning rules + five-shot 判断四气、五味和五脏归经，
-  保存 Jev 原生 score，并与 Research Dossier 中独立评定的 M-I～M-0 证据等级并列输出。
-  适用于“根据这份食材说明判断四气五味归经”“运行 Jev 本草映射”“给现有 dossier 增加 Jev 判定”等任务。
-  本 skill 不负责检索研究证据，不用 M 等级修正 Jev score，也不把 Jev score 当作证据强度。
+  按 v0.4 reasoning rules + five-shot 判断四气、五味、五脏归经，
+  并为每个五脏归经给出阴-/阴+/阳-/阳+的主作用方向 Choice。
+  保存 Jev 原生 score / probability，并与 Research Dossier 中独立评定的 M-I～M-0 证据等级并列输出。
+  本 skill 不负责检索证据，不用 M 修改 Jev score，也不把 Jev score 当作证据强度。
 ---
 
-# Home Materia Jev Mapping
+# Home Materia Jev Mapping v0.4
 
 ## 目标
 
 本 skill 位于 Research Dossier 之后。
 
-它回答两个彼此独立的问题：
+它输出四层原子分类：
 
-1. **Jev inference**：按照固定推理规则阅读当前说明文档后，Jev 倾向于把该食材判成什么四气、五味和五脏归经？
-2. **Evidence strength**：支持这些本草映射的项目证据链当前处于 M-I ～ M-0 哪一级？
+```text
+四气 = 全局寒热属性
+五味 = 全局功能模式
+归经 = 作用位置
+阴阳± = 该位置上的主作用方向
+```
+
+传统习惯用词，如“疏肝、健脾、润肺、温中、化湿、生津”，属于后续派生表达，不作为一级分类字段。
 
 必须保持：
 
@@ -25,7 +31,7 @@ description: >
 Jev score != M grade
 ```
 
-高 Jev score 不自动意味着高 M；M-0 也不要求隐藏 Jev 的候选判断。
+Jev score 表示模型在固定规则、few-shot、说明文档和具体模型版本下的判断倾向；M grade 表示项目可追溯证据链强度。两者独立。
 
 ---
 
@@ -35,104 +41,108 @@ Jev score != M grade
 2. 目标条目的 Research Dossier：
    - `references/entries/<entry-id>/research.md`
    - 或 `references/shared/<entry-id>/research.md`
-3. `references/reasoning-rules.md`
-4. `references/five-shot-v0.3.1.md`
-5. `references/output-contract.md`
+3. `references/reasoning-rules-v0.4.md`
+4. `references/five-shot-v0.4.md`
+5. `references/output-contract-v0.4.md`
 6. `references/runtime.md`
-7. `references/reasoning-rules-v0.4.md`（draft）
-8. `references/output-contract-v0.4.md`（draft）
 
-若当前仓库自动化可用，Jev v0.3.1 的已验证参考实现为：
+当前已验证实现：
 
-- `experiments/jev-rule-fewshot-pilot/run_pilot_v031.py`
-- `experiments/jev-rule-fewshot-pilot/fixtures-v0.3.1.json`
+- `experiments/jev-rule-fewshot-pilot/run_pilot_v04.py`
+- `experiments/jev-rule-fewshot-pilot/fixtures-v0.4.json`
+- `experiments/jev-rule-fewshot-pilot/run_domain_transfer_v04.py`
 
-Domain-transfer 参考实现：
-
-- `experiments/jev-rule-fewshot-pilot/run_domain_transfer_v01.py`
-
-Skill 文档定义工作流；实验代码用于可复现调用和回归测试。
+v0.3.1 文件保留为历史回归基线。
 
 ---
 
 ## 输入
 
-### 1. 必须有自然语言说明文档
+### 自然语言说明文档
 
-给 Jev 的 target 应是一段连续说明文档，而不是为了模型临时拼出的特征 JSON。
+target 必须是由 Research Dossier 形成的连续自然语言说明文档，不要求拆成固定 JSON 特征字段。
 
-说明文档可以来自 Research Dossier 的综合整理，允许包含：
+允许包含：
 
 - 感官特征；
-- 传统来源中的功能 / 主治；
+- 传统功能 / 主治；
 - 现代人体效应；
 - 加工、剂量、时机；
 - 机制辅助；
-- 冲突、反证和替代解释；
-- 与脏腑功能群有关的解释。
+- 冲突、反证、替代解释；
+- 脏腑功能群关系。
 
-### 2. 不把最终答案写进 target
+不得为了帮助 Jev 人工补写最终答案。
 
-不得为了帮助 Jev 而在 target 中直接写：
+测试模式下，不发送：
 
-- “性寒 / 性温 / 性平”等最终四气答案；
-- “五味为……”；
-- “归脾 / 归肾……”；
-- `M-I`～`M-0`；
+- 最终四气 / 五味 / 归经；
+- 主方向答案；
+- M 等级；
 - “暂不归经”；
-- Claim Ledger 中已经完成的最终本草映射结论。
-
-如果传统原始来源本身明确记载性味 / 归经，应在 Research Dossier 中保留为传统事实；是否把该直接标签放入 Jev target，应根据任务目的决定：
-
-- **测试推理能力**：隐藏直接答案；
-- **生产判定**：可保留真实说明文档原有事实，但结果必须注明其来源为直接传统记录，而非 Jev 独立推断。
-
-### 3. 不强求结构化字段
-
-禁止要求输入一定拆成：
-
-```text
-organoleptic_sensory
-traditional_functions
-traditional_indications
-...
-```
-
-未来生产输入就是项目正式形成的说明文档。
+- gold label。
 
 ---
 
-## Jev 判定方法
-
-### Step 1｜构造 state
-
-state 使用以下顺序：
+## state
 
 ```text
 # 判定方法
-
-[references/reasoning-rules.md]
+[reasoning-rules-v0.4.md]
 
 # 参考示例
-
-[references/five-shot-v0.3.1.md]
+[five-shot-v0.4.md]
 
 # 待判断说明文档
-
 [target document]
 ```
 
-rules 只教授推理，不重复“必须选一个”“只能输出这些字段”等 API 约束。
+rules 只负责推理，不重复 API 已经限定的输出字段。
 
-### Step 2｜固定 questions
+---
 
-当前 production baseline 为 v0.3.1。v0.4 draft 计划在同一次 Jev request 中，把“归经位置”和“该经阴阳增减方向”同步判断：语义上分层，计算上同步。
+## 语义上级连，计算上同步
 
-四气：
+逻辑顺序：
 
-- Choice：寒 / 凉 / 平 / 温 / 热
+```text
+说明文档
+→ 判断归经位置
+→ 判断该经主作用方向
+```
 
-五味：
+API 实现：
+
+> 归经与五个 direction Choice 在同一次 Jev request 中同时计算。
+
+不先按归经 score 做 threshold，再启动第二次调用。
+
+这样避免：
+
+- 第一层漏经造成后级永久缺失；
+- 0.49 / 0.51 边界波动改变 question schema；
+- 重复发送同一说明文档；
+- 把本来同源的“位置 + 方向”证据拆开。
+
+---
+
+## 固定 questions
+
+总计 **16 个**。
+
+### 四气
+
+1 个 Choice：
+
+- 寒
+- 凉
+- 平
+- 温
+- 热
+
+### 五味
+
+5 个独立 Noul：
 
 - 酸
 - 苦
@@ -140,9 +150,9 @@ rules 只教授推理，不重复“必须选一个”“只能输出这些字�
 - 辛
 - 咸
 
-每味为独立 Noul。
+### 五脏归经
 
-五脏归经：
+5 个独立 Noul：
 
 - 心
 - 肝
@@ -150,285 +160,302 @@ rules 只教授推理，不重复“必须选一个”“只能输出这些字�
 - 肺
 - 肾
 
-每经为独立 Noul。
+### 每经主方向
 
-v0.4 draft 在每经后增加四个独立 Noul：
+5 个 Choice：
 
-- 阴-
-- 阴+
-- 阳-
-- 阳+
+- `heart_direction`
+- `liver_direction`
+- `spleen_direction`
+- `lung_direction`
+- `kidney_direction`
 
-例如肝：
+每个 Choice 的固定备选：
 
 ```text
-meridian_liver
-liver_yin_decrease
-liver_yin_increase
-liver_yang_decrease
-liver_yang_increase
+阴-
+阴+
+阳-
+阳+
 ```
-
-四个方向不互斥，可同时得到较高 score。
-
-推理不采用两次 API 级连；归经和方向在同一 request 中同步判断。展示层可以按归经把四个方向折叠在其下。
-
-Jev question schema 已经限定输出空间，因此 reasoning rules 不需要再次描述“只能选什么”。
-
-### Step 3｜保存原生 score
-
-不得：
-
-- Platt scaling；
-- isotonic regression；
-- temperature scaling；
-- 手工把 0.7 改成 0.4；
-- 因 M 等级低而压低 Jev score；
-- 因多次运行结果不同而只保留最好的一次。
-
-推荐在评估 / 重要条目中重复 3 次，并保存：
-
-```yaml
-values: [0.58, 0.60, 0.61]
-min: 0.58
-max: 0.61
-```
-
-单次生产调用也允许，但必须标明只有单次 score。
 
 ---
 
-## Evidence strength：M 等级独立评定
+## 阴阳±工作定义
 
-M 等级继续使用项目现有定义。
+### 阳+
 
-它不控制 Jev 能不能给候选，只描述映射证据链强弱。
+增加该经温煦、推动、活动、运化或其他功能性阳侧表现。
 
-因此以下结果完全合法：
+典型：
+
+- 温；
+- 助阳；
+- 回阳；
+- 健脾 / 健胃 / 助运；
+- 对寒、虚寒、功能低下的纠偏。
+
+### 阳-
+
+减少该经热、火、亢进、升越或过强活动。
+
+典型：
+
+- 清热；
+- 泻火；
+- 平亢；
+- 对热盛、火盛、亢奋的纠偏；
+- 项目工作约定：`疏肝 → 肝阳-`。
+
+### 阴+
+
+增加该经滋养、津液、血、精、濡润、收摄等阴侧表现。
+
+典型：
+
+- 养阴；
+- 生津；
+- 润燥 / 润肺 / 润肠；
+- 补血；
+- 益精；
+- 对津亏、阴虚、燥、精血不足的纠偏。
+
+### 阴-
+
+减少该经阴侧偏盛、停聚、积滞或壅滞。
+
+典型：
+
+- 化湿；
+- 燥湿；
+- 化痰；
+- 利水；
+- 消食 / 消积；
+- 对寒湿、水停、痰湿、食积的纠偏。
+
+### + / - 只表示作用方向
 
 ```text
-归经候选：脾
-Jev score：0.58–0.61
-M：M-0
+阴- != 伤阴
+阳- != 损阳
+阴+ != 滋腻
+阳+ != 上火
 ```
 
-含义是：
+副作用和过量效应另属 Safety。
 
-> Jev 在当前规则和说明文档下倾向于脾；但项目目前缺少足够独立证据把“现代酸奶归脾”作为强证据结论。
+---
+
+## 病机状态 != 食材作用方向
+
+先识别被处理的状态，再识别食材造成的变化。
+
+例如：
+
+```text
+心火亢盛
+= 原始状态偏心阳过盛
+
+清心泻火
+= 食材作用方向：心阳-
+```
 
 同理：
 
 ```text
-归经候选：肾
-Jev score：0.75–0.76
-M：M-0
+肾阳虚 + 补火助阳 → 肾阳+
+肺燥 + 润肺生津 → 肺阴+
+痰湿 + 化痰燥湿 → 对应经阴-
 ```
 
-不能改写成“已有较强证据归肾”。
-
-### M 不反向修改 score
-
-禁止：
-
-> M-0，所以把 Jev 0.76 改成 0.30。
-
-也禁止：
-
-> Jev 0.95，所以把 M-IV 升成 M-II。
-
-二者必须独立。
+不得把病机状态本身当成食材方向。
 
 ---
 
-## 结果组织
+## 混合效应
 
-### 四气
+同一经可能同时具有多个方向。
 
-记录：
-
-- Jev Choice；
-- 五个 Choice probabilities；
-- 重复运行的选择稳定性；
-- 对应 M grade；
-- 证据说明。
+v0.4 一级输出仍只选一个 **主方向**，但保存四个 Choice probabilities。
 
 例如：
 
 ```text
-四气候选：温
-Jev score：0.61–0.66
-M：M-IV
+肺阴+ 0.55
+肺阳- 0.40
 ```
 
-### 五味
+记录为：
 
-五个字段都保留 score。
+> 肺经主方向阴+；同时存在较明显阳-次方向。
 
-面向正文或表格时，可突出较高候选，但不要丢弃原始结果。
-
-例如：
-
-```text
-甘：0.64–0.66｜M-IV
-辛：0.23–0.24｜M-0
-苦：0.05–0.06｜M-0
-酸：0.04–0.05｜M-0
-咸：0.04–0.05｜M-0
-```
-
-### 五脏归经
-
-五个字段均保留。
-
-例如：
-
-```text
-脾：0.58–0.61｜M-0
-肾：0.10–0.11｜M-0
-肺：0.07–0.08｜M-0
-心：0.05–0.06｜M-0
-肝：0.04–0.05｜M-0
-```
-
-不要因为某项低于 0.5 就从研究记录中删除。
-
-0.5 仅可作为展示“主要候选”的方便切点，不是项目证据阈值。
+不得只保存 selected choice 而丢弃完整 probabilities。
 
 ---
 
 ## 五脏工作投影
 
-因为当前产品输出只保留心、肝、脾、肺、肾，说明文档中的六腑相关信息按功能群处理：
+当前产品只输出五脏：
 
 - 胆 → 肝胆功能群 → 肝；
 - 胃 → 脾胃功能群 → 脾；
 - 大肠 → 肺与大肠功能群 → 肺；
 - 小肠 → 心与小肠功能群 → 心；
 - 膀胱 → 肾与膀胱功能群 → 肾；
-- 三焦不固定映射，按上焦 / 中焦 / 下焦具体语境判断。
+- 三焦按具体上 / 中 / 下焦语境判断，不固定投影。
 
-这是五字段输出的工作投影，不表示传统理论中两者等同。
+这是五字段工作投影，不等于传统理论中的经脉等同。
+
+---
+
+## Jev score 与 M grade
+
+M 不控制 Jev 是否输出候选。
+
+允许：
+
+```text
+酸奶
+脾：Jev 0.61｜M-0
+主方向：阳+（0.40–0.45）
+```
+
+不允许：
+
+- 因 M-0 把 Jev 0.61 改低；
+- 因 Jev score 高把 M-IV 升成 M-II；
+- 把 Jev probability 写成校准后的“真实概率”。
+
+---
+
+## 传统习惯用词作为派生层
+
+后期维护轻量 lexicon：
+
+```text
+primitive classification
+→ conventional wording
+```
+
+示例：
+
+```text
+肝 + 阳- → 疏肝 / 平肝等候选
+脾 + 阳+ → 健脾 / 温中等候选
+肺 + 阴+ → 润肺 / 生津等候选
+脾 + 阴- → 化湿 / 消食等候选
+```
+
+不是严格一对一。最终用哪个词由正文语境决定。
+
+Jev 原始分类永远保留，不被派生词反向修改。
+
+---
+
+## 保存原生结果
+
+不得：
+
+- Platt scaling；
+- isotonic regression；
+- temperature scaling；
+- 手工改分；
+- 因 M 等级改变 score；
+- 多次运行后只选最好的一次。
+
+普通生产调用可运行 1 次。
+
+方法学测试、重要条目和边界样本推荐 3 次，保存每次原生值以及 min / max。
+
+---
+
+## 当前验证状态
+
+### 中药 reasoning-complete regression
+
+v0.4 有效回归：
+
+- 5 个 held-out；
+- 3 次重复；
+- 四气：5/5 ×3；
+- 五味 exact：5/5 ×3；
+- 五脏归经 exact：5/5 ×3；
+- 10 个有效归经的主方向：10/10 ×3；
+- actual model：`jev-1.13.0`。
+
+### 现代食品 domain transfer
+
+冻结 v0.4 后：
+
+- 开心果：脾阳+、肾阳+；
+- 咖啡：脾阳+；
+- 酸奶：脾阳+，但 direction 分布较分散；
+- 黑巧克力：无主归经；
+- 方便面：无主归经。
+
+这些仍与 M grade 独立。
 
 ---
 
 ## 与 research skill 的接口
 
-推荐顺序：
-
 ```text
 home-materia-research
-    ↓
-Research Dossier
-    ↓
-形成自然语言说明文档
-    ↓
+↓
+Research Dossier + M grade
+↓
+自然语言说明文档
+↓
 home-materia-jev-mapping
-    ↓
-Jev 四气 / 五味 / 五脏归经 scores
-    +
-Dossier M grades
-    ↓
+↓
+四气 / 五味 / 归经 / 每经主方向
++ Jev native scores
+↓
+派生传统用词
+↓
 Claim Ledger / writing
 ```
 
-Research skill 负责：
+Research skill 拥有证据事实和 M。
 
-- 证据检索；
-- E 等级；
-- Concept Trace；
-- M 等级；
-- 支持 / 反证 / 替代解释。
+Jev skill 拥有模型判定。
 
-本 skill 负责：
-
-- 将说明文档交给 Jev；
-- 按固定推理方法得到候选；
-- 保存原生 scores；
-- 与 M 等级并列呈现。
-
-不得让 Jev 结果反向改写 Research Dossier 的事实证据。
-
----
-
-## 已知行为与边界
-
-已验证的中药 reasoning-complete benchmark 中，v0.3.1 可稳定执行规则。
-
-现代食品 domain-transfer v0.1 显示：
-
-- 开心果：Jev 可给出脾、肾较高 score，而项目证据仍为 M-0；
-- 酸奶：Jev 可稳定倾向脾，而项目证据仍为 M-0；
-- 咖啡：脾 score 可在约 0.5 附近波动；
-- 黑巧克力、方便面可以保持五脏 score 较低。
-
-这些结果说明：
-
-> Jev inference 与 M evidence grade 应并列展示，而不是互相覆盖。
+writing 层负责把原子分类转成读者熟悉的表达。
 
 ---
 
 ## 输出格式
 
-使用 `templates/jev-mapping-result.md`。
+使用：
+
+`templates/jev-mapping-result.md`
 
 至少保存：
 
-1. target document 版本或 hash；
+1. target document ref / hash；
 2. reasoning version；
 3. five-shot version；
-4. requested Jev model alias；
-5. actual Jev model；
+4. requested model；
+5. actual model；
 6. 四气完整 probabilities；
-7. 五味 5 项 Noul；
-8. 五脏 5 项 Noul；
-9. repeat count；
-10. 每项对应 M grade；
-11. 支持、反证和替代解释；
-12. 一句面向读者的解释。
-13. v0.4 以后还需保存每经阴-/阴+/阳-/阳+四个原生 score，以及 location-direction disagreement QA 标记。
+7. 五味 5 个 Noul；
+8. 五脏 5 个 Noul；
+9. 五个 direction Choice + 完整 probabilities；
+10. repeat count；
+11. M grade；
+12. 支持、反证、替代解释。
 
 ---
 
 ## 完成前检查
 
-- [ ] 输入是否来自已经完成的 Research Dossier / 正式说明文档？
-- [ ] 是否没有为了 Jev 人工补写答案导向句？
-- [ ] rules 是否使用当前版本？
-- [ ] five-shot 是否使用当前版本？
-- [ ] 是否保存 Jev 原生 score？
-- [ ] 是否把 Jev score 与 M grade 分开？
-- [ ] 是否避免把 Jev score 解释成经过校准的真实概率？
-- [ ] 是否保留低 score，而不是只保存 >0.5 的标签？
-- [ ] 是否保留反证和替代解释？
-- [ ] 是否记录 actual model version？
-- [ ] 是否没有让 Jev 结果反向提升 M 等级？
-
-只要最后两轴仍然分离，允许输出：
-
-> **模型倾向明确，但证据等级很低。**
-
-
----
-
-## v0.4 draft｜习惯术语下沉为派生层
-
-“疏肝、健脾、安神、润燥、清热、温中、化湿、生津”等不再优先作为一级分类概念。
-
-v0.4 的底层本草作用表示为：
-
-```text
-五脏位置
-+
-阴-/阴+/阳-/阳+
-```
-
-例如项目约定：
-
-```text
-肝 + 阳-
-→ 后续可派生“疏肝”等习惯表达
-```
-
-传统习惯词的选择放到后续 wording / lexicon 层；同一底层向量可以根据语境派生不同传统用词。
-
-v0.4 仍需经过已知中药回归测试与现代食品 domain-transfer 测试后，才可取代 v0.3.1 production baseline。
+- [ ] 输入来自已完成 Research Dossier？
+- [ ] 没有为 Jev 补写答案导向句？
+- [ ] 使用 v0.4 rules / five-shot / contract？
+- [ ] 保存 Choice 全部 probabilities？
+- [ ] 保存五味 / 归经全部 Noul？
+- [ ] 区分病机状态和食材作用方向？
+- [ ] Jev score 与 M grade 独立？
+- [ ] 没把习惯术语当一级分类？
+- [ ] 没把 Jev probability 解释成校准后的真实概率？
+- [ ] 记录 actual model？
