@@ -1,0 +1,10 @@
+55ce28d43298793710be8efd689b55b82f52ac6ca3179bc253a482519d8cebd8  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/milk-cap.json
+b088f230aadc9776c6b9c5529e6708254191835d388a09efbf6530a57774ecc3  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/kefir.json
+c99051fb12cabc072869de029fbcc015c5f5379bbf544e43e9d8a1cbe501d9f1  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/natto.json
+77e45c40c1e30ac0b73625de8eec427cea6a698cee6966f976505a883bf7b03e  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/kimchi.json
+adc4c7ed18d3a8f007cc4838bfb9ad8b28c714a6baaa488eb452f6f89e81d302  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/pickled-cucumber.json
+337e40f82412264aed6b17b35d7bf0a889cb10697f44011535710e861a6ac4c7  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/sauerkraut.json
+b7fc8d33315e9b277ac4ad74208bcae956053e6ef512c131504de9759b04d451  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/miso.json
+1105860a82752ad4ec261315dc2fcd75e13a7a457e107c7820a90865db911d5c  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/tempeh.json
+3a89687b2d56bf4a34fe8f2080badb7816de91ecfc99bfcaf0b52831b25a7dcd  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/fermented-chili-sauce.json
+fef1dc9f04bc9abe15e9633fc7f3998428546993277642ced35344dbc6e59854  qa/jev-entry-batches/15-fermented-foods-and-avocado/raw/avocado.json
