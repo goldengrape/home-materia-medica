@@ -14,6 +14,7 @@
 | TDD-TEST-006 | URD-AC-005 | 检查评分 | results summary 至少包含四气 correct/5、五味 micro P/R/F1、归经 micro P/R/F1、逐样本 predicted vs gold。 |
 | TDD-TEST-007 | URD-CON-001 / CON-004 | 检查复现信息 | results 中包含实际返回 model、prompt_version、fixture_version。 |
 | TDD-TEST-008 | URD-AC-006 | 检查结论边界 | 报告不得根据 5 个样本确定生产阈值，不得写“已校准”。 |
+| TDD-TEST-009 | URD-REQ-006 / AC-007 | 重复运行稳定性 | 冻结 prompt / fixtures / model alias 后重复 3 次；逐次保留原生结果，报告分数范围及跨 0.5 标签变化。 |
 
 ## 2. Pilot Scoring
 
@@ -50,6 +51,15 @@ noul < 0.5  -> predicted negative
 - micro precision；
 - micro recall；
 - micro F1。
+
+### 重复运行稳定性
+
+v0.1 对同一冻结配置保留 3 次有效运行。重复运行不做投票、不平均原生概率，也不产生“修正后的概率”；只回答两个问题：
+
+1. 总体指标在重复运行间是否稳定；
+2. 哪些标签会在 0.5 两侧翻转。
+
+若差异集中在接近 0.5 的 Noul，报告为边界不稳定；若高概率标签也频繁翻转，则视为更严重的可靠性问题。
 
 ## 3. Safety / Negative Tests
 
