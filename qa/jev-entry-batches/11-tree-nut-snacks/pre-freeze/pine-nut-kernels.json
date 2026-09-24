@@ -1,0 +1,10 @@
+{
+  "batch_id": "11-tree-nut-snacks",
+  "entry_id": "pine-nut-kernels",
+  "summary_ref": "references/entries/pine-nut-kernels/summary.md",
+  "summary_sha256": "8114c75dfe20d03654292084fcd98ada1f7c3abe0e2f7fea3cd84e04aac7a985",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 松子仁\n\n**身份。** 本条指松属（Pinus spp.）可食种仁这一商品类别，具体来源可能包括不同松种；不将松子油、韩国产 pinolenic-acid 产品、松香或松塔整体作为同一食品。\n\n**组成与暴露。** 松子仁的组成随物种和商品形态变化。USDA FoodData Central 可查具体 pine nuts 记录，但单条记录不代表所有松属种仁；松子油或提取物不适用整仁营养数值。 松属物种、产地与去壳仁、食用克数、烘烤/盐渍、整仁与油或脂肪酸提取物、研究设计和比较物。\n\n**直接人体证据。** 本轮未找到可代表整粒可食松子仁的稳健人体随机试验。可检索到的研究主要考察韩国产松子油或分离甘油三酯：2008 年 42 名超重女性试验中，2 g 游离脂肪酸 PinnoThin 组午餐摄入克数比橄榄油对照低约 9%，主观食欲评分没有相应变化；2011 年交叉研究对松子甘油三酯未见饱腹感或能量摄入差异。这些不是整仁证据。\n\n**产品/成分证据。** 《本草纲目》卷三十一“海松子”记载并区分新罗海松与本土松类；该历史名物不能泛化成所有现代松属商品。松子油和 pinolenic acid 研究的暴露距离为提取物/单体，不能写为松子仁抑制食欲或减重。\n\n**共享背景。** 参见 expanded-tree-nuts-base；共享结论不自动等于本成品结论。\n\n**安全。** 松仁可引起个体过敏；商品来源与物种并非总在标签上明确。烘烤或调味产品需查看配料、盐及份量；食用整仁与服用松子油补充剂应分开。\n\n**传统来源。** 《本草纲目》卷三十一“海松子”条记载新罗海松与松子仁，并与中国松类作区分。该材料只支持历史名物记录，不足以把其性味或功效泛化到所有现代 Pinus spp. 松子仁。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}
