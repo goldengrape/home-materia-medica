@@ -1,0 +1,79 @@
+name: Test Jev API
+
+on:
+  push:
+    paths:
+      - ".github/workflows/test-jev.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-jev:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+
+    steps:
+      - name: Verify JEV_API_KEY is available
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${JEV_API_KEY:-}" ]]; then
+            echo "::error::JEV_API_KEY is not available to this job."
+            exit 1
+          fi
+          echo "JEV_API_KEY is available (value hidden)."
+
+      - name: Call Jev API
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          models_status="$(curl -sS -o /tmp/jev-models.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${JEV_API_KEY}" \
+            https://api.typesafe.ai/v1/models)"
+
+          if [[ "${models_status}" != "200" ]]; then
+            echo "::error::GET /v1/models failed with HTTP ${models_status}"
+            cat /tmp/jev-models.json
+            exit 1
+          fi
+
+          model="$(jq -r '.models[0].name // empty' /tmp/jev-models.json)"
+          if [[ -z "${model}" ]]; then
+            echo "::error::No Jev model was returned for this account."
+            cat /tmp/jev-models.json
+            exit 1
+          fi
+
+          jq -n --arg model "${model}" '{
+            state: "The sky is blue.",
+            model: $model,
+            questions: {
+              explicit_statement: {
+                type: "noul",
+                instructions: "Does the supplied state explicitly state that the sky is blue?"
+              }
+            }
+          }' > /tmp/jev-request.json
+
+          systemone_status="$(curl -sS -o /tmp/jev-response.json -w "%{http_code}" \
+            -X POST \
+            -H "Authorization: Bearer ${JEV_API_KEY}" \
+            -H "Content-Type: application/json" \
+            --data-binary @/tmp/jev-request.json \
+            https://api.typesafe.ai/v1/systemone)"
+
+          if [[ "${systemone_status}" != "200" ]]; then
+            echo "::error::POST /v1/systemone failed with HTTP ${systemone_status}"
+            cat /tmp/jev-response.json
+            exit 1
+          fi
+
+          echo "Jev API call succeeded."
+          jq '{model, answer: .answers.explicit_statement, usage}' /tmp/jev-response.json
