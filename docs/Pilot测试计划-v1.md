@@ -322,3 +322,19 @@ Pilot 期间不做：
 4. 少糖、去珍珠、杯量等定制变量可实质改变暴露，适合纳入现代“炮制/加工”框架。
 5. 冰饮温度不能直接等同本草“性寒”；高糖高脂也不能直接翻译为“生湿”。
 6. sparse-evidence stop 成功阻止了用糖、茶多酚、咖啡因等成分文献填补不存在的食品直接证据。
+### 2026-09-23｜前三项 Pilot 方法 checkpoint
+
+状态：**pass**
+
+详见：`qa/pilot/first-three-review.md`
+
+决定：
+
+- 保留 R1/R2/R3；
+- 保留 D0–D4；
+- 保留 E-A–E-0；
+- 保留 M-I–M-0；
+- 保留 saturated / sparse_evidence 等停止状态；
+- Research Dossier 增加 Identity Revision、Composition & Exposure、Evidence-base overlap、directness note；
+- research skill 增加复合食品 composition-first 与食用温度/本草寒热分离规则；
+- 下一项继续咖啡 R3。
