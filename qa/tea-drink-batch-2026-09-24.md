@@ -1,7 +1,7 @@
 # QA Log — 第二批茶饮十条
 
 > 日期：2026-09-24  
-> 当前阶段：搜、整已完成；摘要已冻结；等待 GitHub Actions 产生 Jev 原始结果。  
+> 当前阶段：搜、整、判、写完成；已保留冻结输入、Actions 原始输出、Mapping 与正文。  
 > 研究深度：R1，探索性检索，不是系统综述。  
 > 证据截止：2026-09-24。
 
@@ -23,8 +23,9 @@
 - 搜：十份 `references/entries/<id>/research.md` 与共享父级 `references/shared/tea-base/research.md`；保留身份边界、检索词、证据卡、E/D、冲突、安全与停止理由。
 - 整：十份 `references/entries/<id>/summary.md`，只概括 Research Dossier 支持的事实，不含 Jev 分类或 M。
 - 冻结输入：`qa/tea-drink-summary-sha256.txt`；每份冻结摘要原文与 SHA-256 快照位于 `qa/jev-tea-batch/pre-freeze/<id>.json`。
-- Jev 原生结果预定写入 `qa/jev-tea-batch/raw/<id>.json`。正式调用由 `.github/workflows/jev-tea-drink-batch.yml` 完成；工作流将 `secrets.JEV_API_KEY` 从 `API_KEYS` environment 注入，不把密钥写入日志、文件或参数。
-- 判与写将在原始 JSON 到位后进行；mapping 保留原始 probabilities/Noul，再独立标 M，正文引用具体研究并保留英文论文题名与 DOI。
+- Jev 原生结果写入 `qa/jev-tea-batch/raw/<id>.json`。正式调用由 `.github/workflows/jev-tea-drink-batch.yml` 完成；工作流将 `secrets.JEV_API_KEY` 从 `API_KEYS` environment 注入，不把密钥写入日志、文件或参数。
+- 判：mapping 保留原始 probabilities/Noul，再独立标 M；十条原始输出均为 Jev v0.4 请求、`jev-1.13.0` 实际模型、每条 16 个原生答案。
+- 写：十篇正文引用具体研究并保留英文论文题名；有 DOI 的论文以 DOI 链接优先，并可并列中文题名。
 
 冻结 manifest 共 10 条。摘要哈希见 manifest 与对应 pre-freeze JSON；运行器会在首次 API 调用前校验十条摘要文本与哈希完全一致。
 
@@ -45,10 +46,14 @@
 - [x] 新增抹茶拿铁先导试验、小鼠芝士茶、燕麦奶茶体外模型与瓶装茶微生物筛查的准确证据距离。
 - [x] 关键现代论文保留英文题名；存在 DOI 时附 DOI 链接；摘要/全文可得范围单独说明。
 - [x] 冻结前已运行 Python 语法检查与摘要快照生成。
-- [ ] Jev v0.4 原生结果完整性与实际模型版本（待 Actions）。
-- [ ] 十份 mapping 的 M 后置评注与写作交接（待 raw）。
-- [ ] 十份正文和跨层追溯检查（待 mapping）。
+- [x] Jev v0.4 原生结果完整性与实际模型版本：10/10 原始 JSON；各含 1 次运行、16 项原生答案；实际模型均为 `jev-1.13.0`。
+- [x] 十份 mapping 的 M 后置评注与写作交接：十份均含完整四气、五味、五脏归经/方向原始分布、M 注释、summary SHA 与 raw 引用；未改写原始 JSON。
+- [x] 十份正文和跨层追溯检查：每篇均连到 research、summary、mapping；参考文献保留英文题名，有 DOI 者附 DOI 链接。
+- [x] 自动化验收：manifest、冻结摘要文本/SHA 快照与 raw 输入 SHA 逐项一致；五个生产脚本 Python 语法检查通过。
 
 ## Actions 运行结果
 
-待 Jev workflow 完成后补录：workflow run ID、结果状态、actual_model、artifact ID、十条原始输出文件数及 manifest 校验结果。
+- Workflow：`Jev tea drink batch v0.4`，run `35973926000`，结论 `success`，head commit `194ebfeb3ed65c8660322f4c17f570119752d569`。
+- Artifact：`jev-tea-drink-native-v0.4`，ID `10797147988`，SHA-256 `453f855355f13f0151b1fd59e333029a333f86aade41b8cfc77eb9fb35b49584`。
+- 原始输出：10 个 JSON，10/10 的 `summary_sha256` 与 manifest 和 pre-freeze 快照一致；每条有 16 项原生答案、`actual_model: jev-1.13.0`。
+- 未记录或提交 API secret；secret 仅由 GitHub `API_KEYS` environment 注入 Actions。
