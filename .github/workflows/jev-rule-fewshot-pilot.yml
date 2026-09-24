@@ -1,0 +1,48 @@
+name: Jev TCM Rule Few-shot Pilot
+
+on:
+  push:
+    branches:
+      - feat/jev-rule-fewshot-pilot
+    paths:
+      - "experiments/jev-rule-fewshot-pilot/**"
+      - "docs/jev-rule-fewshot-pilot/**"
+      - ".github/workflows/jev-rule-fewshot-pilot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify API secret
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${JEV_API_KEY:-}" || {
+            echo "::error::JEV_API_KEY is unavailable."
+            exit 1
+          }
+          echo "JEV_API_KEY is available (value hidden)."
+
+      - name: Run 5-herb pilot
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-1.13.0
+        run: python experiments/jev-rule-fewshot-pilot/run_pilot.py
+
+      - name: Upload pilot results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jev-rule-fewshot-results
+          path: experiments/jev-rule-fewshot-pilot/results.json
+          if-no-files-found: error
+          retention-days: 30
