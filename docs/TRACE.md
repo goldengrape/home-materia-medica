@@ -27,6 +27,7 @@
 | `catalog/README.md` | 编目规则 | catalog metadata |
 | `docs/居家本草编纂凡例-v1.0.md` | 研究规则 | 搜 / 整 |
 | `docs/生产流程.md` | 单条目唯一生产主线 | 搜 → 整 → 判 → 写 |
+| `docs/GPT-WORK-HANDOFF.md` | GPT Work 接手说明 | 当前状态、Jev、API secret、下一步任务 |
 | `skills/home-materia-research/` | 研究执行器 | dossier |
 | `skills/home-materia-jev-mapping/` | Jev 四气/五味/五脏归经 + 每经阴阳增减主方向判定器 | Jev score + M 双轴 mapping record |
 | `skills/.../tcm-concepts-and-databases.md` | 中医资料路由 | concepts / dossier |
