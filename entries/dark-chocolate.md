@@ -8,4 +8,9 @@
 
 黑巧克力能量密度高，约 28 克 70–85% 产品可达约 170 千卡；咖啡因、可可碱和商品中的其他暴露也随产品而变。喜欢它的风味可以是一种吃法，却没有因研究黄烷醇而多吃的依据。
 
-参考：[研究底稿](../references/entries/dark-chocolate/research.md) · [分类与 M 记录](../references/entries/dark-chocolate/mapping.md)。
+研究底稿：[research.md](../references/entries/dark-chocolate/research.md) · 分类与 M 记录：[mapping.md](../references/entries/dark-chocolate/mapping.md)。
+
+**参考文献**
+
+1. Arisi TOP, et al. “Effects of Cocoa Consumption on Cardiometabolic Risk Markers: Meta-Analysis of Randomized Controlled Trials.” *Nutrients*. 2024;16(12):1919. [doi:10.3390/nu16121919](https://doi.org/10.3390/nu16121919)
+2. Shin JH, et al. “Consumption of 85% cocoa dark chocolate improves mood in association with gut microbial changes in healthy adults: a randomized controlled trial.” *The Journal of Nutritional Biochemistry*. 2022;99:108854. [doi:10.1016/j.jnutbio.2021.108854](https://doi.org/10.1016/j.jnutbio.2021.108854)

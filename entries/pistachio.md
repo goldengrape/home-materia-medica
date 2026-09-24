@@ -8,4 +8,9 @@
 
 **本草按。** Jev 给出脾经及阳+方向的候选，但传统功用记录不是明确归脾的原文，现代代谢指标也不是中医证候；这一映射为 M-0，不写作“健脾”定论。已知开心果或腰果过敏者尤其要留意交叉反应；需要控制钠摄入时还应区分无盐与盐焗品。
 
-参考：[研究底稿](../references/entries/pistachio/research.md) · [分类与 M 记录](../references/entries/pistachio/mapping.md)。
+研究底稿：[research.md](../references/entries/pistachio/research.md) · 分类与 M 记录：[mapping.md](../references/entries/pistachio/mapping.md)。
+
+**参考文献**
+
+1. Hadi A, et al. “Consumption of pistachio nuts positively affects lipid profiles: A systematic review and meta-analysis of randomized controlled trials.” *Critical Reviews in Food Science and Nutrition*. 2023;63(21):5358–5371. [doi:10.1080/10408398.2021.2018569](https://doi.org/10.1080/10408398.2021.2018569)
+2. Ashwini K, et al. “Effect of Premeal Pistachio Supplementation on Cardiometabolic Risk Factors among Asian Indian Adults with Prediabetes: A Randomized Controlled Trial.” *The Journal of Nutrition*. 2025. [doi:10.1016/j.tjnut.2024.12.005](https://doi.org/10.1016/j.tjnut.2024.12.005)

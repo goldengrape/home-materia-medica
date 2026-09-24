@@ -8,4 +8,9 @@
 
 个案和公共卫生资料提醒留意自制过程的卫生；某一试验产品还测到酒精，数值不能套给所有商品。选购时应核对剩余糖、酒精标示及实际保存条件。
 
-参考：[研究底稿](../references/entries/kombucha/research.md) · [分类与 M 记录](../references/entries/kombucha/mapping.md) · [小型交叉试验](https://pubmed.ncbi.nlm.nih.gov/37588049/) · [CDC 安全资料](https://www.cdc.gov/mmwr/preview/mmwrhtml/00039742.htm)。
+研究底稿：[research.md](../references/entries/kombucha/research.md) · 分类与 M 记录：[mapping.md](../references/entries/kombucha/mapping.md)。
+
+**参考文献**
+
+1. Mendelson C, et al. “Kombucha tea as an anti-hyperglycemic agent in humans with diabetes—a randomized controlled pilot investigation.” *Frontiers in Nutrition*. 2023;10:1190248. [doi:10.3389/fnut.2023.1190248](https://doi.org/10.3389/fnut.2023.1190248)
+2. Centers for Disease Control and Prevention. “Unexplained Severe Illness Possibly Associated with Consumption of Kombucha Tea—Iowa, 1995.” *Morbidity and Mortality Weekly Report*. [官方报告](https://www.cdc.gov/mmwr/preview/mmwrhtml/00039742.htm).

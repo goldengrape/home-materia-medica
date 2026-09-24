@@ -8,4 +8,10 @@
 
 牛乳蛋白过敏者须注意原料；乳糖耐受、具体配料和份量要核对标签。若有特殊疾病或饮食限制，应另作个体评估。
 
-参考：[研究底稿](../references/entries/whey-protein-powder/research.md) · [分类与 M 记录](../references/entries/whey-protein-powder/mapping.md) · [老年人直接试验](https://pubmed.ncbi.nlm.nih.gov/23486511/) · [2024 年综述](https://pubmed.ncbi.nlm.nih.gov/39303495/)。
+研究底稿：[research.md](../references/entries/whey-protein-powder/research.md) · 分类与 M 记录：[mapping.md](../references/entries/whey-protein-powder/mapping.md)。
+
+**参考文献**
+
+1. Arnarson A, et al. “Effects of whey proteins and carbohydrates on the efficacy of resistance training in elderly people: double blind, randomised controlled trial.” *European Journal of Clinical Nutrition*. 2013;67(8):821–826. [doi:10.1038/ejcn.2013.40](https://doi.org/10.1038/ejcn.2013.40)
+2. Morton RW, et al. “A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults.” *British Journal of Sports Medicine*. 2018;52(6):376–384. [doi:10.1136/bjsports-2017-097608](https://doi.org/10.1136/bjsports-2017-097608)
+3. Al-Rawhani AH, et al. “Effectiveness of whey protein supplementation on muscle strength and physical performance of older adults: A systematic review and meta-analysis of randomized clinical trials.” *Clinical Nutrition*. 2024;43(10):2412–2426. [doi:10.1016/j.clnu.2024.08.033](https://doi.org/10.1016/j.clnu.2024.08.033)

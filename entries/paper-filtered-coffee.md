@@ -8,4 +8,9 @@
 
 粉水比、豆种与杯量会影响实际咖啡因摄入。对睡眠或心悸敏感的人，饮用时辰和总量比“手冲”这个名字更重要。
 
-参考：[子条研究底稿](../references/entries/paper-filtered-coffee/research.md) · [共享咖啡研究母页](../references/shared/coffee-base/research.md) · [分类与 M 记录](../references/entries/paper-filtered-coffee/mapping.md) · [过滤与血脂试验](https://pubmed.ncbi.nlm.nih.gov/2811958/)。
+子条研究底稿：[research.md](../references/entries/paper-filtered-coffee/research.md) · 共享咖啡研究母页：[coffee-base](../references/shared/coffee-base/research.md) · 分类与 M 记录：[mapping.md](../references/entries/paper-filtered-coffee/mapping.md)。
+
+**参考文献**
+
+1. Bak AA, Grobbee DE. “The effect on serum cholesterol levels of coffee brewed by filtering or boiling.” *The New England Journal of Medicine*. 1989;321(21):1432–1437. [doi:10.1056/NEJM198911233212103](https://doi.org/10.1056/NEJM198911233212103)
+2. Poole R, et al. “Coffee consumption and health: umbrella review of meta-analyses of multiple health outcomes.” *The BMJ*. 2017;359:j5024. [doi:10.1136/bmj.j5024](https://doi.org/10.1136/bmj.j5024)

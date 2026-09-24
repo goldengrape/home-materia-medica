@@ -8,4 +8,10 @@
 
 买酸奶时，活菌、添加糖、是否强化菌株，比仅凭“益生菌”三个字推测作用更有用。
 
-参考：[研究底稿](../references/entries/yogurt/research.md) · [分类与 M 记录](../references/entries/yogurt/mapping.md) · [Codex 发酵乳标准](https://www.fao.org/input/download/standards/400/CXS_243e.pdf)。
+研究底稿：[research.md](../references/entries/yogurt/research.md) · 分类与 M 记录：[mapping.md](../references/entries/yogurt/mapping.md)。
+
+**参考文献**
+
+1. EFSA Panel on Dietetic Products, Nutrition and Allergies. “Scientific Opinion on the substantiation of health claims related to live yoghurt cultures and improved lactose digestion (ID 1143, 2976) pursuant to Article 13(1) of Regulation (EC) No 1924/2006.” *EFSA Journal*. 2010;8(10):1763. [doi:10.2903/j.efsa.2010.1763](https://doi.org/10.2903/j.efsa.2010.1763)
+2. Companys J, et al. “A systematic review of the effect of yogurt consumption on chronic diseases risk markers in adults.” *European Journal of Nutrition*. 2017;56:47–57. [doi:10.1007/s00394-016-1341-7](https://doi.org/10.1007/s00394-016-1341-7)
+3. Codex Alimentarius Commission. “Standard for Fermented Milks (CXS 243-2003).” [标准全文](https://www.fao.org/input/download/standards/400/CXS_243e.pdf).
