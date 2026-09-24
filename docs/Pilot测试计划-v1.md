@@ -338,3 +338,20 @@ Pilot 期间不做：
 - Research Dossier 增加 Identity Revision、Composition & Exposure、Evidence-base overlap、directness note；
 - research skill 增加复合食品 composition-first 与食用温度/本草寒热分离规则；
 - 下一项继续咖啡 R3。
+### 2026-09-23｜PILOT-004 / 咖啡 R3
+
+状态：**research_ready / shared research parent**
+
+产物：
+
+- `references/shared/coffee-base/research.md`
+- `qa/pilot/coffee-r3.md`
+
+关键发现：
+
+1. 泛称“咖啡”不应成为纸书单条，但适合作为多个具体咖啡条目的共享 Research Parent。
+2. 咖啡与纯咖啡因必须分别标 D；高质量 caffeine RCT 不能原样替代 coffee。
+3. boiled/unfiltered vs paper-filtered 的血脂差异提供了“加工/炮制改变作用”的强 D0 人体例证。
+4. 长期较低慢病/死亡风险主要来自 observational association；MR 对 CVD 等因果关系并未同样支持。
+5. 近现代中药资料“醒神”与直接 alertness RCT 可形成 M-II 候选；归经仍 M-0。
+6. R3 通过严格限制核心问题，可以在咖啡海量文献中达到停止条件。
