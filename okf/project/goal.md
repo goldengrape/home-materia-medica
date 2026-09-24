@@ -22,6 +22,8 @@ source_ids: [PB-GOAL-001, PB-GOAL-002, PB-GOAL-003]
 - 不要求每条都做完整系统综述。
 - 不用间接机制填补不存在的人体证据。
 - 正文要可读，但不能反向改变 research dossier。
+- Markdown 是正文源格式；GitHub Pages 是主要在线阅读形式；Release 同时提供 Markdown 包与 EPUB。
+- 全书不设图片。
 
 ## Do not assume
 
