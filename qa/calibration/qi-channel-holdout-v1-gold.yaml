@@ -1,0 +1,103 @@
+version: v1
+status: gold_revealed_after_predictions_locked
+qi_normalization:
+  微寒: 凉
+  微温: 温
+  大热: 热
+
+items:
+  - id: lianzi
+    name: 莲子
+    nature_original: 平
+    qi_gold: 平
+    flavors: [甘, 涩]
+    channels: [脾, 肾, 心]
+    source: "中国药典2025：莲子"
+
+  - id: qianshi
+    name: 芡实
+    nature_original: 平
+    qi_gold: 平
+    flavors: [甘, 涩]
+    channels: [脾, 肾]
+    source: "中国药典2025：芡实"
+
+  - id: yiyiren
+    name: 薏苡仁
+    nature_original: 凉
+    qi_gold: 凉
+    flavors: [甘, 淡]
+    channels: [脾, 胃, 肺]
+    source: "中国药典2025：薏苡仁"
+
+  - id: heizhima
+    name: 黑芝麻
+    nature_original: 平
+    qi_gold: 平
+    flavors: [甘]
+    channels: [肝, 肾, 大肠]
+    source: "中国药典2025：黑芝麻"
+
+  - id: sangshen
+    name: 桑椹
+    nature_original: 寒
+    qi_gold: 寒
+    flavors: [甘, 酸]
+    channels: [心, 肝, 肾]
+    source: "中国药典2025：桑椹"
+
+  - id: wumei
+    name: 乌梅
+    nature_original: 平
+    qi_gold: 平
+    flavors: [酸, 涩]
+    channels: [肝, 脾, 肺, 大肠]
+    source: "中国药典2020：乌梅"
+
+  - id: foshou
+    name: 佛手
+    nature_original: 温
+    qi_gold: 温
+    flavors: [辛, 苦, 酸]
+    channels: [肝, 脾, 胃, 肺]
+    source: "中国药典2025：佛手"
+
+  - id: sharen
+    name: 砂仁
+    nature_original: 温
+    qi_gold: 温
+    flavors: [辛]
+    channels: [脾, 胃, 肾]
+    source: "中国药典2025：砂仁"
+
+  - id: yuzhu
+    name: 玉竹
+    nature_original: 微寒
+    qi_gold: 凉
+    flavors: [甘]
+    channels: [肺, 胃]
+    source: "中国药典2025：玉竹"
+
+  - id: huangjing
+    name: 黄精
+    nature_original: 平
+    qi_gold: 平
+    flavors: [甘]
+    channels: [脾, 肺, 肾]
+    source: "中国药典2025：黄精"
+
+  - id: heye
+    name: 荷叶
+    nature_original: 平
+    qi_gold: 平
+    flavors: [苦]
+    channels: [肝, 脾, 胃]
+    source: "中国药典2025：荷叶"
+
+  - id: luohanguo
+    name: 罗汉果
+    nature_original: 凉
+    qi_gold: 凉
+    flavors: [甘]
+    channels: [肺, 大肠]
+    source: "中国药典2025：罗汉果"
