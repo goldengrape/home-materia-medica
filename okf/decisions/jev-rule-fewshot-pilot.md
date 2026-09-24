@@ -1,7 +1,7 @@
 ---
 type: Decision
 title: Jev 四气五味归经规则 + Five-shot Pilot
-description: 当前采用自然语言说明文档 + 推理规则 + five-shot；现代食品迁移测试发现归经 over-mapping，需加入 M-level gate。
+description: 当前采用自然语言说明文档 + 推理规则 + five-shot；Jev score 与 M grade 作为独立双轴并列展示。
 resource: ../../docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md
 tags: [jev, materia-mapping, few-shot, reasoning, narrative, pilot, derived]
 status: derived
@@ -61,8 +61,8 @@ v0.3.1 五个 reasoning-complete held-out，3 次重复：
 - 酸奶被稳定推为脾，而项目当前只允许“健脾”作 M-IV 类比，现代酸奶归经仍 M-0；
 - 咖啡脾经约 0.49–0.52，在“健胃→脾”的映射边界上来回翻转。
 
-核心缺口：v0.3.1 能识别“功能属于哪个脏腑功能群”，但没有再判断“这种证据是否足够升级成归经”。
+这些结果显示 Jev 候选与项目证据强度可以明显分离；例如酸奶可记录 `脾 0.58–0.61｜M-0`。
 
 ## Next
 
-下一版应把 M-I～M-0 证据门槛写入 reasoning rules，形成 **functional relevance → M-level gate → meridian** 两阶段推理；不做概率修正函数。
+现行策略不加入 M gate：Jev 按 frozen reasoning rules 给出候选和原生 score；Research Dossier 独立给 M-I～M-0。两者不互相修正，交由后续写作层并列呈现。
