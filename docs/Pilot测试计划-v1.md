@@ -285,3 +285,21 @@ Pilot 期间不做：
 3. 多篇 Meta-analysis 高度共享同一批 RCT，不能按篇数重复计票。
 4. 综述截止后的 2024 阴性 RCT 与 2025 阳性 RCT 显示糖代谢效应明显依赖人群、时机和对照。
 5. R2 研究预算和证据饱和规则在本条目上基本可用。
+
+
+### 2026-09-23｜PILOT-002 / 黑巧克力 R3
+
+状态：**research_ready**
+
+产物：
+
+- `references/entries/dark-chocolate/research.md`
+- `qa/pilot/dark-chocolate-r3.md`
+
+关键发现：
+
+1. 高质量、大样本试验若研究的是可可提取物，仍然只是黑巧克力的 D2 证据。
+2. 最新系统综述也可能混合 dark chocolate 与 cocoa extract，必须检查纳入对象。
+3. 短期 mood / stress 研究有正信号，但不足以把“疏肝解郁”提升到确定功效。
+4. “安神”缺乏直接支持，归经也无可靠依据。
+5. R3 只围绕核心问题工作，可以在 cocoa/chocolate 的巨大文献量中达到停止条件。
