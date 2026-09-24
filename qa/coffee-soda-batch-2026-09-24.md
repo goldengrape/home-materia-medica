@@ -18,11 +18,7 @@
  
 ## 初次运行记录
 
-- 2026-09-24，workflow run 35981400606 首次尝试在 Research Dossier 阶段因配置缺少 `queries` 字段中止；`API_KEYS/JEV_API_KEY` 预检通过，冻结、Jev 分类、Mapping 与正文阶段均未执行，因此没有产生原始分类结果。修复配置后重跑。
-
-## Actions 与写作 QA
-
-待补录 workflow run、artifact、raw 哈希、模型版本、答案数与正文检查结果。
+- 2026-09-24，runs 35980464759、35980802729、35981400606 均在 Research Dossier 阶段因配置缺少 `queries` 字段中止；三次 `API_KEYS/JEV_API_KEY` 预检均成功。冻结、Jev 分类、Mapping 与正文阶段未执行，没有产生分类 raw JSON。补齐定向检索词后重跑。
 
 ## Actions 运行结果
 
@@ -31,3 +27,8 @@
 - Ten raw outputs match frozen summary hashes. Actual model(s): jev-1.13.0; each record has one run and 16 native answers.
 - Per-file raw JSON SHA-256: qa/jev-coffee-soda-batch/native-json-sha256.txt.
 - Ten Mapping files preserve probabilities, confidence and directions; ten bodies link research, summary and mapping and retain English paper titles and verified DOI links.
+
+## 并行运行与工件保留
+
+- Push 运行 35981632115 完成研究、冻结与分类，并上传原始结果工件 10799982550；写回分支时与 PR 运行并发，因 non-fast-forward 被拒。工件保留 30 天，未丢弃。
+- PR 运行 35981638241 成功写回本批规范文件；原始结果工件 10800875453 与逐条 raw JSON 同时保留。Mapping、manifest 与正文均以此 run/artifact 为引用。
