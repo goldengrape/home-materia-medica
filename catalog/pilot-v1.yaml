@@ -1,5 +1,5 @@
 version: pilot-v1
-status: selected
+status: passed
 entries:
   - id: pistachio
     name: 开心果
