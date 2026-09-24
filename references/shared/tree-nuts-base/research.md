@@ -33,11 +33,11 @@ These trials support only food- and population-specific observations. They do no
 5. Baghery F, Mohammadifard N, Khanamani Falahati-Pour S. “The effect of pistachio supplementation on metabolic syndrome and its components in adults.” Nutrition Reviews. 2022;80(10):2051–2063. DOI: https://doi.org/10.1093/nutrit/nuac027.
 6. Hadi A, et al. “Consumption of pistachio nuts positively affects lipid profiles: A systematic review and meta-analysis of randomized controlled trials.” Critical Reviews in Food Science and Nutrition. 2023;63(21):5358–5371. DOI: https://doi.org/10.1080/10408398.2021.2018569.
 7. Hadi A, et al. “Effects of pistachios on glycaemic control: A systematic review and meta-analysis of randomized controlled trials.” British Journal of Nutrition. 2023;129(10):1693–1702. DOI: https://doi.org/10.1017/S0007114522002100.
-3. Mah E, Schulz J, Kaden VN, et al. “Cashew consumption reduces total and LDL cholesterol: a randomized, crossover, controlled-feeding trial.” The American Journal of Clinical Nutrition. 2017;105(5):1070–1078. DOI: https://doi.org/10.3945/ajcn.116.150037.
-4. Huang LC, Henderson GC, Mattes RD. “Effects of daily almond consumption on glycaemia in adults with elevated risk for diabetes: a randomised controlled trial.” British Journal of Nutrition. 2024. DOI: https://doi.org/10.1017/S0007114524001053.
-5. McKay DL, Eliasziw M, Chen C, Blumberg JB. “A Pecan-Rich Diet Improves Cardiometabolic Risk Factors in Overweight and Obese Adults: A Randomized Controlled Trial.” Nutrients. 2018;10(3):339. DOI: https://doi.org/10.3390/nu10030339.
-6. U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: pistachio, cashew, almonds, pecans. https://fdc.nal.usda.gov/food-search/.
-7. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+8. Mah E, Schulz J, Kaden VN, et al. “Cashew consumption reduces total and LDL cholesterol: a randomized, crossover, controlled-feeding trial.” The American Journal of Clinical Nutrition. 2017;105(5):1070–1078. DOI: https://doi.org/10.3945/ajcn.116.150037.
+9. Huang LC, Henderson GC, Mattes RD. “Effects of daily almond consumption on glycaemia in adults with elevated risk for diabetes: a randomised controlled trial.” British Journal of Nutrition. 2024. DOI: https://doi.org/10.1017/S0007114524001053.
+10. McKay DL, Eliasziw M, Chen C, Blumberg JB. “A Pecan-Rich Diet Improves Cardiometabolic Risk Factors in Overweight and Obese Adults: A Randomized Controlled Trial.” Nutrients. 2018;10(3):339. DOI: https://doi.org/10.3390/nu10030339.
+11. U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: pistachio, cashew, almonds, pecans. https://fdc.nal.usda.gov/food-search/.
+12. U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
 
 ## Limits and open questions
 
