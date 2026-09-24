@@ -372,3 +372,21 @@ Pilot 期间不做：
 4. 即使 lactose digestion 是 E-A，“健脾”仍最多 M-IV：乳糖酶缺乏不等于脾虚证。
 5. 古代“酪”可作为传统发酵乳母本，但不是现代标准 yogurt 的同一制品。
 6. 发酵 + 活菌构成强有力的“现代炮制改变耐受性”案例。
+### 2026-09-23｜PILOT-006 / 方便面 R2
+
+状态：**research_ready**
+
+产物：
+
+- `references/entries/instant-noodles/research.md`
+- `qa/pilot/instant-noodles-r2.md`
+
+关键发现：
+
+1. 多个韩国大样本研究反复观察到高频摄入与代谢风险相关，但主要为横断面，长期因果 claim 仍 E-0。
+2. 方便面的钠、油炸/非油炸脂肪、调味包与汤汁暴露，可以用直接 composition evidence 很清楚地研究。
+3. generic noodle Mendelian randomization 不是 instant-noodle-specific D0，不能因方法高级而越过直接性。
+4. ramyeon 的 GI 并非必然极高；实际份量与 glycemic load 比单看 GI 更重要。
+5. 少调味、少喝汤属于能实质改变暴露的“服食法/后端炮制变量”。
+6. “燥热/湿热”最多 M-IV，“伤脾胃”和归经 M-0。
+7. 第一轮六项 Pilot 至此全部完成，下一步进入总复盘。
