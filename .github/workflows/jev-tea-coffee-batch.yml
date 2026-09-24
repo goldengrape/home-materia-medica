@@ -1,5 +1,6 @@
 name: Jev coffee and soda batch v0.4 (temporary PR trigger)
 # Keep all stage outputs committed to the batch branch for review.
+# Re-run after updating the batch inputs and preserving QA history.
 
 on:
   pull_request:
