@@ -1,0 +1,10 @@
+{
+  "batch_id": "07-baked-sweets",
+  "entry_id": "cream-puff",
+  "summary_ref": "references/entries/cream-puff/summary.md",
+  "summary_sha256": "b2d05e25069abb35ba0aa2c5e023da94afa3f7814915068d49f8c13a87ee8abd",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 泡芙\n\n**身份。** 本条指以烫面泡芙壳膨发形成中空结构、再填入奶油或蛋奶馅的甜点；馅料、外层糖霜与尺寸不同会改变食品身份和组成。与闪电泡芙、空泡芙壳及奶油蛋糕区分。\n\n**组成与暴露。** USDA FoodData Central/SR Legacy 区分泡芙壳和“shell, with custard filling”的食谱类食品记录；壳与带馅成品的成分不可混用。一项泡芙面团研究比较鸡蛋与鸭蛋配方并做感官测试，属于加工/偏好资料。 壳体配方、蛋量、黄油/油脂、烘烤、鲜奶油或卡仕达馅、涂层、单个重量和冷藏方式。\n\n**直接人体证据。** 本轮未找到普通泡芙成品影响疾病或临床健康结局的人体试验。泡芙面团原料替换研究和营养数据库食谱项不能证明临床效应。\n\n**产品/成分证据。** Santoso 等比较鸡蛋与鸭蛋制作的泡芙面团/成品，并报告 600 人感官测试中的颜色、质地、香气、滋味和偏好；这不等同于健康结局研究，也不代表商业奶油馅泡芙。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 小麦、蛋、乳为常见过敏原；奶油或蛋奶馅需遵循销售方的储存/保质说明。不同馅料和糖霜会明显改变每个泡芙的份量。\n\n**传统来源。** 泡芙是现代烘焙甜点，不把蛋、乳、面粉等原料的单项传统记载相加成成品本草判断。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

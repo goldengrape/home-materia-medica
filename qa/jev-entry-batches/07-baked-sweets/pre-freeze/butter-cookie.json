@@ -1,0 +1,10 @@
+{
+  "batch_id": "07-baked-sweets",
+  "entry_id": "butter-cookie",
+  "summary_ref": "references/entries/butter-cookie/summary.md",
+  "summary_sha256": "85caefae3f5126fa52a5b443bf388f4ed869865c796f444b91c24d122bccc632",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 黄油饼干\n\n**身份。** 本条指以黄油/乳脂提供主要酥松风味的甜饼干或短酥类商业食品；黄油比例、蛋、糖、面粉和加工方式可不同，与曲奇、苏打饼和威化分开。\n\n**组成与暴露。** USDA SR Legacy 有一条“Cookies, butter, commercially prepared, enriched”参考食品记录（FDC 174950）。它是数据库中的一款商业黄油饼干类型，不是所有黄油饼干的统一配方；配方与份量应查具体包装。 黄油与其他油脂比例、含糖量、是否加蛋、面粉和水分、厚度、烘焙程度、每块重量、品牌和地区。\n\n**直接人体证据。** 本轮未发现以普通黄油饼干为干预并检验长期临床健康结局的可靠人体试验。有关曲奇市场的组成调查可帮助说明商业产品差异，但不提供黄油饼干的临床疗效。\n\n**产品/成分证据。** 数据库样本分类不等于中国市场所有“黄油饼干”的法定身份；名称和黄油比例以地区法规与具体配料表为准。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 小麦、乳和蛋是常见相关过敏原；查看包装份量、糖、饱和脂肪和完整过敏原声明。\n\n**传统来源。** 本条是现代烘焙饼干，不把黄油、面粉和糖的单独传统描述叠加为成品结论。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}
