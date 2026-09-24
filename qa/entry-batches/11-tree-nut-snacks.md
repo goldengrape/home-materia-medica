@@ -144,18 +144,15 @@
 
 ## Actions 运行记录
 
-- Workflow run 36002479730：success；stage artifact 10809205309、native Jev artifact 10809010717，均保留至 2026-10-24。此轮通过全部生成与校验步骤。
-- 复核发现首轮配置列出的条目检索词共 38 条，但批次统计记录为 31 次 Exa 调用。已将配置和研究底稿检索词修正为与 31 次调用一致；检索统计为 31 次、145 条结果。
-- Workflow run 36002836267：success；stage artifact 10808528750、native Jev artifact 10808628357，均保留至 2026-10-24。第二轮冻结摘要 SHA 与首轮一致；运行器验证并复用十份有效原始结果，没有重复调用 Jev。
-- 两轮的 stage 与 native artifact 均保留；当前分支中的研究底稿、摘要、冻结快照、原始 JSON、映射与正文采用检索词校正后的配置。
+待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
 
 ## 判与写完成记录
 
-- Workflow run: 36002836267; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
-- Native artifact ID: 10808628357; uploaded by this run with 30-day retention.
+- Workflow run: 36003283893; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10809600316; uploaded by this run with 30-day retention.
 - Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
 - Per-file raw JSON SHA-256: qa/jev-entry-batches/11-tree-nut-snacks/native-json-sha256.txt.
 - Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
 - Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
 - catalog/entries.yaml updated with this batch's ten frozen entries.
-- Workflow run 36002836267: status success; intermediate and native artifacts are retained for 30 days where uploaded.
+- Workflow run 36003283893: status success; intermediate and native artifacts are retained for 30 days where uploaded.

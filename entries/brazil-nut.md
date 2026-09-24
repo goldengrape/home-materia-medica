@@ -14,6 +14,8 @@
 
 **参考文献**
 
-1. Mendes JF, et al. “Effect of Brazil Nuts on Selenium Status, Blood Lipids, and Biomarkers of Oxidative Stress and Inflammation: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.” Antioxidants. 2022;11(2):403. DOI: https://doi.org/10.3390/antiox11020403.
-2. Huguenin GV, et al. “Improvement of antioxidant status after Brazil nut intake in hypertensive and dyslipidemic subjects.” Nutrition Journal. 2015;14:61. DOI: https://doi.org/10.1186/s12937-015-0043-y.
-3. National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Consumers.” https://ods.od.nih.gov/factsheets/Selenium-Consumer/. Accessed 2026-09-24.
+1. Thomson CD, Chisholm A, McLachlan SK, Campbell JM. “A Single Consumption of High Amounts of the Brazil Nuts Improves Lipid Profile of Healthy Volunteers.” Journal of Nutrition and Metabolism. 2013;2013:653185. DOI: https://doi.org/10.1155/2013/653185.
+2. Mendes JF, et al. “Effect of Brazil Nuts on Selenium Status, Blood Lipids, and Biomarkers of Oxidative Stress and Inflammation: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.” Antioxidants. 2022;11(2):403. DOI: https://doi.org/10.3390/antiox11020403.
+3. Huguenin GV, et al. “Improvement of antioxidant status after Brazil nut intake in hypertensive and dyslipidemic subjects.” Nutrition Journal. 2015;14:61. DOI: https://doi.org/10.1186/s12937-015-0043-y.
+4. National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Consumers.” https://ods.od.nih.gov/factsheets/Selenium-Consumer/. Accessed 2026-09-24.
+5. National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Health Professionals.” https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/. Accessed 2026-09-24.

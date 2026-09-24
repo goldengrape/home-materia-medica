@@ -15,5 +15,6 @@ Tey 等为 D0（榛子摄入）系统综述，随机研究的 LDL 合并结果�
 **参考文献**
 
 1. Tey SL, Brown R, Gray A, Chisholm A, Delahunty C. “Effects of Hazelnut Consumption on Blood Lipids and Body Weight: A Systematic Review and Bayesian Meta-Analysis.” Nutrients. 2016;8(12):747. DOI: https://doi.org/10.3390/nu8120747.
-2. Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4.
-3. 李时珍。《本草纲目》卷三十“榛”条（转引宋《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷30》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷30。访问日期：2026-09-24。
+2. Bamberger C, Rossmeier A, Lechner K, et al. “Effects of Hazelnut Consumption on Cardiometabolic Risk Factors and Acceptance: A Systematic Review.” International Journal of Environmental Research and Public Health. 2022;19(5):2880. DOI: https://doi.org/10.3390/ijerph19052880.
+3. Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4.
+4. 李时珍。《本草纲目》卷三十“榛”条（转引宋《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷30》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷30。访问日期：2026-09-24。
