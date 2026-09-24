@@ -1,6 +1,6 @@
 # Idea Brief — Jev 四气五味归经规则 + Few-shot Pilot
 
-> 状态：pilot-v0.1  
+> 状态：pilot-v0.2  
 > 文档强度：simple（小型实验）  
 > 适用范围：仅验证 Jev 判定流程，不改变《居家本草》现有 E / M 规则。
 
@@ -14,24 +14,24 @@
 - **URD-REQ-002**：采用“规则 + few-shot”而不是微调、LoRA、Platt scaling、isotonic regression 等模型或概率修正方法。
 - **URD-REQ-003**：保留 Jev 原生概率，不对概率做后处理映射；pilot 评分时仅用 0.5 作为 Noul 的临时二值切分点。
 - **URD-REQ-004**：测试样本必须与 few-shot 示例分离；测试样本对 Jev 隐藏药名和 gold answer。
-- **URD-REQ-005**：允许“不足以判断”。四气使用显式“证据不足”选项；五味与归经用接近 0.5 的 Noul 表达不确定。
+- **URD-REQ-005**：三类输出全部使用封闭字段并强制分类：四气只能寒/凉/平/温/热五选一；五味只能酸/苦/甘/辛/咸五字段；归经只能心/肝/脾/肺/肾五字段；不设“证据不足”“未知”“其他”。
 - **URD-REQ-006**：评估阶段记录同一冻结配置的重复运行稳定性；不同 run 的原生结果分别保存，不用投票或平均值覆盖原始输出。
 
 ## 3. Pilot 样本
 
-### Held-out 测试样本（5 味）
+### Held-out 测试样本（v0.2，5 味）
 
 | sample_id | 实际药物（仅 gold 文件可见） | 四气覆盖目的 |
 |---|---|---|
-| T01 | 黄连 | 寒 |
-| T02 | 薄荷 | 凉 |
-| T03 | 山药 | 平 |
-| T04 | 桂枝 | 温 |
-| T05 | 附子 | 热（药典“大热”归一） |
+| V2-T01 | 黄芩 | 寒 |
+| V2-T02 | 菊花 | 凉（药典“微寒”归一） |
+| V2-T03 | 茯苓 | 平 |
+| V2-T04 | 细辛 | 温 |
+| V2-T05 | 干姜 | 热 |
 
 ### Few-shot 参考样本
 
-使用与测试集不同的 4 个匿名参考样本，来源于肉桂、五味子、葶苈子、苏木。它们用于展示规则边界，不计入测试成绩。
+使用与 v0.2 测试集不同的 5 个匿名参考样本：黄连、薄荷、山药、桂枝、附子，分别覆盖寒、凉、平、温、热。它们只用于展示固定 schema 下的分类方式，不计入 v0.2 测试成绩。
 
 ## 4. 四气归一规则
 
@@ -63,19 +63,21 @@ pilot 只输出五档：
 
 ### 归经
 
-分别使用 12 个独立 Noul：
+只使用 5 个独立 Noul：
 
-- 心、肝、脾、肺、肾
-- 胆、胃、大肠、小肠、膀胱
-- 三焦、心包
+- 心
+- 肝
+- 脾
+- 肺
+- 肾
 
-每经独立判断，不要求概率和为 1。
+schema 中不存在胃、胆、大肠、小肠、膀胱、三焦、心包等字段。每个五脏字段独立判断，不要求概率和为 1。
 
 ## 6. Evidence Packet 边界
 
 测试 Jev 时的 target packet：
 
-- 保留：感官描述、传统功能、传统主治、必要的加工信息；
+- 使用固定分层字段：`form`、`organoleptic_sensory`、`traditional_functions`、`traditional_indications`、`processing_context`、`safety_context`；
 - 删除：药名、拼音、拉丁名、原植物名等可直接识别身份的字段；
 - 删除：任何直接写出的“性味”“归经”答案；
 - gold answer 单独存放，runner 构造 API state 时不得发送 gold。
@@ -119,19 +121,19 @@ pilot 只输出五档：
 
 ### 后续开放问题
 
-- **URD-Q-001**：正式食品推演时，五味是否加入“淡、涩”扩展标签？
+- **URD-Q-001**：当前 schema 固定不扩展淡、涩或其他字段；若未来产品契约改变，必须作为新版本设计变更，而不能由 Jev 自由扩张输出。
 - **URD-Q-002**：完整 Research Dossier 输入后，是否需要为“传统直接记载”和“现代拟映射”分开两个 Jev 任务？
 - **URD-Q-003**：生产环境应使用何种人工复核阈值？需在更大 calibration set 上决定。
-- **URD-Q-004**：正式评估每个冻结配置需要重复几次？v0.1 暂以 3 次重复观察稳定性，后续按成本与方差决定。
+- **URD-Q-004**：正式评估每个冻结配置需要重复几次？v0.2 暂以 3 次重复观察稳定性，后续按成本与方差决定。
 
 ## 11. Gold 来源
 
 本轮 gold 与传统功能 / 主治主要按《中国药典 2025 年版》公开展示条目核对：
 
-- 黄连：https://www.antpedia.com/codex-cn-2025/1/0483_%E9%BB%84%E8%BF%9E.html
-- 薄荷：https://www.antpedia.com/codex-cn-2025/1/0604_%E8%96%84%E8%8D%B7.html
-- 山药：https://www.antpedia.com/codex-cn-2025/1/0040_%E5%B1%B1%E8%8D%AF.html
-- 桂枝：https://www.antpedia.com/codex-cn-2025/1/0437_%E6%A1%82%E6%9E%9D.html
-- 附子：https://www.antpedia.com/codex-cn-2025/1/0296_%E9%99%84%E5%AD%90.html
+- 黄芩：https://www.antpedia.com/codex-cn-2025/1/0480_%E9%BB%84%E8%8A%A9.html
+- 菊花：https://www.antpedia.com/codex-cn-2025/1/0492_%E8%8F%8A%E8%8A%B1.html
+- 茯苓：https://www.antpedia.com/codex-cn-2025/1/0376_%E8%8C%AF%E8%8B%93.html
+- 细辛：https://www.antpedia.com/codex-cn-2025/1/0359_%E7%BB%86%E8%BE%9B.html
+- 干姜：https://wsj.yueyang.gov.cn/75523/75526/content_2359165.html
 
 网页注明正式条文以纸质版为准；本 pilot 的目的为工程验证，不替代正式药典核对。
