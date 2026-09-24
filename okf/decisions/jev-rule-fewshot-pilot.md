@@ -1,11 +1,11 @@
 ---
 type: Decision
-title: Jev 四气五味归经规则 + Few-shot Pilot
-description: 记录 Jev 封闭字段、强制分类、rule + five-shot 的 pilot 设计与 v0.2 结果。
-resource: ../../docs/jev-rule-fewshot-pilot/RESULTS-v0.2.md
-tags: [jev, materia-mapping, few-shot, pilot, derived]
+title: Jev 四气五味归经规则 + Five-shot Pilot
+description: 当前采用自然语言说明文档 + 推理规则 + five-shot；不微调、不做概率修正。
+resource: ../../docs/jev-rule-fewshot-pilot/RESULTS-v0.3.1.md
+tags: [jev, materia-mapping, few-shot, reasoning, narrative, pilot, derived]
 status: derived
-source_ids: [URD-REQ-001, URD-REQ-002, URD-REQ-003, DEC-001, DEC-005, URD-AC-006]
+source_ids: [URD-REQ-001, URD-REQ-002, URD-REQ-007, URD-REQ-008, DEC-011, DEC-012, DEC-014]
 ---
 
 # Jev 判定 Pilot
@@ -13,33 +13,43 @@ source_ids: [URD-REQ-001, URD-REQ-002, URD-REQ-003, DEC-001, DEC-005, URD-AC-006
 当前路线：
 
 ```text
-Research / evidence packet
-→ 固定规则
-→ few-shot 示例
-→ Jev 原生概率
-→ 人工/规则层消费
+Research Dossier
+→ 自然语言说明文档
+→ 推理规则 + narrative five-shot
+→ Jev 固定 questions
+→ 原生概率
+→ Materia mapping / Claim Ledger
 ```
 
 不训练 Jev，不使用 post-hoc probability calibration function。
 
-## v0.2
+## 当前有效版本：v0.3.1
 
-输出空间固定为：
+核心变化：
 
-- 四气：寒 / 凉 / 平 / 温 / 热，强制五选一；
-- 五味：酸 / 苦 / 甘 / 辛 / 咸；
-- 归经：心 / 肝 / 脾 / 肺 / 肾。
+- rules 不再重复“只能选什么”等接口限制，只教如何推理；
+- target 与 five-shot 都使用连续说明文档；
+- 四气推理从证候寒热与纠偏强弱出发；
+- 五味结合感官与“散/泄/补/收/软”等功能模式；
+- 五脏归经先做功能群识别，再按五字段工作投影；
+- 胃→脾、胆→肝、大肠→肺、小肠→心、膀胱→肾；三焦按具体语境。
 
-3 次重复、5 个新 held-out：
+v0.3.1 五个 reasoning-complete held-out，3 次重复：
 
-- 四气：三次均 4/5；干姜稳定误判为温而非热；
-- 五味：三次均 5/5 exact，micro-F1 1.0；
-- 五脏归经：exact set 1–2/5，micro-F1 0.720–0.769，主要问题是漏判。
+- 四气：5/5 × 3；
+- 五味 exact：5/5 × 3；
+- 五脏归经 exact：5/5 × 3；
+- 三类 micro-F1 均为 1.0 × 3。
 
-v0.1 的十二经输出空间与项目契约不一致，只保留为工程历史记录。
+这只说明在说明文档本身包含充分桥梁时，Jev 可以稳定执行规则；不代表现代食品生产准确率。
 
-完整结果与逐样本概率见 source document。
+## 历史
+
+- v0.1：验证 API / secret / 匿名化；输出空间设计错误。
+- v0.2：封闭字段正确，但 target 仍是结构化 packet。
+- v0.3 #11：narrative + reasoning 首测，发现 gold 投影和样本一致性 bug，判 invalid。
+- v0.3.1 #14：修正后有效。
 
 ## Next
 
-如继续，应升到 v0.3：强化温/热对比，并给五脏归经建立更明确的项目级 criteria / Concept Trace 桥梁。仍不引入概率修正函数。
+进入现代食品 domain-transfer test：直接从真实 Research Dossier 形成正式风格说明文档，用 frozen v0.3.1 rules + five-shot 判断。
