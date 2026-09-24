@@ -1,0 +1,90 @@
+version: v1
+status: training_gold_set
+probability_type: editorial_confidence
+probability_resolution: 5_to_10_percent
+qi_candidates:
+  - 寒
+  - 凉
+  - 平
+  - 温
+  - 热
+channel_candidates:
+  - 心
+  - 肝
+  - 脾
+  - 肺
+  - 肾
+  - 胃
+  - 大肠
+
+training_gold:
+  - id: shengjiang
+    name: 生姜
+    nature_original: 微温
+    flavors: [辛]
+    channels: [肺, 脾, 胃]
+  - id: bohe
+    name: 薄荷
+    nature_original: 凉
+    flavors: [辛]
+    channels: [肺, 肝]
+  - id: juhua
+    name: 菊花
+    nature_original: 微寒
+    flavors: [甘, 苦]
+    channels: [肺, 肝]
+  - id: chenpi
+    name: 陈皮
+    nature_original: 温
+    flavors: [辛, 苦]
+    channels: [脾, 肺]
+  - id: shanzha
+    name: 山楂
+    nature_original: 微温
+    flavors: [酸, 甘]
+    channels: [脾, 胃, 肝]
+    historical_variation: high
+  - id: dazao
+    name: 大枣
+    nature_original: 温
+    flavors: [甘]
+    channels: [脾, 胃, 心]
+  - id: gouqizi
+    name: 枸杞子
+    nature_original: 平
+    flavors: [甘]
+    channels: [肝, 肾]
+  - id: shanyao
+    name: 山药
+    nature_original: 平
+    flavors: [甘]
+    channels: [脾, 肺, 肾]
+  - id: baihe
+    name: 百合
+    nature_original: 寒
+    flavors: [甘]
+    channels: [心, 肺]
+  - id: rougui
+    name: 肉桂
+    nature_original: 大热
+    flavors: [辛, 甘]
+    channels: [肾, 脾, 心, 肝]
+
+guardrails:
+  modern_food_without_direct_traditional_nature:
+    human_effect_only_max_single_candidate: 70
+    mechanism_or_sensory_only_max_single_candidate: 50
+  modern_food_without_direct_traditional_channel:
+    close_parent_plus_human_bridge_max: 70
+    human_function_only_max: 60
+    mechanism_or_taste_only_max: 40
+
+next:
+  holdout_size: 10_to_20
+  blinded_input_required: true
+  score:
+    - qi_top1_accuracy
+    - qi_adjacent_accuracy
+    - channel_precision
+    - channel_recall
+    - overconfidence_cases
