@@ -1,0 +1,386 @@
+{
+  "fixture_version": "jev-tcm-pilot-fixtures-v0.1",
+  "source_policy": "Gold and traditional function/indication text are derived from Chinese Pharmacopoeia 2025 public display pages. Target packets omit direct property/flavor/meridian labels and identity names.",
+  "tastes": [
+    "酸",
+    "苦",
+    "甘",
+    "辛",
+    "咸"
+  ],
+  "meridians": [
+    "心",
+    "肝",
+    "脾",
+    "肺",
+    "肾",
+    "胆",
+    "胃",
+    "大肠",
+    "小肠",
+    "膀胱",
+    "三焦",
+    "心包"
+  ],
+  "reference_examples": [
+    {
+      "demo_id": "D01",
+      "meta": {
+        "herb": "肉桂",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0211_%E8%82%89%E6%A1%82.html"
+      },
+      "packet": {
+        "form": "树皮类药材",
+        "sensory": "气香浓烈，入口有辛香与甜感。",
+        "traditional_functions": [
+          "补火助阳",
+          "引火归元",
+          "散寒止痛",
+          "温通经脉"
+        ],
+        "traditional_indications": [
+          "阳痿宫冷",
+          "腰膝冷痛",
+          "肾虚作喘",
+          "虚阳上浮",
+          "心腹冷痛",
+          "虚寒吐泻",
+          "寒疝腹痛",
+          "痛经经闭"
+        ]
+      },
+      "answer": {
+        "qi": "热",
+        "tastes": [
+          "辛",
+          "甘"
+        ],
+        "meridians": [
+          "肾",
+          "脾",
+          "心",
+          "肝"
+        ]
+      }
+    },
+    {
+      "demo_id": "D02",
+      "meta": {
+        "herb": "五味子",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0097_%E4%BA%94%E5%91%B3%E5%AD%90.html"
+      },
+      "packet": {
+        "form": "成熟果实类药材",
+        "sensory": "果实具明显酸味并兼有其他复合味感。",
+        "traditional_functions": [
+          "收敛固涩",
+          "益气生津",
+          "补肾宁心"
+        ],
+        "traditional_indications": [
+          "久嗽虚喘",
+          "梦遗滑精",
+          "遗尿尿频",
+          "久泻不止",
+          "自汗盗汗",
+          "津伤口渴",
+          "心悸失眠"
+        ]
+      },
+      "answer": {
+        "qi": "温",
+        "tastes": [
+          "酸",
+          "甘"
+        ],
+        "meridians": [
+          "肺",
+          "心",
+          "肾"
+        ]
+      }
+    },
+    {
+      "demo_id": "D03",
+      "meta": {
+        "herb": "葶苈子",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0530_%E8%91%B6%E8%8B%88%E5%AD%90.html"
+      },
+      "packet": {
+        "form": "种子类药材",
+        "sensory": "气微，味感偏辛苦。",
+        "traditional_functions": [
+          "泻肺平喘",
+          "行水消肿"
+        ],
+        "traditional_indications": [
+          "痰涎壅肺",
+          "喘咳痰多",
+          "胸胁胀满",
+          "不得平卧",
+          "胸腹水肿",
+          "小便不利"
+        ]
+      },
+      "answer": {
+        "qi": "寒",
+        "tastes": [
+          "辛",
+          "苦"
+        ],
+        "meridians": [
+          "肺",
+          "膀胱"
+        ]
+      }
+    },
+    {
+      "demo_id": "D04",
+      "meta": {
+        "herb": "苏木",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0257_%E8%8B%8F%E6%9C%A8.html"
+      },
+      "packet": {
+        "form": "心材类药材",
+        "sensory": "气微，煎液味感不以强烈辛苦为主。",
+        "traditional_functions": [
+          "活血祛瘀",
+          "消肿止痛"
+        ],
+        "traditional_indications": [
+          "跌打损伤",
+          "骨折筋伤",
+          "瘀滞肿痛",
+          "经闭痛经",
+          "产后瘀阻",
+          "胸腹刺痛",
+          "痈疽肿痛"
+        ]
+      },
+      "answer": {
+        "qi": "平",
+        "tastes": [
+          "甘",
+          "咸"
+        ],
+        "meridians": [
+          "心",
+          "肝",
+          "脾"
+        ]
+      }
+    }
+  ],
+  "test_cases": [
+    {
+      "sample_id": "T01",
+      "meta": {
+        "herb": "黄连",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0483_%E9%BB%84%E8%BF%9E.html"
+      },
+      "packet": {
+        "form": "根茎类药材",
+        "sensory": "气微，入口极苦。",
+        "traditional_functions": [
+          "清热燥湿",
+          "泻火解毒"
+        ],
+        "traditional_indications": [
+          "湿热痞满",
+          "呕吐吞酸",
+          "泻痢",
+          "黄疸",
+          "高热神昏",
+          "心火亢盛",
+          "心烦不寐",
+          "心悸不宁",
+          "血热吐衄",
+          "目赤",
+          "牙痛",
+          "消渴",
+          "痈肿疔疮"
+        ],
+        "processing_notes": [
+          "酒制品偏用于上焦火热表现",
+          "姜制品用于寒热互结、湿热中阻所见痞满呕吐",
+          "吴茱萸制品用于肝胃不和所见呕吐吞酸"
+        ]
+      },
+      "gold": {
+        "qi": "寒",
+        "tastes": [
+          "苦"
+        ],
+        "meridians": [
+          "心",
+          "脾",
+          "胃",
+          "肝",
+          "胆",
+          "大肠"
+        ]
+      }
+    },
+    {
+      "sample_id": "T02",
+      "meta": {
+        "herb": "薄荷",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0604_%E8%96%84%E8%8D%B7.html"
+      },
+      "packet": {
+        "form": "地上部分药材",
+        "sensory": "揉搓后有明显清凉芳香与辛香感。",
+        "traditional_functions": [
+          "疏散风热",
+          "清利头目",
+          "利咽",
+          "透疹",
+          "疏肝行气"
+        ],
+        "traditional_indications": [
+          "风热感冒",
+          "风温初起",
+          "头痛",
+          "目赤",
+          "喉痹",
+          "口疮",
+          "风疹",
+          "麻疹",
+          "胸胁胀闷"
+        ]
+      },
+      "gold": {
+        "qi": "凉",
+        "tastes": [
+          "辛"
+        ],
+        "meridians": [
+          "肺",
+          "肝"
+        ]
+      }
+    },
+    {
+      "sample_id": "T03",
+      "meta": {
+        "herb": "山药",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0040_%E5%B1%B1%E8%8D%AF.html"
+      },
+      "packet": {
+        "form": "根茎类药材",
+        "sensory": "粉性明显，入口较淡，可有轻微酸感，咀嚼后黏。",
+        "traditional_functions": [
+          "补脾养胃",
+          "生津益肺",
+          "补肾涩精"
+        ],
+        "traditional_indications": [
+          "脾虚食少",
+          "久泻不止",
+          "肺虚喘咳",
+          "肾虚遗精",
+          "带下",
+          "尿频",
+          "虚热消渴"
+        ],
+        "processing_notes": [
+          "麸炒后偏用于补脾健胃、脾虚泄泻便溏等"
+        ]
+      },
+      "gold": {
+        "qi": "平",
+        "tastes": [
+          "甘"
+        ],
+        "meridians": [
+          "脾",
+          "肺",
+          "肾"
+        ]
+      }
+    },
+    {
+      "sample_id": "T04",
+      "meta": {
+        "herb": "桂枝",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0437_%E6%A1%82%E6%9E%9D.html"
+      },
+      "packet": {
+        "form": "嫩枝类药材",
+        "sensory": "有特异芳香，入口甜而微辛。",
+        "traditional_functions": [
+          "发汗解肌",
+          "温通经脉",
+          "助阳化气",
+          "平冲降气"
+        ],
+        "traditional_indications": [
+          "风寒感冒",
+          "脘腹冷痛",
+          "血寒经闭",
+          "关节痹痛",
+          "痰饮",
+          "水肿",
+          "心悸",
+          "奔豚"
+        ]
+      },
+      "gold": {
+        "qi": "温",
+        "tastes": [
+          "辛",
+          "甘"
+        ],
+        "meridians": [
+          "心",
+          "肺",
+          "膀胱"
+        ]
+      }
+    },
+    {
+      "sample_id": "T05",
+      "meta": {
+        "herb": "附子",
+        "source": "https://www.antpedia.com/codex-cn-2025/1/0296_%E9%99%84%E5%AD%90.html"
+      },
+      "packet": {
+        "form": "加工后的子根类药材",
+        "sensory": "不同加工品入口可见咸麻刺舌或味淡，感官差异受炮制影响明显。",
+        "traditional_functions": [
+          "回阳救逆",
+          "补火助阳",
+          "散寒止痛"
+        ],
+        "traditional_indications": [
+          "亡阳虚脱",
+          "肢冷脉微",
+          "心阳不足",
+          "胸痹心痛",
+          "虚寒吐泻",
+          "脘腹冷痛",
+          "肾阳虚衰",
+          "阳痿宫冷",
+          "阴寒水肿",
+          "阳虚外感",
+          "寒湿痹痛"
+        ],
+        "safety_notes": [
+          "有毒，炮制与煎煮方式影响安全性"
+        ]
+      },
+      "gold": {
+        "qi": "热",
+        "tastes": [
+          "辛",
+          "甘"
+        ],
+        "meridians": [
+          "心",
+          "肾",
+          "脾"
+        ]
+      }
+    }
+  ]
+}
