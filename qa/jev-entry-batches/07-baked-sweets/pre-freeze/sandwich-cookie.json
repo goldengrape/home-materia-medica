@@ -1,0 +1,10 @@
+{
+  "batch_id": "07-baked-sweets",
+  "entry_id": "sandwich-cookie",
+  "summary_ref": "references/entries/sandwich-cookie/summary.md",
+  "summary_sha256": "0a11b988de68c10fbb499a8e9c58adc61297889024b0b54eab589aef85125227",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 夹心饼干\n\n**身份。** 本条指两片饼干之间夹糖脂奶油、可可或其他馅料的甜点心；与夹心威化、夹心苏打饼及曲奇单片分开。\n\n**组成与暴露。** 芬兰国家食品成分数据库 Fineli 的“Chocolate Sandwich Cookie, Average”（food identifier 31650）按食谱计算，每 100 g 为 480 kcal、总糖 36.8 g、脂肪 26.0 g；这是一个平均食谱记录，不是市场品牌抽样或所有夹心饼干的通用值。 饼片种类、馅料比例、糖与脂肪、乳/可可/坚果配料、是否包衣、片数、份量和地区。\n\n**直接人体证据。** 本轮未发现普通夹心饼干成品改善临床健康结局的直接人体试验。夹心成分或相似饼干研究不能替代目标食品试验。\n\n**产品/成分证据。** Fineli 的该条目描述巧克力夹心饼干平均食谱，营养值来自食谱计算；其他馅料、饼片、品牌和地区的产品可能不同。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 常见过敏原可包括小麦、乳、大豆、蛋、花生和树坚果；馅料和涂层要连同饼片一起核对标签。\n\n**传统来源。** 夹心饼干是现代复合烘焙点心，不把饼片与馅料的单项传统记载相加为成品结论。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

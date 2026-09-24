@@ -1,0 +1,10 @@
+{
+  "batch_id": "07-baked-sweets",
+  "entry_id": "pound-cake",
+  "summary_ref": "references/entries/pound-cake/summary.md",
+  "summary_sha256": "895baefafbb0cb1c4ab1664fdbcf0b900b436abbfdcb724f7c98857dc350179e",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 磅蛋糕\n\n**身份。** 本条指质地较密、以面粉、糖、蛋和较多油脂烘烤的蛋糕类点心；传统比例与现代商业版本可能不同，且黄油、植物油、糖和添加物配方有变化。\n\n**组成与暴露。** USDA SR Legacy 分别收录黄油型商用磅蛋糕（FDC 172704）等参考食品；Food Standards Australia New Zealand 的 2012 cake-and-slice 分析说明，多数蛋糕营养值通过典型配方及相对用量计算。两者都不是现售磅蛋糕市场的完整抽样。 黄油或其他油脂、鸡蛋与面粉比例、糖、乳成分、发泡剂、配料/糖霜、切片大小、品牌和储藏。\n\n**直接人体证据。** 本轮未找到普通磅蛋糕成品作为干预并检验长期临床结局的可靠人体试验。蛋糕配方和数据库数据可描述特定产品，不构成健康效应证据。\n\n**产品/成分证据。** FSANZ 分析采用典型食谱法为多类蛋糕计算营养值；不同油脂、糖霜、配料和份量会改变磅蛋糕组成。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 小麦、蛋、乳为常见相关过敏原；按切片重量和营养标签查看糖、脂肪与能量，夹料/糖霜需单独核算。\n\n**传统来源。** 磅蛋糕是现代烘焙甜点；其商品配方和名称不对应一个固定古籍食物身份。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

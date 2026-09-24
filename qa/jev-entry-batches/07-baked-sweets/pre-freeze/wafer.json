@@ -1,0 +1,10 @@
+{
+  "batch_id": "07-baked-sweets",
+  "entry_id": "wafer",
+  "summary_ref": "references/entries/wafer/summary.md",
+  "summary_sha256": "ff7d536ce1d4b4cfb9df9a91e6d52201a96478e706839fafa7adfcfa75903345",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 威化饼\n\n**身份。** 本条指薄片烘烤形成酥脆层状结构的威化饼，既有无夹心款，也有奶油/可可夹心款；与夹心曲奇和蛋卷分别处理。\n\n**组成与暴露。** USDA Agricultural Marketing Service 的 A-A-20295E 商业采购规格将 wafers 作为曲奇风格之一；USDA SR Legacy 另有“Cookies, sugar wafers with creme filling, regular”（FDC 172736）记录。采购规格与夹心威化数据库记录分别代表特定技术/配方范围。 威化片厚度、夹心比例、糖和脂肪种类、可可/香料、产品尺寸、涂层和品牌。\n\n**直接人体证据。** 本轮未发现威化饼成品作为干预并评估长期疾病或临床健康结局的人体试验。单一夹心威化的食品成分不能代表无夹心或其他品牌产品。\n\n**产品/成分证据。** 2025 年 USDA 采购规格用于政府采购的产品分类和规格，不是普遍商业市场的唯一标准；FDC 数据项为加奶油馅的美国糖威化变体。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 夹心威化可能含小麦、乳、大豆、坚果或芝麻等过敏原；夹心和涂层会改变每份糖、脂肪与能量。\n\n**传统来源。** 现代威化饼是工业烘焙食品；不将其多层结构或配方直接套入古籍食物条目。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

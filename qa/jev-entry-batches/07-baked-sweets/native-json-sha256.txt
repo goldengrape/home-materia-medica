@@ -1,0 +1,10 @@
+60dfa4fea0ca3b3bfd1fdbe8ee1106c06b3d7451b89d4c7ca8e2ac1ab1688599  qa/jev-entry-batches/07-baked-sweets/raw/chocolate-energy-bar.json
+c7108b56ded18660cc061f4807547b7a46370d5cec5a957ec3f73f90902b3000  qa/jev-entry-batches/07-baked-sweets/raw/cookie.json
+7a1fe0158aeac232fcf3f94c03baac0d5f3dc0f64a4825c457c9b7d28e7b30ae  qa/jev-entry-batches/07-baked-sweets/raw/butter-cookie.json
+62d72be77cffd7f81ee89d61e63a7a7e480c8f69b59d3c31387e7ed72b2588ff  qa/jev-entry-batches/07-baked-sweets/raw/wafer.json
+3aaa1a15a3cbd6300271f71ed71a4adccceee2b1c717fcea40709658300efde6  qa/jev-entry-batches/07-baked-sweets/raw/sandwich-cookie.json
+5197a904be23e9618a04f25dd5553db169844e1614ffb4bc0afb9a3023f4c8a8  qa/jev-entry-batches/07-baked-sweets/raw/egg-tart.json
+c75e7bee4937b7ecb400d9bd85a949562c1ed7e2933662da79f823edc722ad76  qa/jev-entry-batches/07-baked-sweets/raw/cream-puff.json
+a42fd883598cca01579f4b8928c7b3c1c437cd409ae9e34447d085ffb5bcbcac  qa/jev-entry-batches/07-baked-sweets/raw/doughnut.json
+afce86b0bf393b0113263f6ef231c9a99168307931c58b03accc65c94387c61a  qa/jev-entry-batches/07-baked-sweets/raw/muffin.json
+a949c608f11c679411e0e62c315f760d50ff3a0a2f7aa6b765e4dc4b65fce7b3  qa/jev-entry-batches/07-baked-sweets/raw/pound-cake.json

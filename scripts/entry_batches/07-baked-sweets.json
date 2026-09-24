@@ -1,0 +1,609 @@
+{
+  "batch": {
+    "id": "07-baked-sweets",
+    "title": "巧克力能量棒与烘焙甜点",
+    "catalog_order": 7,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, journal pages, official regulator, database and manufacturer verification",
+    "exa_search_calls": 17,
+    "exa_hits": 102,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-07-baked-sweets",
+    "identity_red_team": [
+      "巧克力能量棒按含谷物/坚果/干果/蛋白配料的棒状食品处理，不与巧克力棒、运动能量胶或营养补充剂互换。",
+      "曲奇、黄油饼干、威化、夹心饼干分开建条；数据库和采购标准记录只代表指定配方或规格。",
+      "蛋挞按带蛋羹馅的烘焙点心处理；酥皮/曲奇皮和地区样式有差异，custard pie仅作不同食品记录。",
+      "泡芙按膨松泡芙壳及其奶油/蛋奶馅处理；壳、卡仕达馅、奶油馅资料不得混作同一标准配方。",
+      "区分蛋糕型与酵母型甜甜圈；松饼试验按实际试验配方和短期餐后指标叙述；磅蛋糕的黄油/非黄油配方不合并为固定组成。",
+      "食品工艺、配方优化、感官试验和营养成分数据库不是疾病预防或治疗的人体临床结局证据。"
+    ]
+  },
+  "entries": {
+    "chocolate-energy-bar": {
+      "name": "巧克力能量棒",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "energy-snack-bar",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以谷物、坚果、干果、糖浆或蛋白配料做成的即食棒状零食，部分产品带可可/巧克力风味或涂层；与纯巧克力棒、运动能量胶和单一营养素补充剂区分。产品名中的“能量”不是健康功效结论。",
+      "variables": "谷物与坚果比例、糖浆/糖、蛋白来源、巧克力涂层、纤维、份量、品牌和地区，以及是否在长时间运动前后食用。",
+      "composition": "USDA FoodData Central 的 SR Legacy 收录过单一 PowerBar 巧克力口味记录（FDC 173137），也有未包衣巧克力豆谷物棒记录（FDC 169674）；两者食品形态和年代有限，不能代表现售巧克力能量棒。实际产品应看配料与营养标签。",
+      "direct": "一项随机交叉运动试验让 11 名耐力训练者在骑行前食用低 GI 扁豆运动棒、中 GI 商业运动棒或安慰剂；两种棒在当日计时骑行中均优于安慰剂，次日恢复试验中低 GI 棒优于其余条件。该结果针对小样本运动员和特定运动棒，不是普通巧克力能量棒的临床健康结局。",
+      "specific": "研究所用低 GI 棒以扁豆为主要设计特点，商业对照棒也不是目录中所有巧克力能量棒的统一配方。FDC 巧克力棒记录是单一历史数据库对象。",
+      "safety": "能量棒常见谷物、花生/坚果、乳、大豆等过敏原；添加糖、蛋白质、纤维和咖啡因（若含）因配方而异。日常食用和运动补给应按实际标签与场景判断。",
+      "body": "巧克力能量棒不是固定配方：有的以谷物和糖浆为主，有的加坚果、蛋白或巧克力涂层。USDA 的历史数据库中能找到单一巧克力 PowerBar 记录，但它不代表今天所有品牌。一项仅有 11 名耐力训练者参加的交叉试验研究的是扁豆棒和运动棒，不能据此说普通巧克力能量棒能改善一般健康。",
+      "evidence_body": "运动交叉试验为 D2：棒状运动食品与目标品类相邻，但配方、人群和结局都有限；FDC 记录为 D0，但只对应特定历史产品。未找到普通巧克力能量棒长期临床健康结局的直接证据（E-0）。",
+      "care": "按每根的份量和添加糖、纤维、蛋白及过敏原查看标签；若用于耐力运动补给，结合运动时长、耐受性和个人需要选择，不把“能量”字样当作保健或治疗承诺。",
+      "taste_m": {
+        "甘": "糖浆、果干和巧克力风味/涂层常提供甜味；不同产品的甜度和可可苦味不同。"
+      },
+      "queries": [
+        "chocolate energy bar composition food database and commercial bar label variation",
+        "The Glycemic Index of Sport Nutrition Bars Affects Performance and Metabolism During Cycling 2019 trial details",
+        "chocolate energy bar direct randomized human clinical health outcomes"
+      ],
+      "search_log": [
+        "检索运动棒随机交叉试验、USDA FoodData Central 巧克力/谷物棒记录及目标食品成品人体研究。",
+        "将扁豆低 GI 运动棒和一般商业棒的运动场景研究限制在运动表现，未外推为巧克力能量棒的长期健康功效。"
+      ],
+      "refs": [
+        "Kaviani M, Chilibeck PD, Jochim J, et al. “The Glycemic Index of Sport Nutrition Bars Affects Performance and Metabolism During Cycling and Next-Day Recovery.” Journal of Human Kinetics. 2019;69:71–81. DOI: https://doi.org/10.2478/hukin-2018-0050.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “PowerBar, Chocolate.” FoodData Central, SR Legacy, FDC ID 173137. https://fdc.nal.usda.gov/food-details/173137/nutrients. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Snacks, granola bars, soft, uncoated, chocolate chip.” FoodData Central, SR Legacy, FDC ID 169674. https://fdc.nal.usda.gov/food-details/169674/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Kaviani M, Chilibeck PD, Jochim J, et al. “The Glycemic Index of Sport Nutrition Bars Affects Performance and Metabolism During Cycling and Next-Day Recovery.” Journal of Human Kinetics. 2019;69:71–81. DOI: https://doi.org/10.2478/hukin-2018-0050.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “PowerBar, Chocolate.” FoodData Central, SR Legacy, FDC ID 173137. https://fdc.nal.usda.gov/food-details/173137/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、反平衡交叉运动试验。",
+          "population": "11 名耐力训练者；摘要报告平均年龄 26 ± 6 岁。",
+          "exposure": "运动前食用低 GI 扁豆运动棒、中 GI 商业运动棒或安慰剂；另比较运动后补给对次日表现的影响。",
+          "result": "两种运动棒在当日计时骑行中均优于安慰剂；次日试验中低 GI 棒优于中 GI 棒和安慰剂。",
+          "limits": "小样本、运动员、短期运动表现结局；扁豆棒和运动棒不等于所有巧克力能量棒。",
+          "distance": "D2（相邻食品类别/运动补给情境）"
+        },
+        {
+          "ref": 2,
+          "design": "USDA SR Legacy 食品组成记录。",
+          "population": "单一历史 PowerBar 巧克力参考条目。",
+          "exposure": "数据库列示的该产品成分记录。",
+          "result": "可用于说明数据库按单品记录产品组成。",
+          "limits": "不是现售市场抽样；品牌、年代、地区和配方有限。",
+          "distance": "D0（单一数据库食品记录）"
+        }
+      ],
+      "unknowns": "现售巧克力能量棒在不同地区的配方分布；普通消费者长期使用该品类的临床结局；运动棒试验结果对具体巧克力棒的可迁移性。",
+      "tradition": "本条是近现代复合棒状零食；未发现可将所有巧克力能量棒配方等同于某一古籍具体食品或药材条文的依据。"
+    },
+    "cookie": {
+      "name": "曲奇",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-biscuit",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指烘焙成形的曲奇/甜饼干，配方可含黄油或其他油脂、糖、面粉、蛋、坚果、巧克力或夹料；与苏打饼、威化和夹心饼干分别处理。",
+      "variables": "脂肪种类、糖量、面粉类型、夹料和涂层、软/脆质地、产品大小、地区及商业/自制配方。",
+      "composition": "一项法国市场研究从线上零售找到 178 款曲奇，另对 62 款巧克力豆曲奇分析营养标签、成分、水分与感官差异；研究显示产品之间差异明显。USDA SR Legacy 也有一条美国商用软式巧克力豆曲奇记录（FDC 172717），只是特定数据库参照。",
+      "direct": "本轮未找到普通曲奇本身改善疾病或长期健康结局的可靠人体干预证据。市场标签调查描述的是产品构成和差异，不是人体健康效应试验。",
+      "specific": "法国市场调查的取样地区、年份和产品类型有限；美国 FDC 记录与法国曲奇市场不等同。巧克力豆、夹心或无糖版本需按各自标签判断。",
+      "safety": "曲奇常见小麦、乳、蛋、大豆、花生或树坚果过敏原；份量、糖与脂肪含量在产品间差异大。",
+      "body": "曲奇的名字相同，配方也可能相差很大。一项法国市场研究记录了 178 款曲奇，并进一步测看 62 款巧克力豆曲奇，发现标签营养、水分和感官特征都不完全相同；这说明不能用单一饼干的营养值代表整个品类。该调查没有检验吃曲奇能否改善健康。",
+      "evidence_body": "法国市场研究为 D0（所抽产品的组成与感官描述），但不等于人体结局证据；USDA FDC 是另一市场的单条参考记录。普通曲奇的直接长期临床结局证据不足（E-0）。",
+      "care": "查看每份克数、添加糖和饱和脂肪，并核对小麦、乳、蛋、坚果等过敏原；不要把一款产品的营养面板套用到其他曲奇。",
+      "taste_m": {
+        "甘": "糖提供主要甜味，黄油/油脂、烘烤香气和夹料会改变风味。"
+      },
+      "queries": [
+        "commercial cookie market inventory 178 cookies 62 chocolate chip cookies nutrition composition sensory study DOI",
+        "USDA FDC cookies chocolate chip commercially prepared soft type 172717",
+        "commercial cookies direct randomized human health outcome trial"
+      ],
+      "search_log": [
+        "检索法国曲奇市场成分与感官研究、USDA 曲奇数据库记录及普通曲奇成品人体临床结局。",
+        "将市场调查、数据库食品记录与临床人体效应分开；未把配方调查写成健康功效。"
+      ],
+      "refs": [
+        "Liechti C, Delarue J, Souchon I, Bosc V, Saint-Eve A. “How to Select a Representative Product Set From Market Inventory? A Multicriteria Approach as a Base for Future Reformulation of Cookies.” Frontiers in Nutrition. 2022;8:749596. DOI: https://doi.org/10.3389/fnut.2021.749596.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cookies, chocolate chip, commercially prepared, soft-type.” FoodData Central, SR Legacy, FDC ID 172717. https://fdc.nal.usda.gov/food-details/172717/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Liechti C, Delarue J, Souchon I, Bosc V, Saint-Eve A. “How to Select a Representative Product Set From Market Inventory? A Multicriteria Approach as a Base for Future Reformulation of Cookies.” Frontiers in Nutrition. 2022;8:749596. DOI: https://doi.org/10.3389/fnut.2021.749596."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "法国线上市场产品清单、营养/成分标签收集，并对部分产品测量水分和感官属性。",
+          "population": "178 款法国市场曲奇；其中 62 款巧克力豆曲奇进入深入比较。",
+          "exposure": "不同商业曲奇的标签、组成、水分与感官属性。",
+          "result": "市场产品差异明显，研究提出以多指标选择具有代表性的后续配方改良对象。",
+          "limits": "不是随机抽取所有国家产品；不评估食用曲奇对人的健康结局。",
+          "distance": "D0（被调查商品的构成与感官特征）"
+        },
+        {
+          "ref": 2,
+          "design": "USDA SR Legacy 商业食品组成记录。",
+          "population": "单一美国软式巧克力豆曲奇参考项。",
+          "exposure": "该数据库食品条目。",
+          "result": "提供指定类型曲奇的历史成分基线。",
+          "limits": "与法国样本和其他现售品牌不同；不可代表曲奇总体。",
+          "distance": "D0（单一数据库记录）"
+        }
+      ],
+      "unknowns": "中国及其他市场不同曲奇子类的当代配方分布；普通曲奇成品长期健康结局；不同份量、频率和替代食品下的结局。",
+      "tradition": "曲奇是近现代烘焙甜点；本条不把面粉、油脂和糖的传统记载简单相加成曲奇本身的古籍药性。"
+    },
+    "butter-cookie": {
+      "name": "黄油饼干",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-biscuit",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以黄油/乳脂提供主要酥松风味的甜饼干或短酥类商业食品；黄油比例、蛋、糖、面粉和加工方式可不同，与曲奇、苏打饼和威化分开。",
+      "variables": "黄油与其他油脂比例、含糖量、是否加蛋、面粉和水分、厚度、烘焙程度、每块重量、品牌和地区。",
+      "composition": "USDA SR Legacy 有一条“Cookies, butter, commercially prepared, enriched”参考食品记录（FDC 174950）。它是数据库中的一款商业黄油饼干类型，不是所有黄油饼干的统一配方；配方与份量应查具体包装。",
+      "direct": "本轮未发现以普通黄油饼干为干预并检验长期临床健康结局的可靠人体试验。有关曲奇市场的组成调查可帮助说明商业产品差异，但不提供黄油饼干的临床疗效。",
+      "specific": "数据库样本分类不等于中国市场所有“黄油饼干”的法定身份；名称和黄油比例以地区法规与具体配料表为准。",
+      "safety": "小麦、乳和蛋是常见相关过敏原；查看包装份量、糖、饱和脂肪和完整过敏原声明。",
+      "body": "黄油饼干的酥松感来自配方里的脂肪，但不同产品的黄油比例、糖和每块大小并不相同。USDA 食品成分库收录了一种商用黄油饼干参考记录；它适合当作单一类型的成分参照，不能替代手中品牌的营养标签。没有足以支持普通黄油饼干临床功效的直接人体证据。",
+      "evidence_body": "USDA 记录为 D0（单一数据库食品项），不能代表全部产品；未检得普通黄油饼干成品的人体健康结局试验（E-0）。",
+      "care": "按包装每份核算实际吃下的块数，查看糖、饱和脂肪以及小麦、乳、蛋过敏原；自制配方不要直接套用数据库的商用品类值。",
+      "taste_m": {
+        "甘": "糖提供甜味，黄油和烘烤香气形成酥香；甜度依配方而异。"
+      },
+      "queries": [
+        "USDA FDC cookies butter commercially prepared enriched 174950 composition",
+        "butter cookies commercial recipe variation nutrition market study",
+        "butter cookie finished-food randomized human clinical trial"
+      ],
+      "search_log": [
+        "核对 USDA SR Legacy 商用黄油饼干食品项，检索商用品类组成差异及成品人体结局研究。",
+        "将一个数据库食品项限定为参考配方，不把它提升为所有黄油饼干的平均值。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cookies, butter, commercially prepared, enriched.” FoodData Central, SR Legacy, FDC ID 174950. https://fdc.nal.usda.gov/food-details/174950/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cookies, butter, commercially prepared, enriched.” FoodData Central, SR Legacy, FDC ID 174950. https://fdc.nal.usda.gov/food-details/174950/nutrients. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "USDA SR Legacy 商业食品成分数据库条目。",
+          "population": "数据库中单一商用黄油饼干类型。",
+          "exposure": "该条目的食品成分记录。",
+          "result": "提供一款指定商用品类的参考成分信息。",
+          "limits": "不是现售品牌的全市场抽样；不同国家、配方和份量不可互推。",
+          "distance": "D0（单一数据库食品记录）"
+        }
+      ],
+      "unknowns": "当前各地黄油饼干的黄油占比和配方分布；成品长期人体健康结局；不同份量与摄入频率的真实暴露。",
+      "tradition": "本条是现代烘焙饼干，不把黄油、面粉和糖的单独传统描述叠加为成品结论。"
+    },
+    "wafer": {
+      "name": "威化饼",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-biscuit",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指薄片烘烤形成酥脆层状结构的威化饼，既有无夹心款，也有奶油/可可夹心款；与夹心曲奇和蛋卷分别处理。",
+      "variables": "威化片厚度、夹心比例、糖和脂肪种类、可可/香料、产品尺寸、涂层和品牌。",
+      "composition": "USDA Agricultural Marketing Service 的 A-A-20295E 商业采购规格将 wafers 作为曲奇风格之一；USDA SR Legacy 另有“Cookies, sugar wafers with creme filling, regular”（FDC 172736）记录。采购规格与夹心威化数据库记录分别代表特定技术/配方范围。",
+      "direct": "本轮未发现威化饼成品作为干预并评估长期疾病或临床健康结局的人体试验。单一夹心威化的食品成分不能代表无夹心或其他品牌产品。",
+      "specific": "2025 年 USDA 采购规格用于政府采购的产品分类和规格，不是普遍商业市场的唯一标准；FDC 数据项为加奶油馅的美国糖威化变体。",
+      "safety": "夹心威化可能含小麦、乳、大豆、坚果或芝麻等过敏原；夹心和涂层会改变每份糖、脂肪与能量。",
+      "body": "威化饼可以只有薄脆饼片，也可以夹糖脂含量不同的奶油或可可馅。美国农业部采购规格把 wafer 列为一种曲奇风格；食品成分库则另列了一种加奶油馅的糖威化。它们说明的是具体分类或变体，不能代表所有威化饼。没有找到普通威化饼的直接临床功效试验。",
+      "evidence_body": "政府采购规格和 FDC 夹心威化分别为 D0（规格/单一数据库类型），不能代表全部市场配方；成品临床结局证据不足（E-0）。",
+      "care": "看清是否夹心、是否包衣和每份克数，核对小麦、乳、大豆、坚果等过敏原；无夹心和夹心产品不要按同一个营养值估算。",
+      "taste_m": {
+        "甘": "无夹心威化的味道可能较淡，糖脂馅和涂层常增加甜味与香气。"
+      },
+      "queries": [
+        "USDA A-A-20295E Cookies wafer style specification 2025",
+        "USDA FDC cookies sugar wafers with creme filling 172736",
+        "wafer biscuit finished product direct randomized human clinical trial"
+      ],
+      "search_log": [
+        "检索 USDA 军需/采购曲奇规格、FDC 糖威化夹心变体及威化饼成品人体健康结局研究。",
+        "将“威化”身份、夹心数据库变体与临床结局证据分层。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Marketing Service. “A-A-20295E Cookies.” 2025-11-14. https://www.ams.usda.gov/sites/default/files/media/CID%20Cookies.pdf.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cookies, sugar wafers with creme filling, regular.” FoodData Central, SR Legacy, FDC ID 172736. https://fdc.nal.usda.gov/food-details/172736/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Marketing Service. “A-A-20295E Cookies.” 2025-11-14. https://www.ams.usda.gov/sites/default/files/media/CID%20Cookies.pdf.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cookies, sugar wafers with creme filling, regular.” FoodData Central, SR Legacy, FDC ID 172736. https://fdc.nal.usda.gov/food-details/172736/nutrients. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "USDA Agricultural Marketing Service 商业采购商品规格。",
+          "population": "按政府采购规格供应的曲奇类型。",
+          "exposure": "产品风格、类别与采购规格要求。",
+          "result": "将 wafer 作为一种可辨识的曲奇风格类别。",
+          "limits": "采购标准不是所有国家商业威化饼的普遍法规或完整营养分析。",
+          "distance": "D0（产品规格/身份范围）"
+        },
+        {
+          "ref": 2,
+          "design": "USDA SR Legacy 食品组成数据库条目。",
+          "population": "美国常规奶油夹心糖威化数据库食品项。",
+          "exposure": "指定夹心变体的成分记录。",
+          "result": "可作为夹心威化的一种组成参照。",
+          "limits": "不适用于无夹心威化或不同市场品牌。",
+          "distance": "D0（单一数据库变体）"
+        }
+      ],
+      "unknowns": "中国及其他市场无夹心、夹心和包衣威化的配方分布；目标成品直接人体结局；各地产品名称和标准差异。",
+      "tradition": "现代威化饼是工业烘焙食品；不将其多层结构或配方直接套入古籍食物条目。"
+    },
+    "sandwich-cookie": {
+      "name": "夹心饼干",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-biscuit",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指两片饼干之间夹糖脂奶油、可可或其他馅料的甜点心；与夹心威化、夹心苏打饼及曲奇单片分开。",
+      "variables": "饼片种类、馅料比例、糖与脂肪、乳/可可/坚果配料、是否包衣、片数、份量和地区。",
+      "composition": "芬兰国家食品成分数据库 Fineli 的“Chocolate Sandwich Cookie, Average”（food identifier 31650）按食谱计算，每 100 g 为 480 kcal、总糖 36.8 g、脂肪 26.0 g；这是一个平均食谱记录，不是市场品牌抽样或所有夹心饼干的通用值。",
+      "direct": "本轮未发现普通夹心饼干成品改善临床健康结局的直接人体试验。夹心成分或相似饼干研究不能替代目标食品试验。",
+      "specific": "Fineli 的该条目描述巧克力夹心饼干平均食谱，营养值来自食谱计算；其他馅料、饼片、品牌和地区的产品可能不同。",
+      "safety": "常见过敏原可包括小麦、乳、大豆、蛋、花生和树坚果；馅料和涂层要连同饼片一起核对标签。",
+      "body": "夹心饼干的馅料会明显改变整块食品的组成。芬兰 Fineli 把一款“巧克力夹心饼干平均食谱”列为每 100 g 约 480 kcal、总糖 36.8 g；这是按配方计算的数据库条目，不是对所有品牌抽样，更不能代表果酱馅、奶油馅或其他夹心饼干。",
+      "evidence_body": "Fineli 食谱计算记录对该指定食谱为 D0；对其他夹心饼干仅属间接参照。普通夹心饼干长期临床结局证据不足（E-0）。",
+      "care": "按包装每份和夹心类型查看糖、脂肪与热量；核对小麦、乳、大豆、蛋和坚果等过敏原，避免把一款配方外推给全类。",
+      "taste_m": {
+        "甘": "夹心糖脂馅通常强化甜味；可可或香料会改变苦香与气味。"
+      },
+      "queries": [
+        "Fineli chocolate sandwich cookie average food identifier 31650 recipe calculated nutrients",
+        "commercial sandwich cookies nutrition composition variation market survey",
+        "sandwich cookie direct randomized human health outcome trial"
+      ],
+      "search_log": [
+        "检索芬兰 Fineli 平均巧克力夹心饼干食谱记录、市场组成资料和目标成品人体试验。",
+        "将食谱计算值限于该记录，不作为品牌调查或所有夹心饼干代表值。"
+      ],
+      "refs": [
+        "Finnish Institute for Health and Welfare. “Chocolate Sandwich Cookie, Average.” Fineli Food Composition Database, food identifier 31650. https://fineli.fi/fineli/en/elintarvikkeet/31650. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Finnish Institute for Health and Welfare. “Chocolate Sandwich Cookie, Average.” Fineli Food Composition Database, food identifier 31650. https://fineli.fi/fineli/en/elintarvikkeet/31650. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "芬兰国家食品成分数据库中的平均食谱计算。",
+          "population": "数据库中编号 31650 的巧克力夹心饼干食谱。",
+          "exposure": "按食谱计算的每 100 g 营养值。",
+          "result": "每 100 g 计算值约 480 kcal、36.8 g 总糖和 26.0 g 脂肪。",
+          "limits": "不是现售品牌实测；其他饼片、夹心和地区配方不同。",
+          "distance": "D0（指定食谱记录）"
+        }
+      ],
+      "unknowns": "中国市场常见夹心饼干各类型的配方与份量分布；普通夹心饼干的直接长期人体结局；不同馅料对摄入量的影响。",
+      "tradition": "夹心饼干是现代复合烘焙点心，不把饼片与馅料的单项传统记载相加为成品结论。"
+    },
+    "egg-tart": {
+      "name": "蛋挞",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "custard-pastry",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指挞皮包裹并烘烤蛋羹馅的甜点；挞皮可为酥皮或偏曲奇式，地区样式、蛋奶糖比例和尺寸不同。与蛋奶布丁、蛋奶派和咸挞区分。",
+      "variables": "酥皮/短酥皮配方、奶油/人造黄油、蛋液和乳成分比例、糖量、单个克重、品牌/地区及烘焙方式。",
+      "composition": "香港食物安全中心公布过面包、蛋挞和鸡批的样品检测表，列出每 100 g 与每件的反式脂肪、饱和脂肪、胆固醇、总脂肪和能量；这是特定时期和样品的检测，不应当成所有现售蛋挞的平均值。中国《食品科学》还发表过发酵蛋液制作蛋挞的特定配方研究。",
+      "direct": "本轮未发现普通市售蛋挞改善疾病或长期健康结局的随机人体试验。现有蛋挞资料主要是具体产品成分抽样或食品工艺/配方分析。",
+      "specific": "徐亚鑫等研究以乳酸乳球菌、嗜热链球菌和梅利斯丛梗孢酵母发酵液蛋后制作蛋挞，考察质构、营养和风味；这是一种特制工艺和配方，不能代表普通蛋挞，也不是人体试验。",
+      "safety": "常见过敏原包括小麦、蛋和乳；酥皮油脂、糖和单个重量会影响实际摄入。蛋奶馅产品按销售方的储存和食用说明处理。",
+      "body": "蛋挞的蛋羹馅相似，挞皮却可能是酥皮或曲奇式，油脂、糖和份量都能改变组成。香港食物安全中心公布过蛋挞样品的脂肪酸与能量检测表，但它只反映当时抽到的产品。另有发酵蛋液蛋挞的食品工艺研究，研究的是特定配方，不是普通蛋挞的健康功效试验。",
+      "evidence_body": "政府抽样检测对所测蛋挞为 D0，但地区/年代和样本有限；发酵蛋液研究为 D2 食品工艺证据。未发现普通成品长期临床结局试验（E-0）。",
+      "care": "看具体挞皮配方、单个重量和过敏原提示；按店家/包装要求储存蛋奶馅点心，不把旧样本检测值当作当前所有产品的营养面板。",
+      "taste_m": {
+        "甘": "蛋羹馅中的糖形成主要甜味，烤制蛋香与挞皮油脂提供风味。"
+      },
+      "queries": [
+        "Hong Kong Centre for Food Safety test results breads egg tarts chicken pies trans fatty acids energy",
+        "Effects of Fermented Liquid Egg on Nutrition and Flavor of Custard Tart 2019 DOI sample food processing",
+        "commercial egg tart finished-food human randomized clinical health outcome trial"
+      ],
+      "search_log": [
+        "检索香港食物安全中心蛋挞样品检测表、FoodData Central 蛋奶派对照项及 2019 年发酵蛋液蛋挞食品工艺研究。",
+        "将具体样品成分和配方工艺与人体健康效应分开；未将蛋奶派记录直接视作中式/葡式蛋挞。"
+      ],
+      "refs": [
+        "Centre for Food Safety, Food and Environmental Hygiene Department, Hong Kong SAR. “Table 1: Test Results of Breads, Egg Tarts, and Chicken Pies.” https://www.cfs.gov.hk/english/nutrient/files/TFA1_Results_Eng.pdf. Accessed 2026-09-24.",
+        "Xu Y, Xiao Y, Guo S, et al. “Effects of Fermented Liquid Egg on Nutrition and Flavor of Custard Tart.” Food Science. 2019;40(6):143–150. DOI: https://doi.org/10.7506/spkx1002-6630-20180411-140.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Pie, egg custard, commercially prepared.” FoodData Central, SR Legacy, FDC ID 172783. https://fdc.nal.usda.gov/food-details/172783/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Centre for Food Safety, Food and Environmental Hygiene Department, Hong Kong SAR. “Table 1: Test Results of Breads, Egg Tarts, and Chicken Pies.” https://www.cfs.gov.hk/english/nutrient/files/TFA1_Results_Eng.pdf. Accessed 2026-09-24.",
+        "Xu Y, Xiao Y, Guo S, et al. “Effects of Fermented Liquid Egg on Nutrition and Flavor of Custard Tart.” Food Science. 2019;40(6):143–150. DOI: https://doi.org/10.7506/spkx1002-6630-20180411-140."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港食物安全中心对本地烘焙食品样品的成分检测表。",
+          "population": "表内所列的面包、蛋挞和鸡批样品。",
+          "exposure": "每 100 g 可食部分及每件的反式脂肪、饱和脂肪、胆固醇、脂肪和能量。",
+          "result": "提供被抽样蛋挞产品的营养/脂肪酸数据。",
+          "limits": "特定时期、样本和市场；不能代表当前所有品牌或家庭配方。",
+          "distance": "D0（所测商品成分）"
+        },
+        {
+          "ref": 2,
+          "design": "蛋液发酵与蛋挞配方优化/质构、营养、风味分析。",
+          "population": "特定实验室配方蛋挞。",
+          "exposure": "以发酵液蛋制备蛋挞。",
+          "result": "报告工艺条件和成品的感官、营养/挥发成分指标。",
+          "limits": "食品工艺研究；不是普通市售蛋挞比较或人体健康试验。",
+          "distance": "D2（特定实验配方）"
+        }
+      ],
+      "unknowns": "不同挞皮与蛋奶馅配方在中国零售市场的当前分布；普通蛋挞长期人体结局；样品检测数据与今天品牌标签的对应关系。",
+      "tradition": "蛋挞是近现代烘焙复合点心；不以蛋、乳或小麦原料的传统说法替代对成品的研究。"
+    },
+    "cream-puff": {
+      "name": "泡芙",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "choux-pastry",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以烫面泡芙壳膨发形成中空结构、再填入奶油或蛋奶馅的甜点；馅料、外层糖霜与尺寸不同会改变食品身份和组成。与闪电泡芙、空泡芙壳及奶油蛋糕区分。",
+      "variables": "壳体配方、蛋量、黄油/油脂、烘烤、鲜奶油或卡仕达馅、涂层、单个重量和冷藏方式。",
+      "composition": "USDA FoodData Central/SR Legacy 区分泡芙壳和“shell, with custard filling”的食谱类食品记录；壳与带馅成品的成分不可混用。一项泡芙面团研究比较鸡蛋与鸭蛋配方并做感官测试，属于加工/偏好资料。",
+      "direct": "本轮未找到普通泡芙成品影响疾病或临床健康结局的人体试验。泡芙面团原料替换研究和营养数据库食谱项不能证明临床效应。",
+      "specific": "Santoso 等比较鸡蛋与鸭蛋制作的泡芙面团/成品，并报告 600 人感官测试中的颜色、质地、香气、滋味和偏好；这不等同于健康结局研究，也不代表商业奶油馅泡芙。",
+      "safety": "小麦、蛋、乳为常见过敏原；奶油或蛋奶馅需遵循销售方的储存/保质说明。不同馅料和糖霜会明显改变每个泡芙的份量。",
+      "body": "泡芙的空壳只是半个故事：填入鲜奶油、卡仕达或其他馅料后，配方和份量都会变化。食品成分数据库也把泡芙壳与蛋奶馅泡芙分开记录。现有泡芙研究有鸡蛋/鸭蛋替换和感官测试，但没有检验普通泡芙是否带来临床健康获益。",
+      "evidence_body": "泡芙面团研究为 D0 食品工艺/感官证据，但不测人体健康结局；数据库食谱项只对应指定版本。成品临床结局证据不足（E-0）。",
+      "care": "确认是空壳、奶油馅还是卡仕达馅，再按单个重量与标签估算；核对小麦、蛋、乳等过敏原，并遵循冷藏储存说明。",
+      "taste_m": {
+        "甘": "奶油、卡仕达馅、糖霜和泡芙壳的烘焙香气共同构成甜味与香气。"
+      },
+      "queries": [
+        "choux pastry chicken duck eggs comparative study sensory test 600 people DOI",
+        "USDA FDC cream puffs prepared from recipe shell custard filling food record",
+        "cream puff finished product randomized human clinical health outcome"
+      ],
+      "search_log": [
+        "检索鸡/鸭蛋泡芙食品工艺与感官研究、USDA 食谱型泡芙壳/蛋奶馅记录及成品临床研究。",
+        "不将 600 人的感官偏好评价写成健康研究；空壳记录不代表带馅产品。"
+      ],
+      "refs": [
+        "Santoso DI, Soeryanto S, Romadhoni IF, Bahar A. “Choux Pastry Made from Fresh Eggs: A Comparative Study between Chicken and Duck Eggs.” Food Research. 2022;6(2). DOI: https://doi.org/10.26656/fr.2017.6(2).271.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cream puffs, prepared from recipe, shell, with custard filling.” FoodData Central, SR Legacy (NDB No. 18238). https://fdc.nal.usda.gov/food-search?query=cream%20puffs%2C%20prepared%20from%20recipe%2C%20shell%2C%20with%20custard%20filling. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Santoso DI, Soeryanto S, Romadhoni IF, Bahar A. “Choux Pastry Made from Fresh Eggs: A Comparative Study between Chicken and Duck Eggs.” Food Research. 2022;6(2). DOI: https://doi.org/10.26656/fr.2017.6(2).271.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cream puffs, prepared from recipe, shell, with custard filling.” FoodData Central, SR Legacy (NDB No. 18238). https://fdc.nal.usda.gov/food-search?query=cream%20puffs%2C%20prepared%20from%20recipe%2C%20shell%2C%20with%20custard%20filling. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "不同鲜蛋泡芙配方的食品加工比较与感官测试。",
+          "population": "泡芙样品；文中报告 600 人参与感官测试。",
+          "exposure": "以鸡蛋或鸭蛋配方制作泡芙。",
+          "result": "报告色泽/质地/香气/滋味及消费者偏好差异。",
+          "limits": "感官偏好不是临床健康结局；配方替换研究不代表所有商业奶油泡芙。",
+          "distance": "D0（具体泡芙食品加工与感官）"
+        },
+        {
+          "ref": 2,
+          "design": "USDA SR Legacy 食谱组成条目。",
+          "population": "带卡仕达馅泡芙食谱参考项。",
+          "exposure": "该数据库配方记录。",
+          "result": "显示数据库将带馅泡芙与泡芙壳分别分类。",
+          "limits": "不是品牌实测，也不代表鲜奶油馅或各地产品。",
+          "distance": "D0（指定食谱记录）"
+        }
+      ],
+      "unknowns": "中国零售市场空壳、奶油馅与卡仕达馅产品的实际配方分布；普通泡芙成品直接人体健康结局；不同储存和份量下的实际暴露。",
+      "tradition": "泡芙是现代烘焙甜点，不把蛋、乳、面粉等原料的单项传统记载相加成成品本草判断。"
+    },
+    "doughnut": {
+      "name": "甜甜圈",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "fried-baked-sweet",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指环形或填馅的甜甜圈，包括酵母发酵型和蛋糕型；油炸/烘烤、糖霜、涂层及馅料均会改变组成。与中式油炸面点及无糖面包分开。",
+      "variables": "酵母型/蛋糕型、油炸油和吸油、糖衣/釉面/巧克力涂层、馅料、大小、配方、品牌和烹调方式。",
+      "composition": "USDA SR Legacy 将蛋糕型普通甜甜圈与加糖/釉面版本分开收录（FDC 174990 和 174992）。这两个美国历史数据库类别不覆盖所有酵母型、夹馅、烘烤或现售商品。一项油炸甜甜圈研究测试了添加豆渣纤维的实验配方。",
+      "direct": "本轮未发现常规市售甜甜圈改善临床健康结局的可靠人体试验。油炸甜甜圈添加豆渣纤维的论文是食品配方、质构和感官研究，不是食用甜甜圈的人体功效试验。",
+      "specific": "Huq 等测试加入特定来源膳食纤维和豆渣粉的实验甜甜圈；它反映配方加工可能改变含水量、吸油和质构，不能代表标准门店甜甜圈。",
+      "safety": "甜甜圈的油炸方式、糖衣、馅料和大小影响实际摄入；小麦、蛋、乳、大豆、坚果等过敏原要看具体配料。",
+      "body": "甜甜圈有酵母发酵型、蛋糕型、夹馅和不同糖衣等做法。USDA 历史成分库把普通蛋糕型与糖衣/釉面款分开记录，说明不同形式不能混用一个营养值。另有豆渣纤维强化的实验甜甜圈研究，但那是食品配方和质构研究，不能证明普通甜甜圈有临床功效。",
+      "evidence_body": "数据库记录对指定蛋糕型甜甜圈为 D0；豆渣/纤维强化研究为 D2 实验配方，不是常规商品或人体试验。普通成品临床结局证据不足（E-0）。",
+      "care": "查看是否夹馅、糖衣和实际尺寸，留意油炸及糖量；核对小麦、蛋、乳、大豆和坚果过敏原。",
+      "taste_m": {
+        "甘": "面团本身与糖霜/馅料共同提供甜味，油炸香气会随配方变化。"
+      },
+      "queries": [
+        "USDA FoodData Central doughnuts cake type plain 174990 glazed 174992",
+        "nutritional textural sensory quality oil fried donut okara flour DOI 10.1111/jfpp.15310",
+        "commercial doughnut direct randomized human clinical trial"
+      ],
+      "search_log": [
+        "核对 USDA SR Legacy 普通/糖衣蛋糕型甜甜圈条目及豆渣纤维强化甜甜圈食品工艺研究。",
+        "将食品配方改善和消费者临床结局分开；未把强化试验写成普通甜甜圈功效。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Doughnuts, cake-type, plain (includes unsugared, old-fashioned).” FoodData Central, SR Legacy, FDC ID 174990. https://fdc.nal.usda.gov/food-details/174990/nutrients. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Doughnuts, cake-type, plain, sugared or glazed.” FoodData Central, SR Legacy, FDC ID 174992. https://fdc.nal.usda.gov/food-details/174992/nutrients. Accessed 2026-09-24.",
+        "Huq S, Das PC, Islam MA, et al. “Nutritional, Textural, and Sensory Quality of Oil Fried Donut Enriched with Extracted Dietary Fiber and Okara Flour.” Journal of Food Processing and Preservation. 2021. DOI: https://doi.org/10.1111/jfpp.15310.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Doughnuts, cake-type, plain (includes unsugared, old-fashioned).” FoodData Central, SR Legacy, FDC ID 174990. https://fdc.nal.usda.gov/food-details/174990/nutrients. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Doughnuts, cake-type, plain, sugared or glazed.” FoodData Central, SR Legacy, FDC ID 174992. https://fdc.nal.usda.gov/food-details/174992/nutrients. Accessed 2026-09-24.",
+        "Huq S, Das PC, Islam MA, et al. “Nutritional, Textural, and Sensory Quality of Oil Fried Donut Enriched with Extracted Dietary Fiber and Okara Flour.” Journal of Food Processing and Preservation. 2021. DOI: https://doi.org/10.1111/jfpp.15310."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "USDA SR Legacy 食品成分记录。",
+          "population": "指定美国蛋糕型普通甜甜圈。",
+          "exposure": "该数据库食品项。",
+          "result": "描述一种无糖衣/未加饰面的蛋糕型基线。",
+          "limits": "不代表酵母型、夹馅、门店或当前品牌甜甜圈。",
+          "distance": "D0（指定数据库形式）"
+        },
+        {
+          "ref": 3,
+          "design": "实验配方、营养/质构测定与感官测试。",
+          "population": "研究者制作的油炸甜甜圈。",
+          "exposure": "添加提取膳食纤维和豆渣粉的不同配方。",
+          "result": "特定添加比例改变成品营养和物理/感官属性。",
+          "limits": "实验配方，不是普通商业样品或人体临床试验。",
+          "distance": "D2（实验室强化配方）"
+        }
+      ],
+      "unknowns": "中国当前门店和包装甜甜圈各类型的配方/份量分布；常规成品的人体结局；油炸油和储存变化对实际暴露的影响。",
+      "tradition": "现代甜甜圈有多种发酵、油炸和装饰配方，不以单一面粉或糖的传统记载代替成品研究。"
+    },
+    "muffin": {
+      "name": "马芬",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "baked-cake",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以面粉、液体、油脂和膨松剂烘烤成杯状的甜味马芬；可加水果、坚果、巧克力、糖霜或夹心。与英式 muffin 面包、杯子蛋糕及早餐面包分开。",
+      "variables": "面粉/谷物、糖、油脂、纤维、果料、份量、是否糖霜、加工方式和购买地区。",
+      "composition": "USDA SR Legacy 有蓝莓商用马芬参考记录（FDC 172765），而人体试验研究的是特定小米或改良配方。商用品类与功能性/实验配方并不相同。",
+      "direct": "两项短期试验研究特定马芬配方：一项随机交叉研究纳入 15 名健康者和 14 名糖尿病前期者，比较指粟马芬与小麦对照；指粟马芬在糖尿病前期参与者中降低餐后血糖峰值及胰岛素增量曲线面积。另一项 2025 年随机双盲交叉试验纳入 19 人（10 名健康者、9 名 2 型糖尿病者），约 250 kcal 的低糖无小麦改良马芬相较标准马芬降低短时餐后血糖/胰岛素反应。两者都只说明具体配方的单次进食反应。",
+      "specific": "Almaski 等的指粟配方和 Stoner 等的改良马芬不是普通货架马芬；样本小，测量为餐后数小时指标，不回答长期疾病风险、日常品牌差异或所有马芬的效果。",
+      "safety": "马芬常见小麦、蛋、乳、坚果或大豆等过敏原；加糖霜、巧克力或馅料会改变份量与营养面板。",
+      "body": "马芬人体研究存在，但研究的不是所有店售马芬。一项 29 人的交叉试验比较指粟马芬和小麦马芬，在糖尿病前期参与者中观察到较低的餐后血糖峰值和胰岛素反应；另一项 19 人短期试验比较约 250 kcal 的低糖改良马芬与标准马芬，结果也只适用于那两款具体配方。它们不能证明普通马芬有长期健康效果。",
+      "evidence_body": "两项试验均为 D0/D1（具体马芬配方、单次餐后指标），但对整个市售马芬类别只能外推为 D2；样本小、观察时间短，长期临床结局仍未知。",
+      "care": "查看马芬实际克重、糖霜/夹料和每份添加糖；若有血糖管理需求，不能用单一小型试验中的特殊配方替代专业建议，核对过敏原。",
+      "taste_m": {
+        "甘": "糖、果干、巧克力和糖霜可贡献主要甜味；面粉和油脂配方改变口感。"
+      },
+      "queries": [
+        "Finger millet-based muffin decreases insulin response prediabetes randomized controlled crossover trial DOI",
+        "Postprandial Glycemia Insulinemia standard modified muffin healthy adults type 2 diabetes 2025 DOI",
+        "USDA FDC blueberry muffins commercially prepared 172765 and muffin clinical outcomes"
+      ],
+      "search_log": [
+        "核对 2022 指粟马芬随机交叉试验、2025 标准/改良马芬餐后试验及 USDA 蓝莓商用马芬数据库记录。",
+        "区分特制配方、短时餐后指标和普通商用品类；不将单次反应写成长程疾病获益。"
+      ],
+      "refs": [
+        "Almaski A, Coe S, Lightowler H, Clegg M, Thondre PS. “Finger Millet-Based Muffin Decreases Insulin Response in Individuals with Prediabetes in a Randomised Controlled Trial.” British Journal of Nutrition. 2023;129(4):650–659. DOI: https://doi.org/10.1017/S0007114522001623.",
+        "Stoner JT, Buga A, Crabtree CD, et al. “Postprandial Glycemia and Insulinemia Responses to a Standard and Modified Muffin in Healthy Adults and Adults with Type 2 Diabetes.” Foods. 2025;14(24):4318. DOI: https://doi.org/10.3390/foods14244318.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “Muffins, blueberry, commercially prepared (includes mini-muffins).” FoodData Central, SR Legacy, FDC ID 172765. https://fdc.nal.usda.gov/food-details/172765/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Almaski A, Coe S, Lightowler H, Clegg M, Thondre PS. “Finger Millet-Based Muffin Decreases Insulin Response in Individuals with Prediabetes in a Randomised Controlled Trial.” British Journal of Nutrition. 2023;129(4):650–659. DOI: https://doi.org/10.1017/S0007114522001623.",
+        "Stoner JT, Buga A, Crabtree CD, et al. “Postprandial Glycemia and Insulinemia Responses to a Standard and Modified Muffin in Healthy Adults and Adults with Type 2 Diabetes.” Foods. 2025;14(24):4318. DOI: https://doi.org/10.3390/foods14244318."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "单盲随机对照交叉试验。",
+          "population": "15 名健康者与 14 名糖尿病前期参与者。",
+          "exposure": "指粟马芬与小麦对照马芬；观测餐后血糖/胰岛素、胃排空和饱腹感。",
+          "result": "糖尿病前期组中，指粟马芬降低血糖峰值和胰岛素增量曲线面积。",
+          "limits": "特殊指粟配方；单次餐后测量；小样本，不能代表常见商品或长期疾病结局。",
+          "distance": "D0（指定试验配方及短时生理结局）"
+        },
+        {
+          "ref": 2,
+          "design": "随机、双盲、交叉餐后试验。",
+          "population": "19 名成年人：10 名健康者、9 名 2 型糖尿病者。",
+          "exposure": "单次食用约 250 kcal 标准马芬或低糖、无小麦改良马芬。",
+          "result": "改良马芬在数小时餐后测量中降低血糖和胰岛素反应。",
+          "limits": "试验配方特定、样本小、单次摄入；无长期临床或市售品牌结局。",
+          "distance": "D0（特定实验配方/急性餐后指标）"
+        }
+      ],
+      "unknowns": "不同国家商业马芬的配方和真实份量分布；一般市售马芬长期摄入与疾病结局；短时餐后差异能否持续及其临床意义。",
+      "tradition": "马芬是现代烘焙甜点；不从谷物、果料或单个功能配料推导整类马芬的古籍本草结论。"
+    },
+    "pound-cake": {
+      "name": "磅蛋糕",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "baked-cake",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指质地较密、以面粉、糖、蛋和较多油脂烘烤的蛋糕类点心；传统比例与现代商业版本可能不同，且黄油、植物油、糖和添加物配方有变化。",
+      "variables": "黄油或其他油脂、鸡蛋与面粉比例、糖、乳成分、发泡剂、配料/糖霜、切片大小、品牌和储藏。",
+      "composition": "USDA SR Legacy 分别收录黄油型商用磅蛋糕（FDC 172704）等参考食品；Food Standards Australia New Zealand 的 2012 cake-and-slice 分析说明，多数蛋糕营养值通过典型配方及相对用量计算。两者都不是现售磅蛋糕市场的完整抽样。",
+      "direct": "本轮未找到普通磅蛋糕成品作为干预并检验长期临床结局的可靠人体试验。蛋糕配方和数据库数据可描述特定产品，不构成健康效应证据。",
+      "specific": "FSANZ 分析采用典型食谱法为多类蛋糕计算营养值；不同油脂、糖霜、配料和份量会改变磅蛋糕组成。",
+      "safety": "小麦、蛋、乳为常见相关过敏原；按切片重量和营养标签查看糖、脂肪与能量，夹料/糖霜需单独核算。",
+      "body": "磅蛋糕的名字暗示一种传统比例，但现代商品可能用黄油、其他油脂或不同发泡方式。USDA 食品成分库有黄油型商用磅蛋糕参考条目，澳新食品标准局也说明蛋糕营养数据常通过典型食谱计算；这些都不是每个品牌的实测标签。没有找到普通磅蛋糕的直接临床功效试验。",
+      "evidence_body": "FDC 为 D0（指定数据库食品记录）；FSANZ 食谱计算是 D0/D1 的配方成分信息。两者都不是健康结局证据；成品人体临床证据不足（E-0）。",
+      "care": "按实际切片克重和糖霜/夹料看营养标签；核对小麦、蛋、乳过敏原，避免将食谱数据库值当作餐厅份量。",
+      "taste_m": {
+        "甘": "糖形成主要甜味，黄油或其他油脂增加浓郁感；配方与烘烤程度会改变香气。"
+      },
+      "queries": [
+        "USDA FDC cake pound commercially prepared butter 172704 composition",
+        "Food Standards Australia New Zealand 2012 Cake and slice analytical program recipe approach",
+        "pound cake finished-food randomized human clinical outcomes"
+      ],
+      "search_log": [
+        "核对 USDA 磅蛋糕 SR Legacy 记录、FSANZ 蛋糕食谱计算说明和目标成品人体临床试验。",
+        "将食品数据库/食谱计算限于特定配方，不外推为所有磅蛋糕或人体健康效应。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cake, pound, commercially prepared, butter (includes fresh and frozen).” FoodData Central, SR Legacy, FDC ID 172704. https://fdc.nal.usda.gov/food-details/172704/nutrients. Accessed 2026-09-24.",
+        "Food Standards Australia New Zealand. “2012 Cake and Slice Analytical Program.” AUSNUT Food Composition Database. https://www.foodstandards.gov.au/science-data/food-composition-databases/ausnut/foodnutrient/cake. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Cake, pound, commercially prepared, butter (includes fresh and frozen).” FoodData Central, SR Legacy, FDC ID 172704. https://fdc.nal.usda.gov/food-details/172704/nutrients. Accessed 2026-09-24.",
+        "Food Standards Australia New Zealand. “2012 Cake and Slice Analytical Program.” AUSNUT Food Composition Database. https://www.foodstandards.gov.au/science-data/food-composition-databases/ausnut/foodnutrient/cake. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "USDA SR Legacy 食品组成数据库条目。",
+          "population": "指定黄油型商用磅蛋糕参考食品。",
+          "exposure": "该数据库食品项的组成记录。",
+          "result": "提供一个黄油型商用磅蛋糕的参照类别。",
+          "limits": "不代表其他油脂/糖霜版本和现售品牌；非临床试验。",
+          "distance": "D0（单一数据库食品记录）"
+        },
+        {
+          "ref": 2,
+          "design": "国家级食品组成库中的配方计算项目。",
+          "population": "澳大利亚 2011–12 膳食调查涉及的蛋糕和切片类食品。",
+          "exposure": "按典型食谱与相对配料比例计算营养值。",
+          "result": "多数蛋糕/切片的营养剖面来自食谱计算。",
+          "limits": "地区与时期特定；食谱估算不等于所有品牌的实验室检测。",
+          "distance": "D0/D1（食谱组成估算）"
+        }
+      ],
+      "unknowns": "各地商用磅蛋糕的黄油/油脂、糖、份量和糖霜配方分布；普通成品直接长期人体结局；食谱计算对当前品牌标签的代表性。",
+      "tradition": "磅蛋糕是现代烘焙甜点；其商品配方和名称不对应一个固定古籍食物身份。"
+    }
+  }
+}
