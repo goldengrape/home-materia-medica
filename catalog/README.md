@@ -31,13 +31,25 @@ aliases:
 volume:
 section:
 tags: []
-entry_type: ingredient | processed_food | composite_food | beverage | supplement | scene
+entry_type: ingredient | processed_food | composite_food | beverage | supplement | scene | research_parent
 parent_entries: []
 related_entries: []
 research_depth: R1 | R2 | R3
 status: planned | researching | drafting | review | published
 evidence_cutoff:
+publish: true
+child_entries: []
 entry_path:
 ```
 
 研究深度和证据规则见 `docs/居家本草编纂凡例-v1.0.md`。
+
+
+### Research Parent
+
+少数高文献密度类别可以建立 `entry_type: research_parent` 的后台共享节点，例如 `coffee-base`。
+
+- `publish: false`
+- 不进入纸书 / 网页书正式目录
+- 研究文件放在 `references/shared/<id>/research.md`
+- 子条复用时必须重新判断 D，不能无条件继承母页结论
