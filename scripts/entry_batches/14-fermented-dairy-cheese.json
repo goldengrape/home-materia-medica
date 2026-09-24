@@ -1,0 +1,579 @@
+{
+  "batch": {
+    "id": "14-fermented-dairy-cheese",
+    "title": "发酵乳、奶酪与乳脂",
+    "catalog_order": 14,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; PubMed/PMC and publisher pages; Codex; FDA; eCFR; WHO; USDA FoodData Central",
+    "exa_search_calls": 38,
+    "exa_hits": 182,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-14-fermented-dairy-cheese",
+    "identity_red_team": [
+      "冻酸奶、普通冷藏酸奶与冰淇淋不是同一产品；菌群/粪便替代终点不等于临床获益。",
+      "风味酸奶的总糖、添加糖和乳糖需区分；跨国标签调查不代表个体摄入或因果结局。",
+      "常温酸奶的“常温”不代表统一工艺、活菌状态或临床效果；鲜/巴氏试验不代表所有货架商品。",
+      "马苏里拉的鲜食与低水分披萨用版本不同；市场钠数据是成分而非健康结局证据。",
+      "切达研究限于特定配方、份量和短期血脂指标；不能推成奶酪普遍保护心血管。",
+      "Grana Padano不等于帕玛森；小型高血压试验不作为帕玛森降压功效。",
+      "奶油奶酪与淡奶油身份不同；单餐餐后甘油三酯不代表长期疾病效应。",
+      "再制奶酪法规定义和零售钠测量分开；成分均值不能代表每个品牌。",
+      "黄油随机试验研究脂肪替代和短期血脂，不等同临床事件；观察性综述不证明因果。",
+      "淡奶油的中文商品名不等于英文 light cream；脂肪含量以具体地区标准和标签为准。"
+    ]
+  },
+  "entries": {
+    "frozen-yogurt": {
+      "name": "冻酸奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "frozen-fermented-dairy",
+      "research_depth": "R1",
+      "shared_parent": "frozen-desserts-base",
+      "identity": "本条指以发酵乳/酸奶为基底、冻结后食用的冷冻食品；配方可含糖、乳脂、乳固形物、稳定剂及活菌/灭活菌。它不等于冷冻后的普通酸奶、冰淇淋，也不自动等于含有足量活益生菌的产品。",
+      "variables": "发酵菌株与活菌量、冻结和储存条件、乳脂/糖/甜味剂、份量、是否添加益生元，以及具体观察终点。",
+      "composition": "冻酸奶并无单一配方。冷冻可能影响菌体存活，但菌株、配方和储存时长各异；标签所列菌种或“含益生菌”不能单独说明食用时活菌量或临床效果。糖、能量和过敏原以实际商品标签为准。",
+      "direct": "本轮未检得能证明常见商业冻酸奶改善疾病或长期健康结局的高质量试验。找到一项9名21–24岁健康男性的短期顺序摄入研究：每日60克冻酸奶2周，再摄入冻酸奶加乳蔗糖；报告粪便菌群和代谢物变化。研究没有平行对照，观察的是替代终点，不能据此推成临床功效。",
+      "specific": "这项直接冻酸奶研究使用特定菌种制品并按固定方案摄入，不代表品牌配方和储存状态各异的零售商品。普通酸奶/发酵乳综述只提供D2背景；冻酸奶的口感、冷冻和添加糖不能从普通酸奶证据中省略。",
+      "safety": "含乳产品涉及牛奶过敏原；复配款还应核对坚果、大豆等配料。购买时查看每份添加糖和脂肪，按冷冻保存要求处理；不能因“发酵”或“益生菌”宣传而替代医疗建议。",
+      "body": "冻酸奶是冷冻甜品与发酵乳的交叉品类，配方和活菌量因产品而异。现有一项小型研究让9名健康年轻男性连续摄入特定冻酸奶，观察到粪便菌群及代谢物变化；它没有平行对照，也没有测量疾病或长期健康结局。因此，这些结果不能直接证明超市里的任一冻酸奶有“调肠”功效。选购时仍要看配料、每份添加糖和乳制品过敏原。",
+      "evidence_body": "特定冻酸奶短期菌群/粪便代谢物研究为D0，但样本仅9人、无平行对照且终点为替代指标（E-D）；本轮未检得常见商业成品的长期临床结局试验，不能推为疾病预防或治疗效果。",
+      "care": "核对乳及复配过敏原、添加糖与份量，并按标签冷冻储存。粪便菌群变化不是健康获益的替代证明。",
+      "taste_m": {
+        "甘": "冻酸奶可呈酸、甜与乳香，甜度受配方影响；仅为感官描述。"
+      },
+      "queries": [
+        "frozen yogurt randomized human clinical trial health outcomes frozen yoghurt fecal microbiota DOI",
+        "frozen yogurt frozen fermented dairy food composition probiotic survival frozen yogurt standards official"
+      ],
+      "search_log": [
+        "检索冻酸奶/ frozen yoghurt 直接人体研究；首次检索遭 Exa 限流后重试，找到9名男性短期粪便菌群研究，没有临床疾病结局。",
+        "区分冷冻酸奶、发酵乳与冰淇淋；Codex/冻甜品母页只作身份背景，不把普通酸奶效果迁入冻酸奶。",
+        "核对 J-STAGE 原文题名、人数、摄入量、顺序和终点；原文英语题名及检索结果保存在 stage 中。"
+      ],
+      "refs": [
+        "Takumi H, Ochi H, Okada S, Li ST, Terada A, Mitsuoka T. “Effect of Ingesting Frozen Yoghurt in Combination with Lactosucrose Consumption on the Fecal Microbiota and Fecal Metabolitic Activity in Healthy Adults.” Japanese Journal of Food Microbiology. 2001;18(2):49–56. https://www.jstage.jst.go.jp/article/jsfm1994/18/2/18_2_49/_article/-char/en.",
+        "Savaiano DA, Hutkins RW. “Yogurt, cultured fermented milk, and health: a systematic review.” Nutrition Reviews. 2021;79(5):599–614. DOI: https://doi.org/10.1093/nutrit/nuaa013.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Takumi H, Ochi H, Okada S, Li ST, Terada A, Mitsuoka T. “Effect of Ingesting Frozen Yoghurt in Combination with Lactosucrose Consumption on the Fecal Microbiota and Fecal Metabolitic Activity in Healthy Adults.” Japanese Journal of Food Microbiology. 2001;18(2):49–56. https://www.jstage.jst.go.jp/article/jsfm1994/18/2/18_2_49/_article/-char/en.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "短期顺序摄入前后比较；先冻酸奶2周，再冻酸奶加乳蔗糖2周。",
+          "population": "9名21–24岁健康男性。",
+          "exposure": "每日60克特定冻酸奶，随后每日60克冻酸奶加2克乳蔗糖；制品含特定乳酸菌。",
+          "result": "研究报告双歧杆菌及若干粪便腐败代谢物等指标改变。",
+          "limits": "样本很小、无平行对照，干预短，终点为菌群和粪便代谢物；不能证明症状、疾病或长期结局改善。",
+          "distance": "D0（研究制品为冻酸奶；零售商品配方和活菌量仍不同）"
+        }
+      ],
+      "unknowns": "不同商品冷冻与储存后的菌株存活量、糖与能量分布；冻酸奶对症状、长期肠道结局或疾病风险的可靠人体证据。",
+      "tradition": "未核实到与现代商业冻酸奶直接对应的传统本草记载；不将古籍乳、酪资料转写为冻酸奶药性。"
+    },
+    "flavored-yogurt": {
+      "name": "风味酸奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-dairy",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指加入水果、果酱、糖、香料或其他调味配料的发酵乳制品；不同市场的标准、甜味来源和产品结构差异明显。不是原味酸奶，也不等于添加真实整果的某一配方。",
+      "variables": "每份容量、乳基底脂肪与蛋白质、总糖和添加糖、果料或糖浆、代糖/香料、菌种与发酵后处理。",
+      "composition": "商业产品的总糖可同时包括乳糖和添加糖；营养标签上总糖与添加糖不是同一数值。跨国横断面产品调查发现风味酸奶糖含量及产品差异较大，但这是货架产品成分调查，不是食用者健康结局研究。",
+      "direct": "本轮未检得能够把风味酸奶本身与原味酸奶随机比较并证明长期健康结局的直接试验。较直接的资料是跨3国的零售产品横断面调查，纳入3,724种产品；调查样本中酸奶类产品总糖均值约11.5 g/100 g，且糖含量差异大。该结果说明标签需要比较，不能单独推导个体实际摄入或疾病风险。",
+      "specific": "Coyle等调查估算部分酸奶产品的总糖中可有相当比例来自游离糖，但成分数据库/产品标签比较不能确认每位消费者摄入量。一般发酵乳研究属于D2，不能因为“酸奶”同名就认为含糖风味款具有相同结果。",
+      "safety": "乳是主要过敏原，果料或复配配方还可能含其他过敏原。比较营养标签时同时看每份份量、总糖与添加糖；“含果味”或“无添加糖”不等于无总糖或低能量。",
+      "body": "风味酸奶的差别常藏在配方和份量里。跨3国对3,724种乳品的产品调查中，样本酸奶类产品总糖均值约为每100克11.5克，产品间跨度很大；总糖还可能同时包括乳糖和添加糖。这项研究量的是货架上的产品，不是受试者吃酸奶后的健康变化，所以不能据此给某一杯酸奶贴疗效或伤害标签。选购时把每份重量、总糖和添加糖一起看，比只看“水果味”更有用。",
+      "evidence_body": "本条直接人体健康结局证据不足（E-0）。直接产品资料为3国3,724种产品横断面调查（D0，成分/标签而非干预）：调查样本中酸奶类产品总糖均值约11.5 g/100 g，产品差异显著；不构成疾病效应证据。",
+      "care": "注意每份重量与总糖/添加糖的区别；乳过敏者核对标签，复合果料还需核对其他配料。标签调查不代表个人实际摄入。",
+      "taste_m": {
+        "酸": "发酵酸味常与果香、甜味并存；各商品差异较大，仅作感官描述。",
+        "甘": "甜度取决于乳糖、添加糖或甜味剂，不能从名称判断。"
+      },
+      "queries": [
+        "flavored yogurt sugar content product survey three countries mean total sugar per 100 g DOI",
+        "FDA added sugars yogurt nutrition label total sugars added sugars dairy allergy official"
+      ],
+      "search_log": [
+        "定向检索风味/加糖酸奶的人体健康结果与货架成分调查；未找到可把特定品牌/配方与长期结局对应的试验。",
+        "核对 Coyle 等3国3,724种产品的横断面调查、英文原题、DOI及摘要数值；作为成分证据而非临床效果。",
+        "对照 FDA 添加糖标签说明；总糖包含自然糖与添加糖的读法已写入正文。"
+      ],
+      "refs": [
+        "Coyle DH, Ndanuko R, Singh S, Huang P, Wu JH. “Variations in Sugar Content of Flavored Milks and Yogurts: A Cross-Sectional Study across 3 Countries.” Current Developments in Nutrition. 2019;3(6):nzz060. DOI: https://doi.org/10.1093/cdn/nzz060. PMID: 31187086.",
+        "U.S. Food and Drug Administration. “Added Sugars on the Nutrition Facts Label.” https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "Savaiano DA, Hutkins RW. “Yogurt, cultured fermented milk, and health: a systematic review.” Nutrition Reviews. 2021;79(5):599–614. DOI: https://doi.org/10.1093/nutrit/nuaa013.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Coyle DH, Ndanuko R, Singh S, Huang P, Wu JH. “Variations in Sugar Content of Flavored Milks and Yogurts: A Cross-Sectional Study across 3 Countries.” Current Developments in Nutrition. 2019;3(6):nzz060. DOI: https://doi.org/10.1093/cdn/nzz060. PMID: 31187086.",
+        "U.S. Food and Drug Administration. “Added Sugars on the Nutrition Facts Label.” https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "跨国零售食品横断面产品调查。",
+          "population": "澳大利亚、法国和美国市场共3,724种牛奶与酸奶产品；风味酸奶为其中一个产品类别。",
+          "exposure": "比较市售风味乳品的营养标签总糖及其估算的游离糖含量。",
+          "result": "调查样本中酸奶类产品总糖均值约11.5 g/100 g，产品范围与不同国家/类别之间存在明显差异。",
+          "limits": "不是摄入研究或人体健康试验；标签总糖不等于添加糖，估算游离糖有假设，市场样品不覆盖所有品牌和时期。",
+          "distance": "D0（产品类别成分调查；对健康结局无直接性）"
+        }
+      ],
+      "unknowns": "当前不同国家及品牌的配方比例；不同甜味来源/份量与实际摄入；风味酸奶与原味酸奶长期比较的临床结局。",
+      "tradition": "本条为现代发酵乳加工类别；传统乳、酪记载不能用于推定加糖、加果料的现代风味酸奶性味或功效。"
+    },
+    "shelf-stable-yogurt": {
+      "name": "常温酸奶",
+      "volume": "乳酪与发酵部",
+      "entry_type": "fermented_food",
+      "family": "fermented-dairy",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指可在未开封时常温流通的酸奶/发酵乳商品。常温稳定可能来自发酵后热处理、无菌包装、配方与包装共同作用；具体工艺需看当地标准和标签。本条不把所有常温产品视为同一种菌体状态。",
+      "variables": "发酵菌种与后处理、是否经热处理、无菌包装、储存条件、糖与脂肪、保质期及开封后冷藏要求。",
+      "composition": "“常温”描述储存/流通条件，不是营养组成或菌体活性的保证。热处理发酵乳和常温无菌包装产品的工艺不必相同；按实际产品标签及适用标准确定身份。",
+      "direct": "一项2024年健康成人随机双盲平行试验，比较每日3次、每次125克、持续8周的鲜酸奶与巴氏处理酸奶，观察免疫细胞与细胞因子指标。它研究的是特定试验用酸奶，不足以代表全部货架常温商品，也没有证明预防感染或免疫疾病。",
+      "specific": "Codex发酵乳标准涵盖热处理发酵乳，FDA酸奶身份标准也说明标准化加工定义；标准回答产品身份，不回答常温酸奶的健康效果。一般酸奶综述及鲜/巴氏酸奶试验对某一常温品牌只能作邻近证据。",
+      "safety": "未开封商品按标签储存，开封后依说明冷藏并在建议期限内食用；检查乳过敏原、添加糖和是否添加活菌。常温保存不意味着开封后可长期放置。",
+      "body": "常温酸奶首先是储存与加工类别，不是“活菌更多”或“营养更好”的保证。2024年一项健康成人试验比较了特定鲜酸奶和巴氏处理酸奶，连续8周观察免疫指标；它没有研究所有常温货架商品，也没有证明可以预防感染。购买时看产品工艺说明和配料，开封后按标签冷藏。",
+      "evidence_body": "鲜/巴氏酸奶随机试验提供D2邻近证据：125 g、每日3次、8周，测量免疫细胞/细胞因子而非疾病预防；对常温零售产品的长期临床结局仍为E-0。",
+      "care": "确认标签上的热处理、活菌说明、糖和储存要求；开封后按说明冷藏。常温包装与健康效应不能画等号。",
+      "taste_m": {
+        "酸": "酸味随菌种与发酵、后处理而异，品牌配方差别较大。",
+        "甘": "甜度按配料与营养标签判断；仅为感官描述。"
+      },
+      "queries": [
+        "ambient shelf stable yogurt randomized clinical trial pasteurized yogurt human health outcomes DOI",
+        "Codex fermented milk heat-treated fermented milk standard yogurt shelf stable official"
+      ],
+      "search_log": [
+        "检索常温/货架稳定酸奶与UHT/热处理发酵乳的直接人体研究；发现鲜与巴氏酸奶随机试验，但商品身份有差距。",
+        "核对试验人群、8周、摄入量和免疫终点；不把细胞因子结果写作疾病预防。",
+        "查阅 Codex CXS 243 发酵乳标准和 FDA 酸奶身份定义，区分标准/工艺资料与临床证据。"
+      ],
+      "refs": [
+        "Rivero-Pino F, Casquete M, Castro MJ, Redondo del Río P, Gutierrez E, Mayo-Íscar A, et al. “Prospective, Randomized, Double-Blind Parallel Group Nutritional Study to Evaluate the Effects of Routine Intake of Fresh vs. Pasteurized Yogurt on the Immune System in Healthy Adults.” Nutrients. 2024;16(12):1969. DOI: https://doi.org/10.3390/nu16121969. PMID: 38931322.",
+        "Codex Alimentarius Commission. “Standard for Fermented Milks.” CXS 243-2003. https://www.fao.org/input/download/standards/400/CXS_243e.pdf.",
+        "U.S. Electronic Code of Federal Regulations. “21 CFR § 131.200 — Yogurt.” https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-131/subpart-B/section-131.200.",
+        "Savaiano DA, Hutkins RW. “Yogurt, cultured fermented milk, and health: a systematic review.” Nutrition Reviews. 2021;79(5):599–614. DOI: https://doi.org/10.1093/nutrit/nuaa013.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Rivero-Pino F, Casquete M, Castro MJ, Redondo del Río P, Gutierrez E, Mayo-Íscar A, et al. “Prospective, Randomized, Double-Blind Parallel Group Nutritional Study to Evaluate the Effects of Routine Intake of Fresh vs. Pasteurized Yogurt on the Immune System in Healthy Adults.” Nutrients. 2024;16(12):1969. DOI: https://doi.org/10.3390/nu16121969. PMID: 38931322.",
+        "Codex Alimentarius Commission. “Standard for Fermented Milks.” CXS 243-2003. https://www.fao.org/input/download/standards/400/CXS_243e.pdf."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "单中心、前瞻、随机、双盲、平行组营养试验，8周。",
+          "population": "健康成人；该摘要未在所查页面列明样本量，故不填推测数字。",
+          "exposure": "试验用鲜酸奶或巴氏处理酸奶，每次125 g、每日3次、持续8周。",
+          "result": "报告特定免疫指标变化，包括IgM、刺激后的IFN-γ及外周T细胞等；同时观察到先天免疫相关指标改变。",
+          "limits": "研究产品不等同于所有常温货架酸奶；终点为免疫实验室指标，样本规模未从摘要确认，也不能据此声称预防/治疗感染或疾病。",
+          "distance": "D2（相邻的热处理酸奶干预；未确认是常温零售商品）"
+        }
+      ],
+      "unknowns": "不同常温产品的加工/包装方式和活菌状态；开封后的菌体存活；与冷藏酸奶的长期人体健康结局比较。",
+      "tradition": "常温发酵乳是现代加工和包装类别；不把古籍乳酪条目移作某种现代货架产品的药性依据。"
+    },
+    "mozzarella-cheese": {
+      "name": "马苏里拉奶酪",
+      "volume": "乳酪与发酵部",
+      "entry_type": "cheese",
+      "family": "cheese",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指以凝乳与拉伸工艺制成的马苏里拉类奶酪，包括含水量、脂肪和盐分不同的鲜食、低水分和脱脂版本。披萨烘焙用低水分马苏里拉与新鲜球状马苏里拉不可视为同一暴露。",
+      "variables": "含水量、脂肪等级、盐水/干盐、钠、成熟时间、份量、食用温度及是否与披萨/面包等复合食品同食。",
+      "composition": "马苏里拉的能量、钠、饱和脂肪和蛋白质随水分、脂肪等级、品牌与盐渍方式变化。美国一项零售样品分析中，低水分部分脱脂马苏里拉的钠含量在不同品牌/形态间跨度较大；该数据不是全球配方均值。",
+      "direct": "本轮未检得以马苏里拉为明确干预、测量长期临床健康结局的直接人体试验。更广的硬质奶酪RCT综述比较的是奶酪与黄油/其他食品，不能转作马苏里拉专属效果。",
+      "specific": "Agarwal等对1,665份美国零售切达、低水分部分脱脂马苏里拉及再制奶酪样品测钠；马苏里拉均值约666 mg/100 g，样品间差异明显。它是市场成分分析，不是消费者结局研究。",
+      "safety": "乳是主要过敏原。若需控制钠或饱和脂肪，应按具体产品每份营养标签核对；同一名称下鲜食和披萨用产品可有明显配方差异。",
+      "body": "马苏里拉不是单一配方：鲜食球状奶酪和披萨用低水分产品，在水分、盐分和脂肪上可能不同。本轮没有找到能把马苏里拉本身与长期疾病结局联系起来的直接人体试验。一项美国零售样品研究测了746份低水分部分脱脂马苏里拉，平均钠约666毫克/100克，但品牌和形态之间差异明显；这更适合提醒读者看标签，不能当成所有马苏里拉的固定数值。",
+      "evidence_body": "马苏里拉的长期临床结局为E-0；直接产品证据主要是美国零售样品钠含量调查（D0成分资料），并非人体干预。硬质奶酪对照试验只能作D2类别背景。",
+      "care": "对乳过敏者需避免食用并注意交叉接触；关注商品的水分/脂肪类型、每份钠和实际份量。不要把单次品牌测值当成全品类标准。",
+      "taste_m": {
+        "甘": "乳香和微咸、微甘可随水分、盐分及成熟程度变化；仅为感官描述。",
+        "咸": "咸味随盐水、盐渍方式与品牌变化。"
+      },
+      "queries": [
+        "mozzarella cheese randomized clinical trial human health outcomes cardiometabolic DOI",
+        "mozzarella cheese sodium content retail products 1665 samples official composition study DOI cheese meta analysis"
+      ],
+      "search_log": [
+        "检索马苏里拉直接人体干预和奶酪矩阵试验；本轮未找到马苏里拉特异长期临床结局试验。",
+        "核对美国零售1,665样品分析及低水分部分脱脂马苏里拉子样本数、钠均值和DOI。",
+        "查阅 Codex 奶酪标准、乳过敏资料；将市场成分信息与通用奶酪健康证据分开。"
+      ],
+      "refs": [
+        "Agarwal S, McCoy D, Graves WB, Gerard PD, Clark S. “Sodium content in retail Cheddar, Mozzarella, and process cheeses varies considerably in the United States.” Journal of Dairy Science. 2011;94(3):1605–1615. DOI: https://doi.org/10.3168/jds.2010-3782. PMID: 21338828.",
+        "de Goede J, Geleijnse JM, Ding EL, Soedamah-Muthu SS. “Effect of cheese consumption on blood lipids: a systematic review and meta-analysis of randomized controlled trials.” Nutrition Reviews. 2015;73(5):259–275. DOI: https://doi.org/10.1093/nutrit/nuu060.",
+        "Codex Alimentarius Commission. “General Standard for Cheese.” CXS 283-1978. https://www.fao.org/input/download/standards/175/CXS_283e.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Agarwal S, McCoy D, Graves WB, Gerard PD, Clark S. “Sodium content in retail Cheddar, Mozzarella, and process cheeses varies considerably in the United States.” Journal of Dairy Science. 2011;94(3):1605–1615. DOI: https://doi.org/10.3168/jds.2010-3782. PMID: 21338828.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国零售产品样品的实验室成分分析，覆盖4个地区、3周收样。",
+          "population": "共1,665份产品；其中746份低水分部分脱脂马苏里拉样品。",
+          "exposure": "测量不同品牌及形态奶酪的钠含量。",
+          "result": "低水分部分脱脂马苏里拉钠均值约666 mg/100 g，95%样品范围约452–876 mg/100 g；标签均值约685 mg/100 g。",
+          "limits": "美国特定市场和时期的商品样本；不是营养干预或健康结局研究，不能代表其他地区或所有鲜食马苏里拉。",
+          "distance": "D0（目标奶酪类别的商品成分直接证据；对人体结局无直接性）"
+        }
+      ],
+      "unknowns": "不同地区鲜食与低水分产品的钠/脂肪分布；马苏里拉替代其他食物时的长期临床效应。",
+      "tradition": "现代马苏里拉奶酪无可一一对应的传统本草条目；传统牛乳/酪材料不用于推定其健康效果或药性。"
+    },
+    "cheddar-cheese": {
+      "name": "切达奶酪",
+      "volume": "乳酪与发酵部",
+      "entry_type": "cheese",
+      "family": "cheese",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指切达式熟成奶酪；成熟时间、脂肪含量、钠、乳源和加工方式均可能不同。试验中的爱尔兰全脂/减脂切达与市售切达切片不必具有相同配方。",
+      "variables": "熟成时间、脂肪与钠、份量、是否融化、替代的食物、整体饮食及研究人群。",
+      "composition": "切达的蛋白质、脂肪、钠和能量随含水量、成熟与品牌不同。产品调查显示市场钠含量变化明显；营养标签应按产品与份量解释。",
+      "direct": "有针对特定切达产品的随机试验。一项6周试验纳入164名超重或肥胖且年龄至少50岁的成人，每天约40克乳脂来自全脂爱尔兰切达、减脂切达加黄油，或黄油/酪蛋白酸钙/钙等配方；一些血脂结果随乳脂所在食物基质而异。另一项19名轻度高胆固醇成人的交叉试验比较黄油与成熟切达，样本很小。两项都测替代指标，不证明切达预防心血管事件。",
+      "specific": "现有证据提示，在研究规定的份量和比较条件下，切达与黄油提供同量乳脂时，部分胆固醇指标反应不同；不能据此说所有奶酪都“保护心脏”，也不能忽略钠、份量和替代关系。奶酪矩阵试验综述未必针对所有切达品牌。",
+      "safety": "乳过敏者避免食用。切达常为钠和饱和脂肪较集中的食物，需按每份标签与总饮食决定份量；不同熟成产品的钠量并不固定。",
+      "body": "切达奶酪的关键人体资料来自特定试验配方，而不是所有货架产品。一项6周随机试验让164名50岁以上超重成人每天摄入约40克乳脂，其中包括全脂爱尔兰切达；血脂变化显示乳脂所在的食物基质会影响结果。较早的一项19人交叉研究也比较了黄油与成熟切达。它们支持“比较对象和替代食物很重要”，但没有证明吃切达能预防心脏病；钠、份量和实际产品仍需看标签。",
+      "evidence_body": "特定切达试验提供直接短期血脂证据（D0；E-C），但研究期限为6周且终点为风险标志物。硬质奶酪与黄油的系统综述是类别级支持，不外推为临床事件或所有切达品牌的功效。",
+      "care": "乳过敏者避免；按标签核对钠、饱和脂肪和份量。研究中的切达配方及替代条件不能代表额外加食或所有品牌。",
+      "taste_m": {
+        "咸": "咸味与成熟、盐分及品牌有关。",
+        "酸": "熟成带来的酸香与乳香可并存，仅作感官描述。"
+      },
+      "queries": [
+        "Cheddar cheese randomized trial dairy matrix effects butter LDL cholesterol 164 adults DOI",
+        "matured cheddar butter crossover 40 g dairy fat 19 subjects LDL randomized trial DOI sodium Cheddar survey"
+      ],
+      "search_log": [
+        "检索并核对Feeney等切达乳脂矩阵RCT：164名50岁以上成人、6周、约40 g/d乳脂，核验比较组及血脂终点。",
+        "核对Nestel等成熟切达/黄油交叉试验（19人、各4周）及PMC/PubMed摘要；将小样本限制写入正文。",
+        "补充Drouin-Chartier急性奶酪矩阵研究和零售钠调查；不把餐后标志物当长期结局。"
+      ],
+      "refs": [
+        "Feeney EL, Barron R, Dible V, Hamilton Z, Power Y, Tanner L, et al. “Dairy matrix effects: response to consumption of dairy fat differs when eaten within the cheese matrix—a randomized controlled trial.” American Journal of Clinical Nutrition. 2018;108(4):667–674. DOI: https://doi.org/10.1093/ajcn/nqy146. PMID: 30107488.",
+        "Nestel PJ, Chronopulos A, Cehun M. “Dairy fat in cheese raises LDL cholesterol less than that in butter in mildly hypercholesterolaemic subjects.” European Journal of Clinical Nutrition. 2005;59(9):1059–1063. DOI: https://doi.org/10.1038/sj.ejcn.1602211. PMID: 16015270.",
+        "Drouin-Chartier JP, et al. “Differential impact of the cheese matrix on the postprandial lipid response: a randomized, crossover, controlled trial.” American Journal of Clinical Nutrition. 2017. DOI: https://doi.org/10.3945/ajcn.117.165027. PMID: 28978543.",
+        "de Goede J, Geleijnse JM, Ding EL, Soedamah-Muthu SS. “Effect of cheese consumption on blood lipids: a systematic review and meta-analysis of randomized controlled trials.” Nutrition Reviews. 2015;73(5):259–275. DOI: https://doi.org/10.1093/nutrit/nuu060.",
+        "Agarwal S, McCoy D, Graves WB, Gerard PD, Clark S. “Sodium content in retail Cheddar, Mozzarella, and process cheeses varies considerably in the United States.” Journal of Dairy Science. 2011;94(3):1605–1615. DOI: https://doi.org/10.3168/jds.2010-3782. PMID: 21338828.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "body_refs": [
+        "Feeney EL, Barron R, Dible V, Hamilton Z, Power Y, Tanner L, et al. “Dairy matrix effects: response to consumption of dairy fat differs when eaten within the cheese matrix—a randomized controlled trial.” American Journal of Clinical Nutrition. 2018;108(4):667–674. DOI: https://doi.org/10.1093/ajcn/nqy146. PMID: 30107488.",
+        "Nestel PJ, Chronopulos A, Cehun M. “Dairy fat in cheese raises LDL cholesterol less than that in butter in mildly hypercholesterolaemic subjects.” European Journal of Clinical Nutrition. 2005;59(9):1059–1063. DOI: https://doi.org/10.1038/sj.ejcn.1602211. PMID: 16015270.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机平行干预，6周；多组等乳脂、宏量营养素匹配比较。",
+          "population": "164名年龄≥50岁的超重成人（75名男性）。",
+          "exposure": "约40 g乳脂/日；含120 g全脂爱尔兰切达组、减脂切达加黄油组、黄油加酪蛋白酸钙/钙组等。",
+          "result": "组间见总胆固醇和LDL-C的阶梯式基质效应；全脂爱尔兰切达组干预后总胆固醇/LDL-C约为5.23/2.97 mmol/L，而组分分开的黄油+酪蛋白酸钙+钙组约为5.57/3.43 mmol/L。",
+          "limits": "短期、小于临床结局所需的随访；具体配方、样本和代替关系受控，不代表各类切达或自由加食。",
+          "distance": "D0（研究中明确使用爱尔兰切达）"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉试验；黄油与成熟切达各4周，之间设低饱和脂肪饮食阶段。",
+          "population": "19名轻度高胆固醇成人，平均年龄约56岁。",
+          "exposure": "每日40 g乳脂来自黄油或成熟切达。",
+          "result": "与低饱和脂肪阶段相比，黄油阶段总胆固醇和LDL-C显著上升；切达阶段未见同样显著上升。",
+          "limits": "小样本、自由生活饮食，测量血脂而非临床事件。",
+          "distance": "D0（研究明确比较成熟切达）"
+        }
+      ],
+      "unknowns": "不同熟成/脂肪等级切达对血脂的差异；融化、份量及真实替代关系；长期临床事件和多地区商品代表性。",
+      "tradition": "现代切达的熟成和加工形态不同于传统“乳/酪”概念，未用古代记载推断其现代健康结局。"
+    },
+    "parmesan-cheese": {
+      "name": "帕玛森奶酪",
+      "volume": "乳酪与发酵部",
+      "entry_type": "cheese",
+      "family": "aged-hard-cheese",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指帕玛森/Parmigiano-Reggiano类长熟成硬质奶酪；名称、地理标示、乳源、熟成期、磨碎或切块形态会影响产品。它不是Grana Padano，也不是所有硬质奶酪的同义词。",
+      "variables": "产地与地理标示、熟成时长、钠、脂肪、乳蛋白/肽、份量及作为调味料还是单独食用。",
+      "composition": "熟成硬质奶酪通常需要按实际包装标签核对钠、能量和脂肪。品牌产品和磨碎型复配商品可能不同；USDA FoodData Central只能作为具体食品记录参考，不能代表所有带“帕玛森”名称的产品。",
+      "direct": "本轮未检得帕玛森/Parmigiano-Reggiano本品的人体干预试验。较近的一项小型交叉先导试验研究的是Grana Padano：30名已接受稳定治疗但血压仍未达标的轻中度高血压患者每日30克、每阶段2个月，报告24小时血压相对安慰剂下降约3.5/2.4 mmHg。这不是帕玛森试验，不能将结果直接移植。",
+      "specific": "硬质奶酪与黄油的血脂系统综述纳入的并非帕玛森专属试验。Grana Padano研究虽属于熟成奶酪邻近证据（D1），但配方、产区、肽组成和试验人群均特定；只能作为待验证假说。",
+      "safety": "乳是主要过敏原。熟成硬质奶酪及磨碎产品需按标签查看每份钠、脂肪及是否混有其他成分；高血压患者不应以奶酪替代处方药或规范治疗。",
+      "body": "帕玛森常被归入熟成硬质奶酪，但本轮没有找到针对帕玛森本身的人体干预试验。常被引用的相近研究实际测试的是Grana Padano：30名血压未达标的轻中度高血压患者每天吃30克、每阶段持续2个月，24小时血压较安慰剂平均低约3.5/2.4毫米汞柱。两种奶酪不是同一产品，这项小型先导研究也不能替帕玛森背书。作为调味料使用时，按实际份量和标签查看钠更有帮助。",
+      "evidence_body": "帕玛森本品直接人体结局未检得（E-0）。Grana Padano小型交叉先导试验为近邻熟成硬质奶酪证据（D1；n=30、30 g/d、2月期），不得改写成帕玛森试验或通用降压功效。",
+      "care": "核对每份钠与用量，尤其是磨碎奶酪容易在不同菜品中累加；乳过敏者避免。高血压治疗以医疗方案为准。",
+      "taste_m": {
+        "咸": "咸、鲜与熟成香随熟成、产区和份量不同，仅为感官描述。"
+      },
+      "queries": [
+        "Parmesan Parmigiano Reggiano cheese randomized human clinical trial blood pressure cardiometabolic outcomes DOI",
+        "Grana Padano randomized double blind placebo pilot 30 g day 30 hypertensive subjects 24-hour blood pressure DOI Parmesan distinguish"
+      ],
+      "search_log": [
+        "专门检索Parmesan/Parmigiano-Reggiano本品临床试验；未找到直接人体干预资料。",
+        "核对Grana Padano 30人双盲安慰剂交叉先导研究，确认产品不是Parmesan、剂量30 g/d及血压终点。",
+        "查阅硬质奶酪系统综述与Codex奶酪标准；仅作邻近类别/身份资料，不继承为帕玛森效果。"
+      ],
+      "refs": [
+        "Crippa G, Zabzuni D, Bravi E, Piva G, De Noni I, Bighi E, et al. “Randomized, double blind placebo-controlled pilot study of the antihypertensive effects of Grana Padano D.O.P. cheese consumption in mild - moderate hypertensive subjects.” European Review for Medical and Pharmacological Sciences. 2018;22(21):7573–7581. DOI: https://doi.org/10.26355/eurrev_201811_16299.",
+        "de Goede J, Geleijnse JM, Ding EL, Soedamah-Muthu SS. “Effect of cheese consumption on blood lipids: a systematic review and meta-analysis of randomized controlled trials.” Nutrition Reviews. 2015;73(5):259–275. DOI: https://doi.org/10.1093/nutrit/nuu060.",
+        "Codex Alimentarius Commission. “General Standard for Cheese.” CXS 283-1978. https://www.fao.org/input/download/standards/175/CXS_283e.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Crippa G, Zabzuni D, Bravi E, Piva G, De Noni I, Bighi E, et al. “Randomized, double blind placebo-controlled pilot study of the antihypertensive effects of Grana Padano D.O.P. cheese consumption in mild - moderate hypertensive subjects.” European Review for Medical and Pharmacological Sciences. 2018;22(21):7573–7581. DOI: https://doi.org/10.26355/eurrev_201811_16299.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、安慰剂对照交叉先导试验；两阶段各2个月。",
+          "population": "30名轻至中度高血压患者，稳定治疗至少3个月但血压仍未达标。",
+          "exposure": "每日30 g Grana Padano PDO，比较经调味的匹配安慰剂。",
+          "result": "研究报告24小时动态血压相对安慰剂平均下降约3.5/2.4 mmHg。",
+          "limits": "小样本、短期先导研究，研究食品为Grana Padano而非Parmesan，且对象为接受治疗的高血压患者。",
+          "distance": "D1（相邻的熟成硬质奶酪；不是目标奶酪）"
+        }
+      ],
+      "unknowns": "帕玛森本品与Grana Padano在配方/肽组成上的差异；帕玛森本品人体干预、钠摄入与临床结局；不同磨碎和地理来源产品。",
+      "tradition": "现代地理标示奶酪品类没有与古代本草食品一一对应的可靠证据；传统乳酪记载不用于推断帕玛森的现代功效。"
+    },
+    "cream-cheese": {
+      "name": "奶油奶酪",
+      "volume": "乳酪与发酵部",
+      "entry_type": "cheese",
+      "family": "fresh-cheese",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指以奶油/乳脂和乳制品为原料制成的柔软涂抹型奶酪；不同国家标准、脂肪含量、盐、稳定剂与配方不同。它不是淡奶油，也不是经熟成的切达。",
+      "variables": "乳脂和水分、发酵/酸化、钠、增稠稳定配料、份量、与面包等同餐以及比较食物。",
+      "composition": "奶油奶酪能量和脂肪密度较高，具体数值随全脂、减脂、涂抹酱配方及品牌而异。USDA或商品标签数据要与实际产品身份匹配。",
+      "direct": "一项43名健康成人的随机交叉试验在标准化餐中分别给予来自年轻切达、奶油奶酪或黄油的33克脂肪。4小时甘油三酯升幅相近，2小时奶油奶酪餐较高，但0–8小时甘油三酯增量曲线下面积无差异。此为单餐急性指标，不说明长期食用对心血管病的影响。",
+      "specific": "研究把奶油奶酪与年轻切达/黄油作为不同食物矩阵对照，观察的是餐后血脂时间曲线。不要把急性餐后指标读成该产品导致或预防疾病的长期结论。",
+      "safety": "乳是主要过敏原；查看盐、饱和脂肪与每份份量。减脂涂抹酱可能含不同配料，不能仅凭名称推测营养价值。",
+      "body": "奶油奶酪和淡奶油是两种不同食品：前者是可涂抹的奶酪。现有直接资料主要是一项43名健康成人的单餐交叉试验，比较奶油奶酪、切达与黄油提供的33克脂肪。奶油奶酪餐在2小时的甘油三酯升幅较高，但4小时相近，整段曲线下面积也没有差异。这个时间短、只看餐后指标的研究，不能说明长期吃奶油奶酪会增加或降低心血管风险。",
+      "evidence_body": "奶油奶酪有一项直接急性随机交叉试验（D0；E-D）：单餐33 g乳脂，n=43，测8小时甘油三酯；各餐iAUC无显著差异。长期疾病结局仍未检得。",
+      "care": "与淡奶油区分；查看乳过敏原、每份饱和脂肪、钠和实际用量。急性餐后指标不是长期疾病结论。",
+      "taste_m": {
+        "酸": "轻微酸味与乳香取决于发酵/酸化及配方。",
+        "甘": "乳脂带来的圆润感是感官描述，不是药性判断。"
+      },
+      "queries": [
+        "cream cheese randomized crossover trial postprandial triglyceride response butter cheddar DOI 43 subjects",
+        "cream cheese food composition saturated fat sodium standard official FDA dairy allergy"
+      ],
+      "search_log": [
+        "检索奶油奶酪本品长期和餐后人体研究；未检得长期临床结局试验。",
+        "核对Drouin-Chartier等随机交叉研究：43名健康人、33 g脂肪、0–8小时TG与iAUC结果。",
+        "核对奶油奶酪与淡奶油的食品身份边界及乳过敏提示；配方营养按商品标签。"
+      ],
+      "refs": [
+        "Drouin-Chartier JP, et al. “Differential impact of the cheese matrix on the postprandial lipid response: a randomized, crossover, controlled trial.” American Journal of Clinical Nutrition. 2017. DOI: https://doi.org/10.3945/ajcn.117.165027. PMID: 28978543.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/.",
+        "de Goede J, Geleijnse JM, Ding EL, Soedamah-Muthu SS. “Effect of cheese consumption on blood lipids: a systematic review and meta-analysis of randomized controlled trials.” Nutrition Reviews. 2015;73(5):259–275. DOI: https://doi.org/10.1093/nutrit/nuu060."
+      ],
+      "body_refs": [
+        "Drouin-Chartier JP, et al. “Differential impact of the cheese matrix on the postprandial lipid response: a randomized, crossover, controlled trial.” American Journal of Clinical Nutrition. 2017. DOI: https://doi.org/10.3945/ajcn.117.165027. PMID: 28978543.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、交叉、对照单餐试验；餐序随机，各阶段间隔14天。",
+          "population": "43名健康成人。",
+          "exposure": "标准化餐中分别以年轻切达、奶油奶酪或黄油提供33 g脂肪。",
+          "result": "4小时TG升幅分别约59%、59%、62%，组间无差异；2小时奶油奶酪餐升幅高于黄油和切达，0–8小时TG iAUC无差异。",
+          "limits": "单餐、8小时观察、健康人，测餐后生物标志物而非长期疾病或日常份量。",
+          "distance": "D0（试验明确使用奶油奶酪）"
+        }
+      ],
+      "unknowns": "不同奶油奶酪脂肪/钠和添加物构成；更长期、日常摄入量下的健康结局。",
+      "tradition": "奶油奶酪是现代加工/酸化涂抹奶酪类别；不由名称“奶油”推断淡奶油或古籍酪类功效。"
+    },
+    "processed-cheese": {
+      "name": "再制奶酪",
+      "volume": "乳酪与发酵部",
+      "entry_type": "processed_food",
+      "family": "processed-cheese",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指以一种或多种天然奶酪为原料，经加热、乳化/熔融盐等加工制成的标准化再制奶酪；片、条、涂抹型与复配商品配方不同。本条不把它等同于天然切达或马苏里拉。",
+      "variables": "奶酪基料、乳化盐与其他配料、钠/磷酸盐、脂肪、含水量、形态、份量和替代关系。",
+      "composition": "再制奶酪的钠和脂肪因品牌/类型而变。美国零售样品研究中，再制奶酪钠均值高于所测切达与低水分部分脱脂马苏里拉；这个成分结果不表示每个再制奶酪都超出相同数值。",
+      "direct": "本轮未检得以普通再制奶酪作为明确干预并观察长期人体健康结局的临床试验。现有直接产品资料主要为零售成分检测和标准身份定义；不能由加工方式或单一配料推导整类临床危害。",
+      "specific": "Agarwal等分析269份再制奶酪样品，平均钠约1,242 mg/100 g，95%样品范围约936–1,590 mg/100 g。美国法规对pasteurized process cheese有身份和配方要求，但法规定义本身不是健康结局证据。",
+      "safety": "对乳过敏者不适合；含钠和磷酸盐相关配料可能因产品不同而异。肾病等需限磷/钠者应按医疗建议及标签管理，避免把单个研究中的市场均值当作个体商品值。",
+      "body": "再制奶酪经过加热和乳化加工，身份上不同于一片天然切达。它的配方和盐分并不完全一致：一项美国零售样品调查测得269份再制奶酪，平均钠约为每100克1,242毫克，样品间差异很大。这是产品成分调查，不是人体试验，也不能代表每个品牌；若需要控制钠，直接看包装上的每份含量更可靠。",
+      "evidence_body": "未检得再制奶酪类别的长期人体结局干预（E-0）。直接产品证据为美国零售269份再制奶酪的成分分析（D0）：平均钠约1,242 mg/100 g，产品范围显著；法规身份定义不等于健康效果。",
+      "care": "按商品标签比较每份钠、饱和脂肪与份量；有医疗限钠/磷需求者遵循个体建议。乳过敏者避免食用。",
+      "taste_m": {
+        "咸": "咸味随盐分、乳化配方与品牌不同，仅作感官描述。"
+      },
+      "queries": [
+        "processed cheese randomized human clinical trials health outcomes sodium composition product survey DOI",
+        "eCFR pasteurized process cheese identity standard sodium content 269 samples official"
+      ],
+      "search_log": [
+        "检索再制奶酪人体研究与市场成分；未找到能说明整类商品长期临床效果的直接试验。",
+        "核对美国零售奶酪钠调查中的269份再制奶酪样本、均值、范围及英文题名/DOI。",
+        "查阅 eCFR 21 CFR 133.169 与 Codex cheese standards；标准/成分证据与临床效应分开记录。"
+      ],
+      "refs": [
+        "Agarwal S, McCoy D, Graves WB, Gerard PD, Clark S. “Sodium content in retail Cheddar, Mozzarella, and process cheeses varies considerably in the United States.” Journal of Dairy Science. 2011;94(3):1605–1615. DOI: https://doi.org/10.3168/jds.2010-3782. PMID: 21338828.",
+        "U.S. Electronic Code of Federal Regulations. “21 CFR § 133.169 — Pasteurized process cheese.” https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.169.",
+        "Codex Alimentarius Commission. “General Standard for Cheese.” CXS 283-1978. https://www.fao.org/input/download/standards/175/CXS_283e.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Agarwal S, McCoy D, Graves WB, Gerard PD, Clark S. “Sodium content in retail Cheddar, Mozzarella, and process cheeses varies considerably in the United States.” Journal of Dairy Science. 2011;94(3):1605–1615. DOI: https://doi.org/10.3168/jds.2010-3782. PMID: 21338828.",
+        "U.S. Electronic Code of Federal Regulations. “21 CFR § 133.169 — Pasteurized process cheese.” https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-133/subpart-B/section-133.169.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "零售产品横断面收样与实验室钠分析。",
+          "population": "美国4个地区共1,665份奶酪；其中269份再制奶酪单片样品。",
+          "exposure": "检测各类切达、低水分部分脱脂马苏里拉和再制奶酪的钠含量。",
+          "result": "再制奶酪的分析钠均值约1,242 mg/100 g，95%样品约936–1,590 mg/100 g；标签钠均值约1,313 mg/100 g。",
+          "limits": "美国市场样品与特定年份；不是健康结局研究，品牌和市场变化可能影响分布。",
+          "distance": "D0（目标品类商品成分直接资料；不直接回答人体健康）"
+        }
+      ],
+      "unknowns": "目前各市场再制奶酪配方/钠/磷酸盐分布；不同类型长期摄入与临床结局的直接证据。",
+      "tradition": "再制奶酪是现代加工食品；不以古籍对乳、酪的描述为其现代配方或健康效应依据。"
+    },
+    "butter": {
+      "name": "黄油",
+      "volume": "乳酪与发酵部",
+      "entry_type": "dairy_fat",
+      "family": "dairy-fat",
+      "research_depth": "R2",
+      "shared_parent": "dairy-base",
+      "identity": "本条指由乳脂制成的黄油，包括有盐/无盐、发酵/甜奶油和不同脂肪含量的商品；不等同于奶油、酥油或植物起酥油。研究中的用量和替代食物决定可解释的效应。",
+      "variables": "乳脂比例、盐、发酵、每次和每日剂量、用黄油替代还是额外添加、替代脂肪类型、背景膳食与随访时间。",
+      "composition": "黄油主要提供乳脂，饱和脂肪比例较高；不同品牌的水分、盐和添加物会改变营养值。按实际用量及标签查看饱和脂肪，食品数据库值只对应所列具体产品类型。",
+      "direct": "一项随机试验将96名50–75岁成人随机至每日50克黄油、橄榄油或椰子油4周，其中94人进入基线评估。黄油组LDL-C较椰子油组高约0.42 mmol/L、较橄榄油组高约0.38 mmol/L。该研究测短期血脂，不是心血管事件；且比较的是不同脂肪之间替代/加入的效果。",
+      "specific": "观察性系统综述汇总黄油摄入与心血管病、糖尿病及死亡结局的关联，证据不等同随机因果。WHO建议将饱和脂肪控制在能量摄入10%以内，并优先用不饱和脂肪或富含天然膳食纤维的碳水来源替代；这是膳食模式建议，不是某个黄油剂量的试验结论。",
+      "safety": "黄油是高能量乳脂食品并含乳成分；乳过敏者应避免。关注盐与饱和脂肪，尤其在需要控制血脂或钠摄入时，应从总体饮食和替代食物考虑，而非只看单品。",
+      "body": "黄油的血脂影响取决于拿它替代什么。一项随机试验将96名50–75岁成人分至黄油、橄榄油或椰子油组（94人进入基线评估），每天摄入50克、持续4周；黄油组LDL胆固醇高于橄榄油组和椰子油组。它测的是短期血脂，不是心梗或死亡。另一篇系统综述整理的是人群观察关联，也不能当作因果证明。WHO建议限制饱和脂肪，并优先用不饱和脂肪等替代；日常选择应比较替代食物、总量和整体饮食。",
+      "evidence_body": "黄油对短期血脂有直接随机比较证据（D0；E-C）：50 g/d、4周时LDL-C高于橄榄油和椰子油组；不等于临床事件证据。观察性结局综述不能单独解释因果。",
+      "care": "按每份饱和脂肪与钠计算总量，并明确替代对象；避免将短期血脂变化写成心血管事件风险变化。乳过敏者避免。",
+      "taste_m": {
+        "甘": "乳脂带来浓郁、柔和的感官口感；有盐/发酵款风味不同。",
+        "咸": "有盐黄油的咸味随商品配方变化。"
+      },
+      "queries": [
+        "randomized trial butter olive oil coconut oil 50 g daily four weeks LDL cholesterol DOI sample size",
+        "butter consumption systematic review meta-analysis cardiovascular diabetes mortality DOI WHO saturated fatty acid guideline replacement unsaturated fat"
+      ],
+      "search_log": [
+        "直接检索黄油与橄榄油/椰子油随机对照：96人随机、94人完成基线、50 g/d、4周；核对LDL差值。",
+        "补充Pimpin等黄油摄入观察性系统综述并保留其因果限制。",
+        "引用WHO 2023饱和脂肪指南作为膳食总体建议，明确其不是黄油特异试验；英文题名和DOI/链接复核结果留存。"
+      ],
+      "refs": [
+        "Khaw KT, Sharp SJ, Finikarides L, Afzal I, Lentjes MAH, Luben R, et al. “Randomised trial of coconut oil, olive oil or butter on blood lipids and other cardiovascular risk factors in healthy men and women.” BMJ Open. 2018;8(3):e020167. DOI: https://doi.org/10.1136/bmjopen-2017-020167.",
+        "Pimpin L, Wu J, Haskelberg H, Del Gobbo L, Mozaffarian D. “Is Butter Back? A Systematic Review and Meta-Analysis of Butter Consumption and Risk of Cardiovascular Disease, Diabetes, and Total Mortality.” PLOS ONE. 2016;11(6):e0158118. DOI: https://doi.org/10.1371/journal.pone.0158118.",
+        "World Health Organization. “Saturated fatty acid and trans-fatty acid intake for adults and children: WHO guideline.” 2023. https://www.who.int/publications/i/item/9789240073630.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Khaw KT, Sharp SJ, Finikarides L, Afzal I, Lentjes MAH, Luben R, et al. “Randomised trial of coconut oil, olive oil or butter on blood lipids and other cardiovascular risk factors in healthy men and women.” BMJ Open. 2018;8(3):e020167. DOI: https://doi.org/10.1136/bmjopen-2017-020167.",
+        "Pimpin L, Wu J, Haskelberg H, Del Gobbo L, Mozaffarian D. “Is Butter Back? A Systematic Review and Meta-Analysis of Butter Consumption and Risk of Cardiovascular Disease, Diabetes, and Total Mortality.” PLOS ONE. 2016;11(6):e0158118. DOI: https://doi.org/10.1371/journal.pone.0158118.",
+        "World Health Organization. “Saturated fatty acid and trans-fatty acid intake for adults and children: WHO guideline.” 2023. https://www.who.int/publications/i/item/9789240073630.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机三组平行饮食试验，干预4周。",
+          "population": "96名50–75岁成人随机；94名参加基线评估。",
+          "exposure": "每日50 g特级初榨椰子油、特级初榨橄榄油或无盐黄油之一，可融入日常膳食或作为补充。",
+          "result": "黄油组LDL-C较椰子油组高约0.42 mmol/L，较橄榄油组高约0.38 mmol/L。",
+          "limits": "干预仅4周，参与者未盲法，观察的是血脂/代谢标志物且饮食背景有限；不评估心血管事件或长期效果。",
+          "distance": "D0（研究直接使用黄油；剂量与替代条件特定）"
+        }
+      ],
+      "unknowns": "不同黄油类型、有盐/无盐和常见较小份量的实际替代效应；长期使用对疾病结局的随机证据。",
+      "tradition": "现代黄油是乳脂加工品；未用古籍牛乳或酪的描述替代其现代营养与临床证据。"
+    },
+    "cream": {
+      "name": "淡奶油",
+      "volume": "乳酪与发酵部",
+      "entry_type": "dairy_fat",
+      "family": "dairy-fat",
+      "research_depth": "R1",
+      "shared_parent": "dairy-base",
+      "identity": "本条指用于烹调或打发的高脂乳制奶油/cream；中国商品“淡奶油”具体脂肪比例按包装为准。本条不按字面将其译成light cream，也不与奶油奶酪、酸奶油或植物基代脂品混同。",
+      "variables": "乳脂百分比、是否超高温处理、是否可打发、稳定剂/乳化剂、份量、食用方式及与何种食物替代。",
+      "composition": "cream类别脂肪含量依产品和标准而异；“heavy cream/whipping cream/light cream”是市场或标准名称，不能仅凭中文“淡奶油”假定统一脂肪率。使用具体营养标签或数据库中的匹配产品。",
+      "direct": "一项随机交叉研究纳入47名健康成人，以黄油、奶酪、打发奶油或酸奶油分别提供约45克脂肪，观察餐后甘油三酯约6小时；不同乳制品的餐后曲线不同。研究测试的是单餐和短期生物标志物，不提供长期食用奶油对疾病的结论。",
+      "specific": "其他奶油相关证据包括产品身份法规和Codex标准，可帮助界定脂肪/加工类别，但不能从标准或营养值推导健康效应。与奶油奶酪的急性试验是另一种食品，不作为淡奶油直接证据。",
+      "safety": "含乳过敏原。淡奶油脂肪密度较高，烹饪时总量可累积；按具体标签计入份量。冷藏、开封与打发后的保存依包装说明。",
+      "body": "本条所指为包装标注可烹调或打发的乳脂奶油；不能按“淡”字推定为低脂的 light cream。研究中有一项47名健康成人的随机交叉单餐试验，用不同乳制品提供约45克脂肪并观察餐后甘油三酯；这是短时血脂反应，不能说明长期吃淡奶油会带来何种疾病结局。实际脂肪率和能量以手中商品标签为准，烹调时也要把用量算进去。",
+      "evidence_body": "淡奶油的直接人体资料限于餐后单餐研究（D0；E-D）：47名健康成人、约45 g乳脂的不同乳品餐，测约6小时TG；长期健康结局未检得。产品名称与脂肪率需按当地标签确定。",
+      "care": "核对脂肪率、每份能量和乳过敏原；按标签冷藏并计算烹饪使用量。不要将淡奶油等同奶油奶酪或低脂奶油。",
+      "taste_m": {
+        "甘": "乳脂形成圆润、浓厚口感；打发与加热会改变感官质地。"
+      },
+      "queries": [
+        "cream whipping cream randomized crossover trial 47 healthy adults postprandial triglyceride 45 g fat DOI",
+        "Codex standard cream prepared creams heavy cream food safety dairy allergy FDA official"
+      ],
+      "search_log": [
+        "检索高脂奶油/whipping cream人体干预；找到47名健康成人急性乳品餐交叉研究，不将其解释为长期健康结局。",
+        "核对英文原题、DOI、样本、45 g脂肪和6小时TG终点；区分打发奶油、黄油、奶油奶酪。",
+        "查询Codex CXS 288、eCFR奶油身份规定及FDA乳过敏资料；商品脂肪率以本地标签为准。"
+      ],
+      "refs": [
+        "“Meals with Similar Fat Content from Different Dairy Products Induce Different Postprandial Triglyceride Responses in Healthy Adults: A Randomized Controlled Cross-Over Trial.” Journal of Nutrition. 2019;149(3):422–431. DOI: https://doi.org/10.1093/jn/nxy291. PMID: 30759235.",
+        "Codex Alimentarius Commission. “Standard for Cream and Prepared Creams.” CXS 288-1976. https://www.fao.org/input/download/standards/180/CXS_288e.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” https://fdc.nal.usda.gov/."
+      ],
+      "body_refs": [
+        "Rice Bradley BH, et al. “Meals with Similar Fat Content from Different Dairy Products Induce Different Postprandial Triglyceride Responses in Healthy Adults: A Randomized Controlled Cross-Over Trial.” Journal of Nutrition. 2019;149(3):422–431. DOI: https://doi.org/10.1093/jn/nxy291. PMID: 30759235.",
+        "Codex Alimentarius Commission. “Standard for Cream and Prepared Creams.” CXS 288-1976. https://www.fao.org/input/download/standards/180/CXS_288e.pdf.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉单餐试验，约6小时餐后观察。",
+          "population": "47名健康成人（30%男性；中位年龄32岁）。",
+          "exposure": "标准餐中以黄油、奶酪、打发奶油或酸奶油提供约45 g脂肪。",
+          "result": "不同乳制品餐的餐后TG反应曲线存在差异；这是产品矩阵比较的急性指标。",
+          "limits": "单次高脂试验餐、健康成人、短观察，不测日常摄入或长期疾病结局。",
+          "distance": "D0（研究明确使用打发奶油；与不同脂肪率的淡奶油商品仍有差别）"
+        }
+      ],
+      "unknowns": "中国及其他市场“淡奶油”的脂肪率/添加物分布；普通烹饪份量及长期摄入的直接人体结局。",
+      "tradition": "现代商品淡奶油的加工类别不应仅凭“奶油”字面关联传统奶酪或乳酪药性；本轮未建立直接古籍对应。"
+    }
+  }
+}

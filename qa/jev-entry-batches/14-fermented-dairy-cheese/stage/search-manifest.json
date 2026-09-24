@@ -1,0 +1,65 @@
+{
+  "batch_id": "14-fermented-dairy-cheese",
+  "cutoff": "2026-09-24",
+  "exa_search_calls": 38,
+  "exa_result_cards": 182,
+  "initial_attempts": 20,
+  "rate_limit_retries": 7,
+  "unlabelled_citation_followups": 8,
+  "metadata_verification_queries": 3,
+  "per_entry_queries": {
+    "frozen-yogurt": [
+      "frozen yogurt randomized human clinical trial health outcomes frozen yoghurt fecal microbiota DOI",
+      "frozen yogurt frozen fermented dairy food composition probiotic survival frozen yogurt standards official"
+    ],
+    "flavored-yogurt": [
+      "flavored yogurt sugar content product survey three countries mean total sugar per 100 g DOI",
+      "FDA added sugars yogurt nutrition label total sugars added sugars dairy allergy official"
+    ],
+    "shelf-stable-yogurt": [
+      "ambient shelf stable yogurt randomized clinical trial pasteurized yogurt human health outcomes DOI",
+      "Codex fermented milk heat-treated fermented milk standard yogurt shelf stable official"
+    ],
+    "mozzarella-cheese": [
+      "mozzarella cheese randomized clinical trial human health outcomes cardiometabolic DOI",
+      "mozzarella cheese sodium content retail products 1665 samples official composition study DOI cheese meta analysis"
+    ],
+    "cheddar-cheese": [
+      "Cheddar cheese randomized trial dairy matrix effects butter LDL cholesterol 164 adults DOI",
+      "matured cheddar butter crossover 40 g dairy fat 19 subjects LDL randomized trial DOI sodium Cheddar survey"
+    ],
+    "parmesan-cheese": [
+      "Parmesan Parmigiano Reggiano cheese randomized human clinical trial blood pressure cardiometabolic outcomes DOI",
+      "Grana Padano randomized double blind placebo pilot 30 g day 30 hypertensive subjects 24-hour blood pressure DOI Parmesan distinguish"
+    ],
+    "cream-cheese": [
+      "cream cheese randomized crossover trial postprandial triglyceride response butter cheddar DOI 43 subjects",
+      "cream cheese food composition saturated fat sodium standard official FDA dairy allergy"
+    ],
+    "processed-cheese": [
+      "processed cheese randomized human clinical trials health outcomes sodium composition product survey DOI",
+      "eCFR pasteurized process cheese identity standard sodium content 269 samples official"
+    ],
+    "butter": [
+      "randomized trial butter olive oil coconut oil 50 g daily four weeks LDL cholesterol DOI sample size",
+      "butter consumption systematic review meta-analysis cardiovascular diabetes mortality DOI WHO saturated fatty acid guideline replacement unsaturated fat"
+    ],
+    "cream": [
+      "cream whipping cream randomized crossover trial 47 healthy adults postprandial triglyceride 45 g fat DOI",
+      "Codex standard cream prepared creams heavy cream food safety dairy allergy FDA official"
+    ]
+  },
+  "evidence_source_files": [
+    "exa-results-preserved-01.json",
+    "exa-results-preserved-02.json",
+    "exa-results-preserved-03.json",
+    "exa-results-preserved-04.json",
+    "exa-results-preserved-05.json",
+    "exa-results-preserved-06.json",
+    "exa-results-preserved-07.json",
+    "exa-results-preserved-08.json",
+    "source-extracts-01.md",
+    "source-extracts-02.md",
+    "source-extract-manifest.json"
+  ]
+}
