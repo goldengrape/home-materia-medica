@@ -1,0 +1,10 @@
+5b9cb0bae7c9b5c03a4443303c97d854ee0988e5293c65b8547b50952c2d58dc  qa/jev-entry-batches/10-confections-nuts/raw/caramel.json
+a128e722580bc8f0ff8eb87d0cd621d8c64e05259bf0a65cda7b07ae8a3390a3  qa/jev-entry-batches/10-confections-nuts/raw/chewing-gum.json
+7124be4c6a679f1875a84a52804fbd32597b4ea59f592f4969125e9aabe294c4  qa/jev-entry-batches/10-confections-nuts/raw/sugar-free-gum.json
+8c32b393f41fa75cbc39847f01780496dc46f0f48fd7ad62c5d52b5db532c68c  qa/jev-entry-batches/10-confections-nuts/raw/sugar-substitute-dessert.json
+775b615cefcfb775a91e6b13fabcd06529b818dbae8a2bf287fdebbb15649240  qa/jev-entry-batches/10-confections-nuts/raw/low-sugar-dessert.json
+9e927b2a7c944df34407e0b13d0897424619c06cb8adb5e5536cc48279e79865  qa/jev-entry-batches/10-confections-nuts/raw/protein-bar.json
+3b4a70240fc4723ad4fb77d2b396784a44d45d0575dfef6d38b1dcfdacbd6aba  qa/jev-entry-batches/10-confections-nuts/raw/pistachio.json
+51c82ba573ebff3e7d30ff77ade39ccd9d884ae17c9b53b0853b66f22e396565  qa/jev-entry-batches/10-confections-nuts/raw/cashew.json
+21c2483dff3ec318dd13e9443e020cb2b23242d1e6273b4f57bbfb3f0704ee7d  qa/jev-entry-batches/10-confections-nuts/raw/almond.json
+edfb4bb30cf633f7654166ae9a556024fa6abe1d7f332adbcdd347c1dc1b5d97  qa/jev-entry-batches/10-confections-nuts/raw/pecan.json
