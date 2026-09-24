@@ -8,4 +8,10 @@
 
 留意一杯的糖、能量、咖啡因与饮用时辰；幼儿吞咽珍珠还有独立的物理风险。选购时看杯量和具体配方，比从名称猜成分可靠。
 
-参考：[研究底稿](../references/entries/pearl-milk-tea/research.md) · [分类与 M 记录](../references/entries/pearl-milk-tea/mapping.md) · [香港食物安全中心检测](https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_26_abstract.html)。
+研究底稿：[research.md](../references/entries/pearl-milk-tea/research.md) · 分类与 M 记录：[mapping.md](../references/entries/pearl-milk-tea/mapping.md)。
+
+**参考文献**
+
+1. Min JE, Green DB, Kim L. “Calories and sugars in boba milk tea: implications for obesity risk in Asian Pacific Islanders.” *Food Science & Nutrition*. 2017;5(1):38–45. [doi:10.1002/fsn3.362](https://doi.org/10.1002/fsn3.362)
+2. Shi Z, et al. “Nutrient content of 122 kinds of retail handcrafted milk tea products in Shanghai.” *Journal of Environmental and Occupational Medicine*. 2023. [doi:10.11836/jeom22505](https://doi.org/10.11836/jeom22505)
+3. Hong Kong Centre for Food Safety. “Sugar and Energy Contents of Common Non-Indigenous Tea-Based Beverages.” [官方检测](https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_26_abstract.html).

@@ -8,4 +8,9 @@
 
 对谷物过敏或须严格避免麸质交叉接触的人，产品原料与加工标示尤其重要。把具体标签和研究所用配方放在一起比较，才知道“燕麦奶研究”能否用于手中这一盒。
 
-参考：[研究底稿](../references/entries/oat-milk/research.md) · [分类与 M 记录](../references/entries/oat-milk/mapping.md) · [燕麦饮人体试验](https://pubmed.ncbi.nlm.nih.gov/10749030/) · [FDA 植物饮品营养比较](https://www.fda.gov/food/nutrition-education-resources-materials/using-nutrition-facts-label-choose-milk-and-plant-based-beverages)。
+研究底稿：[research.md](../references/entries/oat-milk/research.md) · 分类与 M 记录：[mapping.md](../references/entries/oat-milk/mapping.md)。
+
+**参考文献**
+
+1. Önning G, et al. “Consumption of oat milk for 5 weeks lowers serum cholesterol and LDL cholesterol in free-living men with moderate hypercholesterolemia.” *Annals of Nutrition and Metabolism*. 1999;43(5):301–309. [doi:10.1159/000012798](https://doi.org/10.1159/000012798)
+2. U.S. Food and Drug Administration. “Using the Nutrition Facts Label to Choose Milk and Plant-Based Beverages.” [官方资料](https://www.fda.gov/food/nutrition-education-resources-materials/using-nutrition-facts-label-choose-milk-and-plant-based-beverages).

@@ -8,4 +8,10 @@
 
 需要留意钠时，可以从包装标示、调味包用量和汤汁入手。长期把方便面当唯一主餐的营养完整性，还取决于有没有其他食物搭配。
 
-参考：[研究底稿](../references/entries/instant-noodles/research.md) · [分类与 M 记录](../references/entries/instant-noodles/mapping.md) · [香港食物安全中心资料](https://www.cfs.gov.hk/english/programme/programme_nifl/programme_nifl_Joint_Feature_Articles_01_instant_noodles.html)。
+研究底稿：[research.md](../references/entries/instant-noodles/research.md) · 分类与 M 记录：[mapping.md](../references/entries/instant-noodles/mapping.md)。
+
+**参考文献**
+
+1. Shin HJ, et al. “Instant noodle intake and dietary patterns are associated with distinct cardiometabolic risk factors in Korea.” *The Journal of Nutrition*. 2014;144(8):1247–1255. [doi:10.3945/jn.113.188441](https://doi.org/10.3945/jn.113.188441)
+2. Jang E, et al. “Short-Term Effect of Convenience Meal Intake on Glycemic Response and Satiety among Healthy College Students in South Korea.” *Clinical Nutrition Research*. 2017;6(3):215–220. [doi:10.7762/cnr.2017.6.3.215](https://doi.org/10.7762/cnr.2017.6.3.215)
+3. Hong Kong Centre for Food Safety. “Instant Noodles.” [官方资料](https://www.cfs.gov.hk/english/programme/programme_nifl/programme_nifl_Joint_Feature_Articles_01_instant_noodles.html).

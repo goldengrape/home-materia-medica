@@ -8,4 +8,10 @@
 
 需要同时想到咖啡因、饮用时辰和饮料酸度。牙面研究提示酸性饮料可能有牙蚀问题，但离体实验和人群结局不能混写成每喝一杯的确定风险。
 
-参考：[研究底稿](../references/entries/sugar-free-cola/research.md) · [分类与 M 记录](../references/entries/sugar-free-cola/mapping.md) · [52 周试验](https://pubmed.ncbi.nlm.nih.gov/37794246/) · [WHO 非糖甜味剂指南](https://www.who.int/publications/i/item/9789240073616)。
+研究底稿：[research.md](../references/entries/sugar-free-cola/research.md) · 分类与 M 记录：[mapping.md](../references/entries/sugar-free-cola/mapping.md)。
+
+**参考文献**
+
+1. Harrold JA, et al. “Non-nutritive sweetened beverages versus water after a 52-week weight management programme: a randomised controlled trial.” *International Journal of Obesity*. 2024;48(1):83–93. [doi:10.1038/s41366-023-01393-3](https://doi.org/10.1038/s41366-023-01393-3)
+2. Zhang X, et al. “The Effect of Non-Nutritive Sweetened Beverages on Postprandial Glycemic and Endocrine Responses: A Systematic Review and Network Meta-Analysis.” *Nutrients*. 2023;15(4):1050. [doi:10.3390/nu15041050](https://doi.org/10.3390/nu15041050)
+3. World Health Organization. “Use of non-sugar sweeteners: WHO guideline.” 2023. [官方指南](https://www.who.int/publications/i/item/9789240073616).
