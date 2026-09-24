@@ -1,0 +1,10 @@
+{
+  "batch_id": "05-functional-beverages",
+  "entry_id": "lactic-acid-bacteria-drink",
+  "summary_ref": "references/entries/lactic-acid-bacteria-drink/summary.md",
+  "summary_sha256": "a2e556fe93179dcb8003268ce1752bee83d7dd28412d32d2daaf08fccc2f85bf",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 乳酸菌饮料\n\n**身份。** 以乳或其他基底制成、发酵或添加乳酸菌的饮料；是否含活菌、菌种/菌株、活菌数和发酵方式因产品而异。\n\n**组成与暴露。** “乳酸菌”不能说明菌种、菌株或活菌存活；许多产品含糖，标签上的菌种/菌数与保存条件需要逐项查看。 菌株与活菌数、发酵/后添加、乳基底、糖、冷链、份量及是否属于酸化饮料而非活菌发酵品。\n\n**直接人体证据。** 现有人体证据针对特定发酵乳和明确菌株，不代表“乳酸菌饮料”整体。Poon 等对含 CNCM I-1518 的特定饮料汇总 9 项 RCT，发现至少一次常见感染的几率较低，但感染持续时间与严重程度未见显著差异。2025 年美国开放标签 RCT（50 人、28 天）和 2026 年越南开放标签试点（51 人、4 周）均报告特定 L. paracasei Shirota 发酵乳对硬/块状便结局的差异；样本和设计限制较大。\n\n**产品/成分证据。** 已研究的产品含明确菌株与培养物，不可推广到成分、菌株或活菌量不同的乳酸菌饮料。2026 年越南试验为单中心、开放标签、无干预对照，样本 51 人；美国试验亦为开放标签，不能据此判断所有产品或一般人群的疾病预防效果。\n\n**共享背景。** 参见 fermented-drink-base；共享结论不自动等于本成品结论。\n\n**安全。** 检查乳过敏、乳糖、添加糖和储存条件；严重免疫功能低下或重病者使用活菌产品前听从医疗意见。\n\n**传统来源。** 现代饮品资料不等于古籍对具体商品的专门分类。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}
