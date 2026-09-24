@@ -1,8 +1,8 @@
-# Jev Runtime Contract
+# Jev Runtime Contract — v0.4
 
 ## API
 
-当前验证过的调用：
+当前验证调用：
 
 ```text
 POST https://api.typesafe.ai/v1/systemone
@@ -10,132 +10,144 @@ Authorization: Bearer $JEV_API_KEY
 Content-Type: application/json
 ```
 
-模型请求默认：
+默认模型 alias：
 
 ```text
 jev-latest
 ```
 
-必须记录 response 返回的实际 model，例如：
+必须记录 response 中 actual model，例如：
 
 ```text
 jev-1.13.0
 ```
 
-不要把 alias 和 actual model 当成同一字段。
-
 ## Secret
-
-API key：
-
-```text
-JEV_API_KEY
-```
-
-只能从环境变量或 GitHub Actions Secret 注入。
-
-当前 GitHub Actions 环境：
 
 ```text
 Environment: API_KEYS
 Secret: JEV_API_KEY
 ```
 
-禁止：
+禁止把 key 写进仓库、日志、结果文件或已提交的 `.env`。
 
-- 把 key 写进仓库；
-- 写入 `.env` 后提交；
-- 在日志打印 Authorization header；
-- 在结果文件保存 secret。
-
-## Request
-
-请求的核心结构：
-
-```json
-{
-  "state": "<完整 Markdown / 自然语言说明文档上下文>",
-  "model": "jev-latest",
-  "questions": {
-    "qi": "...",
-    "taste_sour": "...",
-    "taste_bitter": "...",
-    "taste_sweet": "...",
-    "taste_pungent": "...",
-    "taste_salty": "...",
-    "meridian_heart": "...",
-    "meridian_liver": "...",
-    "meridian_spleen": "...",
-    "meridian_lung": "...",
-    "meridian_kidney": "..."
-  }
-}
-```
-
-state 的内容顺序：
+## state
 
 ```text
-判定方法
-→ five-shot
-→ 待判断说明文档
+reasoning-rules-v0.4
+→ five-shot-v0.4
+→ target natural-language document
 ```
 
-## Response validation
+## questions
 
-预期 answer keys 恰好为：
+共 16 个：
 
 ```text
 qi
+
 taste_sour
 taste_bitter
 taste_sweet
 taste_pungent
 taste_salty
+
 meridian_heart
 meridian_liver
 meridian_spleen
 meridian_lung
 meridian_kidney
+
+heart_direction
+liver_direction
+spleen_direction
+lung_direction
+kidney_direction
 ```
 
-四气：
+### qi
 
-- answer type = choice；
-- choice ∈ 寒/凉/平/温/热；
-- 保存全部 choice probabilities。
+Choice：
 
-五味、归经：
+```text
+寒 / 凉 / 平 / 温 / 热
+```
 
-- answer type = noul；
-- `0 <= noul <= 1`；
-- 保存全部值。
+### taste / meridian
 
-如果 schema 改变、缺 key 或 value 超范围，本次结果应判 invalid，不要自行补值。
+Noul，保存 0–1 原始值。
+
+### direction
+
+Choice：
+
+```text
+阴- / 阴+ / 阳- / 阳+
+```
+
+保存 selected choice 与四项完整 probabilities。
+
+方向对五经都会返回，但只有对应归经具有实际解释意义时才进入读者层。
+
+## Response validation
+
+必须满足：
+
+- answer keys 恰好等于上述 16 项；
+- qi type = choice；
+- taste / meridian type = noul；
+- direction type = choice；
+- qi probabilities keys 恰好为寒凉平温热；
+- direction probabilities keys 恰好为阴-/阴+/阳-/阳+；
+- 所有 Noul 和 probabilities 均在 0–1。
+
+schema 不符则本次 invalid，不自行补值。
 
 ## Repeats
 
-普通生产调用：
+普通生产：
 
-- 可以 1 次；
-- 结果注明 `repeat_count: 1`。
+```text
+repeat_count = 1
+```
 
-方法学测试、重要条目或不稳定边界：
+方法学测试 / 关键条目 / 边界样本：
 
-- 推荐 3 次；
-- 保存每次原生结果；
-- 报告 min/max；
-- 不取“最好的一次”。
+```text
+repeat_count = 3
+```
+
+保存全部原始运行；不投票、不平均成“修正值”、不挑最好一次。
+
+## Transient overload
+
+Jev 偶尔可能返回：
+
+```text
+HTTP 529 / system_overloaded
+```
+
+允许有限指数式短重试，例如 2s / 4s / 8s。
+
+只对明确的暂时性服务过载重试；prompt/schema 错误不得无限重试。
 
 ## 当前回归基线
 
-中药 reasoning-complete：
+### 中药
 
-- `run_pilot_v031.py`
-- `fixtures-v0.3.1.json`
+- `run_pilot_v04.py`
+- `fixtures-v0.4.json`
+- 3 次：四气 / 五味 / 归经全对；主方向 10/10 ×3。
 
-现代食品 domain transfer：
+### 现代食品
 
-- `run_domain_transfer_v01.py`
+- `run_domain_transfer_v04.py`
 - `domain-transfer-fixtures-v0.1.json`
 
-这些是回归测试资产，不是出版正文数据源。
+当前实际模型：
+
+```text
+jev-1.13.0
+```
+
+回归文件是方法学资产，不是出版正文事实来源。
