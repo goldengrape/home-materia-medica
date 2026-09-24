@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run Jev v0.4: synchronous meridian + yin/yang direction vector pilot."""
+"""Run Jev v0.4: synchronous meridian + dominant yin/yang direction Choice pilot."""
 
 from __future__ import annotations
 
@@ -18,14 +18,7 @@ RULES_PATH = ROOT.parent.parent / "skills" / "home-materia-jev-mapping" / "refer
 RESULTS_PATH = ROOT / "results-v0.4.json"
 
 PROMPT_VERSION = "jev-tcm-rule-fewshot-v0.4"
-THRESHOLD = 0.5
-
-DIRECTION_KEY = {
-    "阴-": "yin_decrease",
-    "阴+": "yin_increase",
-    "阳-": "yang_decrease",
-    "阳+": "yang_increase",
-}
+DIRECTION_VALUES = ["阴-", "阴+", "阳-", "阳+"]
 
 
 def load_module(path: Path):
@@ -49,9 +42,10 @@ def render_examples(fixtures: dict[str, Any]) -> str:
     chunks: list[str] = []
     for idx, demo in enumerate(fixtures["reference_examples"], start=1):
         answer = demo["answer"]
-        direction_lines: list[str] = []
-        for meridian, directions in answer.get("directions", {}).items():
-            direction_lines.append(f"- {meridian}经方向：{'、'.join(directions)}")
+        direction_lines = [
+            f"- {meridian}经主方向：{direction}"
+            for meridian, direction in answer.get("directions", {}).items()
+        ]
         chunks.append(
             f"""### 参考示例 {idx}
 
@@ -87,49 +81,30 @@ def build_state(fixtures: dict[str, Any], case: dict[str, Any]) -> str:
 def build_questions(base) -> dict[str, Any]:
     questions = base.build_questions()
 
-    direction_semantics = {
-        "阴-": (
-            "判断待判断说明文档所描述的食材/药物，是否使该经阴侧的偏盛、停聚或壅滞减少。"
-            "典型包括化湿、燥湿、化痰、利水等；阴-不等于损伤正常阴液。"
-        ),
-        "阴+": (
-            "判断待判断说明文档所描述的食材/药物，是否增加该经滋养、津液、血、精、濡润或收摄等阴侧表现。"
-            "典型包括养阴、生津、润燥、补血、益精。"
-        ),
-        "阳-": (
-            "判断待判断说明文档所描述的食材/药物，是否减少该经热、火、亢进、升越或过强活动。"
-            "典型包括清热、泻火、平亢、降逆；项目工作约定中疏肝可作为肝阳-的派生表达。"
-        ),
-        "阳+": (
-            "判断待判断说明文档所描述的食材/药物，是否增加该经温煦、推动、活动或功能性阳侧表现。"
-            "典型包括温、助阳、回阳、推动功能以及纠正虚寒。"
-        ),
+    criteria = {
+        "阴-": "主要作用是减少该经阴侧的偏盛、停聚、积滞或壅滞，如化湿、燥湿、化痰、利水、消食、消积。",
+        "阴+": "主要作用是增加该经滋养、津液、血、精、濡润或收摄，如养阴、生津、润燥、补血、益精。",
+        "阳-": "主要作用是减少该经热、火、亢进、升越或过强活动，如清热、泻火、平亢；项目约定中疏肝归入肝阳-。",
+        "阳+": "主要作用是增加该经温煦、推动、运化或功能性活动，如温、助阳、回阳、健脾、健胃、助运。",
     }
 
     for meridian, mslug in base.MERIDIAN_KEY.items():
-        for direction, dslug in DIRECTION_KEY.items():
-            key = f"{mslug}_{dslug}"
-            questions[key] = {
-                "type": "noul",
-                "instructions": (
-                    f"根据 state 中的推理方法，判断待判断说明文档是否支持“{meridian}经{direction}”。"
-                    "先区分被处理的病机状态与食材/药物的作用方向；本题判断的是作用方向。"
-                ),
-                "criteria": {
-                    "true": direction_semantics[direction],
-                    "false": f"综合全文后，不支持“{meridian}经{direction}”作为该对象的作用方向。",
-                },
-            }
+        questions[f"{mslug}_direction"] = {
+            "type": "choice",
+            "instructions": (
+                f"判断待判断说明文档对“{meridian}经”的主要阴阳增减作用方向。"
+                "先区分病机状态与食材/药物实际作用；如果有多个方向，选择全文中更主要、直接、重复支持更多的一项。"
+            ),
+            "criteria": criteria,
+        }
 
     return questions
 
 
 def expected_answer_keys(base) -> set[str]:
-    keys = set(base.expected_answer_keys())
-    for mslug in base.MERIDIAN_KEY.values():
-        for dslug in DIRECTION_KEY.values():
-            keys.add(f"{mslug}_{dslug}")
-    return keys
+    return set(base.expected_answer_keys()) | {
+        f"{slug}_direction" for slug in base.MERIDIAN_KEY.values()
+    }
 
 
 def validate_answers(base, answers: dict[str, Any]) -> None:
@@ -139,67 +114,18 @@ def validate_answers(base, answers: dict[str, Any]) -> None:
             f"Answer keys changed. expected={sorted(expected)} actual={sorted(answers)}"
         )
 
-    # Validate the original 11 fields using the v0.3.1 contract.
     original = {k: v for k, v in answers.items() if k in base.expected_answer_keys()}
     base.validate_answers(original)
 
-    for key in expected - set(original):
+    for slug in base.MERIDIAN_KEY.values():
+        key = f"{slug}_direction"
         answer = answers[key]
-        if answer.get("type") != "noul":
-            raise AssertionError(f"{key} is not noul.")
-        value = answer.get("noul")
-        if not isinstance(value, (int, float)) or not 0 <= value <= 1:
-            raise AssertionError(f"{key} noul invalid: {value}")
-
-
-def predicted_direction_set(base, answers: dict[str, Any]) -> set[str]:
-    out: set[str] = set()
-    for meridian, mslug in base.MERIDIAN_KEY.items():
-        for direction, dslug in DIRECTION_KEY.items():
-            if answers[f"{mslug}_{dslug}"]["noul"] >= THRESHOLD:
-                out.add(f"{meridian}:{direction}")
-    return out
-
-
-def gold_direction_set(case: dict[str, Any]) -> set[str]:
-    out: set[str] = set()
-    for meridian, directions in case["gold"].get("directions", {}).items():
-        for direction in directions:
-            out.add(f"{meridian}:{direction}")
-    return out
-
-
-def set_counts(predicted: set[str], gold: set[str]) -> tuple[int, int, int]:
-    return len(predicted & gold), len(predicted - gold), len(gold - predicted)
-
-
-def prf(tp: int, fp: int, fn: int) -> dict[str, float]:
-    precision = tp / (tp + fp) if tp + fp else 1.0
-    recall = tp / (tp + fn) if tp + fn else 1.0
-    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
-    return {
-        "precision": round(precision, 4),
-        "recall": round(recall, 4),
-        "f1": round(f1, 4),
-    }
-
-
-def location_direction_disagreements(base, answers: dict[str, Any]) -> list[dict[str, Any]]:
-    issues: list[dict[str, Any]] = []
-    for meridian, mslug in base.MERIDIAN_KEY.items():
-        meridian_score = float(answers[f"meridian_{mslug}"]["noul"])
-        for direction, dslug in DIRECTION_KEY.items():
-            direction_score = float(answers[f"{mslug}_{dslug}"]["noul"])
-            if meridian_score < THRESHOLD <= direction_score:
-                issues.append(
-                    {
-                        "meridian": meridian,
-                        "meridian_score": meridian_score,
-                        "direction": direction,
-                        "direction_score": direction_score,
-                    }
-                )
-    return issues
+        if answer.get("type") != "choice":
+            raise AssertionError(f"{key} is not choice.")
+        if answer.get("choice") not in DIRECTION_VALUES:
+            raise AssertionError(f"Invalid {key} choice: {answer}")
+        if set(answer.get("probabilities", {})) != set(DIRECTION_VALUES):
+            raise AssertionError(f"{key} probabilities do not match direction values.")
 
 
 def run_once(
@@ -216,9 +142,10 @@ def run_once(
     qi_correct = 0
     taste_tp = taste_fp = taste_fn = 0
     meridian_tp = meridian_fp = meridian_fn = 0
-    vector_tp = vector_fp = vector_fn = 0
-    taste_exact = meridian_exact = vector_exact = 0
-    disagreement_count = 0
+    taste_exact = meridian_exact = 0
+
+    direction_correct = 0
+    direction_total = 0
 
     for case in fixtures["test_cases"]:
         state = build_state(fixtures, case)
@@ -236,35 +163,59 @@ def run_once(
 
         predicted_tastes, predicted_meridians = base.labels_from_answers(answers)
         predicted_qi = answers["qi"]["choice"]
-        predicted_vectors = predicted_direction_set(base, answers)
         gold = case["gold"]
-        gold_vectors = gold_direction_set(case)
 
         qi_ok = predicted_qi == gold["qi"]
         qi_correct += int(qi_ok)
 
         pt, gt = set(predicted_tastes), set(gold["tastes"])
-        ttp, tfp, tfn = set_counts(pt, gt)
+        ttp, tfp, tfn = base.set_counts(pt, gt)
         taste_tp += ttp
         taste_fp += tfp
         taste_fn += tfn
         taste_exact += int(pt == gt)
 
         pm, gm = set(predicted_meridians), set(gold["meridians"])
-        mtp, mfp, mfn = set_counts(pm, gm)
+        mtp, mfp, mfn = base.set_counts(pm, gm)
         meridian_tp += mtp
         meridian_fp += mfp
         meridian_fn += mfn
         meridian_exact += int(pm == gm)
 
-        vtp, vfp, vfn = set_counts(predicted_vectors, gold_vectors)
-        vector_tp += vtp
-        vector_fp += vfp
-        vector_fn += vfn
-        vector_exact += int(predicted_vectors == gold_vectors)
+        direction_results: dict[str, Any] = {}
+        for meridian, gold_direction in gold.get("directions", {}).items():
+            slug = base.MERIDIAN_KEY[meridian]
+            answer = answers[f"{slug}_direction"]
+            choice = answer["choice"]
+            probs = answer["probabilities"]
+            ok = choice == gold_direction
+            direction_correct += int(ok)
+            direction_total += 1
+            sorted_probs = sorted(
+                ((label, float(p)) for label, p in probs.items()),
+                key=lambda x: x[1],
+                reverse=True,
+            )
+            margin = (
+                sorted_probs[0][1] - sorted_probs[1][1]
+                if len(sorted_probs) > 1
+                else sorted_probs[0][1]
+            )
+            direction_results[meridian] = {
+                "gold": gold_direction,
+                "choice": choice,
+                "correct": ok,
+                "probabilities": probs,
+                "top_margin": round(margin, 4),
+            }
 
-        disagreements = location_direction_disagreements(base, answers)
-        disagreement_count += len(disagreements)
+        all_direction_choices = {
+            meridian: {
+                "choice": answers[f"{slug}_direction"]["choice"],
+                "probabilities": answers[f"{slug}_direction"]["probabilities"],
+            }
+            for meridian, slug in base.MERIDIAN_KEY.items()
+        }
 
         cases_out.append(
             {
@@ -276,15 +227,17 @@ def run_once(
                     "qi": predicted_qi,
                     "tastes_at_0_5": predicted_tastes,
                     "meridians_at_0_5": predicted_meridians,
-                    "directions_at_0_5": sorted(predicted_vectors),
+                    "directions_for_gold_meridians": direction_results,
+                    "all_direction_choices": all_direction_choices,
                 },
                 "correct": {
                     "qi": qi_ok,
                     "taste_exact_set": pt == gt,
                     "meridian_exact_set": pm == gm,
-                    "direction_exact_set": predicted_vectors == gold_vectors,
+                    "direction_gold_meridians_all_correct": all(
+                        x["correct"] for x in direction_results.values()
+                    ),
                 },
-                "location_direction_disagreements": disagreements,
                 "native_answers": answers,
                 "usage": response["usage"],
             }
@@ -308,19 +261,20 @@ def run_once(
             "taste": {
                 "exact_set_matches": taste_exact,
                 "total": n,
-                "micro": prf(taste_tp, taste_fp, taste_fn),
+                "micro": base.prf(taste_tp, taste_fp, taste_fn),
             },
             "meridian": {
                 "exact_set_matches": meridian_exact,
                 "total": n,
-                "micro": prf(meridian_tp, meridian_fp, meridian_fn),
+                "micro": base.prf(meridian_tp, meridian_fp, meridian_fn),
             },
-            "directions": {
-                "exact_set_matches": vector_exact,
-                "total": n,
-                "micro": prf(vector_tp, vector_fp, vector_fn),
+            "direction": {
+                "correct": direction_correct,
+                "total": direction_total,
+                "accuracy": round(direction_correct / direction_total, 4)
+                if direction_total
+                else 0.0,
             },
-            "location_direction_disagreement_count": disagreement_count,
         },
     }
 
@@ -360,6 +314,7 @@ def main() -> int:
         "actual_models": sorted({r["actual_model"] for r in repeats}),
         "architecture": "semantic cascade; computationally synchronous single Jev request",
         "question_count": len(questions),
+        "direction_schema": "one 4-way Choice per meridian: 阴-/阴+/阳-/阳+",
         "probability_policy": "Native Jev probabilities unchanged; no post-hoc calibration.",
         "repeats": repeats,
     }
