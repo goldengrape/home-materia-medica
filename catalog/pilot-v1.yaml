@@ -43,8 +43,9 @@ entries:
       - anshen_not_supported
       - no_channel_tropism_supported
 
-  - id: milk-tea
-    name: 奶茶
+  - id: pearl-milk-tea
+    pilot_original_id: milk-tea
+    name: 珍珠奶茶
     entry_type: composite_beverage
     volume: 饮品部
     research_depth: R2
@@ -54,7 +55,16 @@ entries:
       - sparse_direct_evidence
       - serving_size
       - indirect_component_evidence
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/pearl-milk-tea/research.md
+    pilot_qa: qa/pilot/pearl-milk-tea-r2.md
+    pilot_findings:
+      - generic_milk_tea_identity_rejected
+      - composition_evidence_stronger_than_long_term_outcome_evidence
+      - generic_ssb_evidence_is_D2
+      - sparse_evidence_stop_rule_worked
+      - iced_serving_temperature_is_not_cold_nature
 
   - id: coffee
     name: 咖啡
