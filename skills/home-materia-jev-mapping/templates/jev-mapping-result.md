@@ -6,8 +6,8 @@
 entry_id:
 target_document_ref:
 target_document_hash:
-reasoning_version: jev-tcm-reasoning-v0.3.1
-five_shot_version: jev-tcm-pilot-fixtures-v0.3.1
+reasoning_version: jev-tcm-reasoning-v0.4
+five_shot_version: jev-tcm-pilot-fixtures-v0.4
 requested_model: jev-latest
 actual_model:
 repeat_count:
@@ -16,7 +16,7 @@ run_date:
 
 ## 四气
 
-| 候选 | Jev score | M grade | 说明 |
+| 候选 | Jev probability | M grade | 说明 |
 |---|---:|---|---|
 | 寒 |  |  |  |
 | 凉 |  |  |  |
@@ -40,34 +40,54 @@ Jev Choice：
 | 辛 |  |  |  |
 | 咸 |  |  |  |
 
-主要解释：
+## 五脏归经与主方向
 
-反证 / 替代解释：
+| 归经 | Meridian score | 主方向 | 阴- | 阴+ | 阳- | 阳+ | M grade | 说明 |
+|---|---:|---|---:|---:|---:|---:|---|---|
+| 心 |  |  |  |  |  |  |  |  |
+| 肝 |  |  |  |  |  |  |  |  |
+| 脾 |  |  |  |  |  |  |  |  |
+| 肺 |  |  |  |  |  |  |  |  |
+| 肾 |  |  |  |  |  |  |  |  |
 
-## 五脏归经
+说明：
 
-| 归经 | Jev score | M grade | 说明 |
-|---|---:|---|---|
-| 心 |  |  |  |
-| 肝 |  |  |  |
-| 脾 |  |  |  |
-| 肺 |  |  |  |
-| 肾 |  |  |  |
+- `Meridian score` 是归经 Noul；
+- `主方向` 是对应 direction Choice；
+- 四个方向列保存 Choice probabilities；
+- 低归经 score 的 direction 仍保留在研究记录，但通常不进入读者速查。
 
-主要解释：
+## 派生传统用词
 
-反证 / 替代解释：
+```yaml
+derived_wording:
+  candidates: []
+  rationale:
+  status: draft | accepted
+```
+
+这里只根据：
+
+```text
+归经 + 主方向 + 原文语境
+```
+
+选择“疏肝、健脾、润肺、温中、化湿、生津”等习惯用词。
+
+不得让派生用词反向修改 Jev 原始结果。
 
 ## Reader-facing summary
 
 > 四气候选：  
 > 五味候选：  
-> 归经候选：  
-> Jev score 反映模型在当前规则和资料下的判断倾向；M grade 反映可追溯证据链强度，两者不是同一指标。
+> 归经与主方向：  
+> Jev score / probability 反映模型判断倾向；M grade 反映可追溯证据链强度，两者不是同一指标。
 
 ## Claim Ledger handoff
 
-- 可以直接作为模型判断记录：
-- 需要以低 M 明示的候选：
-- 不可把 Jev score 写成证据概率：
+- 可以记录的 Jev 原始分类：
+- 派生传统用词：
+- 低 M 但模型倾向明确的候选：
+- 主要反证 / 替代解释：
+- 不可把 Jev probability 写成真实证据概率：
 - 不可因 Jev 结果提升的 M claims：

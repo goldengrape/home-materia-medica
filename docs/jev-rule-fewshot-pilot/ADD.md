@@ -1,111 +1,87 @@
-# Design Split — Jev 四气五味归经 Pilot v0.3.1
+# Design Split — Jev Pilot v0.4
 
 > 来源：`URD.md`
 
-## 1. Functional Requirements
+## Functional Requirements
 
-| ID | Functional Requirement |
+| ID | Requirement |
 |---|---|
-| ADD-FR-001 | Jev 接收自然语言说明文档，而不是要求固定 Evidence Packet JSON schema。 |
-| ADD-FR-002 | rules 教授从感官 / 功能 / 症候到四气、五味、五脏归经的推理链。 |
-| ADD-FR-003 | five-shot 与 held-out 分离，且二者使用相同推理规则。 |
-| ADD-FR-004 | question schema 固定输出空间；rules 不重复接口约束。 |
-| ADD-FR-005 | 保存 Jev 原生概率并完成可复查评分。 |
-| ADD-FR-006 | 五脏功能群投影在 rules、few-shot gold、held-out gold 三处保持一致。 |
-| ADD-FR-007 | API key 仅通过 GitHub Environment Secret 注入。 |
+| ADD-FR-001 | 输入为自然语言说明文档。 |
+| ADD-FR-002 | rules 教授四气、五味、脏腑功能群与阴阳增减方向推理。 |
+| ADD-FR-003 | five-shot / held-out 分离。 |
+| ADD-FR-004 | schema 限定输出；rules 不重复接口约束。 |
+| ADD-FR-005 | 保存 Jev 原生 probabilities / Noul。 |
+| ADD-FR-006 | 五脏工作投影在 rules、demo、gold 一致。 |
+| ADD-FR-007 | 每经一个主方向 Choice。 |
+| ADD-FR-008 | Jev 与 M 双轴独立。 |
+| ADD-FR-009 | Secret 只从 GitHub Environment 注入。 |
 
-## 2. Design Parameters
+## Design Parameters
 
-| ID | Design Parameter |
+| ID | Parameter |
 |---|---|
-| ADD-DP-001 | `state` 是单一 Markdown string：reasoning rules + narrative five-shot + narrative target。 |
-| ADD-DP-002 | `fixtures-v0.3.1.json` 中 reference / target 都以 `document` 字符串存说明文档，meta/gold 只供评分端。 |
-| ADD-DP-003 | questions = 1 Choice（四气）+ 5 Noul（五味）+ 5 Noul（五脏归经）。 |
-| ADD-DP-004 | rules 显式定义症候功能群、寒热强弱、五味功能模式及五脏功能群投影。 |
-| ADD-DP-005 | runner 在发送前检查 held-out 药名与 URL 未进入 state。 |
-| ADD-DP-006 | 同一 workflow run 内重复 3 次，逐次保存原生结果。 |
-| ADD-DP-007 | GitHub Actions job 绑定 `environment: API_KEYS`。 |
+| ADD-DP-001 | state = reasoning rules + narrative five-shot + narrative target。 |
+| ADD-DP-002 | fixtures-v0.4.json 保存 demo / held-out；meta/gold 不进入 state。 |
+| ADD-DP-003 | questions = 1 qi Choice + 5 taste Noul + 5 meridian Noul + 5 direction Choice。 |
+| ADD-DP-004 | direction values = 阴-/阴+/阳-/阳+。 |
+| ADD-DP-005 | 语义上先归经后方向；API 一次同步调用。 |
+| ADD-DP-006 | direction Choice 保存四项 probabilities，允许显示次方向。 |
+| ADD-DP-007 | 同一冻结版本重复 3 次。 |
+| ADD-DP-008 | 暂时性 529 overload 可短重试。 |
 
-## 3. Design Matrix
-
-| FR \ DP | 001 | 002 | 003 | 004 | 005 | 006 | 007 |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| FR-001 | X | X |  |  |  |  |  |
-| FR-002 | X |  |  | X |  |  |  |
-| FR-003 | X | X |  | X |  |  |  |
-| FR-004 |  |  | X | X |  |  |  |
-| FR-005 |  |  | X |  |  | X |  |
-| FR-006 |  | X |  | X |  |  |  |
-| FR-007 |  |  |  |  |  |  | X |
-
-分类：**Decoupled，可接受。**  
-推理知识、输入文档、输出 question schema 与 secret 管理分层。
-
-## 4. 关键设计决定
+## 关键设计决定
 
 ### DEC-001｜不训练校准函数
 
-Jev probability / Noul 原样保存。不做 Platt、isotonic、temperature scaling 或手工 probability transform。
+原生 Jev score / probability 不做后处理。
 
-### DEC-011｜rules 是推理知识，不是接口说明
+### DEC-011｜rules 只教推理
 
-rules 只回答：
+输出空间由 questions 保证。
 
-- 怎么从热证 / 寒证区分四气；
-- 怎么从功能模式与感官判断五味；
-- 怎么把症状聚成脏腑功能群；
-- 怎么处理同一症状同时影响四气和归经。
+### DEC-012｜target 是自然语言
 
-“只能输出哪几个 key”由 questions 保证，不写进 reasoning rules。
+生产输入不要求特征 JSON。
 
-### DEC-012｜target 是自然语言说明文档
-
-runner 不解析 target 文档结构，也不要求固定 headings。未来只要正式生产的说明文档能作为字符串传入，即可复用同一调用方式。
-
-### DEC-013｜five-shot 同样是自然语言文档
-
-示例不是字段化特征表，而是与 target 同一文体的说明文档，后接标准结果。
-
-### DEC-014｜五脏功能群工作投影
-
-产品只输出五脏，因此：
+### DEC-014｜五脏功能群投影
 
 ```text
-胆 -> 肝
-胃 -> 脾
-大肠 -> 肺
-小肠 -> 心
-膀胱 -> 肾
-三焦 -> 按具体语境
+胆→肝
+胃→脾
+大肠→肺
+小肠→心
+膀胱→肾
+三焦→按语境
 ```
 
-这是输出投影规则，不是传统归经等价关系。
-
-### DEC-015｜reasoning-complete benchmark
-
-本阶段中药样本必须满足“说明文档足以推出 gold”。目的在于验证 Jev 是否会遵循项目推理链，而不是考察缺失证据条件下的猜测能力。
-
-## 5. 当前数据流
+### DEC-016｜习惯术语不是一级分类
 
 ```text
-Research source
-    ↓
-自然语言说明文档
-    ↓
-[ reasoning rules + five-shot + target document ]
-    ↓
-Jev questions
-    ├─ 四气 Choice
-    ├─ 五味 5 Noul
-    └─ 五脏归经 5 Noul
-    ↓
-原生概率
-    ↓
-benchmark / future Materia mapping
+归经 + 阴阳增减 + 语境
+→ 疏肝 / 健脾 / 润肺 / 温中 / 化湿 / 生津……
 ```
 
-## 6. 已接受限制
+派生词不得反向改变原始分类。
 
-- 中药功能主治与传统性味归经并非独立生成，因此本测试只验证规则执行能力。
-- reasoning-complete 文档会比未来真实现代食品 dossier 更容易推断。
-- 真正的项目可行性要靠下一阶段现代食品 domain-transfer test，而不能由本轮 5/5 证明。
+### DEC-017｜语义级连、计算同步
+
+不使用“第一轮归经 threshold → 第二轮 direction API”。
+
+### DEC-018｜每经一个主方向 Choice
+
+早期 20 个 direction Noul draft 已被替代。
+
+Choice 保持单一主分类，同时用 probability 分布保留混合方向。
+
+## 数据流
+
+```text
+Research Dossier
+→ natural-language description
+→ reasoning rules + five-shot
+→ Jev 16 questions
+→ 四气 / 五味 / 归经 / 主方向
+→ native scores
+→ 与 M grade 并列
+→ conventional wording
+```

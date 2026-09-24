@@ -173,7 +173,7 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 10. **Grade E**：为每个具体人体效应评 E-A ～ E-0。
 11. **Trace TCM concepts**：涉及性味、归经、脏腑、证候、功效等术语时，先做概念溯源与时代分层。
 12. **Map M**：在 E 与概念溯源之后独立评定本草映射证据等级，列出支持、反证与替代解释。
-13. **Jev mapping（可选但推荐）**：Research Dossier 完成后，可调用 `../home-materia-jev-mapping/SKILL.md`，把正式说明文档交给 Jev 得到四气、五味、五脏归经原生 score。Jev score 与 M grade 并列保存；不得用 Jev score 提升 M，也不得用 M 修改 Jev score。
+13. **Jev mapping（可选但推荐）**：Research Dossier 完成后，可调用 `../home-materia-jev-mapping/SKILL.md`，把正式说明文档交给 Jev 得到四气、五味、五脏归经，以及每个归经的阴-/阴+/阳-/阳+主方向原生结果。Jev score 与 M grade 并列保存；不得用 Jev score 提升 M，也不得用 M 修改 Jev score。
 14. **Safety**：单独检索和总结不良反应、相互作用和特殊人群。
 15. **Stop**：依据 R 等级和证据饱和判断停止。
 16. **Reference audit**：把关键引文、DOI/PMID、古籍版本与数据库入口列入底稿，供作者与读者复核；不设置强制人工复审门槛。
