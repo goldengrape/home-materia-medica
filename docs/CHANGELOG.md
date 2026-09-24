@@ -30,10 +30,11 @@
 - 重构 Jev pilot v0.3/v0.3.1：rules 改为症候→功能群→四气/五味/五脏归经的推理链，target 与 five-shot 改为自然语言说明文档；v0.3 #11 因 gold 投影和样本说明一致性问题标记 invalid。
 - 完成 Jev pilot v0.3.1：采用五脏功能群工作投影并修正 reasoning-complete held-out，Actions #14 三次重复均达到四气 5/5、五味 5/5 exact、五脏归经 5/5 exact；不把该结果解释为生产准确率。
 - 完成 Jev 现代食品 domain-transfer v0.1：冻结 v0.3.1 rules + five-shot，测试开心果、黑巧克力、咖啡、酸奶、方便面。确认 Jev 判定倾向与 M 证据等级应采用双轴展示：例如酸奶可同时记录“脾 Jev 0.58–0.61｜M-0”；不使用 M gate 压低或隐藏 Jev 结果，也不因 Jev score 提升 M。
+- 完成 Jev v0.4：在每个五脏归经后增加一个 `阴- / 阴+ / 阳- / 阳+` 主方向 Choice；采用“语义上级连、计算上同步”的单次调用结构。5 味中药 held-out 三次重复中四气、五味、归经均 5/5，10 个有效归经主方向 10/10；现代食品迁移中开心果得到脾阳+/肾阳+，咖啡与酸奶得到脾阳+，黑巧克力与方便面无主归经。传统“疏肝、健脾、润肺、温中、化湿、生津”等下沉为原子分类后的派生用词。
 
 ### Current
 
-- 当前工作分支：`plan/project-roadmap-v1`
 - RM-TASK-001 项目级规划：done。
 - RM-TASK-002 最小 OKF：done。
-- 下一任务：RM-TASK-010 / RM-TASK-003 中医概念骨架；随后建立正式 Entry Registry。
+- Jev mapping current candidate：v0.4。
+- 下一任务：建立精简后的原子概念骨架与 Entry Registry；随后进入正文 Pilot。
