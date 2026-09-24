@@ -1,7 +1,7 @@
 {
   "batch_id": "15-fermented-foods-and-avocado",
   "extractor": "Exa web fetch; page text retained as returned",
-  "source_page_responses": 35,
+  "source_page_responses": 37,
   "extracted_page_sets": [
     {
       "file": "source-extracts-01.md",
@@ -26,6 +26,12 @@
       "source_group": "targeted publisher and primary paper follow-ups",
       "url_count": 7,
       "chars": 82968
+    },
+    {
+      "file": "source-extracts-05.md",
+      "source_group": "citation closure verification",
+      "url_count": 2,
+      "chars": 24639
     }
   ],
   "note": "Source excerpts preserve returned page text, including tool metadata and repeated page headings. Raw search responses and exact query text are separately retained in exa-results-preserved-*.json."
