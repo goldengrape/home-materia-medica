@@ -1,0 +1,129 @@
+{
+  "batch_id": "15-fermented-foods-and-avocado",
+  "entry_id": "miso",
+  "summary_ref": "references/entries/miso/summary.md",
+  "summary_sha256": "81562a62181a9d22d5d342dde019dc57e4142d4351bf6ed94e249620e04e508b",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "requested_model": "jev-latest",
+  "run_timestamp_utc": "2026-09-24T15:14:22.835747+00:00",
+  "runs": [
+    {
+      "index": 1,
+      "actual_model": "jev-1.13.0",
+      "native_answers": {
+        "qi": {
+          "type": "choice",
+          "choice": "平",
+          "confidence": 0.97,
+          "probabilities": {
+            "寒": 0.0,
+            "平": 0.98,
+            "温": 0.02,
+            "凉": 0.0,
+            "热": 0.0
+          }
+        },
+        "taste_sour": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "taste_bitter": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "taste_sweet": {
+          "type": "noul",
+          "noul": 0.13
+        },
+        "taste_pungent": {
+          "type": "noul",
+          "noul": 0.1
+        },
+        "taste_salty": {
+          "type": "noul",
+          "noul": 0.58
+        },
+        "meridian_heart": {
+          "type": "noul",
+          "noul": 0.1
+        },
+        "meridian_liver": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "meridian_spleen": {
+          "type": "noul",
+          "noul": 0.12
+        },
+        "meridian_lung": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "meridian_kidney": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "heart_direction": {
+          "type": "choice",
+          "choice": "阳-",
+          "confidence": 0.46,
+          "probabilities": {
+            "阴-": 0.16,
+            "阴+": 0.03,
+            "阳+": 0.21,
+            "阳-": 0.6
+          }
+        },
+        "liver_direction": {
+          "type": "choice",
+          "choice": "阳-",
+          "confidence": 0.29,
+          "probabilities": {
+            "阴-": 0.4,
+            "阴+": 0.03,
+            "阳+": 0.11,
+            "阳-": 0.45999999999999996
+          }
+        },
+        "spleen_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.38,
+          "probabilities": {
+            "阴-": 0.53,
+            "阴+": 0.03,
+            "阳+": 0.42,
+            "阳-": 0.02
+          }
+        },
+        "lung_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.46,
+          "probabilities": {
+            "阴-": 0.6,
+            "阴+": 0.06,
+            "阳+": 0.15,
+            "阳-": 0.19
+          }
+        },
+        "kidney_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.5,
+          "probabilities": {
+            "阴-": 0.62,
+            "阴+": 0.06,
+            "阳+": 0.12,
+            "阳-": 0.2
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 8746,
+        "output_tokens": 480
+      }
+    }
+  ]
+}

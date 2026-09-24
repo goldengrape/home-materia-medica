@@ -1,0 +1,237 @@
+{
+  "batch_id": "15-fermented-foods-and-avocado",
+  "cutoff": "2026-09-24",
+  "exa_search_calls": 24,
+  "exa_result_cards": 141,
+  "initial_searches": 20,
+  "supplemental_searches": 4,
+  "source_extract_page_responses": 37,
+  "per_entry_queries": {
+    "milk-cap": [
+      "Human randomized clinical studies or nutrition analyses of dairy/cream foam toppings ('cheese foam' or milk cap) on tea; separate the topping from milk tea and from cream cheese. Prefer exact composition and DOI.",
+      "Official standards and food composition for whipped dairy cream, cream cheese foam or tea toppings; dairy allergen and added sugar labeling. Distinguish topping recipes from beverages."
+    ],
+    "kefir": [
+      "Systematic reviews and randomized controlled human trials of kefir consumption on gastrointestinal symptoms, lipids, glycemia or blood pressure; exact English titles, DOI, sample, dose, duration and limits.",
+      "Human intervention studies specific to kefir, not yogurt or probiotic supplements; composition and dairy allergy/lactose safety from official sources. Prioritize primary trials and DOI."
+    ],
+    "natto": [
+      "Randomized or prospective human studies directly testing natto consumption and blood pressure, bone or cardiovascular outcomes; exact dose, sample, duration, DOI.",
+      "Natto nutrient composition, vitamin K2 and warfarin interaction from primary studies or official clinical guidance; distinguish natto from isolated menaquinone supplements."
+    ],
+    "kimchi": [
+      "Randomized controlled human studies and systematic reviews specifically on kimchi intake and metabolic outcomes; exact study design, Korean product, dose, DOI and limitations.",
+      "Kimchi sodium and fermentation composition studies plus authoritative fermented food safety guidance; distinguish kimchi from cabbage or probiotic supplements."
+    ],
+    "pickled-cucumber": [
+      "Human trials of naturally fermented cucumbers or fermented pickles; distinguish lactic-acid fermented brined cucumbers from vinegar pickles and report exact DOI.",
+      "Official food safety guidance for fermented cucumbers, sodium content and composition of pickles; no extrapolation from vinegar or probiotic supplements."
+    ],
+    "sauerkraut": [
+      "Direct human intervention studies of sauerkraut consumption and health outcomes, randomized or controlled designs, exact citations and product/process details.",
+      "Fermented cabbage/sauerkraut sodium and microbiological safety guidance; distinguish raw unpasteurized sauerkraut from canned/pasteurized products and cabbage."
+    ],
+    "miso": [
+      "Human randomized or prospective studies of miso or miso soup consumption and blood pressure, metabolic or gastrointestinal outcomes; exact evidence and DOI.",
+      "Miso sodium/nutrient composition, fermentation and safety from official data or human market studies; distinguish miso paste and miso soup."
+    ],
+    "tempeh": [
+      "Human controlled trials specifically using tempeh (not soy protein or tofu) for metabolic, lipid, bone or gastrointestinal outcomes; exact DOI, sample, dose and limits.",
+      "Tempeh composition and food safety/fermentation evidence from primary sources or official agencies; separate fermented soybean from other soy foods.",
+      "randomized controlled human trial conventional soybean tempeh (not tempeh gembus) health effects DOI participants dose"
+    ],
+    "fermented-chili-sauce": [
+      "Human controlled studies specifically of fermented chili sauce or fermented hot pepper sauce and health outcomes; distinguish capsaicin supplement and fresh chili.",
+      "Fermented chili sauce identity, sodium, fermentation microbiology and safety from primary/official sources; product recipe variability."
+    ],
+    "avocado": [
+      "Randomized controlled trials of whole fresh avocado consumption in adults and LDL cholesterol, glycemia or weight; exact dose, comparator, duration and DOI.",
+      "Systematic reviews of avocado intake randomized trials and official nutrient composition; distinguish whole avocado from avocado oil and supplements.",
+      "Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors DOI journal randomized controlled trial NCT02695433"
+    ]
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "entry_id": "milk-cap",
+      "query": "Human randomized clinical studies or nutrition analyses of dairy/cream foam toppings ('cheese foam' or milk cap) on tea; separate the topping from milk tea and from cream cheese. Prefer exact composition and DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 2,
+      "entry_id": "milk-cap",
+      "query": "Official standards and food composition for whipped dairy cream, cream cheese foam or tea toppings; dairy allergen and added sugar labeling. Distinguish topping recipes from beverages.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 3,
+      "entry_id": "kefir",
+      "query": "Systematic reviews and randomized controlled human trials of kefir consumption on gastrointestinal symptoms, lipids, glycemia or blood pressure; exact English titles, DOI, sample, dose, duration and limits.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 4,
+      "entry_id": "kefir",
+      "query": "Human intervention studies specific to kefir, not yogurt or probiotic supplements; composition and dairy allergy/lactose safety from official sources. Prioritize primary trials and DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 5,
+      "entry_id": "natto",
+      "query": "Randomized or prospective human studies directly testing natto consumption and blood pressure, bone or cardiovascular outcomes; exact dose, sample, duration, DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 6,
+      "entry_id": "natto",
+      "query": "Natto nutrient composition, vitamin K2 and warfarin interaction from primary studies or official clinical guidance; distinguish natto from isolated menaquinone supplements.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 7,
+      "entry_id": "kimchi",
+      "query": "Randomized controlled human studies and systematic reviews specifically on kimchi intake and metabolic outcomes; exact study design, Korean product, dose, DOI and limitations.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 8,
+      "entry_id": "kimchi",
+      "query": "Kimchi sodium and fermentation composition studies plus authoritative fermented food safety guidance; distinguish kimchi from cabbage or probiotic supplements.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 9,
+      "entry_id": "pickles",
+      "query": "Human trials of naturally fermented cucumbers or fermented pickles; distinguish lactic-acid fermented brined cucumbers from vinegar pickles and report exact DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 10,
+      "entry_id": "pickles",
+      "query": "Official food safety guidance for fermented cucumbers, sodium content and composition of pickles; no extrapolation from vinegar or probiotic supplements.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 11,
+      "entry_id": "sauerkraut",
+      "query": "Direct human intervention studies of sauerkraut consumption and health outcomes, randomized or controlled designs, exact citations and product/process details.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 12,
+      "entry_id": "sauerkraut",
+      "query": "Fermented cabbage/sauerkraut sodium and microbiological safety guidance; distinguish raw unpasteurized sauerkraut from canned/pasteurized products and cabbage.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 13,
+      "entry_id": "miso",
+      "query": "Human randomized or prospective studies of miso or miso soup consumption and blood pressure, metabolic or gastrointestinal outcomes; exact evidence and DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 14,
+      "entry_id": "miso",
+      "query": "Miso sodium/nutrient composition, fermentation and safety from official data or human market studies; distinguish miso paste and miso soup.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 15,
+      "entry_id": "tempeh",
+      "query": "Human controlled trials specifically using tempeh (not soy protein or tofu) for metabolic, lipid, bone or gastrointestinal outcomes; exact DOI, sample, dose and limits.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 16,
+      "entry_id": "tempeh",
+      "query": "Tempeh composition and food safety/fermentation evidence from primary sources or official agencies; separate fermented soybean from other soy foods.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 17,
+      "entry_id": "fermented-chili-sauce",
+      "query": "Human controlled studies specifically of fermented chili sauce or fermented hot pepper sauce and health outcomes; distinguish capsaicin supplement and fresh chili.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 18,
+      "entry_id": "fermented-chili-sauce",
+      "query": "Fermented chili sauce identity, sodium, fermentation microbiology and safety from primary/official sources; product recipe variability.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 19,
+      "entry_id": "avocado",
+      "query": "Randomized controlled trials of whole fresh avocado consumption in adults and LDL cholesterol, glycemia or weight; exact dose, comparator, duration and DOI.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 20,
+      "entry_id": "avocado",
+      "query": "Systematic reviews of avocado intake randomized trials and official nutrient composition; distinguish whole avocado from avocado oil and supplements.",
+      "attempt": "initial",
+      "result_cards": 6
+    },
+    {
+      "sequence": 21,
+      "entry_id": "tempeh",
+      "query": "randomized controlled human trial conventional soybean tempeh (not tempeh gembus) health effects DOI participants dose",
+      "attempt": "follow-up",
+      "result_cards": 6
+    },
+    {
+      "sequence": 22,
+      "entry_id": "avocado",
+      "query": "Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors DOI journal randomized controlled trial NCT02695433",
+      "attempt": "follow-up",
+      "result_cards": 5
+    },
+    {
+      "sequence": 23,
+      "entry_id": "fermented-plant-foods-base",
+      "query": "site:nchfp.uga.edu fermented vegetables safe fermentation pH refrigeration sauerkraut pickles",
+      "attempt": "follow-up",
+      "result_cards": 5
+    },
+    {
+      "sequence": 24,
+      "entry_id": "fermented-chili-sauce",
+      "query": "\"Enhancing flavor and quality in low-salt fermented chili sauce\" DOI",
+      "attempt": "metadata-verification",
+      "result_cards": 5
+    }
+  ],
+  "preserved_search_result_files": [
+    "exa-results-preserved-01.json",
+    "exa-results-preserved-02.json",
+    "exa-results-preserved-03.json",
+    "exa-results-preserved-04.json",
+    "exa-results-preserved-05.json",
+    "exa-results-preserved-06.json",
+    "exa-results-preserved-07.json",
+    "exa-results-preserved-08.json",
+    "exa-results-preserved-09.json",
+    "exa-results-preserved-10.json",
+    "exa-results-preserved-11.json",
+    "exa-results-preserved-12.json"
+  ]
+}
