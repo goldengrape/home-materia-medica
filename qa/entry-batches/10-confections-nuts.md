@@ -3,7 +3,7 @@
 > 日期：2026-09-24
 > 研究深度：逐条按 R1/R2 配置定向检索，不是系统综述。
 > 证据截止：2026-09-24。
-> 检索记录：Exa 26 次检索、140 条结果；另对可用原始研究、期刊页面及官方来源作题名、DOI、样本、剂量和结局核验。
+> 检索记录：Exa 27 次检索、146 条结果；另对可用原始研究、期刊页面及官方来源作题名、DOI、样本、剂量和结局核验。
 
 ## 本批目录顺序
 
@@ -82,10 +82,11 @@
 
 ### pistachio｜开心果
 
-检索词：pistachio randomized clinical trial prediabetes glucose metabolism DOI 57 g 4 months；pistachios nighttime snack 12 week prediabetes randomized crossover trial DOI；USDA FoodData Central pistachios raw roasted composition
+检索词：pistachio systematic review meta-analysis cardiometabolic risk factors RCT DOI；Effect of Premeal Pistachio Supplementation Asian Indian adults prediabetes RCT 2025 DOI 39740767；pistachio nighttime snack 12 week prediabetes randomized crossover 2024 DOI；《本草纲目》卷三十 阿月浑子 本草拾遗 味辛温涩；《饮膳正要》卷三 必思答 味甘 调中顺气
 
-- 核对 Hernández-Alonso 等2014随机交叉试验和 Riley 等2024夜间零食交叉试验的剂量、时长、比较条件与不同结果。
-- 按 USDA 食品组成数据库区分生/烘烤记录，并核对树坚果过敏安全信息；不跨产品形态外推。
+- 重用并核对既有开心果 Pilot dossier 的 Kew 身份、传统原文、系统综述和2014/2024/2025直接试验；保留《本草纲目》转引层次。
+- 补检并核实 Ashwini 等2025年随机平行试验：120人随机、109人完成，60 g/日餐前摄入12周，HbA1c及CGM结果与空腹/2小时血糖阴性结果分别记录。
+- 并列记录2014阳性、2024夜间加餐阴性、2025餐前阳性研究；不将不同人群、摄入时机、对照和代理结局合并成普遍降糖结论。
 
 - 研究底稿：references/entries/pistachio/research.md
 - 整理摘要：references/entries/pistachio/summary.md
@@ -142,16 +143,5 @@
 
 ## Actions 运行记录
 
-- Workflow run: 35997042911，状态 success；运行链接：https://github.com/goldengrape/home-materia-medica/actions/runs/35997042911。
-- Stage 1/2 中间产物 artifact: 10806229213（entry-10-confections-nuts-stages-1-2）；原生 Jev JSON artifact: 10806612454（entry-10-confections-nuts-native-jev-v0.4）。均由本次运行上传，保留 30 天。
-- 工作分支同时保存十份 Research Dossier、冻结 Summary、pre-freeze 快照、raw JSON、Mapping、正文和 QA；摘要与 raw JSON 的 SHA-256 清单均纳入版本库。
-
-## 判与写完成记录
-
-- Workflow run: 35997042911; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
-- Native artifact ID: 10806612454; uploaded by this run with 30-day retention.
-- Ten native Jev JSON files each cite their matching frozen summary hash; all ten raw-file SHA-256 values match qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt.
-- Actual model: jev-1.13.0; each file contains one run and 16 native answers.
-- Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
-- Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
-- catalog/entries.yaml updated with this batch's ten frozen entries.
+待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+- Workflow run 35998139288: status failure; intermediate and native artifacts are retained for 30 days where uploaded.
