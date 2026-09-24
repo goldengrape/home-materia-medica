@@ -3,7 +3,7 @@
 > 日期：2026-09-24
 > 研究深度：逐条按 R1/R2 配置定向检索，不是系统综述。
 > 证据截止：2026-09-24。
-> 检索记录：Exa 27 次检索、146 条结果；另对可用原始研究、期刊页面及官方来源作题名、DOI、样本、剂量和结局核验。
+> 检索记录：Exa 28 次检索、151 条结果；另对可用原始研究、期刊页面及官方来源作题名、DOI、样本、剂量和结局核验。
 
 ## 本批目录顺序
 
@@ -143,5 +143,7 @@
 
 ## Actions 运行记录
 
-待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
-- Workflow run 35998139288: status failure; intermediate and native artifacts are retained for 30 days where uploaded.
+- 首轮完整运行 35997042911：success；stage artifact 10806229213（entry-10-confections-nuts-stages-1-2），native Jev artifact 10806612454（entry-10-confections-nuts-native-jev-v0.4），30 天保留。
+- 修订摘要后的运行 35998139288：failure；stage artifact 10806528205，native artifact 10807360083（均 30 天保留）。流水线校验发现既有开心果 raw JSON 对应旧摘要 SHA-256，因此未把旧答案冒充新摘要结果；该原始响应已归档至 raw/superseded/，本次重新分类会基于更新摘要运行。
+- 补充 Exa 检索核验 2025 开心果餐前 RCT：1 次查询，返回 5 条；详情及纳入/排除判断见 stage/pistachio-source-check-2026-09-24.md。
+- 原始响应与摘要按 SHA-256 绑定；首轮校验通过的其他九项响应按各自冻结摘要复用。本次 Actions 成功后补记当前 artifact、模型版本、raw 哈希和最终 QA 结果。
