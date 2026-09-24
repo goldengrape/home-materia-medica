@@ -95,9 +95,10 @@ Pilot 期间不做：
 
 ---
 
-### PILOT-003｜奶茶
+### PILOT-003｜珍珠奶茶（由“奶茶”在 Identity 阶段收窄）
 
-- entry_id: milk-tea
+- entry_id: pearl-milk-tea
+- pilot_original_id: milk-tea
 - research_depth: R2
 
 为什么选：
@@ -109,7 +110,7 @@ Pilot 期间不做：
 
 第一轮核心问题：
 
-1. 怎样定义本书研究的“奶茶原型”？
+1. “奶茶”是否足够成为一个稳定条目？若不足，应收窄到什么对象？
 2. 奶茶本身有哪些直接人体研究？
 3. 茶、糖、乳、珍珠等间接证据最多能外推到什么程度？
 4. 一杯的常见份量、糖量和咖啡因暴露如何进入判断？
@@ -263,3 +264,77 @@ Pilot 期间不做：
 - 六类不同对象是否都能在同一套框架中处理。
 
 达到这些条件后，才进入更大规模的条目研究。
+
+
+---
+
+## 六、执行记录
+
+### 2026-09-23｜PILOT-006 / 开心果 R2
+
+状态：**research_ready**
+
+产物：
+
+- `references/entries/pistachio/research.md`
+- `qa/pilot/pistachio-r2.md`
+
+关键发现：
+
+1. 传统资料强于 Pilot 预设：阿月浑子 / 必思答有明确古籍记录。
+2. 有传统功用记录，但不等于有明确归经；当前仍“暂不归经”。
+3. 多篇 Meta-analysis 高度共享同一批 RCT，不能按篇数重复计票。
+4. 综述截止后的 2024 阴性 RCT 与 2025 阳性 RCT 显示糖代谢效应明显依赖人群、时机和对照。
+5. R2 研究预算和证据饱和规则在本条目上基本可用。
+
+
+### 2026-09-23｜PILOT-002 / 黑巧克力 R3
+
+状态：**research_ready**
+
+产物：
+
+- `references/entries/dark-chocolate/research.md`
+- `qa/pilot/dark-chocolate-r3.md`
+
+关键发现：
+
+1. 高质量、大样本试验若研究的是可可提取物，仍然只是黑巧克力的 D2 证据。
+2. 最新系统综述也可能混合 dark chocolate 与 cocoa extract，必须检查纳入对象。
+3. 短期 mood / stress 研究有正信号，但不足以把“疏肝解郁”提升到确定功效。
+4. “安神”缺乏直接支持，归经也无可靠依据。
+5. R3 只围绕核心问题工作，可以在 cocoa/chocolate 的巨大文献量中达到停止条件。
+
+### 2026-09-23｜PILOT-003 / 珍珠奶茶 R2
+
+状态：**research_ready / sparse_evidence**
+
+产物：
+
+- `references/entries/pearl-milk-tea/research.md`
+- `qa/pilot/pearl-milk-tea-r2.md`
+
+关键发现：
+
+1. 泛称“奶茶”不是稳定研究对象，已收窄为“珍珠奶茶”。
+2. 现代复合食品中，直接组成与实际暴露证据可以很强，而长期疾病因果证据仍是 E-0。
+3. 一般 sugar-sweetened beverage 研究对珍珠奶茶属于 D2，只能提供风险背景。
+4. 少糖、去珍珠、杯量等定制变量可实质改变暴露，适合纳入现代“炮制/加工”框架。
+5. 冰饮温度不能直接等同本草“性寒”；高糖高脂也不能直接翻译为“生湿”。
+6. sparse-evidence stop 成功阻止了用糖、茶多酚、咖啡因等成分文献填补不存在的食品直接证据。
+### 2026-09-23｜前三项 Pilot 方法 checkpoint
+
+状态：**pass**
+
+详见：`qa/pilot/first-three-review.md`
+
+决定：
+
+- 保留 R1/R2/R3；
+- 保留 D0–D4；
+- 保留 E-A–E-0；
+- 保留 M-I–M-0；
+- 保留 saturated / sparse_evidence 等停止状态；
+- Research Dossier 增加 Identity Revision、Composition & Exposure、Evidence-base overlap、directness note；
+- research skill 增加复合食品 composition-first 与食用温度/本草寒热分离规则；
+- 下一项继续咖啡 R3。

@@ -24,10 +24,24 @@ ingredients:
 processing:
 typical_serving:
 key_variables:
+processing_or_customization_variables: []
 identity_confidence:
 ```
 
-### 1.3 天然产物附加信息（适用时）
+### 1.3 Identity Revision（若研究改变条目边界）
+
+```yaml
+identity_revision:
+  changed: no
+  original_entry_id:
+  revised_entry_id:
+  reason:
+  catalog_action:
+```
+
+若 `changed: yes`，必须同步建议 Catalog 如何处理；不得只在 dossier 中悄悄改名。
+
+### 1.4 天然产物附加信息（适用时）
 
 ```yaml
 scientific_name:
@@ -100,14 +114,33 @@ source_notes:
 
 ---
 
-## 6. 现代证据地图
+## 6. 组成与真实暴露（复合食品或产品差异较大时）
+
+> 本节记录“实际吃进去什么”，不强行使用 E 等级。
+
+| 变量 | 典型范围 / 份量 | 产品差异 | 直接来源 | 备注 |
+|---|---|---|---|---|
+
+---
+
+## 7. 现代证据地图
+
+### Evidence-base overlap（适用时）
+
+```yaml
+evidence_base_overlap:
+  level: low | moderate | high | unknown
+  note:
+```
+
+多个 Meta / review 一致时，先判断是否高度共享同一批基础研究，避免按综述篇数重复计票。
 
 | Claim / Outcome | 主要证据 | D | Risk of bias | 方向 | E | 备注 |
 |---|---|---:|---|---|---|---|
 
 ---
 
-## 7. 核心证据卡
+## 8. 核心证据卡
 
 ### Study / Review 1
 
@@ -130,6 +163,7 @@ funding:
 conflicts:
 risk_of_bias:
 evidence_distance:
+directness_note:
 full_text_status:
 supports:
 does_not_support:
@@ -137,7 +171,7 @@ does_not_support:
 
 ---
 
-## 8. 分结局综合
+## 9. 分结局综合
 
 ### Outcome A
 
@@ -157,7 +191,7 @@ does_not_support:
 
 ---
 
-## 9. 安全性
+## 10. 安全性
 
 ### 常见不良反应
 -
@@ -176,7 +210,7 @@ does_not_support:
 
 ---
 
-## 10. 机制与成分
+## 11. 机制与成分
 
 > 仅作为解释层，不代替人体效应。
 
@@ -185,7 +219,7 @@ does_not_support:
 
 ---
 
-## 11. 本草映射候选
+## 12. 本草映射候选
 
 ### 候选 1：{{term}}
 
@@ -201,7 +235,7 @@ does_not_support:
 
 ---
 
-## 12. 冲突与未知
+## 13. 冲突与未知
 
 ### 主要冲突
 -
@@ -214,14 +248,14 @@ does_not_support:
 
 ---
 
-## 13. Claim Ledger
+## 14. Claim Ledger
 
 | ID | 正文候选命题 | 允许措辞 | E | M | D 范围 | 核心来源 |
 |---|---|---|---|---|---|---|
 
 ---
 
-## 14. 停止判断
+## 15. 停止判断
 
 ```yaml
 stopping_status:
@@ -239,7 +273,7 @@ evidence_cutoff:
 
 ---
 
-## 15. 参考资料清单（供作者 / 读者复核）
+## 16. 参考资料清单（供作者 / 读者复核）
 
 ### 传统文献
 -

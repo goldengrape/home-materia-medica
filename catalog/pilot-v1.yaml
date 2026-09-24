@@ -12,7 +12,15 @@ entries:
       - whole_food_evidence
       - processing_variants
       - sparse_traditional_mapping
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/pistachio/research.md
+    pilot_qa: qa/pilot/pistachio-r2.md
+    pilot_findings:
+      - traditional_sources_stronger_than_expected
+      - no_reliable_explicit_channel_tropism_found
+      - meta_analyses_share_underlying_trials
+      - post_cutoff_trials_show_context_dependent_glycemic_effects
 
   - id: dark-chocolate
     name: 黑巧克力
@@ -25,10 +33,19 @@ entries:
       - food_vs_extract
       - mood_effects
       - materia_mapping
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/dark-chocolate/research.md
+    pilot_qa: qa/pilot/dark-chocolate-r3.md
+    pilot_findings:
+      - large_high_quality_extract_trials_can_still_be_D2
+      - mood_signals_do_not_establish_shugan
+      - anshen_not_supported
+      - no_channel_tropism_supported
 
-  - id: milk-tea
-    name: 奶茶
+  - id: pearl-milk-tea
+    pilot_original_id: milk-tea
+    name: 珍珠奶茶
     entry_type: composite_beverage
     volume: 饮品部
     research_depth: R2
@@ -38,7 +55,16 @@ entries:
       - sparse_direct_evidence
       - serving_size
       - indirect_component_evidence
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/pearl-milk-tea/research.md
+    pilot_qa: qa/pilot/pearl-milk-tea-r2.md
+    pilot_findings:
+      - generic_milk_tea_identity_rejected
+      - composition_evidence_stronger_than_long_term_outcome_evidence
+      - generic_ssb_evidence_is_D2
+      - sparse_evidence_stop_rule_worked
+      - iced_serving_temperature_is_not_cold_nature
 
   - id: coffee
     name: 咖啡
