@@ -22,7 +22,7 @@ from pathlib import Path
 from typing import Any
 
 API_BASE = "https://api.typesafe.ai"
-DEFAULT_MODEL = "jev-1.13.0"
+DEFAULT_MODEL = "jev-latest"
 PROMPT_VERSION = "jev-tcm-rule-fewshot-v0.1"
 THRESHOLD = 0.5
 
@@ -251,7 +251,7 @@ def main() -> int:
     available = {item["name"] for item in models["models"]}
     if requested_model not in available:
         raise RuntimeError(
-            f"Pinned model {requested_model!r} is unavailable. "
+            f"Requested model alias {requested_model!r} is unavailable. "
             f"Available models: {sorted(available)}"
         )
 
