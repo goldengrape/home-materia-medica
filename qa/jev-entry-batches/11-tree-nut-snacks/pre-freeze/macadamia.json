@@ -1,0 +1,10 @@
+{
+  "batch_id": "11-tree-nut-snacks",
+  "entry_id": "macadamia",
+  "summary_ref": "references/entries/macadamia/summary.md",
+  "summary_sha256": "42dcc47efe733438fb99cd7e21dc7943807ca517414ed1856c2e1c22e05b51b3",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 夏威夷果\n\n**身份。** 本条指澳洲坚果属（Macadamia spp.，常见商业种包括 M. integrifolia 与 M. tetraphylla）可食种仁，常以原味、烘烤或调味形式销售；不包括夏威夷果油、含果仁甜点或其他坚果。\n\n**组成与暴露。** USDA FoodData Central 可检索具体 macadamia kernel 记录；数据库中的生、烘烤或加盐样品不可当作单一市场均值。试验使用的果仁份量和配方应与商品标签分开。 具体 Macadamia 物种与产品、原味/烘烤/盐渍、去壳种仁份量、是替代其他食物还是额外添加、研究人群的基线体重与代谢状况及干预时长。\n\n**直接人体证据。** 2023 年一项随机交叉试验纳入 35 名腹部肥胖成人：8 周在通常饮食中加入约占每日能量 15% 的夏威夷果，另 8 周按通常饮食不吃坚果，中间洗脱 2 周。组间体重、BMI、腰围、体脂和血糖指标没有显著差异；总胆固醇与 LDL 的下降也未达显著。它是短期风险指标试验，不证明夏威夷果可治疗血脂或减重。\n\n**产品/成分证据。** 证据直接对应研究中的夏威夷果摄入方案，不适用于果油或糖衣/盐焗零食。试验比较的是两种饮食阶段，不可把观察到的组内变化解读为对所有人额外加吃的效果。\n\n**共享背景。** 参见 expanded-tree-nuts-base；共享结论不自动等于本成品结论。\n\n**安全。** 夏威夷果属于树坚果；对澳洲坚果或其他树坚果过敏者需避免相关暴露并核对交叉接触标示。烘烤、盐渍或糖衣产品需另看钠、糖和份量。\n\n**传统来源。** 本轮未找到可核验的传统本草条目与现代澳洲坚果属食品直接对应；不从其他坚果继承性味、归经或功效。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}

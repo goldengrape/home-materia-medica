@@ -1,0 +1,10 @@
+4318dc09bd79850fb55fba592de29a0c6f3ee08c3fb58938366c1f664ee4fcff  qa/jev-entry-batches/11-tree-nut-snacks/raw/macadamia.json
+32c11a4d6de0d0207ff07b7c835bc311fbf4a114b2d35d41dfb8cd2195de002e  qa/jev-entry-batches/11-tree-nut-snacks/raw/hazelnut.json
+7b48d891c46b3f08c89456bbcfda93e7f3bcfaa6456d22dc69c95c2fa21d41e3  qa/jev-entry-batches/11-tree-nut-snacks/raw/brazil-nut.json
+cd48f1b86c4e3356827d35f2f6b154506d914c624fd2c2ebd765249740530299  qa/jev-entry-batches/11-tree-nut-snacks/raw/pine-nut-kernels.json
+d650e72021350ed2adc3b4864ce6775c56297f0eae878130bead00b9e5b781ed  qa/jev-entry-batches/11-tree-nut-snacks/raw/salted-nuts.json
+d069f78c0dd4ff6a4008212b91ed36c425b4f04e0f2d0d435c78341c939e791a  qa/jev-entry-batches/11-tree-nut-snacks/raw/honey-roasted-nuts.json
+3c72c8365a09b5e179fdbc97c49d57da3c9b502b11fdd7622cff5b5de0af28c0  qa/jev-entry-batches/11-tree-nut-snacks/raw/sugar-coated-nuts.json
+b6d18c4457e2a827f2271bc85e16bdade07463bf0241e87a1c266a3eb12c43c2  qa/jev-entry-batches/11-tree-nut-snacks/raw/cocoa-coated-nuts.json
+6e82c792435af363754867b64cf0d03d46e3bc53b4c5c80be7169c5c987f311a  qa/jev-entry-batches/11-tree-nut-snacks/raw/spicy-nuts.json
+2db98f38460a9d29ed873dd3169962fdbd2f918b348fa64457b6a70763c8a43b  qa/jev-entry-batches/11-tree-nut-snacks/raw/mixed-nuts.json
