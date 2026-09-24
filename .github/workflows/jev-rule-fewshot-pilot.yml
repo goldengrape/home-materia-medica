@@ -36,7 +36,7 @@ jobs:
       - name: Run 5-herb pilot
         env:
           JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
-          JEV_MODEL: jev-1.13.0
+          JEV_MODEL: jev-latest
         run: python experiments/jev-rule-fewshot-pilot/run_pilot.py
 
       - name: Upload pilot results
