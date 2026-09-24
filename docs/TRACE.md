@@ -89,7 +89,8 @@ Catalog entry
 | RM-TASK-024 酸奶 R2 | done | `references/entries/yogurt/research.md` |
 | RM-TASK-025 方便面 R2 | done | `references/entries/instant-noodles/research.md` |
 | RM-TASK-027 六项 Pilot 总复盘 | done | `qa/pilot/final-review.md` |
-| RM-TASK-030 Jev 四气五味归经 rule+few-shot pilot | done (v0.2) | 封闭字段强制分类；`docs/jev-rule-fewshot-pilot/RESULTS-v0.2.md` |
+| RM-TASK-030 Jev 四气五味归经 rule+few-shot pilot | done (v0.3.1) | 自然语言说明文档 + reasoning rules + five-shot；`docs/jev-rule-fewshot-pilot/RESULTS-v0.3.1.md` |
+| RM-TASK-031 Jev 现代食品 domain-transfer test | next | 从真实 Research Dossier 生成正式说明文档，用 frozen v0.3.1 测试 |
 | RM-TASK-010 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 
