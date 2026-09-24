@@ -17,9 +17,9 @@
 
 | ID | Design Parameter |
 |---|---|
-| ADD-DP-001 | 单一 `fixtures.json`，将 `packet` 与 `gold` 分字段保存；runner 只把 `packet` 送给 Jev。 |
+| ADD-DP-001 | 单一 `fixtures-v0.2.json`，将 `packet` 与 `gold` 分字段保存；runner 只把 `packet` 送给 Jev。 |
 | ADD-DP-002 | 一个共享 structured state：`rules + reference_examples + target`；参考例与 target 明确分区。 |
-| ADD-DP-003 | 四气 = 1 个 Choice；五味 = 5 个 Noul；归经 = 12 个 Noul。 |
+| ADD-DP-003 | 四气 = 1 个五选一 Choice；五味 = 5 个固定 Noul；归经 = 心/肝/脾/肺/肾 5 个固定 Noul。 |
 | ADD-DP-004 | runner 直接记录 Choice probabilities 与 Noul 值，再以 0.5 临时切分计算指标。 |
 | ADD-DP-005 | GitHub Actions job 绑定 `environment: API_KEYS`，通过 `${{ secrets.JEV_API_KEY }}` 注入。 |
 | ADD-DP-006 | 结果 JSON 保存 `model`、`prompt_version`、`fixture_version`、逐样本原始答案和 summary。 |
@@ -51,15 +51,15 @@ Jev 原生概率原样保存。pilot 不使用 Platt scaling、isotonic regressi
 
 ### DEC-002｜Few-shot 与测试样本严格分离
 
-reference examples 使用 4 个不同药物；5 个测试药不出现在 demonstrations 中。
+v0.2 reference examples 使用黄连、薄荷、山药、桂枝、附子 5 个药物；v0.2 held-out 使用黄芩、菊花、茯苓、细辛、干姜，两组不重叠。
 
 ### DEC-003｜target 匿名化
 
-target 使用 `T01`–`T05`，发送给 Jev 的内容不含真实药名、拉丁名和直接性味归经字段。gold 只供本地评分。
+target 使用 `V2-T01`–`V2-T05`，发送给 Jev 的内容不含真实药名、拉丁名和直接性味归经字段。gold 只供本地评分。
 
 ### DEC-004｜规则放在 structured state
 
-Jev API 没有 request-level system prompt。为避免把同一 few-shot 重复塞进 18 个 question，统一把：
+Jev API 没有 request-level system prompt。为避免把同一 five-shot 重复塞进 11 个 question，统一把：
 
 ```text
 rules
@@ -73,10 +73,12 @@ target
 
 五味和归经不能用互斥 Choice。每个标签单独使用 Noul，允许多个同时成立。
 
-### DEC-006｜“证据不足”只在四气显式建类
+### DEC-006｜强制封闭分类
 
-四气 Choice 若强迫五选一，容易在不足时硬猜，所以加入“证据不足”。  
-五味和归经通过 Noul 接近 0.5 保留不确定性，本轮不再另加 abstain question。
+四气必须在寒、凉、平、温、热五类中选一个，不设“证据不足”。  
+五味必须只在酸、苦、甘、辛、咸五字段内输出 Noul。  
+归经必须只在心、肝、脾、肺、肾五字段内输出 Noul。  
+schema 外概念没有输出位置，也不参与评分。
 
 ## 5. Shared State 规则
 
@@ -84,9 +86,9 @@ runner 发送给 Jev 的核心规则：
 
 1. 只评估 `target`；`reference_examples` 只用于学习本项目判断方式。
 2. 不尝试恢复被隐藏的药名，不把可能猜出的身份当作证据。
-3. 四气按 pilot 五档归一：寒 / 凉 / 平 / 温 / 热；允许证据不足。
+3. 四气按 pilot 五档归一：寒 / 凉 / 平 / 温 / 热；必须五选一。
 4. 五味是传统本草属性，不等同于入口时字面味觉；感官只能作为一项证据。
-5. 归经为多标签；传统功能、主治和脏腑语境可以支持，但单一词面对应不足以自动证明。
+5. 归经只允许心、肝、脾、肺、肾五个字段；传统功能、主治和脏腑语境可以支持，但单一词面对应不足以自动证明。
 6. 资料冲突、桥梁不足或存在同等合理解释时降低概率，不为了“给答案”而提高确信。
 7. 不使用任何 post-hoc 校准函数。
 
@@ -94,10 +96,11 @@ runner 发送给 Jev 的核心规则：
 
 | demo | 来源药物（不发送名称） | 主要覆盖 |
 |---|---|---|
-| D01 | 肉桂 | 热；辛/甘；肾/脾/心/肝 |
-| D02 | 五味子 | 温；酸/甘；肺/心/肾 |
-| D03 | 葶苈子 | 寒；辛/苦；肺/膀胱 |
-| D04 | 苏木 | 平；甘/咸；心/肝/脾 |
+| V2-D01 | 黄连 | 寒；苦；心/肝/脾 |
+| V2-D02 | 薄荷 | 凉；辛；肺/肝 |
+| V2-D03 | 山药 | 平；甘；脾/肺/肾 |
+| V2-D04 | 桂枝 | 温；辛/甘；心/肺 |
+| V2-D05 | 附子 | 热；辛/甘；心/脾/肾；并展示“感官咸麻 ≠ 五味咸” |
 
 目的不是覆盖全部组合，而是给 Jev 展示：
 
