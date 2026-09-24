@@ -142,15 +142,16 @@
 
 ## Actions 运行记录
 
-待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+- Workflow run: 35997042911，状态 success；运行链接：https://github.com/goldengrape/home-materia-medica/actions/runs/35997042911。
+- Stage 1/2 中间产物 artifact: 10806229213（entry-10-confections-nuts-stages-1-2）；原生 Jev JSON artifact: 10806612454（entry-10-confections-nuts-native-jev-v0.4）。均由本次运行上传，保留 30 天。
+- 工作分支同时保存十份 Research Dossier、冻结 Summary、pre-freeze 快照、raw JSON、Mapping、正文和 QA；摘要与 raw JSON 的 SHA-256 清单均纳入版本库。
 
 ## 判与写完成记录
 
 - Workflow run: 35997042911; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
 - Native artifact ID: 10806612454; uploaded by this run with 30-day retention.
-- Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
-- Per-file raw JSON SHA-256: qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt.
+- Ten native Jev JSON files each cite their matching frozen summary hash; all ten raw-file SHA-256 values match qa/jev-entry-batches/10-confections-nuts/native-json-sha256.txt.
+- Actual model: jev-1.13.0; each file contains one run and 16 native answers.
 - Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
 - Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
 - catalog/entries.yaml updated with this batch's ten frozen entries.
-- Workflow run 35997042911: status success; intermediate and native artifacts are retained for 30 days where uploaded.
