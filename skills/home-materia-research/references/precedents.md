@@ -72,6 +72,48 @@ https://github.com/mims-harvard/ToolUniverse/blob/main/skills/tooluniverse-drug-
 
 本项目不采用“分子对接分数 → 食品功效”的药物发现式推断。
 
+
+### TCM knowledge / source-tracing skills
+
+#### YuanZHAO321 / TCM.Skill
+
+可借鉴：
+
+- 教材层、经典层、医家层分离；
+- 理论 / 中药 / 方剂 / 原典互链；
+- 现代整理保留经典溯源；
+- 教材转述与原典原文区分。
+
+Source:
+https://github.com/YuanZHAO321/TCM.Skill
+
+#### erikgqp8645 / zhongyishijia-skill
+
+可借鉴：
+
+- evidence cards；
+- card / chunk 级原文回取；
+- 按朝代组织历代论述；
+- 蒸馏层找不到或截断时回退原始文本层；
+- 原文、蒸馏、综合三层分开。
+
+Source:
+https://github.com/erikgqp8645/zhongyishijia-skill
+
+#### nihaixia-tcm / course-source skills
+
+可借鉴：
+
+- 模块化索引；
+- PDF / 页面 / 课程证据定位；
+- 特定医家观点与一般知识分层。
+
+Examples:
+https://github.com/JuneYaooo/nihaixia-tcm
+https://github.com/qmzz/ni-haisha-tcm-skill
+
+这些 skill 的具体医学观点不进入《居家本草》的权威来源层；本项目只借鉴其知识组织、来源定位与证据回取设计。
+
 ---
 
 ## Authoritative methodological sources
