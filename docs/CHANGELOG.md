@@ -24,7 +24,8 @@
 - Pilot v1 总复盘通过：保留 R/D/E/M 与停止规则。
 - 根据 Pilot 正式加入 Identity Revision、Composition & Exposure、Evidence-base overlap、Research Parent、Claim Mode 与消费者端服食法/加工变量。
 - 建立 Jev 四气五味归经 rule + few-shot 技术 pilot：匿名 held-out、gold 隔离、原生概率留存、GitHub Actions secret 注入。
-- 完成 Jev pilot v0.1：3 次重复中四气均 5/5，五味 micro-F1 均 0.857，归经 micro-F1 为 0.824–0.857；边界标签存在轻微随机波动，暂不设生产阈值，不引入概率修正函数。
+- Jev v0.1 保留为工程历史记录；其十二经输出空间与项目真实封闭契约不一致，不再用 v0.1 归经指标评价方案。
+- 完成 Jev pilot v0.2：四气固定寒/凉/平/温/热并强制五选一；五味固定酸/苦/甘/辛/咸；归经固定心/肝/脾/肺/肾。3 次重复中四气均 4/5，五味均 5/5 exact（micro-F1=1.0），五脏归经 micro-F1 为 0.720–0.769；仍不设生产阈值，不引入概率修正函数。
 
 ### Current
 
