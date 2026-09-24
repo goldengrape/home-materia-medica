@@ -12,9 +12,11 @@ description: >
 
 ## 目标
 
-本 skill 位于 Research Dossier 之后。
+本 skill 负责 `docs/生产流程.md` 的第三阶段“判”。
 
-它输出四层原子分类：
+正式输入是冻结的 `summary.md`；`research.md` 只用于 Jev 分类完成后的 M 证据标注。
+
+它先输出四层原子分类：
 
 ```text
 四气 = 全局寒热属性
@@ -38,13 +40,16 @@ Jev score 表示模型在固定规则、few-shot、说明文档和具体模型�
 ## 运行前必须读取
 
 1. `docs/居家本草编纂凡例-v1.0.md`
-2. 目标条目的 Research Dossier：
+2. `docs/生产流程.md`
+3. 目标条目的 Summary Document：
+   - `references/entries/<entry-id>/summary.md`
+4. 对应 Research Dossier（只在分类后评 M 时读取）：
    - `references/entries/<entry-id>/research.md`
    - 或 `references/shared/<entry-id>/research.md`
-3. `references/reasoning-rules-v0.4.md`
-4. `references/five-shot-v0.4.md`
-5. `references/output-contract-v0.4.md`
-6. `references/runtime.md`
+5. `references/reasoning-rules-v0.4.md`
+6. `references/five-shot-v0.4.md`
+7. `references/output-contract-v0.4.md`
+8. `references/runtime.md`
 
 当前已验证实现：
 
@@ -58,9 +63,9 @@ v0.3.1 文件保留为历史回归基线。
 
 ## 输入
 
-### 自然语言说明文档
+### Summary Document
 
-target 必须是由 Research Dossier 形成的连续自然语言说明文档，不要求拆成固定 JSON 特征字段。
+target 必须是阶段二冻结的 `references/entries/<entry-id>/summary.md`，不允许为了本次分类临时另造一份答案导向说明，也不要求拆成固定 JSON 特征字段。
 
 允许包含：
 
@@ -310,7 +315,18 @@ v0.4 一级输出仍只选一个 **主方向**，但保存四个 Choice probabil
 
 ## Jev score 与 M grade
 
-M 不控制 Jev 是否输出候选。
+顺序固定：
+
+```text
+summary.md
+→ Jev 分类
+→ 保存原始 score / probabilities
+→ 回查 research.md
+→ 对已经出现的分类命题逐项评 M
+→ mapping.md
+```
+
+M 不在 Jev 之前控制 Jev 是否输出候选。
 
 允许：
 
@@ -397,30 +413,32 @@ v0.4 有效回归：
 
 ---
 
-## 与 research skill 的接口
+## 与前后阶段的接口
 
 ```text
 home-materia-research
 ↓
-Research Dossier + M grade
+research.md
 ↓
-自然语言说明文档
+summary.md
 ↓
 home-materia-jev-mapping
 ↓
-四气 / 五味 / 归经 / 每经主方向
-+ Jev native scores
+Jev 四气 / 五味 / 归经 / 每经主方向
++ native scores
 ↓
-派生传统用词
+回查 research.md，逐项标 M
 ↓
-Claim Ledger / writing
+mapping.md
+↓
+writing
 ```
 
-Research skill 拥有证据事实和 M。
+Research skill 拥有资料事实、D/E、安全和 Summary Document。
 
-Jev skill 拥有模型判定。
+本 skill 拥有 Jev 原始分类，并负责在分类后把 M 证据强度附到这些分类命题上。
 
-writing 层负责把原子分类转成读者熟悉的表达。
+writing 层读取 `summary.md + mapping.md`，根据资料与分类选择读者熟悉的传统表达；不得重新分类。
 
 ---
 
@@ -430,9 +448,13 @@ writing 层负责把原子分类转成读者熟悉的表达。
 
 `templates/jev-mapping-result.md`
 
+默认输出到：
+
+`references/entries/<entry-id>/mapping.md`
+
 至少保存：
 
-1. target document ref / hash；
+1. `summary.md` ref / hash；
 2. reasoning version；
 3. five-shot version；
 4. requested model；
