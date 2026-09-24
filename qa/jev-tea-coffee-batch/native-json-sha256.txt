@@ -1,0 +1,10 @@
+82391518d68d8e38c4bd2690a6210db7b13628019048574ff4e3949f9aecfeef  qa/jev-tea-coffee-batch/raw/americano.json
+259e121218380b6f369faf54d61b3e3ae59d06d48f12adde644ef477b74de691  qa/jev-tea-coffee-batch/raw/cappuccino.json
+7be95829706fab94a195eaf44d79a96139706bc4510baa76f0ca45894f68ea26  qa/jev-tea-coffee-batch/raw/cold-brew-coffee.json
+7173d0f1dcc88d2b7a46715a5187a7d2e47f3ada5530b202d94b392e9418dd61  qa/jev-tea-coffee-batch/raw/cold-brew-tea.json
+b328289a6f86242e8b20ebbe195d979e0ff3b814412c156150474ffc22798776  qa/jev-tea-coffee-batch/raw/espresso.json
+85b9f2defe3fea4e27abddf146cbeeae2f3f165254f5e4d70a7cb75766f198b0  qa/jev-tea-coffee-batch/raw/hand-pour-coffee.json
+e71dc83ac295b5c394be8442ce127efa82acf5059cc950d998e50424866ed4bc  qa/jev-tea-coffee-batch/raw/latte.json
+db1ddba80faee2c83ea8488a4b39e3b7e9062f97bc6dfa7ccbb63c418745d0cf  qa/jev-tea-coffee-batch/raw/mocha.json
+54954c8fcf999d1f474307d8e9f9f92f38e5fd6ad4904e29e7314bd1953df814  qa/jev-tea-coffee-batch/raw/nitro-cold-brew.json
+65de090c13a2c4b21d94d2e3842ecc3a99161831856d9713ff5c2faf4005ab54  qa/jev-tea-coffee-batch/raw/sparkling-tea.json
