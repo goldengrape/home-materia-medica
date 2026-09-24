@@ -27,6 +27,7 @@
 | `catalog/README.md` | 编目规则 | catalog metadata |
 | `docs/居家本草编纂凡例-v1.0.md` | 研究规则 | research skill / dossier |
 | `skills/home-materia-research/` | 研究执行器 | dossier |
+| `skills/home-materia-jev-mapping/` | Jev 四气/五味/五脏归经判定器 | Jev score + M 双轴 mapping record |
 | `skills/.../tcm-concepts-and-databases.md` | 中医资料路由 | concepts / dossier |
 | `experiments/jev-rule-fewshot-pilot/` | Jev 本草映射工程 pilot | mapping method / QA |
 
@@ -54,6 +55,7 @@ Catalog entry
   → Outcome synthesis + E
   → Concept Trace
   → Materia mapping + M
+  → Jev mapping score（与 M 独立）
   → Safety
   → Claim Ledger
   → Research ready
@@ -91,7 +93,7 @@ Catalog entry
 | RM-TASK-027 六项 Pilot 总复盘 | done | `qa/pilot/final-review.md` |
 | RM-TASK-030 Jev 四气五味归经 rule+few-shot pilot | done (v0.3.1) | 自然语言说明文档 + reasoning rules + five-shot；`docs/jev-rule-fewshot-pilot/RESULTS-v0.3.1.md` |
 | RM-TASK-031 Jev 现代食品 domain-transfer test | done (v0.1) | 5 个现有 dossier；发现归经 over-mapping；`docs/jev-rule-fewshot-pilot/DOMAIN-TRANSFER-RESULTS-v0.1.md` |
-| RM-TASK-032 Jev M-level gate 设计 | next | 将 functional relevance 与“足以归经”的 M 证据门槛分层 |
+| RM-TASK-032 Jev mapping skill 与双轴输出 | done | `skills/home-materia-jev-mapping/`；Jev score 与 M grade 并列，不互相修正 |
 | RM-TASK-010 中医概念骨架 | next | `concepts/` |
 | RM-TASK-011 Entry Registry | queued | `catalog/entries.yaml` |
 
