@@ -126,4 +126,14 @@ entries:
       - processed_food_reasoning
       - nutrient_vs_food_inference
       - dose_and_frequency
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/instant-noodles/research.md
+    pilot_qa: qa/pilot/instant-noodles-r2.md
+    pilot_findings:
+      - cross_sectional_association_does_not_establish_causality
+      - composition_evidence_stronger_than_long_term_effect_evidence
+      - seasoning_and_soup_change_sodium_exposure
+      - generic_noodle_MR_is_not_instant_noodle_D0
+      - zaore_shire_are_at_most_MIV
+      - shang_piwei_and_channel_tropism_are_M0
