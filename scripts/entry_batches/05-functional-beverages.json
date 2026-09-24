@@ -1,0 +1,651 @@
+{
+  "batch": {
+    "id": "05-functional-beverages",
+    "title": "功能饮料与植物饮品",
+    "catalog_order": 5,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher and official-source verification",
+    "exa_search_calls": 16,
+    "exa_hits": 69,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-05-functional-beverages"
+  },
+  "entries": {
+    "tonic-water": {
+      "name": "汤力水",
+      "family": "sweetened",
+      "research_depth": "R1",
+      "shared_parent": "fortified-and-sweetened-beverages",
+      "identity": "以碳酸水、奎宁风味和甜味剂调制的调味碳酸饮料；普通汤力水与无糖款的甜味来源不同，均不等于药用奎宁制剂。",
+      "variables": "奎宁含量、糖/代糖、酸味剂、碳酸、品牌、份量以及与酒精调配均会改变实际暴露。",
+      "composition": "没有统一配方。美国 21 CFR 对碳酸饮料中作为香味剂使用的奎宁规定不超过 83 ppm，并要求标签声明；该规定不是全球统一配方，也不代表疗效。",
+      "direct": "本轮未找到常规汤力水预防或治疗疾病的直接人体干预证据。不能把奎宁曾作为药物使用外推为饮料可治疗腿抽筋。",
+      "specific": "美国 eCFR 对奎宁作为碳酸饮料香味成分设置 83 ppm 上限；产品的糖、代糖和实际奎宁暴露仍须看所在地法规与标签。",
+      "safety": "关注含糖量、奎宁标示及酒精调配；不要用汤力水自我治疗腿抽筋或感染。药用剂量奎宁的风险不能按饮料剂量简单换算。",
+      "body": "汤力水是带奎宁风味的碳酸饮料，常规款可能含糖，无糖款则使用其他甜味剂。美国法规将奎宁作为碳酸饮料香味成分时限制在 83 ppm 以内；这只是该市场的成分规则，不说明汤力水具有药效。",
+      "evidence_body": "直接饮用汤力水的人体临床结局证据未检得；奎宁药物用途、风险和饮料低剂量不能混作一类证据。",
+      "care": "按所在地标签核对是否含奎宁与糖；抽筋持续或反复时不要以饮料代替评估。",
+      "taste_m": {
+        "苦": "奎宁带苦味；具体强度因配方而异，仅属感官类推。",
+        "甘": "含糖款有甜味；无糖款的甜感来自代糖，仅属感官类推。"
+      },
+      "queries": [
+        "FDA/eCFR quinine in tonic water 21 CFR 172.575 83 ppm",
+        "tonic water quinine clinical trial therapeutic claims versus beverage"
+      ],
+      "search_log": [
+        "检索美国 eCFR 奎宁饮料规定与汤力水成品临床试验；核对官方现行 §172.575 条文。该条仅涉及美国市场的成分使用与标示规则，本轮未检得汤力水成品疾病结局试验。"
+      ],
+      "refs": [
+        "U.S. Government Publishing Office. “21 CFR § 172.575—Quinine.” Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-172/subpart-F/section-172.575. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "U.S. Government Publishing Office. “21 CFR § 172.575—Quinine.” Electronic Code of Federal Regulations. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-172/subpart-F/section-172.575. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国联邦食品法规，成分使用标准。",
+          "population": "适用于美国市场碳酸饮料。",
+          "exposure": "奎宁盐作为香味成分。",
+          "result": "不超过 83 ppm，并须在标签显著声明奎宁。",
+          "limits": "法规不是人体效果研究；不代表其他国家规则或每瓶统一含量。",
+          "distance": "D0（特定市场成分规则）"
+        }
+      ]
+    },
+    "energy-drink": {
+      "name": "能量饮料",
+      "family": "sweetened",
+      "research_depth": "R2",
+      "shared_parent": "fortified-and-sweetened-beverages",
+      "identity": "以咖啡因作为主要刺激成分的复合饮料，常另含牛磺酸、糖/代糖、维生素和香料；不同产品每罐剂量差异明显。",
+      "variables": "咖啡因 mg/罐与每次总量、罐容量、糖/代糖、其他刺激成分、饮用时点、睡眠、运动、酒精及其他咖啡因来源。",
+      "composition": "无单一通用配方。人体试验中的商业产品每份咖啡因差异很大；标签上的每份/每罐与整瓶容量应一并核对。",
+      "direct": "小型随机交叉试验比较 946 mL、含 320 mg 咖啡因的能量饮料与咖啡因匹配对照，观察到部分时点 QTc 与收缩压差异；21 项运动随机试验的荟萃分析显示心率、运动中收缩压短时上升。结果是急性生理指标，不足以估计罕见心律事件或长期结局（E-C）。",
+      "specific": "多成分能量饮料的咖啡因匹配试验不能识别牛磺酸、糖或其他成分的独立贡献。EFSA 对所有来源咖啡因的评估给出健康成人单次至 200 mg、全天至 400 mg；孕期与哺乳期全天至 200 mg；儿童和青少年建议安全水平为 3 mg/kg 体重/日。该评估不是各品牌产品的推荐用量。",
+      "safety": "合计咖啡、茶、可乐、补充剂和能量饮料中的咖啡因；留意晚间摄入对睡眠的影响。儿童青少年、孕期、咖啡因敏感者及有心血管问题者应特别谨慎；不要把能量饮料当作补水饮料。",
+      "body": "能量饮料的主要刺激来源通常是咖啡因，但配方、容量和每罐剂量差异很大。一项小型交叉试验发现，大容量能量饮料在特定时点的 QTc 和血压变化不同于等量咖啡因对照；运动试验荟萃分析也发现短时心率与收缩压上升。这些急性指标不能直接预测长期健康结局。EFSA 提供的是总咖啡因摄入参考值，不能当作某个品牌的推荐份量。",
+      "evidence_body": "人体证据针对急性摄入和特定产品；样本较小、观察时间短，不能据此推断所有配方或罕见事件的发生率。",
+      "care": "看清整罐容量与每罐咖啡因，并计入其他来源；避免在晚间摄入影响睡眠的剂量。儿童青少年不应以能量饮料补能或补水，孕期按专业建议限制总咖啡因。",
+      "taste_m": {
+        "苦": "咖啡因及植物提取物可能带苦，配方常用甜味掩盖，仅属感官类推。",
+        "甘": "含糖款或代糖款可呈甜味，配方差异大，仅属感官类推。"
+      },
+      "queries": [
+        "energy drinks randomized caffeine matched QTc systolic blood pressure trial",
+        "caffeinated energy drinks cardiovascular responses exercise systematic review meta-analysis",
+        "EFSA scientific opinion caffeine 200 mg 400 mg energy drinks"
+      ],
+      "search_log": [
+        "Exa 检索商业能量饮料随机试验、运动期心血管荟萃分析与 EFSA 咖啡因安全意见；核对 DOI、剂量、样本和终点。"
+      ],
+      "refs": [
+        "Fletcher EA, Lacey CS, Aaron M, Kolasa M, Occiano A, Shah SA. “Randomized Controlled Trial of High-Volume Energy Drink Versus Caffeine Consumption on ECG and Hemodynamic Parameters.” Journal of the American Heart Association. 2017;6(5):e004448. DOI: https://doi.org/10.1161/JAHA.116.004448.",
+        "Grinberg N, Benkhedda K, Barber J, Krahn AD, La Vieille S. “Effects of Caffeinated Energy Drinks on Cardiovascular Responses during Exercise in Healthy Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.” Applied Physiology, Nutrition, and Metabolism. 2022. DOI: https://doi.org/10.1139/apnm-2021-0807.",
+        "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). “Scientific Opinion on the Safety of Caffeine.” EFSA Journal. 2015;13(5):4102. DOI: https://doi.org/10.2903/j.efsa.2015.4102."
+      ],
+      "body_refs": [
+        "Fletcher EA, Lacey CS, Aaron M, Kolasa M, Occiano A, Shah SA. “Randomized Controlled Trial of High-Volume Energy Drink Versus Caffeine Consumption on ECG and Hemodynamic Parameters.” Journal of the American Heart Association. 2017;6(5):e004448. DOI: https://doi.org/10.1161/JAHA.116.004448.",
+        "Grinberg N, Benkhedda K, Barber J, Krahn AD, La Vieille S. “Effects of Caffeinated Energy Drinks on Cardiovascular Responses during Exercise in Healthy Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.” Applied Physiology, Nutrition, and Metabolism. 2022. DOI: https://doi.org/10.1139/apnm-2021-0807.",
+        "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). “Scientific Opinion on the Safety of Caffeine.” EFSA Journal. 2015;13(5):4102. DOI: https://doi.org/10.2903/j.efsa.2015.4102."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、交叉对照试验。",
+          "population": "18 名年轻健康志愿者。",
+          "exposure": "946 mL 能量饮料或咖啡因匹配饮料；两组均含 320 mg 咖啡因。",
+          "result": "能量饮料组在 2 小时时 QTc 改变与对照不同，6 小时时收缩压较高。",
+          "limits": "单次、高容量、样本很小；只测急性 ECG/血压，不能推断长期风险或罕见事件。",
+          "distance": "D0（所测商业配方）"
+        },
+        {
+          "ref": 2,
+          "design": "随机对照运动试验系统综述与荟萃分析，21 项试验。",
+          "population": "296 名健康成人（224 男、72 女）。",
+          "exposure": "咖啡因能量饮料于动态有氧运动前/中摄入。",
+          "result": "运动期心率平均差约 +2.86 bpm，收缩压约 +9.02 mmHg；舒张压无明显差异。",
+          "limits": "样本限于健康成人和急性运动；心律失常数据不足。",
+          "distance": "D0/D1（商业能量饮料，运动情境）"
+        },
+        {
+          "ref": 3,
+          "design": "EFSA 风险评估意见。",
+          "population": "一般健康成人及孕期、哺乳期和儿童青少年亚组。",
+          "exposure": "所有膳食来源的咖啡因。",
+          "result": "健康成人单次至 200 mg、全天至 400 mg；孕期/哺乳期全天至 200 mg；儿童青少年提出 3 mg/kg 体重/日的安全水平。",
+          "limits": "风险评估对象是所有来源咖啡因，不是单一品牌、疾病患者或产品疗效。",
+          "distance": "D2（咖啡因成分风险评估）"
+        }
+      ]
+    },
+    "sports-drink": {
+      "name": "运动饮料",
+      "family": "performance",
+      "research_depth": "R2",
+      "shared_parent": "functional-beverage-base",
+      "identity": "为运动期间补充水、碳水化合物和电解质而设计的饮料；与口服补液盐和普通电解质水的配方目标不同。",
+      "variables": "碳水浓度与类型、钠含量、渗透压、摄入速率、运动持续时间/强度、环境温度、出汗量和运动者个体差异。",
+      "composition": "有等渗、低渗或高渗等产品，碳水和钠含量差异较大；“等渗”名称不保证实测渗透压或临床效果。",
+      "direct": "运动营养共识支持在特定持续时间与强度的训练/竞赛中安排碳水和水分摄入；28 项研究的荟萃分析考察运动中不同渗透压运动饮料与水对血浆容量变化的影响。这些结果限于运动过程的补水/表现情境，不证明日常饮用更健康（运动情境 E-B；一般人群长期获益 E-0）。",
+      "specific": "运动饮料通常碳水含量高于口服补液盐、钠含量低于医疗 ORS。含糖、酸味运动饮料长期频繁含漱/啜饮也会增加口腔糖酸暴露。",
+      "safety": "日常轻活动通常不需额外含糖运动饮料；长时间、高强度运动及高温情境应按个体出汗、碳水和钠需求选择。口腔健康关注频繁接触糖与酸。",
+      "body": "运动饮料将水、碳水和电解质组合，配方围绕训练和竞赛场景设计。指南和试验支持在某些长时间或高强度运动中安排碳水与水分，但运动中血浆容量、表现等结果不能外推为普通日常饮用的健康收益。",
+      "evidence_body": "运动场景与一般补水不同；运动者、时长、热环境、饮料渗透压和摄入速率都会改变结果。",
+      "care": "先看运动时长、强度与出汗量，再看每份碳水/钠；不要将运动饮料与医疗口服补液盐互换。",
+      "taste_m": {
+        "咸": "电解质可能产生轻微咸感，但糖和风味剂会遮盖，配方不同，仅属感官类推。",
+        "甘": "含碳水产品呈甜味，依浓度与配方变化，仅属感官类推。"
+      },
+      "queries": [
+        "sports drinks carbohydrate electrolyte hydration performance prolonged exercise consensus statement",
+        "hypotonic isotonic hypertonic sports drinks central hydration meta-analysis continuous exercise",
+        "oral rehydration beverages exercise dehydration carbohydrate electrolyte systematic review"
+      ],
+      "search_log": [
+        "Exa 检索运动营养联合立场文件、运动期补液荟萃分析及 exercise-associated dehydration 系统综述；区分运动场景与一般饮水。"
+      ],
+      "refs": [
+        "Thomas DT, Erdman KA, Burke LM. “Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance.” Journal of the Academy of Nutrition and Dietetics. 2016;116(3):501–528. DOI: https://doi.org/10.1016/j.jand.2015.12.006.",
+        "Kopetschny BH, Badenhorst CE. “The Hydrating Effects of Hypertonic, Isotonic and Hypotonic Sports Drinks and Waters on Central Hydration During Continuous Exercise: A Systematic Meta-Analysis and Perspective.” Sports Medicine. 2022;52(2):349–375. DOI: https://doi.org/10.1007/s40279-021-01558-y.",
+        "Borra V, De Brier N, Berry D, Zideman D, Singletary EM, De Buck E, et al. “Oral Rehydration Beverages for Treating Exercise-Associated Dehydration: A Systematic Review, Part I. Carbohydrate-Electrolyte Solutions.” Journal of Athletic Training. 2023. DOI: https://doi.org/10.4085/1062-6050-0682.22."
+      ],
+      "body_refs": [
+        "Thomas DT, Erdman KA, Burke LM. “Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance.” Journal of the Academy of Nutrition and Dietetics. 2016;116(3):501–528. DOI: https://doi.org/10.1016/j.jand.2015.12.006.",
+        "Kopetschny BH, Badenhorst CE. “The Hydrating Effects of Hypertonic, Isotonic and Hypotonic Sports Drinks and Waters on Central Hydration During Continuous Exercise: A Systematic Meta-Analysis and Perspective.” Sports Medicine. 2022;52(2):349–375. DOI: https://doi.org/10.1007/s40279-021-01558-y."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Professional joint position statement. ",
+          "population": "Athletes across training/competition scenarios.",
+          "exposure": "Food, fluids and supplements including sport beverage use.",
+          "result": "Provides situational guidance for type, amount and timing of nutrition/hydration to support performance and recovery.",
+          "limits": "Guideline for sport performance; not evidence that all consumers benefit from routine sports drinks.",
+          "distance": "D1"
+        },
+        {
+          "ref": 2,
+          "design": "Systematic review and random-effects meta-analysis; 28 studies and 68 drink treatment effects.",
+          "population": "Participants in continuous exercise studies.",
+          "exposure": "Hypertonic, isotonic, hypotonic carbohydrate-electrolyte drinks and water over 0–180 minutes.",
+          "result": "Estimated central hydration/plasma volume effects varied by drink tonicity and intake conditions.",
+          "limits": "Surrogate plasma-volume outcome; beverages and exercise protocols varied; does not establish long-term health effects.",
+          "distance": "D0/D1"
+        },
+        {
+          "ref": 3,
+          "design": "Systematic review of controlled trials for exercise-associated dehydration.",
+          "population": "Adults and children dehydrated after exercise.",
+          "exposure": "Carbohydrate-electrolyte solution compared with water.",
+          "result": "Reviewed evidence on rehydration effectiveness and beverage type.",
+          "limits": "Exercise-related dehydration, not diarrhea ORS or routine daily hydration.",
+          "distance": "D0/D1"
+        }
+      ]
+    },
+    "electrolyte-drink": {
+      "name": "电解质饮料",
+      "family": "hydration",
+      "research_depth": "R1",
+      "shared_parent": "functional-beverage-base",
+      "identity": "商业市场中的宽泛名称，可能指低糖含电解质水、运动饮料或医疗口服补液盐；本条讨论普通零售电解质饮料，不将其等同于 ORS。",
+      "variables": "钠、钾、氯、碳水化合物、渗透压、饮用量、出汗/腹泻等液体流失情境，以及肾脏/心脏状况。",
+      "composition": "没有统一配方；含钠、钾和糖的比例从微量强化水到较高电解质配方均有。医疗 ORS 有规定的葡萄糖与电解质比例，应按产品说明冲调。",
+      "direct": "没有一个可迁移到所有商业电解质饮料的临床效果。WHO 的低渗 ORS 用于腹泻相关脱水；运动后补液综述研究的是 exercise-associated dehydration，二者都不能证明日常电解质水有额外健康收益。",
+      "specific": "WHO/UNICEF 推荐的 ORS 是特定治疗性葡萄糖-电解质配方；运动饮料、电解质水的组成和使用场景不相同。",
+      "safety": "腹泻脱水时按医疗建议使用正规 ORS 并严格按标示配水；心肾疾病或需限制钠/钾者核对成分并咨询医护人员。普通活动无需自动补充电解质。",
+      "body": "“电解质饮料”不是单一配方。用于腹泻脱水的口服补液盐有明确的葡萄糖-电解质比例；运动饮料、电解质水则各有配方。某一类 ORS 的临床用途，不能转移到所有标示电解质的零售饮料。",
+      "evidence_body": "本条重点是类别身份和补液场景边界；未检得能代表所有零售电解质饮料的直接人体试验。",
+      "care": "遇到腹泻脱水使用正规口服补液盐并照标签配制；运动或出汗补液按时长、强度和损失选择，不要只凭营销词判断。",
+      "taste_m": {
+        "咸": "钠盐可能带咸感，含糖/香料产品差异很大，仅属感官类推。",
+        "甘": "含葡萄糖或糖的配方可有甜味，具体依产品，仅属感官类推。"
+      },
+      "queries": [
+        "WHO oral rehydration salts new formulation glucose sodium composition treatment diarrhea",
+        "commercial electrolyte drinks versus oral rehydration solution composition",
+        "exercise-associated dehydration carbohydrate electrolyte beverage systematic review"
+      ],
+      "search_log": [
+        "Exa 检索 WHO/UNICEF ORS 官方技术资料、运动后补液系统综述与商业饮料身份差异；不把医疗 ORS 证据转给电解质水。"
+      ],
+      "refs": [
+        "World Health Organization, UNICEF. “Oral Rehydration Salts: Production of the New ORS.” WHO Reference WHO/FCH/CAH/06.1. 2006. https://www.who.int/publications/i/item/WHO-FCH-CAH-06.1.",
+        "Borra V, De Brier N, Berry D, Zideman D, Singletary EM, De Buck E, et al. “Oral Rehydration Beverages for Treating Exercise-Associated Dehydration: A Systematic Review, Part I. Carbohydrate-Electrolyte Solutions.” Journal of Athletic Training. 2023. DOI: https://doi.org/10.4085/1062-6050-0682.22."
+      ],
+      "body_refs": [
+        "World Health Organization, UNICEF. “Oral Rehydration Salts: Production of the New ORS.” WHO Reference WHO/FCH/CAH/06.1. 2006. https://www.who.int/publications/i/item/WHO-FCH-CAH-06.1.",
+        "Borra V, De Brier N, Berry D, Zideman D, Singletary EM, De Buck E, et al. “Oral Rehydration Beverages for Treating Exercise-Associated Dehydration: A Systematic Review, Part I. Carbohydrate-Electrolyte Solutions.” Journal of Athletic Training. 2023. DOI: https://doi.org/10.4085/1062-6050-0682.22."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "WHO/UNICEF technical guidance for manufacturing and using low-osmolarity ORS.",
+          "population": "People with diarrheal disease and dehydration risk; guidance spans age groups.",
+          "exposure": "A standardized glucose-electrolyte oral rehydration solution.",
+          "result": "ORS is an established approach to prevent/treat diarrhea-related dehydration in appropriate settings.",
+          "limits": "Medical ORS is a defined treatment formulation, not a class effect of retail electrolyte drinks.",
+          "distance": "D3 to generic electrolyte beverages; D0 to defined ORS"
+        },
+        {
+          "ref": 2,
+          "design": "Systematic review of controlled exercise dehydration trials.",
+          "population": "Adults/children after exercise-associated fluid loss.",
+          "exposure": "Carbohydrate-electrolyte rehydration solutions versus water.",
+          "result": "Evaluates sport-related post-exercise rehydration.",
+          "limits": "Does not address diarrhea treatment or generic everyday electrolyte water.",
+          "distance": "D2"
+        }
+      ]
+    },
+    "vitamin-drink": {
+      "name": "维生素饮料",
+      "family": "fortified",
+      "research_depth": "R1",
+      "shared_parent": "fortified-and-sweetened-beverages",
+      "identity": "添加一种或多种维生素的即饮产品，基底可能是水、果汁或含糖饮料；“含维生素”不定义统一配方或健康效果。",
+      "variables": "维生素种类与剂量、每瓶份数、强化形式、总膳食/补充剂摄入、糖、是否用于纠正已诊断缺乏。",
+      "composition": "不同品牌添加种类和含量差异大，有些产品的每瓶含量接近或超过日常需要；还需看糖和能量。",
+      "direct": "本轮未找到维生素饮料作为整体可改善一般健康结局的直接人体试验。加拿大人口膳食调查显示自愿强化食品/饮料消费者摄入量较高，但无法隔离维生素饮料或证明额外获益。",
+      "specific": "EFSA 2023 维生素 B6 正式意见为成人（含孕期、哺乳期）12 mg/日可耐受最高摄入量，依据周围神经病变风险；这个数值针对全部食物、强化饮料和补充剂总摄入，不是单瓶限值。其他维生素有各自不同参考值。",
+      "safety": "按所有来源合计维生素摄入，特别留意 B6 等高剂量强化与补充剂叠加；不要以强化饮料替代诊断和缺乏治疗。",
+      "body": "维生素饮料只是添加维生素的产品类别，基底和剂量并不统一。加拿大人口强化食品/饮料调查能描述摄入变化，却不能证明一般人喝维生素饮料会获得临床收益。若使用含维生素 B6 的强化饮料和补充剂，应合并核算；EFSA 正式意见中的 12 mg/日为成人总摄入上限参考，不是单瓶产品阈值。",
+      "evidence_body": "人群强化食品研究不等于特定维生素饮料试验；成人 B6 UL 针对总日摄入，不是每瓶限值。",
+      "care": "先看每瓶实际份数、具体维生素含量和添加糖，并与补充剂合并核算；纠正缺乏应按专业建议。",
+      "taste_m": {
+        "甘": "甜味可能来自糖或代糖；添加量随产品改变，仅属感官类推。",
+        "酸": "果汁或酸味剂可产生酸感，配方不同，仅属感官类推。"
+      },
+      "queries": [
+        "fortified vitamin beverages usual nutrient intake population survey upper intake levels",
+        "EFSA tolerable upper intake level vitamin B6 12 mg neuropathy",
+        "vitamin-fortified drinks randomized clinical outcome trials"
+      ],
+      "search_log": [
+        "Exa 检索人口强化食品/饮料调查、EFSA B6 风险评估与维生素饮料人体结局；对特定饮料直接试验未检得。"
+      ],
+      "refs": [
+        "Tarasuk V, Brassard D. “The Effect of Consuming Voluntarily Fortified Food and Beverages on Usual Nutrient Intakes in the Canadian Population.” Food & Nutrition Research. 2021;65:5256. DOI: https://doi.org/10.29219/fnr.v65.5256.",
+        "EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA), Turck D, Bohn T, Castenmiller J, De Henauw S, et al. “Scientific Opinion on the Tolerable Upper Intake Level for Vitamin B6.” EFSA Journal. 2023;21(5):8006. DOI: https://doi.org/10.2903/j.efsa.2023.8006.",
+        "EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA), Turck D, Bohn T, Cámara M, Castenmiller J, De Henauw S, et al. “Guidance for Establishing and Applying Tolerable Upper Intake Levels for Vitamins and Essential Minerals.” EFSA Journal. 2024;22(11):9052. DOI: https://doi.org/10.2903/j.efsa.2024.9052."
+      ],
+      "body_refs": [
+        "Tarasuk V, Brassard D. “The Effect of Consuming Voluntarily Fortified Food and Beverages on Usual Nutrient Intakes in the Canadian Population.” Food & Nutrition Research. 2021;65:5256. DOI: https://doi.org/10.29219/fnr.v65.5256.",
+        "EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA), Turck D, Bohn T, Castenmiller J, De Henauw S, et al. “Scientific Opinion on the Tolerable Upper Intake Level for Vitamin B6.” EFSA Journal. 2023;21(5):8006. DOI: https://doi.org/10.2903/j.efsa.2023.8006."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Population-representative dietary intake survey with estimated usual nutrient intake.",
+          "population": "Canadian Community Health Survey, 20,487 people; 8,442 adults aged 14–50 for selected analyses.",
+          "exposure": "Voluntarily fortified products including energy drinks, fortified beverages, cereals and bars.",
+          "result": "Consumers had higher usual intake of several nutrients; the survey found little evidence of broad protection from inadequacy or excessive UL exceedance.",
+          "limits": "Products grouped across categories; observational dietary estimates; cannot attribute outcome to vitamin drinks or demonstrate clinical benefit.",
+          "distance": "D2"
+        },
+        {
+          "ref": 2,
+          "design": "EFSA risk assessment drawing on systematic reviews, case-control, case reports and vigilance data.",
+          "population": "Adults and children by age group.",
+          "exposure": "Total chronic vitamin B6 intake.",
+          "result": "EFSA 正式意见为成人（含孕期、哺乳期）建立维生素 B6 12 mg/日的 UL。",
+          "limits": "UL 是全部来源长期日摄入的风险参考，不是某种维生素饮料的标签限值。",
+          "distance": "D3"
+        }
+      ]
+    },
+    "lactic-acid-bacteria-drink": {
+      "name": "乳酸菌饮料",
+      "family": "fermented",
+      "research_depth": "R2",
+      "shared_parent": "fermented-drink-base",
+      "identity": "以乳或其他基底制成、发酵或添加乳酸菌的饮料；是否含活菌、菌种/菌株、活菌数和发酵方式因产品而异。",
+      "variables": "菌株与活菌数、发酵/后添加、乳基底、糖、冷链、份量及是否属于酸化饮料而非活菌发酵品。",
+      "composition": "“乳酸菌”不能说明菌种、菌株或活菌存活；许多产品含糖，标签上的菌种/菌数与保存条件需要逐项查看。",
+      "direct": "现有人体证据针对特定发酵乳和明确菌株，不代表“乳酸菌饮料”整体。Poon 等对含 CNCM I-1518 的特定饮料汇总 9 项 RCT，发现至少一次常见感染的几率较低，但感染持续时间与严重程度未见显著差异。2025 年美国开放标签 RCT（50 人、28 天）和 2026 年越南开放标签试点（51 人、4 周）均报告特定 L. paracasei Shirota 发酵乳对硬/块状便结局的差异；样本和设计限制较大。",
+      "specific": "已研究的产品含明确菌株与培养物，不可推广到成分、菌株或活菌量不同的乳酸菌饮料。2026 年越南试验为单中心、开放标签、无干预对照，样本 51 人；美国试验亦为开放标签，不能据此判断所有产品或一般人群的疾病预防效果。",
+      "safety": "检查乳过敏、乳糖、添加糖和储存条件；严重免疫功能低下或重病者使用活菌产品前听从医疗意见。",
+      "body": "“乳酸菌饮料”不是单一菌株或配方。部分特定发酵乳试验报告感染发生或硬便结局差异，但研究产品都含明确菌株，且近期便秘试验为开放标签、小样本研究；这些结果不能泛化为所有乳酸菌饮料都能增强免疫或改善肠胃。",
+      "evidence_body": "研究对象限特定发酵乳、菌株和结局；不同试验人群与设计差异大，支持产品/菌株特异的探索，不建立类别普遍疗效。",
+      "care": "看菌种/菌株、活菌数量、糖、过敏原和冷藏说明；不要只凭“乳酸菌”名称判断功效。",
+      "taste_m": {
+        "酸": "发酵酸味来自有机酸等，但酸度随发酵和配方变化，仅属感官类推。",
+        "甘": "许多产品另加糖或甜味剂，甜感不能代表菌株或功效，仅属感官类推。"
+      },
+      "queries": [
+        "fermented dairy drink CNCM I-1518 randomized controlled trials meta-analysis common infections",
+        "Lacticaseibacillus paracasei Shirota fermented milk randomized trial stool consistency 2025",
+        "lactic acid bacteria beverage strain-specific human evidence safety"
+      ],
+      "search_log": [
+        "Exa 检索指定发酵乳菌株的系统综述和 RCT，并分别记录菌株、产品、结局和利益冲突；未将结果扩展为所有菌株。 检索结果包含 9 项 RCT/8 篇报告，报告作者机构关联并保留为潜在利益冲突限制。",
+        "按 2026-09-24 证据截止日补检 2026 年越南 LcS 发酵乳随机试点：51 人、开放标签、无干预对照；记录稀疏事件估计与产品/菌株边界。"
+      ],
+      "refs": [
+        "Poon T, Juana J, Noori D, Jeansen S, Pierucci-Lagha A, Musa-Veloso K. “Effects of a Fermented Dairy Drink Containing Lacticaseibacillus paracasei subsp. paracasei CNCM I-1518 (Lactobacillus casei CNCM I-1518) and the Standard Yogurt Cultures on the Incidence, Duration, and Severity of Common Infectious Diseases: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.” Nutrients. 2020;12(11):3443. DOI: https://doi.org/10.3390/nu12113443.",
+        "Cook CM, Akiyama T, Blonquist TM, Mah E, Derrig L, Shibata H. “Effect of Daily Consumption of a Fermented Milk Containing Lacticaseibacillus paracasei Strain Shirota (LcS) on Stool Consistency in United States Adults with Hard or Lumpy Stools: A Randomized Controlled Trial.” The Journal of Nutrition. 2025. DOI: https://doi.org/10.1016/j.tjnut.2025.02.021.",
+        "Hoang Van V, Dong Van T, Nguyen Bao N, et al. “Effects of Fermented Milk Containing Lacticaseibacillus paracasei Strain Shirota on Constipation and Gut Microbiota: A Randomised Pilot Study in Vietnam.” Beneficial Microbes. 2026. DOI: https://doi.org/10.1163/18762891-bja00116."
+      ],
+      "body_refs": [
+        "Poon T, Juana J, Noori D, Jeansen S, Pierucci-Lagha A, Musa-Veloso K. “Effects of a Fermented Dairy Drink Containing Lacticaseibacillus paracasei subsp. paracasei CNCM I-1518 (Lactobacillus casei CNCM I-1518) and the Standard Yogurt Cultures on the Incidence, Duration, and Severity of Common Infectious Diseases: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.” Nutrients. 2020;12(11):3443. DOI: https://doi.org/10.3390/nu12113443.",
+        "Cook CM, Akiyama T, Blonquist TM, Mah E, Derrig L, Shibata H. “Effect of Daily Consumption of a Fermented Milk Containing Lacticaseibacillus paracasei Strain Shirota (LcS) on Stool Consistency in United States Adults with Hard or Lumpy Stools: A Randomized Controlled Trial.” The Journal of Nutrition. 2025. DOI: https://doi.org/10.1016/j.tjnut.2025.02.021.",
+        "Hoang Van V, Dong Van T, Nguyen Bao N, et al. “Effects of Fermented Milk Containing Lacticaseibacillus paracasei Strain Shirota on Constipation and Gut Microbiota: A Randomised Pilot Study in Vietnam.” Beneficial Microbes. 2026. DOI: https://doi.org/10.1163/18762891-bja00116."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Systematic review and meta-analysis of 9 RCTs from 8 publications.",
+          "population": "Generally healthy children and adults.",
+          "exposure": "Specific fermented dairy drink with L. paracasei CNCM I-1518 plus standard yogurt cultures.",
+          "result": "对照相比，至少一次常见感染的几率降低（OR 0.81，95% CI 0.66–0.98）；每人平均感染次数也略低（MD −0.09，95% CI −0.15 至 −0.04）。感染持续时间与严重程度没有显著差异。",
+          "limits": "菌株和饮料配方特异；作者机构包括 Danone Nutricia Research 与 Intertek，可能存在产品/商业关联；不能推断所有乳酸菌饮料的类别效应。",
+          "distance": "D0 to studied drink; D2 to catalog category"
+        },
+        {
+          "ref": 2,
+          "design": "Randomized controlled trial, 28-day intervention plus follow-up.",
+          "population": "US adults with a history of hard/lumpy stools, otherwise generally healthy.",
+          "exposure": "LcS fermented milk versus no intervention.",
+          "result": "50 名美国成人、每日 80 mL 含 LcS 的发酵乳 28 天与无干预对照相比，干预期间至少 25% 排便为硬/块状便的几率较低（OR 0.34，95% CI 0.14–0.80）；另一便秘结局改善。",
+          "limits": "开放标签、小样本、无干预对照；受试者为有硬/块状便史的美国成人，产品及菌株特异。",
+          "distance": "D0 to studied drink; D2 to category"
+        },
+        {
+          "ref": 3,
+          "design": "单中心、开放标签随机试点；51 名硬/块状便越南成人，4 周每日一瓶 LcS 发酵乳或无干预，随后 2 周洗脱。",
+          "population": "有硬/块状便的越南成人。",
+          "exposure": "每日一瓶含 ≥6.5×10^9 CFU L. paracasei Shirota (LcS) 的发酵乳。",
+          "result": "干预期间，LcS 组每四次以上排便中至少 25% 为硬/块状便的比例较对照低（OR 0.00，95% CI 0.00–0.16；P=0.005）。",
+          "limits": "开放标签、单中心、小样本、无干预对照；零事件导致 OR 为 0，结果需独立重复；研究产品含特定菌株，作者中有 Yakult Central Institute affiliation。",
+          "distance": "D0 to tested product; D2 to category"
+        }
+      ]
+    },
+    "fruit-flavored-drink": {
+      "name": "果味饮料",
+      "family": "sweetened",
+      "research_depth": "R1",
+      "shared_parent": "fortified-and-sweetened-beverages",
+      "identity": "以水为基底并带水果风味的饮品，可能加入糖、甜味剂或一定比例果汁；与 100% 果汁、果肉饮料和水果茶不等同。",
+      "variables": "真实果汁比例、添加糖/甜味剂、份量、酸味剂、碳酸、品牌和替代的其他饮料。",
+      "composition": "名称不能确定果汁含量或糖量；应看配料表、营养标签及每瓶份量。果汁饮料、果汁和含果味的水可能属于不同产品类别。",
+      "direct": "未检得对所有果味饮料成品的统一人体临床试验。相邻证据中，641 名儿童的 18 个月随机试验比较每日 250 mL、104 kcal 含糖饮品与无糖饮品，含糖组体重增长更多；研究并非针对单一果味配方（E-C，且人群/类别间接）。",
+      "specific": "果味饮料若属于含糖饮料，其糖能量和替代关系与实际配方有关；不能把一般含糖饮料试验等同为所有果汁或果味饮料的效果。",
+      "safety": "频繁饮用含糖饮料会增加游离糖暴露；酸性产品还增加牙齿接触酸的机会。选购时区分 100% 果汁、果汁饮料、含糖风味饮料和无糖款。",
+      "body": "果味饮料的“果味”不等于高果汁含量。儿童随机试验显示，以无糖饮品替代特定含糖饮品会减少体重增长，但该结果不是某种果味配方的专属疗效；实际选择应看果汁比例、添加糖和份量。",
+      "evidence_body": "含糖饮料替代试验是类别邻近证据；果味饮料配方与 100% 果汁之间身份差异大。",
+      "care": "查看果汁比例、每瓶添加糖/能量与酸味剂；不要把“水果味”当作整果或 100% 果汁。",
+      "taste_m": {
+        "酸": "果酸或酸味剂可能带酸，实际由配方决定，仅属感官类推。",
+        "甘": "糖/代糖与果汁比例改变甜味，产品间差异明显，仅属感官类推。"
+      },
+      "queries": [
+        "sugar-sweetened beverage randomized trial children de Ruyter 2012 250 mL 104 kcal",
+        "fruit drink versus 100 percent juice sugar beverage definition",
+        "sugar-sweetened beverage intervention adolescents randomized controlled trial body weight"
+      ],
+      "search_log": [
+        "Exa 检索儿童含糖饮料替代 RCT 与果味饮料/果汁身份差异；明确试验产品并非特定果味饮料。"
+      ],
+      "refs": [
+        "de Ruyter JC, Olthof MR, Seidell JC, Katan MB. “A Trial of Sugar-Free or Sugar-Sweetened Beverages and Body Weight in Children.” New England Journal of Medicine. 2012;367(15):1397–1406. DOI: https://doi.org/10.1056/NEJMoa1203034.",
+        "Ebbeling CB, Feldman HA, Chomitz VR, et al. “A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight.” New England Journal of Medicine. 2012;367:1407–1416. DOI: https://doi.org/10.1056/NEJMoa1203388."
+      ],
+      "body_refs": [
+        "de Ruyter JC, Olthof MR, Seidell JC, Katan MB. “A Trial of Sugar-Free or Sugar-Sweetened Beverages and Body Weight in Children.” New England Journal of Medicine. 2012;367(15):1397–1406. DOI: https://doi.org/10.1056/NEJMoa1203034."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "18-month randomized, masked beverage-substitution trial.",
+          "population": "641 primarily normal-weight children aged about 4.8–11.9 years.",
+          "exposure": "250 mL/day sugar-free beverage versus similar sugar-containing beverage providing 104 kcal/day.",
+          "result": "BMI z-score increased 0.02 SD in sugar-free group versus 0.15 SD in sugar group; weight gain 6.35 versus 7.37 kg.",
+          "limits": "26% discontinued assigned beverages; product was not defined as a particular fruit drink; children only.",
+          "distance": "D2"
+        },
+        {
+          "ref": 2,
+          "design": "Randomized trial of reducing sugar-sweetened beverage intake.",
+          "population": "224 overweight/obese adolescents who regularly consumed SSBs.",
+          "exposure": "Intervention to reduce SSB intake; multiple beverage types.",
+          "result": "At one year BMI increase was lower in intervention group; between-group difference was not present at the two-year primary endpoint.",
+          "limits": "Not cola- or fruit-drink-specific; intervention and population limit transfer.",
+          "distance": "D2"
+        }
+      ]
+    },
+    "almond-beverage": {
+      "name": "杏仁奶",
+      "family": "plant",
+      "research_depth": "R1",
+      "shared_parent": "plant-beverage-base",
+      "identity": "以杏仁原料制成、常作为乳品替代品出售的植物饮料；不是整颗杏仁、杏仁酱或高浓度杏仁乳。",
+      "variables": "杏仁含量/提取率、是否加糖、钙/维生素强化、稳定剂、过滤、品牌和每份量。",
+      "composition": "市售产品配方变化大；许多杏仁饮蛋白质低于牛乳，是否强化钙、维生素 D/B12 以及添加糖须看标签。沉淀与摇匀也可能影响每杯实际营养摄入。",
+      "direct": "未检得杏仁饮本身改善一般健康结局的直接临床试验。2026 年植物饮料系统评价与网络荟萃分析只纳入豆、燕麦和米饮，未提供杏仁饮的 RCT 估计；成分调查与强化产品工艺研究不能把整杏仁营养研究迁移到稀释饮品。",
+      "specific": "市场调查显示不同植物饮在蛋白质和强化营养素上有差异；一项强化杏仁饮 HTST 试验研究加工后的维生素/矿物质保留，不是人体试验。2026 年植物饮料网络荟萃分析未纳入杏仁饮。",
+      "safety": "杏仁过敏者应避开相关产品；查看糖、蛋白质与钙/维生素强化。植物饮不是天然营养等价的牛乳替代品。",
+      "body": "杏仁奶通常是稀释的杏仁基植物饮料，不能按整颗杏仁的营养研究推断。市场产品的蛋白质、添加糖和强化钙/维生素差别较大，替代乳品时需要逐项核对标签。",
+      "evidence_body": "没有杏仁饮直接人体临床效果证据；市场/标签分析和工艺研究不能证明人体结局。2026 年 RCT 网络荟萃分析未包含杏仁饮。",
+      "care": "核对过敏原、每份蛋白质、添加糖及是否强化钙和维生素 D/B12；使用前按标签摇匀。",
+      "taste_m": {
+        "甘": "杏仁香与甜味受原料、糖和香料影响，仅属感官类推。"
+      },
+      "queries": [
+        "commercial almond beverage nutrition fortification protein composition market survey",
+        "fortified almond-based beverage processing retention micronutrients HTST 2024",
+        "almond beverage randomized human clinical trial health outcomes"
+      ],
+      "search_log": [
+        "Exa 检索植物饮料市场/营养标签调查、强化杏仁饮加工试验及杏仁饮人体干预；未检得杏仁饮成品的直接临床试验。",
+        "追加核对 2026 年植物饮料系统评价与网络荟萃分析，确认其饮料类别范围不包含杏仁饮。"
+      ],
+      "refs": [
+        "Smith NW, Dave A, Hill JP, McNabb WC. “Nutritional Assessment of Plant-Based Beverages in Comparison to Bovine Milk.” Frontiers in Nutrition. 2022;9:957486. DOI: https://doi.org/10.3389/fnut.2022.957486.",
+        "Drewnowski A. “Most Plant-Based Milk Alternatives in the USDA Branded Food Products Database Do Not Meet Proposed Nutrient Standards or Score Well on Nutrient Density Metrics.” Nutrients. 2022;14(22):4767. DOI: https://doi.org/10.3390/nu14224767.",
+        "Redan BW, Zuklic J, Cai J, Warren JL, Carter CW, Wan J, et al. “Effect of Pilot-Scale High-Temperature Short-Time Processing on the Retention of Key Micronutrients in a Fortified Almond-Based Beverage: Implications for Fortification of Plant-Based Milk Alternatives.” Frontiers in Nutrition. 2024;11:1468828. DOI: https://doi.org/10.3389/fnut.2024.1468828.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "body_refs": [
+        "Smith NW, Dave A, Hill JP, McNabb WC. “Nutritional Assessment of Plant-Based Beverages in Comparison to Bovine Milk.” Frontiers in Nutrition. 2022;9:957486. DOI: https://doi.org/10.3389/fnut.2022.957486.",
+        "Redan BW, Zuklic J, Cai J, Warren JL, Carter CW, Wan J, et al. “Effect of Pilot-Scale High-Temperature Short-Time Processing on the Retention of Key Micronutrients in a Fortified Almond-Based Beverage: Implications for Fortification of Plant-Based Milk Alternatives.” Frontiers in Nutrition. 2024;11:1468828. DOI: https://doi.org/10.3389/fnut.2024.1468828.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "New Zealand supermarket label survey plus selected-product laboratory composition analyses.",
+          "population": "Plant-based drinks including almond, coconut, oat, rice and soy products.",
+          "exposure": "Marketed drinks and nutrient/protein composition.",
+          "result": "Declared composition varied; soy drinks were most similar to milk in measured proximate composition; other categories averaged <1.1 g protein/100 mL in selected products.",
+          "limits": "One national market and selected products; not a health-outcome trial and not every almond brand.",
+          "distance": "D0 for sampled products; D2 to other markets"
+        },
+        {
+          "ref": 2,
+          "design": "Cross-sectional nutrient/ingredient analysis of USDA Branded Food Products Database.",
+          "population": "1,042 US plant-based milk alternatives across types.",
+          "exposure": "Product labels/ingredients and nutrient-density metrics.",
+          "result": "Products varied in protein, added sugar, salt and fortification; many were low in protein relative to proposed standards.",
+          "limits": "Database/label analysis, not direct chemical or clinical outcomes; category average not almond-specific.",
+          "distance": "D0 for database products; D2"
+        },
+        {
+          "ref": 4,
+          "design": "纳入 14 项 RCT、543 名成人的系统综述与网络荟萃分析；检索限豆饮、燕麦饮和米饮，至少 3 周。",
+          "population": "成人植物饮替代牛乳/植物饮之间比较试验。",
+          "exposure": "豆、燕麦或米饮替代牛乳；未纳入杏仁饮。",
+          "result": "对杏仁饮没有可用的直接估计。",
+          "limits": "数据库检索截止 2025-01；不代表之后所有研究，也不代表市场中的每种植物饮。",
+          "distance": "D3（对杏仁饮的证据缺口说明）"
+        },
+        {
+          "ref": 3,
+          "design": "以试验规模 HTST 工艺处理强化杏仁基饮料的加工研究。",
+          "population": "实验室饮料样品；没有人体受试者。",
+          "exposure": "试验规模高温短时加工前后的强化微量营养素保留。",
+          "result": "测量加工对所选强化维生素和矿物质保留的影响，为加工/强化工艺提供资料。",
+          "limits": "加工与样品条件特定；不是营养摄入或人体健康结局研究。",
+          "distance": "D0 to tested beverage/process; D3 to consumer health outcomes"
+        }
+      ]
+    },
+    "soy-beverage": {
+      "name": "豆乳饮料",
+      "family": "plant",
+      "research_depth": "R2",
+      "shared_parent": "plant-beverage-base",
+      "identity": "以大豆制成的饮料，可能是较高蛋白豆乳，也可能加糖、稀释或强化；与分离大豆蛋白补充剂、豆腐和整豆不完全相同。",
+      "variables": "大豆固形物/蛋白质、糖、能量匹配、强化钙/维生素、过滤/发酵与替代的原饮品。",
+      "composition": "大豆饮料蛋白质通常高于坚果/谷物饮料，但不同品牌和加水、加糖、强化程度仍会改变营养值。适用性取决于标签和所替代的食品。",
+      "direct": "成人豆乳替代牛乳的随机试验荟萃分析评价的是短期中间心代谢结局，而非额外增加一杯或疾病发病率。2024 年专门的系统评价合并 17 项试验、504 人，汇总期中位数约 4 周；另一个 2026 年网络荟萃分析纳入 14 项 RCT、543 人，估算每日以 500 mL 豆饮替代牛乳与较低 LDL 及血压相关，但这些估计的证据确定性偏低。",
+      "specific": "2024 年系统评价的试验中，豆乳剂量中位数约 500 mL/日、蛋白约 22 g/日；甜味产品的糖中位数约 17.2 g/日。2026 年分析也以替代牛乳的成人 RCT 为主，结果不可直接外推到所有品牌或儿童。分离大豆蛋白试验与豆乳基质不同。",
+      "safety": "大豆过敏者应避免；查看添加糖和强化营养素。服用左甲状腺素等药物者按医嘱安排豆制品与药物间隔，不以饮料替代个体化医疗建议。",
+      "body": "豆乳是植物饮中较接近牛乳蛋白质的一类，但糖、蛋白质和强化营养素仍随品牌变化。成人随机替代试验支持短期中间心代谢指标的研究；2026 年网络荟萃分析估算每日以豆饮替代约 500 mL 牛乳可能降低 LDL 与血压，但确定性偏低。这不能等同于喝任何豆乳都会预防心血管疾病。",
+      "evidence_body": "研究结局为短期中间指标且干预是替代牛乳；2026 年网络荟萃分析估计证据确定性低。产品糖/蛋白差别大，不能将大豆蛋白补充剂证据直接迁移给普通豆乳。",
+      "care": "看每份大豆蛋白、糖和钙/维生素 D 强化，并确认大豆过敏；涉及药物或疾病时按医疗建议安排。",
+      "taste_m": {
+        "甘": "熟豆香与甜味受品种、煮制、加糖和香料影响，仅属感官类推。"
+      },
+      "queries": [
+        "randomized trials substituting soymilk for cow milk cardiometabolic outcomes 2024 meta-analysis",
+        "soy protein meta-analysis LDL adult randomized trial DOI",
+        "plant-based beverage composition soy milk protein fortification market survey"
+      ],
+      "search_log": [
+        "Exa 检索豆乳替代牛乳的 RCT 荟萃分析、较早大豆蛋白荟萃分析及市场成分调查；分开记录普通豆乳与分离蛋白证据。",
+        "追加核对 2026 年植物饮料系统评价与网络荟萃分析：14 项 RCT、543 人，检索范围仅纳入豆、燕麦、米饮；杏仁与椰奶无可迁移的直接估计。"
+      ],
+      "refs": [
+        "Erlich M, Ghidanac D, Blanco Mejía S, Khan T, Chiavaroli L, Zurbau A, et al. “A Systematic Review and Meta-Analysis of Randomized Trials of Substituting Soymilk for Cow’s Milk and Intermediate Cardiometabolic Outcomes: Understanding the Impact of Dairy Alternatives in the Transition to Plant-Based Diets on Cardiometabolic Health.” BMC Medicine. 2024;22:336. DOI: https://doi.org/10.1186/s12916-024-03524-7.",
+        "Blanco Mejía S, Messina M, Li SS, Viguiliouk E, Chiavaroli L, Khan T, et al. “A Meta-Analysis of 46 Studies Identified by the FDA Demonstrates that Soy Protein Decreases Circulating LDL and Total Cholesterol Concentrations in Adults.” The Journal of Nutrition. 2019;149(6):968–981. DOI: https://doi.org/10.1093/jn/nxz020.",
+        "Smith NW, Dave A, Hill JP, McNabb WC. “Nutritional Assessment of Plant-Based Beverages in Comparison to Bovine Milk.” Frontiers in Nutrition. 2022;9:957486. DOI: https://doi.org/10.3389/fnut.2022.957486.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "body_refs": [
+        "Erlich M, Ghidanac D, Blanco Mejía S, Khan T, Chiavaroli L, Zurbau A, et al. “A Systematic Review and Meta-Analysis of Randomized Trials of Substituting Soymilk for Cow’s Milk and Intermediate Cardiometabolic Outcomes: Understanding the Impact of Dairy Alternatives in the Transition to Plant-Based Diets on Cardiometabolic Health.” BMC Medicine. 2024;22:336. DOI: https://doi.org/10.1186/s12916-024-03524-7.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Systematic review and meta-analysis of randomized controlled feeding trials; soymilk versus cow's milk in energy-matched substitutions, duration ≥3 weeks.",
+          "population": "Adults with varied health status.",
+          "exposure": "Replacing cow's milk with soy milk; outcomes included lipids, glycemic markers and other intermediate cardiometabolic measures.",
+          "result": "Directly evaluates beverage substitution on intermediate outcomes; evidence does not establish clinical event prevention.",
+          "limits": "Short-term trials and intermediate outcomes; product sugar/protein differ, and no single formulation represents all commercial soy beverages.",
+          "distance": "D0/D1 to tested soymilk; D2 to category-wide claims"
+        },
+        {
+          "ref": 2,
+          "design": "Meta-analysis of 46 controlled trials identified by the US FDA; 43 contributed lipid data.",
+          "population": "Adult men and women with baseline LDL 110–201 mg/dL.",
+          "exposure": "大豆蛋白与非大豆蛋白比较；研究中平均摄入剂量依试验不同，可能明显高于普通饮料一份。",
+          "result": "Reported reductions in circulating LDL and total cholesterol.",
+          "limits": "孤立大豆蛋白/试验剂量与普通豆乳饮品的食品基质、份量不同；不是豆乳饮料试验。",
+          "distance": "D3"
+        },
+        {
+          "ref": 4,
+          "design": "系统综述与网络荟萃分析，纳入 14 项 RCT、543 名成人，最低干预 3 周。",
+          "population": "成人植物饮替代牛乳或互相替代的随机试验。",
+          "exposure": "以每日约 500 mL 豆饮替代牛乳，主要比较中间心代谢指标。",
+          "result": "网络分析报告 LDL-C 平均差约 −0.47 mmol/L；成对分析报告收缩压 −8.23 mmHg、舒张压 −7.82 mmHg；证据确定性低。",
+          "limits": "短期替代试验、中间指标；配方差异且低/很低确定性，不能推出临床事件获益。",
+          "distance": "D0/D1（所测豆饮替代方案）"
+        },
+        {
+          "ref": 3,
+          "design": "新西兰超市标签调查与部分商品成分检测。",
+          "population": "市售杏仁、椰、燕麦、米和豆类植物饮。",
+          "exposure": "植物饮料营养标签和选定样品的营养组成。",
+          "result": "选定产品中豆饮成分最接近牛乳；其他类别蛋白质较低，品牌间差异明显。",
+          "limits": "单一市场与选定产品；不能代表其他国家和所有品牌，也不是人体结局试验。",
+          "distance": "D0 to sampled products; D2 elsewhere"
+        }
+      ]
+    },
+    "coconut-beverage": {
+      "name": "椰奶饮料",
+      "family": "plant",
+      "research_depth": "R1",
+      "shared_parent": "plant-beverage-base",
+      "identity": "以水稀释椰肉/椰浆制成、作为饮品出售的椰基植物饮料；与烹饪用罐装椰奶/椰浆、椰子油和椰水不是同一食品。",
+      "variables": "椰肉/椰浆比例、稀释度、脂肪与饱和脂肪、糖、增稠稳定剂、钙和维生素强化、是否摇匀。",
+      "composition": "稀释饮用型椰奶的营养组成与罐装烹饪椰浆差异很大；蛋白质通常低于牛乳，强化钙/维生素和加糖情况因品牌而异。",
+      "direct": "未检得稀释椰奶饮料成品的直接人体临床效果试验。2026 年植物饮料系统评价与网络荟萃分析纳入的饮品类型为豆、燕麦和米饮，不含椰奶饮料，因而不能提供椰奶饮料的心代谢效果估计。",
+      "specific": "多国市场调查纳入 148 种植物饮，椰基产品样本为 10 种，显示营养标签存在差异；UF/IFAS 明确区分纸盒稀释饮料与高浓度罐装烹饪用椰奶。2026 年植物饮料网络荟萃分析没有椰奶饮料数据。",
+      "safety": "选择时看每份饱和脂肪、糖、蛋白质和强化营养素；不要把烹饪椰浆的高脂数据套到稀释饮料，也不要将饮料视作营养等同牛乳。",
+      "body": "纸盒椰奶饮料是稀释的椰基饮品，烹饪用罐装椰浆则更浓，二者不应混写。市场调查显示植物饮的营养和强化差异明显；截至该系统综述的检索范围，RCT 网络荟萃分析没有椰奶饮料数据，本轮也未检得椰奶饮料本身的人体健康结局试验。",
+      "evidence_body": "现有证据以市场组成分析和产品定义资料为主；2026 年 RCT 网络荟萃分析不含椰奶饮料，不能据此作统一健康效果判断。",
+      "care": "先确认是纸盒饮料还是罐装椰浆，再核对糖、饱和脂肪、蛋白质和强化钙/维生素。",
+      "taste_m": {
+        "甘": "椰香与甜味受椰基浓度和添加糖影响，仅属感官类推。"
+      },
+      "queries": [
+        "carton coconut beverage versus canned coconut milk nutrition distinction",
+        "plant based coconut drinks composition market survey DOI",
+        "coconut beverage randomized human clinical trial health effects"
+      ],
+      "search_log": [
+        "Exa 检索多国植物饮料成分调查、椰基饮料与罐装椰浆身份差异及人体研究；未检得饮用型椰奶临床结局试验。",
+        "修正 2021 多国饮料市场调查作者为 Craig WJ 与 Fresán U；追加核对 2026 系统评价，其纳入豆、燕麦、米饮，不包含椰奶饮料。"
+      ],
+      "refs": [
+        "Smith NW, Dave A, Hill JP, McNabb WC. “Nutritional Assessment of Plant-Based Beverages in Comparison to Bovine Milk.” Frontiers in Nutrition. 2022;9:957486. DOI: https://doi.org/10.3389/fnut.2022.957486.",
+        "Craig WJ, Fresán U. “International Analysis of the Nutritional Content and a Review of Health Benefits of Non-Dairy Plant-Based Beverages.” Nutrients. 2021;13(3):842. DOI: https://doi.org/10.3390/nu13030842.",
+        "University of Florida Institute of Food and Agricultural Sciences Extension. “Plant-Based Milks: Coconut.” Publication FS411. https://ask.ifas.ufl.edu/publication/FS411. Accessed 2026-09-24.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "body_refs": [
+        "Smith NW, Dave A, Hill JP, McNabb WC. “Nutritional Assessment of Plant-Based Beverages in Comparison to Bovine Milk.” Frontiers in Nutrition. 2022;9:957486. DOI: https://doi.org/10.3389/fnut.2022.957486.",
+        "University of Florida Institute of Food and Agricultural Sciences Extension. “Plant-Based Milks: Coconut.” Publication FS411. https://ask.ifas.ufl.edu/publication/FS411. Accessed 2026-09-24.",
+        "Wallerer S, Stadelmaier J, Petropoulou M, et al. “Impact of Plant-Based Drinks on Cardiometabolic Outcomes: A Systematic Review and Network Meta-analysis.” Advances in Nutrition. 2026;17(3):100595. DOI: https://doi.org/10.1016/j.advnut.2026.100595."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "New Zealand supermarket label survey and selected-product nutrient analysis.",
+          "population": "Plant-based drinks including coconut beverage.",
+          "exposure": "Nutrient labels, protein/amino acid, minerals and colloidal stability.",
+          "result": "Coconut/other non-soy categories had low protein on average in selected samples; label composition varied.",
+          "limits": "Market and selected products are geographically bounded; not a health-outcome study.",
+          "distance": "D0 to sampled products; D2 elsewhere"
+        },
+        {
+          "ref": 2,
+          "design": "Cross-sectional survey of 148 retail plant-based beverages across the US, Australia and Western Europe.",
+          "population": "Retail product samples spanning nuts/seeds, grains, legumes, coconut and mixed blends.",
+          "exposure": "Label-based nutrient and fortification comparison.",
+          "result": "Products varied in energy, protein, sugar, saturated fat and calcium fortification.",
+          "limits": "Small coconut subgroup; market survey does not establish health effects.",
+          "distance": "D0 to sampled products; D2"
+        },
+        {
+          "ref": 4,
+          "design": "纳入 14 项 RCT、543 名成人的系统综述与网络荟萃分析；检索限豆饮、燕麦饮和米饮，至少 3 周。",
+          "population": "成人植物饮替代牛乳/植物饮之间比较试验。",
+          "exposure": "豆、燕麦或米饮替代牛乳；未纳入椰奶饮料。",
+          "result": "对椰奶饮料没有可用的直接估计。",
+          "limits": "数据库检索截止 2025-01；不代表之后所有研究，也不代表市场中的每种植物饮。",
+          "distance": "D3（对椰奶饮料的证据缺口说明）"
+        },
+        {
+          "ref": 3,
+          "design": "大学推广机构面向消费者的植物饮料资料。",
+          "population": "北美零售植物基饮品类别。",
+          "exposure": "区分纸盒稀释椰饮与罐装烹饪椰奶/椰浆。",
+          "result": "明确两类产品的用途和稀释程度不同。",
+          "limits": "消费者产品定义资料，不是配方测定或人体效果研究。",
+          "distance": "D1 product-identity clarification"
+        }
+      ]
+    }
+  }
+}

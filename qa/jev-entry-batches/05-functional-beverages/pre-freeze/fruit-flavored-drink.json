@@ -1,0 +1,10 @@
+{
+  "batch_id": "05-functional-beverages",
+  "entry_id": "fruit-flavored-drink",
+  "summary_ref": "references/entries/fruit-flavored-drink/summary.md",
+  "summary_sha256": "be5d144aad7a689b1d9737b289fe7773ca0bab67e82abf8383d1914a5a948059",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 果味饮料\n\n**身份。** 以水为基底并带水果风味的饮品，可能加入糖、甜味剂或一定比例果汁；与 100% 果汁、果肉饮料和水果茶不等同。\n\n**组成与暴露。** 名称不能确定果汁含量或糖量；应看配料表、营养标签及每瓶份量。果汁饮料、果汁和含果味的水可能属于不同产品类别。 真实果汁比例、添加糖/甜味剂、份量、酸味剂、碳酸、品牌和替代的其他饮料。\n\n**直接人体证据。** 未检得对所有果味饮料成品的统一人体临床试验。相邻证据中，641 名儿童的 18 个月随机试验比较每日 250 mL、104 kcal 含糖饮品与无糖饮品，含糖组体重增长更多；研究并非针对单一果味配方（E-C，且人群/类别间接）。\n\n**产品/成分证据。** 果味饮料若属于含糖饮料，其糖能量和替代关系与实际配方有关；不能把一般含糖饮料试验等同为所有果汁或果味饮料的效果。\n\n**共享背景。** 参见 fortified-and-sweetened-beverages；共享结论不自动等于本成品结论。\n\n**安全。** 频繁饮用含糖饮料会增加游离糖暴露；酸性产品还增加牙齿接触酸的机会。选购时区分 100% 果汁、果汁饮料、含糖风味饮料和无糖款。\n\n**传统来源。** 现代饮品资料不等于古籍对具体商品的专门分类。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

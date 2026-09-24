@@ -1,0 +1,10 @@
+7b4d13511b6af9f3673626f72111a65ba7bcb4232f9393022712a8d1c73ab09a  qa/jev-entry-batches/05-functional-beverages/raw/tonic-water.json
+feff387788c50b1aa14594bfa373da6f07d3efe982d8e525e1a6cf1923179627  qa/jev-entry-batches/05-functional-beverages/raw/energy-drink.json
+16ecc96f3de0c36874031cab1bbe56112274564106e9c981e774ae8a8aa9b402  qa/jev-entry-batches/05-functional-beverages/raw/sports-drink.json
+4d6301bd510dce6f3e79f68eeb4f81ced232bc29cb29cb3d362534420e2fd3eb  qa/jev-entry-batches/05-functional-beverages/raw/electrolyte-drink.json
+1cf35046301b23f21c99cafd3a60441ff94e1cc10b02700c206cee4b5bae4ff7  qa/jev-entry-batches/05-functional-beverages/raw/vitamin-drink.json
+081dfd7689de9ff81ff305790beddfb3692d349fd11ef39fa4e140921fff4604  qa/jev-entry-batches/05-functional-beverages/raw/lactic-acid-bacteria-drink.json
+11a7d4d672b80d1cb1142d9678f0b55e5efc7480c3ae464b96eb5ec3e3d9b45b  qa/jev-entry-batches/05-functional-beverages/raw/fruit-flavored-drink.json
+29d958a4845cc997c0edc26253462736997e7596c61b3fd96c38279fd2abe644  qa/jev-entry-batches/05-functional-beverages/raw/almond-beverage.json
+86af3a79d19cd82cec8c6c78b60cf236c099c9ffaa1d39b553e3207ce20e1d4f  qa/jev-entry-batches/05-functional-beverages/raw/soy-beverage.json
+ac18861986120685ce8d7ce98a21d8f19aad594e1336017bec8fcebde1b33108  qa/jev-entry-batches/05-functional-beverages/raw/coconut-beverage.json

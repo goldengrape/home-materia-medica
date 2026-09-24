@@ -1,0 +1,98 @@
+name: Jev entry batch v0.4
+# Batch branches preserve research, summaries, frozen snapshots, native Jev output and reader entries.
+on:
+  push:
+    branches:
+      - feat/entry-batch-*
+    paths:
+      - .github/workflows/jev-entry-batch.yml
+      - scripts/build_entry_batch_stage12.py
+      - scripts/freeze_entry_batch.py
+      - scripts/run_jev_entry_batch.py
+      - scripts/build_entry_batch_results.py
+      - scripts/entry_batches/*.json
+      - references/entries/*/summary.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jev-entry-batch-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve batch ID from branch
+        id: batch
+        run: echo "batch_id=${GITHUB_REF_NAME#feat/entry-batch-}" >> "$GITHUB_OUTPUT"
+      - name: Verify environment secret
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        run: |
+          test -n "${JEV_API_KEY:-}" || { echo "::error::API_KEYS did not provide JEV_API_KEY"; exit 1; }
+      - name: Build research dossiers and summaries
+        run: python scripts/build_entry_batch_stage12.py --batch-id "${{ steps.batch.outputs.batch_id }}"
+      - name: Freeze stage-2 summaries
+        run: python scripts/freeze_entry_batch.py --batch-id "${{ steps.batch.outputs.batch_id }}"
+      - name: Preserve stage-1/2 intermediate files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: entry-${{ steps.batch.outputs.batch_id }}-stages-1-2
+          path: |
+            qa/jev-entry-batches/${{ steps.batch.outputs.batch_id }}/stage/**
+            qa/jev-entry-batches/${{ steps.batch.outputs.batch_id }}/pre-freeze/*.json
+            qa/entry-batches/${{ steps.batch.outputs.batch_id }}-summary-sha256.txt
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Classify ten frozen summaries
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-latest
+          JEV_REPEATS: "1"
+        run: python scripts/run_jev_entry_batch.py --batch-id "${{ steps.batch.outputs.batch_id }}"
+      - name: Preserve untouched native Jev responses
+        id: raw
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: entry-${{ steps.batch.outputs.batch_id }}-native-jev-v0.4
+          path: qa/jev-entry-batches/${{ steps.batch.outputs.batch_id }}/raw/*.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Build mappings, reader entries and registry records
+        if: success() && steps.raw.outputs.artifact-id != ''
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          WORKFLOW_ARTIFACT_ID: ${{ steps.raw.outputs.artifact-id }}
+        run: python scripts/build_entry_batch_results.py --batch-id "${{ steps.batch.outputs.batch_id }}" --workflow-run-id "$WORKFLOW_RUN_ID" --workflow-artifact-id "$WORKFLOW_ARTIFACT_ID"
+      - name: Record this workflow attempt
+        if: always()
+        env:
+          BATCH_ID: ${{ steps.batch.outputs.batch_id }}
+          ATTEMPT_STATUS: ${{ job.status }}
+        run: |
+          python - "$BATCH_ID" "$GITHUB_RUN_ID" "$ATTEMPT_STATUS" <<'PY'
+          from pathlib import Path
+          import sys
+          batch_id, run_id, status = sys.argv[1:4]
+          path = Path("qa/entry-batches") / f"{batch_id}.md"
+          path.parent.mkdir(parents=True, exist_ok=True)
+          if not path.exists():
+              path.write_text(f"# QA Log — {batch_id}\n\n", encoding="utf-8")
+          with path.open("a", encoding="utf-8") as f:
+              f.write(f"- Workflow run {run_id}: status {status}; intermediate and native artifacts are retained for 30 days where uploaded.\n")
+          PY
+      - name: Commit stage outputs and QA to feature branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || { git commit -m "Preserve entry batch outputs $GITHUB_REF_NAME run $GITHUB_RUN_ID" && git push origin "HEAD:$GITHUB_REF_NAME"; }
