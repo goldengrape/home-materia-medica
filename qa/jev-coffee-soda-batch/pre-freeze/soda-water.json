@@ -1,0 +1,9 @@
+{
+  "entry_id": "soda-water",
+  "summary_ref": "references/entries/soda-water/summary.md",
+  "summary_sha256": "b4033e8bb8b5b55b76f9c82f579335bb1e9c10fee9c54e509a819eb0926ebdf5",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 苏打水\n\n**身份。** 商业名称可能指含碳酸氢钠/矿物盐的水，也可能泛指加压碳酸水；依标签确认矿物质。\n\n**组成与暴露。** 不是单一标准配方；含碳酸氢钠时钠量按标签，本轮无代表性抽样。 碳酸氢钠、其他矿物质、是否充气、糖/香料决定钠与成分。\n\n**本条研究。** 未找到普通商业苏打水类别临床试验。富碳酸氢盐矿泉水试验不能转用于任意苏打水。\n\n**产品/工艺证据。** 家用苏打机碳酸水曾用于预处理牙釉质材料的实验；不是健康完整牙齿临床试验，也不代表所有矿盐商品。\n\n**共享背景。** 软饮母页提示含糖量、酸度和碳酸水身份须按实际成分区分。\n\n**安全。** 限钠者查看钠含量；不凭“苏打”推断调酸或治疗疾病。\n\n**传统来源。** 本条为现代饮料，传统饮水资料不等于对当前工业配方的专门记载。\n\n本摘要只复述 Research Dossier 可追溯事实，不预设模型分类或 M 等级。未检得只表示本轮 R1 探索范围。\n"
+}
