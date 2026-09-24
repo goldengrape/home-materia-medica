@@ -84,8 +84,9 @@ Catalog entry
 | RM-TASK-021 黑巧克力 R3 | done | `references/entries/dark-chocolate/research.md` |
 | RM-TASK-022 珍珠奶茶 R2 | done | `references/entries/pearl-milk-tea/research.md` |
 | RM-TASK-026 前三项 Pilot 方法复盘 | done | `qa/pilot/first-three-review.md` |
-| RM-TASK-023 咖啡 R3 | next | `references/entries/coffee/research.md` |
-| RM-TASK-024~025 后两项 Pilot | queued | yogurt / instant-noodles dossiers |
+| RM-TASK-023 咖啡 research parent R3 | done | `references/shared/coffee-base/research.md` |
+| RM-TASK-024 酸奶 R2 | next | `references/entries/yogurt/research.md` |
+| RM-TASK-025 方便面 R2 | queued | `references/entries/instant-noodles/research.md` |
 
 ## 六、追踪原则
 
