@@ -355,3 +355,20 @@ Pilot 期间不做：
 4. 长期较低慢病/死亡风险主要来自 observational association；MR 对 CVD 等因果关系并未同样支持。
 5. 近现代中药资料“醒神”与直接 alertness RCT 可形成 M-II 候选；归经仍 M-0。
 6. R3 通过严格限制核心问题，可以在咖啡海量文献中达到停止条件。
+### 2026-09-23｜PILOT-005 / 酸奶 R2
+
+状态：**research_ready / saturated**
+
+产物：
+
+- `references/entries/yogurt/research.md`
+- `qa/pilot/yogurt-r2.md`
+
+关键发现：
+
+1. 活菌标准酸奶改善 lactose maldigestion 人群对酸奶中乳糖的消化，可到 E-A。
+2. 特定 probiotic strain 的产品结果不能自动继承给普通酸奶，通常至少 D2。
+3. 直接 microbiome 研究更多支持短暂检测到 yogurt-derived bacteria，而不是广泛持久“重塑菌群”。
+4. 即使 lactose digestion 是 E-A，“健脾”仍最多 M-IV：乳糖酶缺乏不等于脾虚证。
+5. 古代“酪”可作为传统发酵乳母本，但不是现代标准 yogurt 的同一制品。
+6. 发酵 + 活菌构成强有力的“现代炮制改变耐受性”案例。

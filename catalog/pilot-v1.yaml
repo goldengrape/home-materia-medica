@@ -104,7 +104,16 @@ entries:
       - food_vs_probiotic
       - microbiome_mapping
       - product_variation
-    status: scoped
+    status: research_ready
+    evidence_cutoff: 2026-09-23
+    dossier: references/entries/yogurt/research.md
+    pilot_qa: qa/pilot/yogurt-r2.md
+    pilot_findings:
+      - live_yogurt_lactose_digestion_is_EA
+      - probiotic_strain_evidence_not_generic_yogurt
+      - microbiome_change_not_equal_clinical_benefit
+      - jianpi_mapping_remains_MIV
+      - traditional_lao_is_parent_analogue_not_identical
 
   - id: instant-noodles
     name: 方便面
