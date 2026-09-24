@@ -165,11 +165,11 @@
 
 ## 判与写完成记录
 
-- Workflow run: 36009889022; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
-- Native artifact ID: 10812190966; uploaded by this run with 30-day retention.
+- Workflow run: 36010531585; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10812197530; uploaded by this run with 30-day retention.
 - Ten raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
 - Per-file raw JSON SHA-256: qa/jev-entry-batches/13-pistachio-and-dairy/native-json-sha256.txt.
 - Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
 - Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
 - catalog/entries.yaml updated with this batch's ten frozen entries.
-- Workflow run 36009889022: status success; intermediate and native artifacts are retained for 30 days where uploaded.
+- Workflow run 36010531585: status success; intermediate and native artifacts are retained for 30 days where uploaded.

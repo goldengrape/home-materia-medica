@@ -16,3 +16,4 @@
 
 1. Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5.
 2. Toxqui L, et al. “Changes in Blood Pressure and Lipid Levels in Young Women Consuming a Vitamin D-Fortified Skimmed Milk: A Randomised Controlled Trial.” Nutrients. 2013;5(12):4966–4977. DOI: https://doi.org/10.3390/nu5124966.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

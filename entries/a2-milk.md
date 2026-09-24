@@ -14,6 +14,7 @@ A2奶与常规奶的部分胃肠症状比较：600人多中心交叉试验及小
 
 **参考文献**
 
-1. He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;14:94. DOI: https://doi.org/10.1186/s12937-017-0275-0.
+1. He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;16:94. DOI: https://doi.org/10.1186/s12937-017-0275-0.
 2. “Milk Containing A2 β-Casein ONLY, as a Single Meal, Causes Fewer Symptoms of Lactose Intolerance than Milk Containing A1 and A2 β-Caseins in Subjects with Lactose Maldigestion and Intolerance: A Randomized, Double-Blind, Crossover Trial.” Nutrients. 2020;12(12):3855. DOI: https://doi.org/10.3390/nu12123855.
 3. Wang Z, et al. “A2 β-casein milk improves gastrointestinal symptoms in healthy adults: A 7-week randomized, double-blind, crossover trial.” Journal of Functional Foods. 2026. DOI: https://doi.org/10.1016/j.jff.2026.107222.
+4. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

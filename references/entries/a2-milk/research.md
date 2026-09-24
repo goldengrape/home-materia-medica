@@ -69,7 +69,7 @@ A2奶仍是牛乳，通常含乳糖、乳清蛋白及牛奶过敏原；其与常
 - **Result:** A2奶后1小时和3小时六种胃肠症状评分较低；12小时仍有部分症状差异。
 - **Limits:** 自述不耐受样本；症状量表与短期结果不能证明长期疾病预防或乳糖不耐受治疗；产品/资助利益关系需结合原文声明审查。
 - **Distance:** D0（A2牛奶与常规奶的直接产品比较）
-- **Reference:** He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;14:94. DOI: https://doi.org/10.1186/s12937-017-0275-0. PMCID: PMC5657040.
+- **Reference:** He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;16:94. DOI: https://doi.org/10.1186/s12937-017-0275-0. PMCID: PMC5657040.
 
 ### Evidence card 2 — source 2
 
@@ -112,8 +112,9 @@ A2奶仍可能导致乳糖不耐受症状，也仍含牛奶蛋白；牛奶蛋白
 
 ## 10. 核心参考资料
 
-1. He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;14:94. DOI: https://doi.org/10.1186/s12937-017-0275-0. PMCID: PMC5657040.
+1. He M, et al. “Effects of cow’s milk beta-casein variants on symptoms of milk intolerance in Chinese adults: a multicentre, randomised controlled study.” Nutrition Journal. 2017;16:94. DOI: https://doi.org/10.1186/s12937-017-0275-0. PMCID: PMC5657040.
 2. “Milk Containing A2 β-Casein ONLY, as a Single Meal, Causes Fewer Symptoms of Lactose Intolerance than Milk Containing A1 and A2 β-Caseins in Subjects with Lactose Maldigestion and Intolerance: A Randomized, Double-Blind, Crossover Trial.” Nutrients. 2020;12(12):3855. DOI: https://doi.org/10.3390/nu12123855. PMCID: PMC7766938.
 3. Wang Z, et al. “A2 β-casein milk improves gastrointestinal symptoms in healthy adults: A 7-week randomized, double-blind, crossover trial.” Journal of Functional Foods. 2026. DOI: https://doi.org/10.1016/j.jff.2026.107222.
 4. “Systematic Review of the Gastrointestinal Effects of A1 Compared with A2 β-Casein.” Advances in Nutrition. 2017. DOI: https://doi.org/10.3945/an.116.013953.
 5. NIDDK. “Treatment for Lactose Intolerance.” https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/treatment.
+6. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

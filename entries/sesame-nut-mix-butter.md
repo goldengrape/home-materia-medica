@@ -16,3 +16,5 @@
 
 1. “Tahini consumption affects blood pressure and endothelial function in healthy males.” Journal of Human Hypertension. 2022;36(12):1128–1132. DOI: https://doi.org/10.1038/s41371-021-00624-2. PMID: 34707227.
 2. U.S. FDA. “The FASTER Act: Sesame Is the Ninth Major Food Allergen.” https://www.fda.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen.
+3. Bahadoran Z. “A Sesame Seeds-Based Breakfast Could Attenuate Sub-Clinical Inflammation in Type 2 Diabetic Patients: A Randomized Controlled Trial.” International Journal of Nutrition and Food Sciences. 2015. DOI: https://doi.org/10.11648/j.ijnfs.s.2015040201.11.
+4. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

@@ -106,3 +106,4 @@
 2. Toxqui L, et al. “Changes in Blood Pressure and Lipid Levels in Young Women Consuming a Vitamin D-Fortified Skimmed Milk: A Randomised Controlled Trial.” Nutrients. 2013;5(12):4966–4977. DOI: https://doi.org/10.3390/nu5124966.
 3. Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.
 4. USDA. “FoodData Central.” https://fdc.nal.usda.gov/.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

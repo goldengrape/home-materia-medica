@@ -106,3 +106,4 @@
 2. Bahadoran Z. “A Sesame Seeds-Based Breakfast Could Attenuate Sub-Clinical Inflammation in Type 2 Diabetic Patients: A Randomized Controlled Trial.” International Journal of Nutrition and Food Sciences. 2015. DOI: https://doi.org/10.11648/j.ijnfs.s.2015040201.11.
 3. “Clinical evidence of sesame (Sesamum indicum L.) products and its bioactive compounds on anthropometric measures, blood pressure, glycemic control, inflammatory biomarkers, lipid profile, and oxidative stress parameters in humans: a GRADE-assessed systematic review and dose–response meta-analysis.” Nutrition & Metabolism. 2025. DOI: https://doi.org/10.1186/s12986-025-00910-7.
 4. U.S. FDA. “The FASTER Act: Sesame Is the Ninth Major Food Allergen.” https://www.fda.gov/food/food-allergies/faster-act-sesame-ninth-major-food-allergen.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

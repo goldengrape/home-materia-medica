@@ -17,3 +17,5 @@
 1. Engel S, Elhauge M, Tholstrup T. “Effect of whole milk compared with skimmed milk on fasting blood lipids in healthy adults: a 3-week randomized crossover study.” European Journal of Clinical Nutrition. 2018;72(2):249–254. DOI: https://doi.org/10.1038/s41430-017-0042-5.
 2. Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.
 3. 李时珍。《本草纲目》卷五十下，兽部“牛乳”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.
+4. CDC. “Raw Milk.” https://www.cdc.gov/food-safety/foods/raw-milk.html.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

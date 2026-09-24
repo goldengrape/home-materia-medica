@@ -107,3 +107,4 @@
 2. Razmpoosh E, et al. “Effect of a low energy diet, containing a high protein, probiotic condensed yogurt, on biochemical and anthropometric measurements among women with overweight/obesity: A randomised controlled trial.” Clinical Nutrition ESPEN. 2020;35:194–200. DOI: https://doi.org/10.1016/j.clnesp.2019.10.001.
 3. USDA. “FoodData Central.” https://fdc.nal.usda.gov/.
 4. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+5. 李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.

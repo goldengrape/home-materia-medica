@@ -16,3 +16,4 @@
 
 1. Rancourt-Bouchard M, et al. “Effects of regular-fat and low-fat dairy consumption on daytime ambulatory blood pressure and other cardiometabolic risk factors: a randomized controlled feeding trial.” American Journal of Clinical Nutrition. 2020. DOI: https://doi.org/10.1093/ajcn/nqz251.
 2. Maki KC, et al. “Effects of low-fat dairy intake on blood pressure, endothelial function, and lipoprotein lipids in subjects with prehypertension or stage 1 hypertension.” Vascular Health and Risk Management. 2013;9:369–379. DOI: https://doi.org/10.2147/VHRM.S45684.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

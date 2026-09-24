@@ -96,3 +96,5 @@
 2. “A systematic review of the effect of yogurt consumption on chronic diseases risk markers in adults.” European Journal of Nutrition. 2017;56:1375–1392. DOI: https://doi.org/10.1007/s00394-016-1341-7.
 3. Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.
 4. USDA. “FoodData Central.” https://fdc.nal.usda.gov/.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+6. 李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.

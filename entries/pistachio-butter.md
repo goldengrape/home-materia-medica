@@ -16,3 +16,4 @@
 
 1. Hernández-Alonso P, et al. “Beneficial Effect of Pistachio Consumption on Glucose Metabolism, Insulin Resistance, Inflammation, and Related Metabolic Risk Markers: A Randomized Clinical Trial.” Diabetes Care. 2015;38(6):1095–1101. DOI: https://doi.org/10.2337/dc14-1431.
 2. Asbaghi O, et al. “Pistachios and cardiometabolic risk factors: A systematic review and meta-analysis of randomized controlled clinical trials.” Complementary Therapies in Medicine. 2021;56:102513. DOI: https://doi.org/10.1016/j.ctim.2020.102513.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

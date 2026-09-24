@@ -16,3 +16,5 @@
 
 1. Vien S, et al. “Role of single serving form of dairy on satiety and postprandial glycaemia in young and older healthy adults.” Applied Physiology, Nutrition, and Metabolism. 2019. DOI: https://doi.org/10.1139/apnm-2018-0887.
 2. “A systematic review of the effect of yogurt consumption on chronic diseases risk markers in adults.” European Journal of Nutrition. 2017;56:1375–1392. DOI: https://doi.org/10.1007/s00394-016-1341-7.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+4. 李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.

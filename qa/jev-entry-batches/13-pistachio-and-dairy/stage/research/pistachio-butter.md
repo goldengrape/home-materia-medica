@@ -96,3 +96,4 @@
 2. Asbaghi O, et al. “Pistachios and cardiometabolic risk factors: A systematic review and meta-analysis of randomized controlled clinical trials.” Complementary Therapies in Medicine. 2021;56:102513. DOI: https://doi.org/10.1016/j.ctim.2020.102513.
 3. “Development of Pistachio (Pistacia vera L.) Spread.” Journal of Food Science. 2013. DOI: https://doi.org/10.1111/1750-3841.12045.
 4. USDA. “FoodData Central.” Product-specific food composition database. https://fdc.nal.usda.gov/.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

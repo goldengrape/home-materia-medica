@@ -16,3 +16,4 @@
 
 1. Huschtscha Z, et al. “The Effects of a High-Protein Dairy Milk Beverage With or Without Progressive Resistance Training on Fat-Free Mass, Skeletal Muscle Strength and Power, and Functional Performance in Healthy Active Older Adults: A 12-Week Randomized Controlled Trial.” Frontiers in Nutrition. 2021;8:644865. DOI: https://doi.org/10.3389/fnut.2021.644865.
 2. Ottestad I, et al. “Intake of a Protein-Enriched Milk and Effects on Muscle Mass and Strength. A 12-Week Randomized Placebo Controlled Trial among Community-Dwelling Older Adults.” The Journal of Nutrition, Health & Aging. 2017;21(10):1160–1169. DOI: https://doi.org/10.1007/s12603-016-0856-1.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.

@@ -15,8 +15,8 @@ requested_model: jev-latest
 actual_model: jev-1.13.0
 repeat_count: 1
 run_timestamp_utc: 2026-09-24T14:02:38.057584+00:00
-workflow_run_id: 36009889022
-workflow_artifact_id: 10812190966
+workflow_run_id: 36010531585
+workflow_artifact_id: 10812197530
 native_result_ref: qa/jev-entry-batches/13-pistachio-and-dairy/raw/skim-milk.json
 
 ## 四气

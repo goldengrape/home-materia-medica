@@ -16,3 +16,5 @@
 
 1. Ortinau LC, et al. “The effects of increased dietary protein yogurt snack in the afternoon on appetite control and eating initiation in healthy women.” Nutrition Journal. 2013;12:71. DOI: https://doi.org/10.1186/1475-2891-12-71.
 2. Razmpoosh E, et al. “Effect of a low energy diet, containing a high protein, probiotic condensed yogurt, on biochemical and anthropometric measurements among women with overweight/obesity: A randomised controlled trial.” Clinical Nutrition ESPEN. 2020;35:194–200. DOI: https://doi.org/10.1016/j.clnesp.2019.10.001.
+3. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
+4. 李时珍。《本草纲目》卷五十下，兽部“牛乳”及“酪”条。识典古籍本：https://www.shidianguji.com/zh/book/SK1491/chapter/1l94klazfbm7c.

@@ -106,3 +106,4 @@
 2. Schwingshackl L, et al. “Effects of Dairy Intake on Markers of Cardiometabolic Health in Adults: A Systematic Review with Network Meta-Analysis.” Advances in Nutrition. 2023;14(3):438–450. DOI: https://doi.org/10.1016/j.advnut.2023.03.004.
 3. Maki KC, et al. “Effects of low-fat dairy intake on blood pressure, endothelial function, and lipoprotein lipids in subjects with prehypertension or stage 1 hypertension.” Vascular Health and Risk Management. 2013;9:369–379. DOI: https://doi.org/10.2147/VHRM.S45684. PMID: 23901280.
 4. USDA. “FoodData Central.” https://fdc.nal.usda.gov/.
+5. FDA. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies.
