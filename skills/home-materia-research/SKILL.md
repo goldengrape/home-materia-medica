@@ -1,9 +1,9 @@
 ---
 name: home-materia-research
 description: >
-  为《居家本草》研究单个食品、饮品、加工食品、营养补充食品或生活场景。
-  先界定研究对象和研究深度，再进行有边界的学术检索、证据提取、风险偏倚与直接性评价，
-  分离传统文献、现代人体证据、机制证据和本草推演，输出可追溯的 Research Dossier。
+  为《居家本草》执行“搜 → 整”的前两阶段：研究单个食品、饮品、加工食品、营养补充食品或生活场景，
+  收集可追溯资料，再整理为 Research Dossier 与供 Jev 使用的中立 Summary Document。
+  本 skill 不负责最终四气、五味、归经、阴阳增减分类，也不在 Jev 之前预判 M。
   适用于“研究这个条目”“为某食品建立证据底稿”“查清某功效/宜忌/归经依据”等任务。
   默认不是发表级系统综述；只有用户明确要求时才升级为完整 PRISMA 系统综述流程。
 ---
@@ -29,7 +29,7 @@ description: >
 - `catalog/README.md`
 - 若目标条目已有研究文件，先读取现有研究底稿，避免重复工作。
 
-本 skill 只生成或更新研究底稿，不直接生成出版正文。
+本 skill 只负责“搜 + 整”，输出 `research.md` 与 `summary.md`；不直接运行最终本草分类，也不生成出版正文。
 
 ---
 
@@ -159,27 +159,64 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 
 ## 工作流
 
-详细规则见 `references/workflow.md`。执行顺序不可随意颠倒：
+权威主流程见 `docs/生产流程.md`。
 
-1. **Load**：读取项目凡例、目录规则与已有研究。
-2. **Identify**：定义食品 / 植物 / 制品身份；若检索证明原条目边界不成立，允许修改 canonical identity，并记录 `identity_revision` 与 Catalog action。
-3. **Scope**：确定 R1 / R2 / R3，列 3–8 个核心问题。
-4. **Plan**：为核心问题建立 PECO / PECOT 或“食品矩阵 × 因素 × 结局”框架；复合食品先列组成、份量和关键真实暴露。
-5. **Search**：按来源层级分层检索并记录搜索日志。
-6. **Screen**：按直接性、研究设计、对象身份和可转移性筛选。
-7. **Extract**：建立证据卡，保留效应量、置信区间、剂量、食品形态、资金来源。
-8. **Appraise**：评价风险偏倚、直接性、一致性、精确性、发表偏倚和可推广性。
-9. **Synthesize**：按“结局 / 命题”综合，不按“论文”逐篇罗列；多个 Meta / review 一致时检查其基础研究是否高度重叠。
-10. **Grade E**：为每个具体人体效应评 E-A ～ E-0。
-11. **Trace TCM concepts**：涉及性味、归经、脏腑、证候、功效等术语时，先做概念溯源与时代分层。
-12. **Map M**：在 E 与概念溯源之后独立评定本草映射证据等级，列出支持、反证与替代解释。
-13. **Jev mapping（可选但推荐）**：Research Dossier 完成后，可调用 `../home-materia-jev-mapping/SKILL.md`，把正式说明文档交给 Jev 得到四气、五味、五脏归经，以及每个归经的阴-/阴+/阳-/阳+主方向原生结果。Jev score 与 M grade 并列保存；不得用 Jev score 提升 M，也不得用 M 修改 Jev score。
-14. **Safety**：单独检索和总结不良反应、相互作用和特殊人群。
-15. **Stop**：依据 R 等级和证据饱和判断停止。
-16. **Reference audit**：把关键引文、DOI/PMID、古籍版本与数据库入口列入底稿，供作者与读者复核；不设置强制人工复审门槛。
-17. **Write dossier**：输出研究底稿，不输出出版正文。
+本 skill 只执行其中前两阶段：
 
----
+```text
+搜 → 整
+```
+
+### 第一阶段｜搜：收集资料
+
+1. **Load**：读取凡例、Catalog、既有 Research Parent / dossier。
+2. **Identify**：稳定食品 / 制品身份，必要时记录 Identity Revision。
+3. **Scope**：确定 R1 / R2 / R3 与核心问题。
+4. **Plan**：建立 PECOT 或 food-matrix 问题框架；复合食品先做 Composition & Exposure。
+5. **Search**：现代人体、传统、安全、加工、机制分层检索。
+6. **Screen**：按对象身份、设计和直接性筛选。
+7. **Extract**：建立 Evidence Record，保存效应量、剂量、食品形态、资金来源等。
+8. **Mark D**：关键证据标 D0–D4。
+9. **Safety search**：安全性独立检索，不等到分类以后再补。
+
+阶段输出：`research.md` 的来源、证据卡和事实记录。
+
+### 第二阶段｜整：整理总结资料
+
+10. **Appraise**：评价单篇研究与证据体。
+11. **Synthesize**：按 outcome 综合，检查 evidence-base overlap。
+12. **Grade E**：人体效应逐命题评 E-A ～ E-0。
+13. **Mechanism**：只解释已有事实，不由机制倒推人体功效。
+14. **Trace TCM concepts**：只对真正需要的底层概念做 Concept Trace。
+15. **Conflicts / unknowns**：保留相反结果、替代解释和未知。
+16. **Stop**：记录 evidence cutoff、stopping status / reason。
+17. **Reference audit**：核验关键论文、DOI/PMID、古籍版本。
+18. **Write Summary Document**：从 `research.md` 生成连续、中立、reasoning-complete 的 `summary.md`。
+
+`summary.md` 必须保留：
+
+- 身份和加工边界；
+- 传统事实；
+- 现代人体效应；
+- 安全和限制；
+- 支持、反证、冲突；
+- 替代解释。
+
+`summary.md` 不得提前写入：
+
+- 最终四气 / 五味 / 归经；
+- 阴-/阴+/阳-/阳+；
+- Jev score；
+- M grade；
+- 为了引导 Jev 而新增的答案导向句。
+
+### Handoff｜整 → 判
+
+完成后交给：
+
+`skills/home-materia-jev-mapping/SKILL.md`
+
+由 Jev v0.4 先分类，再依据 Research Dossier 对分类命题逐项标 M。
 
 ## 默认检索层次
 
@@ -296,9 +333,13 @@ Catalog 给出的是研究起点，不是不可修改的结论。
 
 默认在：
 
-正式条目默认在：
+正式条目使用：
 
-`references/entries/<entry-id>/research.md`
+```text
+references/entries/<entry-id>/
+├── research.md
+└── summary.md
+```
 
 若对象是 `entry_type: research_parent` 且 `publish: false`，则使用：
 
@@ -324,11 +365,11 @@ Research Parent 只保存多个子条共用的背景证据；任何子条引用�
 - 逐命题 E 等级；
 - 安全性；
 - 机制；
-- 本草映射候选与 M 等级；
+- Jev 分类所需的传统 / 现代桥梁事实（不预写最终分类或 M）；
 - 主要反证 / 冲突；
 - 未知；
 - 证据饱和 / 停止理由；
-- Claim Ledger（正文允许写到什么强度、`claim_mode`、以及对应引用）。
+- Summary Document（Jev 正式输入）。
 
 ---
 
@@ -346,8 +387,8 @@ Research Parent 只保存多个子条共用的背景证据；任何子条引用�
 - [ ] 每项关键证据是否标 D0–D4？
 - [ ] 是否把孤立成分与真实食品区分开？
 - [ ] E 是否按具体 outcome / claim 评定，而不是给食品总分？
-- [ ] Claim 是否标明 effect / association / composition / safety / traditional / mapping，避免写作时改变事实类型？
-- [ ] M 是否在 E 之后独立推演？
+- [ ] 资料事实是否标明 effect / association / composition / safety / traditional，避免 Summary 改变事实类型？
+- [ ] 是否没有在 Jev 分类之前预写 M 或最终本草分类？
 - [ ] 关键数字、DOI / PMID、古籍版本和数据库入口是否完整列出，便于复核？
 - [ ] 是否记录 evidence cutoff？
 - [ ] 是否说明为什么现在可以停止？
