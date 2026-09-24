@@ -1,0 +1,10 @@
+9ab171fc23b42b41bb7d9596fa0f6c623940b0e19e7075cd89e01f6a87eccc6c  qa/jev-coffee-soda-batch/raw/caramel-macchiato.json
+08a538f224d874c685462afcc96c91bd547d7c4f4a307fa2cc1a9ca031a0ceb1  qa/jev-coffee-soda-batch/raw/oat-latte.json
+62877a82a6a6b2d1e70b07088f2db9e4b3b0ccfedc412d12effb70d5cf98afc2  qa/jev-coffee-soda-batch/raw/coconut-latte.json
+21c213fe7e9fdd0f429bfcbcbe2bebe057e8d3cf1b952d793138a13a2e194318  qa/jev-coffee-soda-batch/raw/instant-coffee.json
+447d1cc9cb2fee06f04de8d22e6a1364878cb590a2093ea265bef63fe9c78e1f  qa/jev-coffee-soda-batch/raw/three-in-one-coffee.json
+1f9dcd76cbfb463107f6589dca36058505daa32af5eb374b519ab3170c9ea908  qa/jev-coffee-soda-batch/raw/decaf-coffee.json
+9e34e0ff1e4a74edb8742f2bb5ac8b8c86ee5f1a9662d442d65408a7981d7e0a  qa/jev-coffee-soda-batch/raw/cola.json
+dfe073339f3689b7d34babdab4c9441fa0d2d15fcb33b800cf0a3d4f08c01932  qa/jev-coffee-soda-batch/raw/lemon-soda.json
+66f17f68a4fe23946e0accb9631f7ea1636b13081da063e5c19c64e15d159fa0  qa/jev-coffee-soda-batch/raw/soda-water.json
+413aeaf782ebc7d642f2084b4feefdbb7a18e474a7b7f3246217d94b2547ae35  qa/jev-coffee-soda-batch/raw/sparkling-water.json
