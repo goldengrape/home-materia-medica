@@ -1,0 +1,14 @@
+{
+  "batch_id": "14-fermented-dairy-cheese",
+  "extracted_page_sets": [
+    {
+      "file": "source-extracts-01.md",
+      "url_count": 21
+    },
+    {
+      "file": "source-extracts-02.md",
+      "url_count": 6
+    }
+  ],
+  "original_followup_query_note": "Eight citation-follow-up responses came from an earlier runtime step that retained response objects but not original query strings. Those responses are preserved with returned titles and URLs; all per-entry search queries and three later exact metadata queries are preserved separately."
+}
