@@ -1,0 +1,10 @@
+{
+  "batch_id": "08-cakes-frozen-desserts",
+  "entry_id": "ice-milk",
+  "summary_ref": "references/entries/ice-milk/summary.md",
+  "summary_sha256": "c9cdee466e2c0e57c6389324d60bfeb2e2d34456a18f008ff616cddf09c686fe",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 雪糕\n\n**身份。** 本条按中国国家标准名称“雪糕”（ice milk）指冷冻饮品中的特定产品类别；与冰淇淋和水基冰棒分开。市场口语可能混称，具体商品应核对适用标准与标签。\n\n**组成与暴露。** 国家标准全文公开系统记录 GB/T 31119-2014《冷冻饮品 雪糕》（Frozen drinks—Ice milk）为现行标准。该标准能帮助区分产品类别，但产品配方仍需看标签；标准状态不是对其营养或健康效应的判断。 乳及乳脂、糖、淀粉或其他配料、夹心/涂层、份量、标准版本、品牌和地区配方。\n\n**直接人体证据。** 本轮未发现专门针对中国标准类别雪糕、可证明其改善疾病或长期健康结局的直接人体干预证据。冰淇淋研究不能自动作为雪糕的成品证据。\n\n**产品/成分证据。** GB/T 31119-2014 是身份/质量要求来源；不能由标准名称推导乳脂、糖或能量的固定市场平均值。\n\n**共享背景。** 参见 frozen-desserts-base；共享结论不自动等于本成品结论。\n\n**安全。** 根据具体配方，可能含牛奶、蛋、坚果、大豆或小麦等过敏原；产品名称不保证相同配料。标签与储存条件优先。\n\n**传统来源。** 本条是以现行食品产品标准界定的现代冷冻甜点；不根据名称或温度直接给出传统本草属性。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}

@@ -1,0 +1,10 @@
+{
+  "batch_id": "08-cakes-frozen-desserts",
+  "entry_id": "brownie",
+  "summary_ref": "references/entries/brownie/summary.md",
+  "summary_sha256": "bb910c6c8fd855bef4e2b865a8c612eedc2a3db30ef3e7d954103f849cdd2da0",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 布朗尼\n\n**身份。** 本条指以可可/巧克力、糖、油脂和面粉为主的致密烘焙甜点；配方从湿润、软心到蛋糕型不等，可含坚果或额外配料。与巧克力蛋糕及曲奇分别处理。\n\n**组成与暴露。** FSANZ 的 2012 Cake and Slice Analytical Program 对包括巧克力布朗尼在内的商业蛋糕/切片产品采样，分析对象与样品数量有限，样品按类型合并作组成测定。Petka 与 Topolska 的 2025 论文研究含甘薯、扁豆、菠菜等蔬菜的布朗尼配方，报告的是配方理化、质构和感官变量，不是人体临床结果。 巧克力/可可比例、糖和脂肪、鸡蛋和面粉、坚果、蔬菜/豆类替代配料、烘烤程度、块重与品牌配方。\n\n**直接人体证据。** 未找到可外推至一般布朗尼、并显示疾病治疗或长期健康改善的直接人体干预证据。配方研究没有检验食用者的临床结局。\n\n**产品/成分证据。** FSANZ 报告支持指定抽样布朗尼的组成描述；2025 年研究只涉及特定蔬菜强化配方和实验评价。两者均不能代表所有产品或推断健康获益。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 常见成分包括小麦、蛋、乳和可可；坚果或其他添加物因配方而异。份量、添加糖和脂肪含量可能显著不同。\n\n**传统来源。** 布朗尼是现代复合烘焙甜点；未发现其多种商业配方与传统本草食品条目一一对应的依据。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}

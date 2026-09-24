@@ -1,0 +1,546 @@
+{
+  "batch": {
+    "id": "08-cakes-frozen-desserts",
+    "title": "蛋糕、酥点与冷甜点",
+    "catalog_order": 8,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher pages, institutional repository, official standards and food-composition databases",
+    "exa_search_calls": 18,
+    "exa_hits": 105,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-08-cakes-frozen-desserts",
+    "identity_red_team": [
+      "芝士蛋糕按奶酪/奶油奶酪馅的复合蛋糕处理；烘烤/冷藏、饼底和配料不同，不与普通奶酪或其他乳品研究互换。",
+      "戚风蛋糕按蛋白打发形成的轻质蛋糕类处理；菲律宾可可粉配方研究只代表特定实验配方，不代表市场上所有戚风。",
+      "布朗尼与蛋糕、曲奇分开；配方改良和实验室营养/质构测定不能写成对食用者的临床功效。",
+      "可颂与丹麦酥分别建条；可颂短期 RCT 针对特定高纤酸面团产品，不能外推至所有层酥点心。",
+      "肉桂卷研究中仅出现特定 cinnamon swirl bun 样品；不可将单件商品的餐后血糖测试提升为整类或长期效果。",
+      "马卡龙赤藓糖醇/乳清蛋白分离物研究属于配方与理化试验，不证明适合糖尿病患者或改善临床结局。",
+      "冰淇淋、雪糕和冰棒分开；采用截至研究截止日的现行标准/宽食品类别，不沿用已废止的冰淇淋旧标准。",
+      "单品牌冰淇淋交叉试验只涉及指定无添加糖与常规产品、特定人群和短期终点；无添加糖不等于无总糖。",
+      "食物数据库记录、产品标准、配方研究和人体试验分别标示证据问题与直接性。"
+    ]
+  },
+  "entries": {
+    "cheesecake": {
+      "name": "芝士蛋糕",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "cheese-cake",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以奶油奶酪或其他奶酪为主要馅料之一的复合蛋糕，包括烘烤型与冷藏/免烤型；饼底、乳脂、蛋、糖和浇头可变。它不是普通奶酪，也不是配方固定的单一食品。",
+      "variables": "奶酪种类、奶油和糖比例、是否含蛋、烘烤或冷藏工艺、饼底、份量、顶部水果/巧克力、品牌及地区配方。",
+      "composition": "芝士蛋糕是多配料成品，不能用奶油奶酪的营养数据替代整块蛋糕。USDA FoodData Central 可按 cheesecake 检索到不同来源/形态的条目，但数据库类型与具体现售产品并不等同；购买时应以产品标签和份量为准。",
+      "direct": "本轮定向检索未发现可代表一般芝士蛋糕、并证明其改善疾病或长期健康结局的直接人体试验。乳制品、奶酪或蛋糕其他品类研究不能自动归为芝士蛋糕证据。",
+      "specific": "数据库检索只帮助比较指定食品条目，不构成市场代表性抽样；不同底料和配方会改变糖、脂肪及总能量。",
+      "safety": "常见配方可能含牛奶、蛋、小麦；坚果、花生、大豆或其他过敏原取决于饼底与配料。奶油馅产品的冷藏和保质条件按标签执行。",
+      "body": "芝士蛋糕并不是一张固定的营养标签：烘烤型和免烤型、饼底厚薄、奶酪和奶油比例、浇头都会改变成品。USDA FoodData Central 能查到不同芝士蛋糕食品条目，但这些记录不等于现售商品的统一代表。本轮也没有找到足以说明一般芝士蛋糕能改善长期健康结局的直接人体研究。",
+      "evidence_body": "证据主要是食品数据库中的具体记录和配方背景（D0，仅针对数据库所列食品）；目标品类长期人体结局的直接证据未建立（E-0）。",
+      "care": "核对每份重量、糖和脂肪含量，并检查牛奶、蛋、小麦及坚果等过敏原；需冷藏的产品按标签储存。",
+      "taste_m": {
+        "甘": "通常含添加糖或甜味配料，奶酪的酸咸味、饼底和浇头会改变整体感官甜度。"
+      },
+      "queries": [
+        "cheesecake composition USDA FoodData Central cheesecake foods",
+        "cheesecake direct clinical trial health outcomes systematic review",
+        "baked versus no-bake cheesecake recipe composition allergens"
+      ],
+      "search_log": [
+        "检索 USDA FoodData Central 芝士蛋糕记录、成品健康结局研究与配方/安全资料。",
+        "数据库记录按具体食品条目解释；本轮未找到一般芝士蛋糕直接临床结局证据，未将奶酪或其他乳品研究外推。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: cheesecake. https://fdc.nal.usda.gov/food-search/?query=cheesecake. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: cheesecake. https://fdc.nal.usda.gov/food-search/?query=cheesecake. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品组成数据库检索入口；收录多来源、多类型食品记录。",
+          "population": "Cheesecake 搜索结果所列食品条目。",
+          "exposure": "各条目的数据库营养组成字段。",
+          "result": "可用于查阅具体数据库食品记录，提示需按条目身份选取，而不是把一种记录当作所有芝士蛋糕。",
+          "limits": "搜索页并非当前零售市场抽样；条目年份、配方、地区与现售品牌可能不同。",
+          "distance": "D0（仅对应数据库列出的具体食品）"
+        }
+      ],
+      "unknowns": "不同国家/品牌芝士蛋糕配方的代表性分布；按份量和食用频率研究该品类的长期人体结局；烘烤型与冷藏型之间的可比性。",
+      "tradition": "芝士蛋糕是现代复合甜点类别；未发现可将其各种配方直接对应为某一传统本草食品条目的依据。"
+    },
+    "chiffon-cake": {
+      "name": "戚风蛋糕",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sponge-cake",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以蛋液、打发蛋白、面粉、糖和油脂制成的轻质蛋糕；海绵状结构依赖配方与充气/烘烤工艺。不同口味、夹馅和地区产品不视为相同配方。",
+      "variables": "蛋白打发方式、面粉和糖用量、油脂、水分、可可/茶等添加物、夹馅与奶油、切片重量及储存。",
+      "composition": "Moreno 对菲律宾可可戚风蛋糕的研究比较五种小麦粉/可可粉比例，并测定营养组成和感官接受度；最受接受的 B 配方为 90% 小麦粉与 10% 可可粉，论文报告一项 30 人感官评估。它是单一地区的实验配方分析，不是市场普查或食用后的健康结局研究。",
+      "direct": "本轮未发现戚风蛋糕成品改善疾病或长期健康结局的直接人体干预证据。30 人面板评价的是样品的感官接受度，不是健康结局。",
+      "specific": "该研究的营养分析与感官测评针对可可粉替代小麦粉的五种实验配方；结果不能代表原味、夹馅、奶油装饰或商业戚风蛋糕。",
+      "safety": "常见配方含小麦、蛋，部分产品含乳、坚果或大豆。过敏原及储存要求随配方和馅料变化。",
+      "body": "戚风蛋糕的轻软结构来自蛋白打发和烘烤，配方则随口味和夹馅而变。Moreno 的菲律宾研究比较了五种可可粉替代小麦粉比例，测定营养组成，并由 30 人评价感官接受度；在那组实验样品中，90% 小麦粉与 10% 可可粉配方最受接受。这说明的是特定配方的组成和口感，不是戚风蛋糕能带来健康效果。",
+      "evidence_body": "可可戚风研究为 D1（单一配方组的实验室营养与感官比较）；其感官面板不等同于临床人体试验，目标成品长期健康结局证据未建立（E-0）。",
+      "care": "按实际份量查看添加糖和奶油/夹馅配料，并核对小麦、蛋、乳、坚果等过敏原；配方优化结果不等于营养或治疗承诺。",
+      "taste_m": {
+        "甘": "通常加入糖，甜度会被可可、茶、奶油或果味夹馅改变。"
+      },
+      "queries": [
+        "Philippine Choco Chiffon Cake nutritional composition sensory quality Moreno 2019",
+        "chiffon cake human clinical health outcomes",
+        "chiffon cake recipe composition ingredients egg white foam"
+      ],
+      "search_log": [
+        "核对 UiTM Institutional Repository 中 Moreno 2019 论文的书目信息与全文摘要；该记录未列 DOI。",
+        "确认研究含五种小麦粉/可可粉比例及 30 人感官面板；只用于该配方组的营养/感官结论。"
+      ],
+      "refs": [
+        "Moreno RB. “Nutritional composition and sensory quality evaluation of Philippine Choco Chiffon Cake.” Journal of Tourism, Hospitality & Culinary Arts. 2019;7(3):1–10. DOI not listed. UiTM Institutional Repository author record: https://ir.uitm.edu.my/view/creators/Moreno=3ARaymund_B=2E=3A=3A.html."
+      ],
+      "body_refs": [
+        "Moreno RB. “Nutritional composition and sensory quality evaluation of Philippine Choco Chiffon Cake.” Journal of Tourism, Hospitality & Culinary Arts. 2019;7(3):1–10. DOI not listed. UiTM Institutional Repository author record: https://ir.uitm.edu.my/view/creators/Moreno=3ARaymund_B=2E=3A=3A.html."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "五种配方的实验室营养分析与感官接受度评估。",
+          "population": "论文列出的 30 名食品技术教师/学生及食品爱好者面板。",
+          "exposure": "不同小麦粉/可可粉比例的菲律宾可可戚风蛋糕样品。",
+          "result": "研究报告营养组成差异，感官评价中 90% 小麦粉加 10% 可可粉样品最受接受。",
+          "limits": "单一配方研究、特定地区与小型感官面板；没有食用后临床健康终点，且数据库记录未列 DOI。",
+          "distance": "D1（与可可戚风实验配方直接相关；不代表所有戚风）"
+        }
+      ],
+      "unknowns": "现售戚风蛋糕市场配方分布；普通消费者长期食用后的临床结局；不同夹馅、奶油和份量的营养差异。",
+      "tradition": "戚风是现代烘焙蛋糕类别；本轮没有可将具体商品配方对应至传统本草条目的直接材料。"
+    },
+    "brownie": {
+      "name": "布朗尼",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "chocolate-baked-dessert",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以可可/巧克力、糖、油脂和面粉为主的致密烘焙甜点；配方从湿润、软心到蛋糕型不等，可含坚果或额外配料。与巧克力蛋糕及曲奇分别处理。",
+      "variables": "巧克力/可可比例、糖和脂肪、鸡蛋和面粉、坚果、蔬菜/豆类替代配料、烘烤程度、块重与品牌配方。",
+      "composition": "FSANZ 的 2012 Cake and Slice Analytical Program 对包括巧克力布朗尼在内的商业蛋糕/切片产品采样，分析对象与样品数量有限，样品按类型合并作组成测定。Petka 与 Topolska 的 2025 论文研究含甘薯、扁豆、菠菜等蔬菜的布朗尼配方，报告的是配方理化、质构和感官变量，不是人体临床结果。",
+      "direct": "未找到可外推至一般布朗尼、并显示疾病治疗或长期健康改善的直接人体干预证据。配方研究没有检验食用者的临床结局。",
+      "specific": "FSANZ 报告支持指定抽样布朗尼的组成描述；2025 年研究只涉及特定蔬菜强化配方和实验评价。两者均不能代表所有产品或推断健康获益。",
+      "safety": "常见成分包括小麦、蛋、乳和可可；坚果或其他添加物因配方而异。份量、添加糖和脂肪含量可能显著不同。",
+      "body": "布朗尼从湿润软心到较蓬松的蛋糕型都有，巧克力、糖、油脂和面粉比例也不固定。FSANZ 的 2012 年分析项目包含商业巧克力布朗尼样品，但样本范围有限。2025 年一项研究把蔬菜加入特定布朗尼配方，考察组成、质构和感官；这类配方试验并没有证明吃布朗尼能预防或治疗疾病。",
+      "evidence_body": "组成分析和配方试验分别为 D0（指定抽样品）与 D1（特定实验配方），不构成人体功效证据。一般布朗尼成品的长期临床结局证据不足（E-0）。",
+      "care": "按份量查看营养标签中的糖和脂肪，并核对小麦、蛋、乳、坚果等过敏原；“加蔬菜”或“改良配方”不自动意味着适合作为治疗食品。",
+      "taste_m": {
+        "甘": "糖和巧克力通常提供甜味，可可的苦味及坚果会改变整体风味。"
+      },
+      "queries": [
+        "FSANZ 2012 cake and slice analytical program chocolate brownie samples nutrient composition",
+        "Vegetable-Enriched Brownies A Healthier Twist on a Classic Treat 2025 DOI",
+        "brownie direct human health outcome randomized trial"
+      ],
+      "search_log": [
+        "核对 FSANZ 官方蛋糕/切片营养分析项目的取样和实验室分析范围。",
+        "核对 Petka 与 Topolska 2025 年 Nutrients 论文题名、DOI 和研究终点；其结果限于配方、理化与感官评价。"
+      ],
+      "refs": [
+        "Petka K, Topolska K. “Vegetable-Enriched Brownies: A Healthier Twist on a Classic Treat.” Nutrients. 2025;17(1):184. DOI: https://doi.org/10.3390/nu17010184.",
+        "Food Standards Australia New Zealand. “2012 Cake and Slice Analytical Program.” https://www.foodstandards.gov.au/science-data/food-composition-databases/ausnut/foodnutrient/cake. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Petka K, Topolska K. “Vegetable-Enriched Brownies: A Healthier Twist on a Classic Treat.” Nutrients. 2025;17(1):184. DOI: https://doi.org/10.3390/nu17010184.",
+        "Food Standards Australia New Zealand. “2012 Cake and Slice Analytical Program.” https://www.foodstandards.gov.au/science-data/food-composition-databases/ausnut/foodnutrient/cake. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 2,
+          "design": "商业样品的营养组成分析项目。",
+          "population": "澳大利亚/新西兰零售取得的多类蛋糕与切片样品；项目报告说明不同类型的有限样品数并按品类合并分析。",
+          "exposure": "指定商业巧克力布朗尼等蛋糕/切片样品的实验室营养组成。",
+          "result": "提供该次抽样食品的组成数据。",
+          "limits": "2012 年、样本数量与地区有限；成品样品组成不代表当前全部品牌，也没有人体结局。",
+          "distance": "D0（指定市场抽样食品）"
+        },
+        {
+          "ref": 1,
+          "design": "特定蔬菜强化布朗尼配方的实验室理化、质构与感官研究。",
+          "population": "研究制备的实验配方，不是一般消费者临床队列。",
+          "exposure": "在布朗尼配方中加入蔬菜/豆类原料作改良。",
+          "result": "比较配方的理化和感官特征。",
+          "limits": "没有随机人体干预或临床健康终点；不能将题名中的“healthier”读作临床获益证明。",
+          "distance": "D1（特定改良配方）"
+        }
+      ],
+      "unknowns": "当前不同地区布朗尼配方和份量的代表性分布；一般消费者长期结局；蔬菜强化配方在真实消费中的摄入与健康影响。",
+      "tradition": "布朗尼是现代复合烘焙甜点；未发现其多种商业配方与传统本草食品条目一一对应的依据。"
+    },
+    "croissant": {
+      "name": "可颂",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "laminated-pastry",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指由层叠面团与油脂折叠、发酵并烘烤形成的可颂；黄油、面粉、发酵方式、夹馅和份量会因产品而异。与丹麦酥分别设条。",
+      "variables": "面团配方、黄油/其他油脂、折叠与发酵、酸面团或商业酵母、纤维强化、夹馅、大小、食用场景。",
+      "composition": "Barone Lumaga 等 2024 年随机对照交叉研究比较特定高纤酸面团可颂与对照可颂。32 名健康受试者连续两周早餐食用研究产品；高纤产品为 4.8 g fiber/100 g，对照为 1.3 g/100 g。报告空腹血糖指标相对改善，研究人群、具体配方和时长有限。",
+      "direct": "有一项针对特定可颂配方的短期随机交叉研究，但不能据此认定普通可颂或所有高纤可颂会改善血糖，更不能推断长期糖尿病或心血管结局。",
+      "specific": "该试验通过酸面团和纤维混合物制作特定产品，结果绑定其纤维含量、食用方式、32 名健康成人和两周观察期；不同商业可颂不可互换。",
+      "safety": "常见成分含小麦和乳；传统黄油可颂含乳脂，夹馅产品可能另含蛋、坚果、大豆等过敏原。份量和配方影响能量、糖和脂肪。",
+      "body": "可颂的酥层通常来自反复折叠的面团与油脂，但品牌和配方并不统一。一项 32 名健康成人参加的随机交叉研究比较了特定高纤酸面团可颂和对照产品：参与者连续两周把研究产品作为早餐，研究报告高纤产品的空腹血糖指标相对改善。这个结果只适用于那组配方、人群和短期观察，不能代表所有可颂或长期健康结局。",
+      "evidence_body": "该随机交叉研究为 D0/D1（研究中指定产品及近似特定配方），但样本小、持续两周且终点有限；一般可颂长期健康效果证据仍不足。",
+      "care": "按实际份量查看糖、饱和脂肪和纤维，并核对小麦、乳及夹馅过敏原；短期特定产品试验不应替代个人治疗或用药方案。",
+      "taste_m": {
+        "甘": "面团和夹馅可能含糖；黄油香、发酵香与夹馅改变感官甜度。"
+      },
+      "queries": [
+        "Consumption of a Sourdough-Leavened Croissant Enriched with a Blend of Fibers randomized controlled trial 2024 DOI",
+        "croissant 32 healthy subjects two week fasting blood glucose 4.8 g fiber",
+        "croissant direct long term clinical outcomes"
+      ],
+      "search_log": [
+        "核对期刊/ PubMed 记录的论文题名、作者、样本量、试验时长、产品纤维量与 DOI。",
+        "将研究表述限制在两周、健康受试者和指定高纤酸面团产品；没有外推为一般可颂的长期作用。"
+      ],
+      "refs": [
+        "Barone Lumaga R, Tagliamonte S, De Rosa T, Valentino V, Ercolini D, Vitaglione P. “Consumption of a Sourdough-Leavened Croissant Enriched with a Blend of Fibers Influences Fasting Blood Glucose in a Randomized Controlled Trial in Healthy Subjects.” The Journal of Nutrition. 2024;154(10):2976–2987. DOI: https://doi.org/10.1016/j.tjnut.2024.08.015."
+      ],
+      "body_refs": [
+        "Barone Lumaga R, Tagliamonte S, De Rosa T, Valentino V, Ercolini D, Vitaglione P. “Consumption of a Sourdough-Leavened Croissant Enriched with a Blend of Fibers Influences Fasting Blood Glucose in a Randomized Controlled Trial in Healthy Subjects.” The Journal of Nutrition. 2024;154(10):2976–2987. DOI: https://doi.org/10.1016/j.tjnut.2024.08.015."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照交叉饮食干预。",
+          "population": "32 名健康成人。",
+          "exposure": "连续两周早餐食用特定纤维强化酸面团可颂（4.8 g fiber/100 g）或对照可颂（1.3 g/100 g）。",
+          "result": "论文报告纤维强化产品相对改善空腹血糖指标。",
+          "limits": "小样本、健康人群、两周、指定配方和有限结局；不证明所有可颂或长期疾病结局。",
+          "distance": "D0/D1（研究用成品及特定配方）"
+        }
+      ],
+      "unknowns": "不同国家商业可颂的配方分布；该试验结果能否复制于不同人群、配方和更长期结局；普通产品的成品特异人体证据。",
+      "tradition": "可颂为现代层酥烘焙食品；没有将其现代配方直接对应古籍药食条目的可靠依据。"
+    },
+    "danish-pastry": {
+      "name": "丹麦酥",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "laminated-pastry",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指以折叠发酵面团和油脂制成、常带水果、卡仕达或其他馅料的丹麦式层酥点心；各地造型与配方差异大。与可颂分条。",
+      "variables": "面团发酵方式、黄油/其他油脂、折叠层次、糖、馅料、表面糖霜、产品大小及地区/品牌。",
+      "composition": "USDA FoodData Central 可按 Danish pastry 检索到具体食品记录，但不同馅料和制作方式不代表统一商品。当前未确认具有代表性的跨品牌市场组成抽样，也未找到一般丹麦酥直接健康结局试验。",
+      "direct": "本轮未发现普通丹麦酥成品改善疾病或长期健康结局的直接人体试验。可颂或其他层酥产品的结果不能自动移植到丹麦酥。",
+      "specific": "数据库搜索可帮助定位具体类型；奶油馅、果酱馅、无馅和糖霜产品的营养组成不同。不得把一个条目视作整类平均值。",
+      "safety": "常见成分可能含小麦、乳、蛋；卡仕达、坚果或其他馅料会引入额外过敏原。按实际配料表与销售地标签确认。",
+      "body": "丹麦酥和可颂都可能使用层叠发酵面团，但丹麦酥常带水果、卡仕达或其他馅料，产品之间差异很大。USDA FoodData Central 的条目适合查看具体记录，不能代替对当前市场所有丹麦酥的抽样。本轮没有找到一般丹麦酥成品改善长期健康结局的直接人体研究。",
+      "evidence_body": "证据以具体食品数据库记录为主（D0，仅限所列食品）；整类成品的人体健康结局证据未建立（E-0）。",
+      "care": "查看份量、糖和脂肪以及馅料；核对小麦、乳、蛋、坚果等过敏原。不同馅料产品不共享同一营养信息。",
+      "taste_m": {
+        "甘": "糖、果馅、卡仕达和糖霜通常提供甜味，发酵香与油脂香会改变整体风味。"
+      },
+      "queries": [
+        "USDA FoodData Central Danish pastry composition",
+        "Danish pastry direct human clinical health outcomes",
+        "Danish pastry fillings ingredient and allergen variation"
+      ],
+      "search_log": [
+        "检索 USDA FoodData Central 丹麦酥食品记录和成品直接人体研究。",
+        "未找到能代表整类丹麦酥的临床健康结局试验；可颂研究仍按相邻而非直接证据处理。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: Danish pastry. https://fdc.nal.usda.gov/food-search/?query=Danish%20pastry. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: Danish pastry. https://fdc.nal.usda.gov/food-search/?query=Danish%20pastry. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食物组成数据库检索入口。",
+          "population": "Danish pastry 搜索结果中具体数据库食品记录。",
+          "exposure": "各食品记录列示的组成字段。",
+          "result": "支持查阅指定食品条目的营养信息。",
+          "limits": "不是当前市场的代表性抽样；馅料、地区、品牌和年代差异明显。",
+          "distance": "D0（仅为具体数据库食品记录）"
+        }
+      ],
+      "unknowns": "当代丹麦酥市场的代表性配方和营养组成；一般消费者长期食用的成品特异健康结局；各馅料类型之间的差别。",
+      "tradition": "丹麦酥是现代层酥点心类别；本轮未发现可将各类现代配方对应至传统本草条目的直接资料。"
+    },
+    "cinnamon-roll": {
+      "name": "肉桂卷",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "sweet-yeast-roll",
+      "research_depth": "R2",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指发酵面团卷入肉桂与甜味馅料后烘烤的甜点，可再加糖霜；不同地区 cinnamon roll、cinnamon bun 和 cinnamon swirl 产品的面团与配料并不完全相同。",
+      "variables": "面粉和发酵方式、糖/肉桂馅、黄油、糖霜、份量、品牌及试验所用具体商品。",
+      "composition": "Bao 等的研究比较健康成人餐后血糖/胰岛素预测指标，样品清单包括一款 Entenmann's Cinnamon Swirl Bun。它是单一商用产品在急性餐后试验框架中的一次测试，不是肉桂卷类别临床试验。",
+      "direct": "研究测了指定 cinnamon swirl bun 的急性餐后反应，但并未验证所有肉桂卷或长期健康结局。单一商品结果不证明肉桂卷具有或缺乏疾病疗效。",
+      "specific": "论文目标是比较碳水含量与血糖负荷对餐后反应预测的价值，涵盖多类食物；肉桂卷对应的只是样品表中的一款产品。",
+      "safety": "通常含小麦、糖，常见配方也含乳或蛋；糖霜、坚果和其他配料依商品变化。过敏原与份量需看标签。",
+      "body": "关于肉桂卷的直接资料很有限。Bao 等人的餐后血糖研究在多类测试食品中包含一款 Entenmann's Cinnamon Swirl Bun，因此能说明研究中某个具体样品被测过急性餐后反应；它不能代表所有肉桂卷，也不是长期健康效果试验。配方、糖霜和份量都会影响实际食品。",
+      "evidence_body": "该证据为 D0（测试清单中的单款 cinnamon swirl bun），但研究目的为急性血糖/胰岛素预测，样本和终点不支持对肉桂卷整类或长期疾病结局的结论。",
+      "care": "看份量、添加糖和糖霜，并核对小麦、乳、蛋和可能的坚果过敏原；不能把含肉桂当成降糖治疗依据。",
+      "taste_m": {
+        "甘": "馅料和糖霜通常提供甜味，肉桂香气并不等同于传统药性或临床作用。"
+      },
+      "queries": [
+        "Bao Atkinson Petocz Brand-Miller 2011 glycemic load cinnamon swirl pastry Entenmanns study DOI",
+        "cinnamon roll acute postprandial glycemia trial",
+        "cinnamon roll long term health outcomes direct study"
+      ],
+      "search_log": [
+        "核对 AJCN/PubMed 论文题名、作者、卷期页码及 DOI；出版页面的食品清单列出一款 Entenmann's Cinnamon Swirl Bun。",
+        "将其定位为多食物急性餐后研究中的单一样品，不把血糖负荷指标扩写成整个肉桂卷品类的功效。"
+      ],
+      "refs": [
+        "Bao J, Atkinson F, Petocz P, Brand-Miller JC. “Prediction of Postprandial Glycemia and Insulinemia in Lean, Young, Healthy Adults: Glycemic Load Compared With Carbohydrate Content Alone.” The American Journal of Clinical Nutrition. 2011;93(5):984–996. DOI: https://doi.org/10.3945/ajcn.110.005033."
+      ],
+      "body_refs": [
+        "Bao J, Atkinson F, Petocz P, Brand-Miller JC. “Prediction of Postprandial Glycemia and Insulinemia in Lean, Young, Healthy Adults: Glycemic Load Compared With Carbohydrate Content Alone.” The American Journal of Clinical Nutrition. 2011;93(5):984–996. DOI: https://doi.org/10.3945/ajcn.110.005033."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "健康成人摄入多类食物后的餐后血糖/胰岛素测量与预测指标比较。",
+          "population": "论文研究的精瘦、年轻、健康成人；研究含多个食品类别及样品。",
+          "exposure": "食品清单含一款 Entenmann's Cinnamon Swirl Bun。",
+          "result": "该产品作为测试样品进入急性餐后反应研究。",
+          "limits": "不是整类肉桂卷的随机临床试验；单产品、急性终点，不推断长期健康或疾病治疗效果。",
+          "distance": "D0（一个特定商用样品）"
+        }
+      ],
+      "unknowns": "不同国家和品牌肉桂卷的营养/配方分布；其他肉桂卷配方的直接餐后研究；长期健康结局。",
+      "tradition": "现代肉桂卷的面团、馅料与糖霜配方不对应为单一传统本草物；感官肉桂香不构成本草分类证据。"
+    },
+    "macaron": {
+      "name": "马卡龙",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "almond-meringue-cookie",
+      "research_depth": "R1",
+      "shared_parent": "baked-sweets-base",
+      "identity": "本条指常见法式马卡龙：以蛋白霜、杏仁粉和糖制成两片外壳，夹入甘纳许、奶油霜或其他馅料；其他地区同名产品的配方可能不同。",
+      "variables": "杏仁粉与蛋白比例、糖种类、烘烤、夹馅、颜色/风味、份量及改良配方。",
+      "composition": "Nastaj 等研究的是乳清蛋白分离物与赤藓糖醇改良、无蔗糖高蛋白马卡龙配方，评价面糊流变、稳定性、质构、颜色、微观结构和水分活度等。它是食品技术研究，不是糖尿病患者临床试验。",
+      "direct": "未发现足以证明普通马卡龙或研究中的改良马卡龙改善糖尿病或其他健康结局的直接人体干预证据。",
+      "specific": "研究对象使用乳清蛋白分离物和赤藓糖醇，属于特定配方；研究者的应用意图/文章题名不能作为临床安全或适用性证明。",
+      "safety": "常见马卡龙含杏仁/树坚果和蛋；乳清、奶油馅、巧克力或其他夹心可能带来乳、大豆等过敏原。赤藓糖醇及其他甜味剂应按实际标签判断。",
+      "body": "马卡龙常见做法以杏仁粉、蛋白霜和糖制壳，再夹入甘纳许或奶油馅。Nastaj 等测试了以乳清蛋白分离物和赤藓糖醇改良的特定配方，观察面糊、质构、颜色和水分活度等食品性质。这不是糖尿病患者试验，也不能据此说这种马卡龙适合所有糖尿病患者或能改善血糖。",
+      "evidence_body": "该论文为 D1（实验室特定改良配方的加工/理化研究），没有人体临床结局；马卡龙成品健康功效的直接证据未建立（E-0）。",
+      "care": "核对杏仁/坚果、蛋、乳和大豆等过敏原；“无蔗糖”或“高蛋白”只描述某些配方特征，不意味着无总糖、低能量或适合特定疾病。",
+      "taste_m": {
+        "甘": "糖或甜味剂及夹馅通常提供甜味，杏仁香和馅料会改变感官表现。"
+      },
+      "queries": [
+        "The Effect of Erythritol on the Physicochemical Properties of Reformulated High-Protein and Sugar-Free Macarons 2023 DOI",
+        "macaron erythritol whey protein isolate laboratory physicochemical study",
+        "macaron clinical trial diabetes glycemia"
+      ],
+      "search_log": [
+        "核对 Foods 2023 论文题名、作者、卷期文章号和 DOI。",
+        "确认研究终点为配方流变/稳定性/质构/颜色/微观结构/水分活度；未将“intended for diabetics”解释成临床验证。"
+      ],
+      "refs": [
+        "Nastaj M, Sołowiej BG, Terpiłowski K, Kucia W, Tomasevic IB, Pérez-Huertas S. “The Effect of Erythritol on the Physicochemical Properties of Reformulated, High-Protein, and Sugar-Free Macarons Produced from Whey Protein Isolate Intended for Diabetics, Athletes, and Physically Active People.” Foods. 2023;12(7):1547. DOI: https://doi.org/10.3390/foods12071547."
+      ],
+      "body_refs": [
+        "Nastaj M, Sołowiej BG, Terpiłowski K, Kucia W, Tomasevic IB, Pérez-Huertas S. “The Effect of Erythritol on the Physicochemical Properties of Reformulated, High-Protein, and Sugar-Free Macarons Produced from Whey Protein Isolate Intended for Diabetics, Athletes, and Physically Active People.” Foods. 2023;12(7):1547. DOI: https://doi.org/10.3390/foods12071547."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "实验室食品加工与理化性质研究。",
+          "population": "研究制备的乳清蛋白分离物马卡龙配方；无患者队列或人体干预。",
+          "exposure": "用赤藓糖醇等对高蛋白、无蔗糖马卡龙配方作改良并测试面糊与成品属性。",
+          "result": "比较流变、稳定性、质构、颜色、微观结构和水分活度等指标。",
+          "limits": "没有临床血糖或疾病结局；特定配方不能代表传统或所有商业马卡龙。",
+          "distance": "D1（实验室特定配方）"
+        }
+      ],
+      "unknowns": "商业马卡龙配方分布；改良配方的消费者食用后代谢和长期结局；不同甜味剂、夹馅及份量的影响。",
+      "tradition": "马卡龙是现代复合烘焙甜点；杏仁、蛋白与夹馅组合不构成对单一传统本草条目的对应。"
+    },
+    "ice-cream": {
+      "name": "冰淇淋",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "frozen-dairy-dessert",
+      "research_depth": "R2",
+      "shared_parent": "frozen-desserts-base",
+      "identity": "本条指按适用食品标准或标签定义为冰淇淋的冻结甜品；乳、乳脂、糖、空气和稳定/乳化配料比例随国家、产品和配方变化。与雪糕、冰棒分条。",
+      "variables": "乳脂/乳固形物、糖与甜味剂、份量、空气含量、配料/涂层、品牌、食用温度及疾病人群。",
+      "composition": "截至本批研究截止日，中国现行 GB/T 31114-2024《冰淇淋质量要求》已于 2026-07-01 实施。Al-Ozairi 等 2024 年随机交叉试验纳入 12 名 2 型糖尿病成人，比较某公司 300 g 无添加糖冰淇淋与其常规产品，观察 120 分钟内的血糖/胰岛素反应；论文指出样本小、产品特异，且无添加糖产品仍可能含总糖。",
+      "direct": "一项小型交叉试验报告了特定冰淇淋产品在 12 名 2 型糖尿病成人中的短期餐后反应。它不能证明所有无添加糖冰淇淋能改善糖尿病管理、减少并发症或带来长期健康获益。",
+      "specific": "试验比较同一公司的两款产品、固定 300 g 份量和 120 分钟终点；结论不可自动迁移到其他品牌、份量或不同配方。",
+      "safety": "多数冰淇淋含牛奶，部分产品还含蛋、坚果、大豆、小麦或其他过敏原。无添加糖并不意味着无总糖/碳水化合物；依据实际标签和个人饮食管理判断。",
+      "body": "“冰淇淋”有标准身份，但具体配方和份量仍有差异。Al-Ozairi 等做了一项随机交叉试验，纳入 12 名 2 型糖尿病成人，比较同一公司两款冰淇淋各 300 g 后 120 分钟内的血糖和胰岛素反应。它提供的是单品牌、短时间窗的结果；论文也提醒样本较小，而且“无添加糖”产品不等于没有总糖。不能据此推断长期糖尿病结局或替代个体治疗方案。",
+      "evidence_body": "该研究为 D0（指定品牌成品）且为短时人体交叉试验，但仅 12 人、单公司产品、固定大份量与 120 分钟观察；长期结局及品类外推证据不足。",
+      "care": "看每份克数、总糖/碳水化合物和过敏原；“无添加糖”不能直接替代总糖信息。糖尿病饮食选择应结合完整营养标签和个人照护计划。",
+      "taste_m": {
+        "甘": "冰淇淋可含糖、甜味剂或甜味配料；低温和脂肪会影响感官甜度。"
+      },
+      "queries": [
+        "Reformulating ice cream to improve postprandial glucose response 2024 randomized crossover 12 adults T2D DOI",
+        "300 g no added sugar regular ice cream 120 min glucose insulin trial",
+        "GB/T 31114-2024 current effective date official SAMR"
+      ],
+      "search_log": [
+        "核对 Frontiers 论文全文和 PubMed 记录的样本、产品、份量、120 分钟结局、限制和 DOI。",
+        "核对国家标准全文公开系统：GB/T 31114-2024《冰淇淋质量要求》现行，实施日期为 2026-07-01；不沿用已废止的 GB/T 31114-2014。"
+      ],
+      "refs": [
+        "Al-Ozairi E, Mandani Y, Alfaleh G, Raj J, Alshammari S, Le Roux CW. “Reformulating ice cream to improve postprandial glucose response: an opportunity for industry to create shared value.” Frontiers in Nutrition. 2024;11:1349392. DOI: https://doi.org/10.3389/fnut.2024.1349392.",
+        "State Administration for Market Regulation / Standardization Administration of China. “GB/T 31114-2024 Quality requirement for ice cream.” Published 2024-12-31; effective 2026-07-01. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=70D916E5049FBD3591956003780404A4."
+      ],
+      "body_refs": [
+        "Al-Ozairi E, Mandani Y, Alfaleh G, Raj J, Alshammari S, Le Roux CW. “Reformulating ice cream to improve postprandial glucose response: an opportunity for industry to create shared value.” Frontiers in Nutrition. 2024;11:1349392. DOI: https://doi.org/10.3389/fnut.2024.1349392.",
+        "State Administration for Market Regulation / Standardization Administration of China. “GB/T 31114-2024 Quality requirement for ice cream.” Published 2024-12-31; effective 2026-07-01. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=70D916E5049FBD3591956003780404A4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉人体试验。",
+          "population": "12 名 2 型糖尿病成人。",
+          "exposure": "比较一家公司 300 g 无添加糖冰淇淋与其常规冰淇淋；跟踪餐后 120 分钟血糖和胰岛素。",
+          "result": "论文报告两款产品餐后反应的比较结果，并讨论配方重制的可能性。",
+          "limits": "样本量小、单公司特定产品、单次大份量和短时终点；不能推断长期血糖控制或并发症；无添加糖不等于零总糖。",
+          "distance": "D0（特定公司研究用产品）"
+        },
+        {
+          "ref": 2,
+          "design": "现行国家推荐性产品质量标准记录。",
+          "population": "标准所覆盖的冰淇淋产品定义与质量要求。",
+          "exposure": "产品标准条款与适用范围。",
+          "result": "提供中国现行冰淇淋标准身份，并列出实施日期。",
+          "limits": "标准界定/质量要求不是人体健康结局证据，也不代表任一具体品牌配方。",
+          "distance": "D0（标准定义身份）"
+        }
+      ],
+      "unknowns": "中国及其他市场现售冰淇淋的代表性组成和份量；小型试验的复制性；长期结局及不同疾病人群的反应；各品牌总糖和配方。",
+      "tradition": "现代商品冰淇淋在不同地区与标准下有具体产品定义；本条不把冷食感受直接等同于传统本草寒热属性。"
+    },
+    "ice-milk": {
+      "name": "雪糕",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "frozen-dairy-dessert",
+      "research_depth": "R1",
+      "shared_parent": "frozen-desserts-base",
+      "identity": "本条按中国国家标准名称“雪糕”（ice milk）指冷冻饮品中的特定产品类别；与冰淇淋和水基冰棒分开。市场口语可能混称，具体商品应核对适用标准与标签。",
+      "variables": "乳及乳脂、糖、淀粉或其他配料、夹心/涂层、份量、标准版本、品牌和地区配方。",
+      "composition": "国家标准全文公开系统记录 GB/T 31119-2014《冷冻饮品 雪糕》（Frozen drinks—Ice milk）为现行标准。该标准能帮助区分产品类别，但产品配方仍需看标签；标准状态不是对其营养或健康效应的判断。",
+      "direct": "本轮未发现专门针对中国标准类别雪糕、可证明其改善疾病或长期健康结局的直接人体干预证据。冰淇淋研究不能自动作为雪糕的成品证据。",
+      "specific": "GB/T 31119-2014 是身份/质量要求来源；不能由标准名称推导乳脂、糖或能量的固定市场平均值。",
+      "safety": "根据具体配方，可能含牛奶、蛋、坚果、大豆或小麦等过敏原；产品名称不保证相同配料。标签与储存条件优先。",
+      "body": "这里把“雪糕”按中国标准中的 ice milk 类别单独处理，以免和冰淇淋或水基冰棒混为一谈。国家标准全文公开系统将 GB/T 31119-2014《冷冻饮品 雪糕》列为现行标准；这解决的是产品类别与质量要求，不代表所有雪糕有相同配方或健康作用。本轮没有找到雪糕成品改善长期健康结局的直接人体研究。",
+      "evidence_body": "主要来源是标准身份信息（D0，类别定义/质量要求），不是临床证据；雪糕成品人体健康结局证据本轮未建立（E-0）。",
+      "care": "以产品标签核对乳及其他过敏原、总糖和份量，并遵照冷冻储存说明；标准类别不能替代对具体商品的营养判断。",
+      "taste_m": {
+        "甘": "多数产品含糖或甜味配料，但具体甜度与乳香、夹馅、涂层有关。"
+      },
+      "queries": [
+        "GB/T 31119-2014 Frozen drinks Ice milk current standard official SAMR",
+        "ice milk snow cake direct human clinical health outcomes",
+        "China ice cream ice milk category product standard difference"
+      ],
+      "search_log": [
+        "核对国家标准全文公开系统的标准号、中文/英文名称和当前状态。",
+        "与 GB/T 31114-2024 冰淇淋及 Codex edible ices 作身份区分；本轮未检得标准类别雪糕的直接长期临床结局研究。"
+      ],
+      "refs": [
+        "State Administration for Market Regulation / Standardization Administration of China. “GB/T 31119-2014 Frozen drinks—Ice milk.” Current standard record. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3E683CFE811684B642F5BBC6D57DF5DC.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "State Administration for Market Regulation / Standardization Administration of China. “GB/T 31119-2014 Frozen drinks—Ice milk.” Current standard record. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3E683CFE811684B642F5BBC6D57DF5DC."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "国家标准全文公开系统的标准状态与名称记录。",
+          "population": "GB/T 31119-2014 所定义的雪糕/ice milk 产品类别。",
+          "exposure": "标准名称、分类及现行状态。",
+          "result": "系统列示“冷冻饮品 雪糕 / Frozen drinks—Ice milk”，状态为现行。",
+          "limits": "标准状态不提供健康效应结论；商品配方、标签和营养仍因产品变化。",
+          "distance": "D0（产品类别和标准身份）"
+        }
+      ],
+      "unknowns": "中国现售雪糕的代表性配方/营养抽样；不同品牌份量与配料；标准类别成品的直接人体结局研究。",
+      "tradition": "本条是以现行食品产品标准界定的现代冷冻甜点；不根据名称或温度直接给出传统本草属性。"
+    },
+    "ice-pop": {
+      "name": "冰棒",
+      "volume": "甘食部",
+      "entry_type": "processed_food",
+      "family": "edible-ice",
+      "research_depth": "R1",
+      "shared_parent": "frozen-desserts-base",
+      "identity": "本条指冻结成型、通常以水、果汁/果味基料或糖浆为主体并可插棒持握的冷食；有的商品会加入乳、果肉或其他配料。与雪糕及冰淇淋分开。",
+      "variables": "水/果汁/果味基料、糖和甜味剂、果肉、乳配料、份量、冻制方式、品牌和地区标准。",
+      "composition": "Codex GSFA 食品分类系统把 sorbet、sherbet 等列在 03.0 edible ices 下，可作为宽类别参考；分类不能代表每种冰棒的具体配方。USDA FoodData Central 可检索 water ice 等相关数据库食品记录，但不能据此推定当地商品组成。",
+      "direct": "本轮未发现冰棒成品改善疾病或长期健康结局的直接人体干预证据。水果、果汁或某种甜味剂研究不能自动当作冰棒成品证据。",
+      "specific": "“冰棒”是外形和消费习惯名称，可能覆盖水基、果汁基和含乳复合产品；需按标签区分总糖、果汁含量及配料。",
+      "safety": "有些产品含牛奶、大豆、坚果或其他过敏原；对幼儿应考虑产品大小与进食安全，遵循包装储存要求。水基或水果风味名称不保证无添加糖。",
+      "body": "冰棒常见为水基或果味冻结食品，但也可能加入果肉、乳或其他配料。Codex 把冰冻甜品中的 sorbet、sherbet 等归入宽泛的 edible ices 类别；这是分类框架，不是对每根冰棒配方的描述。本轮没有找到冰棒成品改善长期健康结局的直接人体试验，实际组成应看商品标签。",
+      "evidence_body": "现有来源主要用于宽品类分类与数据库检索（D2/D0，不能代表具体现售冰棒）；成品临床健康结局证据未建立（E-0）。",
+      "care": "查看每支份量、总糖和配料表；确认是否含奶、坚果、大豆等过敏原。水果味不等于高果汁或无添加糖。",
+      "taste_m": {
+        "甘": "糖、果汁或甜味剂可提供甜味；酸度和冻结温度会改变感官甜度。"
+      },
+      "queries": [
+        "Codex GSFA food category 03.0 edible ices sherbet sorbet official",
+        "USDA FoodData Central water ice popsicle composition query",
+        "ice pop popsicle direct randomized human health outcome trial"
+      ],
+      "search_log": [
+        "查阅 Codex GSFA 官方食品分类 03.0 对 edible ices、sherbet 和 sorbet 的分类说明。",
+        "检索 USDA FoodData Central 中 water ice 等食品记录并检索冰棒成品人体研究；未将果汁或糖研究外推到整类冰棒。"
+      ],
+      "refs": [
+        "Codex Alimentarius Commission. “Food Category System: 03.0 Edible ices, including sherbet and sorbet.” Codex General Standard for Food Additives Online Database. https://www.fao.org/gsfaonline/foods/index.html?lang=en.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: water ice. https://fdc.nal.usda.gov/food-search/?query=water%20ice. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Frequently Asked Questions: Food Allergen Labeling Guidance for Industry.” Updated 2025-03-26. https://www.fda.gov/food/food-allergensgluten-free-guidance-documents-regulatory-information/frequently-asked-questions-food-allergen-labeling-guidance-industry."
+      ],
+      "body_refs": [
+        "Codex Alimentarius Commission. “Food Category System: 03.0 Edible ices, including sherbet and sorbet.” Codex General Standard for Food Additives Online Database. https://www.fao.org/gsfaonline/foods/index.html?lang=en.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: water ice. https://fdc.nal.usda.gov/food-search/?query=water%20ice. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "Codex GSFA 在线数据库的食品分类。",
+          "population": "03.0 可食用冰类，包括 sherbet 与 sorbet 等分类。",
+          "exposure": "食品添加剂标准使用的食品分类框架。",
+          "result": "支持说明若干冻结甜品共享一个宽分类大类。",
+          "limits": "不是冰棒临床研究，也不为具体国家或商品定义所有冰棒身份。",
+          "distance": "D2（宽类别分类背景）"
+        },
+        {
+          "ref": 2,
+          "design": "官方食物组成数据库检索入口。",
+          "population": "water ice 搜索结果中的具体数据库食品条目。",
+          "exposure": "数据库中该食品条目的组成信息。",
+          "result": "可查阅指定食品记录作为组成参考。",
+          "limits": "不是当地冰棒市场抽样，也未必对应带棒商品、现售品牌或果汁冰品。",
+          "distance": "D0（仅对应具体数据库记录）"
+        }
+      ],
+      "unknowns": "不同国家/品牌冰棒配方分布和果汁含量；冰棒成品长期人体健康结局；水基与含乳类产品的可比性及份量影响。",
+      "tradition": "冰棒是现代冻结食品类别；其温度感受不直接决定传统四气，具体分类仍应等待独立判定阶段。"
+    }
+  }
+}

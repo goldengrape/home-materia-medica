@@ -1,0 +1,10 @@
+{
+  "batch_id": "08-cakes-frozen-desserts",
+  "entry_id": "cinnamon-roll",
+  "summary_ref": "references/entries/cinnamon-roll/summary.md",
+  "summary_sha256": "774d8c1c123538d5fbdedf0bfa313db2bf7383620b9012322294bb54e9a3bba2",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 肉桂卷\n\n**身份。** 本条指发酵面团卷入肉桂与甜味馅料后烘烤的甜点，可再加糖霜；不同地区 cinnamon roll、cinnamon bun 和 cinnamon swirl 产品的面团与配料并不完全相同。\n\n**组成与暴露。** Bao 等的研究比较健康成人餐后血糖/胰岛素预测指标，样品清单包括一款 Entenmann's Cinnamon Swirl Bun。它是单一商用产品在急性餐后试验框架中的一次测试，不是肉桂卷类别临床试验。 面粉和发酵方式、糖/肉桂馅、黄油、糖霜、份量、品牌及试验所用具体商品。\n\n**直接人体证据。** 研究测了指定 cinnamon swirl bun 的急性餐后反应，但并未验证所有肉桂卷或长期健康结局。单一商品结果不证明肉桂卷具有或缺乏疾病疗效。\n\n**产品/成分证据。** 论文目标是比较碳水含量与血糖负荷对餐后反应预测的价值，涵盖多类食物；肉桂卷对应的只是样品表中的一款产品。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 通常含小麦、糖，常见配方也含乳或蛋；糖霜、坚果和其他配料依商品变化。过敏原与份量需看标签。\n\n**传统来源。** 现代肉桂卷的面团、馅料与糖霜配方不对应为单一传统本草物；感官肉桂香不构成本草分类证据。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
+}

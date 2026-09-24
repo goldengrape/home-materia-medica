@@ -1,0 +1,10 @@
+8eda3cc8ba6dd26ad19734fc93065b5e067503ab8b423be36514c7f11a8a33e9  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/cheesecake.json
+c698dd056a33d4c94dae1efe552d2ee5f603ac8f67e39dc7ce635bd81f41271e  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/chiffon-cake.json
+62f936b70e8fb4f2de21281399c3ea1c6239dee84dd60208d9943c544141fcfc  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/brownie.json
+5a446f26366fa4485b909b3d50a9b50eb71b66e1222791693ed7cac976ac62a2  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/croissant.json
+f346a8d3a20e0ead69382a15394b9ed157d65e4bb482a78b7934e49d34b4727b  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/danish-pastry.json
+b16a40b5f763fd1f14b3a10b692dce974ee16cd4cc6b5f21dccf4388e09ed48f  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/cinnamon-roll.json
+6233c5cf4f671b409762a6d8babf2caa27bca1b0157d19eff00d51ba17efd5e6  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/macaron.json
+e9242479ed9f08057d364ea7b04db1255ecf4f8deea0466dfa7fe6fc318300c3  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/ice-cream.json
+bcd1255d61cad10ae625925d8dc274e541798fb3966ac9d1e13fa6e8be836ca1  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/ice-milk.json
+39e2da3fd7d5655b072848088d0d4feec8feaa07c3fa10d3b3e6888129876801  qa/jev-entry-batches/08-cakes-frozen-desserts/raw/ice-pop.json

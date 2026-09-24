@@ -1,0 +1,10 @@
+{
+  "batch_id": "08-cakes-frozen-desserts",
+  "entry_id": "danish-pastry",
+  "summary_ref": "references/entries/danish-pastry/summary.md",
+  "summary_sha256": "e1b96eb44fef84f459e0804216b1903d19ebd043435bd86eb0fce0d6308b22f6",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 丹麦酥\n\n**身份。** 本条指以折叠发酵面团和油脂制成、常带水果、卡仕达或其他馅料的丹麦式层酥点心；各地造型与配方差异大。与可颂分条。\n\n**组成与暴露。** USDA FoodData Central 可按 Danish pastry 检索到具体食品记录，但不同馅料和制作方式不代表统一商品。当前未确认具有代表性的跨品牌市场组成抽样，也未找到一般丹麦酥直接健康结局试验。 面团发酵方式、黄油/其他油脂、折叠层次、糖、馅料、表面糖霜、产品大小及地区/品牌。\n\n**直接人体证据。** 本轮未发现普通丹麦酥成品改善疾病或长期健康结局的直接人体试验。可颂或其他层酥产品的结果不能自动移植到丹麦酥。\n\n**产品/成分证据。** 数据库搜索可帮助定位具体类型；奶油馅、果酱馅、无馅和糖霜产品的营养组成不同。不得把一个条目视作整类平均值。\n\n**共享背景。** 参见 baked-sweets-base；共享结论不自动等于本成品结论。\n\n**安全。** 常见成分可能含小麦、乳、蛋；卡仕达、坚果或其他馅料会引入额外过敏原。按实际配料表与销售地标签确认。\n\n**传统来源。** 丹麦酥是现代层酥点心类别；本轮未发现可将各类现代配方对应至传统本草条目的直接资料。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\n"
+}
