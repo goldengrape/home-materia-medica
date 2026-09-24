@@ -1,0 +1,50 @@
+name: Jev Yin-Yang Vector v0.4 Pilot
+
+on:
+  push:
+    branches:
+      - feat/jev-yinyang-vector-v04
+    paths:
+      - "experiments/jev-rule-fewshot-pilot/fixtures-v0.4.json"
+      - "experiments/jev-rule-fewshot-pilot/run_pilot_v04.py"
+      - "skills/home-materia-jev-mapping/references/reasoning-rules-v0.4.md"
+      - ".github/workflows/jev-yinyang-vector-v04.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    environment: API_KEYS
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify API secret
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${JEV_API_KEY:-}" || {
+            echo "::error::JEV_API_KEY is unavailable."
+            exit 1
+          }
+          echo "JEV_API_KEY is available (value hidden)."
+
+      - name: Run Jev v0.4 synchronous vector pilot
+        env:
+          JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
+          JEV_MODEL: jev-latest
+          JEV_REPEATS: "3"
+        run: python experiments/jev-rule-fewshot-pilot/run_pilot_v04.py
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jev-yinyang-vector-v0.4
+          path: experiments/jev-rule-fewshot-pilot/results-v0.4.json
+          if-no-files-found: error
+          retention-days: 30
