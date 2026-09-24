@@ -1,0 +1,614 @@
+{
+  "batch": {
+    "id": "11-tree-nut-snacks",
+    "title": "树坚果与调味坚果",
+    "catalog_order": 11,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa plus PubMed/PMC, publisher pages, institutional repository, official food-safety guidance, standards and food-composition databases",
+    "exa_search_calls": 31,
+    "exa_hits": 145,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-11-tree-nut-snacks",
+    "identity_red_team": [
+      "夏威夷果、榛子、巴西坚果、松子仁按具体物种/属与可食种仁识别；不把不同松属、地方榛属或其他坚果的研究横向视为同种直接证据。",
+      "榛子的《本草纲目》“榛”条是历史名称记录；未证明现代 Corylus avellana 与原文所指地方种完全相同，不直接继承药性或疗效。",
+      "巴西坚果的硒含量会因个体与产地而变；整仁与部分脱脂颗粒不是同一暴露，不把小型试验剂量转成日常补硒建议。",
+      "松子仁的人体研究与松子油/分离甘油三酯研究分开；油剂或提取物的食欲结果不能写成整粒松仁效果。",
+      "盐焗、蜂蜜、糖衣、可可、辣味和混合坚果按成品类别区分；原味坚果、花生或单独可可/巧克力研究只作邻近证据。",
+      "盐与烘烤在部分坚果试验中同时改变，无法仅凭该研究拆分钠的独立效应；标签和实际份量优先于品类名。",
+      "混合坚果研究使用固定配方与替代对照，不能代表所有零售混合包，也不能把替代零食结果改写成额外加食效果。"
+    ]
+  },
+  "entries": {
+    "macadamia": {
+      "name": "夏威夷果",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "tree-nut-kernel",
+      "research_depth": "R2",
+      "shared_parent": "expanded-tree-nuts-base",
+      "identity": "本条指澳洲坚果属（Macadamia spp.，常见商业种包括 M. integrifolia 与 M. tetraphylla）可食种仁，常以原味、烘烤或调味形式销售；不包括夏威夷果油、含果仁甜点或其他坚果。",
+      "variables": "具体 Macadamia 物种与产品、原味/烘烤/盐渍、去壳种仁份量、是替代其他食物还是额外添加、研究人群的基线体重与代谢状况及干预时长。",
+      "composition": "USDA FoodData Central 可检索具体 macadamia kernel 记录；数据库中的生、烘烤或加盐样品不可当作单一市场均值。试验使用的果仁份量和配方应与商品标签分开。",
+      "direct": "2023 年一项随机交叉试验纳入 35 名腹部肥胖成人：8 周在通常饮食中加入约占每日能量 15% 的夏威夷果，另 8 周按通常饮食不吃坚果，中间洗脱 2 周。组间体重、BMI、腰围、体脂和血糖指标没有显著差异；总胆固醇与 LDL 的下降也未达显著。它是短期风险指标试验，不证明夏威夷果可治疗血脂或减重。",
+      "specific": "证据直接对应研究中的夏威夷果摄入方案，不适用于果油或糖衣/盐焗零食。试验比较的是两种饮食阶段，不可把观察到的组内变化解读为对所有人额外加吃的效果。",
+      "safety": "夏威夷果属于树坚果；对澳洲坚果或其他树坚果过敏者需避免相关暴露并核对交叉接触标示。烘烤、盐渍或糖衣产品需另看钠、糖和份量。",
+      "body": "夏威夷果的人体证据包括一项 2023 年随机交叉试验：35 名腹部肥胖成人在通常饮食中连续 8 周加入约占每日能量 15% 的夏威夷果，并与不吃坚果的饮食阶段比较。体重、腰围、体脂及血糖指标没有显著组间差异，血脂变化也未达到统计学显著。研究时间较短，不能据此宣称夏威夷果可减重或治疗血脂；烘烤、盐焗和糖衣商品也不是同一暴露。",
+      "evidence_body": "Jones 等为 D0（夏威夷果直接摄入）随机交叉试验，限 35 名腹部肥胖成人、约 15% 能量、每阶段 8 周；主要体重与血糖结局组间无显著差异，血脂变化未显著。长期疾病结局未验证（E-C）。",
+      "care": "留意树坚果过敏、交叉接触，以及调味产品的盐、糖和单次份量；短期饮食试验不能替代个体血脂或体重管理。",
+      "taste_m": {
+        "甘": "果仁通常有轻甜感与油脂香；烘烤和调味会改变感官表现。"
+      },
+      "queries": [
+        "macadamia nut randomized crossover trial adults cardiometabolic risk factors 2023 DOI",
+        "macadamia nut composition FoodData Central raw roasted exact food records",
+        "macadamia tree nut allergy official food allergen guidance"
+      ],
+      "search_log": [
+        "核对 Jones 等随机交叉试验的样本、两阶段时长、干预能量比例、洗脱期和各组间结局；保留阴性结果。",
+        "按 FoodData Central 的具体食品记录讨论组成，不把不同加工形态合并成市场平均值；未找到可映射的传统本草母条。"
+      ],
+      "refs": [
+        "Jones JL, Sabaté J, Heskey C, Oda K, Miles F, Rajaram S. “Macadamia nut effects on cardiometabolic risk factors: a randomised trial.” Journal of Nutritional Science. 2023;12:e55. DOI: https://doi.org/10.1017/jns.2023.39.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: macadamia nuts. https://fdc.nal.usda.gov/food-search/?query=macadamia%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Jones JL, Sabaté J, Heskey C, Oda K, Miles F, Rajaram S. “Macadamia nut effects on cardiometabolic risk factors: a randomised trial.” Journal of Nutritional Science. 2023;12:e55. DOI: https://doi.org/10.1017/jns.2023.39."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉饮食试验；每个饮食阶段 8 周，间隔 2 周洗脱。",
+          "population": "35 名腹部肥胖成人。",
+          "exposure": "通常饮食中加入约占每日能量 15% 的夏威夷果，与通常饮食且不摄入坚果阶段比较。",
+          "result": "体重、BMI、腰围、体脂与血糖指标无显著组间差异；总胆固醇和 LDL 的变化未达显著。",
+          "limits": "样本小、时间短、以风险指标为终点；不证明疾病预防、治疗或额外加食效果。",
+          "distance": "D0（夏威夷果种仁直接干预）"
+        }
+      ],
+      "unknowns": "更大样本和更长期的心血管事件、血糖疾病结局；不同 Macadamia 物种、盐焗及糖衣产品的独立结果。",
+      "tradition": "本轮未找到可核验的传统本草条目与现代澳洲坚果属食品直接对应；不从其他坚果继承性味、归经或功效。"
+    },
+    "hazelnut": {
+      "name": "榛子",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "tree-nut-kernel",
+      "research_depth": "R2",
+      "shared_parent": "expanded-tree-nuts-base",
+      "identity": "本条以现代商品榛子（通常为欧洲榛 Corylus avellana）可食种仁为主，含生、烘烤或轻盐产品；与其他 Corylus 物种、榛子酱、榛果巧克力及糖衣点心区分。",
+      "variables": "Corylus 物种与品种、每日克数、生/烘烤/轻盐加工、对照食物是否等能量、干预时间及参与者基线血脂。",
+      "composition": "USDA FoodData Central 提供具体榛子样品的组成记录，不能将生榛子数据套用到盐焗或榛子酱。榛子及加工商品属于树坚果，复合酱还可能含乳、可可或其他坚果。",
+      "direct": "2016 年系统综述与贝叶斯荟萃分析纳入 9 项研究、425 人，常见摄入量为 29–69 g/日，持续 28–84 天；三项随机研究的 LDL 合并估计约下降 0.150 mmol/L（95% 最高后验密度区间 −0.308 至 −0.003），总胆固醇呈趋势，甘油三酯和 BMI 未见明确效应。2022 年综述纳入 22 项干预研究、25 篇报告，提示部分心代谢指标可能改善，但作者强调研究质量与设计限制。短期指标不能说明临床事件获益。",
+      "specific": "一项 72 人随机交叉试验比较每日 30 g 生榛子与干烤、轻盐榛子，各 28 天。多数体成分、血压、总胆固醇、LDL、载脂蛋白和血糖指标无差异；烘烤加轻盐阶段 HDL-C 与甘油三酯较低。烘烤和盐同时改变，不能把差异归因于钠或单独烘烤。",
+      "safety": "榛子是树坚果过敏原；轻盐、糖衣或巧克力包裹产品的钠、糖和配料不同。传统“榛”名下的历史植物身份尚不能与现代 Corylus avellana 完全互证。",
+      "body": "榛子研究以短期血脂和代谢指标为主。2016 年荟萃分析纳入 9 项研究、425 人；三项随机研究合并后 LDL 估计小幅下降，但甘油三酯与 BMI 没有明确变化。2022 年系统综述也指出研究存在设计和质量限制。另有 72 人交叉试验比较生榛子与干烤、轻盐榛子，多数指标无差异，且加工与盐同时改变，无法分离各自作用。历史本草“榛”条与现代欧洲榛的物种对应仍有不确定性。",
+      "evidence_body": "Tey 等为 D0（榛子摄入）系统综述，随机研究的 LDL 合并结果较小且区间接近零；Bamberger 等综述提示部分指标但保留研究质量限制。加工比较同时改变烘烤与盐，结果不支持单独归因（E-C）。",
+      "care": "核对树坚果过敏信息；轻盐、糖衣及复合酱类应按具体标签判断。古籍“榛”条只作为历史名物线索，不将其传统属性直接写成现代欧洲榛的功效。",
+      "taste_m": {
+        "甘": "榛仁有坚果香和油脂感；烘烤可增强香气，调味品则另有盐或糖。"
+      },
+      "queries": [
+        "hazelnut systematic review Bayesian meta-analysis LDL randomized studies DOI 2016",
+        "hazelnut cardiometabolic risk systematic review 2022 DOI",
+        "raw versus dry roasted lightly salted hazelnuts randomized crossover trial 72 participants DOI",
+        "Bencao Gangmu volume 30 zhen hazelnut historical botanical identity"
+      ],
+      "search_log": [
+        "核对 2016 年荟萃分析纳入数、摄入范围、随机研究 LDL 合并估计与区间；同时检视 2022 年综述的研究数和局限。",
+        "核查 72 人生榛子/干烤轻盐交叉试验；标明烘烤与盐捆绑。查阅《本草纲目》卷三十“榛”条，保留历史条名并对现代物种对应加注。"
+      ],
+      "refs": [
+        "Tey SL, Brown R, Gray A, Chisholm A, Delahunty C. “Effects of Hazelnut Consumption on Blood Lipids and Body Weight: A Systematic Review and Bayesian Meta-Analysis.” Nutrients. 2016;8(12):747. DOI: https://doi.org/10.3390/nu8120747.",
+        "Bamberger C, Rossmeier A, Lechner K, et al. “Effects of Hazelnut Consumption on Cardiometabolic Risk Factors and Acceptance: A Systematic Review.” International Journal of Environmental Research and Public Health. 2022;19(5):2880. DOI: https://doi.org/10.3390/ijerph19052880.",
+        "Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4.",
+        "李时珍。《本草纲目》卷三十“榛”条（转引宋《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷30》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷30。访问日期：2026-09-24。",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: hazelnuts. https://fdc.nal.usda.gov/food-search/?query=hazelnuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Tey SL, Brown R, Gray A, Chisholm A, Delahunty C. “Effects of Hazelnut Consumption on Blood Lipids and Body Weight: A Systematic Review and Bayesian Meta-Analysis.” Nutrients. 2016;8(12):747. DOI: https://doi.org/10.3390/nu8120747.",
+        "Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4.",
+        "李时珍。《本草纲目》卷三十“榛”条（转引宋《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷30》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷30。访问日期：2026-09-24。"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与贝叶斯荟萃分析；9 项研究、425 名参与者。",
+          "population": "纳入研究的成人参与者；研究设计与人群不完全一致。",
+          "exposure": "榛子约 29–69 g/日，28–84 天。",
+          "result": "三项随机研究的 LDL 合并估计约 −0.150 mmol/L（95% HPD −0.308 至 −0.003）；总胆固醇呈趋势，甘油三酯和 BMI 未见明确效应。",
+          "limits": "干预短、研究数有限，合并结果对纳入研究与对照饮食敏感；未评估临床事件。",
+          "distance": "D0（榛子摄入证据的系统综述）"
+        },
+        {
+          "ref": 3,
+          "design": "随机交叉试验；每条件 28 天。",
+          "population": "72 名成人。",
+          "exposure": "每日 30 g 生榛子与干烤、轻盐榛子交叉比较。",
+          "result": "多数体成分、血压、血脂、载脂蛋白和血糖指标无差异；烘烤轻盐阶段 HDL-C 与甘油三酯较低。",
+          "limits": "盐和烘烤同时变化，无法识别单因素效应；时间短，不代表所有加工榛子。",
+          "distance": "D0（榛子；特定加工对照）"
+        },
+        {
+          "ref": 4,
+          "design": "古籍条目与转引文献核对。",
+          "population": "历史本草记载，不是现代临床人群。",
+          "exposure": "《本草纲目》卷三十“榛”条所引古代名物与性味记述。",
+          "result": "原文记有榛仁“甘平无毒”等描述。",
+          "limits": "历史名称的种属范围与现代 Corylus avellana 未建立确定对应；不可视为现代临床疗效证据。",
+          "distance": "传统来源（身份映射有限）"
+        }
+      ],
+      "unknowns": "现代欧洲榛不同品种和加工形态的长期临床结局；古籍“榛”与 Corylus avellana 的可靠分类对应；不同树坚果间的头对头结果。",
+      "tradition": "《本草纲目》卷三十“榛”条称仁甘平无毒，并转述益气力等传统说法；这里仅作为原典记载。尚未证实其所指与现代 Corylus avellana 完全相同，因此正文不将传统功效移作现代榛子结论。"
+    },
+    "brazil-nut": {
+      "name": "巴西坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "tree-nut-kernel",
+      "research_depth": "R2",
+      "shared_parent": "expanded-tree-nuts-base",
+      "identity": "本条指巴西栗属（Bertholletia excelsa）的可食种仁，即商品巴西坚果；与巴西坚果油、部分脱脂果仁颗粒和硒补充剂区分。",
+      "variables": "单粒/每日克数、产地与批次带来的硒含量差异、整仁或部分脱脂颗粒、基线硒状态、干预时长和是否同时使用补充剂。",
+      "composition": "USDA FoodData Central 提供具体巴西坚果食品记录。NIH Office of Dietary Supplements 指出一颗巴西坚果约含 68–91 微克硒，实际含量可变；这不是固定剂量，不能用来精准换算补充剂。",
+      "direct": "一项 2013 年随机交叉急性研究仅纳入 10 名健康志愿者，比较单次 0、5、20、50 g 巴西坚果摄入；血浆硒在数小时内上升，部分血脂指标在 9 小时出现变化。2022 年随机试验系统综述/荟萃分析纳入 8 篇文章，发现硒状态与谷胱甘肽过氧化物酶上升，但血脂合并效应不显著。另有 91 名高血压和血脂异常者摄入每日 13 g 部分脱脂果仁颗粒 12 周，报告硒与 GPx3 上升、氧化 LDL 下降；这不是整粒坚果试验。",
+      "specific": "巴西坚果富硒，但单粒含量有较大自然差异。小型急性研究的短时生物标志物变化不能证明疾病预防；部分脱脂颗粒结果不能直接迁移到整仁。NIH 列出的美国成人硒推荐量为 55 微克/日、可耐受最高摄入量为 400 微克/日，含食物和补充剂总摄入；这些数值是参考标准，不是本条给出的个体剂量建议。",
+      "safety": "硒过量可有害，巴西坚果硒含量不固定；不要把少数试验的高摄入方案变成长期补硒法，尤其需计入复合补充剂及其他食物来源。树坚果过敏者应避免并核对标签。",
+      "body": "巴西坚果是硒含量较高但个体差异明显的树坚果。NIH 资料估计单颗约含 68–91 微克硒；美国成人硒推荐摄入量为 55 微克/日、可耐受最高摄入量为 400 微克/日，均应理解为全部来源的参考值。人体研究规模有限：10 人急性研究观察到短时血硒和部分血脂指标变化；对随机试验的荟萃分析发现硒状态指标改善，但血脂合并效应不显著。另一项 12 周研究使用部分脱脂果仁颗粒，不能等同于整粒巴西坚果。不要将研究方案直接当作补硒剂量。",
+      "evidence_body": "随机证据主要显示硒状态/抗氧化标记变化；2022 年荟萃分析未见显著血脂合并效应。10 人急性试验与部分脱脂颗粒试验均受样本、形态和短期代理终点限制；巴西坚果不等同于硒补充剂（E-C）。",
+      "care": "关注硒总摄入和个体过敏情况；单粒硒含量变化大，勿按试验剂量自行长期补充。食物来源与补充剂、整仁与脱脂颗粒要分别判断。",
+      "taste_m": {
+        "甘": "种仁有坚果香、油脂感和轻甜感；烘烤或盐渍会改变风味。"
+      },
+      "queries": [
+        "Brazil nut randomized acute crossover 0 5 20 50 g healthy volunteers DOI 2013",
+        "Brazil nuts selenium status lipids meta-analysis randomized clinical trials 2022 DOI",
+        "Brazil nut partially defatted granulate 13 g 91 hypertensive dyslipidemic 12 weeks DOI",
+        "NIH ODS selenium Brazil nuts 68 91 mcg RDA UL official"
+      ],
+      "search_log": [
+        "核对 2013 年 10 人交叉研究各次剂量、采样时点与急性指标，避免把短期血脂变化描述为临床获益。",
+        "核对 2022 年随机研究综述的纳入数及硒/血脂合并结局；另外区分 91 人、13 g/日、部分脱脂颗粒试验和整仁。",
+        "核对 NIH ODS 的每颗估算、成人 RDA 与 UL，将其明确为总摄入参考并提示天然含量变异。"
+      ],
+      "refs": [
+        "Thomson CD, Chisholm A, McLachlan SK, Campbell JM. “A Single Consumption of High Amounts of the Brazil Nuts Improves Lipid Profile of Healthy Volunteers.” Journal of Nutrition and Metabolism. 2013;2013:653185. DOI: https://doi.org/10.1155/2013/653185.",
+        "Mendes JF, et al. “Effect of Brazil Nuts on Selenium Status, Blood Lipids, and Biomarkers of Oxidative Stress and Inflammation: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.” Antioxidants. 2022;11(2):403. DOI: https://doi.org/10.3390/antiox11020403.",
+        "Huguenin GV, et al. “Improvement of antioxidant status after Brazil nut intake in hypertensive and dyslipidemic subjects.” Nutrition Journal. 2015;14:61. DOI: https://doi.org/10.1186/s12937-015-0043-y.",
+        "National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Consumers.” https://ods.od.nih.gov/factsheets/Selenium-Consumer/. Accessed 2026-09-24.",
+        "National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Health Professionals.” https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/. Accessed 2026-09-24.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: Brazil nuts. https://fdc.nal.usda.gov/food-search/?query=brazil%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Mendes JF, et al. “Effect of Brazil Nuts on Selenium Status, Blood Lipids, and Biomarkers of Oxidative Stress and Inflammation: A Systematic Review and Meta-Analysis of Randomized Clinical Trials.” Antioxidants. 2022;11(2):403. DOI: https://doi.org/10.3390/antiox11020403.",
+        "Huguenin GV, et al. “Improvement of antioxidant status after Brazil nut intake in hypertensive and dyslipidemic subjects.” Nutrition Journal. 2015;14:61. DOI: https://doi.org/10.1186/s12937-015-0043-y.",
+        "National Institutes of Health, Office of Dietary Supplements. “Selenium — Fact Sheet for Consumers.” https://ods.od.nih.gov/factsheets/Selenium-Consumer/. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "四条件随机交叉急性摄入研究，采样随访至 30 天。",
+          "population": "10 名健康志愿者。",
+          "exposure": "单次 0、5、20 或 50 g 巴西坚果。",
+          "result": "血浆硒在 6 小时升高；研究报告 9 小时后 20/50 g 条件下部分 LDL/HDL 指标变化。",
+          "limits": "样本极小、急性测量与多次比较；不能证明持续血脂改善或疾病预防。",
+          "distance": "D0（整粒巴西坚果；单次急性摄入）"
+        },
+        {
+          "ref": 2,
+          "design": "随机临床试验系统综述与荟萃分析；纳入 8 篇文章。",
+          "population": "随机试验中的不同成人研究人群。",
+          "exposure": "不同剂量和时长的巴西坚果干预。",
+          "result": "硒状态与谷胱甘肽过氧化物酶指标上升；血脂合并效应未达显著。",
+          "limits": "纳入试验数量少、剂量及人群异质，未建立临床事件获益。",
+          "distance": "D0（巴西坚果随机干预综述）"
+        },
+        {
+          "ref": 3,
+          "design": "12 周干预并含 4 周洗脱安排的临床研究。",
+          "population": "91 名高血压或血脂异常受试者。",
+          "exposure": "每日 13 g 部分脱脂巴西坚果颗粒，约提供 227.5 µg 硒/日。",
+          "result": "硒状态、GPx3 上升，氧化 LDL 下降。",
+          "limits": "加工形态为部分脱脂颗粒而非整粒坚果；不等同普通食用建议，短期代理指标。",
+          "distance": "D1（同源果仁的部分脱脂颗粒）"
+        }
+      ],
+      "unknowns": "整粒巴西坚果长期食用对临床疾病事件的影响；不同产地、批次和份量下的硒摄入分布；哪些人群最易达到过量摄入。",
+      "tradition": "本轮未找到可核验的传统本草食材与 Bertholletia excelsa 这一现代商品身份可靠对应；不把传统松子或其他坚果条目移植到巴西坚果。"
+    },
+    "pine-nut-kernels": {
+      "name": "松子仁",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "tree-nut-kernel",
+      "research_depth": "R2",
+      "shared_parent": "expanded-tree-nuts-base",
+      "identity": "本条指松属（Pinus spp.）可食种仁这一商品类别，具体来源可能包括不同松种；不将松子油、韩国产 pinolenic-acid 产品、松香或松塔整体作为同一食品。",
+      "variables": "松属物种、产地与去壳仁、食用克数、烘烤/盐渍、整仁与油或脂肪酸提取物、研究设计和比较物。",
+      "composition": "松子仁的组成随物种和商品形态变化。USDA FoodData Central 可查具体 pine nuts 记录，但单条记录不代表所有松属种仁；松子油或提取物不适用整仁营养数值。",
+      "direct": "本轮未找到可代表整粒可食松子仁的稳健人体随机试验。可检索到的研究主要考察韩国产松子油或分离甘油三酯：2008 年 42 名超重女性试验中，2 g 游离脂肪酸 PinnoThin 组午餐摄入克数比橄榄油对照低约 9%，主观食欲评分没有相应变化；2011 年交叉研究对松子甘油三酯未见饱腹感或能量摄入差异。这些不是整仁证据。",
+      "specific": "《本草纲目》卷三十一“海松子”记载并区分新罗海松与本土松类；该历史名物不能泛化成所有现代松属商品。松子油和 pinolenic acid 研究的暴露距离为提取物/单体，不能写为松子仁抑制食欲或减重。",
+      "safety": "松仁可引起个体过敏；商品来源与物种并非总在标签上明确。烘烤或调味产品需查看配料、盐及份量；食用整仁与服用松子油补充剂应分开。",
+      "body": "松子仁的人体健康研究有限。本轮检索未找到能代表整粒可食松仁的稳健随机试验；已有食欲研究主要使用韩国产松子油或其甘油三酯提取物。一项 42 名超重女性研究发现特定游离脂肪酸油剂组午餐摄入克数较对照少约 9%，但主观食欲未相应改变；另一项研究没有发现松子甘油三酯改善饱腹感或能量摄入。油剂结果不能转写为整粒松子仁的减重功效。古籍“海松子”也指向特定历史名物，不能套用于所有现代松属种仁。",
+      "evidence_body": "现有人体资料属于 D3（松子油/分离甘油三酯），对整粒松仁没有直接外推效力；一项小型油剂研究与另一项无显著结果研究方向不一。整仁临床效应证据未建立（E-0）。",
+      "care": "区分松子仁与松子油或提取物；不要把油剂食欲研究当作整仁减重依据。查明具体商品标签、树种信息及过敏提示。",
+      "taste_m": {
+        "甘": "松仁有脂香和轻甜感；烘烤可加强香气，盐焗品另有咸味。"
+      },
+      "queries": [
+        "whole pine nut kernel randomized human trial versus pine nut oil appetite DOI",
+        "Korean pine nut oil PinnoThin randomized trial lunch intake 42 women DOI",
+        "Korean pine nut triacylglycerol no effects satiety energy intake trial DOI",
+        "Bencao Gangmu volume 31 haisongzi new Silla pine source"
+      ],
+      "search_log": [
+        "定向查找整仁人体试验，并将结果与松子油、pinolenic acid 或单体提取物区分；未发现可直接支持整仁临床效果的试验。",
+        "核对 2008 年 42 人油剂研究与 2011 年甘油三酯研究各自产品、暴露量与结果，保留不一致及间接性。",
+        "查阅《本草纲目》卷三十一“海松子”条，记录其历史来源限定，不泛化到现代全部松种。"
+      ],
+      "refs": [
+        "Hughes GM, Boyland EJ, Williams NJ, Mennen L, Scott C, Kirkham TC, Harrold JA, Halford JCG, Blundell JE, Rogers PJ. “The effect of Korean pine nut oil (PinnoThin™) on food intake, feeding behaviour and appetite: A double-blind placebo-controlled trial.” Lipids in Health and Disease. 2008;7:6. DOI: https://doi.org/10.1186/1476-511X-7-6.",
+        "“No effects of Korean pine nut triacylglycerol on satiety and energy intake.” Nutrition & Metabolism. 2011;8:79. DOI: https://doi.org/10.1186/1743-7075-8-79.",
+        "李时珍。《本草纲目》卷三十一“海松子”条（引《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷31》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷31。访问日期：2026-09-24。",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: pine nuts. https://fdc.nal.usda.gov/food-search/?query=pine%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Hughes GM, Boyland EJ, Williams NJ, Mennen L, Scott C, Kirkham TC, Harrold JA, Halford JCG, Blundell JE, Rogers PJ. “The effect of Korean pine nut oil (PinnoThin™) on food intake, feeding behaviour and appetite: A double-blind placebo-controlled trial.” Lipids in Health and Disease. 2008;7:6. DOI: https://doi.org/10.1186/1476-511X-7-6.",
+        "“No effects of Korean pine nut triacylglycerol on satiety and energy intake.” Nutrition & Metabolism. 2011;8:79. DOI: https://doi.org/10.1186/1743-7075-8-79.",
+        "李时珍。《本草纲目》卷三十一“海松子”条（引《开宝本草》）。维基文库：《本草纲目（四库全书本）/卷31》。https://zh.wikisource.org/zh-hans/本草綱目_(四庫全書本)/卷31。访问日期：2026-09-24。"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲、安慰剂对照人体试验。",
+          "population": "42 名超重女性志愿者。",
+          "exposure": "研究比较特定剂量韩国产松子油产品与橄榄油对照。",
+          "result": "2 g 游离脂肪酸 PinnoThin 组午餐摄入克数约低 9%；主观食欲评分未见相应改变。",
+          "limits": "产品是油剂而非松子仁，样本有限，急性进食终点不能证明体重下降。",
+          "distance": "D3（松子油提取物）"
+        },
+        {
+          "ref": 2,
+          "design": "人体试验，交叉阶段研究。",
+          "population": "两个阶段共约 33 与 34 名女性参与者。",
+          "exposure": "韩国产松子甘油三酯不同剂量，与安慰剂比较。",
+          "result": "未发现饱腹感评分或能量摄入的显著改善。",
+          "limits": "研究材料为脂肪提取物，不是整粒种仁；小样本与短期终点。",
+          "distance": "D3（松子甘油三酯）"
+        },
+        {
+          "ref": 3,
+          "design": "历史本草条目核对。",
+          "population": "历史名物记载。",
+          "exposure": "卷三十一“海松子”条所述新罗海松等。",
+          "result": "原文区分海松子与中国本土松类，并记其仁的性味。",
+          "limits": "历史植物身份不等同于所有现代 Pinus 商品；不是临床证据。",
+          "distance": "传统来源（物种范围有限）"
+        }
+      ],
+      "unknowns": "整粒松子仁对饱腹感、体重和心代谢结局的直接人体试验；不同松属物种与加工形态的组成差异及长期安全资料。",
+      "tradition": "《本草纲目》卷三十一“海松子”条记载新罗海松与松子仁，并与中国松类作区分。该材料只支持历史名物记录，不足以把其性味或功效泛化到所有现代 Pinus spp. 松子仁。"
+    },
+    "salted-nuts": {
+      "name": "盐焗坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "seasoned-tree-nuts",
+      "research_depth": "R1",
+      "shared_parent": "seasoned-nuts-base",
+      "identity": "本条指以盐或含钠调味料处理的整粒或切碎树坚果零食，常见烘烤、干焙或油焙产品；不同坚果、盐量和涂层配方差异很大，不含盐味薯片或单纯原味坚果。",
+      "variables": "坚果种类、每份克数、钠来源及含量、干焙/油焙、调味粉与涂层、是否同时加糖、单次摄入及替代的零食。",
+      "composition": "USDA FoodData Central 的具体 salted nuts 记录可作样品参照，不是所有盐焗坚果的统一组成。应读取包装每份钠、能量、脂肪及配料；相同坚果原味与盐焗商品不可共用营养数值。",
+      "direct": "没有找到能代表整个盐焗树坚果品类、并单独检验盐对长期血压或临床事件的直接试验。72 人榛子交叉试验比较生榛子与干烤轻盐榛子，各 28 天，多数血压和血脂指标无差异；HDL-C 与甘油三酯的观察差异无法拆分为盐的作用，因为烘烤与轻盐同时改变。",
+      "specific": "盐焗坚果类别由多种坚果、钠水平和调味配方组成。某个烘烤轻盐榛子试验或单个 FoodData Central 记录，不足以推出所有盐焗坚果的健康效应或含钠量。",
+      "safety": "留意每份钠与实际食用量，尤其在需要控制钠摄入时；树坚果过敏和交叉接触风险仍在。盐焗字样不能说明钠含量，查看营养标签更可靠。",
+      "body": "盐焗坚果不是固定配方，钠含量会随坚果种类、盐量和调味方式变化，应以商品营养标签和实际份量为准。本轮未找到直接检验“盐焗树坚果”整类长期健康结局的研究。一个榛子交叉试验同时比较了烘烤与轻盐处理；多数指标没有差异，少数血脂指标的差异无法分离盐和烘烤各自作用。该研究不能证明盐焗坚果会改善血脂，也不能代表其他坚果品种。",
+      "evidence_body": "本条成品类别的临床结局证据未建立（E-0）；Tey 等研究是 D1（单一榛子品种的烘烤+轻盐组合），无法隔离钠效应。食品组成数据库仅提供具体产品记录（D0），不等同疗效证据。",
+      "care": "优先查看每份钠、份量和配料；需要限钠者按个人饮食方案选择。若有树坚果过敏，应核对坚果种类及共线生产信息。",
+      "taste_m": {
+        "甘": "坚果本身可有轻甜和油脂香；盐焗产品的主要感官差异来自盐与烘烤，不能据此判定传统药味。"
+      },
+      "queries": [
+        "salted roasted hazelnuts randomized crossover 72 adults sodium blood pressure DOI",
+        "salted tree nuts direct human clinical trial blood pressure category",
+        "USDA FoodData Central salted mixed nuts sodium composition",
+        "FDA tree nut food allergy labeling official"
+      ],
+      "search_log": [
+        "检索盐渍/烘烤坚果人体研究，核对 72 人榛子试验及其同时改变的烘烤、轻盐因素；不把其结果独立归于钠。",
+        "检索盐焗树坚果品类的直接临床研究，未找到可代表整类的长期试验；用 USDA 具体样品记录与商品标签提示解释组成差异。"
+      ],
+      "refs": [
+        "Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: salted nuts. https://fdc.nal.usda.gov/food-search/?query=salted%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Tey SL, Brown RC, Chisholm AW, Delahunty CM. “Do dry roasting, lightly salting nuts affect their cardioprotective properties and acceptability?” European Journal of Nutrition. 2016. DOI: https://doi.org/10.1007/s00394-015-1150-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉试验；两种产品各 28 天。",
+          "population": "72 名成人。",
+          "exposure": "每日 30 g 生榛子与干烤、轻盐榛子比较。",
+          "result": "多数血压、体成分和血脂指标未见差异；HDL-C 与甘油三酯在烘烤轻盐条件下较低。",
+          "limits": "烘烤和盐同时变化，不能区分盐的独立效果；特定榛子和轻盐处理，非盐焗坚果类别研究。",
+          "distance": "D1（单一榛子产品的加工比较）"
+        }
+      ],
+      "unknowns": "不同坚果品种和盐水平下钠摄入的市场分布；钠与烘烤、油焙、调味粉组合的独立人体效应；不同份量长期摄入结局。",
+      "tradition": "盐焗是现代加工类别，本轮未发现可将其作为整体对应到传统本草条目的原始依据；不把原味坚果的传统记载转写为盐焗成品属性。"
+    },
+    "honey-roasted-nuts": {
+      "name": "蜂蜜坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "seasoned-tree-nuts",
+      "research_depth": "R1",
+      "shared_parent": "seasoned-nuts-base",
+      "identity": "本条指以蜂蜜、糖浆或含糖蜂蜜风味涂层包裹/调味的树坚果零食，常经烘烤；不同商品可能使用蜂蜜、蔗糖、油、盐或香料。与蜂蜜单独食用、蜂蜜花生及原味坚果区分。",
+      "variables": "坚果树种、蜂蜜和其他糖浆比例、涂层厚度、油盐添加、烘烤程度、每份大小及是否替代其他零食。",
+      "composition": "商品配方并非统一；蜂蜜风味名称不能说明真实蜂蜜比例或总糖。FoodData Central 只能提供匹配到的具体产品记录，需按包装配料与营养标签解释。",
+      "direct": "未找到直接比较蜂蜜涂层树坚果与相同原味坚果、并能分离涂层效果的临床试验。2014 年 151 人、每日 42 g 花生、12 周的随机试验比较不同调味/风味安排；花生是豆科食品而非树坚果，且不等同蜂蜜坚果成品，最多说明该研究剂量与产品限定下未发现单一调味对多数结局的差异。",
+      "specific": "调味花生研究与蜂蜜涂层树坚果在植物分类、基底、涂层和配方上均有距离，不能用其证明蜂蜜坚果有或没有特定健康效果。蜂蜜中的糖仍计入成品总糖。",
+      "safety": "查看总糖、钠、能量及配料；蜂蜜并不使糖衣坚果自动成为低糖产品。树坚果过敏者需避免相关果仁并留意交叉接触。",
+      "body": "蜂蜜坚果通常含坚果、蜂蜜或糖浆涂层，部分产品还加入油、盐和其他糖。标签上的“蜂蜜”风味不代表蜂蜜是唯一甜味来源，也不能据此判断总糖。本轮没有找到能直接比较蜂蜜涂层树坚果与同种原味坚果的临床试验。已有调味花生试验研究的是豆科花生与特定风味安排，不能转作蜂蜜树坚果的成品证据。",
+      "evidence_body": "蜂蜜涂层树坚果的直接临床证据未建立（E-0）。2014 年花生风味随机试验为 D2（豆科基底且配方不同），不据此推断蜂蜜坚果结局；配料和糖含量应回到具体产品标签。",
+      "care": "核对是否含真实蜂蜜、其他糖浆、油和盐，并查看每份总糖与能量；树坚果过敏需依包装标识和交叉接触信息处理。",
+      "taste_m": {
+        "甘": "蜂蜜或糖浆涂层增加甜味，烘烤坚果则带坚果香；具体甜度由配方决定。"
+      },
+      "queries": [
+        "honey roasted tree nuts direct human randomized trial composition health outcomes",
+        "randomized peanut flavorings trial 151 adults 42 g 12 weeks DOI",
+        "honey roasted nuts USDA FoodData Central nutrition product composition",
+        "honey added sugars labeling FDA consumer"
+      ],
+      "search_log": [
+        "检索蜂蜜烤制树坚果直接人体试验与组成资料；未找到能隔离蜂蜜涂层作用的树坚果临床研究。",
+        "核对花生调味随机试验样本与剂量，将花生明确列为邻近/非树坚果证据，不把它写成蜂蜜坚果效果。"
+      ],
+      "refs": [
+        "“A randomized trial on the effects of flavorings on the health benefits of daily peanut consumption.” The American Journal of Clinical Nutrition. 2014;99(6):1201–1212. DOI: https://doi.org/10.3945/ajcn.113.069401.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: honey roasted nuts. https://fdc.nal.usda.gov/food-search/?query=honey%20roasted%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "“A randomized trial on the effects of flavorings on the health benefits of daily peanut consumption.” The American Journal of Clinical Nutrition. 2014;99(6):1201–1212. DOI: https://doi.org/10.3945/ajcn.113.069401."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机饮食干预，12 周。",
+          "population": "151 名参与者。",
+          "exposure": "每日 42 g 花生；比较单一风味与多风味安排。",
+          "result": "不同风味组对多数体重、体脂和血液指标未见差异；三种风味安排组体重增加较单一风味组多。",
+          "limits": "花生属于豆科而非树坚果；并未检验蜂蜜涂层树坚果，结果不能按配方外推。",
+          "distance": "D2（调味花生，非树坚果）"
+        }
+      ],
+      "unknowns": "蜂蜜涂层树坚果的代表性配方、添加糖分布及与原味同种坚果比较的直接人体结局；风味偏好对长期摄入量的影响。",
+      "tradition": "本轮未找到作为现代蜂蜜涂层坚果整体的传统本草对应；蜂蜜与坚果各自的传统记载不能合并成现代复合产品的药性或疗效。"
+    },
+    "sugar-coated-nuts": {
+      "name": "糖衣坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "seasoned-tree-nuts",
+      "research_depth": "R1",
+      "shared_parent": "seasoned-nuts-base",
+      "identity": "本条指坚果表面经糖、糖浆或糖衣形成甜味涂层的零食，可为杏仁、花生或其他坚果；本条研究重点为树坚果糖衣商品。与原味坚果、蜂蜜烤制、糖果中的坚果碎和坚果派区分。",
+      "variables": "坚果种类、糖衣种类与厚度、是否另加油/盐/色素、每份克数、整粒或碎粒形态以及实际摄入量。",
+      "composition": "USDA FoodData Central 的 Candies, sugar-coated almonds（FDC ID 170656）是一条具体样品记录，按每 100 g 报告约 465 kcal、68.3 g 碳水化合物、62.5 g 总糖、17.9 g 脂肪和 10 g 蛋白质；不能视为所有糖衣坚果的平均组成。",
+      "direct": "本轮未找到直接比较糖衣树坚果与同种原味坚果的长期人体临床试验。具体商品数据库记录可描述配方营养，但不证明其健康结局。",
+      "specific": "糖衣产品的能量和糖来自涂层及坚果本身，具体比例随品牌和工艺改变。单条美国数据库的糖衣杏仁记录不能代表糖衣腰果、榛子或混合坚果。",
+      "safety": "留意总糖、能量与份量；对树坚果过敏者需确认果仁种类及交叉接触。包装上“坚果”或“糖衣”类别名称不代替营养标签。",
+      "body": "糖衣坚果的营养组成取决于坚果种类与涂层量。USDA FoodData Central 的一个糖衣杏仁记录（FDC ID 170656）每 100 g 报告约 62.5 g 总糖和 465 kcal，只能描述该记录样品，不能当成整个品类均值。本轮未找到比较糖衣树坚果与同种原味坚果的直接长期临床试验；数据库组成信息也不是健康效应证据。",
+      "evidence_body": "直接成品临床结局未建立（E-0）。FDC ID 170656 为 D0（一个具体糖衣杏仁营养记录），不是市场代表性抽样或人体干预；不由营养成分单独推导临床结果。",
+      "care": "按包装每份核对总糖、能量和果仁种类；若有坚果过敏，注意配料及共线生产提示。",
+      "taste_m": {
+        "甘": "糖衣增加甜味和脆壳口感，坚果种仁本身仍提供油脂香；糖衣厚薄影响实际甜度。"
+      },
+      "queries": [
+        "USDA FDC sugar-coated almonds FDC 170656 nutrients",
+        "sugar coated tree nuts clinical trial compare plain nuts human",
+        "sugar-coated almonds food composition product records FDA tree nut allergy"
+      ],
+      "search_log": [
+        "查询 USDA FoodData Central 的糖衣杏仁具体记录并保留 FDC ID、每 100 g 营养数值，限定为单条样品。",
+        "检索糖衣树坚果对照原味坚果的人体研究，未找到可代表该成品类别的直接临床结局研究。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Candies, sugar-coated almonds.” FoodData Central, FDC ID 170656. https://fdc.nal.usda.gov/food-details/170656/nutrients. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “Candies, sugar-coated almonds.” FoodData Central, FDC ID 170656. https://fdc.nal.usda.gov/food-details/170656/nutrients. Accessed 2026-09-24."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品成分数据库中的具体食品记录。",
+          "population": "FoodData Central 中登记的糖衣杏仁样品。",
+          "exposure": "以每 100 g 数据描述该条产品记录。",
+          "result": "记录约含 465 kcal、68.3 g 碳水化合物、62.5 g 总糖、17.9 g 脂肪和 10 g 蛋白质。",
+          "limits": "单个样品/记录，不代表不同坚果、品牌或糖衣厚度；不是人体干预证据。",
+          "distance": "D0（单个糖衣杏仁数据库记录）"
+        }
+      ],
+      "unknowns": "糖衣坚果不同坚果基底与配方的市场分布；同种原味与糖衣产品的直接长期比较；消费者实际份量与摄入频率。",
+      "tradition": "糖衣坚果是现代复合加工食品，本轮未找到可对应为传统本草整体条目的原始来源；不将坚果或糖各自传统记录合并外推。"
+    },
+    "cocoa-coated-nuts": {
+      "name": "可可坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "seasoned-tree-nuts",
+      "research_depth": "R1",
+      "shared_parent": "seasoned-nuts-base",
+      "identity": "本条指树坚果表面裹有可可粉、巧克力或复合可可糖衣的零食，基底与外层配方因商品而异；不包括单独可可粉、巧克力、坚果酱或将杏仁和黑巧克力分开食用。",
+      "variables": "坚果种类、可可粉与巧克力含量、糖和乳成分、涂层厚度、烘烤/油脂处理、份量与替代对照。",
+      "composition": "可可坚果的能量、糖、脂肪和乳成分由具体涂层及果仁比例决定。FoodData Central 查询结果按单一匹配产品解释；杏仁加可可/巧克力的喂养试验并非可可包裹杏仁商品。",
+      "direct": "未找到直接检验可可涂层树坚果整体的随机临床试验。2017 年一项随机控制喂养交叉试验随机纳入 48 人、31 人完成；比较不加食品、每日 42.5 g 杏仁、18 g 可可粉加 43 g 黑巧克力，以及杏仁与巧克力/可可组合，各阶段 4 周并设 2 周间隔。它检验分开提供的成分与组合，不是可可包裹坚果的涂层试验。",
+      "specific": "该试验不能分离可可、黑巧克力、杏仁及食品组合的独立作用，也不能转写为可可坚果成品疗效。更不能将巧克力或可可中的成分研究泛化到所有包衣零食。",
+      "safety": "核对总糖、饱和脂肪、乳和树坚果过敏原；可可或黑巧克力名称不意味着产品低糖或高可可含量。",
+      "body": "可可坚果的实际营养组成由坚果种类、糖衣、巧克力和其他配料共同决定。本轮没有找到直接测试可可涂层树坚果成品的随机临床试验。2017 年的随机喂养研究将杏仁与可可粉/黑巧克力作为不同条件或组合提供，虽然研究了心代谢指标，但不是可可包衣商品，也无法分离涂层本身的作用。阅读此类零食应以具体商品配料和营养标签为准。",
+      "evidence_body": "可可涂层树坚果直接证据未建立（E-0）。Lee 等喂养试验为 D2/D3（杏仁与可可/黑巧克力分开提供或组合），不等同涂层产品；不把成分组合结论改写为可可坚果疗效。",
+      "care": "查看糖、饱和脂肪、乳制品与坚果过敏信息及每份大小；涂层商品和原味果仁的成分、份量均不同。",
+      "taste_m": {
+        "甘": "坚果香与可可/巧克力苦甜并存，甜度取决于糖衣和巧克力配方。"
+      },
+      "queries": [
+        "cocoa coated nuts direct randomized clinical trial human health outcomes",
+        "dark chocolate almonds randomized controlled feeding trial 48 31 DOI 2017",
+        "USDA FoodData Central cocoa covered almonds product composition",
+        "FDA food allergy tree nuts milk labeling"
+      ],
+      "search_log": [
+        "检索可可包衣树坚果成品临床试验，未找到直接研究。",
+        "核对 Lee 等 2017 控制喂养试验的随机/完成样本、四个处理、摄入剂量和周期；明确其成分组合而非涂层商品。"
+      ],
+      "refs": [
+        "Lee Y, Berryman CE, West SG, et al. “Effects of Dark Chocolate and Almonds on Cardiovascular Risk Factors in Overweight and Obese Individuals: A Randomized Controlled-Feeding Trial.” Journal of the American Heart Association. 2017;6:e005162. DOI: https://doi.org/10.1161/JAHA.116.005162.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: cocoa covered nuts. https://fdc.nal.usda.gov/food-search/?query=cocoa%20covered%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "Lee Y, Berryman CE, West SG, et al. “Effects of Dark Chocolate and Almonds on Cardiovascular Risk Factors in Overweight and Obese Individuals: A Randomized Controlled-Feeding Trial.” Journal of the American Heart Association. 2017;6:e005162. DOI: https://doi.org/10.1161/JAHA.116.005162."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机控制喂养交叉试验；各干预 4 周，间隔 2 周。",
+          "population": "48 人随机，31 人完成；超重/肥胖成人。",
+          "exposure": "比较不加食品、42.5 g/日杏仁、18 g 可可粉加 43 g 黑巧克力，以及杏仁与可可/巧克力组合。",
+          "result": "研究检测心血管风险指标；试验单位是不同食品/组合，不能将任何组别等同于可可涂层坚果。",
+          "limits": "完成样本有限、短期；无法将杏仁、可可及巧克力的作用分离，也没有涂层产品组。",
+          "distance": "D2（成分组合试验）"
+        }
+      ],
+      "unknowns": "可可包衣树坚果的代表性商品组成和直接临床结局；可可比例、糖与脂肪涂层各自对摄入和代谢的影响。",
+      "tradition": "可可涂层坚果是现代复合食品，本轮未检得该具体成品的传统本草原典对应；不把可可、巧克力或坚果单项资料拼接为复合产品药效。"
+    },
+    "spicy-nuts": {
+      "name": "辣味坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "processed_food",
+      "family": "seasoned-tree-nuts",
+      "research_depth": "R1",
+      "shared_parent": "seasoned-nuts-base",
+      "identity": "本条指用辣椒、香辛料、辣味调味粉或复合酱料调味的树坚果零食，可烘烤或油焙；不同商品的果仁种类、辣椒素、盐、糖和油脂比例不固定。",
+      "variables": "坚果种类、辣椒/香辛料品种及用量、辣椒素含量、盐糖和油脂、涂层方式、实际份量及消费者对辣味耐受。",
+      "composition": "USDA FoodData Central 的匹配产品记录只能代表具体商品。辣味配料表可能含多种盐、糖、淀粉、油和香辛料；不能只按“辣味”标签估计钠、糖或辣椒素。",
+      "direct": "本轮未找到直接考察辣味树坚果成品临床健康结局的随机试验。辣椒素补充剂、辣椒或其他辛味食品研究的基底、剂量和暴露不同，不构成辣味坚果的直接证据。",
+      "specific": "不能由辣椒素、辣味偏好或单一香辛料机制推出整包辣味坚果对体重、食欲或代谢的效果。若研究对象是花生或辛辣酱料，也应单列而非合并为树坚果成品证据。",
+      "safety": "查看树坚果过敏、钠、糖和油脂；辣椒/香辛料可能刺激个体胃肠道或诱发不适，但这不是所有消费者都会发生的统一效应。按个人耐受选择。",
+      "body": "辣味坚果是由坚果基底和香辛料、盐、糖或油等共同组成的加工零食。本轮没有找到直接研究辣味树坚果成品健康结局的随机试验；辣椒素补充剂、辣椒或辛味酱料研究不能代替成品证据。不同品牌的辣度与营养组成可能相差很大，需查看配料和每份标签。对辣味敏感者可按自身耐受选择，同时留意树坚果过敏信息。",
+      "evidence_body": "辣味树坚果直接人体干预证据未建立（E-0）。辣椒素、辣椒或其他辛味食品仅属 D3/D4 邻近证据，不据此推断整类产品的食欲、体重或代谢效应。",
+      "care": "根据个人耐受选择辣度；查看每份钠、糖、脂肪与过敏原。若反复出现明显不适，应避免诱发产品并结合个体情况处理。",
+      "taste_m": {
+        "辛": "辣味来自辣椒或复合香辛料，感受与实际辣椒素含量及个人耐受有关；不等同传统药味或功效。"
+      },
+      "queries": [
+        "spicy seasoned tree nuts randomized human clinical trial health outcome",
+        "chili seasoned nut snacks sodium sugar composition food database",
+        "capsaicin trial nut product directness distinguish",
+        "tree nut allergy official FDA food allergy"
+      ],
+      "search_log": [
+        "检索辣味/香辛料树坚果的人体临床研究和产品组成；未找到可代表辣味坚果成品的随机试验。",
+        "审查辣椒素与辣椒研究的产品基底和暴露，作为间接资料，不把机制或补充剂研究升级为成品效应。"
+      ],
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: spicy nuts. https://fdc.nal.usda.gov/food-search/?query=spicy%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方食品成分数据库检索入口；具体结果需按可匹配产品核对。",
+          "population": "FoodData Central 中与 spicy nuts 查询匹配的单个产品记录。",
+          "exposure": "某个具体商品的标签/数据库组成。",
+          "result": "用于提示辣味零食成分可变；没有提供整类临床效应。",
+          "limits": "检索入口和单个商品记录不是随机人体研究、市场代表性调查或辣椒素剂量分析。",
+          "distance": "D0（具体商品成分资料）"
+        }
+      ],
+      "unknowns": "辣味树坚果市场配方与辣椒素剂量分布；与同种原味坚果头对头的人体研究；香辛料、盐、油和份量共同作用的长期结局。",
+      "tradition": "现代辣味坚果为复合加工零食，本轮未找到能可靠对应整类成品的古籍本草条目；不由辣椒或其他香辛料的传统记载推断整包零食属性。"
+    },
+    "mixed-nuts": {
+      "name": "混合坚果",
+      "volume": "坚果种仁部",
+      "entry_type": "ingredient",
+      "family": "tree-nut-kernel",
+      "research_depth": "R2",
+      "shared_parent": "expanded-tree-nuts-base",
+      "identity": "本条指以两种或以上坚果/种仁组成的零食混合包；具体配方可能含树坚果、花生、种子、干果、盐、糖或巧克力。临床研究中的固定混合配方不代表市场所有混合坚果。",
+      "variables": "坚果种类与比例、花生/种子/果干是否混入、生烤与盐糖处理、每日份量、等能量替代对照、研究人群及干预时长。",
+      "composition": "FoodData Central 中的混合坚果记录按具体样品和是否加盐分别解释。不同包装的树坚果种类、花生、果干及调味料比例不同；临床试验配方需要逐项记录，不能直接泛化。",
+      "direct": "2019 年一项 48 人、8 周等能量试验比较约 250 kcal/日混合坚果与椒盐脆饼；混合坚果组体重、BMI与胰岛素指标较低，但组间甘油三酯、LDL和HDL差异不显著。2023 年试验纳入 29 名超重/肥胖成人，每日 42.5 g 固定混合坚果与 69 g 等能量椒盐脆饼比较 16 周；总胆固醇、LDL、HDL及 Lp(a) 无显著差异，体脂百分比与舒张压较低、脂联素较高。样本小且产品配方固定，属于替代性干预和代理结局。",
+      "specific": "2023 年配方含腰果、杏仁、夏威夷果、巴西坚果、碧根果、开心果、核桃与花生；花生为豆科。两项研究的零食配方、对照和人群不同，不可推成每种混合包都有效，也不能用替代结果支持额外加食。",
+      "safety": "按标签查看具体坚果、花生、种子、果干及添加盐糖；混合包可能同时含多种过敏原。对任何成分过敏者应核对共线生产信息，并按个人医疗建议处理。",
+      "body": "混合坚果试验研究的是特定配方，并且通常以它替代等能量零食。2019 年 48 人、8 周试验比较每日约 250 kcal 混合坚果与椒盐脆饼，混合坚果组体重、BMI及胰岛素指标较低，但主要血脂组间差异不显著。2023 年 29 人试验将 42.5 g 固定混合坚果与等能量椒盐脆饼比较 16 周，未见总胆固醇、LDL、HDL 或 Lp(a) 显著变化；部分体脂、舒张压和脂联素指标有差异。样本量有限，结果不能代表所有混合包或额外加食。",
+      "evidence_body": "两项研究均为 D0（固定混合坚果配方）短期替代性干预，人数分别 48 与 29；血脂结果多为阴性，观察到的代理指标变化不等于临床事件，不能外推至所有零售混合包或额外加食（E-C）。",
+      "care": "查看具体配方、总份量、盐糖和所有过敏原；混合包常把树坚果、花生、种子或果干组合，不能仅凭名称判断成分。试验替代零食的设计不等同于增加总摄入。",
+      "taste_m": {
+        "甘": "混合坚果整体有多种坚果香与油脂感；果干、糖衣或盐焗会显著改变甜咸味。"
+      },
+      "queries": [
+        "mixed nut consumption randomized trial 250 kcal pretzels 8 weeks 48 adults DOI",
+        "mixed nuts 42.5 g 16 weeks 29 adults LDL lipoprotein(a) trial DOI",
+        "mixed nuts fixed formulation cardiometabolic risk overweight obese 2023 DOI",
+        "USDA FoodData Central mixed nuts salted composition"
+      ],
+      "search_log": [
+        "核对 2019 年混合坚果与椒盐脆饼等能量试验的人数、时长和体重/血脂结果。",
+        "核对 2023 年 29 人、42.5 g/日固定配方、16 周试验成分、对照及血脂和次要指标；明确含花生并限定为一种配方。",
+        "检索 FoodData Central 混合坚果样品，强调不同包装组成不可用一条记录代表。"
+      ],
+      "refs": [
+        "“Mixed Nut Consumption May Improve Cardiovascular Disease Risk Factors in Overweight and Obese Adults.” Nutrients. 2019;11(7):1488. DOI: https://doi.org/10.3390/nu11071488.",
+        "“Effects of mixed nut consumption on LDL cholesterol, lipoprotein(a), and other cardiometabolic risk factors in overweight and obese adults.” Nutrition, Metabolism and Cardiovascular Diseases. 2023;33(8):1529–1538. DOI: https://doi.org/10.1016/j.numecd.2023.05.013.",
+        "U.S. Department of Agriculture, Agricultural Research Service. “FoodData Central.” Search: mixed nuts. https://fdc.nal.usda.gov/food-search/?query=mixed%20nuts. Accessed 2026-09-24.",
+        "U.S. Food and Drug Administration. “Food Allergies.” https://www.fda.gov/food/food-labeling-nutrition/food-allergies. Accessed 2026-09-24."
+      ],
+      "body_refs": [
+        "“Mixed Nut Consumption May Improve Cardiovascular Disease Risk Factors in Overweight and Obese Adults.” Nutrients. 2019;11(7):1488. DOI: https://doi.org/10.3390/nu11071488.",
+        "“Effects of mixed nut consumption on LDL cholesterol, lipoprotein(a), and other cardiometabolic risk factors in overweight and obese adults.” Nutrition, Metabolism and Cardiovascular Diseases. 2023;33(8):1529–1538. DOI: https://doi.org/10.1016/j.numecd.2023.05.013."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "8 周等能量随机饮食试验。",
+          "population": "48 名超重或肥胖成人。",
+          "exposure": "约 250 kcal/日混合坚果，与等能量椒盐脆饼比较。",
+          "result": "混合坚果组体重、BMI 和胰岛素指标较低；组间甘油三酯、LDL 与 HDL 差异不显著。",
+          "limits": "样本小、时间短、固定配方与替代对照；指标不是临床事件，不能用于额外加食推断。",
+          "distance": "D0（特定混合坚果配方）"
+        },
+        {
+          "ref": 2,
+          "design": "16 周随机对照饮食试验。",
+          "population": "29 名超重或肥胖成人。",
+          "exposure": "每日 42.5 g 固定混合坚果（腰果、杏仁、夏威夷果、巴西坚果、碧根果、开心果、核桃、花生），与 69 g 等能量椒盐脆饼比较。",
+          "result": "TC、LDL、HDL 和 Lp(a) 无显著差异；混合坚果组体脂百分比与舒张压较低、脂联素较高。",
+          "limits": "样本很小、单一研究配方和特定人群；多个次要代理终点，不代表所有市售组合。",
+          "distance": "D0（特定混合坚果配方；替代性干预）"
+        }
+      ],
+      "unknowns": "不同商品配方的市场组成、剂量反应与长期临床结局；树坚果、花生、种子及果干各自贡献；在实际饮食中替代与额外添加的区别。",
+      "tradition": "混合坚果为现代复合零食，本轮未发现一个统一的传统本草条目对应此配方类别；不同原料的历史记载不合并为混合成品的性味或疗效。"
+    }
+  }
+}
