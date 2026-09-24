@@ -32,16 +32,17 @@ jobs:
           }
           echo "JEV_API_KEY is available (value hidden)."
 
-      - name: Run 5-herb pilot
+      - name: Run 5-herb v0.2 pilot
         env:
           JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
           JEV_MODEL: jev-latest
-        run: python experiments/jev-rule-fewshot-pilot/run_pilot.py
+          JEV_REPEATS: "3"
+        run: python experiments/jev-rule-fewshot-pilot/run_pilot_v02.py
 
       - name: Upload pilot results
         uses: actions/upload-artifact@v4
         with:
-          name: jev-rule-fewshot-results
-          path: experiments/jev-rule-fewshot-pilot/results.json
+          name: jev-rule-fewshot-results-v0.2
+          path: experiments/jev-rule-fewshot-pilot/results-v0.2.json
           if-no-files-found: error
           retention-days: 30
