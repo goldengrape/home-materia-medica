@@ -1,0 +1,556 @@
+{
+  "batch": {
+    "id": "30-seasonings-sweeteners",
+    "title": "方便面调味包与糖浆、甜味剂",
+    "catalog_order": 30,
+    "entry_count": 9,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; NHC; SAMR; FDA/eCFR/USDA; WHO/JECFA; PubMed and journal pages",
+    "web_search_calls": 8,
+    "web_search_queries": 25,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-30-seasonings-sweeteners",
+    "new_formal_entry_count": 9,
+    "identity_red_team": [
+      "方便面整体包装的钠含量不等于调味袋单独钠含量；总膳食模型结果不代替袋装调味品实测。",
+      "果葡糖浆按中国GB/T 20882.4-2021记录；美国HFCS-42/55数据只能作近邻比较，不能默认规格等同。",
+      "纯枫糖浆需与枫味餐桌糖浆分开；品质等级不代表健康等级。",
+      "赤藓糖醇、木糖醇是糖醇，甜菊糖苷和三氯蔗糖是高倍甜味剂；不可按“代糖”合并耐受性或监管结论。",
+      "阿洛酮糖按中国2025新食品原料公告列出的≤20 g/日与不适宜人群提示；美国标签规则不替代中国规定。",
+      "FDA、USDA、WHO和JECFA的说明各有司法辖区和对象范围；监管信息不视作单一产品疗效。"
+    ],
+    "citation_audit_revision": "rev-1: verify China 2025 D-allulose conditions; separate China fructose-glucose syrup from US HFCS grades; distinguish entire instant noodle sodium from seasoning sachet sodium."
+  },
+  "entries": {
+    "instant-noodle-seasoning": {
+      "name": "方便面调味包",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "instant_noodle_seasoning",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "随方便面包装提供的粉状、酱状或油状复合调味料，可含盐、味精、香辛料、油脂、糖和蛋白水解物；不包括方便面面饼。",
+      "variables": "调味包份量、钠、是否全部使用、汤水是否饮用、面饼本身的钠与配菜。",
+      "composition": "调味包的形态和配方随品牌与口味变化；包装营养数据常按整份方便面标示，难以单独拆出调味包的钠。",
+      "direct": "未检得方便面调味包作为独立产品的长期人体临床结局研究。",
+      "specific": "中国方便面消费者模型分析中，减少调味包使用量的情景会降低估算钠摄入；1/3调味包情景较全量使用使总钠摄入估算下降6.74%。国际商品标签调查覆盖10国765款方便面，中国样品按包装整份计的平均钠最高之一；这两项均不把钠精确归因到某一单独调味袋。",
+      "body": "未检得方便面调味包作为独立产品的长期人体临床结局研究。 中国方便面消费者模型分析中，减少调味包使用量的情景会降低估算钠摄入；1/3调味包情景较全量使用使总钠摄入估算下降6.74%。国际商品标签调查覆盖10国765款方便面，中国样品按包装整份计的平均钠最高之一；这两项均不把钠精确归因到某一单独调味袋。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "按产品说明减量使用调味包可降低该次摄入的调味料量；这不是适用于所有品牌的固定比例。",
+      "safety": "核对包装每份和每100克钠、实际使用的调味包比例及是否喝汤；对盐敏感或需限制钠者按医嘱选择。查看小麦、大豆、芝麻、乳、甲壳类等可能过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Zhang T, Cui Y, Mao W, Zhao F, Pan F, Liu H, Li J. Dietary sodium intake level of instant noodle consumers in China. Chinese Journal of Food Hygiene. 2023;35(6):903-908. DOI: https://doi.org/10.13590/j.cjfh.2023.06.017.",
+        "Dunford E, et al. Know Your Noodles! Assessing Variations in Sodium Content of Instant Noodles across Countries. Nutrients. 2017;9(6):612. DOI: https://doi.org/10.3390/nu9060612."
+      ],
+      "body_refs": [
+        "Zhang T, Cui Y, Mao W, Zhao F, Pan F, Liu H, Li J. Dietary sodium intake level of instant noodle consumers in China. Chinese Journal of Food Hygiene. 2023;35(6):903-908. DOI: https://doi.org/10.13590/j.cjfh.2023.06.017.",
+        "Dunford E, et al. Know Your Noodles! Assessing Variations in Sodium Content of Instant Noodles across Countries. Nutrients. 2017;9(6):612. DOI: https://doi.org/10.3390/nu9060612."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "结合专项钠监测及中国居民消费调查的摄入建模。",
+          "population": "中国方便面消费人群，食物消费数据来自2017—2020年调查。",
+          "exposure": "比较方便面减钠及调味包使用二分之一、三分之一等情景。",
+          "result": "使用三分之一调味包情景下，模型估算该人群总钠摄入比基线情景下降6.74%。",
+          "limits": "模型结果受食用量、其他饮食及调味包钠含量假设影响；该比例不是某一调味包的实测钠减少比例。",
+          "distance": "D2：整份方便面消费摄入模型，未分离单包调味料。"
+        },
+        {
+          "ref": 2,
+          "design": "跨国商品营养标签横断面调查。",
+          "population": "2012—2016年从10个国家收集的765款方便面产品。",
+          "exposure": "比较包装标示的钠含量并按平均包重估算每包钠。",
+          "result": "中国样品的平均钠含量为1944 mg/100g，平均每包约1905 mg。",
+          "limits": "包装标签数据而非实验室检测；数值对应方便面整份，并非调味包单独含量；市场与年份有限。",
+          "distance": "D2：方便面整份标签资料。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "China instant noodle consumers seasoning sachet sodium intake 1/3 sachet 6.74% 2023",
+        "instant noodles sodium 765 products 10 countries China study"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "maple-syrup": {
+      "name": "枫糖浆",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "maple_syrup",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "由槭树汁液经浓缩制成的糖浆；与添加枫味香料的餐桌糖浆区分。",
+      "variables": "每份糖和能量、实际浇淋量、是否纯枫糖浆或混合糖浆、产品等级和储存方式。",
+      "composition": "纯枫糖浆主要作为可溶性糖来源使用；浓缩程度、等级、风味和杂质控制按相应产品标准而异。标签中的枫糖浆与“枫味”糖浆不可互换。",
+      "direct": "未检得枫糖浆这一成品类别能证明长期健康效应的人体试验。",
+      "specific": "USDA Grade A标准将固形物含量限制为不高于68.9% Brix，并按颜色、风味和洁净度分级；世卫组织把糖浆中的糖计入游离糖建议所讨论的范围。分级标准是品质描述，不表示健康优势。",
+      "body": "未检得枫糖浆这一成品类别能证明长期健康效应的人体试验。 USDA Grade A标准将固形物含量限制为不高于68.9% Brix，并按颜色、风味和洁净度分级；世卫组织把糖浆中的糖计入游离糖建议所讨论的范围。分级标准是品质描述，不表示健康优势。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "将糖浆按实际克数或勺数计入饮食；混合糖浆应看配料顺序和营养标签。",
+      "safety": "查看配料表以辨认纯枫糖浆和混合糖浆；糖浆仍计入总糖摄入，控制份量并按标签冷藏或储存。",
+      "taste_m": {},
+      "refs": [
+        "USDA Agricultural Marketing Service. Maple Syrup Grades & Standards. https://www.ams.usda.gov/grades-standards/maple-syrup-grades-standards.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028.",
+        "U.S. Food and Drug Administration. Added Sugars on the Nutrition Facts Label. https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label."
+      ],
+      "body_refs": [
+        "USDA Agricultural Marketing Service. Maple Syrup Grades & Standards. https://www.ams.usda.gov/grades-standards/maple-syrup-grades-standards.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028.",
+        "U.S. Food and Drug Administration. Added Sugars on the Nutrition Facts Label. https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "官方商品分级标准。",
+          "population": "美国枫糖浆商品标准。",
+          "exposure": "按固形物、颜色、风味、气味和洁净度分级。",
+          "result": "Grade A固形物按重量不高于68.9% Brix。",
+          "limits": "品质分级不是营养或疾病风险分级；该标准限定美国商品。",
+          "distance": "D0：枫糖浆商品质量标准。"
+        },
+        {
+          "ref": 2,
+          "design": "WHO膳食指南。",
+          "population": "成人和儿童的公共卫生指导。",
+          "exposure": "评估膳食中游离糖摄入。",
+          "result": "建议将游离糖控制在总能量10%以下，并可进一步低于5%；糖浆中的糖属于需计入的游离糖来源。",
+          "limits": "群体指南，不是单一枫糖浆试验，也不设该产品专属摄入量。",
+          "distance": "D3：糖浆糖分的膳食指南背景。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "USDA maple syrup grades standards Brix composition",
+        "WHO free sugars syrups maple syrup dietary guidance"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "corn-syrup": {
+      "name": "玉米糖浆",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "corn_syrup",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "由玉米淀粉部分水解制得的葡萄糖浆；按美国联邦法规定义，可含葡萄糖、麦芽糖和较高聚糖。",
+      "variables": "DE值与糖组成、干物质、使用量、在食品配方中的技术用途和最终食品基质。",
+      "composition": "玉米糖浆不是高果糖玉米糖浆的同义词。美国法规所称corn syrup源于玉米淀粉部分水解，糖组成随水解程度而异。",
+      "direct": "未检得玉米糖浆作为单一配料与长期健康结局之间的独立人体试验。",
+      "specific": "美国法规将其定义为由玉米淀粉部分水解所得的葡萄糖浆，可有不同聚合度的糖；WHO游离糖指南关注糖浆等来源的糖摄入，不代表玉米糖浆成品有专属试验。",
+      "body": "未检得玉米糖浆作为单一配料与长期健康结局之间的独立人体试验。 美国法规将其定义为由玉米淀粉部分水解所得的葡萄糖浆，可有不同聚合度的糖；WHO游离糖指南关注糖浆等来源的糖摄入，不代表玉米糖浆成品有专属试验。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "以最终食品的每份糖含量作为实际选择依据，不依据配料名称单独判断成品营养质量。",
+      "safety": "在复合食品中按营养标签查看总糖、添加糖和份量；不要把玉米糖浆与HFCS或纯葡萄糖混称。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Electronic Code of Federal Regulations. 21 CFR § 184.1865, Corn syrup. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1865.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028."
+      ],
+      "body_refs": [
+        "U.S. Electronic Code of Federal Regulations. 21 CFR § 184.1865, Corn syrup. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1865.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国联邦法规中的食品配料定义。",
+          "population": "21 CFR §184.1865规定的玉米糖浆。",
+          "exposure": "描述生产来源及可含糖组分。",
+          "result": "由玉米淀粉部分水解得到；可含葡萄糖、麦芽糖和较高糖类。",
+          "limits": "法规定义并非中国市场标准，也没有给出某种成品的实际营养组成。",
+          "distance": "D0：配料身份标准。"
+        },
+        {
+          "ref": 2,
+          "design": "WHO膳食指南。",
+          "population": "成人和儿童的群体膳食建议。",
+          "exposure": "评估游离糖摄入。",
+          "result": "建议游离糖低于总能量10%，理想目标可低于5%。",
+          "limits": "指南针对饮食总量，不估算单项配料的临床效应。",
+          "distance": "D3：糖浆糖类膳食背景。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "21 CFR corn syrup partial hydrolysis corn starch glucose maltose",
+        "WHO guideline free sugars syrup intake"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "fructose-glucose-syrup": {
+      "name": "果葡糖浆",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "fructose_glucose_syrup",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "由淀粉糖加工生产的果糖与葡萄糖混合糖浆。中国现行推荐性国家标准GB/T 20882.4-2021规定其质量要求；与美国法规中的HFCS可以比较但不能默认其具体规格完全相同。",
+      "variables": "产品规格/果糖型别、固形物、食品配方用量、最终食品每份总糖及标签制度。",
+      "composition": "果葡糖浆属于含糖糖浆配料，果糖与葡萄糖比例依标准分类和商品规格而不同；当前消费决策应以配料表与成品营养标签为准。",
+      "direct": "未检得果葡糖浆单一配料的长期人体结局试验。",
+      "specific": "中国GB/T 20882.4-2021是现行果葡糖浆质量标准；美国FDA描述的常见HFCS-42与HFCS-55按干基含约42%或55%果糖。两国名称与等级不能未经标签和标准核验直接等同。中国GB 28050-2025将于2027-03-16实施，标签解读应考虑生产日期。",
+      "body": "未检得果葡糖浆单一配料的长期人体结局试验。 中国GB/T 20882.4-2021是现行果葡糖浆质量标准；美国FDA描述的常见HFCS-42与HFCS-55按干基含约42%或55%果糖。两国名称与等级不能未经标签和标准核验直接等同。中国GB 28050-2025将于2027-03-16实施，标签解读应考虑生产日期。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "按包装标签和实际用量识别糖源；比较不同国家产品时先核对标准及果糖型别。",
+      "safety": "核对生产地适用标准和产品规格；在成品层面统计糖与份量。果葡糖浆是糖源，控制总量而不是只看其名称。",
+      "taste_m": {},
+      "refs": [
+        "State Administration for Market Regulation and Standardization Administration of China. GB/T 20882.4-2021, Quality requirements for starch sugar—Part 4: High fructose syrup. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F0F779AA34C2F354570E07D0688F1BA7.",
+        "U.S. Food and Drug Administration. High Fructose Corn Syrup Questions and Answers. https://www.fda.gov/food/food-additives-petitions/high-fructose-corn-syrup-questions-and-answers.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028."
+      ],
+      "body_refs": [
+        "State Administration for Market Regulation and Standardization Administration of China. GB/T 20882.4-2021, Quality requirements for starch sugar—Part 4: High fructose syrup. https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F0F779AA34C2F354570E07D0688F1BA7.",
+        "U.S. Food and Drug Administration. High Fructose Corn Syrup Questions and Answers. https://www.fda.gov/food/food-additives-petitions/high-fructose-corn-syrup-questions-and-answers.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml.",
+        "World Health Organization. Guideline: Sugars intake for adults and children. 2015. ISBN 978-92-4-154902-8. https://www.who.int/publications/i/item/9789241549028."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国国家标准状态记录。",
+          "population": "GB/T 20882.4-2021果葡糖浆质量标准。",
+          "exposure": "规定果葡糖浆质量要求，标准现行，2022-07-01实施。",
+          "result": "中国标准把果葡糖浆列为淀粉糖产品类别。",
+          "limits": "在线摘要不包含完整规格指标；具体组成还需产品标准文本和标签核验。",
+          "distance": "D0：中国配料类别标准。"
+        },
+        {
+          "ref": 2,
+          "design": "美国FDA法规说明。",
+          "population": "美国常见高果糖玉米糖浆类别。",
+          "exposure": "说明HFCS制程和常见42型、55型。",
+          "result": "常见HFCS-42与HFCS-55按干基果糖约42%和55%。",
+          "limits": "产品和标准属于美国语境，不能直接替代中国果葡糖浆产品规格。",
+          "distance": "D2：相邻高果糖糖浆定义。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "GB/T 20882.4-2021 果葡糖浆 现行标准",
+        "FDA HFCS 42 55 dry weight fructose definition",
+        "WHO sugars syrup free sugars"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "erythritol": {
+      "name": "赤藓糖醇",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "erythritol",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "用于食品的糖醇类甜味剂，可单独使用或与其他甜味剂、载体及膳食纤维混配。",
+      "variables": "赤藓糖醇克数、一次摄入量、与其他多元醇叠加、肠易激症状及配方中的其他碳水。",
+      "composition": "赤藓糖醇属于糖醇，和蔗糖、高倍甜味剂及其他糖醇不是同一类配料；“无糖”产品仍可能含能量或其他可利用碳水。",
+      "direct": "未检得赤藓糖醇单一商品可改善长期体重、糖尿病或心血管结局的充分人体试验。",
+      "specific": "FDA将赤藓糖醇列为允许使用的糖醇类甜味剂例子；糖醇系统综述报告多元醇吸收不完全与腹胀、腹部不适及轻泻效应可能随剂量增加。监管允许使用不等于证明减重或治疗效果。",
+      "body": "未检得赤藓糖醇单一商品可改善长期体重、糖尿病或心血管结局的充分人体试验。 FDA将赤藓糖醇列为允许使用的糖醇类甜味剂例子；糖醇系统综述报告多元醇吸收不完全与腹胀、腹部不适及轻泻效应可能随剂量增加。监管允许使用不等于证明减重或治疗效果。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "看配料表中赤藓糖醇在一次用量和全天总量中的实际克数。",
+      "safety": "若出现腹胀或腹泻，减少单次量并查看同餐其他糖醇；“无蔗糖”不等于零能量或适合无限量食用。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560."
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "监管信息汇总。",
+          "population": "美国FDA说明多种甜味剂和糖醇的监管类别。",
+          "exposure": "列出赤藓糖醇作为糖醇类替代甜味剂之一。",
+          "result": "该页面区分高倍甜味剂和糖醇，赤藓糖醇属于后者。",
+          "limits": "这是美国监管说明，不是其他市场的许可结论，也不证明具体产品的临床收益。",
+          "distance": "D0：类别身份和监管说明。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述。",
+          "population": "健康人及肠易激综合征患者的多元醇研究。",
+          "exposure": "回顾吸收、肠道症状和胃肠功能。",
+          "result": "多元醇吸收不良常呈剂量相关，可能引起腹胀、腹部不适和轻泻症状。",
+          "limits": "纳入物质和研究设计异质；不能把整体效应当作赤藓糖醇单品的统一剂量阈值。",
+          "distance": "D1/D2：多元醇类别耐受背景。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "erythritol gastrointestinal tolerance polyols systematic review dose dependent",
+        "FDA erythritol sugar alcohol sweeteners food"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "xylitol": {
+      "name": "木糖醇",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "xylitol",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "广泛用于无糖口香糖、糖果和烘焙食品的糖醇类甜味剂。",
+      "variables": "每次和每日木糖醇总量、液体或固体载体、同时摄入其他糖醇、胃肠敏感性。",
+      "composition": "木糖醇是糖醇，不等同于蔗糖或高倍甜味剂；以木糖醇制成的食品还可能含脂肪、淀粉、其他糖类或多元醇。",
+      "direct": "未检得一般木糖醇食品可预防龋齿、减重或改善血糖长期结局的充分证据；特定无糖口香糖研究不能代表所有木糖醇食品。",
+      "specific": "FDA资料将木糖醇列为糖醇类甜味剂；多元醇系统综述发现胃肠耐受与剂量、组合及个体差异相关，可能出现腹胀、腹部不适和轻泻。口香糖或牙齿相关结局需按具体配方和产品分开评估。",
+      "body": "未检得一般木糖醇食品可预防龋齿、减重或改善血糖长期结局的充分证据；特定无糖口香糖研究不能代表所有木糖醇食品。 FDA资料将木糖醇列为糖醇类甜味剂；多元醇系统综述发现胃肠耐受与剂量、组合及个体差异相关，可能出现腹胀、腹部不适和轻泻。口香糖或牙齿相关结局需按具体配方和产品分开评估。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "核对复配食品中的总糖醇克数；将木糖醇食品放在宠物无法接触的位置。",
+      "safety": "较大摄入量可能引起胃肠不适；逐项查看总糖醇量。木糖醇对狗有严重毒性，食品及口香糖应放在宠物接触不到处。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560.",
+        "U.S. Food and Drug Administration. Paws Off! Xylitol is Toxic to Dogs. https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs."
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560.",
+        "U.S. Food and Drug Administration. Paws Off! Xylitol is Toxic to Dogs. https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "监管资料。",
+          "population": "美国FDA列举的食品糖醇类甜味剂。",
+          "exposure": "描述食品用途类别。",
+          "result": "木糖醇被列为用于糖果、饼干和口香糖的糖醇甜味剂之一。",
+          "limits": "美国监管说明，不给出中国商品许可判断或某种木糖醇食品的临床效果。",
+          "distance": "D0：原料身份背景。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述。",
+          "population": "健康成人与肠易激综合征人群的糖醇研究。",
+          "exposure": "归纳糖醇摄入、吸收与胃肠表现。",
+          "result": "胃肠症状可随剂量增加，合并摄入多种糖醇可能增加吸收不良。",
+          "limits": "物质、剂型、剂量和受试人群异质；不构成所有人的固定耐受阈值。",
+          "distance": "D1/D2：木糖醇及糖醇类别的人体耐受证据。"
+        },
+        {
+          "ref": 3,
+          "design": "美国FDA兽医食品安全科普资料。",
+          "population": "接触含木糖醇商品的犬只。",
+          "exposure": "含木糖醇食品、药品或口腔护理品的意外摄入。",
+          "result": "FDA指出木糖醇对狗有毒，可造成低血糖、肝损伤等严重后果。",
+          "limits": "资料针对犬只，不用于描述人类耐受性，也不说明猫或其他物种的风险程度。",
+          "distance": "D0：犬只误食木糖醇产品的官方安全资料。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "xylitol polyol gastrointestinal dose dependent symptoms systematic review",
+        "FDA xylitol sugar alcohol food uses"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "steviol-glycosides": {
+      "name": "甜菊糖苷",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "steviol_glycosides",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "从甜叶菊中提取或以发酵等工艺制得的高倍甜味剂统称；具体糖苷组成和纯度依商品规格而异。",
+      "variables": "糖苷种类和纯度、使用量、载体成分、复配甜味剂、市场适用的法规和每日摄入。",
+      "composition": "甜菊糖苷不是完整甜叶菊叶粉的同义词。监管评估和ADI适用于定义明确的糖苷及按法规使用量，不自动覆盖所有植物提取物或配方。",
+      "direct": "未检得甜菊糖苷食品作为一般类别可改善长期健康结局的充分临床证据。",
+      "specific": "JECFA确认甜菊糖苷ADI为0–4 mg/kg体重/日，以甜菊醇计；FDA对特定高纯度（至少95%）甜菊糖苷GRAS通知无异议。ADI是长期摄入安全评估值，不是建议目标量，也不能按成品甜度直接换算。",
+      "body": "未检得甜菊糖苷食品作为一般类别可改善长期健康结局的充分临床证据。 JECFA确认甜菊糖苷ADI为0–4 mg/kg体重/日，以甜菊醇计；FDA对特定高纯度（至少95%）甜菊糖苷GRAS通知无异议。ADI是长期摄入安全评估值，不是建议目标量，也不能按成品甜度直接换算。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "在对应市场法规范围内看成分和用量；不要把ADI读成推荐摄入量或疗效剂量。",
+      "safety": "辨明成品中的甜菊糖苷名称、纯度和用量；ADI的“以甜菊醇计”与提取物总重不同。检查载体和复配甜味剂。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Joint FAO/WHO Expert Committee on Food Additives. Steviol glycosides, JECFA database (ADI 0–4 mg/kg bw, expressed as steviol). https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/267.",
+        "World Health Organization. Use of non-sugar sweeteners: WHO guideline. 2023. https://www.who.int/publications/i/item/9789240073616."
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "Joint FAO/WHO Expert Committee on Food Additives. Steviol glycosides, JECFA database (ADI 0–4 mg/kg bw, expressed as steviol). https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/267.",
+        "World Health Organization. Use of non-sugar sweeteners: WHO guideline. 2023. https://www.who.int/publications/i/item/9789240073616."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "联合国粮农组织/世卫组织食品添加剂专家委员会评估。",
+          "population": "JECFA数据库中的甜菊糖苷评估。",
+          "exposure": "记录ADI及适用表达基准。",
+          "result": "ADI为0–4 mg/kg体重/日，以甜菊醇计。",
+          "limits": "ADI不是日常摄入建议；各糖苷和商品纯度须符合相应规格。",
+          "distance": "D0：定义明确甜菊糖苷的监管评估。"
+        },
+        {
+          "ref": 2,
+          "design": "美国FDA监管资料。",
+          "population": "特定高纯度甜菊糖苷食品用途通知。",
+          "exposure": "说明FDA对指定GRAS通知的审阅状态。",
+          "result": "FDA对某些纯度至少95%的指定甜菊糖苷GRAS通知结论无异议。",
+          "limits": "通知对应特定成分和预期用途，不代表所有叶粉或粗提物均适用。",
+          "distance": "D0：特定成分与用途的监管信息。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "JECFA steviol glycosides ADI expressed as steviol 0-4 mg/kg",
+        "FDA steviol glycosides high purity 95 percent sweetener"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "allulose": {
+      "name": "阿洛酮糖",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "allulose",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "D-阿洛酮糖是一种单糖异构体类低能量糖。中国国家卫生健康委于2025年批准其作为新食品原料，并列明食用限制。",
+      "variables": "每日克数、每次摄入量、原料工艺、产品配方，以及年龄、妊娠和哺乳状态。",
+      "composition": "阿洛酮糖不是糖醇。中国获批公告规定推荐食用量不超过20克/天；婴幼儿、孕妇和哺乳期妇女不宜食用，且标签需提示。",
+      "direct": "一项2026年中国随机双盲平行研究纳入50名健康成人，按24或36克/天摄入30天；胃肠症状发生率为48%，症状轻微且短暂。该小样本短期研究不能确立长期安全性，也不取代中国公告的限量。",
+      "specific": "中国国家卫生健康委2025年第4号公告规定D-阿洛酮糖推荐食用量≤20克/天，并要求标注婴幼儿、孕妇和哺乳期妇女不宜食用。美国FDA 2020指导意见仅说明美国营养标签中的执法裁量处理。2026年一项50名健康成人、30天研究报告48%有轻微短暂胃肠症状；部分血液指标变化和35岁及以上高剂量组骨密度T评分下降均处于临床参考范围，仍需更大、更长期研究。",
+      "body": "一项2026年中国随机双盲平行研究纳入50名健康成人，按24或36克/天摄入30天；胃肠症状发生率为48%，症状轻微且短暂。该小样本短期研究不能确立长期安全性，也不取代中国公告的限量。 中国国家卫生健康委2025年第4号公告规定D-阿洛酮糖推荐食用量≤20克/天，并要求标注婴幼儿、孕妇和哺乳期妇女不宜食用。美国FDA 2020指导意见仅说明美国营养标签中的执法裁量处理。2026年一项50名健康成人、30天研究报告48%有轻微短暂胃肠症状；部分血液指标变化和35岁及以上高剂量组骨密度T评分下降均处于临床参考范围，仍需更大、更长期研究。",
+      "evidence_body": "证据包括中国新食品原料公告、美国标签指导和小样本短期人体试验；监管限量优先于短期研究剂量，试验不能推翻公告条件。",
+      "care": "严格遵循中国批准附件的食用量和不适宜人群提示。",
+      "safety": "遵循中国每人每日不超过20克的公告要求；婴幼儿、孕妇和哺乳期妇女不宜食用。高剂量小型试验的结论不可替代上述限制，出现胃肠不适应停止增加摄入。",
+      "taste_m": {},
+      "refs": [
+        "National Health Commission of the PRC. Announcement on D-Allulose and 19 Other New Food Ingredients, New Food Additives and Food-contact Materials (2025 No. 4), published 2025-07-02; D-allulose annex. https://www.nhc.gov.cn/bgt/c100279u/202602/666de6959e6649648196d3893773b912/files/2025%E5%B9%B4%E5%9B%BD%E5%AE%B6%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%AC%E6%8A%A5%E7%AC%AC12%E6%9C%9F.pdf.",
+        "U.S. Food and Drug Administration. Guidance for Industry: Declaration of Allulose and Calories from Allulose on Nutrition and Supplement Facts Labels. 2020. https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-declaration-allulose-and-calories-allulose-nutrition-and-supplement-facts-labels.",
+        "Qi L, et al. D-Allulose as a Low-Calorie Sweetener: A 30-Day Randomized, Double-Blind Study on Gastrointestinal Tolerance and Systemic Safety to Support Its Application in Healthy Diets. Food Science & Nutrition. 2026;14(7):e72042. DOI: https://doi.org/10.1002/fsn3.72042."
+      ],
+      "body_refs": [
+        "National Health Commission of the PRC. Announcement on D-Allulose and 19 Other New Food Ingredients, New Food Additives and Food-contact Materials (2025 No. 4), published 2025-07-02; D-allulose annex. https://www.nhc.gov.cn/bgt/c100279u/202602/666de6959e6649648196d3893773b912/files/2025%E5%B9%B4%E5%9B%BD%E5%AE%B6%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A%E5%85%AC%E6%8A%A5%E7%AC%AC12%E6%9C%9F.pdf.",
+        "U.S. Food and Drug Administration. Guidance for Industry: Declaration of Allulose and Calories from Allulose on Nutrition and Supplement Facts Labels. 2020. https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-declaration-allulose-and-calories-allulose-nutrition-and-supplement-facts-labels.",
+        "Qi L, et al. D-Allulose as a Low-Calorie Sweetener: A 30-Day Randomized, Double-Blind Study on Gastrointestinal Tolerance and Systemic Safety to Support Its Application in Healthy Diets. Food Science & Nutrition. 2026;14(7):e72042. DOI: https://doi.org/10.1002/fsn3.72042."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国国家卫生健康委新食品原料公告及附件。",
+          "population": "2025年第4号公告所列D-阿洛酮糖。",
+          "exposure": "规定推荐食用量和标签提示。",
+          "result": "推荐食用量≤20克/天；婴幼儿、孕妇和哺乳期妇女不宜食用。",
+          "limits": "法规批准有特定原料、工艺和标签条件；不表示所有人群都适合。",
+          "distance": "D0：本配料在中国的正式批准条件。"
+        },
+        {
+          "ref": 2,
+          "design": "随机双盲人体干预研究。",
+          "population": "50名健康中国成年人，24或36克/日，干预30天。",
+          "exposure": "观察胃肠耐受与多项安全指标。",
+          "result": "胃肠症状发生率为48%，症状轻微、短暂且主要集中在早期；报告有部分血液指标改变，以及35岁以上高剂量组骨密度T评分下降，均在临床参考范围内。",
+          "limits": "样本仅50人、干预30天且仅研究健康成人；结果不能确立长期安全性，亦不能推翻中国官方≤20克/天限量及不适宜人群提示。",
+          "distance": "D0：特定剂量、期限和成人受试者。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "新批准食品原料。中国国家卫生健康委公告规定了原料生产信息、推荐食用量与不适宜人群，不据此推断传统本草归属。",
+      "queries": [
+        "D-allulose 2025 China NHC new food ingredient 20 g day label unsuitable groups",
+        "2026 D-allulose randomized double blind 30 day China 50 adults gastrointestinal tolerance"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    },
+    "sucralose": {
+      "name": "三氯蔗糖食品",
+      "volume": "调味与甜味料部",
+      "entry_type": "ingredient",
+      "family": "sucralose_food",
+      "research_depth": "R2",
+      "shared_parent": "sweeteners-and-syrups-base",
+      "identity": "以三氯蔗糖作为主要或一种甜味来源的食品；三氯蔗糖为高倍甜味剂，商品可含其他糖、糖醇、淀粉和载体。",
+      "variables": "三氯蔗糖实际用量、同配方其他甜味剂、每份能量与糖、加热加工方式和食用目的。",
+      "composition": "三氯蔗糖约为蔗糖甜度的600倍；“使用三氯蔗糖”并不说明成品无糖、零能量或可不限量食用。商品常混有载体及其他配料。",
+      "direct": "未检得所有含三氯蔗糖食品都能产生长期减重、血糖改善或疾病预防效果的充分证据。WHO对非糖甜味剂作为长期体重控制或降低非传染性疾病风险策略给出有条件的不建议；该建议不是单一产品毒理评估。",
+      "specific": "美国FDA批准三氯蔗糖在特定条件下用于食品，并报告其甜度约为蔗糖600倍；FDA列出的ADI为5 mg/kg体重/日。ADI只针对该添加剂的长期安全摄入评估。WHO 2023指南讨论非糖甜味剂的长期体重控制策略，不能用来断言某产品是否符合当地法规。",
+      "body": "未检得所有含三氯蔗糖食品都能产生长期减重、血糖改善或疾病预防效果的充分证据。WHO对非糖甜味剂作为长期体重控制或降低非传染性疾病风险策略给出有条件的不建议；该建议不是单一产品毒理评估。 美国FDA批准三氯蔗糖在特定条件下用于食品，并报告其甜度约为蔗糖600倍；FDA列出的ADI为5 mg/kg体重/日。ADI只针对该添加剂的长期安全摄入评估。WHO 2023指南讨论非糖甜味剂的长期体重控制策略，不能用来断言某产品是否符合当地法规。",
+      "evidence_body": "证据主要来自商品标签、食品标准或监管评估，不能据此断言该单品具有临床疗效；人群摄入结果与单品成分分析分别解读。",
+      "care": "比较每份总糖、能量、载体和甜味剂；按适用市场规定查看成分与用量。",
+      "safety": "看整件食品的营养成分和份量，而不只看三氯蔗糖；不要将FDA的许可与ADI视为每个市场的法规。WHO指南不适用于已患糖尿病者的治疗管理。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "World Health Organization. Use of non-sugar sweeteners: WHO guideline. 2023. https://www.who.int/publications/i/item/9789240073616."
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. Aspartame and Other Sweeteners in Food. https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food.",
+        "World Health Organization. Use of non-sugar sweeteners: WHO guideline. 2023. https://www.who.int/publications/i/item/9789240073616."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国FDA监管说明。",
+          "population": "三氯蔗糖食品用途及监管评估。",
+          "exposure": "说明许可用途、相对甜度和ADI。",
+          "result": "美国FDA称三氯蔗糖约为蔗糖600倍甜，并列ADI为5 mg/kg体重/日。",
+          "limits": "ADI不是建议摄入量；适用范围是美国法规条件，不代表每种含三氯蔗糖食品的营养构成。",
+          "distance": "D0：指定甜味剂监管信息。"
+        },
+        {
+          "ref": 2,
+          "design": "WHO非糖甜味剂指南。",
+          "population": "一般人群长期体重控制和膳食疾病风险降低策略。",
+          "exposure": "评估长期使用非糖甜味剂替代游离糖的公共卫生建议。",
+          "result": "WHO给出有条件建议，不建议将非糖甜味剂作为长期体重控制或降低非传染性疾病风险的策略。",
+          "limits": "不是毒理安全评估，不等于判定单一食品不安全；不适用于既有糖尿病的治疗管理。",
+          "distance": "D3：膳食策略指南，而非单一产品临床证据。"
+        }
+      ],
+      "unknowns": "不同品牌当前配方、实际份量与长期单品特异的人体结局；标签和法规也随市场与日期变化。",
+      "tradition": "现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。",
+      "queries": [
+        "FDA sucralose 600 times sweeter ADI 5 mg kg food uses",
+        "WHO non-sugar sweeteners 2023 conditional recommendation long term weight control"
+      ],
+      "search_log": [
+        "核对本条食品身份、法规或产品类别定义及配方边界。",
+        "按来源类型区分标签/标准/监管结论与人体结局，不向本条之外外推。"
+      ]
+    }
+  }
+}

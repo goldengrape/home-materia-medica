@@ -1,0 +1,10 @@
+{
+  "batch_id": "30-seasonings-sweeteners",
+  "entry_id": "fructose-glucose-syrup",
+  "summary_ref": "references/entries/fructose-glucose-syrup/summary.md",
+  "summary_sha256": "0c2171540b634c6aca8ebfbf2681054eadcd2450338172225393bce4c670c2c9",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 果葡糖浆\r\n\r\n**身份。** 由淀粉糖加工生产的果糖与葡萄糖混合糖浆。中国现行推荐性国家标准GB/T 20882.4-2021规定其质量要求；与美国法规中的HFCS可以比较但不能默认其具体规格完全相同。\r\n\r\n**组成与暴露。** 果葡糖浆属于含糖糖浆配料，果糖与葡萄糖比例依标准分类和商品规格而不同；当前消费决策应以配料表与成品营养标签为准。 **关键变量：** 产品规格/果糖型别、固形物、食品配方用量、最终食品每份总糖及标签制度。\r\n\r\n**直接人体证据。** 未检得果葡糖浆单一配料的长期人体结局试验。\r\n\r\n**产品/成分证据。** 中国GB/T 20882.4-2021是现行果葡糖浆质量标准；美国FDA描述的常见HFCS-42与HFCS-55按干基含约42%或55%果糖。两国名称与等级不能未经标签和标准核验直接等同。中国GB 28050-2025将于2027-03-16实施，标签解读应考虑生产日期。\r\n\r\n**共享背景。** 参见 sweeteners-and-syrups-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对生产地适用标准和产品规格；在成品层面统计糖与份量。果葡糖浆是糖源，控制总量而不是只看其名称。\r\n\r\n**传统来源。** 现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

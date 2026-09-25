@@ -1,0 +1,10 @@
+{
+  "batch_id": "30-seasonings-sweeteners",
+  "entry_id": "erythritol",
+  "summary_ref": "references/entries/erythritol/summary.md",
+  "summary_sha256": "17df84ab2baf3a825d1506ca1de0776f093ae90a1567674d1e6a5c0327df3f3e",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 赤藓糖醇\r\n\r\n**身份。** 用于食品的糖醇类甜味剂，可单独使用或与其他甜味剂、载体及膳食纤维混配。\r\n\r\n**组成与暴露。** 赤藓糖醇属于糖醇，和蔗糖、高倍甜味剂及其他糖醇不是同一类配料；“无糖”产品仍可能含能量或其他可利用碳水。 **关键变量：** 赤藓糖醇克数、一次摄入量、与其他多元醇叠加、肠易激症状及配方中的其他碳水。\r\n\r\n**直接人体证据。** 未检得赤藓糖醇单一商品可改善长期体重、糖尿病或心血管结局的充分人体试验。\r\n\r\n**产品/成分证据。** FDA将赤藓糖醇列为允许使用的糖醇类甜味剂例子；糖醇系统综述报告多元醇吸收不完全与腹胀、腹部不适及轻泻效应可能随剂量增加。监管允许使用不等于证明减重或治疗效果。\r\n\r\n**共享背景。** 参见 sweeteners-and-syrups-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 若出现腹胀或腹泻，减少单次量并查看同餐其他糖醇；“无蔗糖”不等于零能量或适合无限量食用。\r\n\r\n**传统来源。** 现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

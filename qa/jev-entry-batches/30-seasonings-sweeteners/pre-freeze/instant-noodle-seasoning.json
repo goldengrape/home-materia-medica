@@ -1,0 +1,10 @@
+{
+  "batch_id": "30-seasonings-sweeteners",
+  "entry_id": "instant-noodle-seasoning",
+  "summary_ref": "references/entries/instant-noodle-seasoning/summary.md",
+  "summary_sha256": "7c631818f6cf170ce195226984deb506581b830290a294959cd0172893d6fbb2",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 方便面调味包\r\n\r\n**身份。** 随方便面包装提供的粉状、酱状或油状复合调味料，可含盐、味精、香辛料、油脂、糖和蛋白水解物；不包括方便面面饼。\r\n\r\n**组成与暴露。** 调味包的形态和配方随品牌与口味变化；包装营养数据常按整份方便面标示，难以单独拆出调味包的钠。 **关键变量：** 调味包份量、钠、是否全部使用、汤水是否饮用、面饼本身的钠与配菜。\r\n\r\n**直接人体证据。** 未检得方便面调味包作为独立产品的长期人体临床结局研究。\r\n\r\n**产品/成分证据。** 中国方便面消费者模型分析中，减少调味包使用量的情景会降低估算钠摄入；1/3调味包情景较全量使用使总钠摄入估算下降6.74%。国际商品标签调查覆盖10国765款方便面，中国样品按包装整份计的平均钠最高之一；这两项均不把钠精确归因到某一单独调味袋。\r\n\r\n**共享背景。** 参见 sweeteners-and-syrups-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对包装每份和每100克钠、实际使用的调味包比例及是否喝汤；对盐敏感或需限制钠者按医嘱选择。查看小麦、大豆、芝麻、乳、甲壳类等可能过敏原。\r\n\r\n**传统来源。** 现代加工食品或食品配料。传统原料记录不直接等同于该加工品的传统药性或临床功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
