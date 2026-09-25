@@ -1,0 +1,10 @@
+{
+  "batch_id": "18-vegetables-and-salads",
+  "entry_id": "light-meal-bowl",
+  "summary_ref": "references/entries/light-meal-bowl/summary.md",
+  "summary_sha256": "53ddc76280ae1b89afecdcbe3bceb4577393d4ab8a65a1738599cebd0de55976",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 轻食碗\r\n\r\n**身份。** 现代菜单中的描述性类别，通常将蔬菜、谷物或薯类、蛋白质食物和酱料组合在碗中；没有统一食谱、份量或营养标准。\r\n\r\n**组成与暴露。** “轻食”名称不保证低能量、低钠或特定营养组成；实际数值由配方、份量和烹调决定。 **关键变量：** 主食种类及份量、蔬菜、肉蛋豆类、烹调油、酱料、配料比例和整体能量。\r\n\r\n**直接人体证据。** 本轮未检得以“轻食碗”作为标准化干预的人体研究。全谷物、沙拉或高蛋白饮食研究没有可直接对应的统一轻食碗定义。\r\n\r\n**产品/成分证据。** 菜名属于餐饮描述，餐馆之间配方差异大；不能仅凭“轻食”推定能量低、适合减重或改善代谢。\r\n\r\n**共享背景。** 参见 mixed-salad-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对过敏原、酱料和生熟食处理；预制餐按标签冷藏和食用。\r\n\r\n**传统来源。** 传统母条索引未列现代“轻食碗”餐型；原料的传统材料不能转为整碗食物的分类。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\r\n"
+}

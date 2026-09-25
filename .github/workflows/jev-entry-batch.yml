@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: API_KEYS
     timeout-minutes: 60
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
       - name: Resolve batch ID from branch

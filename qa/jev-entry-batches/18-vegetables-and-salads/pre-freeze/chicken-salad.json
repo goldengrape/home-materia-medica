@@ -1,0 +1,10 @@
+{
+  "batch_id": "18-vegetables-and-salads",
+  "entry_id": "chicken-salad",
+  "summary_ref": "references/entries/chicken-salad/summary.md",
+  "summary_sha256": "e952953b144d910f77ef35fc68c060f692a657fd70c53992067bcd52ecbe7036",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 鸡胸沙拉\r\n\r\n**身份。** 以熟鸡胸肉和蔬菜组成的冷食沙拉，可另加谷物、酱料或奶酪。鸡肉加工品、炸鸡沙拉、鸡肉蛋黄酱抹酱及不同商业配方分别处理。\r\n\r\n**组成与暴露。** 蛋白质与能量主要受鸡肉、酱料、油和附加谷物影响；不同做法差异大。 **关键变量：** 鸡胸肉份量与烹调、蔬菜配比、皮或油、酱料及钠含量、冷藏和切配卫生。\r\n\r\n**直接人体证据。** 本轮未检得鸡胸沙拉完整餐食的人体随机临床结局试验。一项柬埔寨家庭模拟研究以带菌生鸡肉和四种切配流程研究鸡肉沙拉的沙门氏菌交叉污染；这是人为接种实验，不是市场污染率或疾病发生率。\r\n\r\n**产品/成分证据。** 实验观察到共用器具和切配顺序可影响沙门氏菌进入即食沙拉的可能性。结果支持避免生禽肉与即食蔬菜交叉接触，但不能估计消费者感染概率。\r\n\r\n**共享背景。** 参见 mixed-salad-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 鸡肉需烹调至中心温度74°C（165°F）；熟鸡肉沙拉应保持在4°C（40°F）或以下，避免室温放置超过2小时。\r\n\r\n**传统来源。** 传统母条索引列有鸡肉原料，但未列现代冷食鸡胸沙拉配方；不把单一肉类记录用于整餐。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\r\n"
+}

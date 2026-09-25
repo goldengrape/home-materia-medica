@@ -1,7 +1,7 @@
 # Research Parent — 鲜蔬菜
 
 > entry_type: research_parent；publish: false；evidence_cutoff: 2026-09-24
-> child_entries: broccoli, kale, arugula, brussels-sprouts, bell-pepper, okra, cherry-tomato, zucchini
+> child_entries: broccoli, kale, arugula, brussels-sprouts, bell-pepper, okra, cherry-tomato, zucchini, romaine-lettuce, ice-plant, beetroot
 > inheritance_rule: regrade_D_on_use；no class-wide health-effect inheritance
 
 ## 共享身份边界

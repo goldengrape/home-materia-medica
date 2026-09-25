@@ -1,0 +1,10 @@
+{
+  "batch_id": "18-vegetables-and-salads",
+  "entry_id": "romaine-lettuce",
+  "summary_ref": "references/entries/romaine-lettuce/summary.md",
+  "summary_sha256": "8cf561ada9bdc8784fc75fa7b91c0aa3b0f968598e5fb8cae44d31ff4859200f",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 罗马生菜\r\n\r\n**身份。** 罗马生菜（romaine lettuce，Lactuca sativa 的长叶类型）可食叶片；其他生菜品种、芽苗、汁液和补充剂不视为相同干预。\r\n\r\n**组成与暴露。** 含水分、膳食纤维及多种微量营养素；具体含量受品种、种植和储存影响。数据库的单个样本值不能代表所有商品。 **关键变量：** 品种、叶片部位、鲜食或切碎、份量、储存、清洗，以及同食的主餐和酱料。\r\n\r\n**直接人体证据。** 一项随机三条件交叉试验纳入16名健康年轻男性，在高脂汉堡餐中加入100 g罗马生菜并与对照餐比较。4小时内生菜餐的餐后血糖曲线下面积较低，胰岛素指标亦有差异；血脂和炎症指标无显著组间差异。该研究是单次整餐试验，不能说明生菜本身有长期疾病预防或治疗效果。\r\n\r\n**产品/成分证据。** 研究只评估一种生菜、单一份量、年轻健康男性及一顿高脂餐。结果可能受整餐组成影响，不能推广到其他生菜或长期结局。\r\n\r\n**共享背景。** 参见 fresh-vegetable-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 生食叶菜应在流动饮用水下清洗并冷藏；包装即食叶菜按标签处理。清洗不能保证消除所有微生物。\r\n\r\n**传统来源。** 传统母条索引未列罗马生菜；不把其他叶菜的记载转用于现代罗马生菜。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
