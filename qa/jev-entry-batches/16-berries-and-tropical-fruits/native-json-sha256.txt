@@ -1,0 +1,10 @@
+8fd21576b1bb23a5b7e49ead451aacf8d2597b427c3c8e07993cc5237d0c0db5  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/blueberry.json
+558af372cb20ab84d475fcfe793d5afec86b8fbc64df3a2bc07a6b85619d4694  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/cranberry.json
+603c9a34b9c93df6fbe87a3d5968cf0cec0a148f7218884a6e17d9be8d6f9aa6  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/raspberry.json
+14bba849bfe2f0ee1d8c9d873467186998ee3b3413d1af45659856a4858d9ea5  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/blackberry.json
+ff527f26a2d73b2f8aea549b18488308d4cc6c2163e85927ad21d1aff05a4c61  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/grapefruit.json
+ec93939d13555baef3eb31d4d52c3c0d26975405f63822f0a31fa8771fea0711  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/kiwi.json
+2f7b74df650d361b87a4cc91d6f544997f28c326ebe37aca1acef2aa10b9bfa0  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/dragon-fruit.json
+3b299809a0d9c870bdf7fbeb545dd4ae225f552a19c3b5d0b8d9df3402dfde99  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/passion-fruit.json
+be709fa81a979aea4ab8329ff774856fc0df01c7effcee8767b62e7661728a8e  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/durian.json
+c84d8f0bd46d50af17d2c9838e3388a55562da818e62a0fa3468b49ed64a5dcc  qa/jev-entry-batches/16-berries-and-tropical-fruits/raw/custard-apple.json
