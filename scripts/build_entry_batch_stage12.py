@@ -4,7 +4,7 @@ import argparse, json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CUTOFF = "2026-09-24"
+CUTOFF = "2026-09-25"
 
 def load_data(batch_id):
     path = ROOT / "scripts" / "entry_batches" / f"{batch_id}.json"

@@ -1,0 +1,650 @@
+{
+  "batch": {
+    "id": "36-afternoon-and-night-scenes",
+    "title": "早餐、下午茶与夜间进食场景",
+    "catalog_order": 36,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-25",
+    "search_tool": "Web search; PubMed/PMC; Crossref/Europe PMC; FDA, USDA-FSIS and NCI official sources",
+    "web_search_calls": 9,
+    "web_search_queries": 32,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-36-afternoon-and-night-scenes",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "蛋白奶昔的证据来自一种糖尿病专用配方，隔夜燕麦结果来自限定燕麦和比较食品。",
+      "奶茶、咖啡、水果茶与甜点组合缺少直接类别试验；不同饮料和甜点研究只作邻近证据。",
+      "晚餐时点实验和现实生活零食试验结果不一致；不把夜间时段单独写成统一效应。",
+      "夜间烧烤化学物形成、方便面组成和火锅底料样本分别记录；不可互相替代或扩展为长期临床结局。"
+    ],
+    "citation_audit_revision": "rev-1: retained food, recipe, serving, population and timing boundaries; separated direct combo studies from adjacent component evidence."
+  },
+  "entries": {
+    "protein-shake-breakfast": {
+      "name": "蛋白奶昔早餐",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "蛋白奶昔早餐",
+      "research_depth": "R2",
+      "shared_parent": "breakfast-scenes-base",
+      "identity": "以含蛋白质的即饮或冲调奶昔作为早餐全部或主要部分；产品可为一般食品、运动饮料或疾病特定营养配方。",
+      "variables": "每份蛋白质和能量、碳水化合物种类、纤维、脂肪、糖、饮品体积、是否另配固体食物及产品用途。",
+      "composition": "配方可包含乳清、酪蛋白、大豆或其他蛋白，及糖、纤维、油脂、维生素和矿物质。疾病特定营养配方不能代表一般蛋白奶昔。",
+      "direct": "一项随机交叉试验纳入24名2型糖尿病成人，比较特定高蛋白、低脂、糖尿病专用营养奶昔与等能量即食燕麦；奶昔组餐后葡萄糖正增量曲线下面积较低，GLP-1和胰岛素反应较高。",
+      "specific": "该试验产品含低血糖生成指数碳水成分，研究由产品企业人员参与；结果不能推及所有蛋白奶昔、健康早餐者或长期血糖管理。ADA共识认为糖尿病饮食应个体化，不能由单一试餐决定整体方案。",
+      "body": "一项随机交叉试验纳入24名2型糖尿病成人，比较特定高蛋白、低脂、糖尿病专用营养奶昔与等能量即食燕麦；奶昔组餐后葡萄糖正增量曲线下面积较低，GLP-1和胰岛素反应较高。 该试验产品含低血糖生成指数碳水成分，研究由产品企业人员参与；结果不能推及所有蛋白奶昔、健康早餐者或长期血糖管理。ADA共识认为糖尿病饮食应个体化，不能由单一试餐决定整体方案。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "按具体用途查看完整营养标签和过敏原；冲调后按说明保存。糖尿病专用配方或研究结果不能替代医生制定的治疗饮食。",
+      "safety": "按具体用途查看完整营养标签和过敏原；冲调后按说明保存。糖尿病专用配方或研究结果不能替代医生制定的治疗饮食。",
+      "taste_m": {},
+      "refs": [
+        "Thomas S, Besecker B, Choe Y, Christofides E. Postprandial glycemic response to a high-protein diabetes-specific nutritional shake compared to isocaloric instant oatmeal in people with type 2 diabetes: a randomized, controlled, crossover trial. Front Clin Diabetes Healthc. 2024;5:1399410. DOI: https://doi.org/10.3389/fcdhc.2024.1399410.",
+        "American Diabetes Association. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. DOI: https://doi.org/10.2337/dci19-0014."
+      ],
+      "body_refs": [
+        "Thomas S, Besecker B, Choe Y, Christofides E. Postprandial glycemic response to a high-protein diabetes-specific nutritional shake compared to isocaloric instant oatmeal in people with type 2 diabetes: a randomized, controlled, crossover trial. Front Clin Diabetes Healthc. 2024;5:1399410. DOI: https://doi.org/10.3389/fcdhc.2024.1399410.",
+        "American Diabetes Association. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. DOI: https://doi.org/10.2337/dci19-0014."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、对照、交叉急性餐试验。",
+          "population": "24名2型糖尿病成人。",
+          "exposure": "测试高蛋白低脂糖尿病专用营养奶昔与等能量即食燕麦，观察至240分钟。",
+          "result": "奶昔组葡萄糖正增量AUC较低，GLP-1及胰岛素AUC较高。",
+          "limits": "特定产品、单次试验；研究团队含企业人员；不能外推到一般蛋白奶昔或长期结局。",
+          "distance": "D1：一种疾病特定早餐奶昔的急性证据。"
+        },
+        {
+          "ref": 2,
+          "design": "美国糖尿病协会营养治疗共识。",
+          "population": "成人糖尿病或糖尿病前期。",
+          "exposure": "汇总饮食模式与营养治疗建议。",
+          "result": "强调按个人需要、偏好和治疗目标制定营养方案。",
+          "limits": "不是特定蛋白奶昔试验。",
+          "distance": "D3：饮食管理背景。"
+        }
+      ],
+      "unknowns": "一般蛋白奶昔作为早餐的长期比较研究、不同产品替代固体早餐时的饱腹和营养充分性。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "high protein shake breakfast randomized crossover adults type 2 diabetes oatmeal trial",
+        "diabetes specific high protein nutrition shake breakfast trial 24 adults GLP-1",
+        "protein shake meal replacement breakfast long term randomized trial adults",
+        "ADA consensus individualized nutrition therapy adults diabetes"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "保留糖尿病专用特定配方与普通商业蛋白奶昔之间的距离，并记录研究人员产品关联。"
+      ]
+    },
+    "overnight-oats-cup": {
+      "name": "隔夜燕麦杯",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "隔夜燕麦杯",
+      "research_depth": "R2",
+      "shared_parent": "breakfast-scenes-base",
+      "identity": "将燕麦浸泡于奶或植物饮品并冷藏数小时后食用的冷食早餐，常加糖、水果、种子或坚果。",
+      "variables": "燕麦品种及加工、浸泡时间、液体类型、添加糖、坚果种子和水果、份量及冷藏温度。",
+      "composition": "燕麦提供碳水化合物、β-葡聚糖和少量蛋白质；奶品、种子、坚果、水果和甜味料会改变能量、蛋白质、脂肪和糖含量。",
+      "direct": "一项跨两个研究中心的随机交叉试验比较冷藏过夜的燕麦奶杯与米粉早餐，研究对象为无糖尿病成人。特定燕麦餐的葡萄糖iAUC分别比米粉对照低33%（无添加物）和24%（加糖、坚果和种子）；饥饿评分相近。",
+      "specific": "研究没有直接比较同一燕麦配方的热煮与过夜浸泡；样品和配方由论文描述且包含厂商参与。结果不能推为所有燕麦杯都低糖或更饱腹。",
+      "body": "一项跨两个研究中心的随机交叉试验比较冷藏过夜的燕麦奶杯与米粉早餐，研究对象为无糖尿病成人。特定燕麦餐的葡萄糖iAUC分别比米粉对照低33%（无添加物）和24%（加糖、坚果和种子）；饥饿评分相近。 研究没有直接比较同一燕麦配方的热煮与过夜浸泡；样品和配方由论文描述且包含厂商参与。结果不能推为所有燕麦杯都低糖或更饱腹。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "冷藏过夜并按食品标签处理奶、水果等易腐食材；查看添加糖、份量及坚果乳品过敏原。",
+      "safety": "冷藏过夜并按食品标签处理奶、水果等易腐食材；查看添加糖、份量及坚果乳品过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Wolever TMS, et al. Glycaemic and insulinaemic impact of oats soaked overnight in milk vs. cream of rice with and without sugar, nuts, and seeds: a randomized, controlled trial. Eur J Clin Nutr. 2019;73(1):86-93. DOI: https://doi.org/10.1038/s41430-018-0329-1. PMID: 30297759.",
+        "Wolever TMS, et al. Impact of oat processing on glycaemic and insulinaemic responses in healthy humans: a randomised clinical trial. Br J Nutr. 2019. DOI: https://doi.org/10.1017/S0007114519000370."
+      ],
+      "body_refs": [
+        "Wolever TMS, et al. Glycaemic and insulinaemic impact of oats soaked overnight in milk vs. cream of rice with and without sugar, nuts, and seeds: a randomized, controlled trial. Eur J Clin Nutr. 2019;73(1):86-93. DOI: https://doi.org/10.1038/s41430-018-0329-1. PMID: 30297759.",
+        "Wolever TMS, et al. Impact of oat processing on glycaemic and insulinaemic responses in healthy humans: a randomised clinical trial. Br J Nutr. 2019. DOI: https://doi.org/10.1017/S0007114519000370."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两中心随机交叉餐试验。",
+          "population": "无糖尿病、空腹成人；两中心各约40人。",
+          "exposure": "将燕麦在脱脂奶中冷藏浸泡15–17小时，与米粉早餐比较，有无糖、坚果和种子两种组合。",
+          "result": "燕麦餐的葡萄糖iAUC低于对应米粉餐；主观饥饿评分相似。",
+          "limits": "没有直接比较相同燕麦的热煮与浸泡；品牌/配方特定，存在作者企业关联。",
+          "distance": "D1：特定隔夜燕麦产品的急性人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机临床试验，比较不同燕麦加工方式。",
+          "population": "健康成人。",
+          "exposure": "比较不同加工燕麦制成的试餐。",
+          "result": "血糖和胰岛素反应随燕麦加工方式改变。",
+          "limits": "不能等同所有隔夜燕麦配方或长期早餐替代。",
+          "distance": "D2：燕麦加工的相邻证据。"
+        }
+      ],
+      "unknowns": "不同谷物、液体和配料搭配的代表性产品试验，以及长期血糖、体重和饱腹结局。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "overnight oats randomized controlled trial glycemic response milk cream of rice PMID 30297759",
+        "overnight oats cup cold soaked randomized trial with nuts seeds glycemic response",
+        "oat processing glycemic insulinemic responses healthy humans 2019 randomized",
+        "overnight oats food safety refrigerated milk fruit storage"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "核对隔夜浸泡试验的时间、对照食物、配料和作者利益关联，避免称其优于热燕麦。"
+      ]
+    },
+    "milk-tea-with-cake": {
+      "name": "奶茶配蛋糕",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "奶茶配蛋糕",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "以含奶和茶的饮品与蛋糕同次食用的下午茶组合。奶茶可以含糖、奶精、鲜奶或珍珠等配料；蛋糕种类和份量差异大。",
+      "variables": "茶类及咖啡因、糖和奶用量、奶精或珍珠、蛋糕配方及份量、进食先后顺序。",
+      "composition": "饮品和蛋糕可同时提供添加糖和能量；奶、奶精、面粉、奶油和夹馅改变脂肪、蛋白质与总份量。",
+      "direct": "未检得直接比较常见奶茶配蛋糕组合的代表性人体试验。8名健康年轻成人的急性交叉试验单独比较茶、咖啡或蔗糖饮品后再食高碳水马铃薯餐；不能代表含奶茶配蛋糕。",
+      "specific": "另一项21名健康成人试验将羊羹与绿茶、咖啡等饮品同食，比较含50克碳水的餐后血糖；结果仅涉及该甜点与特定饮料。奶茶和蛋糕品牌、糖量及奶品会改变组合暴露。",
+      "body": "未检得直接比较常见奶茶配蛋糕组合的代表性人体试验。8名健康年轻成人的急性交叉试验单独比较茶、咖啡或蔗糖饮品后再食高碳水马铃薯餐；不能代表含奶茶配蛋糕。 另一项21名健康成人试验将羊羹与绿茶、咖啡等饮品同食，比较含50克碳水的餐后血糖；结果仅涉及该甜点与特定饮料。奶茶和蛋糕品牌、糖量及奶品会改变组合暴露。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "比较饮料和蛋糕的总份量、添加糖和咖啡因；乳品、麸质、鸡蛋和坚果按实际配料核对。",
+      "safety": "比较饮料和蛋糕的总份量、添加糖和咖啡因；乳品、麸质、鸡蛋和坚果按实际配料核对。",
+      "taste_m": {},
+      "refs": [
+        "Louie JCY, Atkinson F, Petocz P, Brand-Miller JC. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/",
+        "Yagi M, et al. The effect of Yokan and beverage intake on postprandial blood glucose levels. Glycative Stress Research. 2024;11(3):94-102. DOI: https://doi.org/10.24659/gsr.11.3_94."
+      ],
+      "body_refs": [
+        "Louie JCY, Atkinson F, Petocz P, Brand-Miller JC. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/",
+        "Yagi M, et al. The effect of Yokan and beverage intake on postprandial blood glucose levels. Glycative Stress Research. 2024;11(3):94-102. DOI: https://doi.org/10.24659/gsr.11.3_94."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉急性餐试验。",
+          "population": "8名瘦、年轻、健康成人。",
+          "exposure": "先摄入250毫升黑咖啡、加10克蔗糖咖啡、脱咖啡因咖啡、茶、蔗糖或水，一小时后吃马铃薯餐。",
+          "result": "含咖啡因黑咖啡提高餐后血糖；加糖咖啡降低相对反应；茶与蔗糖条件无显著差异。",
+          "limits": "极小样本、无奶、不含蛋糕；结果互异且为急性试验。",
+          "distance": "D3：单一饮品后接主食的间接证据。"
+        },
+        {
+          "ref": 2,
+          "design": "急性饮品与甜点组合试验。",
+          "population": "21名20–30岁健康男性和女性。",
+          "exposure": "将含50克碳水的羊羹分别与水、绿茶、番石榴叶茶或咖啡同食。",
+          "result": "羊羹饮料组合的血糖曲线低于葡萄糖水参考；不同饮料之间总体未见显著差异。",
+          "limits": "羊羹不是蛋糕；奶茶不是试验饮品；单次试餐。",
+          "distance": "D2：甜点与饮料组合的邻近证据。"
+        }
+      ],
+      "unknowns": "奶茶配蛋糕的直接餐后和长期研究、不同奶茶配方与蛋糕份量的实际市场数据。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "milk tea with cake postprandial glycemic clinical trial",
+        "tea beverage dessert combination randomized glycemic adults yokan tea coffee 2024",
+        "caffeinated tea sucrose before carbohydrate meal crossover healthy adults PMID 19114405",
+        "milk tea cake nutrition sugar caffeine composition survey"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "未把无奶的茶饮或羊羹试验写成奶茶蛋糕的直接证据。"
+      ]
+    },
+    "coffee-with-cookies": {
+      "name": "咖啡配曲奇",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "咖啡配曲奇",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "以咖啡和曲奇同次食用的点心组合。咖啡因、糖奶添加、曲奇大小和配方可明显不同。",
+      "variables": "咖啡因和杯量、咖啡添加糖或奶、曲奇份量、巧克力/坚果馅料、进食时点。",
+      "composition": "咖啡主要贡献液体、咖啡因及少量咖啡固形物；曲奇通常含谷物粉、油脂和糖，实际配方决定能量和过敏原。",
+      "direct": "未检得直接测试咖啡配曲奇的长期临床研究。8名健康成人的试验测试咖啡或加糖咖啡后再吃马铃薯餐，说明饮料、添加糖和进餐顺序可能影响一次餐后反应，但不测试曲奇。",
+      "specific": "24名健康成人的居家随机交叉试验在不同时间吃标准化198千卡高碳水零食；晚间曲线较缓但持续时间更长，研究者指出该结果与部分实验室研究不同。它未指定咖啡或曲奇。",
+      "body": "未检得直接测试咖啡配曲奇的长期临床研究。8名健康成人的试验测试咖啡或加糖咖啡后再吃马铃薯餐，说明饮料、添加糖和进餐顺序可能影响一次餐后反应，但不测试曲奇。 24名健康成人的居家随机交叉试验在不同时间吃标准化198千卡高碳水零食；晚间曲线较缓但持续时间更长，研究者指出该结果与部分实验室研究不同。它未指定咖啡或曲奇。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "按咖啡因敏感程度和睡眠时间选择咖啡；核对曲奇的糖、份量、坚果、乳品和麸质。",
+      "safety": "按咖啡因敏感程度和睡眠时间选择咖啡；核对曲奇的糖、份量、坚果、乳品和麸质。",
+      "taste_m": {},
+      "refs": [
+        "Louie JCY, Atkinson F, Petocz P, Brand-Miller JC. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "body_refs": [
+        "Louie JCY, Atkinson F, Petocz P, Brand-Miller JC. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉急性餐试验。",
+          "population": "8名健康年轻成人。",
+          "exposure": "饮品后1小时食用马铃薯餐。",
+          "result": "咖啡因、脱咖啡因和加糖条件的餐后血糖反应不同。",
+          "limits": "不含曲奇、不含奶咖啡；样本很小。",
+          "distance": "D3：咖啡时序与碳水餐的间接证据。"
+        },
+        {
+          "ref": 2,
+          "design": "现实生活环境随机交叉试验，连续葡萄糖监测。",
+          "population": "24名27–61岁健康成人。",
+          "exposure": "在早晨、下午或晚间食用同一198千卡碳水零食。",
+          "result": "晚间反应峰值较缓但延续较久；与受控实验室研究不一致。",
+          "limits": "没有咖啡或曲奇比较，受试者和时间范围有限。",
+          "distance": "D3：零食时点的间接人体证据。"
+        }
+      ],
+      "unknowns": "常见曲奇与具体咖啡配方、摄入剂量、睡眠及长期代谢结局的直接组合研究。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "coffee cookies snack postprandial glycemia randomized adults",
+        "coffee caffeine cookie consumption afternoon snack study",
+        "standard snack morning afternoon evening continuous glucose randomized crossover adults PMID 36004426",
+        "coffee timing sucrose carbohydrate postprandial response healthy adults 19114405"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "区分咖啡后吃马铃薯的实验、普通标准零食时间试验与曲奇咖啡组合。"
+      ]
+    },
+    "coffee-with-chocolate": {
+      "name": "咖啡配巧克力",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "咖啡配巧克力",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "以咖啡与巧克力或含可可食品同次食用的组合。咖啡因、可可比例、糖和份量影响实际组成。",
+      "variables": "咖啡因、浓缩咖啡份量、可可含量、巧克力糖和脂肪、食用频率及时间。",
+      "composition": "咖啡含咖啡因（除非脱咖啡因）；巧克力含可可脂、糖和可可固形物。具体含量因品类、产品及份量变化。",
+      "direct": "一项21名健康成人的随机交叉试验为期一个月，比较每日不同咖啡摄入与“咖啡加含咖啡可可糖果”方案；不同方案对所测心代谢风险标志物没有显著影响。试验不是普通巧克力配咖啡，也不足以判断长期疾病。",
+      "specific": "可可糖果中的咖啡成分与常见巧克力不同，且试验观察的是特定组合和健康成人。咖啡与巧克力同食不等于单独咖啡或单独可可研究的效果相加。",
+      "body": "一项21名健康成人的随机交叉试验为期一个月，比较每日不同咖啡摄入与“咖啡加含咖啡可可糖果”方案；不同方案对所测心代谢风险标志物没有显著影响。试验不是普通巧克力配咖啡，也不足以判断长期疾病。 可可糖果中的咖啡成分与常见巧克力不同，且试验观察的是特定组合和健康成人。咖啡与巧克力同食不等于单独咖啡或单独可可研究的效果相加。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "留意巧克力份量、糖和饱和脂肪，并把咖啡因总量及饮用时间计入日常摄入。",
+      "safety": "留意巧克力份量、糖和饱和脂肪，并把咖啡因总量及饮用时间计入日常摄入。",
+      "taste_m": {},
+      "refs": [
+        "Mena P, et al. Effect of coffee and cocoa-based confectionery containing coffee on markers of cardiometabolic health: results from the pocket-4-life project. Eur J Nutr. 2021. DOI: https://doi.org/10.1007/s00394-020-02347-5. https://pmc.ncbi.nlm.nih.gov/articles/PMC7987697/",
+        "Mena P, et al. The Pocket-4-Life project, bioavailability and beneficial properties of the bioactive compounds of espresso coffee and cocoa-based confectionery containing coffee: study protocol for a randomized cross-over trial. Trials. 2017;18:527. DOI: https://doi.org/10.1186/s13063-017-2259-7."
+      ],
+      "body_refs": [
+        "Mena P, et al. Effect of coffee and cocoa-based confectionery containing coffee on markers of cardiometabolic health: results from the pocket-4-life project. Eur J Nutr. 2021. DOI: https://doi.org/10.1007/s00394-020-02347-5. https://pmc.ncbi.nlm.nih.gov/articles/PMC7987697/",
+        "Mena P, et al. The Pocket-4-Life project, bioavailability and beneficial properties of the bioactive compounds of espresso coffee and cocoa-based confectionery containing coffee: study protocol for a randomized cross-over trial. Trials. 2017;18:527. DOI: https://doi.org/10.1186/s13063-017-2259-7."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三组随机交叉干预试验。",
+          "population": "21名健康成人，干预各持续一个月。",
+          "exposure": "比较每天1杯浓缩咖啡、3杯咖啡，或1杯咖啡加每日两次含咖啡的可可糖果。",
+          "result": "所测心代谢风险标志物未见显著组间效果。",
+          "limits": "小样本、短期；产品为含咖啡可可糖果，不是普通巧克力；无法推断长期疾病。",
+          "distance": "D1：指定咖啡与可可糖果组合的人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉研究方案论文。",
+          "population": "计划纳入健康成人。",
+          "exposure": "描述咖啡和含咖啡可可糖果干预方法。",
+          "result": "预先登记了该组合研究方案。",
+          "limits": "方案不是结果研究。",
+          "distance": "D2：同系列组合研究背景。"
+        }
+      ],
+      "unknowns": "普通咖啡与各类巧克力同食的餐后反应、不同可可和糖含量的比较，以及长期结局。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "coffee chocolate co-consumption randomized clinical trial cardiometabolic outcomes",
+        "espresso coffee cocoa confectionery pocket 4 life trial 21 adults",
+        "coffee chocolate acute glycemic response adults trial caffeine cacao",
+        "coffee chocolate study DOI 10.1007/s00394-020-02347-5"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "研究中的可可糖果含咖啡，按原产品说明保留与普通巧克力的差别。"
+      ]
+    },
+    "fruit-tea-with-dessert": {
+      "name": "水果茶配甜点",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "水果茶配甜点",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "以含水果或果味的茶饮与甜点同次食用的下午茶场景。水果茶可能含鲜果、果泥、浓缩汁或糖浆，甜点种类差异大。",
+      "variables": "茶类、糖浆或果泥用量、杯量、茶咖啡因、甜点配方及份量、进餐时序。",
+      "composition": "饮品的糖和果汁来源因门店配方而异；甜点可额外提供糖、淀粉和脂肪。不能由“水果茶”名称推断未加糖或等同整果。",
+      "direct": "未检得直接比较水果茶配甜点的代表性人体研究。21名健康成人的一项急性试验比较羊羹与水、绿茶、番石榴叶茶或咖啡同食；所测试饮料间差异不显著，但该甜点和饮料不等于水果茶配蛋糕。",
+      "specific": "另有8名健康成人饮用茶或蔗糖饮料后一小时食用马铃薯餐的试验；这并不代表含糖水果茶与甜点的组合。果味和含果配料不能抵消饮料及甜点中的添加糖。",
+      "body": "未检得直接比较水果茶配甜点的代表性人体研究。21名健康成人的一项急性试验比较羊羹与水、绿茶、番石榴叶茶或咖啡同食；所测试饮料间差异不显著，但该甜点和饮料不等于水果茶配蛋糕。 另有8名健康成人饮用茶或蔗糖饮料后一小时食用马铃薯餐的试验；这并不代表含糖水果茶与甜点的组合。果味和含果配料不能抵消饮料及甜点中的添加糖。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "查看饮料糖度选择、是否另加糖浆及甜点份量；如有血糖管理需要，应按整个组合判断。",
+      "safety": "查看饮料糖度选择、是否另加糖浆及甜点份量；如有血糖管理需要，应按整个组合判断。",
+      "taste_m": {},
+      "refs": [
+        "Yagi M, et al. The effect of Yokan and beverage intake on postprandial blood glucose levels. Glycative Stress Research. 2024;11(3):94-102. DOI: https://doi.org/10.24659/gsr.11.3_94.",
+        "Louie JCY, et al. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/"
+      ],
+      "body_refs": [
+        "Yagi M, et al. The effect of Yokan and beverage intake on postprandial blood glucose levels. Glycative Stress Research. 2024;11(3):94-102. DOI: https://doi.org/10.24659/gsr.11.3_94.",
+        "Louie JCY, et al. Delayed effects of coffee, tea and sucrose on postprandial glycemia in lean, young, healthy adults. Asia Pac J Clin Nutr. 2008;17(4):657-662. PMID: 19114405. https://pubmed.ncbi.nlm.nih.gov/19114405/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "急性饮品与甜点组合研究。",
+          "population": "21名健康20–30岁成人。",
+          "exposure": "含50克碳水的羊羹与水、茶或咖啡同食。",
+          "result": "与葡萄糖水相比，各羊羹餐的血糖升幅较低；不同饮料之间总体差异不显著。",
+          "limits": "研究对象不是水果茶或常见西式甜点，且为单次试餐。",
+          "distance": "D2：甜点与茶/咖啡的相邻证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉急性餐试验。",
+          "population": "8名健康年轻成人。",
+          "exposure": "茶、咖啡或蔗糖饮品后接高碳水马铃薯餐。",
+          "result": "餐后反应随具体饮品条件不同。",
+          "limits": "没有水果茶、果糖饮料或甜点组合。",
+          "distance": "D3：饮品与碳水餐的间接证据。"
+        }
+      ],
+      "unknowns": "市售水果茶配甜点的实际配方和份量分布，以及该组合的直接餐后和长期人体研究。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "fruit tea dessert co-consumption glycemic clinical trial",
+        "fruit tea cake postprandial glucose beverage dessert study",
+        "yokan beverage tea coffee dessert postprandial glucose trial 2024",
+        "sugar sweetened tea sucrose postprandial glycemia randomized crossover"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "明确羊羹与茶饮研究不能代表水果茶和蛋糕；饮品糖浆配方差异较大。"
+      ]
+    },
+    "late-night-instant-noodles": {
+      "name": "夜宵方便面",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "夜宵方便面",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在晚间或睡前时段食用即食方便面，包括袋装、杯装和不同汤底、调味包及加料形式。",
+      "variables": "进食时间与睡眠时间间隔、面体工艺、调味包用量、整包钠、份量、加蛋肉菜及饮汤量。",
+      "composition": "面饼可油炸或非油炸，常见调味包和汤底钠含量差异大；加蛋、肉、蔬菜会改变蛋白质、纤维和总能量。",
+      "direct": "未检得夜宵方便面的随机人体试验。20名健康成人的受控交叉试验将同一晚餐安排在18:00或22:00，晚餐较晚时餐后代谢与夜间睡眠时段重合，并出现更高的夜间葡萄糖和脂肪氧化变化。该结果不特指方便面。",
+      "specific": "韩国成人调查中，方便面消费者与非消费者的总体能量、脂肪和钠摄入存在差异；跨国包装调查显示方便面钠含量随产品和市场变化。观察性关联不能确认夜食或方便面导致疾病。",
+      "body": "未检得夜宵方便面的随机人体试验。20名健康成人的受控交叉试验将同一晚餐安排在18:00或22:00，晚餐较晚时餐后代谢与夜间睡眠时段重合，并出现更高的夜间葡萄糖和脂肪氧化变化。该结果不特指方便面。 韩国成人调查中，方便面消费者与非消费者的总体能量、脂肪和钠摄入存在差异；跨国包装调查显示方便面钠含量随产品和市场变化。观察性关联不能确认夜食或方便面导致疾病。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "查看每包钠和实际食用份量，调味包可按个人饮食需要调整；注意完整餐次的蔬菜和蛋白质来源。",
+      "safety": "查看每包钠和实际食用份量，调味包可按个人饮食需要调整；注意完整餐次的蔬菜和蛋白质来源。",
+      "taste_m": {},
+      "refs": [
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "A comparison of food and nutrient intake between instant noodle consumers and non-instant noodle consumers in Korean adults. Nutr Res Pract. 2011;5(5):443-449. DOI: https://doi.org/10.4162/nrp.2011.5.5.443.",
+        "Know Your Noodles! Assessing Variations in Sodium Content of Instant Noodles across Countries. Nutrients. 2017;9(6):612. DOI: https://doi.org/10.3390/nu9060612."
+      ],
+      "body_refs": [
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "A comparison of food and nutrient intake between instant noodle consumers and non-instant noodle consumers in Korean adults. Nutr Res Pract. 2011;5(5):443-449. DOI: https://doi.org/10.4162/nrp.2011.5.5.443.",
+        "Know Your Noodles! Assessing Variations in Sodium Content of Instant Noodles across Countries. Nutrients. 2017;9(6):612. DOI: https://doi.org/10.3390/nu9060612."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉控制试验。",
+          "population": "20名健康成人，10男10女。",
+          "exposure": "固定睡眠时间下比较18:00与22:00食用等能量晚餐。",
+          "result": "晚餐较晚时血糖代谢与睡眠时段重合，夜间葡萄糖水平较高。",
+          "limits": "一次受控晚餐，不是方便面或夜宵产品研究；长期影响未知。",
+          "distance": "D2：进餐时点的间接人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "韩国成人调查数据分析。",
+          "population": "韩国成年方便面消费者与非消费者。",
+          "exposure": "根据饮食调查估算方便面摄入和营养素摄入。",
+          "result": "消费者组摄入能量、脂肪和钠更高，部分其他营养素较低。",
+          "limits": "观察性分析，无法分离共伴饮食与因果关系；年代和地区有限。",
+          "distance": "D1：方便面消费与饮食构成调查。"
+        },
+        {
+          "ref": 3,
+          "design": "多国包装食品钠标签/数据库分析。",
+          "population": "多个国家市场上的方便面产品。",
+          "exposure": "比较即售或按标签烹调后的钠含量。",
+          "result": "产品钠含量跨品牌和国家差异大。",
+          "limits": "不是夜食研究；市场抽样年份有限且标签不等同实验室检测。",
+          "distance": "D1：方便面产品组成资料。"
+        }
+      ],
+      "unknowns": "夜间食用方便面的直接临床研究、当代各市场配方及对睡眠和长期代谢结局的影响。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "late night instant noodles clinical trial sleep meal timing",
+        "late dinner randomized crossover glucose healthy adults 22:00 18:00 PMID 32525525",
+        "instant noodle consumption nutrient intake Korean adults sodium cross sectional",
+        "instant noodles sodium content across countries survey 2017"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "分开陈述晚餐时点试验、方便面营养调查和产品标签分析，不作因果拼接。"
+      ]
+    },
+    "late-night-barbecue": {
+      "name": "夜间烧烤",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "夜间烧烤",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在夜间食用炭火、明火或高温烤制的肉类、鱼类或蔬菜的聚餐场景。时间、肉类、腌料和熟度会改变暴露。",
+      "variables": "进食与睡眠间隔、肉类种类、火焰和烟接触、高温烹调时长、焦化程度、腌料、份量和饮酒。",
+      "composition": "烧烤餐可含肉、鱼、蔬菜、主食、蘸料及酒精饮品；营养构成和烹调化学物随食物和做法变化。",
+      "direct": "未检得直接研究夜间烧烤整餐长期健康结局的随机试验。受控晚餐时点试验显示，健康成人将相同晚餐从18:00推迟至22:00会改变夜间和次晨代谢指标；它不证明烧烤这种烹调方式特有的影响。",
+      "specific": "美国国家癌症研究所说明，肌肉类食物在高温、明火烧烤时可形成杂环胺和多环芳烃；形成量取决于肉类、温度、时长和焦化。化学物形成和人群癌症风险并非同一证据。",
+      "body": "未检得直接研究夜间烧烤整餐长期健康结局的随机试验。受控晚餐时点试验显示，健康成人将相同晚餐从18:00推迟至22:00会改变夜间和次晨代谢指标；它不证明烧烤这种烹调方式特有的影响。 美国国家癌症研究所说明，肌肉类食物在高温、明火烧烤时可形成杂环胺和多环芳烃；形成量取决于肉类、温度、时长和焦化。化学物形成和人群癌症风险并非同一证据。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "减少肉类直接接触火焰和长时间高温；生熟食物分开、肉类充分加热。夜间饮食还应结合总量和睡眠时间判断。",
+      "safety": "减少肉类直接接触火焰和长时间高温；生熟食物分开、肉类充分加热。夜间饮食还应结合总量和睡眠时间判断。",
+      "taste_m": {},
+      "refs": [
+        "National Cancer Institute. Chemicals in Meat Cooked at High Temperatures and Cancer Risk. https://www.cancer.gov/about-cancer/causes-prevention/risk/diet/cooked-meats-fact-sheet",
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525."
+      ],
+      "body_refs": [
+        "National Cancer Institute. Chemicals in Meat Cooked at High Temperatures and Cancer Risk. https://www.cancer.gov/about-cancer/causes-prevention/risk/diet/cooked-meats-fact-sheet",
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国国家癌症研究所官方科学说明。",
+          "population": "不同肉类和高温烹饪方法的实验室及人群证据。",
+          "exposure": "描述煎烤、明火烧烤和烟熏中HCA及PAH的形成因素。",
+          "result": "更高温度、较长时间、明火和烟雾接触通常会增加部分化合物形成。",
+          "limits": "形成量研究不能直接量化某次夜宵的癌症风险；人群研究结果需考虑混杂。",
+          "distance": "D2：烧烤工艺与化学暴露证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉控制晚餐试验。",
+          "population": "20名健康成人。",
+          "exposure": "等能量晚餐于18:00或22:00摄入。",
+          "result": "晚餐延迟改变夜间葡萄糖和脂质代谢。",
+          "limits": "不是烧烤场景，单次试验，不能推出慢性健康结果。",
+          "distance": "D2：夜间用餐时点证据。"
+        }
+      ],
+      "unknowns": "不同烤法、肉类和实际晚餐时间对长期人群结局的独立影响，以及夜间烧烤整餐的直接研究。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "night barbecue late meal timing randomized trial glucose metabolism",
+        "grilled meat high temperature HCA PAH NCI cancer risk cooking fact sheet",
+        "late dinner 22:00 randomized crossover metabolic effects healthy volunteers",
+        "barbecue night eating clinical health outcomes meal timing"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "将烧烤产生的化合物与临床癌症结局分开，并将晚餐时点证据标作间接。"
+      ]
+    },
+    "late-night-hotpot": {
+      "name": "火锅夜宵",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "火锅夜宵",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在夜间共同食用锅底中涮煮的肉类、豆制品、蔬菜或主食，并搭配蘸料的餐次。火锅种类和进食时长差异很大。",
+      "variables": "锅底种类和份量、食材及蘸料、锅底是否饮用、调味料和钠、肉类熟度、进食时间与睡眠间隔。",
+      "composition": "火锅锅底及蘸料可贡献钠、油脂和能量；涮煮食材则决定蛋白质、蔬菜、碳水和脂肪暴露。长时间共享加热的就餐形式需要分开夹取生食和熟食。",
+      "direct": "未检得火锅夜宵本身的随机人体研究。晚餐时点随机试验发现22:00进餐相较18:00进餐改变健康成人的夜间代谢指标，但没有测试火锅。",
+      "specific": "一项中国调味品营养分析包含35种火锅底料，报告其每100克钠中位数为4740毫克、脂肪中位数为55克；这是包装底料的检测/数据库样本，不等于稀释后每人摄入量或所有火锅。",
+      "body": "未检得火锅夜宵本身的随机人体研究。晚餐时点随机试验发现22:00进餐相较18:00进餐改变健康成人的夜间代谢指标，但没有测试火锅。 一项中国调味品营养分析包含35种火锅底料，报告其每100克钠中位数为4740毫克、脂肪中位数为55克；这是包装底料的检测/数据库样本，不等于稀释后每人摄入量或所有火锅。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "按底料配比和蘸料用量判断，不把底料每100克数据当作一餐摄入。生熟夹具分开，肉和海鲜充分加热；留意晚餐份量和时间。",
+      "safety": "按底料配比和蘸料用量判断，不把底料每100克数据当作一餐摄入。生熟夹具分开，肉和海鲜充分加热；留意晚餐份量和时间。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, et al. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346. PMCID: PMC10609505.",
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "USDA FSIS. Safe Food Handling and Preparation. https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation"
+      ],
+      "body_refs": [
+        "Lv W, et al. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346. PMCID: PMC10609505.",
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "USDA FSIS. Safe Food Handling and Preparation. https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国调味品产品组成分析。",
+          "population": "中国市场调味品样品，包括35种火锅底料。",
+          "exposure": "分析产品能量和核心营养素。",
+          "result": "火锅底料样本的钠和脂肪含量中位数较高，样品间范围宽。",
+          "limits": "包装底料每100克数值不能视为冲调后汤底或个人实际摄入；样本不代表所有产品。",
+          "distance": "D1：火锅底料组成证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉控制晚餐试验。",
+          "population": "20名健康成人。",
+          "exposure": "比较18:00和22:00的等能量晚餐。",
+          "result": "较晚进餐改变夜间餐后葡萄糖和脂质代谢。",
+          "limits": "不是火锅；单次试验，人群与现实就餐差异大。",
+          "distance": "D2：夜间用餐时点证据。"
+        },
+        {
+          "ref": 3,
+          "design": "美国农业部官方食品安全指导。",
+          "population": "家庭和团体烹饪者。",
+          "exposure": "生肉生禽与熟食分开处理、充分烹调和保持温度。",
+          "result": "提示避免生肉汁液污染熟食，并按食品温度指导处理。",
+          "limits": "美国通用指导，非火锅临床研究；具体温度依肉类类型。",
+          "distance": "D3：食品安全背景。"
+        }
+      ],
+      "unknowns": "不同锅底、实际稀释比例、食材及蘸料组合的餐级营养数据，以及夜间火锅整餐的人体结局。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "late night hotpot meal timing human trial glucose metabolism",
+        "China hot pot base nutrient survey sodium fat 35 samples 2023 4346",
+        "hot pot soup base sodium nutrient analysis China packaged condiments",
+        "USDA food safety raw cooked foods separation hotpot shared utensils"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "区分包装底料每100克、冲调锅底和个人食用量，避免以小样本产品分析代表所有火锅。"
+      ]
+    },
+    "chips-while-watching": {
+      "name": "追剧薯片",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "追剧薯片",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "观看连续剧或视频时食用薯片等咸味零食的行为场景；包装大小、口味、份量和观看时长会改变摄入。",
+      "variables": "袋装份量、薯片配方和盐、观看时长与注意分配、是否与他人分享、晚间进食频率。",
+      "composition": "薯片多含淀粉、油脂和钠；具体产品的份量、钠和能量按标签及实际食用量判断。",
+      "direct": "未检得追剧时吃薯片这一具体行为的长期随机试验。女性参与者的小型实验研究发现边看电视边吃零食会降低对先前零食摄入的回忆准确性，并在之后无电视的午餐中摄入更多食物；研究不限定薯片或夜间。",
+      "specific": "24名健康成人的居家交叉研究比较相同标准零食在早、午、晚食用，晚间血糖反应较缓但持续时间较长，且与部分实验室发现不一致。观看屏幕和零食时间研究不能证明每次追剧都会导致过量摄入。",
+      "body": "未检得追剧时吃薯片这一具体行为的长期随机试验。女性参与者的小型实验研究发现边看电视边吃零食会降低对先前零食摄入的回忆准确性，并在之后无电视的午餐中摄入更多食物；研究不限定薯片或夜间。 24名健康成人的居家交叉研究比较相同标准零食在早、午、晚食用，晚间血糖反应较缓但持续时间较长，且与部分实验室发现不一致。观看屏幕和零食时间研究不能证明每次追剧都会导致过量摄入。",
+      "evidence_body": "证据限于所列配方、食品组合、人群、进食时间和结局；本条是生活场景条目，不代表固定份量或长期健康效果。",
+      "care": "可按实际份量取出零食并查看每份钠和能量；把观看时长、零食种类和晚餐时间一并记录，避免用单次行为实验推断个人长期结果。",
+      "safety": "可按实际份量取出零食并查看每份钠和能量；把观看时长、零食种类和晚餐时间一并记录，避免用单次行为实验推断个人长期结果。",
+      "taste_m": {},
+      "refs": [
+        "Mittal D, Stevenson RJ, Oaten MJ, Miller LA. Snacking while watching TV impairs food recall and promotes food intake on a later TV-free test meal. Appl Cognit Psychol. 2011;25(6):871-877. DOI: https://doi.org/10.1002/acp.1760.",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "body_refs": [
+        "Mittal D, Stevenson RJ, Oaten MJ, Miller LA. Snacking while watching TV impairs food recall and promotes food intake on a later TV-free test meal. Appl Cognit Psychol. 2011;25(6):871-877. DOI: https://doi.org/10.1002/acp.1760.",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两项实验室行为实验。",
+          "population": "女性参与者。",
+          "exposure": "比较边看电视吃零食与不看电视吃零食，之后测量食物记忆和午餐摄入。",
+          "result": "看电视时进食的参与者后来午餐摄入更多，且对先前零食回忆较差。",
+          "limits": "并非针对薯片、夜间或长期体重；参与者为女性，情境受控。",
+          "distance": "D2：屏幕分心与零食行为的邻近证据。"
+        },
+        {
+          "ref": 2,
+          "design": "居家随机交叉试验并使用连续葡萄糖监测。",
+          "population": "24名健康成人。",
+          "exposure": "在早晨、下午和晚间食用标准198千卡高碳水零食。",
+          "result": "晚间血糖反应峰值较低、持续更长；与若干实验室研究不一致。",
+          "limits": "不是薯片或屏幕观看试验，也不能代表有代谢疾病者。",
+          "distance": "D3：零食时间的间接证据。"
+        }
+      ],
+      "unknowns": "夜间观看视频时零食摄入的长期量化研究、不同零食和屏幕内容的影响及非实验环境结果。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "watching TV snacking potato chips randomized behavioral study food intake recall",
+        "screen distraction snack intake later meal TV experimental study DOI 10.1002/acp.1760",
+        "time of day standard snack evening glycemic response randomized crossover adults PMID 36004426",
+        "potato chips sodium nutrient label serving survey"
+      ],
+      "search_log": [
+        "检索该时间与食品组合的直接人体研究，并界定与邻近组合的差异。",
+        "核对论文题名、研究设计、人群、具体配方、进食时点与结局。",
+        "区分短期餐后反应、市场营养组成、饮食行为和长期健康结局。",
+        "区分电视分心行为研究与昼夜零食餐后试验，两者研究问题不同。"
+      ]
+    }
+  }
+}

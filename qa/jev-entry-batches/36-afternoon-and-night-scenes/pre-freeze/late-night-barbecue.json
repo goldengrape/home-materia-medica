@@ -1,0 +1,10 @@
+{
+  "batch_id": "36-afternoon-and-night-scenes",
+  "entry_id": "late-night-barbecue",
+  "summary_ref": "references/entries/late-night-barbecue/summary.md",
+  "summary_sha256": "1090db6bf568501d920c79fab60e8cd64a80e27cfb4c97fc6457a22d95ced180",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-25",
+  "summary_text": "# Summary Document — 夜间烧烤\r\n\r\n**身份。** 在夜间食用炭火、明火或高温烤制的肉类、鱼类或蔬菜的聚餐场景。时间、肉类、腌料和熟度会改变暴露。\r\n\r\n**组成与暴露。** 烧烤餐可含肉、鱼、蔬菜、主食、蘸料及酒精饮品；营养构成和烹调化学物随食物和做法变化。 **关键变量：** 进食与睡眠间隔、肉类种类、火焰和烟接触、高温烹调时长、焦化程度、腌料、份量和饮酒。\r\n\r\n**直接人体证据。** 未检得直接研究夜间烧烤整餐长期健康结局的随机试验。受控晚餐时点试验显示，健康成人将相同晚餐从18:00推迟至22:00会改变夜间和次晨代谢指标；它不证明烧烤这种烹调方式特有的影响。\r\n\r\n**产品/成分证据。** 美国国家癌症研究所说明，肌肉类食物在高温、明火烧烤时可形成杂环胺和多环芳烃；形成量取决于肉类、温度、时长和焦化。化学物形成和人群癌症风险并非同一证据。\r\n\r\n**共享背景。** 参见 afternoon-and-night-scenes-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 减少肉类直接接触火焰和长时间高温；生熟食物分开、肉类充分加热。夜间饮食还应结合总量和睡眠时间判断。\r\n\r\n**传统来源。** 本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
