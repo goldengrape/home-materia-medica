@@ -1,0 +1,10 @@
+{
+  "batch_id": "23-snacks-dried-meat",
+  "entry_id": "pork-jerky",
+  "summary_ref": "references/entries/pork-jerky/summary.md",
+  "summary_sha256": "d8689e3ef0c94d5234308de9a3fef2212da00af18a56304632a5404a0642d933",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 猪肉脯\r\n\r\n**身份。** 以猪肉切片或肉糜调味后干燥、烘烤或烤制的零食；猪肉松不自动归入本条。\r\n\r\n**组成与暴露。** 猪肉部位、糖盐腌料、厚度和烘烤会改变组成。 **关键变量：** 原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。\r\n\r\n**直接人体证据。** 未检得猪肉脯专属人体研究。\r\n\r\n**产品/成分证据。** 香港消费者委员会抽样10款猪肉干中9款检出PAH。30款混合肉类零食全部高糖，除一款肉松外均高钠；糖钠统计不是猪肉干子组值。\r\n\r\n**共享背景。** 参见 snack-and-processed-meat-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 看每份糖、钠和配料；控制肉类零食份量，避免食用焦黑部分。\r\n\r\n**传统来源。** 现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

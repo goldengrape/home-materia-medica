@@ -1,0 +1,10 @@
+{
+  "batch_id": "23-snacks-dried-meat",
+  "entry_id": "seaweed-crisps",
+  "summary_ref": "references/entries/seaweed-crisps/summary.md",
+  "summary_sha256": "d3aaa4c63ec9ae49f32aff3a79c7ba705d43e4a2d02334fa52ae50d1723517eb",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 海苔脆片\r\n\r\n**身份。** 以紫菜、海苔或其他食用海藻干燥压片，并可能加油盐制成的脆食。\r\n\r\n**组成与暴露。** 海藻品种、烘烤、盐油调味会改变组成；不同海藻的碘和矿物质含量不同。 **关键变量：** 原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。\r\n\r\n**直接人体证据。** 未检得常见市售海苔脆片人体试验。\r\n\r\n**产品/成分证据。** 斯里兰卡研究用Ulva fasciata制成实验零食；未烘烤样品蛋白质19.18%、纤维44.64%，不能代表多数零售海苔片。\r\n\r\n**共享背景。** 参见 snack-and-processed-meat-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 查看钠和调味配料；对海藻碘需谨慎者遵循医护建议并核对种类和份量。\r\n\r\n**传统来源。** 现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

@@ -1,0 +1,502 @@
+{
+  "batch": {
+    "id": "23-snacks-dried-meat",
+    "title": "膨化脆食与肉类零食",
+    "catalog_order": 23,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; PubMed/PMC; journal studies; government consumer testing",
+    "exa_search_calls": 29,
+    "exa_hits": 135,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-23-snacks-dried-meat",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "虾片以淀粉为主体，不能按整虾营养推断。",
+      "锅巴研究为黄芪小米实验配方，不代表普通锅巴。",
+      "米饼试验使用特殊高抗性淀粉稻米。",
+      "Ulva fasciata实验零食不能代表商业海苔片。",
+      "蔬菜脆片证据来自丹麦有限抽样和暴露估算，不是人体疾病结局。",
+      "冻干水果试验是冻干草莓粉饮品，不代表各种冻干果。",
+      "香港猪肉干样品不一定与目录猪肉脯完全同型。",
+      "鸡肉干资料是实验室样品，不是商售鸡胸肉干人体试验。",
+      "早餐香肠队列及香港中式香肠抽检针对不同产品形态。"
+    ],
+    "citation_audit_revision": "rev-1: keep product form, formulation, population, sampled market, outcome and study-design limits attached to every claim."
+  },
+  "entries": {
+    "shrimp-crackers": {
+      "id": "shrimp-crackers",
+      "name": "虾片",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "starch_seafood_snack",
+      "research_depth": "R1",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以淀粉为主体并加入虾或虾味原料制成、通常经油炸膨化的脆食；不能按整虾理解。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "主要为淀粉和油；虾比例、油炸与调味会改变蛋白质、脂肪和钠。",
+      "direct": "未检得虾片成品人体试验。",
+      "specific": "一项马来西亚学士论文报告生虾片样品蛋白质4.36%、脂肪0.40%、碳水化合物80.04%；油炸后脂肪升高。",
+      "body": "未检得虾片成品人体试验。 一项马来西亚学士论文报告生虾片样品蛋白质4.36%、脂肪0.40%、碳水化合物80.04%；油炸后脂肪升高。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "核对真实虾成分、过敏原、每份钠和脂肪；膨化油炸产品按小份食用。",
+      "safety": "核对真实虾成分、过敏原、每份钠和脂肪；膨化油炸产品按小份食用。",
+      "taste_m": {},
+      "refs": [
+        "Muni NA. Nutrient composition in different types of cracker before and after frying process. Bachelor thesis, Universiti Teknologi MARA; 2008. https://ir.uitm.edu.my/id/eprint/104110/"
+      ],
+      "body_refs": [
+        "Muni NA. Nutrient composition in different types of cracker before and after frying process. Bachelor thesis, Universiti Teknologi MARA; 2008. https://ir.uitm.edu.my/id/eprint/104110/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "比较生制及油炸鱼、虾和鱿鱼脆片成分。",
+          "population": "马来西亚一项学位研究的虾片样品；无人体受试者。",
+          "exposure": "生虾片及油炸后样品的常规成分。",
+          "result": "生虾片样品蛋白质4.36%、脂肪0.40%、碳水化合物80.04%；油炸后脂肪升高。",
+          "limits": "单项学位论文且样品有限；不代表全部商品，无健康结局。",
+          "distance": "D1：近似虾片样品成分检测。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "shrimp-crackers human clinical study composition safety product",
+        "shrimp-crackers market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "guoba": {
+      "id": "guoba",
+      "name": "锅巴",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "rice_snack",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以熟米或米粉压制、干燥后烘烤或油炸的脆食；含草本等特别配方不代表普通锅巴。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "以米淀粉为主，油、盐和其他原料依配方及加工而异。",
+      "direct": "未检得普通锅巴的人体研究。",
+      "specific": "2025年实验室研究制备含黄芪的小米锅巴并与控制配方和商业米锅巴比较；实验配方蛋白质8.87 g/100 g干重。",
+      "body": "未检得普通锅巴的人体研究。 2025年实验室研究制备含黄芪的小米锅巴并与控制配方和商业米锅巴比较；实验配方蛋白质8.87 g/100 g干重。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看每份重量、钠和油脂；留意面粉过敏原，特别配方不代表普通锅巴。",
+      "safety": "查看每份重量、钠和油脂；留意面粉过敏原，特别配方不代表普通锅巴。",
+      "taste_m": {},
+      "refs": [
+        "Cui M, Qin Y, Shang Y, Li Y, Ma H, Wang J, Zhu J. Preparation of Astragalus membranaceus Millet Rice Crust and Evaluation of Nutritional Components and Physicochemical Properties. Int J Food Sci. 2025;2025:2594859. DOI: https://doi.org/10.1155/ijfo/2594859."
+      ],
+      "body_refs": [
+        "Cui M, Qin Y, Shang Y, Li Y, Ma H, Wang J, Zhu J. Preparation of Astragalus membranaceus Millet Rice Crust and Evaluation of Nutritional Components and Physicochemical Properties. Int J Food Sci. 2025;2025:2594859. DOI: https://doi.org/10.1155/ijfo/2594859."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "实验室制备含黄芪小米锅巴并测成分和理化性质。",
+          "population": "无人体受试者；配方含黄芪、小米粉和低筋面粉。",
+          "exposure": "实验配方、无黄芪控制样品和商业米锅巴的实验室比较。",
+          "result": "含黄芪配方蛋白质8.87 g/100 g干重。",
+          "limits": "特别配方和实验室指标不等于普通商品或人体效应。",
+          "distance": "D1：近似锅巴实验配方。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "guoba human clinical study composition safety product",
+        "guoba market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "rice-crackers": {
+      "id": "rice-crackers",
+      "name": "米饼",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "rice_snack",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以米或米粉为主料制成的干脆米制零食；高抗性淀粉等特殊配方单独说明。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "以米淀粉为主；米种、精制度、抗性淀粉和调味会改变组成。",
+      "direct": "19名健康成人完成随机交叉试验，比较高抗性淀粉稻米米饼与普通米饭；特殊米饼单次摄入后餐后血糖和胰岛素反应较低。",
+      "specific": "试验用特殊高抗性淀粉稻米，不能代表普通米饼或长期健康结果。",
+      "body": "19名健康成人完成随机交叉试验，比较高抗性淀粉稻米米饼与普通米饭；特殊米饼单次摄入后餐后血糖和胰岛素反应较低。 试验用特殊高抗性淀粉稻米，不能代表普通米饼或长期健康结果。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看添加糖、钠和每包份数；有血糖管理需求时按具体配方和实际份量判断。",
+      "safety": "查看添加糖、钠和每包份数；有血糖管理需求时按具体配方和实际份量判断。",
+      "taste_m": {},
+      "refs": [
+        "Saito Y, Watanabe T, Sasaki T, Watanabe K, Hirayama M, Fujita N. Effects of single ingestion of rice cracker and cooked rice with high resistant starch on postprandial glucose and insulin responses in healthy adults. Biosci Biotechnol Biochem. 2020;84(2):365–371. DOI: https://doi.org/10.1080/09168451.2019.1687282."
+      ],
+      "body_refs": [
+        "Saito Y, Watanabe T, Sasaki T, Watanabe K, Hirayama M, Fujita N. Effects of single ingestion of rice cracker and cooked rice with high resistant starch on postprandial glucose and insulin responses in healthy adults. Biosci Biotechnol Biochem. 2020;84(2):365–371. DOI: https://doi.org/10.1080/09168451.2019.1687282."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、单盲、交叉单次摄入试验。",
+          "population": "19名健康成人完成米饼试验分析。",
+          "exposure": "指定高抗性淀粉稻米米饼；观察餐后血糖和胰岛素。",
+          "result": "研究报告特殊米饼单次摄入后餐后相关指标较低。",
+          "limits": "小样本、短期、特殊稻米；不代表普通米饼或长期效果。",
+          "distance": "D0：指定高抗性淀粉米饼；对普通米饼为D1。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "rice-crackers human clinical study composition safety product",
+        "rice-crackers market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "seaweed-crisps": {
+      "id": "seaweed-crisps",
+      "name": "海苔脆片",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "seaweed_snack",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以紫菜、海苔或其他食用海藻干燥压片，并可能加油盐制成的脆食。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "海藻品种、烘烤、盐油调味会改变组成；不同海藻的碘和矿物质含量不同。",
+      "direct": "未检得常见市售海苔脆片人体试验。",
+      "specific": "斯里兰卡研究用Ulva fasciata制成实验零食；未烘烤样品蛋白质19.18%、纤维44.64%，不能代表多数零售海苔片。",
+      "body": "未检得常见市售海苔脆片人体试验。 斯里兰卡研究用Ulva fasciata制成实验零食；未烘烤样品蛋白质19.18%、纤维44.64%，不能代表多数零售海苔片。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看钠和调味配料；对海藻碘需谨慎者遵循医护建议并核对种类和份量。",
+      "safety": "查看钠和调味配料；对海藻碘需谨慎者遵循医护建议并核对种类和份量。",
+      "taste_m": {},
+      "refs": [
+        "Jayakody MM, Vanniarachchy MPG, Wijesekara WLI. Development and characterization of a seaweed snack using Ulva fasciata. J Food Sci Technol. 2021;58(4):1617–1622. DOI: https://doi.org/10.1007/s13197-020-04880-x."
+      ],
+      "body_refs": [
+        "Jayakody MM, Vanniarachchy MPG, Wijesekara WLI. Development and characterization of a seaweed snack using Ulva fasciata. J Food Sci Technol. 2021;58(4):1617–1622. DOI: https://doi.org/10.1007/s13197-020-04880-x."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "实验室研发Ulva fasciata零食并测营养成分。",
+          "population": "无人体受试者；样品来自斯里兰卡Matara。",
+          "exposure": "按nori方法干燥、加盐和姜油树脂风味的实验海藻片。",
+          "result": "未烘烤样品蛋白质19.18±0.53%、纤维44.64±0.23%。",
+          "limits": "单一海藻品种和实验配方，不是市售海苔片或人体结局。",
+          "distance": "D1：近似海藻脆片实验配方。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "seaweed-crisps human clinical study composition safety product",
+        "seaweed-crisps market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "vegetable-chips": {
+      "id": "vegetable-chips",
+      "name": "蔬菜脆片",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "vegetable_snack",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以马铃薯以外蔬菜切片或成型后烘烤、油炸或脱水制成的脆食；马铃薯薯片另列。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "蔬菜种类、加工温度、油盐及份量会改变成品组成。",
+      "direct": "未检得蔬菜脆片成品人体试验。",
+      "specific": "丹麦市场检测29款马铃薯和16款替代蔬菜脆片；胡萝卜脆片样品平均丙烯酰胺2893 μg/kg。检测及暴露估算不是人体疾病结果，也不代表每款产品。",
+      "body": "未检得蔬菜脆片成品人体试验。 丹麦市场检测29款马铃薯和16款替代蔬菜脆片；胡萝卜脆片样品平均丙烯酰胺2893 μg/kg。检测及暴露估算不是人体疾病结果，也不代表每款产品。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看配料、钠、油和份量；蔬菜名称不保证低油低钠，避免食用焦黑部分。",
+      "safety": "查看配料、钠、油和份量；蔬菜名称不保证低油低钠，避免食用焦黑部分。",
+      "taste_m": {},
+      "refs": [
+        "Nguyen KH, Fromberg A, Duedahl-Olesen L, Christensen T, Granby K. Processing contaminants in potato and other vegetable crisps on the Danish market. J Food Compos Anal. 2022;108:104411. DOI: https://doi.org/10.1016/j.jfca.2022.104411."
+      ],
+      "body_refs": [
+        "Nguyen KH, Fromberg A, Duedahl-Olesen L, Christensen T, Granby K. Processing contaminants in potato and other vegetable crisps on the Danish market. J Food Compos Anal. 2022;108:104411. DOI: https://doi.org/10.1016/j.jfca.2022.104411."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "丹麦市场商品实验室检测及膳食暴露估算。",
+          "population": "29款马铃薯脆片和16款替代蔬菜脆片；非人体研究。",
+          "exposure": "不同蔬菜脆片中的丙烯酰胺及氯丙醇酯。",
+          "result": "胡萝卜脆片样品平均丙烯酰胺2893 μg/kg。",
+          "limits": "单一市场和有限商品；估算非人体疾病结局，不可外推到未测产品。",
+          "distance": "D0：样品级污染物检测，不代表所有蔬菜脆片。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "vegetable-chips human clinical study composition safety product",
+        "vegetable-chips market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "freeze-dried-fruit": {
+      "id": "freeze-dried-fruit",
+      "name": "冻干水果",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "dried_fruit",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "经冷冻干燥去除大部分水分的水果零食；果粉饮料、加糖果干及其他干燥法需按形态区分。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "水果种类、粉末或整果形态、加糖及份量会改变组成和暴露。",
+      "direct": "一项12周随机对照试验测试腹部肥胖且血脂偏高成人每日约25或50克冻干草莓粉饮品；高剂量组较低剂量组部分血脂指标下降更多，与匹配对照相比仅部分指标有差异。",
+      "specific": "试验为特定人群和草莓粉饮品，不代表其他冻干水果或整果；体重、血糖、血压等没有改善。",
+      "body": "一项12周随机对照试验测试腹部肥胖且血脂偏高成人每日约25或50克冻干草莓粉饮品；高剂量组较低剂量组部分血脂指标下降更多，与匹配对照相比仅部分指标有差异。 试验为特定人群和草莓粉饮品，不代表其他冻干水果或整果；体重、血糖、血压等没有改善。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "冻干果常按重量浓缩；看每包克数、添加糖和份量，并区分果粉与整果。",
+      "safety": "冻干果常按重量浓缩；看每包克数、添加糖和份量，并区分果粉与整果。",
+      "taste_m": {},
+      "refs": [
+        "Basu A, et al. Freeze-Dried Strawberries Lower Serum Cholesterol and Lipid Peroxidation in Adults with Abdominal Adiposity and Elevated Serum Lipids. J Nutr. 2014;144(6):830–837. DOI: https://doi.org/10.3945/jn.113.188169."
+      ],
+      "body_refs": [
+        "Basu A, et al. Freeze-Dried Strawberries Lower Serum Cholesterol and Lipid Peroxidation in Adults with Abdominal Adiposity and Elevated Serum Lipids. J Nutr. 2014;144(6):830–837. DOI: https://doi.org/10.3945/jn.113.188169."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "12周随机对照试验，比较冻干草莓饮品不同剂量及匹配对照。",
+          "population": "60名腹部肥胖且血脂偏高成人；女性为主。",
+          "exposure": "每日约25 g或50 g冻干草莓粉，持续12周。",
+          "result": "高剂量较低剂量的部分血脂指标降幅更大；与匹配对照相比只有部分差异保留。",
+          "limits": "小样本、特定草莓粉和较高剂量；未见体重、血糖、血压改善。",
+          "distance": "D1：特定草莓粉饮品；一般冻干水果为D2。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "freeze-dried-fruit human clinical study composition safety product",
+        "freeze-dried-fruit market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "beef-jerky": {
+      "id": "beef-jerky",
+      "name": "牛肉干",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "dried_meat",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以牛肉腌制调味并干燥或烘烤制成的肉类零食；其他肉类制品不在本条范围。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "牛肉部位、糖盐腌料和加工方法会改变组成；干燥会提高每单位重量的成分浓度。",
+      "direct": "未检得牛肉干专属人体试验。",
+      "specific": "香港消费者委员会抽样8款牛肉干，其中4款检出PAH4，范围0.6–18.2 μg/kg，一个样品超过欧盟12 μg/kg参考上限。",
+      "body": "未检得牛肉干专属人体试验。 香港消费者委员会抽样8款牛肉干，其中4款检出PAH4，范围0.6–18.2 μg/kg，一个样品超过欧盟12 μg/kg参考上限。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看每份钠、糖和份量；选择正规来源，避免焦黑部分，按加工肉零食看待。",
+      "safety": "查看每份钠、糖和份量；选择正规来源，避免焦黑部分，按加工肉零食看待。",
+      "taste_m": {},
+      "refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks."
+      ],
+      "body_refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港消费者机构抽检营养成分及多环芳烃。",
+          "population": "香港市场30款肉类零食中包括8款牛肉干；2022年购样。",
+          "exposure": "牛肉干PAH4，以及混合肉类零食的糖钠指标。",
+          "result": "4/8款牛肉干检出PAH4，范围0.6–18.2 μg/kg。",
+          "limits": "特定市场及商品，无人体结局；混合样品结果不能代替牛肉干子组。",
+          "distance": "D0：香港市场抽样牛肉干。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "beef-jerky human clinical study composition safety product",
+        "beef-jerky market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "pork-jerky": {
+      "id": "pork-jerky",
+      "name": "猪肉脯",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "dried_meat",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以猪肉切片或肉糜调味后干燥、烘烤或烤制的零食；猪肉松不自动归入本条。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "猪肉部位、糖盐腌料、厚度和烘烤会改变组成。",
+      "direct": "未检得猪肉脯专属人体研究。",
+      "specific": "香港消费者委员会抽样10款猪肉干中9款检出PAH。30款混合肉类零食全部高糖，除一款肉松外均高钠；糖钠统计不是猪肉干子组值。",
+      "body": "未检得猪肉脯专属人体研究。 香港消费者委员会抽样10款猪肉干中9款检出PAH。30款混合肉类零食全部高糖，除一款肉松外均高钠；糖钠统计不是猪肉干子组值。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "看每份糖、钠和配料；控制肉类零食份量，避免食用焦黑部分。",
+      "safety": "看每份糖、钠和配料；控制肉类零食份量，避免食用焦黑部分。",
+      "taste_m": {},
+      "refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks."
+      ],
+      "body_refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港消费者机构抽检零售肉类零食营养及PAH。",
+          "population": "香港市场30款肉类零食中有10款猪肉干。",
+          "exposure": "猪肉干PAH4和混合样品糖钠含量。",
+          "result": "9/10款猪肉干检出PAH；混合样品全部高糖，29/30款高钠。",
+          "limits": "样品“猪肉干”未必与目录猪肉脯完全同型；地区批次有限且无人体结局。",
+          "distance": "D1：近似猪肉干样品。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "pork-jerky human clinical study composition safety product",
+        "pork-jerky market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "chicken-breast-jerky": {
+      "id": "chicken-breast-jerky",
+      "name": "鸡胸肉干",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "dried_meat",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以鸡胸肉为主料，经调味和干燥制成的肉类零食；鸡胸肉片和即食水煮鸡胸肉另列。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "鸡胸部位、含水率、盐腌料、糖和干燥温度会改变成分。",
+      "direct": "未检得鸡胸肉干专属人体研究。",
+      "specific": "实验室研究比较鸡、牛和鸵鸟肉制成的自然、盐渍及香辛料干肉并分析组成；不是消费者试验或商售产品调查。",
+      "body": "未检得鸡胸肉干专属人体研究。 实验室研究比较鸡、牛和鸵鸟肉制成的自然、盐渍及香辛料干肉并分析组成；不是消费者试验或商售产品调查。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "查看每份钠、添加糖及蛋白质；依商品保存说明处理开封产品。",
+      "safety": "查看每份钠、添加糖及蛋白质；依商品保存说明处理开封产品。",
+      "taste_m": {},
+      "refs": [
+        "Zdanowska-Sąsiadek Ż, et al. Nutrients Composition in Fit Snacks Made from Ostrich, Beef and Chicken Dried Meat. Molecules. 2018;23(6):1267. DOI: https://doi.org/10.3390/molecules23061267."
+      ],
+      "body_refs": [
+        "Zdanowska-Sąsiadek Ż, et al. Nutrients Composition in Fit Snacks Made from Ostrich, Beef and Chicken Dried Meat. Molecules. 2018;23(6):1267. DOI: https://doi.org/10.3390/molecules23061267."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "实验室制作干燥肉样并分析营养成分。",
+          "population": "无人体受试者；鸡肉样品取自鸡胸大胸肌。",
+          "exposure": "比较鸡、牛、鸵鸟肉在自然、盐渍和香辛料处理下的组成。",
+          "result": "研究报告肉种和处理方式会影响干肉成分。",
+          "limits": "非商业产品研究、无人体结局，不能代表商售鸡胸肉干。",
+          "distance": "D1：实验室鸡胸肉干配方。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "chicken-breast-jerky human clinical study composition safety product",
+        "chicken-breast-jerky market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    },
+    "sausage": {
+      "id": "sausage",
+      "name": "肉肠",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "processed_meat",
+      "research_depth": "R2",
+      "shared_parent": "snack-and-processed-meat-base",
+      "identity": "以肉类为主料绞碎、调味、灌肠或成型并熟制；火腿肠、午餐肉、培根和腊肠另列。",
+      "variables": "原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。",
+      "composition": "肉种、脂肪比例、盐糖、烟熏加工和份量不同。",
+      "direct": "美国女性队列观察到早餐香肠摄入与结直肠癌风险有关联；观察性研究不能证明因果，早餐香肠也不同于中式肉肠。",
+      "specific": "香港消费者委员会检测30款中式香肠，各样品至少一项脂肪、糖或钠偏高；部分散装样品检出非准用色素，少数预包装样品塑化剂超过行动水平。",
+      "body": "美国女性队列观察到早餐香肠摄入与结直肠癌风险有关联；观察性研究不能证明因果，早餐香肠也不同于中式肉肠。 香港消费者委员会检测30款中式香肠，各样品至少一项脂肪、糖或钠偏高；部分散装样品检出非准用色素，少数预包装样品塑化剂超过行动水平。",
+      "evidence_body": "现有证据限于所述样品、配方或人群；不能将近似商品资料视为整个目录品类的临床结论。",
+      "care": "比较每份钠、饱和脂肪、糖和配料；区分早餐香肠、中式香肠及其他肠类并按份量食用。",
+      "safety": "比较每份钠、饱和脂肪、糖和配料；区分早餐香肠、中式香肠及其他肠类并按份量食用。",
+      "taste_m": {},
+      "refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459.",
+        "Consumer Council, Hong Kong. All 30 Chinese Sausage Samples High in Fat, Sugar or Sodium; 6 Samples Detected with Non-permitted Colouring Matters; 2 Contained Plasticisers. 2023-12-14. https://www.consumer.org.hk/en/press-release/p-566-chinese-sausages."
+      ],
+      "body_refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459.",
+        "Consumer Council, Hong Kong. All 30 Chinese Sausage Samples High in Fat, Sugar or Sodium; 6 Samples Detected with Non-permitted Colouring Matters; 2 Contained Plasticisers. 2023-12-14. https://www.consumer.org.hk/en/press-release/p-566-chinese-sausages."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "前瞻性观察队列；另有中式香肠商品抽样检测。",
+          "population": "队列纳入48,704名35–74岁美国及波多黎各女性，随访中位8.7年，216例结直肠癌；抽检为香港30款中式香肠。",
+          "exposure": "队列按基线问卷记录肉类摄入；另检测香肠营养和污染物。",
+          "result": "早餐香肠最高摄入四分位相较最低四分位HR 1.85（95% CI 1.30–2.64）；30款中式香肠均至少一项脂肪、糖或钠偏高。",
+          "limits": "队列为观察性、自报饮食且只纳入女性，不能证明因果或外推中式肉肠；商品抽检仅适用于样品。",
+          "distance": "D2：美国早餐香肠队列为一般肉肠近邻证据；D0：香港中式香肠样品检测。"
+        },
+        {
+          "ref": 2,
+          "design": "香港消费者委员会对零售及非预包装香肠进行营养与安全抽样检测。",
+          "population": "香港市场30款中式香肠样品。",
+          "exposure": "样品的脂肪、糖、钠、着色剂和塑化剂检测。",
+          "result": "30款样品均至少一项脂肪、糖或钠偏高；部分散装样品检出非准用色素，2款预包装样品塑化剂超过行动水平。",
+          "limits": "抽样结果仅适用于被检商品；中式香肠不是所有肉肠的代表，且非人体结局。",
+          "distance": "D0：香港抽样中式香肠的组成与安全检测。"
+        }
+      ],
+      "unknowns": "不同市场、品牌和配方的代表性组成资料，以及本条商品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。",
+      "queries": [
+        "sausage human clinical study composition safety product",
+        "sausage market survey formulation nutrition evidence"
+      ],
+      "search_log": [
+        "定向检索本条成品人体结局和组成/安全资料，按产品身份筛除不对应的邻近食品。",
+        "核对研究的样品、人群、配方、终点与可外推范围。"
+      ]
+    }
+  }
+}

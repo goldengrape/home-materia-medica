@@ -1,0 +1,10 @@
+{
+  "batch_id": "23-snacks-dried-meat",
+  "entry_id": "shrimp-crackers",
+  "summary_ref": "references/entries/shrimp-crackers/summary.md",
+  "summary_sha256": "5b4ae79d11501cf5cb69ab3d25ac674cbfa980ec7bb83e5668677d8785d96c18",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 虾片\r\n\r\n**身份。** 以淀粉为主体并加入虾或虾味原料制成、通常经油炸膨化的脆食；不能按整虾理解。\r\n\r\n**组成与暴露。** 主要为淀粉和油；虾比例、油炸与调味会改变蛋白质、脂肪和钠。 **关键变量：** 原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。\r\n\r\n**直接人体证据。** 未检得虾片成品人体试验。\r\n\r\n**产品/成分证据。** 一项马来西亚学士论文报告生虾片样品蛋白质4.36%、脂肪0.40%、碳水化合物80.04%；油炸后脂肪升高。\r\n\r\n**共享背景。** 参见 snack-and-processed-meat-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对真实虾成分、过敏原、每份钠和脂肪；膨化油炸产品按小份食用。\r\n\r\n**传统来源。** 现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R1 检索范围。\r\n"
+}
