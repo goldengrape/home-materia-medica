@@ -1,0 +1,10 @@
+7501b7d0299cca04b869da6f1a9fb978f14b52838740c8bcdaf039b2663ad6e9  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/protein-shake-breakfast.json
+1d6111d646fb95ec9eef13a60072b153c5a1aa492b7967aa9556a6c01a043afc  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/overnight-oats-cup.json
+b3b13d0272a381c13ed1debef87314acfdc92f873b40581230aeb471aa025a4b  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/milk-tea-with-cake.json
+a8b84460b1d02ac23cd1a6b0342783bf626dce0a7a2ed71396357424ade9e0c0  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/coffee-with-cookies.json
+7ec8347a65e813befe0cdc0ed3841e3df20672a2030589ee866cfe1d3a0a1d7e  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/coffee-with-chocolate.json
+bd58607e204c72c858cd5c80d78a13d826c34a74831e03ad3bb7217c405a17c5  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/fruit-tea-with-dessert.json
+398a3f4a61e7800151a58b85241cb86a4c29f7c3d7debf687dab0124e05ac96b  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/late-night-instant-noodles.json
+835a66fe5e3b6fc6e6ac7a2620886f71f3db4575340549de09f5b67c273886b8  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/late-night-barbecue.json
+65c9da1cdf14f556765eafa0b3ad8bc3b37b91decc12ea1a621a25a3e2ed84f9  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/late-night-hotpot.json
+917050a329a307a42b8dde73caf2438cbc0459112d323591cb7fc25b8550a1c1  qa/jev-entry-batches/36-afternoon-and-night-scenes/raw/chips-while-watching.json
