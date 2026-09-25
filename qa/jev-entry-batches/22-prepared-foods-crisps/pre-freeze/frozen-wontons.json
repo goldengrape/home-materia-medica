@@ -1,0 +1,10 @@
+{
+  "batch_id": "22-prepared-foods-crisps",
+  "entry_id": "frozen-wontons",
+  "summary_ref": "references/entries/frozen-wontons/summary.md",
+  "summary_sha256": "eb0e4ffc62eb111d0c6b3e8b3e5cf41646cf5fc74f98d49626a1c5057be267be",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 速冻馄饨\r\n\r\n**身份。** 薄面皮包入馅料后冷冻销售、食用前煮熟的馄饨；面皮、汤底、调味共同影响整碗，现包馄饨和餐馆馄饨汤另行区分。\r\n\r\n**组成与暴露。** 皮、馅和汤底共同决定整餐营养；干馄饨不代表含汤餐食。 **关键变量：** 面皮厚度、馅料、汤底、盐油、每份只数、冷冻保存和煮制方式。\r\n\r\n**直接人体证据。** 未检得明确识别速冻馄饨的人体研究。香港官方对40款预包装冷藏/冷冻水饺及点心进行监测，12款至少一项营养标签值与实测不一致；报告没有单列馄饨数量或结果。\r\n\r\n**产品/成分证据。** 40款是水饺及点心合并样本，不能将12/40比例写成馄饨标签错误率；研究没有健康结局。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对包装份量、钠和过敏原；汤底和蘸料会改变整餐钠。\r\n\r\n**传统来源。** 按面皮、馅料和汤构成的复合餐食处理，不从相近饺子推定临床效果。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

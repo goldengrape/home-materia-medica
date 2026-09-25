@@ -1,0 +1,10 @@
+{
+  "batch_id": "22-prepared-foods-crisps",
+  "entry_id": "french-fries",
+  "summary_ref": "references/entries/french-fries/summary.md",
+  "summary_sha256": "64ac9a331de02f19bd23899d7466c9d97fedfb4f2ff8ff744e7c7b6a3ae5f455",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 薯条\r\n\r\n**身份。** 马铃薯切成长条，经油炸或热风烹制后即食或冷冻销售；烤土豆和薯片另行区分。\r\n\r\n**组成与暴露。** 马铃薯及吸收油脂共同构成薯条，能量和脂肪受烹制与份量影响。 **关键变量：** 切条尺寸、是否预炸、烹调油、温度、盐、份量和酱料。\r\n\r\n**直接人体证据。** 三项美国前瞻性队列纳入205107名成人，随访累计5175501参与者年并记录22299例2型糖尿病。每周薯条摄入每增加3份，与较高发病率相关（HR 1.20，95%CI 1.12–1.28）；属观察性关联。\r\n\r\n**产品/成分证据。** 队列经多变量调整但不能排除残余混杂、饮食自报误差或替代关系；不能证明薯条直接导致疾病。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 留意份量、油炸方式、盐和酱料；队列关联不能用于个人诊断或治疗。\r\n\r\n**传统来源。** 切制、油炸和调味改变马铃薯形态，不以整薯数据概括薯条。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

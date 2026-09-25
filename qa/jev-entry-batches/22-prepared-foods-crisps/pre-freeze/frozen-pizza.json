@@ -1,0 +1,10 @@
+{
+  "batch_id": "22-prepared-foods-crisps",
+  "entry_id": "frozen-pizza",
+  "summary_ref": "references/entries/frozen-pizza/summary.md",
+  "summary_sha256": "0573c0c528a1919e3463f2bf1d611f0612d38ecb70f192e73c7f3f5fb2c1e8c2",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 速冻披萨\r\n\r\n**身份。** 冷冻销售、食用前烘烤或复热的披萨；饼底、芝士、肉类配料、尺寸和实际食用份数都会改变组成。\r\n\r\n**组成与暴露。** 谷物饼底、酱料和配料共同构成复合食品，整张与每100克需区分。 **关键变量：** 尺寸、饼底、芝士、肉类配料、酱汁、钠、份量及烘烤后实际摄入量。\r\n\r\n**直接人体证据。** 未检得速冻披萨专门随机临床试验。美国CSPI基于包装和厂商网站比较46款速冻披萨：21款芝士口味含钠380–640毫克/100克，25款辣香肠口味为420–750毫克/100克。\r\n\r\n**产品/成分证据。** 这是2017年美国有限商品的标签汇总，不是随机抽样或同行评审研究，不能代表当前全球市场。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 按实际份量核对钠、饱和脂肪和能量；一张披萨可能包含多份。\r\n\r\n**传统来源。** 现代复合食品，不以小麦、番茄或乳制品的单体传统记录推断整品。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

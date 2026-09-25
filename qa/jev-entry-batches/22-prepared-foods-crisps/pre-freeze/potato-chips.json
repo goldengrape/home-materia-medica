@@ -1,0 +1,10 @@
+{
+  "batch_id": "22-prepared-foods-crisps",
+  "entry_id": "potato-chips",
+  "summary_ref": "references/entries/potato-chips/summary.md",
+  "summary_sha256": "d3c2e14c827b263b487cea290cc525aeb0384b77b9f94c7d5c9011dcc7db5c5d",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 薯片\r\n\r\n**身份。** 马铃薯切片或成形后油炸、烘烤并调味的薄脆零食；薯条不在本条范围。\r\n\r\n**组成与暴露。** 能量密度、脂肪与钠随工艺和商品配方变化。 **关键变量：** 马铃薯比例、切片或成形工艺、油炸或烘烤、油脂、钠、调味和份量。\r\n\r\n**直接人体证据。** 一项20名健康成人的随机试验比较每日42克混合坚果和46克薯片，持续3周。薯片组测试餐后45分钟的血糖和胰岛素较基线升高；3周后两组空腹血糖、胰岛素及体重没有显著变化。\r\n\r\n**产品/成分证据。** 薯片组约10人，薯片只是坚果替代比较组；短时血糖结果不等于长期疾病风险。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 按包装份量查看能量、钠和脂肪；调味与加工形态因商品而异。\r\n\r\n**传统来源。** 加工薯片不同于整马铃薯，不以原料传统记录概括。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

@@ -1,0 +1,10 @@
+{
+  "batch_id": "22-prepared-foods-crisps",
+  "entry_id": "frozen-dumplings",
+  "summary_ref": "references/entries/frozen-dumplings/summary.md",
+  "summary_sha256": "abffc6f832817b559f560db3575413406b3d185ed8fb07eca15857af3bc397a1",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 速冻水饺\r\n\r\n**身份。** 包入肉菜或其他馅料后冷冻销售、食用前煮或煎制的饺子；现包餐馆水饺和汤饺另按实际餐食处理。\r\n\r\n**组成与暴露。** 面皮与馅料组成整份主食，营养依配方、份量和蘸料变化。 **关键变量：** 皮馅比例、肉菜种类、盐油、煮煎方式、单只重量、每份数量及蘸料。\r\n\r\n**直接人体证据。** 香港官方检查40款预包装冷藏或冷冻水饺及点心，12款至少一项营养标签数值与实测不一致。另有10名住院2型糖尿病患者的单餐研究比较煮饺和煎饺；平均血糖和分时段曲线下面积未见显著差异，煎饺达峰较早。\r\n\r\n**产品/成分证据。** 官方报告没有逐类公布水饺和点心数量；临床研究没有说明饺子为冷冻商品，且样本很小。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 看每份只数、钠和过敏原；煎制与蘸料会改变油或钠。\r\n\r\n**传统来源。** 按面皮和馅料组成的现代复合主食处理，不用单一食材记录代表整品。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

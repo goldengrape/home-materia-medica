@@ -1,0 +1,502 @@
+{
+  "batch": {
+    "id": "22-prepared-foods-crisps",
+    "title": "自热餐、冷冻主食与脆食",
+    "catalog_order": 22,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; PubMed/PMC; journal studies; government surveillance; market-label analyses",
+    "exa_search_calls": 26,
+    "exa_hits": 120,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-22-prepared-foods-crisps",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "普通火锅底料检测不是自热火锅整餐或加热包试验。",
+      "水饺煮煎研究未确认冷冻状态，需与官方商品抽检分开写。",
+      "40款冷藏/冷冻水饺及点心未单列馄饨样本，不推算馄饨专属比例。",
+      "速冻披萨标签分析来自2017年美国有限口味商品。",
+      "中国预制餐研究未报告微波便当子组。",
+      "韩国带浇头饭只有32款，不能代表中国预制盖饭。",
+      "薯片试验仅20人；薯条BMJ结果为观察性关联。",
+      "玉米脆片研究同时测试松饼和特殊淀粉配方。",
+      "爆米花证据限低脂样品和短时饱腹。"
+    ],
+    "citation_audit_revision": "rev-1: keep package, market, formulation, comparator and study-design limits attached to every claim."
+  },
+  "entries": {
+    "self-heating-hotpot": {
+      "id": "self-heating-hotpot",
+      "name": "自热火锅",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "ready_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以独立加热包和水触发放热、加热火锅食材与汤底的包装餐食；普通火锅和炉灶预制火锅不在本条范围。",
+      "variables": "汤底、盐油、肉菜及粉面、净含量、汤底食用量和加热方式。",
+      "composition": "汤底、主食、配料和调味共同决定整盒营养；单独底料不代表整餐。",
+      "direct": "未检得自热火锅整餐的人体试验或代表性成分调查。一项实验室研究检测17种预包装火锅底料并模拟常规烹煮。",
+      "specific": "底料样本报告的反式脂肪酸范围为0.3%–7.91%；加热3小时未见显著变化。研究不是自热包装整餐或人体试验。",
+      "body": "未找到自热火锅整餐的人体研究。17种预包装火锅底料的检测发现反式脂肪酸，加热3小时未见显著变化；这不能代表自热火锅整盒。不同商品应按整包标签和实际份量判断。",
+      "evidence_body": "直接人体证据不足；普通火锅底料的化学检测仅为近邻资料，不能代表自热餐食。",
+      "care": "查看整盒能量、钠和份量；按商品说明使用加热包，避免接触热包、液体和蒸汽，并查看过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Nie M, Zheng B. ‘Risk assessment of trans fatty acids in Chinese hotpot and its long cooking.’ Heliyon. 2025. DOI: https://doi.org/10.1016/j.heliyon.2025.e43753."
+      ],
+      "body_refs": [
+        "Nie M, Zheng B. ‘Risk assessment of trans fatty acids in Chinese hotpot and its long cooking.’ Heliyon. 2025. DOI: https://doi.org/10.1016/j.heliyon.2025.e43753."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "实验室检测17种预包装火锅底料，并模拟常规加热至3小时。",
+          "population": "无人体受试者；样品为17种市售底料。",
+          "exposure": "底料反式脂肪酸及加热期间的含量变化。",
+          "result": "样品报告范围为0.3%–7.91%；3小时加热未显示显著变化。",
+          "limits": "底料而非自热火锅整餐；不能代表加热包、整餐摄入或临床结局。",
+          "distance": "D2（普通火锅底料），不是自热火锅商品试验。"
+        }
+      ],
+      "unknowns": "不同品牌整盒组成、营养标签和实际份量；自热包装类别的人体研究。",
+      "tradition": "现代包装复合餐食，不由传统火锅或单味配料的记录推定整餐属性。",
+      "queries": [
+        "Clinical human studies or nutrient surveys specifically of Chinese self-heating hotpot as a complete product.",
+        "Nie Zheng 2025 Heliyon 17 commercial Chinese hotpot bases trans fatty acids heating methods exact results."
+      ],
+      "search_log": [
+        "检索自热火锅整餐人体研究，未找到可核验的专门临床试验。",
+        "核对普通包装底料化学分析及加热条件，明确不代表自热火锅整餐。"
+      ],
+      "safety": "查看整盒能量、钠和份量；按商品说明使用加热包，避免接触热包、液体和蒸汽，并查看过敏原。"
+    },
+    "frozen-dumplings": {
+      "id": "frozen-dumplings",
+      "name": "速冻水饺",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "frozen_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "包入肉菜或其他馅料后冷冻销售、食用前煮或煎制的饺子；现包餐馆水饺和汤饺另按实际餐食处理。",
+      "variables": "皮馅比例、肉菜种类、盐油、煮煎方式、单只重量、每份数量及蘸料。",
+      "composition": "面皮与馅料组成整份主食，营养依配方、份量和蘸料变化。",
+      "direct": "香港官方检查40款预包装冷藏或冷冻水饺及点心，12款至少一项营养标签数值与实测不一致。另有10名住院2型糖尿病患者的单餐研究比较煮饺和煎饺；平均血糖和分时段曲线下面积未见显著差异，煎饺达峰较早。",
+      "specific": "官方报告没有逐类公布水饺和点心数量；临床研究没有说明饺子为冷冻商品，且样本很小。",
+      "body": "香港官方检查40款冷藏或冷冻水饺及点心，12款至少一项标签数值与实测不一致。另有10名住院糖尿病患者的单餐比较显示，煮饺和煎饺平均血糖及曲线下面积无显著差异，煎饺血糖峰值较早；这不是冷冻水饺的长期研究。",
+      "evidence_body": "资料包括官方商品抽检和10人的住院单餐比较，受商品、样本和烹调方式限制。",
+      "care": "看每份只数、钠和过敏原；煎制与蘸料会改变油或钠。",
+      "taste_m": {},
+      "refs": [
+        "Centre for Food Safety, Hong Kong SAR Government. ‘CFS announces test results of targeted surveillance on nutrition labelling of prepackaged chilled/frozen dumplings and dim sum.’ 2022-09-14. https://www.cfs.gov.hk/english/press/20220914_9773.html.",
+        "Liu YP, Zhao W, Dong Y, Guo Y, Zhao N, Niu D. ‘Effect of boiled and fried dumplings on postprandial blood glucose in diabetes patients assessed by continuous glucose monitoring.’ Zhonghua Linchuang Yingyang Zazhi. 2016. DOI: https://doi.org/10.3760/cma.j.issn.1674-635x.2016.01.007."
+      ],
+      "body_refs": [
+        "Centre for Food Safety, Hong Kong SAR Government. ‘CFS announces test results of targeted surveillance on nutrition labelling of prepackaged chilled/frozen dumplings and dim sum.’ 2022-09-14. https://www.cfs.gov.hk/english/press/20220914_9773.html.",
+        "Liu YP, Zhao W, Dong Y, Guo Y, Zhao N, Niu D. ‘Effect of boiled and fried dumplings on postprandial blood glucose in diabetes patients assessed by continuous glucose monitoring.’ Zhonghua Linchuang Yingyang Zazhi. 2016. DOI: https://doi.org/10.3760/cma.j.issn.1674-635x.2016.01.007."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港食物安全中心抽检预包装冷藏/冷冻水饺及点心，并检测标签营养素。",
+          "population": "零售样本40款，无临床人群。",
+          "exposure": "营养标签与实测能量、脂肪、糖、钠等比较。",
+          "result": "12款至少一项糖、钠、脂肪或碳水标签值不一致；28款通过。",
+          "limits": "合并类别未单列各类样本数；特定地区和时期抽样。",
+          "distance": "D0（冷冻水饺及点心合并监测），品牌代表性有限。"
+        },
+        {
+          "ref": 2,
+          "design": "住院患者单餐比较煮饺和煎饺，使用连续血糖监测。",
+          "population": "10名餐前血糖受控的住院2型糖尿病患者。",
+          "exposure": "营养量相同的煮饺和煎饺午餐，安排在不同研究日。",
+          "result": "各时间点平均血糖及分段曲线下面积无显著差异；煎饺达峰时间较短（93±53对156±61分钟，P=0.02）。",
+          "limits": "样本很小、仅单餐；未说明冷冻状态，无长期结局。",
+          "distance": "D1（饺子烹调方式），不是专门速冻商品研究。"
+        }
+      ],
+      "unknowns": "不同品牌和馅料的代表性营养值；冷冻商品的长期人体结局。",
+      "tradition": "按面皮和馅料组成的现代复合主食处理，不用单一食材记录代表整品。",
+      "queries": [
+        "Hong Kong CFS 2022 surveillance 40 prepackaged chilled frozen dumplings dim sum nutrient label methods results.",
+        "Liu 2016 boiled fried dumplings continuous glucose monitoring 10 type 2 diabetes patients exact results DOI."
+      ],
+      "search_log": [
+        "核对40款官方抽检及标签不一致数量。",
+        "核对10人煮饺/煎饺监测；未把未注明冷冻状态的研究写成速冻商品试验。"
+      ],
+      "safety": "看每份只数、钠和过敏原；煎制与蘸料会改变油或钠。"
+    },
+    "frozen-wontons": {
+      "id": "frozen-wontons",
+      "name": "速冻馄饨",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "frozen_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "薄面皮包入馅料后冷冻销售、食用前煮熟的馄饨；面皮、汤底、调味共同影响整碗，现包馄饨和餐馆馄饨汤另行区分。",
+      "variables": "面皮厚度、馅料、汤底、盐油、每份只数、冷冻保存和煮制方式。",
+      "composition": "皮、馅和汤底共同决定整餐营养；干馄饨不代表含汤餐食。",
+      "direct": "未检得明确识别速冻馄饨的人体研究。香港官方对40款预包装冷藏/冷冻水饺及点心进行监测，12款至少一项营养标签值与实测不一致；报告没有单列馄饨数量或结果。",
+      "specific": "40款是水饺及点心合并样本，不能将12/40比例写成馄饨标签错误率；研究没有健康结局。",
+      "body": "馄饨专门的人体研究不足。香港官方抽检40款冷藏或冷冻水饺及点心，12款至少一项标签数值与实测不一致；报告未单列馄饨样本，不能把比例当作馄饨专属结果。汤底也会改变整碗钠含量。",
+      "evidence_body": "目前只有合并类别的官方标签抽检可供参考，没有馄饨专属健康结局证据。",
+      "care": "核对包装份量、钠和过敏原；汤底和蘸料会改变整餐钠。",
+      "taste_m": {},
+      "refs": [
+        "Centre for Food Safety, Hong Kong SAR Government. ‘CFS announces test results of targeted surveillance on nutrition labelling of prepackaged chilled/frozen dumplings and dim sum.’ 2022-09-14. https://www.cfs.gov.hk/english/press/20220914_9773.html."
+      ],
+      "body_refs": [
+        "Centre for Food Safety, Hong Kong SAR Government. ‘CFS announces test results of targeted surveillance on nutrition labelling of prepackaged chilled/frozen dumplings and dim sum.’ 2022-09-14. https://www.cfs.gov.hk/english/press/20220914_9773.html."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港食物安全中心对40款预包装冷藏/冷冻水饺及点心作营养标签监测。",
+          "population": "零售样本40款，无临床受试者。",
+          "exposure": "比较标签与实测能量及指定营养素。",
+          "result": "12款至少一项糖、钠、脂肪或碳水值不一致。",
+          "limits": "报告未单列馄饨样本数或结果；无人体健康结局。",
+          "distance": "D1（冷冻水饺及点心合并样本），馄饨专属性有限。"
+        }
+      ],
+      "unknowns": "馄饨商品标签实测差异、各馅料和汤底的组成及馄饨专属人体研究。",
+      "tradition": "按面皮、馅料和汤构成的复合餐食处理，不从相近饺子推定临床效果。",
+      "queries": [
+        "Official nutrition-label surveillance specifically of frozen wontons with separate item counts and results.",
+        "Human clinical trials of frozen wontons or wonton soup as a defined food."
+      ],
+      "search_log": [
+        "检索速冻馄饨专属调查及人体研究，未找到可核验的专门健康试验。",
+        "查看香港官方合并样本结果，没有把标签差异率归给馄饨。"
+      ],
+      "safety": "核对包装份量、钠和过敏原；汤底和蘸料会改变整餐钠。"
+    },
+    "frozen-pizza": {
+      "id": "frozen-pizza",
+      "name": "速冻披萨",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "frozen_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "冷冻销售、食用前烘烤或复热的披萨；饼底、芝士、肉类配料、尺寸和实际食用份数都会改变组成。",
+      "variables": "尺寸、饼底、芝士、肉类配料、酱汁、钠、份量及烘烤后实际摄入量。",
+      "composition": "谷物饼底、酱料和配料共同构成复合食品，整张与每100克需区分。",
+      "direct": "未检得速冻披萨专门随机临床试验。美国CSPI基于包装和厂商网站比较46款速冻披萨：21款芝士口味含钠380–640毫克/100克，25款辣香肠口味为420–750毫克/100克。",
+      "specific": "这是2017年美国有限商品的标签汇总，不是随机抽样或同行评审研究，不能代表当前全球市场。",
+      "body": "速冻披萨的临床研究不足。2017年美国商品标签比较纳入21款芝士和25款辣香肠披萨，钠含量分别为380–640及420–750毫克/100克。该结果只描述所列商品，不代表所有品牌或长期健康结局。",
+      "evidence_body": "速冻披萨资料主要是有限商品标签比较，没有能推断整类长期效果的证据。",
+      "care": "按实际份量核对钠、饱和脂肪和能量；一张披萨可能包含多份。",
+      "taste_m": {},
+      "refs": [
+        "Center for Science in the Public Interest. ‘Salt Assaults #10 and #11: Frozen Pizza.’ 2017-12-03. https://www.cspi.org/resource/salt-assaults-10-and-11-frozen-pizza."
+      ],
+      "body_refs": [
+        "Center for Science in the Public Interest. ‘Salt Assaults #10 and #11: Frozen Pizza.’ 2017-12-03. https://www.cspi.org/resource/salt-assaults-10-and-11-frozen-pizza."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "CSPI整理厂商网站和商品包装上的营养标签。",
+          "population": "21款芝士披萨和25款辣香肠速冻披萨，无临床人群。",
+          "exposure": "标签每100克钠含量。",
+          "result": "芝士类380–640毫克/100克；辣香肠类420–750毫克/100克。",
+          "limits": "2017年美国有限品牌，非同行评审或代表性随机抽样；无临床结局。",
+          "distance": "D0（速冻披萨商品标签），市场和年份范围有限。"
+        }
+      ],
+      "unknowns": "当前各地商品组成、标签与实测差异及长期人体结局。",
+      "tradition": "现代复合食品，不以小麦、番茄或乳制品的单体传统记录推断整品。",
+      "queries": [
+        "CSPI 2017 frozen pizza 21 cheese 25 pepperoni products sodium mg per 100g.",
+        "Randomized human trials of frozen pizza specifically distinct from fresh Neapolitan pizza."
+      ],
+      "search_log": [
+        "核验46款美国披萨标签比较的口味类别和钠范围。",
+        "检索速冻披萨人体研究；未将鲜制拿波里披萨试验归作冷冻披萨。"
+      ],
+      "safety": "按实际份量核对钠、饱和脂肪和能量；一张披萨可能包含多份。"
+    },
+    "microwave-lunchbox": {
+      "id": "microwave-lunchbox",
+      "name": "微波便当",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "ready_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以盒装形式销售、按包装说明微波加热后作为一餐的便当；自热餐和需炉灶烹制的预制便当另行区分。",
+      "variables": "主食与配菜、肉菜、酱汁、整盒重量、每份基准、包装微波适用性和加热时间。",
+      "composition": "主食、配菜及酱汁共同影响整盒能量、钠、脂肪和蛋白质；微波方式本身不说明组成。",
+      "direct": "未检得微波便当专属人体试验或市场营养估计。中国四个电商网站的研究纳入4403款预制餐，覆盖即食、待烹、待加热等类别；全体样本中位钠747毫克/100克，但未报告微波便当子组。",
+      "specific": "研究按电商商品照片提取标签数据，没有确认微波设备或该类便当的独立分组，也没有评估食用者健康结局。",
+      "body": "没有找到微波便当专属临床或营养估计。中国一项电商标签研究分析4403款不同预制餐，整体中位钠为747毫克/100克，但未报告微波便当单独结果。应按具体商品的整盒份量和钠含量判断。",
+      "evidence_body": "广义中国预制餐标签研究不能说明微波便当平均组成或临床效果。",
+      "care": "确认包装可微波并按说明加热；核对整盒份量、钠及过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Wang T, Xin Y, Liu X, Peng S, Yin S, Liang J, Law KK, Wu J, Tian M. ‘Nutritional Characteristics of Ready Meals in China: A Cross-Sectional Study.’ Current Developments in Nutrition. 2024;8:102898. DOI: https://doi.org/10.1016/j.cdnut.2024.102898."
+      ],
+      "body_refs": [
+        "Wang T, Xin Y, Liu X, Peng S, Yin S, Liang J, Law KK, Wu J, Tian M. ‘Nutritional Characteristics of Ready Meals in China: A Cross-Sectional Study.’ Current Developments in Nutrition. 2024;8:102898. DOI: https://doi.org/10.1016/j.cdnut.2024.102898."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "四个中国大型电商网站预制餐商品横断面标签分析。",
+          "population": "去重和筛选后4403款产品。",
+          "exposure": "提取标签营养、配料以及储存、烹调状态和食物分类。",
+          "result": "全部预制餐能量密度中位数879千焦/100克，钠中位数747毫克/100克；未报告微波便当独立子组。",
+          "limits": "商品照片和标签数据；没有食用者或临床结果。",
+          "distance": "D2（广义预制餐），不是微波便当专门抽样。"
+        }
+      ],
+      "unknowns": "微波便当专属标签样本、整盒营养分布及人体长期结局。",
+      "tradition": "现代即热复合餐食，不以主食或配菜之一概括整盒。",
+      "queries": [
+        "Wang 2024 4403 China ready meals subgroup ready-to-heat or microwave bento sodium.",
+        "Clinical and market nutrition research specifically on microwave bento lunchbox products."
+      ],
+      "search_log": [
+        "核验中国四个电商网站和4403款商品的总体标签研究。",
+        "确认文章没有披露微波便当子组，因此只使用总体统计并注明限制。"
+      ],
+      "safety": "确认包装可微波并按说明加热；核对整盒份量、钠及过敏原。"
+    },
+    "prepared-rice-bowl": {
+      "id": "prepared-rice-bowl",
+      "name": "预制盖饭",
+      "volume": "速食与零食部",
+      "entry_type": "composite_food",
+      "family": "ready_meal",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "包装销售、以米饭为主并配有浇头、加热后作单餐食用的盖饭；单独即食白米、自热米饭和寿司饭另行区分。",
+      "variables": "米饭和浇头比例、肉菜种类、酱汁、盐油、整盒重量和每份标示。",
+      "composition": "米饭与浇头共同决定整餐能量、钠、脂肪及蛋白质。",
+      "direct": "韩国一项家庭便餐米饭标签调查纳入406款产品，其中32款为带浇头米饭；该组每份平均重297.1克、能量496千卡。调查不测人体健康结局。",
+      "specific": "数据来自韩国商品标签，不能视为中国预制盖饭的平均营养值；其他米饭类别不能并入带浇头饭。",
+      "body": "一项韩国预制米饭商品调查纳入406款产品，其中32款为带浇头米饭；该组每份平均重297.1克、平均能量496千卡。这是特定市场标签调查，不代表中国商品或人体效果。",
+      "evidence_body": "预制盖饭资料来自韩国32款带浇头米饭的商品标签调查，尚无整类长期人体结局证据。",
+      "care": "按整盒份量核对能量和钠；酱汁、浇头及多份标示会改变实际摄入。",
+      "taste_m": {},
+      "refs": [
+        "Choi IY, Yeon JY, Kim MH. ‘Energy and nutrition evaluation per single serving package for each type of home meal replacement rice.’ Journal of Nutrition and Health. 2022;55(4):476–491. DOI: https://doi.org/10.4163/jnh.2022.55.4.476."
+      ],
+      "body_refs": [
+        "Choi IY, Yeon JY, Kim MH. ‘Energy and nutrition evaluation per single serving package for each type of home meal replacement rice.’ Journal of Nutrition and Health. 2022;55(4):476–491. DOI: https://doi.org/10.4163/jnh.2022.55.4.476."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "2021年商品市场调查，按营养标签统计家庭便餐米饭产品每份能量和营养素。",
+          "population": "共406款韩国产品，其中带浇头米饭32款。",
+          "exposure": "即食米、杯饭、冷冻饭、带浇头饭和紫菜包饭等产品标签。",
+          "result": "带浇头饭平均每份重297.1克、能量496千卡。",
+          "limits": "标签调查、样本量32且来自韩国市场；非人体研究。",
+          "distance": "D1（带浇头预制米饭），与预制盖饭相近但市场不同。"
+        }
+      ],
+      "unknowns": "中国盖饭产品的代表性营养值、实际份量和长期临床结局。",
+      "tradition": "现代米饭与浇头组合，不由稻米原料条目概括整餐。",
+      "queries": [
+        "Choi Yeon Kim 2022 406 home meal replacement rice products 32 rice bowls toppings 297.1 g 496 kcal.",
+        "Human intervention trials of packaged prepared rice bowls as a complete meal."
+      ],
+      "search_log": [
+        "核对406款韩国预制米饭与32款带浇头饭的分组和标签数值。",
+        "区分带浇头饭与即食白米、冷冻饭、紫菜包饭。"
+      ],
+      "safety": "按整盒份量核对能量和钠；酱汁、浇头及多份标示会改变实际摄入。"
+    },
+    "potato-chips": {
+      "id": "potato-chips",
+      "name": "薯片",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "salty_snack",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "马铃薯切片或成形后油炸、烘烤并调味的薄脆零食；薯条不在本条范围。",
+      "variables": "马铃薯比例、切片或成形工艺、油炸或烘烤、油脂、钠、调味和份量。",
+      "composition": "能量密度、脂肪与钠随工艺和商品配方变化。",
+      "direct": "一项20名健康成人的随机试验比较每日42克混合坚果和46克薯片，持续3周。薯片组测试餐后45分钟的血糖和胰岛素较基线升高；3周后两组空腹血糖、胰岛素及体重没有显著变化。",
+      "specific": "薯片组约10人，薯片只是坚果替代比较组；短时血糖结果不等于长期疾病风险。",
+      "body": "一项20名健康成人的随机试验中，10人每日吃46克薯片、持续3周；薯片组测试餐后45分钟血糖与胰岛素上升，3周后空腹指标和体重没有显著变化。样本小，不能代表各种薯片或长期食用结果。",
+      "evidence_body": "目前人体资料主要来自20人、3周的零食比较；餐后指标不等于长期疾病结局。",
+      "care": "按包装份量查看能量、钠和脂肪；调味与加工形态因商品而异。",
+      "taste_m": {},
+      "refs": [
+        "Rosas M Jr, Liu C, Hong MY. ‘Effects of Mixed Nut Consumption on Blood Glucose, Insulin, Satiety, and the Microbiome in a Healthy Population: A Pilot Study.’ Journal of Medicinal Food. 2023;26(5):342–351. DOI: https://doi.org/10.1089/jmf.2022.0121."
+      ],
+      "body_refs": [
+        "Rosas M Jr, Liu C, Hong MY. ‘Effects of Mixed Nut Consumption on Blood Glucose, Insulin, Satiety, and the Microbiome in a Healthy Population: A Pilot Study.’ Journal of Medicinal Food. 2023;26(5):342–351. DOI: https://doi.org/10.1089/jmf.2022.0121."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机平行零食比较，连续3周，并检测单餐餐后及干预前后指标。",
+          "population": "20名20–35岁健康成人，分为两组。",
+          "exposure": "每日42克混合坚果或46克轻盐薯片。",
+          "result": "薯片组45分钟血糖111.9升至131.3毫克/分升、胰岛素3.79升至10.69毫单位/升；3周后空腹血糖和胰岛素无显著变化。",
+          "limits": "薯片组约10人、单一商品和短期替代；不能推断长期因果。",
+          "distance": "D0（单一薯片试验品），样本和时长有限。"
+        }
+      ],
+      "unknowns": "不同薯片工艺和调味的代表性营养值及长期摄入结局。",
+      "tradition": "加工薯片不同于整马铃薯，不以原料传统记录概括。",
+      "queries": [
+        "Rosas Liu Hong 2023 randomized trial potato chips 46 grams 3 weeks postprandial glucose insulin.",
+        "Long-term human studies of potato chips as an exposure separate from mixed snack comparisons."
+      ],
+      "search_log": [
+        "核对试验的两组份量、持续时间和餐后测量。",
+        "确认薯片组样本很小，未把短期血糖变化写成疾病因果。"
+      ],
+      "safety": "按包装份量查看能量、钠和脂肪；调味与加工形态因商品而异。"
+    },
+    "french-fries": {
+      "id": "french-fries",
+      "name": "薯条",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "fried_potato",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "马铃薯切成长条，经油炸或热风烹制后即食或冷冻销售；烤土豆和薯片另行区分。",
+      "variables": "切条尺寸、是否预炸、烹调油、温度、盐、份量和酱料。",
+      "composition": "马铃薯及吸收油脂共同构成薯条，能量和脂肪受烹制与份量影响。",
+      "direct": "三项美国前瞻性队列纳入205107名成人，随访累计5175501参与者年并记录22299例2型糖尿病。每周薯条摄入每增加3份，与较高发病率相关（HR 1.20，95%CI 1.12–1.28）；属观察性关联。",
+      "specific": "队列经多变量调整但不能排除残余混杂、饮食自报误差或替代关系；不能证明薯条直接导致疾病。",
+      "body": "三项美国长期队列纳入205107人，记录22299例新发2型糖尿病。每周多3份薯条与发病率较高相关（HR 1.20，95%CI 1.12–1.28）；结果为观察性关联，不能证明因果或估计个人风险。",
+      "evidence_body": "薯条与糖尿病的资料来自长期队列及队列荟萃分析，不是随机干预因果证据。",
+      "care": "留意份量、油炸方式、盐和酱料；队列关联不能用于个人诊断或治疗。",
+      "taste_m": {},
+      "refs": [
+        "Mousavi SM, Gu X, Imamura F, AlEssa HB, Devinsky O, Sun Q, et al. ‘Total and specific potato intake and risk of type 2 diabetes: results from three US cohort studies and a substitution meta-analysis of prospective cohorts.’ BMJ. 2025;390:e082121. DOI: https://doi.org/10.1136/bmj-2024-082121."
+      ],
+      "body_refs": [
+        "Mousavi SM, Gu X, Imamura F, AlEssa HB, Devinsky O, Sun Q, et al. ‘Total and specific potato intake and risk of type 2 diabetes: results from three US cohort studies and a substitution meta-analysis of prospective cohorts.’ BMJ. 2025;390:e082121. DOI: https://doi.org/10.1136/bmj-2024-082121."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三项前瞻性队列个体数据分析，并进行剂量反应与替代分析。",
+          "population": "205107名基线无糖尿病、心血管病或癌症成人；5175501参与者年，22299例2型糖尿病。",
+          "exposure": "食物频率问卷记录薯条和其他马铃薯类别摄入。",
+          "result": "每周增加3份薯条与新发2型糖尿病发生率升高相关（HR 1.20，95%CI 1.12–1.28）；烤、煮或捣碎马铃薯无显著关联。",
+          "limits": "观察性资料，不证明因果；饮食自报与残余混杂等可能影响估计。",
+          "distance": "D0（问卷记录薯条摄入），长期结局但非随机试验。"
+        }
+      ],
+      "unknowns": "家庭与餐馆薯条的份量、制法及替代其他食物后的个体长期风险。",
+      "tradition": "切制、油炸和调味改变马铃薯形态，不以整薯数据概括薯条。",
+      "queries": [
+        "Mousavi BMJ 2025 French fries three US prospective cohorts 205107 participants 22299 incident T2D dose response.",
+        "French fries substitution prospective cohort meta-analysis observational limitations."
+      ],
+      "search_log": [
+        "核对BMJ三队列人数、随访、新发病例及每周3份关联。",
+        "保留观察性限制，不把队列关联写成因果。"
+      ],
+      "safety": "留意份量、油炸方式、盐和酱料；队列关联不能用于个人诊断或治疗。"
+    },
+    "corn-chips": {
+      "id": "corn-chips",
+      "name": "玉米脆片",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "salty_snack",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以玉米粉或淀粉制成的咸味脆片，可经烘焙、油炸或挤压；早餐玉米片和玉米饼不在本条范围。",
+      "variables": "玉米品种及直链淀粉比例、粉粒度、挤压或油炸、用油、盐和份量。",
+      "composition": "淀粉结构、颗粒大小、油脂和调味共同影响组成；实验配方不代表市售脆片。",
+      "direct": "一项24名成人的餐后试验比较标准或高直链淀粉玉米制作的玉米脆片和松饼；高直链淀粉试验食品的血糖、胰岛素反应较低。",
+      "specific": "结果涵盖脆片和松饼，不是普通市售玉米脆片单独估计；实验配方与短时餐后指标限制外推。",
+      "body": "24人研究比较标准及高直链淀粉玉米制作的脆片和松饼；高直链淀粉食品总体餐后血糖、胰岛素反应较低。研究使用实验配方且同时测试松饼，不能推断常见玉米脆片均有相同效果。",
+      "evidence_body": "相关人体证据仅来自24人的特定玉米淀粉配方研究，不代表一般市售玉米脆片。",
+      "care": "按每份查看能量、钠和油脂，留意玉米及调味料过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Behall KM, Scholfield DJ. ‘Food Amylose Content Affects Postprandial Glucose and Insulin Responses.’ Cereal Chemistry. 2005;82(6):654–659. DOI: https://doi.org/10.1094/cc-82-0654."
+      ],
+      "body_refs": [
+        "Behall KM, Scholfield DJ. ‘Food Amylose Content Affects Postprandial Glucose and Insulin Responses.’ Cereal Chemistry. 2005;82(6):654–659. DOI: https://doi.org/10.1094/cc-82-0654."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "比较标准玉米及高直链淀粉玉米制成的单餐试验食品。",
+          "population": "24名成人，12男12女，其中一半为高胰岛素反应者。",
+          "exposure": "不同淀粉配方的玉米脆片或玉米松饼。",
+          "result": "高直链淀粉试验食品的血糖及胰岛素反应较低，报告的平均曲线下面积约为标准玉米淀粉食品的一半。",
+          "limits": "混合脆片与松饼结果，实验配方、小样本和急性终点；不是零售商品长期研究。",
+          "distance": "D1（试验玉米脆片及松饼），不能代表普通脆片。"
+        }
+      ],
+      "unknowns": "零售商品的餐后反应及长期摄入结局。",
+      "tradition": "现代玉米加工零食不同于玉米原粮或传统玉米主食。",
+      "queries": [
+        "Behall Scholfield 2005 Cereal Chemistry corn chips muffins high amylose 24 participants glucose insulin DOI.",
+        "Human studies of retail corn chips distinct from high-amylose experimental foods."
+      ],
+      "search_log": [
+        "核对24人试验测试玉米脆片与松饼及淀粉配方。",
+        "未将实验配方结果归为普通玉米脆片的普遍效应。"
+      ],
+      "safety": "按每份查看能量、钠和油脂，留意玉米及调味料过敏原。"
+    },
+    "popcorn": {
+      "id": "popcorn",
+      "name": "爆米花",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "salty_snack",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "玉米粒受热膨化形成的爆米花，包含空气爆制、油爆、加盐或糖衣产品；玉米脆片另行区分。",
+      "variables": "玉米种类、爆制方式、用油、糖盐、调味及份量。",
+      "composition": "原味以膨化玉米为主；油、钠、糖和能量随做法与配料变化。",
+      "direct": "35名正常体重成人参加受试者内交叉试验，比较清水、1杯或6杯低脂爆米花及1杯薯片。6杯爆米花后短时饥饿感较低、满意度较高；薯片条件下零食和后续自由进食的合计能量较高。",
+      "specific": "使用特定低脂产品和固定杯量，只观察短时饱腹与下一餐；研究作者中有食品公司任职者。",
+      "body": "35名正常体重成人的交叉试验发现，6杯低脂爆米花的短时饱腹量表结果优于其他条件；薯片条件下零食加下一餐合计能量较高。结果不说明长期体重变化，也不代表黄油或糖衣爆米花。",
+      "evidence_body": "证据来自35人短时试验，使用低脂样品和固定份量，不评估长期体重或疾病。",
+      "care": "查看微波袋和调味品的油、盐、糖及份量；加热后留意蒸汽和未爆玉米粒。",
+      "taste_m": {},
+      "refs": [
+        "Nguyen V, Cooper L, Lowndes J, Melanson K, Angelopoulos TJ, Rippe JM. ‘Popcorn is more satiating than potato chips in normal-weight adults.’ Nutrition Journal. 2012;11:71. DOI: https://doi.org/10.1186/1475-2891-11-71."
+      ],
+      "body_refs": [
+        "Nguyen V, Cooper L, Lowndes J, Melanson K, Angelopoulos TJ, Rippe JM. ‘Popcorn is more satiating than potato chips in normal-weight adults.’ Nutrition Journal. 2012;11:71. DOI: https://doi.org/10.1186/1475-2891-11-71."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "受试者内、随机顺序短时交叉试验；30分钟量表并测后续自由进食。",
+          "population": "35名正常体重不吸烟成人，17男18女，20–50岁。",
+          "exposure": "清水、1杯4克15千卡爆米花、6杯27克100千卡爆米花或1杯28克150千卡薯片，每种配200毫升水。",
+          "result": "6杯爆米花后自报饥饿较低、满意度较高；薯片条件合计摄入803±277千卡，高于对照716±279及爆米花条件。",
+          "limits": "小样本和短时结果；仅测低脂固定配方，不能推断高油糖衣产品或长期体重。",
+          "distance": "D0（低脂爆米花试验品），样品与份量有限。"
+        }
+      ],
+      "unknowns": "其他爆制法和调味商品的饱腹感与长期体重结局。",
+      "tradition": "加热膨化玉米与调味包装商品组成不同，不以玉米原粮记录概括。",
+      "queries": [
+        "Nguyen et al 2012 popcorn more satiating than potato chips 35 adults crossover servings and satiety.",
+        "PMC3502142 popcorn trial short-term appetite and subsequent meal energy results."
+      ],
+      "search_log": [
+        "核验35人交叉设计、杯量、能量与量表结果。",
+        "检查样品类型及作者利益关系，未把短期饱腹结果写成长期减重效果。"
+      ],
+      "safety": "查看微波袋和调味品的油、盐、糖及份量；加热后留意蒸汽和未爆玉米粒。"
+    }
+  }
+}
