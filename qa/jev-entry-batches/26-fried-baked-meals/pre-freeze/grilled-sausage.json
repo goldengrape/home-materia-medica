@@ -1,0 +1,10 @@
+{
+  "batch_id": "26-fried-baked-meals",
+  "entry_id": "grilled-sausage",
+  "summary_ref": "references/entries/grilled-sausage/summary.md",
+  "summary_sha256": "9bec5dcefba3b30866f83bbc61f0b30cf3f8520c7c90b233208597f105c1c123",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 烤肠\r\n\r\n**身份。** 将香肠在烤架或热表面加热后作为零食或夹食的加工肉制品；火腿肠、腊肠和非加工鲜肉串另列。\r\n\r\n**组成与暴露。** 香肠为配方各异的加工肉，烤制可能改变失水、表面焦化及每100克营养密度。 **关键变量：** 肉种、淀粉和脂肪、钠、腌制剂、肠衣、烤制温度和每根重量。\r\n\r\n**直接人体证据。** 未检得中国式街头烤肠成品的特异临床试验。\r\n\r\n**产品/成分证据。** Sister Study前瞻队列分析过早餐香肠摄入与结直肠癌，但并非中国烤肠，也没有隔离烤制方法；加工香肠关联不能直接视为该商品的因果结论。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 肉制品按包装储存和加热；关注高钠、过敏原和充分加热要求。\r\n\r\n**传统来源。** 现代加工肉制品。本条把烤制方式与香肠配方分开，不从传统肉类记载推定成品效果。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

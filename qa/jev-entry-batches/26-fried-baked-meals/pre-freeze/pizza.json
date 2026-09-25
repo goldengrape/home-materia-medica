@@ -1,0 +1,10 @@
+{
+  "batch_id": "26-fried-baked-meals",
+  "entry_id": "pizza",
+  "summary_ref": "references/entries/pizza/summary.md",
+  "summary_sha256": "9f203a8797373a22fa9bb01dbb0ede747840e4cfacaa58016e55c7891c89463f",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 披萨\r\n\r\n**身份。** 以面饼铺放番茄或其他酱料、奶酪及肉类或蔬菜配料后烘烤的复合食品；速冻披萨另为目录商品类型。\r\n\r\n**组成与暴露。** 面饼、奶酪、肉类配料和酱汁共同决定钠、脂肪及能量；单片与整张披萨的基准不同。 **关键变量：** 饼底厚薄、份量、奶酪、加工肉、蔬菜、酱料和单片重量。\r\n\r\n**直接人体证据。** 未检得能代表所有披萨配方的人体临床试验。\r\n\r\n**产品/成分证据。** USDA-CDC哨点食品监测对美国餐馆和快餐店披萨进行实验室检测：厚底芝士披萨钠由750降至640 mg/100g（2010–2013至2014–2017，−15%）；不同口味和品牌变化不同。美国连锁菜单研究另报告披萨每项钠中位数630 mg。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对小麦和奶类过敏原；剩余披萨及时冷藏并充分复热。\r\n\r\n**传统来源。** 现代烘烤复合食品。本条以披萨整体配方为单位，不把面粉、奶酪或番茄的单项资料等同于成品。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

@@ -1,0 +1,10 @@
+{
+  "batch_id": "26-fried-baked-meals",
+  "entry_id": "meat-skewers",
+  "summary_ref": "references/entries/meat-skewers/summary.md",
+  "summary_sha256": "3daa6a9fb892ffd94392c5dce1e380a8fd9a71c55d86dc1e0cf31ba5078daf42",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 烤肉串\r\n\r\n**身份。** 以肉类切块或肉糜穿串后烤制的食品；海鲜串、蔬菜串和其他烧烤菜品另列。\r\n\r\n**组成与暴露。** 肉串由肉、盐和腌料组成；直接火焰、燃料烟气、脂肪滴落和焦化程度会影响污染物形成。 **关键变量：** 肉种和部位、腌料、肥瘦、炭火或电烤、翻烤时间、焦化程度及份量。\r\n\r\n**直接人体证据。** 未检得烤肉串作为统一食品类别的长期人体结局试验。\r\n\r\n**产品/成分证据。** 一项中国街头烧烤食品研究用HPLC检测25类样品的PAH4；八类样品超过中国BaP限值，模型评估14类有升高风险，苯并[a]芘在烤牛肉样品中最高。该研究分析烧烤样品和风险模型，不是消费者疾病随访。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 肉类充分熟制，生熟分开；不要以颜色作为唯一熟度判断。\r\n\r\n**传统来源。** 现代烧烤食品。本条记录现代加工形成的暴露，不把肉类传统性味当作对烟熏、焦化产物的说明。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
