@@ -1,0 +1,10 @@
+{
+  "batch_id": "32-microbiome-sports-nutrition",
+  "entry_id": "sports-energy-bar",
+  "summary_ref": "references/entries/sports-energy-bar/summary.md",
+  "summary_sha256": "35e386d3be34cdb7fbcd3973fefeb5996c73e55f150ecf16eb415d8e14818986",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 能量棒\r\n\r\n**身份。** 面向运动前、中或后的便携固体食品，常含谷物、糖浆、坚果、果干或蛋白配料。该名称没有统一配方，不能与代餐棒或普通巧克力棒混为一谈。\r\n\r\n**组成与暴露。** 能量棒的碳水密度和咀嚼难度变化很大；含蛋白、脂肪或纤维较多的棒与运动中快速碳水补给不是同一暴露。 **关键变量：** 每根重量、能量、碳水和蛋白质、脂肪与纤维、坚果/乳/大豆过敏原、摄入时机及饮水。\r\n\r\n**直接人体证据。** 没有证据表明能量棒整体类别能改善运动表现。较直接的运动试验只测试特定高碳水补给量和活动方案，结果不能覆盖日常零食或所有能量棒。\r\n\r\n**产品/成分证据。** 12名受训男性自行车手在140分钟测试中按80克碳水/小时摄入不同供能形态；该单次试验中能量棒相对凝胶的峰值功率较低、胃肠不适较多。研究对象和供给量限制了外推。\r\n\r\n**共享背景。** 参见 microbiome-and-sports-supplements-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 比较每根能量、碳水、蛋白质、脂肪、纤维和份量。坚果、乳、大豆或麸质过敏者核对配料；运动中选择固体食品时，应按实际咀嚼和胃肠耐受评估。\r\n\r\n**传统来源。** 现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

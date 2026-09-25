@@ -1,0 +1,10 @@
+{
+  "batch_id": "32-microbiome-sports-nutrition",
+  "entry_id": "collagen-drink",
+  "summary_ref": "references/entries/collagen-drink/summary.md",
+  "summary_sha256": "62fded8560e4bdc7a98a1d887f8184ca25270952079049dfd159ba7238031a19",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 胶原蛋白饮\r\n\r\n**身份。** 以水解胶原蛋白或胶原肽为主要补充成分的即饮或冲调饮品。来源、肽段、剂量和添加成分因产品而异；普通明胶甜饮不一定与研究用胶原肽相同。\r\n\r\n**组成与暴露。** 胶原蛋白氨基酸组成不同于完整优质蛋白；复配美容饮可能含多种活性成分，难以把观察结果归因于胶原单一成分。 **关键变量：** 胶原来源与水解方式、每份克数、肽段特征、合并维生素或透明质酸等成分、研究人群和结局。\r\n\r\n**直接人体证据。** 针对皮肤老化的2025年荟萃分析纳入23项RCT、1474人；按资金来源分析时，未获制药企业资助的研究未显示皮肤水合、弹性或皱纹改善，高质量研究也未见显著改善。\r\n\r\n**产品/成分证据。** 2021年运动相关系统综述纳入15项RCT，部分关节疼痛和功能结局有改善信号，但研究规模及人群有限；15克/日提升胶原合成指标，却未较等氮的高质量蛋白增加肌蛋白合成。\r\n\r\n**共享背景。** 参见 microbiome-and-sports-supplements-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 检查动物来源过敏原、每份胶原克数及额外糖和维生素。对鱼类或牛猪来源过敏者需核对原料。不能用胶原饮替代完整蛋白质来源或将其视为治疗关节病的饮品。\r\n\r\n**传统来源。** 现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

@@ -1,0 +1,606 @@
+{
+  "batch": {
+    "id": "32-microbiome-sports-nutrition",
+    "title": "益生相关食品与运动营养补给",
+    "catalog_order": 32,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; ISAPP consensus statements; FDA GRAS notice; NATA position statement",
+    "web_search_calls": 7,
+    "web_search_queries": 25,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-32-microbiome-sports-nutrition",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "发酵食品不自动等于益生菌；益生菌效应依菌株、剂量、目标人群和结局而定。",
+      "添加益生菌与纤维不能单凭配方命名为有临床效果的合生元，组合须有目标人群证据。",
+      "能量胶、运动软糖和能量棒是不同供给形态，证据受运动类型、摄入量及耐受限制。",
+      "肌酸饮品的人体运动证据主要来自肌酸一水合物研究；水溶液储存条件会影响稳定性，不能把原料研究当成品牌成品试验。",
+      "电解质片不等同口服补液盐，补液应结合汗液、运动条件及过量饮水风险。",
+      "BCAA饮品不提供合成蛋白所需的全部必需氨基酸；胶原饮对皮肤的研究结果受资金来源和研究质量影响。"
+    ],
+    "citation_audit_revision": "rev-1: apply ISAPP strain/combination-specific definitions; retain product-form limitations for sport foods; distinguish raw ingredient evidence from finished drinks; stratify collagen outcomes by funding and study quality."
+  },
+  "entries": {
+    "probiotic-beverage": {
+      "name": "益生菌饮料",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "beverage",
+      "family": "益生菌饮料",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "以饮用为形态、标示含特定活微生物菌株的产品，可能为发酵乳、其他发酵饮料或后添加菌饮料。只写“乳酸菌”或“发酵”不足以确认符合益生菌科学定义。",
+      "variables": "菌株及其鉴定、饮用时活菌量、保质期、储存温度、每日份量、糖和乳成分。",
+      "composition": "产品可能使用单菌株或多菌株，活菌数会随加工和储存变化；饮料基质、糖、乳糖和过敏原因产品而异。",
+      "direct": "没有证据支持所有益生菌饮料都能产生相同健康效果。益生菌定义要求活微生物以足量给予并带来宿主健康益处，效果需要落到具体菌株、剂量与目标人群。",
+      "specific": "ISAPP发酵食品共识明确指出，发酵食品并不自动等于益生菌食品；需界定微生物并有人体健康获益证据。Savaiano与Hutkins的发酵乳综述纳入多种人体研究，但产品和研究结局不同，不能外推到所有菌饮料。中国市场还需按卫健委更新的可用于食品菌种名单核对菌种及适用范围；列入名单本身不证明某款产品有特定健康效果。",
+      "body": "没有证据支持所有益生菌饮料都能产生相同健康效果。益生菌定义要求活微生物以足量给予并带来宿主健康益处，效果需要落到具体菌株、剂量与目标人群。 ISAPP发酵食品共识明确指出，发酵食品并不自动等于益生菌食品；需界定微生物并有人体健康获益证据。Savaiano与Hutkins的发酵乳综述纳入多种人体研究，但产品和研究结局不同，不能外推到所有菌饮料。中国市场还需按卫健委更新的可用于食品菌种名单核对菌种及适用范围；列入名单本身不证明某款产品有特定健康效果。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "核对菌株全名、每份活菌数及其标注时点、保存条件、糖含量、乳或其他过敏原；中国市场还应核对现行可用菌种与产品用途要求。严重免疫功能低下者应就活菌产品向医务人员咨询。",
+      "taste_m": {},
+      "refs": [
+        "Hill C, Guarner F, Reid G, et al. The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. Nature Reviews Gastroenterology & Hepatology. 2014;11:506–514. DOI: https://doi.org/10.1038/nrgastro.2014.66.",
+        "Marco ML, Sanders ME, Gänzle M, et al. The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on fermented foods. Nature Reviews Gastroenterology & Hepatology. 2021;18:196–208. DOI: https://doi.org/10.1038/s41575-020-00390-5.",
+        "Savaiano DA, Hutkins RW. Yogurt, cultured fermented milk, and health: a systematic review. Nutrition Reviews. 2021;79(5):599–614. DOI: https://doi.org/10.1093/nutrit/nuaa013.",
+        "National Health Commission of the PRC. Announcement No. 4 of 2022: Updated Lists of Microorganisms Permitted for Use in Food and Infant Foods. https://www.nhc.gov.cn/sps/c100087/202208/9e1dfdedbc0143879284dae3f9367478.shtml."
+      ],
+      "body_refs": [
+        "Hill C, Guarner F, Reid G, et al. The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. Nature Reviews Gastroenterology & Hepatology. 2014;11:506–514. DOI: https://doi.org/10.1038/nrgastro.2014.66.",
+        "Marco ML, Sanders ME, Gänzle M, et al. The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on fermented foods. Nature Reviews Gastroenterology & Hepatology. 2021;18:196–208. DOI: https://doi.org/10.1038/s41575-020-00390-5.",
+        "Savaiano DA, Hutkins RW. Yogurt, cultured fermented milk, and health: a systematic review. Nutrition Reviews. 2021;79(5):599–614. DOI: https://doi.org/10.1093/nutrit/nuaa013.",
+        "National Health Commission of the PRC. Announcement No. 4 of 2022: Updated Lists of Microorganisms Permitted for Use in Food and Infant Foods. https://www.nhc.gov.cn/sps/c100087/202208/9e1dfdedbc0143879284dae3f9367478.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "科学共识文件。",
+          "population": "益生菌研究与产品分类，不对应某一品牌。",
+          "exposure": "定义活微生物、足量及宿主健康益处的必要条件。",
+          "result": "提出菌株身份、剂量、功效与安全评价都应明确，不能仅凭属或种名推定功效。",
+          "limits": "共识定义本身不证明某一饮料有效。",
+          "distance": "D3：类别定义。"
+        },
+        {
+          "ref": 2,
+          "design": "科学共识文件。",
+          "population": "发酵食品及发酵过程。",
+          "exposure": "讨论发酵食品与益生菌的界限。",
+          "result": "只有当活微生物成分被精确界定并有益处证据时，才宜称含益生菌。",
+          "limits": "类别共识，不是饮料成品试验。",
+          "distance": "D3：品类边界。"
+        },
+        {
+          "ref": 4,
+          "design": "国家卫生健康委员会公告及名单解读。",
+          "population": "在中国生产或销售食品所用微生物菌种。",
+          "exposure": "更新可用于食品及婴幼儿食品的菌种名单。",
+          "result": "中国食品用菌种须符合相应名单及用途管理；婴幼儿食品有独立名单。",
+          "limits": "名单用于安全和使用范围管理，不等于证明菌株对任一饮料有临床健康效果。",
+          "distance": "D2：中国监管范围资料，不是功效试验。"
+        }
+      ],
+      "unknowns": "不同菌株在人体中的目标结局、实际货架期活菌数、该饮料配方的直接临床结果及对免疫抑制人群的安全数据。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "ISAPP probiotic consensus strain-specific benefit live microorganisms beverage",
+        "probiotic beverage fermented food is not necessarily probiotic consensus",
+        "yogurt cultured fermented milk health systematic review human trials"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "prebiotic-food": {
+      "name": "益生元食品",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "益生元食品",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "以膳食食品形态提供一种或多种可被宿主微生物选择性利用的底物，并以其健康作用为研究或声称对象。单纯含膳食纤维或添加菊粉，不足以证明该食品具有益生元效应。",
+      "variables": "纤维种类、化学结构、每份剂量、饮食背景、肠道菌群和胃肠耐受。",
+      "composition": "可含菊粉、低聚果糖、抗性淀粉或其他底物；不同纤维的发酵性、黏度、剂量和研究证据不相同。",
+      "direct": "未发现可适用于所有益生元食品的统一临床效果。定义要求底物被宿主微生物选择性利用并带来健康益处；单看菌群变化或原料名称不够。",
+      "specific": "成人肠易激及功能性肠病的随机试验综述显示，益生元干预的结局受底物、剂量和人群影响；部分菊粉型果聚糖可能增加胀气。该结果不表示所有益生元食品有相同作用。",
+      "body": "未发现可适用于所有益生元食品的统一临床效果。定义要求底物被宿主微生物选择性利用并带来健康益处；单看菌群变化或原料名称不够。 成人肠易激及功能性肠病的随机试验综述显示，益生元干预的结局受底物、剂量和人群影响；部分菊粉型果聚糖可能增加胀气。该结果不表示所有益生元食品有相同作用。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "查看纤维来源及每份克数；突然增加发酵性纤维可能引起排气、腹胀或腹部不适。对特定纤维敏感者应从较小份量评估耐受，不把食品声称当作肠病治疗。",
+      "taste_m": {},
+      "refs": [
+        "Gibson GR, Hutkins R, Sanders ME, et al. Expert consensus document: The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on the definition and scope of prebiotics. Nature Reviews Gastroenterology & Hepatology. 2017;14:491–502. DOI: https://doi.org/10.1038/nrgastro.2017.75.",
+        "Wilson B, Rossi M, Dimidi E, Whelan K. Prebiotics in irritable bowel syndrome and other functional bowel disorders in adults: a systematic review and meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition. 2019;109(4):1098–1111. DOI: https://doi.org/10.1093/ajcn/nqy376."
+      ],
+      "body_refs": [
+        "Gibson GR, Hutkins R, Sanders ME, et al. Expert consensus document: The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on the definition and scope of prebiotics. Nature Reviews Gastroenterology & Hepatology. 2017;14:491–502. DOI: https://doi.org/10.1038/nrgastro.2017.75.",
+        "Wilson B, Rossi M, Dimidi E, Whelan K. Prebiotics in irritable bowel syndrome and other functional bowel disorders in adults: a systematic review and meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition. 2019;109(4):1098–1111. DOI: https://doi.org/10.1093/ajcn/nqy376."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "ISAPP专家共识。",
+          "population": "多种宿主微生物生态及膳食益生元研究。",
+          "exposure": "提出益生元的定义、选择性利用和健康获益标准。",
+          "result": "明确需要在目标宿主证明底物利用及健康获益，并考虑剂量和不良胃肠反应。",
+          "limits": "定义文件不能证明某产品达到有效剂量。",
+          "distance": "D3：类别定义。"
+        },
+        {
+          "ref": 2,
+          "design": "随机对照试验系统综述与荟萃分析。",
+          "population": "成人肠易激综合征或其他功能性肠病。",
+          "exposure": "比较不同益生元干预与对照的症状结局。",
+          "result": "不同成分和结局存在差异；菊粉型果聚糖可能增加胀气。",
+          "limits": "适用于特定患者与补充剂方案，不等于一般食品效果。",
+          "distance": "D3：单类底物及特定患者证据。"
+        }
+      ],
+      "unknowns": "不同食物基质中的有效剂量、长期临床终点及个体菌群差异；同一标签类别内各底物不可互换。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "ISAPP prebiotic consensus definition substrate selectively utilized health benefit",
+        "prebiotic foods inulin FOS dose gastrointestinal gas human systematic review",
+        "prebiotics IBS functional bowel disorder randomized controlled trials meta-analysis"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "synbiotic-food": {
+      "name": "合生元食品",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "合生元食品",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "含活微生物与微生物可选择性利用底物的食品组合，并以组合产生宿主健康益处为目标。仅把益生菌与膳食纤维放在同一配方，不自动满足合生元定义。",
+      "variables": "活菌菌株和数量、底物类型与剂量、两者是否互补或协同、保存后活性及目标人群。",
+      "composition": "配方可以是互补型或协同型合生元。前者含符合各自条件的益生菌加益生元；后者要求底物被共同给入的微生物选择性利用。",
+      "direct": "不能把单独益生菌和单独纤维的研究简单相加，来证明组合食品有效。ISAPP共识要求合生元组合在目标宿主中有健康获益证据；协同型还需在同一研究中证明选择性利用。",
+      "specific": "2020年共识区分互补型与协同型，并列出组合本身的证据要求。当前目录类别未指定菌株、底物或剂量，故不能给出通用健康结论。",
+      "body": "不能把单独益生菌和单独纤维的研究简单相加，来证明组合食品有效。ISAPP共识要求合生元组合在目标宿主中有健康获益证据；协同型还需在同一研究中证明选择性利用。 2020年共识区分互补型与协同型，并列出组合本身的证据要求。当前目录类别未指定菌株、底物或剂量，故不能给出通用健康结论。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "核对具体菌株、底物及份量、储存条件和目标人群研究。胃肠敏感者留意可发酵底物引起的症状；免疫功能低下者对活菌产品先咨询医务人员。",
+      "taste_m": {},
+      "refs": [
+        "Swanson KS, Gibson GR, Hutkins R, et al. The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on the definition and scope of synbiotics. Nature Reviews Gastroenterology & Hepatology. 2020;17:687–701. DOI: https://doi.org/10.1038/s41575-020-0344-2."
+      ],
+      "body_refs": [
+        "Swanson KS, Gibson GR, Hutkins R, et al. The International Scientific Association for Probiotics and Prebiotics (ISAPP) consensus statement on the definition and scope of synbiotics. Nature Reviews Gastroenterology & Hepatology. 2020;17:687–701. DOI: https://doi.org/10.1038/s41575-020-0344-2."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "ISAPP专家共识。",
+          "population": "合生元定义与相关研究。",
+          "exposure": "评估合生元组合的类别、证据和安全要求。",
+          "result": "合生元须含活微生物及选择性利用底物，并由组合在目标宿主产生健康益处；协同型另需同一试验证明底物利用。",
+          "limits": "共识不为未指定配方背书。",
+          "distance": "D3：组合定义及研究要求。"
+        }
+      ],
+      "unknowns": "不同配方中菌株与底物是否相容、储存期末活菌量以及每种组合的目标人群临床结果。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "ISAPP synbiotic consensus complementary synergistic combination benefit target host",
+        "synbiotic food probiotic prebiotic combination clinical trials evidence requirements",
+        "synbiotic foods product definition strain substrate dose"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "energy-gel": {
+      "name": "能量胶",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "能量胶",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "以浓稠胶状包装提供可快速摄入的碳水化合物产品；有些含咖啡因、电解质或其他配料。它属于运动食品的一种形态，不是普遍适用的能量补充。",
+      "variables": "每包可利用碳水、葡萄糖/果糖比例、咖啡因与钠、服用时间、饮水量、运动时长和胃肠耐受。",
+      "composition": "常见碳水来源有葡萄糖、麦芽糊精和果糖；浓度较高，实际摄入还取决于是否同时喝水及其他运动补给。",
+      "direct": "运动中补充碳水的研究主要适用于持续或高强度耐力运动，不能据此推定短时日常活动需要能量胶。不同人对用量和配方的耐受不同。",
+      "specific": "一项12名受训男性自行车手交叉试验比较饮料、胶、棒等供能形态；碳水均为80克/小时，结果显示胶和饮料在该方案中较棒有更好的胃肠舒适度，格式之间表现差别有限。研究未检验所有品牌或日常使用。",
+      "body": "运动中补充碳水的研究主要适用于持续或高强度耐力运动，不能据此推定短时日常活动需要能量胶。不同人对用量和配方的耐受不同。 一项12名受训男性自行车手交叉试验比较饮料、胶、棒等供能形态；碳水均为80克/小时，结果显示胶和饮料在该方案中较棒有更好的胃肠舒适度，格式之间表现差别有限。研究未检验所有品牌或日常使用。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "阅读单包碳水、咖啡因及钠含量；高浓度凝胶应依标签配水，先在训练中测试胃肠耐受。咖啡因对睡眠或其摄入需受限者尤其要看每份含量。",
+      "taste_m": {},
+      "refs": [
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211.",
+        "Burke LM, Hawley JA, Wong SHS, Jeukendrup AE. Carbohydrates for training and competition. Journal of Sports Sciences. 2011;29(S1):S17–S27. DOI: https://doi.org/10.1080/02640414.2011.585473."
+      ],
+      "body_refs": [
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211.",
+        "Burke LM, Hawley JA, Wong SHS, Jeukendrup AE. Carbohydrates for training and competition. Journal of Sports Sciences. 2011;29(S1):S17–S27. DOI: https://doi.org/10.1080/02640414.2011.585473."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "运动营养立场文件。",
+          "population": "从事训练或竞赛的运动人群。",
+          "exposure": "总结训练前后及运动中营养素时机证据。",
+          "result": "运动中碳水策略需结合项目、持续时间和总摄入；需个体化。",
+          "limits": "立场文件不是对某款能量胶的临床试验。",
+          "distance": "D3：一般碳水策略。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉试验。",
+          "population": "12名训练有素男性自行车手。",
+          "exposure": "140分钟骑行测试中，以饮料、凝胶、能量棒或混合形式每20分钟摄入，总碳水80克/小时。",
+          "result": "能量棒相对凝胶降低该测试中的峰值功率并增加部分胃肠不适；凝胶与饮料差异不清楚。",
+          "limits": "样本小、全为男性，固定单一高摄入方案；不能泛化所有配方或人群。",
+          "distance": "D1：同类运动补给形态的直接比较。"
+        }
+      ],
+      "unknowns": "不同赛事时间、产品浓度、补水安排与个体胃肠反应对实际效果的影响；咖啡因混合产品需单独研究。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "carbohydrate energy gel endurance exercise timing randomized crossover trial",
+        "sports nutrition carbohydrate intake during exercise gel gastrointestinal comfort trial",
+        "solid gel liquid carbohydrate format cyclists 80 g per hour"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "sports-energy-bar": {
+      "name": "能量棒",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "能量棒",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "面向运动前、中或后的便携固体食品，常含谷物、糖浆、坚果、果干或蛋白配料。该名称没有统一配方，不能与代餐棒或普通巧克力棒混为一谈。",
+      "variables": "每根重量、能量、碳水和蛋白质、脂肪与纤维、坚果/乳/大豆过敏原、摄入时机及饮水。",
+      "composition": "能量棒的碳水密度和咀嚼难度变化很大；含蛋白、脂肪或纤维较多的棒与运动中快速碳水补给不是同一暴露。",
+      "direct": "没有证据表明能量棒整体类别能改善运动表现。较直接的运动试验只测试特定高碳水补给量和活动方案，结果不能覆盖日常零食或所有能量棒。",
+      "specific": "12名受训男性自行车手在140分钟测试中按80克碳水/小时摄入不同供能形态；该单次试验中能量棒相对凝胶的峰值功率较低、胃肠不适较多。研究对象和供给量限制了外推。",
+      "body": "没有证据表明能量棒整体类别能改善运动表现。较直接的运动试验只测试特定高碳水补给量和活动方案，结果不能覆盖日常零食或所有能量棒。 12名受训男性自行车手在140分钟测试中按80克碳水/小时摄入不同供能形态；该单次试验中能量棒相对凝胶的峰值功率较低、胃肠不适较多。研究对象和供给量限制了外推。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "比较每根能量、碳水、蛋白质、脂肪、纤维和份量。坚果、乳、大豆或麸质过敏者核对配料；运动中选择固体食品时，应按实际咀嚼和胃肠耐受评估。",
+      "taste_m": {},
+      "refs": [
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211.",
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Burke LM, Hawley JA, Wong SHS, Jeukendrup AE. Carbohydrates for training and competition. Journal of Sports Sciences. 2011;29(S1):S17–S27. DOI: https://doi.org/10.1080/02640414.2011.585473."
+      ],
+      "body_refs": [
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211.",
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Burke LM, Hawley JA, Wong SHS, Jeukendrup AE. Carbohydrates for training and competition. Journal of Sports Sciences. 2011;29(S1):S17–S27. DOI: https://doi.org/10.1080/02640414.2011.585473."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉运动试验。",
+          "population": "12名训练有素男性自行车手。",
+          "exposure": "在140分钟骑行模拟中比较饮料、凝胶、棒和混合形式，均提供80克碳水/小时。",
+          "result": "棒形式相较凝胶的峰值功率下降约3.9%，并出现更多恶心、饱腹和腹部不适；饮料与凝胶间未见明确差异。",
+          "limits": "单一试验、样本小，配方与耐力骑行情境固定；并非一般能量棒功效试验。",
+          "distance": "D1：运动中高碳水固体补给。"
+        },
+        {
+          "ref": 2,
+          "design": "运动营养综述。",
+          "population": "运动训练与竞赛人群。",
+          "exposure": "归纳训练和竞赛的碳水策略。",
+          "result": "碳水需求依持续时间、运动强度及训练状况而变。",
+          "limits": "不比较本目录全部商业棒。",
+          "distance": "D3：运动情境背景。"
+        }
+      ],
+      "unknowns": "当前市场产品的配方分布及每个具体品牌的运动中耐受、表现结局和替代普通膳食的效果。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "sports energy bar carbohydrate composition endurance sport evidence",
+        "carbohydrate bar compared with gel drink randomized cyclist trial gastrointestinal comfort",
+        "carbohydrate requirements during endurance exercise consensus"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "sports-gummy": {
+      "name": "运动软糖",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "运动软糖",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "以可咀嚼软糖形态提供运动中碳水，有些产品另加电解质或咖啡因。它与日常糖果的区别取决于配方和标示用途，名称本身不能证明运动效益。",
+      "variables": "每份碳水和钠、胶体及糖源、咖啡因、份量、饮水量、使用活动和胃肠耐受。",
+      "composition": "产品多为糖或葡萄糖浆基质，水分少于运动饮料；实际摄入速度、咀嚼和补液方式不同于凝胶或饮料。",
+      "direct": "未检得足以概括运动软糖全类别的人体结局试验。耐力运动碳水研究支持的是按运动时长和耐受规划碳水摄入，不能视作每款软糖都改善表现。",
+      "specific": "运动营养立场文件支持特定训练和竞赛场景下的碳水安排。能量胶、能量棒、饮料的比较试验说明供能形态会影响舒适度，但没有直接比较本条全部软糖产品。",
+      "body": "未检得足以概括运动软糖全类别的人体结局试验。耐力运动碳水研究支持的是按运动时长和耐受规划碳水摄入，不能视作每款软糖都改善表现。 运动营养立场文件支持特定训练和竞赛场景下的碳水安排。能量胶、能量棒、饮料的比较试验说明供能形态会影响舒适度，但没有直接比较本条全部软糖产品。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "看清每份碳水、钠和咖啡因，避免与能量饮料或其他补给重复累计；留意糖醇或高强度运动中进食造成的胃肠不适。",
+      "taste_m": {},
+      "refs": [
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211."
+      ],
+      "body_refs": [
+        "Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition. 2017;14:33. DOI: https://doi.org/10.1186/s12970-017-0189-4.",
+        "Guillochon M, Rowlands DS. Solid, Gel, and Liquid Carbohydrate Format Effects on Gut Comfort and Performance. International Journal of Sport Nutrition and Exercise Metabolism. 2017;27(3):247–254. DOI: https://doi.org/10.1123/ijsnem.2016-0211."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "运动营养立场文件。",
+          "population": "运动训练和竞赛人群。",
+          "exposure": "总结耐力运动期间碳水摄入时机和个体差异。",
+          "result": "补给方案需按运动时间、强度、饮食和耐受决定。",
+          "limits": "不专门研究运动软糖。",
+          "distance": "D3：运动碳水策略。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉试验。",
+          "population": "12名受训男性自行车手。",
+          "exposure": "比较三类碳水供给形态，碳水摄入量统一为80克/小时。",
+          "result": "不同形态在峰值功率和胃肠舒适度上有差异；研究没有测试软糖。",
+          "limits": "结果只能作为形态可能影响耐受的间接依据。",
+          "distance": "D2：相邻运动补给产品。"
+        }
+      ],
+      "unknowns": "运动软糖作为独立产品的人体随机试验、与凝胶相比的摄入耐受，以及加电解质或咖啡因配方的额外效果。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "sports gummies carbohydrate chews exercise randomized trial",
+        "carbohydrate intake during endurance exercise gastrointestinal tolerance formats",
+        "sports nutrition carbohydrate gummy composition caffeine sodium"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "creatine-drink": {
+      "name": "肌酸饮品",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "beverage",
+      "family": "肌酸饮品",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "即饮或冲调后饮用、含肌酸的饮料或补充产品。原料形态、实际肌酸量、溶液酸碱度、温度和冲调后放置时间会影响产品身份及含量。",
+      "variables": "肌酸化学形式、每份实际剂量、是否随液体预混、酸碱度、温度、储存时间、训练类型和基础饮食。",
+      "composition": "研究最充分的形式为肌酸一水合物。饮料中还可能含糖、咖啡因、电解质或其他补充剂，因此不能把单一肌酸研究套用到整款复配产品。",
+      "direct": "肌酸一水合物对高强度、重复性运动能力及训练期瘦体重有较多研究支持；这些资料不等同于肌酸饮品成品试验，也不代表所有添加形式更有效。",
+      "specific": "FDA GRAS材料及化学稳定性研究指出，肌酸在水溶液中的降解与时间、温度和配方条件有关；固体粉末较稳定。应区分干粉冲饮和长期预混即饮。",
+      "body": "肌酸一水合物对高强度、重复性运动能力及训练期瘦体重有较多研究支持；这些资料不等同于肌酸饮品成品试验，也不代表所有添加形式更有效。 FDA GRAS材料及化学稳定性研究指出，肌酸在水溶液中的降解与时间、温度和配方条件有关；固体粉末较稳定。应区分干粉冲饮和长期预混即饮。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "核对肌酸形式、每份剂量及复配成分。慢性肾病、怀孕或服药者不要仅凭运动补剂标签自行增加摄入；高强度摄入和训练安排应征询临床专业人员。",
+      "taste_m": {},
+      "refs": [
+        "Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. Journal of the International Society of Sports Nutrition. 2017;14:18. DOI: https://doi.org/10.1186/s12970-017-0173-z.",
+        "U.S. Food and Drug Administration. GRAS Notice No. 931: Creatine Monohydrate (2020; FDA response letter, 2021). https://www.fda.gov/media/143525/download?attachment=."
+      ],
+      "body_refs": [
+        "Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. Journal of the International Society of Sports Nutrition. 2017;14:18. DOI: https://doi.org/10.1186/s12970-017-0173-z.",
+        "U.S. Food and Drug Administration. GRAS Notice No. 931: Creatine Monohydrate (2020; FDA response letter, 2021). https://www.fda.gov/media/143525/download?attachment=."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "科学会立场文件。",
+          "population": "运动和医学领域肌酸补充研究。",
+          "exposure": "综述肌酸形式、剂量、安全性及运动结局。",
+          "result": "肌酸一水合物证据最充分，主要结局集中于高强度运动能力与训练期瘦体重。",
+          "limits": "立场文件不是肌酸饮品品牌的成品试验。",
+          "distance": "D3：原料级证据。"
+        },
+        {
+          "ref": 2,
+          "design": "FDA GRAS通知资料及响应。",
+          "population": "肌酸一水合物作为食品原料的资料。",
+          "exposure": "评估原料身份、制造及食品应用信息。",
+          "result": "资料指出水溶液中可因pH和温度等条件发生降解为肌酐。",
+          "limits": "GRAS通知不等同于FDA批准某款饮料或证明功效。",
+          "distance": "D2：原料稳定性及监管资料。"
+        }
+      ],
+      "unknowns": "各类即饮产品货架期末的肌酸实测含量、配方对稳定性的影响以及复配饮品本身的训练结局。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "creatine monohydrate beverages exercise sport ISSN position stand",
+        "FDA GRAS notice 931 creatine monohydrate aqueous solution pH temperature degradation",
+        "creatine stability in aqueous solution temperature pH storage study"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "electrolyte-tablet-drink": {
+      "name": "电解质片饮料",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "beverage",
+      "family": "电解质片饮料",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "将可溶片剂加入水中得到的饮料，通常提供钠或其他电解质；有些产品另含糖、甜味剂或维生素。它不是统一配方，也不自动等同口服补液盐。",
+      "variables": "每片溶水量、钠/钾等含量、碳水、环境温度、运动时长、汗液丢失和基础疾病。",
+      "composition": "片剂的电解质和碳水浓度由溶水量决定；低钠或无糖产品与含碳水运动饮料用途可能不同。",
+      "direct": "补水和钠补充应结合运动时长、出汗量、环境及个人耐受。没有证据表明一般人日常饮水必须添加电解质片。",
+      "specific": "NATA运动补液立场文件指出，运动液体摄入要考虑汗液流失、运动环境和个体差异；运动相关低钠血症共识强调饮水过量也是风险。两份文件讨论运动补液，不是特定片剂试验。",
+      "body": "补水和钠补充应结合运动时长、出汗量、环境及个人耐受。没有证据表明一般人日常饮水必须添加电解质片。 NATA运动补液立场文件指出，运动液体摄入要考虑汗液流失、运动环境和个体差异；运动相关低钠血症共识强调饮水过量也是风险。两份文件讨论运动补液，不是特定片剂试验。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "按标示水量溶解，核对每份钠、钾和糖。患有心、肾疾病或需限制钠/钾者应先询问医务人员；运动中也避免强迫过量饮水。",
+      "taste_m": {},
+      "refs": [
+        "McDermott BP, Anderson SA, Armstrong LE, et al. National Athletic Trainers’ Association Position Statement: Fluid Replacement for the Physically Active. Journal of Athletic Training. 2017;52(9):877–895. DOI: https://doi.org/10.4085/1062-6050-52.9.02.",
+        "Hew-Butler T, Rosner MH, Fowkes-Godek S, et al. Statement of the Third International Exercise-Associated Hyponatremia Consensus Development Conference, Carlsbad, California, 2015. Clinical Journal of Sport Medicine. 2015;25(4):303–320. DOI: https://doi.org/10.1097/JSM.0000000000000221."
+      ],
+      "body_refs": [
+        "McDermott BP, Anderson SA, Armstrong LE, et al. National Athletic Trainers’ Association Position Statement: Fluid Replacement for the Physically Active. Journal of Athletic Training. 2017;52(9):877–895. DOI: https://doi.org/10.4085/1062-6050-52.9.02.",
+        "Hew-Butler T, Rosner MH, Fowkes-Godek S, et al. Statement of the Third International Exercise-Associated Hyponatremia Consensus Development Conference, Carlsbad, California, 2015. Clinical Journal of Sport Medicine. 2015;25(4):303–320. DOI: https://doi.org/10.1097/JSM.0000000000000221."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "运动医学专业协会立场文件。",
+          "population": "运动员及运动补液实践。",
+          "exposure": "总结水分、电解质和碳水补给的个体化考虑。",
+          "result": "建议以汗液和尿液损失、运动情境与个体耐受为依据；某些长时间或炎热情形才需特别考虑钠补充。",
+          "limits": "并非测试某种电解质片。",
+          "distance": "D3：运动补液背景。"
+        },
+        {
+          "ref": 2,
+          "design": "国际专家共识。",
+          "population": "运动相关低钠血症风险和预防。",
+          "exposure": "讨论运动中水与钠平衡。",
+          "result": "过量饮水可造成运动相关低钠血症，不能仅靠补钠片抵消不合理饮水。",
+          "limits": "不构成个人补液剂量建议。",
+          "distance": "D3：安全背景。"
+        }
+      ],
+      "unknowns": "各品牌片剂的实测溶解后浓度、不同出汗率和热环境的产品级效果，以及长期日常使用的获益与风险。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "electrolyte tablets hydration exercise sodium individualized sweat rate NATA position statement",
+        "exercise associated hyponatremia consensus excessive drinking sodium sports tablets",
+        "electrolyte tablet drink composition sodium carbohydrate dose study"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "bcaa-drink": {
+      "name": "支链氨基酸饮料",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "beverage",
+      "family": "支链氨基酸饮料",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "含亮氨酸、异亮氨酸和缬氨酸中一种或多种的即饮或冲调产品；“BCAA”通常指这三种必需氨基酸。它不等于含九种必需氨基酸的完整蛋白质。",
+      "variables": "三种氨基酸比例和总量、每日总蛋白及必需氨基酸摄入、饮用时机、训练方式和所测结局。",
+      "composition": "配方可能含甜味剂、电解质或咖啡因。仅含三种BCAA无法提供合成完整肌肉蛋白所需的全部必需氨基酸。",
+      "direct": "运动员系统综述纳入24项研究，发现BCAA对表现和体成分的获益很小或不明确；部分抗阻训练研究报告肌肉酸痛降低，但方案差异大且许多研究未报告全天蛋白摄入。",
+      "specific": "人体肌蛋白合成需要其他必需氨基酸。BCAA促进信号变化不等于完整蛋白合成或运动表现改善；饮料成品的额外效果也未由该综述确定。",
+      "body": "运动员系统综述纳入24项研究，发现BCAA对表现和体成分的获益很小或不明确；部分抗阻训练研究报告肌肉酸痛降低，但方案差异大且许多研究未报告全天蛋白摄入。 人体肌蛋白合成需要其他必需氨基酸。BCAA促进信号变化不等于完整蛋白合成或运动表现改善；饮料成品的额外效果也未由该综述确定。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "核对每份氨基酸和复配咖啡因。不要将BCAA饮料计作一份完整蛋白质；肝肾疾病或接受治疗者使用氨基酸补充剂前询问临床人员。",
+      "taste_m": {},
+      "refs": [
+        "Martinho DV, Nobari H, Faria A, et al. Oral Branched-Chain Amino Acids Supplementation in Athletes: A Systematic Review. Nutrients. 2022;14(19):4002. DOI: https://doi.org/10.3390/nu14194002.",
+        "Wolfe RR. Branched-chain amino acids and muscle protein synthesis in humans: myth or reality? Journal of the International Society of Sports Nutrition. 2017;14:30. DOI: https://doi.org/10.1186/s12970-017-0184-9."
+      ],
+      "body_refs": [
+        "Martinho DV, Nobari H, Faria A, et al. Oral Branched-Chain Amino Acids Supplementation in Athletes: A Systematic Review. Nutrients. 2022;14(19):4002. DOI: https://doi.org/10.3390/nu14194002.",
+        "Wolfe RR. Branched-chain amino acids and muscle protein synthesis in humans: myth or reality? Journal of the International Society of Sports Nutrition. 2017;14:30. DOI: https://doi.org/10.1186/s12970-017-0184-9."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "运动人群系统综述。",
+          "population": "运动员及规律训练者；24项研究。",
+          "exposure": "归纳口服BCAA对运动表现、身体组成、恢复和疼痛的研究。",
+          "result": "表现和体成分获益整体不明确；部分抗阻训练研究发现主观肌肉酸痛下降，耐力项目结果不一致。",
+          "limits": "剂量和方案差异大，许多研究未报告全天蛋白摄入。",
+          "distance": "D3：口服BCAA类别证据。"
+        },
+        {
+          "ref": 2,
+          "design": "生理学综述。",
+          "population": "人体肌蛋白合成研究。",
+          "exposure": "讨论单独BCAA对肌蛋白合成的理论与人体实证。",
+          "result": "肌蛋白合成需要全部必需氨基酸；单独BCAA不足以作为完整合成底物。",
+          "limits": "综述结论不评价具体饮品配方。",
+          "distance": "D3：成分机制。"
+        }
+      ],
+      "unknowns": "不同训练背景和基础蛋白摄入下，饮料形式、完整配方以及长期使用的临床结果。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "BCAA drink athletes systematic review 24 studies performance body composition recovery 2022",
+        "branched chain amino acids alone muscle protein synthesis all essential amino acids human review",
+        "BCAA supplementation beverage randomized controlled trials athletes"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    },
+    "collagen-drink": {
+      "name": "胶原蛋白饮",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "beverage",
+      "family": "胶原蛋白饮",
+      "research_depth": "R2",
+      "shared_parent": "microbiome-and-sports-supplements-base",
+      "identity": "以水解胶原蛋白或胶原肽为主要补充成分的即饮或冲调饮品。来源、肽段、剂量和添加成分因产品而异；普通明胶甜饮不一定与研究用胶原肽相同。",
+      "variables": "胶原来源与水解方式、每份克数、肽段特征、合并维生素或透明质酸等成分、研究人群和结局。",
+      "composition": "胶原蛋白氨基酸组成不同于完整优质蛋白；复配美容饮可能含多种活性成分，难以把观察结果归因于胶原单一成分。",
+      "direct": "针对皮肤老化的2025年荟萃分析纳入23项RCT、1474人；按资金来源分析时，未获制药企业资助的研究未显示皮肤水合、弹性或皱纹改善，高质量研究也未见显著改善。",
+      "specific": "2021年运动相关系统综述纳入15项RCT，部分关节疼痛和功能结局有改善信号，但研究规模及人群有限；15克/日提升胶原合成指标，却未较等氮的高质量蛋白增加肌蛋白合成。",
+      "body": "针对皮肤老化的2025年荟萃分析纳入23项RCT、1474人；按资金来源分析时，未获制药企业资助的研究未显示皮肤水合、弹性或皱纹改善，高质量研究也未见显著改善。 2021年运动相关系统综述纳入15项RCT，部分关节疼痛和功能结局有改善信号，但研究规模及人群有限；15克/日提升胶原合成指标，却未较等氮的高质量蛋白增加肌蛋白合成。",
+      "evidence_body": "证据限于所列菌株、成分、剂量、人群和结局；本条是商品类别，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按具体活动、膳食和产品标签判断使用场景；不要从类别名称推断健康作用。",
+      "safety": "检查动物来源过敏原、每份胶原克数及额外糖和维生素。对鱼类或牛猪来源过敏者需核对原料。不能用胶原饮替代完整蛋白质来源或将其视为治疗关节病的饮品。",
+      "taste_m": {},
+      "refs": [
+        "Myung SK, Park Y. Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Medicine. 2025;138(9):1264–1277. DOI: https://doi.org/10.1016/j.amjmed.2025.04.034.",
+        "Khatri M, Naughton RJ, Clifford T, Harper LD, Corr L. The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review. Amino Acids. 2021;53(10):1493–1506. DOI: https://doi.org/10.1007/s00726-021-03072-x."
+      ],
+      "body_refs": [
+        "Myung SK, Park Y. Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Medicine. 2025;138(9):1264–1277. DOI: https://doi.org/10.1016/j.amjmed.2025.04.034.",
+        "Khatri M, Naughton RJ, Clifford T, Harper LD, Corr L. The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review. Amino Acids. 2021;53(10):1493–1506. DOI: https://doi.org/10.1007/s00726-021-03072-x."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照试验系统综述与荟萃分析。",
+          "population": "23项RCT，共1474人，皮肤老化结局。",
+          "exposure": "比较口服胶原补充剂与对照的皮肤水合、弹性和皱纹。",
+          "result": "总体合并分析有改善；未获制药企业资助的研究亚组在三个结局均未显示效果，高质量研究亚组也未见显著改善。",
+          "limits": "按资助来源分组后的证据仍受试验质量、产品配方和研究异质性限制。",
+          "distance": "D2：口服胶原补充剂类别，非特定饮料。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述，纳入15项随机对照试验。",
+          "population": "休闲运动者、老年人及未训练绝经前女性等。",
+          "exposure": "总结胶原肽与运动、关节症状、身体组成和蛋白合成。",
+          "result": "部分研究报告关节功能/疼痛信号；15克/日提高胶原合成率，但未较等氮高质量蛋白提升肌蛋白合成。",
+          "limits": "样本和人群有限，不支持全类饮料的普遍效果。",
+          "distance": "D2：补充剂与运动联用研究。"
+        }
+      ],
+      "unknowns": "不同来源和肽段产品的直接饮料试验、独立资助的长期研究，以及复配品中各成分的独立作用。",
+      "tradition": "现代发酵食品或营养补充产品。传统原料记录不等同于对该复合产品的古籍分类或功效记载。",
+      "queries": [
+        "collagen drink supplement skin aging systematic review meta-analysis funding source 2025",
+        "collagen peptide supplement systematic review exercise joint pain muscle protein synthesis 15 g",
+        "hydrolyzed collagen drink randomized controlled trials skin joint outcomes"
+      ],
+      "search_log": [
+        "核对类别定义、产品边界及组成变量。",
+        "检索共识文件、人体研究或运动营养立场文件；标出证据与本类商品之间的距离。"
+      ]
+    }
+  }
+}
