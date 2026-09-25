@@ -1,0 +1,598 @@
+{
+  "batch": {
+    "id": "31-nutrition-supplements",
+    "title": "蛋白补充、代餐与膳食纤维",
+    "catalog_order": 31,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; NHC official nutrition labelling guidance; journal and trial sources",
+    "web_search_calls": 4,
+    "web_search_queries": 16,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-31-nutrition-supplements",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "蛋白奶昔不是当然的代餐；代餐棒不等同普通蛋白棒或能量棒。",
+      "高蛋白布丁与冰淇淋的标签声称只表示规定的蛋白质含量，不证明整份食品低能量、低糖或有临床效果。",
+      "抗阻训练蛋白补充试验不能外推到所有蛋白产品、普通人群或不训练人群。",
+      "植物蛋白研究常以特定大豆分离物为主，不能视为所有植物来源配方相同；2026长期荟萃分析含Danone研发人员，保留资助/利益冲突限制。",
+      "膳食纤维粉、菊粉和抗性糊精的可溶性、发酵性及临床证据不同，不按“膳食纤维”合并疗效。",
+      "抗性糊精的2026人体试验只观察到短期菌群指标变化，排便结局无显著改变，且企业资助并参与研究。"
+    ],
+    "citation_audit_revision": "rev-1: separate complete meal replacements from protein snacks; label class-level fiber/protein results by ingredient, population and outcome; disclose industry involvement in selected 2026 protein and resistant-dextrin reviews/trials."
+  },
+  "entries": {
+    "casein-protein-powder": {
+      "name": "酪蛋白粉",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "ingredient",
+      "family": "casein_protein_powder",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以乳酪蛋白为主要蛋白来源的粉状食品配料或补充食品；可能是胶束酪蛋白、酪蛋白酸盐或复合蛋白粉。",
+      "variables": "蛋白来源和形态、每份蛋白质、乳糖和配料、全天总蛋白、是否结合抗阻训练及基础摄入。",
+      "composition": "酪蛋白与乳清属于不同乳蛋白组分；酪蛋白粉的纯度、乳糖、钠、甜味剂和香料按商品变化。",
+      "direct": "没有证据表明仅饮用酪蛋白粉、不考虑总膳食和运动条件，就能改善普通人群体重、疾病风险或运动表现。",
+      "specific": "116项抗阻训练试验（4,711人）的网络荟萃分析把酪蛋白列入乳蛋白类别；乳蛋白补充与训练相比对照可增加瘦体重和部分力量指标，但没有显著改善所列身体功能测试。该结果来自受监督抗阻训练方案，不能视为酪蛋白粉独立疗效。",
+      "body": "没有证据表明仅饮用酪蛋白粉、不考虑总膳食和运动条件，就能改善普通人群体重、疾病风险或运动表现。 116项抗阻训练试验（4,711人）的网络荟萃分析把酪蛋白列入乳蛋白类别；乳蛋白补充与训练相比对照可增加瘦体重和部分力量指标，但没有显著改善所列身体功能测试。该结果来自受监督抗阻训练方案，不能视为酪蛋白粉独立疗效。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "先核对日常膳食蛋白质，再决定是否需要补充；将产品中的钠、乳糖和甜味剂一并计入。",
+      "safety": "牛乳蛋白过敏者应避免；乳糖不耐者检查产品中的乳糖。按标签查看每份蛋白质和全天总量；有慢性肾病或需限制蛋白者应按临床建议调整。",
+      "taste_m": {},
+      "refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608."
+      ],
+      "body_refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照试验的网络荟萃分析。",
+          "population": "成年人参加抗阻训练的116项试验，共4,711人；检索至2023年5月。",
+          "exposure": "比较不同蛋白来源与补充时机的肌肉及力量指标。",
+          "result": "包含酪蛋白在内的乳蛋白补充，结合抗阻训练，对瘦体重和部分力量有中等确定性改善；功能测试未见显著改善。",
+          "limits": "多种蛋白形态和时机同时比较；效应不能归给单独酪蛋白粉，也不适用于没有抗阻训练的一般人群。",
+          "distance": "D2：训练方案中的乳蛋白类别。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述、荟萃分析及剂量反应分析。",
+          "population": "健康成人的长期抗阻训练研究。",
+          "exposure": "比较训练期间额外蛋白补充与对照。",
+          "result": "蛋白补充可小幅增加训练后的肌肉量和力量；总蛋白摄入超过约1.6 g/kg/日后，额外瘦体重增益未显示继续上升。",
+          "limits": "来源和研究方案混合；摄入量不是个人建议，也不能替代疾病人群的临床指导。",
+          "distance": "D2：多来源蛋白补充与抗阻训练。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "casein protein powder casein randomized trials resistance training meta-analysis",
+        "casein powder milk allergy lactose ingredients label"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "plant-protein-powder": {
+      "name": "植物蛋白粉",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "ingredient",
+      "family": "plant_protein_powder",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "由大豆、豌豆、米、蚕豆或其他植物蛋白浓缩物/分离物制成的粉剂，也包括多种原料混合粉。",
+      "variables": "植物来源、氨基酸组成、蛋白质质量和每份克数、混合原料、过敏原、全天蛋白总量及训练情况。",
+      "composition": "不同植物蛋白的蛋白比例和氨基酸构成不同；复配产品可能加入香料、甜味剂、油脂、纤维或矿物质。",
+      "direct": "没有证据表明某一种植物蛋白粉对所有人都优于其他蛋白来源；长期对比试验主要研究特定分离蛋白，不是各类植物粉或完整植物食品。",
+      "specific": "一项≥6个月对比研究荟萃18项RCT、1,893名成人，植物蛋白以大豆为主，与动物蛋白在多项身体成分和力量指标上未见统计学差异；结果有异质性，研究团队包含Danone研发人员。抗阻训练网络荟萃分析也提示总量、训练和蛋白类型共同影响结果。",
+      "body": "没有证据表明某一种植物蛋白粉对所有人都优于其他蛋白来源；长期对比试验主要研究特定分离蛋白，不是各类植物粉或完整植物食品。 一项≥6个月对比研究荟萃18项RCT、1,893名成人，植物蛋白以大豆为主，与动物蛋白在多项身体成分和力量指标上未见统计学差异；结果有异质性，研究团队包含Danone研发人员。抗阻训练网络荟萃分析也提示总量、训练和蛋白类型共同影响结果。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "检查植物来源和每份蛋白质；混合粉可能有多种过敏原，按实际配料表判断。",
+      "safety": "检查大豆、豌豆及混合配料过敏原；有慢性肾病、特定氨基酸代谢病或需控制蛋白者，先按医生或营养师建议安排。",
+      "taste_m": {},
+      "refs": [
+        "Yimam MA, Roberts J, O’Callaghan A, et al. Long-term effects of plant vs. animal protein supplementation on body composition, muscle strength, physical performance, and cardiometabolic risk factors in adults: a systematic review and meta-analysis of randomized controlled trials. Frontiers in Nutrition. 2026;13:1813846. DOI: https://doi.org/10.3389/fnut.2026.1813846.",
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118."
+      ],
+      "body_refs": [
+        "Yimam MA, Roberts J, O’Callaghan A, et al. Long-term effects of plant vs. animal protein supplementation on body composition, muscle strength, physical performance, and cardiometabolic risk factors in adults: a systematic review and meta-analysis of randomized controlled trials. Frontiers in Nutrition. 2026;13:1813846. DOI: https://doi.org/10.3389/fnut.2026.1813846.",
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机试验的系统综述与荟萃分析，干预至少6个月。",
+          "population": "18项RCT共1,893名成人；植物蛋白研究多数使用大豆分离物/浓缩物。",
+          "exposure": "比较植物蛋白与动物蛋白补充对身体成分、力量、功能和代谢指标的影响。",
+          "result": "合并结果未显示植物蛋白与动物蛋白之间多项结局存在统计学差异。",
+          "limits": "包含较多大豆研究，存在异质性；作者中有食品企业研发人员；不能据此断言各植物来源、剂量和产品完全等效。",
+          "distance": "D1：植物蛋白分离物/浓缩物补充对比。"
+        },
+        {
+          "ref": 2,
+          "design": "抗阻训练RCT网络荟萃分析。",
+          "population": "成年人抗阻训练的蛋白补充研究。",
+          "exposure": "比较不同蛋白类型、时机和训练组合。",
+          "result": "乳蛋白、肉类和混合蛋白补充对一些肌肉和力量结局显示中等确定性效果。",
+          "limits": "不是所有植物来源之间的直接比较；不能排除特定植物配方与乳蛋白间差异。",
+          "distance": "D2：蛋白粉补充与训练背景。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "plant protein powder soy pea isolate animal protein randomized trial meta-analysis long term",
+        "plant protein powder allergens amino acid profile nutrition labels"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "protein-shake": {
+      "name": "蛋白奶昔",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "composite_food",
+      "family": "protein_shake",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以乳、植物蛋白粉或混合蛋白为主要蛋白来源的即饮或冲调饮品，不限于代餐产品。",
+      "variables": "蛋白来源和每份克数、总能量、糖与饱和脂肪、液体体积、餐次、全天蛋白和训练计划。",
+      "composition": "即饮饮料、粉剂冲调和自制奶昔的营养组成不同；蛋白奶昔不一定含有代餐所需的全部营养素。",
+      "direct": "未检得“蛋白奶昔”这一无统一配方的成品类别可产生特定长期健康结局的试验。",
+      "specific": "健康成人抗阻训练荟萃分析显示，在训练背景下补充多来源蛋白可带来小幅肌肉量和力量增益；研究包含乳、酪蛋白、大豆、豌豆和混合蛋白，但并非对市售即饮蛋白奶昔作产品类别试验。",
+      "body": "未检得“蛋白奶昔”这一无统一配方的成品类别可产生特定长期健康结局的试验。 健康成人抗阻训练荟萃分析显示，在训练背景下补充多来源蛋白可带来小幅肌肉量和力量增益；研究包含乳、酪蛋白、大豆、豌豆和混合蛋白，但并非对市售即饮蛋白奶昔作产品类别试验。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "按每瓶或冲调后每份比较蛋白质、能量和糖；不要将普通蛋白饮品当作完整代餐。",
+      "safety": "把蛋白饮料与其他餐食合计，避免只按包装正面“高蛋白”判断；查看糖、饱和脂肪及乳/大豆/坚果过敏原。有吞咽、肾脏或代谢疾病者按临床建议选择。",
+      "taste_m": {},
+      "refs": [
+        "Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608.",
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "body_refs": [
+        "Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. British Journal of Sports Medicine. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608.",
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "抗阻训练期间蛋白补充的系统综述与荟萃分析。",
+          "population": "健康成年人参加长期抗阻训练。",
+          "exposure": "比较多种蛋白补充剂与训练对照。",
+          "result": "额外蛋白补充在总摄入适当时，对瘦体重及力量有小幅增益，约在总蛋白1.6 g/kg/日附近出现平台估计。",
+          "limits": "粉剂来源和方案混合；研究不是蛋白奶昔商品试验，也不说明久坐或膳食不足者的效果。",
+          "distance": "D2：多来源蛋白补充。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品营养标签问答。",
+          "population": "受GB 28050-2011管理的预包装食品。",
+          "exposure": "说明蛋白质含量声称的最低条件。",
+          "result": "“高/富含蛋白质”声称有规定的含量条件，并需按适用规则标示营养信息。",
+          "limits": "标签声称标准只说明标示条件，不证明临床获益；GB 28050-2025将于2027年3月实施。",
+          "distance": "D0：标签合规信息。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "protein shake meal replacement distinction total protein intake resistance training evidence",
+        "GB 28050 2011 high protein claim threshold 2025 effective date"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "meal-replacement-shake": {
+      "name": "代餐奶昔",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "meal_replacement_shake",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以替代一餐或部分餐食为销售用途的冲调或即饮配方饮品；产品可能在能量、蛋白质、脂肪、纤维、维生素和矿物质方面有明显差异。",
+      "variables": "替代餐次和次数、每日总能量、产品完整营养构成、使用期限、行为支持和其他餐饮食。",
+      "composition": "“代餐”名称本身不能说明该产品可单独替代一日饮食；冲调浓度和搭配食物会改变实际暴露。",
+      "direct": "成人超重或肥胖人群的减重项目中，代餐方案可作为行为管理选项，但不是产品独立治疗；未检得适用于所有健康人群、所有品牌的代餐奶昔长期获益。",
+      "specific": "23项减重RCT、8,253名成人的系统综述比较了含代餐的方案与不含代餐方案，研究包括饮品、棒及其他份量控制食品。在有相近行为支持的一年比较中，含代餐方案平均多减约2.22 kg，但异质性高（I²=81%），更适用于超重/肥胖管理项目。",
+      "body": "成人超重或肥胖人群的减重项目中，代餐方案可作为行为管理选项，但不是产品独立治疗；未检得适用于所有健康人群、所有品牌的代餐奶昔长期获益。 23项减重RCT、8,253名成人的系统综述比较了含代餐的方案与不含代餐方案，研究包括饮品、棒及其他份量控制食品。在有相近行为支持的一年比较中，含代餐方案平均多减约2.22 kg，但异质性高（I²=81%），更适用于超重/肥胖管理项目。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "用替代几餐、怎样冲调及营养完整性都按产品说明执行；不要把代餐当作普通蛋白奶昔。",
+      "safety": "确认产品是否按标签设计替代一餐或部分餐食，勿自行长期以单一饮品代替多餐；需顾及总能量、营养完整性和药物/疾病管理，减重治疗应由专业人员指导。",
+      "taste_m": {},
+      "refs": [
+        "Astbury NM, Piernas C, Hartmann-Boyce J, Lapworth S, Aveyard P, Jebb SA. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obesity Reviews. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "body_refs": [
+        "Astbury NM, Piernas C, Hartmann-Boyce J, Lapworth S, Aveyard P, Jebb SA. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obesity Reviews. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与荟萃分析，纳入随机对照减重试验。",
+          "population": "23项RCT，8,253名成人；大多数受试者超重或肥胖，项目中常有行为支持。",
+          "exposure": "比较含代餐产品的减重项目与其他饮食方案。",
+          "result": "在含相近支持的9项研究中，代餐加支持方案1年平均减重约2.22 kg多于饮食加支持对照。",
+          "limits": "该比较异质性高（I²=81%）；产品类型混合；结论适用于项目方案而非单瓶奶昔的药物式效果。",
+          "distance": "D1：代餐食品组合减重项目。"
+        },
+        {
+          "ref": 2,
+          "design": "中国营养标签标准转换问答。",
+          "population": "GB 28050-2025面向中国预包装食品。",
+          "exposure": "规定营养标签新标准的生效安排与产品标签解释。",
+          "result": "新标准自2027-03-16起实施；产品应按生产日期和适用标准读取标签。",
+          "limits": "法规资料不评估某产品能否安全替代整餐。",
+          "distance": "D0：标签制度背景。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "meal replacement shake weight loss systematic review randomized trials 1 year behavioral support",
+        "China GB 28050-2025 nutrition label effective date meal replacement"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "meal-replacement-bar": {
+      "name": "代餐棒",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "meal_replacement_bar",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以替代一餐或部分餐食为销售用途的固体棒状预包装食品；与普通能量棒、蛋白棒和糖果棒区分。",
+      "variables": "是否标示完整代餐用途、每条能量、蛋白质、糖、脂肪、纤维、食用频率和同日其他饮食。",
+      "composition": "不同棒状产品的营养组成差异很大；普通高蛋白棒不自动成为代餐，单条份量也会影响饱腹及总能量。",
+      "direct": "未检得所有品牌代餐棒可独立减重或改善临床指标的试验；相关减重证据来自包含不同代餐形式及行为支持的项目。",
+      "specific": "23项RCT、8,253名成人的系统综述包含代餐棒、饮品及其他份量控制食品。含代餐的减重方案在部分对比中一年体重下降更多，但研究方案、产品、支持程度和人群不统一，无法单独估计代餐棒的效应。",
+      "body": "未检得所有品牌代餐棒可独立减重或改善临床指标的试验；相关减重证据来自包含不同代餐形式及行为支持的项目。 23项RCT、8,253名成人的系统综述包含代餐棒、饮品及其他份量控制食品。含代餐的减重方案在部分对比中一年体重下降更多，但研究方案、产品、支持程度和人群不统一，无法单独估计代餐棒的效应。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "只在产品确实作为代餐销售且标签说明相符时按代餐使用；普通蛋白棒不自动等同于完整一餐。",
+      "safety": "看产品明确用途、营养标签和建议使用量；糖、脂肪、纤维及过敏原可能因配方差异很大。儿童、孕妇及有慢性病者不要自行长期以代餐棒替代正餐。",
+      "taste_m": {},
+      "refs": [
+        "Astbury NM, Piernas C, Hartmann-Boyce J, Lapworth S, Aveyard P, Jebb SA. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obesity Reviews. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "body_refs": [
+        "Astbury NM, Piernas C, Hartmann-Boyce J, Lapworth S, Aveyard P, Jebb SA. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obesity Reviews. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与荟萃分析，纳入代餐减重随机试验。",
+          "population": "成人超重/肥胖干预项目，纳入23项RCT、8,253人。",
+          "exposure": "多种代餐形态（包括棒、饮品和其他份量控制食品）结合减重项目。",
+          "result": "某些代餐项目在一年内较对照有更大平均减重。",
+          "limits": "棒状产品没有单独的合并效应；各方案有行为支持和产品组成差异。",
+          "distance": "D2：多种代餐食品类别的项目证据。"
+        },
+        {
+          "ref": 2,
+          "design": "中国营养标签问答。",
+          "population": "GB 28050-2011适用的预包装食品。",
+          "exposure": "解释蛋白质、膳食纤维等标签和营养声称要求。",
+          "result": "标签声称按成分表和含量阈值判断，须考虑每100克/毫升和规定基准。",
+          "limits": "满足声称条件不等于适合替代一餐，也不证明减重效果。",
+          "distance": "D0：预包装食品标签要求。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "meal replacement bar randomized trial weight loss systematic review bars shakes behavioral support",
+        "meal replacement bar protein fiber sugar nutrition label composition"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "high-protein-pudding": {
+      "name": "高蛋白布丁",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "composite_food",
+      "family": "high_protein_pudding",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以布丁或凝胶甜点形态制作并以较高蛋白质含量宣传的产品，可使用乳蛋白、酪蛋白、乳清或植物蛋白。",
+      "variables": "蛋白原料、每份蛋白和能量、糖/代糖、饱和脂肪、份量、过敏原及适用标签标准。",
+      "composition": "布丁底料和蛋白增强方式按配方变化；增蛋白并不自动降低能量、糖或饱和脂肪。高蛋白标签是含量声称，不是疾病预防或肌肉增长保证。",
+      "direct": "未检得“高蛋白布丁”这一复合产品类别的长期人体临床结局研究。",
+      "specific": "奶蛋白补充试验和抗阻训练综述研究的是确定的蛋白剂量与训练方案，不能转成市售布丁的效果。中国现行GB 28050-2011规定蛋白质含量声称阈值；新标准自2027-03-16施行。",
+      "body": "未检得“高蛋白布丁”这一复合产品类别的长期人体临床结局研究。 奶蛋白补充试验和抗阻训练综述研究的是确定的蛋白剂量与训练方案，不能转成市售布丁的效果。中国现行GB 28050-2011规定蛋白质含量声称阈值；新标准自2027-03-16施行。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "把它当作甜点与具体营养标签比较；不要仅因高蛋白宣传就将其当作必需补充品。",
+      "safety": "同时查看蛋白质、每份能量、糖、饱和脂肪和多元醇；乳蛋白过敏者避免乳蛋白配方。",
+      "taste_m": {},
+      "refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "body_refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "抗阻训练期间蛋白补充的网络荟萃分析。",
+          "population": "成年抗阻训练者的116项试验。",
+          "exposure": "分析乳蛋白类别（含酪蛋白）与肌肉和力量结局。",
+          "result": "一些身体成分和力量结局改善，但试验所用蛋白剂量与训练方案不同于布丁零食。",
+          "limits": "不是高蛋白布丁商品试验；不能据此宣称布丁改善肌肉、体重或血糖。",
+          "distance": "D3：配方成分类别证据。"
+        },
+        {
+          "ref": 2,
+          "design": "国家卫生健康委营养标签问答。",
+          "population": "中国预包装食品营养声称。",
+          "exposure": "给出蛋白质“高/富含”标签判定信息。",
+          "result": "现行GB 28050-2011对“高/富含蛋白质”声称规定数值条件。",
+          "limits": "标签合规不等于健康效应；过渡到2025标准时需按生产日期判断。",
+          "distance": "D0：成分含量与声称标准。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "high protein pudding clinical trial protein enriched pudding health outcomes human",
+        "GB 28050 high protein claim threshold pudding China nutrition facts"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "high-protein-ice-cream": {
+      "name": "高蛋白冰淇淋",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "composite_food",
+      "family": "high_protein_ice_cream",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "在冰淇淋或冷冻乳甜点中加入乳蛋白、酪蛋白、乳清或植物蛋白并突出蛋白质含量的产品。",
+      "variables": "蛋白来源和每份克数、能量、糖/多元醇、饱和脂肪、份量、甜味剂和过敏原。",
+      "composition": "高蛋白冰淇淋可使用乳蛋白浓缩物、蛋白粉和甜味剂；配方结构会影响口感和营养值，蛋白质增高不代表总能量一定下降。",
+      "direct": "未检得高蛋白冰淇淋这一成品类别能够产生长期体重、代谢或运动结局的充分人体研究。",
+      "specific": "奶蛋白和抗阻训练证据来自特定蛋白补充和训练方案，食品基质、剂量及进食替代关系与高蛋白冰淇淋不同。中国“高蛋白”声称需符合生产日期对应的营养标签标准。",
+      "body": "未检得高蛋白冰淇淋这一成品类别能够产生长期体重、代谢或运动结局的充分人体研究。 奶蛋白和抗阻训练证据来自特定蛋白补充和训练方案，食品基质、剂量及进食替代关系与高蛋白冰淇淋不同。中国“高蛋白”声称需符合生产日期对应的营养标签标准。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "将产品作为冷冻甜点评估；看整份营养标签，不把蛋白质含量当作其余营养指标。",
+      "safety": "比较每份蛋白、能量、饱和脂肪、糖及糖醇；乳蛋白过敏者查看乳源配料，糖醇过量可能引起胃肠不适。",
+      "taste_m": {},
+      "refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "body_refs": [
+        "Zhou HH, Liao Y, Zhou X, Peng Z, Xu S, Shi S, Liu L, Hao L, Yang W. Effects of Timing and Types of Protein Supplementation on Improving Muscle Mass, Strength, and Physical Performance in Adults Undergoing Resistance Training: A Network Meta-Analysis. International Journal of Sport Nutrition and Exercise Metabolism. 2024;34(1):54-64. DOI: https://doi.org/10.1123/ijsnem.2023-0118.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml.",
+        "National Health Commission of the PRC. Q&A on GB 28050-2025, General Rules for Nutrition Labelling of Pre-packaged Foods. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "训练人群蛋白补充研究的网络荟萃分析。",
+          "population": "成人抗阻训练参与者。",
+          "exposure": "测试包括酪蛋白和其他蛋白补充剂。",
+          "result": "训练和具体蛋白补充方案对肌肉和部分力量结果有影响。",
+          "limits": "没有直接研究作为高蛋白冰淇淋的成品试验；甜点的其他营养和实际替代关系未在这些研究检验。",
+          "distance": "D3：蛋白配料背景，不是冰淇淋结局。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品营养标签规则。",
+          "population": "预包装食品蛋白质声称。",
+          "exposure": "按营养标签规定核对蛋白含量声称。",
+          "result": "“高/富含蛋白质”用语要符合对应食品标准的含量条件。",
+          "limits": "达到声称阈值不能证明临床效益，也不能替代冰淇淋全营养比较。",
+          "distance": "D0：标签规范。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "high protein ice cream randomized clinical study nutrition composition protein claim",
+        "high protein ice cream calories saturated fat polyols nutrition facts label"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "dietary-fiber-powder": {
+      "name": "膳食纤维粉",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "ingredient",
+      "family": "dietary_fiber_powder",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "以一种或多种膳食纤维为主要成分的粉状食品或补充食品；来源可包括车前子壳、菊粉、抗性糊精、聚葡萄糖、甲基纤维素等。",
+      "variables": "具体纤维类型、可溶性、黏度、可发酵性、每份克数、饮水量、基础膳食及便秘诊断。",
+      "composition": "“膳食纤维粉”是多种性质不同成分的商品大类；车前子壳的证据和使用方式不能直接替代菊粉、抗性糊精或其他纤维。",
+      "direct": "针对慢性便秘成人的荟萃分析发现纤维补充剂可能改善排便反应和频率，但证据主要支持车前子/果胶等特定类型；该结果不能推广到所有纤维粉。",
+      "specific": "16项RCT、1,251名慢性便秘成人的系统综述发现纤维补充可改善治疗反应和排便频率；超过10 g/日、至少4周的亚组效果更明显，排气增加，且研究异质性高。",
+      "body": "针对慢性便秘成人的荟萃分析发现纤维补充剂可能改善排便反应和频率，但证据主要支持车前子/果胶等特定类型；该结果不能推广到所有纤维粉。 16项RCT、1,251名慢性便秘成人的系统综述发现纤维补充可改善治疗反应和排便频率；超过10 g/日、至少4周的亚组效果更明显，排气增加，且研究异质性高。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "查看纤维来源和每份克数；逐步加量并按产品说明饮水，不将一种纤维的临床剂量移用于所有纤维粉。",
+      "safety": "按纤维类型和说明逐步增加用量，配合足量液体；吞咽困难、肠道狭窄或服用需错开的药物者先咨询医护人员。腹胀或腹泻明显时降低摄入或停止。",
+      "taste_m": {},
+      "refs": [
+        "van der Schoot A, Drysdale C, Whelan K, Dimidi E. The Effect of Fiber Supplementation on Chronic Constipation in Adults: An Updated Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Clinical Nutrition. 2022;116(4):953-969. DOI: https://doi.org/10.1093/ajcn/nqac184.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "body_refs": [
+        "van der Schoot A, Drysdale C, Whelan K, Dimidi E. The Effect of Fiber Supplementation on Chronic Constipation in Adults: An Updated Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Clinical Nutrition. 2022;116(4):953-969. DOI: https://doi.org/10.1093/ajcn/nqac184.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照试验系统综述与荟萃分析。",
+          "population": "16项试验、1,251名慢性便秘成人。",
+          "exposure": "比较不同纤维补充剂、剂量和疗程。",
+          "result": "纤维组治疗应答比例高于对照，排便频率改善；超过10 g/日与至少4周的亚组效应更明显，排气也增加。",
+          "limits": "不同纤维不可互换，整体异质性较高；较明确效果集中于车前子壳和果胶等研究。",
+          "distance": "D1：特定纤维治疗慢性便秘的类别证据。"
+        },
+        {
+          "ref": 2,
+          "design": "中国营养标签国家卫生健康委问答。",
+          "population": "GB 28050-2011下的营养成分标示。",
+          "exposure": "说明总纤维和可溶/不可溶纤维的标示方式。",
+          "result": "标签可按总膳食纤维或特定纤维单体标示，但需符合相应规则。",
+          "limits": "营养标签不等于临床便秘治疗剂量。",
+          "distance": "D0：纤维粉成分标识。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "dietary fiber powder chronic constipation meta-analysis 16 randomized trials fiber dose psyllium",
+        "China nutrition label dietary fiber powder soluble insoluble fiber NHC"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "inulin-food": {
+      "name": "菊粉食品",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "inulin_food",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "在食品中添加菊粉或菊苣来源菊粉型果聚糖的产品；也包括以菊粉为突出配料的粉剂和冲调品。",
+      "variables": "菊粉种类、每份克数、同时摄入的果聚糖/FODMAP、肠易激或便秘症状、食品基质。",
+      "composition": "菊粉可作可溶性膳食纤维或食品配料，发酵特性与纤维粉、低聚果糖等有差异；实际剂量由配料表和食用份量决定。",
+      "direct": "一项随机双盲交叉研究在39名功能性便秘成人中测试菊苣菊粉12 g/日、4周，报告排便习惯和部分生活质量指标改善；该结果限于该人群与剂量。",
+      "specific": "一项成人功能性便秘RCT使用12 g/日菊苣菊粉4周。功能性肠病的益生元荟萃分析指出，菊粉型果聚糖可能加重胀气；耐受度受剂量与肠道敏感影响。",
+      "body": "一项随机双盲交叉研究在39名功能性便秘成人中测试菊苣菊粉12 g/日、4周，报告排便习惯和部分生活质量指标改善；该结果限于该人群与剂量。 一项成人功能性便秘RCT使用12 g/日菊苣菊粉4周。功能性肠病的益生元荟萃分析指出，菊粉型果聚糖可能加重胀气；耐受度受剂量与肠道敏感影响。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "按每份菊粉克数渐进摄入；肠易激或低FODMAP人群尤其要观察胀气和腹部不适。",
+      "safety": "若容易腹胀、肠易激或正在低FODMAP饮食，检查菊粉总量并从较小量开始；突然增加摄入可能加重胀气。食品中含菊粉不等于已达到便秘试验剂量。",
+      "taste_m": {},
+      "refs": [
+        "Inulin-induced improvements on bowel habit and gut microbiota in adults with functional constipation: findings of a randomized, double-blind, placebo-controlled study. BMC Gastroenterology. 2025. DOI: https://doi.org/10.1186/s12876-025-04409-6.",
+        "Wilson B, Rossi M, Dimidi E, Whelan K. Prebiotics in irritable bowel syndrome and other functional bowel disorders in adults: a systematic review and meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition. 2019;109(4):1098-1111. DOI: https://doi.org/10.1093/ajcn/nqy376.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "body_refs": [
+        "Inulin-induced improvements on bowel habit and gut microbiota in adults with functional constipation: findings of a randomized, double-blind, placebo-controlled study. BMC Gastroenterology. 2025. DOI: https://doi.org/10.1186/s12876-025-04409-6.",
+        "Wilson B, Rossi M, Dimidi E, Whelan K. Prebiotics in irritable bowel syndrome and other functional bowel disorders in adults: a systematic review and meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition. 2019;109(4):1098-1111. DOI: https://doi.org/10.1093/ajcn/nqy376.",
+        "National Health Commission of the PRC. Q&A on the General Rules for Nutrition Labelling of Pre-packaged Foods (GB 28050-2011, revised edition). https://www.nhc.gov.cn/zwgk/zcjd/201402/6f68ec6692594cf28d190cb47b770c11.shtml."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机双盲安慰剂对照交叉试验。",
+          "population": "39名按Rome III标准诊断的功能性便秘成人。",
+          "exposure": "每日12 g菊苣来源菊粉，连续4周。",
+          "result": "报告粪便频率、腹部症状及部分生活质量较安慰剂改善。",
+          "limits": "小样本、特定人群及剂量；不能推广至一般菊粉食品或所有肠易激患者。",
+          "distance": "D1：菊粉补充对便秘患者的研究。"
+        },
+        {
+          "ref": 2,
+          "design": "益生元RCT系统综述与荟萃分析。",
+          "population": "成人肠易激综合征及其他功能性肠病患者。",
+          "exposure": "比较不同益生元种类和剂量的胃肠症状。",
+          "result": "菊粉型果聚糖在部分分析中加重胀气；效果随种类和剂量变化。",
+          "limits": "研究对象为肠道疾病患者，益生元配方及剂量异质。",
+          "distance": "D1：菊粉类耐受性研究。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "inulin food randomized controlled trial functional constipation 12 g 4 weeks adults",
+        "inulin fructan IBS bloating gastrointestinal tolerance meta analysis"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    },
+    "resistant-dextrin-drink": {
+      "name": "抗性糊精饮料",
+      "volume": "营养补充与机能食品部",
+      "entry_type": "processed_food",
+      "family": "resistant_dextrin_drink",
+      "research_depth": "R2",
+      "shared_parent": "nutrition-supplements-base",
+      "identity": "含抗性糊精作为主要可溶性膳食纤维来源的饮料或冲调饮品；抗性糊精是由淀粉制得、部分不被小肠消化的葡萄糖聚合物。",
+      "variables": "原料来源、纤维含量、每份剂量、同饮料糖和能量、基础膳食纤维、研究终点。",
+      "composition": "抗性糊精的产品纯度、可溶性纤维比例和饮料中的其他成分因品牌而异；商品名和单一试验原料不代表所有产品。",
+      "direct": "一项2026年随机双盲试验中，健康正常体重男性饮用特定抗性糊精15 g/日、4周后，肠道菌群指标变化，但排便频率、粪便性状和短链脂肪酸未见显著变化；长期临床获益未知。",
+      "specific": "该试验纳入124名男性，饮用厂商品牌产品15 g/日4周；Parabacteroides比例变化在停用两周后回到基线。产品制造商资助并参与设计、监督、发表决定及论文准备，且部分作者为其雇员；该变化是菌群指标，不是疾病预防或症状改善。",
+      "body": "一项2026年随机双盲试验中，健康正常体重男性饮用特定抗性糊精15 g/日、4周后，肠道菌群指标变化，但排便频率、粪便性状和短链脂肪酸未见显著变化；长期临床获益未知。 该试验纳入124名男性，饮用厂商品牌产品15 g/日4周；Parabacteroides比例变化在停用两周后回到基线。产品制造商资助并参与设计、监督、发表决定及论文准备，且部分作者为其雇员；该变化是菌群指标，不是疾病预防或症状改善。",
+      "evidence_body": "临床试验中的蛋白原料、营养素或研究剂量与市售复合食品不是同一暴露；本条保留人群、配方和结局范围。",
+      "care": "按标签饮用并关注实际纤维克数和胃肠反应；微生物组变化不能替代症状或临床结局。",
+      "safety": "以配料表确认每份抗性糊精和总纤维，不把短期菌群变化当作已证实临床获益；逐步增加摄入，留意胃肠耐受。",
+      "taste_m": {},
+      "refs": [
+        "Perreau C, Tomassi D, Capronnier O, Carton T, Thabuis C, Guérin-Deremaux L. Resistant dextrin promotes beneficial fecal bacteria in high and low fiber diet populations: a randomized, double-blinded, controlled pilot study. Frontiers in Nutrition. 2026;13:1810842. DOI: https://doi.org/10.3389/fnut.2026.1810842.",
+        "van der Schoot A, Drysdale C, Whelan K, Dimidi E. The Effect of Fiber Supplementation on Chronic Constipation in Adults: An Updated Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Clinical Nutrition. 2022;116(4):953-969. DOI: https://doi.org/10.1093/ajcn/nqac184."
+      ],
+      "body_refs": [
+        "Perreau C, Tomassi D, Capronnier O, Carton T, Thabuis C, Guérin-Deremaux L. Resistant dextrin promotes beneficial fecal bacteria in high and low fiber diet populations: a randomized, double-blinded, controlled pilot study. Frontiers in Nutrition. 2026;13:1810842. DOI: https://doi.org/10.3389/fnut.2026.1810842.",
+        "van der Schoot A, Drysdale C, Whelan K, Dimidi E. The Effect of Fiber Supplementation on Chronic Constipation in Adults: An Updated Systematic Review and Meta-Analysis of Randomized Controlled Trials. The American Journal of Clinical Nutrition. 2022;116(4):953-969. DOI: https://doi.org/10.1093/ajcn/nqac184."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、安慰剂对照平行试验。",
+          "population": "124名健康、正常BMI男性，按平时纤维摄入分组。",
+          "exposure": "特定抗性糊精饮料粉15 g/日，持续4周，并观察停用后两周。",
+          "result": "粪便Parabacteroides比例上升，停用后回到基线；排便频率、粪便性状和短链脂肪酸未见显著改变。",
+          "limits": "健康男性、单一商品原料和短期；研究由产品制造商资助并参与设计和稿件工作；菌群指标不是临床结局。",
+          "distance": "D0/D1：指定原料产品的短期人体研究。"
+        },
+        {
+          "ref": 2,
+          "design": "慢性便秘纤维补充RCT荟萃分析。",
+          "population": "便秘患者中不同种类的纤维补充研究。",
+          "exposure": "观察排便频率、症状与治疗反应。",
+          "result": "某些纤维类型可帮助部分慢性便秘患者；结果依纤维类型和剂量而异。",
+          "limits": "荟萃结果主要来自车前子/果胶等，不能直接归给抗性糊精饮料。",
+          "distance": "D3：其他膳食纤维近邻证据。"
+        }
+      ],
+      "unknowns": "各品牌产品实际营养组成、摄入量与长期单品特异结局；相邻成分试验不能回答具体复合产品的长期效果。",
+      "tradition": "现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。",
+      "queries": [
+        "resistant dextrin drink 15 g day randomized double blind 2026 microbiome stool frequency conflict interest",
+        "resistant dextrin beverage clinical outcomes stool bowel human RCT"
+      ],
+      "search_log": [
+        "核对本条产品身份、配方类别及营养标签要求。",
+        "检索与本条成品直接的人体研究，并将原料或相邻品类证据标明距离。"
+      ]
+    }
+  }
+}

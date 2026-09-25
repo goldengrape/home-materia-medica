@@ -1,0 +1,10 @@
+{
+  "batch_id": "31-nutrition-supplements",
+  "entry_id": "high-protein-ice-cream",
+  "summary_ref": "references/entries/high-protein-ice-cream/summary.md",
+  "summary_sha256": "b831f51007b43d22785c3054ddabe28b8fb2f956823f8aa9852fc4b61791bb55",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 高蛋白冰淇淋\r\n\r\n**身份。** 在冰淇淋或冷冻乳甜点中加入乳蛋白、酪蛋白、乳清或植物蛋白并突出蛋白质含量的产品。\r\n\r\n**组成与暴露。** 高蛋白冰淇淋可使用乳蛋白浓缩物、蛋白粉和甜味剂；配方结构会影响口感和营养值，蛋白质增高不代表总能量一定下降。 **关键变量：** 蛋白来源和每份克数、能量、糖/多元醇、饱和脂肪、份量、甜味剂和过敏原。\r\n\r\n**直接人体证据。** 未检得高蛋白冰淇淋这一成品类别能够产生长期体重、代谢或运动结局的充分人体研究。\r\n\r\n**产品/成分证据。** 奶蛋白和抗阻训练证据来自特定蛋白补充和训练方案，食品基质、剂量及进食替代关系与高蛋白冰淇淋不同。中国“高蛋白”声称需符合生产日期对应的营养标签标准。\r\n\r\n**共享背景。** 参见 nutrition-supplements-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 比较每份蛋白、能量、饱和脂肪、糖及糖醇；乳蛋白过敏者查看乳源配料，糖醇过量可能引起胃肠不适。\r\n\r\n**传统来源。** 现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

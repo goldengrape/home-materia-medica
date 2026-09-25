@@ -1,0 +1,10 @@
+{
+  "batch_id": "31-nutrition-supplements",
+  "entry_id": "casein-protein-powder",
+  "summary_ref": "references/entries/casein-protein-powder/summary.md",
+  "summary_sha256": "bd27db7407fbe645bf3d72f066f95368b8a23928fa251df3c548f051f60a2b75",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 酪蛋白粉\r\n\r\n**身份。** 以乳酪蛋白为主要蛋白来源的粉状食品配料或补充食品；可能是胶束酪蛋白、酪蛋白酸盐或复合蛋白粉。\r\n\r\n**组成与暴露。** 酪蛋白与乳清属于不同乳蛋白组分；酪蛋白粉的纯度、乳糖、钠、甜味剂和香料按商品变化。 **关键变量：** 蛋白来源和形态、每份蛋白质、乳糖和配料、全天总蛋白、是否结合抗阻训练及基础摄入。\r\n\r\n**直接人体证据。** 没有证据表明仅饮用酪蛋白粉、不考虑总膳食和运动条件，就能改善普通人群体重、疾病风险或运动表现。\r\n\r\n**产品/成分证据。** 116项抗阻训练试验（4,711人）的网络荟萃分析把酪蛋白列入乳蛋白类别；乳蛋白补充与训练相比对照可增加瘦体重和部分力量指标，但没有显著改善所列身体功能测试。该结果来自受监督抗阻训练方案，不能视为酪蛋白粉独立疗效。\r\n\r\n**共享背景。** 参见 nutrition-supplements-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 牛乳蛋白过敏者应避免；乳糖不耐者检查产品中的乳糖。按标签查看每份蛋白质和全天总量；有慢性肾病或需限制蛋白者应按临床建议调整。\r\n\r\n**传统来源。** 现代营养食品或食品配料。传统食物记载不直接等于浓缩粉、配方食品或补充剂的传统分类。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
