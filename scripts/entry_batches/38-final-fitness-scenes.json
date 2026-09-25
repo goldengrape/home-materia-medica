@@ -1,0 +1,229 @@
+{
+  "batch": {
+    "id": "38-final-fitness-scenes",
+    "title": "训练后与运动补给场景",
+    "catalog_order": 38,
+    "entry_count": 3,
+    "research_cutoff": "2026-09-25",
+    "search_tool": "Web search; PubMed/PMC; Crossref; Frontiers and NATA official journal",
+    "web_search_calls": 4,
+    "web_search_queries": 14,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-38-final-fitness-scenes",
+    "new_formal_entry_count": 3,
+    "identity_red_team": [
+      "运动后乳清急性研究测量肌蛋白合成，不是长期增肌；长期训练研究涉及整日蛋白摄入和训练。",
+      "电解质饮料证据主要来自长时间运动和炎热环境；含钠饮料不能自动替代合理补液，也不能保证预防过度饮水。",
+      "希腊酸奶训练研究是多次补充与12周训练的组合，不能写成单次运动后酸奶试验。"
+    ],
+    "citation_audit_revision": "rev-1: separated acute biomarker results, longer training adaptations, hydration balance and commercial product categories; retained study limitations and industry funding."
+  },
+  "entries": {
+    "post-workout-protein-shake": {
+      "name": "训练后蛋白奶昔",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "训练后蛋白奶昔",
+      "research_depth": "R2",
+      "shared_parent": "sports-recovery-scenes-base",
+      "identity": "在抗阻、耐力或混合训练结束后饮用以乳清、酪蛋白或植物蛋白为主的饮品；不同配方和整日蛋白摄入不是同一暴露。",
+      "variables": "每份蛋白质和能量、蛋白来源、饮用量与时间、训练方式、训练前后其他食物及全天蛋白质总量。",
+      "composition": "常见配方以乳清、酪蛋白、大豆或其他植物蛋白为主，可能另含糖、油脂、纤维和微量营养素；按实际营养标签判断。",
+      "direct": "一项随机交叉试验纳入8名健康男性，完成抗阻加骑行训练后饮用25克乳清蛋白或安慰剂；运动后肌原纤维蛋白合成在乳清组高于安慰剂组。",
+      "specific": "该试验测量单次训练后的急性合成指标，不直接说明长期增肌或所有奶昔产品。49项训练试验、1863名成人的荟萃分析发现，长期抗阻训练期间补充蛋白对力量和去脂体重有小幅增益；其效应与总体饮食和训练方案有关。ISSN 立场文件提出，运动者可将每次约20至40克高质量蛋白及整日摄入作为一般研究参考，不是个人处方。",
+      "safety": "查看每份蛋白质、总能量、糖和过敏原；奶昔可作为方便的蛋白来源，不需忽视正餐和整日饮食。对乳糖、乳蛋白或其他成分过敏者应选合适产品；有需要限制蛋白摄入的疾病时遵医嘱。",
+      "body": "一项随机交叉试验纳入8名健康男性，完成抗阻加骑行训练后饮用25克乳清蛋白或安慰剂；运动后肌原纤维蛋白合成在乳清组高于安慰剂组。 该试验测量单次训练后的急性合成指标，不直接说明长期增肌或所有奶昔产品。49项训练试验、1863名成人的荟萃分析发现，长期抗阻训练期间补充蛋白对力量和去脂体重有小幅增益；其效应与总体饮食和训练方案有关。ISSN 立场文件提出，运动者可将每次约20至40克高质量蛋白及整日摄入作为一般研究参考，不是个人处方。",
+      "evidence_body": "证据限于所列食品、人群、剂量、运动方式和观察结局；本条是运动饮食场景，不代表固定补充方案或长期健康效果。",
+      "care": "查看每份蛋白质、总能量、糖和过敏原；奶昔可作为方便的蛋白来源，不需忽视正餐和整日饮食。对乳糖、乳蛋白或其他成分过敏者应选合适产品；有需要限制蛋白摄入的疾病时遵医嘱。",
+      "taste_m": {},
+      "refs": [
+        "Camera DM, et al. Protein ingestion increases myofibrillar protein synthesis after concurrent exercise. Med Sci Sports Exerc. 2015;47(1):82-91. DOI: https://doi.org/10.1249/MSS.0000000000000390. PMID: 24870574.",
+        "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. Br J Sports Med. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608. PMID: 28698222.",
+        "Jäger R, et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr. 2017;14:20. DOI: https://doi.org/10.1186/s12970-017-0177-8. PMID: 28642676."
+      ],
+      "body_refs": [
+        "Camera DM, et al. Protein ingestion increases myofibrillar protein synthesis after concurrent exercise. Med Sci Sports Exerc. 2015;47(1):82-91. DOI: https://doi.org/10.1249/MSS.0000000000000390. PMID: 24870574.",
+        "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. Br J Sports Med. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608. PMID: 28698222.",
+        "Jäger R, et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr. 2017;14:20. DOI: https://doi.org/10.1186/s12970-017-0177-8. PMID: 28642676."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉急性试验。",
+          "population": "8名健康男性。",
+          "exposure": "抗阻训练加30分钟骑行后饮用25克乳清蛋白或安慰剂；运动后1小时和4小时取样。",
+          "result": "乳清组运动后肌原纤维蛋白合成较安慰剂高67%。",
+          "limits": "小样本且只有男性；急性生物标志物，不能表示长期肌肉增长；作者之一的单位为Nestlé Research Center，研究也不比较不同奶昔品牌。",
+          "distance": "D1：训练后乳清饮品急性证据。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述、荟萃分析及剂量反应荟萃回归，纳入49项研究。",
+          "population": "1863名健康成人参与长期抗阻训练研究。",
+          "exposure": "比较抗阻训练期间补充蛋白与对照，对力量、去脂体重和肌肉尺寸进行汇总。",
+          "result": "蛋白补充平均增加约2.49千克1RM力量及0.30千克去脂体重；总蛋白摄入更高时额外去脂体重效应趋缓。",
+          "limits": "不同蛋白来源、剂量和训练方案合并；不是仅研究训练后奶昔。",
+          "distance": "D2：蛋白补充和训练的长期组合证据。"
+        },
+        {
+          "ref": 3,
+          "design": "国际运动营养学会立场文件。",
+          "population": "健康运动成人的蛋白摄入研究。",
+          "exposure": "综述运动者每日及每次蛋白摄入的研究。",
+          "result": "文件提出运动者每次约20至40克高质量蛋白、整日约1.4至2.0克/公斤体重作为研究参考范围。",
+          "limits": "不是某款奶昔试验；推荐范围需结合饮食、训练和个体情况。",
+          "distance": "D3：剂量与饮食背景。"
+        }
+      ],
+      "unknowns": "不同运动项目、训练状态、饮食背景、产品配方和个体需求下的长期比较研究；单次饮用或特定训练计划的结果不能说明长期净效果。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "post exercise whey protein shake randomized crossover 25 g 8 healthy men 24870574",
+        "protein supplementation resistance training meta analysis 49 trials 1863 adults 28698222",
+        "ISSN position stand protein exercise 20 to 40 g dose 2017",
+        "post workout protein timing daily total intake resistance exercise meta analysis"
+      ],
+      "search_log": [
+        "检索同类训练场景的直接人体研究，并确认所研究的是饮料、食品或一般营养素。",
+        "核对原研究人群、运动形式、剂量、比较组、结局和随访时间。",
+        "区分急性肌肉蛋白合成指标、长期训练适应、体液指标和实际运动表现。",
+        null
+      ]
+    },
+    "sports-electrolyte-drink": {
+      "name": "电解质饮料配运动",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "电解质饮料配运动",
+      "research_depth": "R2",
+      "shared_parent": "sports-recovery-scenes-base",
+      "identity": "运动中饮用含钠等电解质的饮料；不把短时轻量活动、长时间炎热环境训练和耐力赛事视为相同场景。",
+      "variables": "运动时长和强度、环境温度湿度、出汗量和汗钠、饮料钠及碳水浓度、实际饮水量和运动前饮食。",
+      "composition": "此类饮料常含水、钠及其他矿物质，部分含碳水和香味剂；不同配方的钠、糖和能量差异明显。",
+      "direct": "一项随机交叉试验纳入13名健康活跃男性，在30°C环境完成约3小时运动并按体重损失补液；含钠碳水电解质饮料组血钠保持相对稳定，而矿泉水和无钠对照组血钠下降。",
+      "specific": "该结果限于小样本男性、炎热环境、长时间运动和按体重损失补液的试验条件。NATA立场文件同时指出，补液不足和过量都可能带来健康风险，建议按个人出汗和环境制定不过量的补液做法。另一项超耐力热环境试验中，按估计汗钠补充钠并自由饮水未明显改变体液平衡或热应激指标。",
+      "safety": "短时一般运动通常不应仅因“运动”一词而预设需要电解质饮料；查看钠和糖含量，并避免强迫大量饮水或自行大量补钠。长时间、高温或大量出汗时，个体需要不同；出现意识混乱、呕吐、头痛等严重不适应及时求助。",
+      "body": "一项随机交叉试验纳入13名健康活跃男性，在30°C环境完成约3小时运动并按体重损失补液；含钠碳水电解质饮料组血钠保持相对稳定，而矿泉水和无钠对照组血钠下降。 该结果限于小样本男性、炎热环境、长时间运动和按体重损失补液的试验条件。NATA立场文件同时指出，补液不足和过量都可能带来健康风险，建议按个人出汗和环境制定不过量的补液做法。另一项超耐力热环境试验中，按估计汗钠补充钠并自由饮水未明显改变体液平衡或热应激指标。",
+      "evidence_body": "证据限于所列食品、人群、剂量、运动方式和观察结局；本条是运动饮食场景，不代表固定补充方案或长期健康效果。",
+      "care": "短时一般运动通常不应仅因“运动”一词而预设需要电解质饮料；查看钠和糖含量，并避免强迫大量饮水或自行大量补钠。长时间、高温或大量出汗时，个体需要不同；出现意识混乱、呕吐、头痛等严重不适应及时求助。",
+      "taste_m": {},
+      "refs": [
+        "McDermott BP, et al. National Athletic Trainers' Association Position Statement: Fluid Replacement for the Physically Active. J Athl Train. 2017;52(9):877-895. DOI: https://doi.org/10.4085/1062-6050-52.9.02. PMID: 28985128.",
+        "Anastasiou CA, et al. Sodium Replacement and Plasma Sodium Drop During Exercise in the Heat When Fluid Intake Matches Fluid Loss. J Athl Train. 2009;44(2):117-123. DOI: https://doi.org/10.4085/1062-6050-44.2.117. PMID: 19295955.",
+        "McCubbin AJ, da Costa RJS. Effect of Personalized Sodium Replacement on Fluid and Sodium Balance and Thermophysiological Strain During and After Ultraendurance Running in the Heat. Int J Sports Physiol Perform. 2024;19(2):105-115. DOI: https://doi.org/10.1123/ijspp.2023-0295. PMID: 37944507."
+      ],
+      "body_refs": [
+        "McDermott BP, et al. National Athletic Trainers' Association Position Statement: Fluid Replacement for the Physically Active. J Athl Train. 2017;52(9):877-895. DOI: https://doi.org/10.4085/1062-6050-52.9.02. PMID: 28985128.",
+        "Anastasiou CA, et al. Sodium Replacement and Plasma Sodium Drop During Exercise in the Heat When Fluid Intake Matches Fluid Loss. J Athl Train. 2009;44(2):117-123. DOI: https://doi.org/10.4085/1062-6050-44.2.117. PMID: 19295955.",
+        "McCubbin AJ, da Costa RJS. Effect of Personalized Sodium Replacement on Fluid and Sodium Balance and Thermophysiological Strain During and After Ultraendurance Running in the Heat. Int J Sports Physiol Perform. 2024;19(2):105-115. DOI: https://doi.org/10.1123/ijspp.2023-0295. PMID: 37944507."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "运动补液立场文件。",
+          "population": "体力活动者和运动员的补液研究。",
+          "exposure": "汇总运动前、中、后的补液建议及低水合、过度饮水风险。",
+          "result": "建议量化不同环境下个人出汗率并规划充分但不过量的补液。",
+          "limits": "共识资料而非某一具体电解质饮料的随机比较；个体条件不同。",
+          "distance": "D3：运动补液背景。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉运动饮料试验。",
+          "population": "13名健康、活跃男性。",
+          "exposure": "在30°C环境进行3小时运动及坡走，饮液按体重损失补回；比较两种含钠碳水饮料、矿泉水和无钠安慰剂。",
+          "result": "含钠饮料组运动后血钠相对稳定；水和无钠对照组血钠下降；未有人出现抽筋。",
+          "limits": "样本小，长时炎热、补液量与损失匹配；研究获Gatorade Sports Science Institute及PepsiCo资助，不能推及普通短时运动。",
+          "distance": "D1：特定运动饮料、长时热环境的证据。"
+        },
+        {
+          "ref": 3,
+          "design": "随机双盲交叉超耐力试验。",
+          "population": "9名耐力运动参与者，7男2女。",
+          "exposure": "30°C条件下跑步5小时，按测得汗钠损失补钠或服安慰剂，水自由饮用。",
+          "result": "补钠组血钠上升幅度较大，但整体体液平衡和热生理应激指标无显著差异。",
+          "limits": "极小样本和超耐力高温条件；测试胶囊而非饮料；不能据此定个人方案。",
+          "distance": "D2：个体补钠的相邻证据。"
+        }
+      ],
+      "unknowns": "不同运动项目、训练状态、饮食背景、产品配方和个体需求下的长期比较研究；单次饮用或特定训练计划的结果不能说明长期净效果。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "sports electrolyte drink randomized trial exercise heat sodium replacement plasma sodium 13 men 19295955",
+        "National Athletic Trainers Association fluid replacement physically active overhydration hyperhydration position statement 2017",
+        "personalized sodium replacement ultraendurance running heat randomized trial 9 participants 37944507",
+        "electrolyte sports drink short duration exercise water comparison adult trial"
+      ],
+      "search_log": [
+        "检索同类训练场景的直接人体研究，并确认所研究的是饮料、食品或一般营养素。",
+        "核对原研究人群、运动形式、剂量、比较组、结局和随访时间。",
+        "区分急性肌肉蛋白合成指标、长期训练适应、体液指标和实际运动表现。",
+        null
+      ]
+    },
+    "high-protein-yogurt-snack": {
+      "name": "高蛋白酸奶加餐",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "高蛋白酸奶加餐",
+      "research_depth": "R2",
+      "shared_parent": "sports-recovery-scenes-base",
+      "identity": "在健身训练前后或两餐之间食用高蛋白酸奶，通常指每份蛋白质高于普通酸奶的希腊式或过滤酸奶；品牌和份量有差异。",
+      "variables": "每份蛋白质、糖和能量、乳脂、过滤方式、训练计划、是否加水果或谷物及其他餐次蛋白质。",
+      "composition": "过滤酸奶常提高每份蛋白质，但糖、脂肪和能量取决于是否加糖、乳脂、配料和份量；乳制品还含乳糖并涉及乳过敏原。",
+      "direct": "一项12周随机训练试验纳入30名年轻、未训练男性，训练期间每日多次食用每剂含20克蛋白的希腊酸奶，或等能量低蛋白布丁；酸奶组在力量、肌肉厚度和去脂体重上的增幅较大。",
+      "specific": "试验评估的是每周多次酸奶加结构化抗阻/跳跃训练，不是单独一份训练后加餐。样本仅有年轻未训练男性，酸奶产品与对照能量匹配；试验酸奶由Danone提供，研究获作者所在Brock University的非限制性资助，作者声明无商业或财务利益冲突。结果不能推及所有高蛋白酸奶或不同训练人群。",
+      "safety": "看每份蛋白质、添加糖和份量；乳糖不耐受者和乳过敏者需区分自身可耐受情况。水果、谷物或蜂蜜会改变该加餐的糖和能量总量，按实际配料计算。",
+      "body": "一项12周随机训练试验纳入30名年轻、未训练男性，训练期间每日多次食用每剂含20克蛋白的希腊酸奶，或等能量低蛋白布丁；酸奶组在力量、肌肉厚度和去脂体重上的增幅较大。 试验评估的是每周多次酸奶加结构化抗阻/跳跃训练，不是单独一份训练后加餐。样本仅有年轻未训练男性，酸奶产品与对照能量匹配；试验酸奶由Danone提供，研究获作者所在Brock University的非限制性资助，作者声明无商业或财务利益冲突。结果不能推及所有高蛋白酸奶或不同训练人群。",
+      "evidence_body": "证据限于所列食品、人群、剂量、运动方式和观察结局；本条是运动饮食场景，不代表固定补充方案或长期健康效果。",
+      "care": "看每份蛋白质、添加糖和份量；乳糖不耐受者和乳过敏者需区分自身可耐受情况。水果、谷物或蜂蜜会改变该加餐的糖和能量总量，按实际配料计算。",
+      "taste_m": {},
+      "refs": [
+        "Bridge A, et al. Greek Yogurt and 12 Weeks of Exercise Training on Strength, Muscle Thickness and Body Composition in Lean, Untrained, University-Aged Males. Front Nutr. 2019;6:55. DOI: https://doi.org/10.3389/fnut.2019.00055. PMID: 31114790.",
+        "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. Br J Sports Med. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608. PMID: 28698222."
+      ],
+      "body_refs": [
+        "Bridge A, et al. Greek Yogurt and 12 Weeks of Exercise Training on Strength, Muscle Thickness and Body Composition in Lean, Untrained, University-Aged Males. Front Nutr. 2019;6:55. DOI: https://doi.org/10.3389/fnut.2019.00055. PMID: 31114790.",
+        "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. Br J Sports Med. 2018;52(6):376-384. DOI: https://doi.org/10.1136/bjsports-2017-097608. PMID: 28698222."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "12周随机平行对照训练试验。",
+          "population": "30名年轻、未训练的大学年龄男性，分为每组15人。",
+          "exposure": "两组每周进行3次抗阻及增强式训练；一组每日多次食用每剂含20克蛋白的原味脱脂希腊酸奶，另一组食用等能量低蛋白布丁。",
+          "result": "12周后两组均有进步；酸奶组总力量、肱二头肌厚度和去脂体重的平均增幅较大。",
+          "limits": "研究的是训练日训练后、训练后1小时及睡前等多次摄入，不是一次加餐；仅年轻未训练男性。试验酸奶由Danone提供，研究获作者所在Brock University的非限制性资助，作者声明无商业或财务利益冲突。",
+          "distance": "D1/D2：希腊酸奶与训练计划的产品证据。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述、荟萃分析及剂量反应荟萃回归。",
+          "population": "49项研究、1863名健康成人进行长期抗阻训练。",
+          "exposure": "比较补充蛋白与对照对训练期间力量及去脂体重变化的影响。",
+          "result": "总体上蛋白补充可小幅增加长期训练适应。",
+          "limits": "没有单独评估希腊酸奶或零食时点；属于营养素层面的邻近证据。",
+          "distance": "D3：蛋白质与训练背景。"
+        }
+      ],
+      "unknowns": "不同运动项目、训练状态、饮食背景、产品配方和个体需求下的长期比较研究；单次饮用或特定训练计划的结果不能说明长期净效果。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "high protein Greek yogurt snack randomized training trial 20g protein 12 weeks 31114790",
+        "Greek yogurt resistance training randomized trial thirty untrained young men DOI 10.3389/fnut.2019.00055",
+        "protein supplementation resistance training 49 studies meta analysis 1863 adults PMID 28698222",
+        "high protein yogurt sugar serving nutrition label composition brand comparison"
+      ],
+      "search_log": [
+        "检索同类训练场景的直接人体研究，并确认所研究的是饮料、食品或一般营养素。",
+        "核对原研究人群、运动形式、剂量、比较组、结局和随访时间。",
+        "区分急性肌肉蛋白合成指标、长期训练适应、体液指标和实际运动表现。",
+        null
+      ]
+    }
+  }
+}
