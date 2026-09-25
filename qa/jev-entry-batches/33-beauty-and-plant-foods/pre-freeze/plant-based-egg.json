@@ -1,0 +1,10 @@
+{
+  "batch_id": "33-beauty-and-plant-foods",
+  "entry_id": "plant-based-egg",
+  "summary_ref": "references/entries/plant-based-egg/summary.md",
+  "summary_sha256": "f13a22c8b8f0926dcc04264f03f94e6e5745608ac71d779a20cb2fec25d0cacf",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 植物蛋\r\n\r\n**身份。** 由植物来源原料制成、用于模拟蛋液、炒蛋、蛋白或整蛋用途的加工食品。面粉、亚麻籽等家庭烘焙替代材料不一定属于商业植物蛋成品。\r\n\r\n**组成与暴露。** 市场配方可使用豆类蛋白、淀粉、油、胶体、膨松或乳化成分，依目标功能模拟凝固、起泡、黏结或炒蛋质地。配方和营养价值差别较大。 **关键变量：** 蛋白来源、每份蛋白质、钠、脂肪、纤维、维生素B12及D强化情况、烹调用途和过敏原。\r\n\r\n**直接人体证据。** 未检得能代表商业植物蛋类别的人体健康结局临床试验。2022年综述检索到2016至2021年全球市场102种 vegan egg 产品，主要归纳配方、营养和用途，没有为该类别提供临床效果结论。\r\n\r\n**产品/成分证据。** 植物蛋是否能替代鸡蛋取决于具体烹饪功能和营养成分；蛋白质、维生素B12及强化情况不能从外观或名称推断。\r\n\r\n**共享背景。** 参见 beauty-and-plant-foods-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 如用作主要蛋白来源，查看蛋白质和维生素B12等标签并考虑全日膳食；检查大豆、豌豆、小麦等过敏原。对动物性原料过敏者仍须核对生产交叉接触提示。\r\n\r\n**传统来源。** 现代加工食品或补充食品。未发现能把该类具体商品与古籍药食条目直接对应的材料；传统原料记载不转写为成品疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

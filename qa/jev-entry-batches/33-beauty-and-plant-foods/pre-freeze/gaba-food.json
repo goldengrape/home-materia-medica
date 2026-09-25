@@ -1,0 +1,10 @@
+{
+  "batch_id": "33-beauty-and-plant-foods",
+  "entry_id": "gaba-food",
+  "summary_ref": "references/entries/gaba-food/summary.md",
+  "summary_sha256": "f41da057866aa218ed02415d62e0baae6b0363ccdf1fe926da9575e73a419b38",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — GABA食品\r\n\r\n**身份。** 添加γ-氨基丁酸（GABA）或含有GABA的发酵食品。产品基质、GABA来源与剂量可不同；含有该成分不等于已有特定睡眠或抗压功效。\r\n\r\n**组成与暴露。** 产品可能为饮料、发酵食品、冲剂或糖果。中国卫生部门2009年批准GABA为新资源食品；公告要求按相应法规和标准生产，但网页公告本身未给出统一功效或单品建议量。 **关键变量：** GABA来源、每份含量、每日摄入量、食品基质、发酵工艺及目标结局。\r\n\r\n**直接人体证据。** 一项纳入14项安慰剂对照人体试验的系统综述认为，口服GABA对压力的证据有限，对睡眠获益的证据很有限。不同试验的剂量、时长和结局差异较大，没有证据支持所有GABA食品都有相同效果。\r\n\r\n**产品/成分证据。** 新食品原料批准是使用管理信息，不代表助眠、降压或抗压效果已经确立。对发酵食品的结果也不能直接推到添加GABA的其他食品。\r\n\r\n**共享背景。** 参见 beauty-and-plant-foods-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对每份GABA量、其他镇静或提神成分及产品标签；孕哺期、未成年人、正在服药或有慢性病者不应把GABA食品当作治疗手段，必要时咨询医务人员。\r\n\r\n**传统来源。** 现代加工食品或补充食品。未发现能把该类具体商品与古籍药食条目直接对应的材料；传统原料记载不转写为成品疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
