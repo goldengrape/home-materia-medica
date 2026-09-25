@@ -186,13 +186,13 @@ def main():
 
 - Workflow run: {args.workflow_run_id}; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
 - Native artifact ID: {args.workflow_artifact_id}; uploaded by this run with 30-day retention.
-- Ten raw outputs match frozen summary hashes; actual model(s): {', '.join(sorted(models))}; each file has one run and 16 native answers.
+- {len(data)} raw outputs match frozen summary hashes; actual model(s): {', '.join(sorted(models))}; each file has one run and 16 native answers.
 - Per-file raw JSON SHA-256: qa/jev-entry-batches/{args.batch_id}/native-json-sha256.txt.
-- Ten Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
-- Ten reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
-- catalog/entries.yaml updated with this batch's ten frozen entries.
+- {len(data)} Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
+- {len(data)} reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
+- catalog/entries.yaml updated with this batch's {len(data)} frozen entries.
 """)
-    print(f"Built ten mappings and reader entries; validated raw outputs and frozen summaries for {args.batch_id}.")
+    print(f"Built {len(data)} mappings and reader entries; validated raw outputs and frozen summaries for {args.batch_id}.")
 
 if __name__ == "__main__":
     main()

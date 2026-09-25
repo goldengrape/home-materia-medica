@@ -20,8 +20,9 @@ def main():
     args = ap.parse_args()
     cfg = json.loads((ROOT / "scripts" / "entry_batches" / f"{args.batch_id}.json").read_text(encoding="utf-8"))
     data, batch = cfg["entries"], cfg["batch"]
-    if len(data) != 10:
-        raise ValueError(f"Expected ten entries, found {len(data)}")
+    expected = batch.get("entry_count")
+    if not 1 <= len(data) <= 10 or expected != len(data):
+        raise ValueError(f"Expected 1–10 entries matching batch.entry_count, found {len(data)}")
     key = os.environ.get("JEV_API_KEY")
     if not key:
         print("JEV_API_KEY unavailable; no Jev results were produced.", file=sys.stderr)
@@ -56,8 +57,8 @@ def main():
         if snap.get("summary_sha256") != sha or snap.get("summary_text") != text:
             raise ValueError(f"Snapshot mismatch: {entry_id}")
         rows.append((entry_id, sha, path, v04.build_state(fixtures, {"document": text})))
-    if len(rows) != 10 or seen != set(data):
-        raise ValueError("Expected exactly ten frozen summaries")
+    if len(rows) != expected or seen != set(data):
+        raise ValueError(f"Expected exactly {expected} frozen summaries")
 
     for entry_id, sha, path, state in rows:
         out = raw_dir / f"{entry_id}.json"

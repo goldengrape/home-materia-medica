@@ -51,7 +51,7 @@ jobs:
             qa/entry-batches/${{ steps.batch.outputs.batch_id }}-summary-sha256.txt
           if-no-files-found: warn
           retention-days: 30
-      - name: Classify ten frozen summaries
+      - name: Classify configured frozen summaries
         env:
           JEV_API_KEY: ${{ secrets.JEV_API_KEY }}
           JEV_MODEL: jev-latest

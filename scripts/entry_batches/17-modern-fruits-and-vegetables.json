@@ -1,0 +1,533 @@
+{
+  "batch": {
+    "id": "17-modern-fruits-and-vegetables",
+    "title": "牛油果制品、冷冻莓果与鲜菜",
+    "catalog_order": 17,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; PubMed/PMC; USDA FoodData Central; FDA; Japan MAFF",
+    "exa_search_calls": 6,
+    "exa_hits": 50,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-17-modern-fruits-and-vegetables",
+    "identity_red_team": [
+      "牛油果泥限定为不加调味的牛油果果肉泥；全果替代试验不能直接证明商业蘸酱、调味酱或牛油果泥产品的独立效果。",
+      "冷冻莓果是配比不固定的混合果实；不同莓种、品种和是否加糖均影响暴露，单一种类或冻干粉研究不代表该混合品。",
+      "西兰花的部分阳性试验使用高硫代葡萄糖苷品种；该结果不等同所有市售西兰花或癌症预防结论。",
+      "羽衣甘蓝研究使用冻干粉棒或果汁，样本小且人群特定；不应转写为普通鲜叶的治疗效果。",
+      "芝麻菜研究使用硝酸盐定量饮品并观察急性指标，不等同一份日常沙拉或长期血压治疗。",
+      "抱子甘蓝研究仅10人、短期且观察酶学替代指标；不据此推断疾病风险改变。",
+      "彩椒与辣椒身份不同；非辣甜椒不能引用辣椒素、热辣椒或特定提取物结果。",
+      "秋葵胶囊和粉末不是普通熟秋葵份量；研究对象同时接受常规糖尿病治疗。",
+      "樱桃番茄证据来自混合形态的番茄膳食，不能归因于樱桃番茄品种。",
+      "西葫芦若出现异常强烈苦味，应停止食用并丢弃；监管资料将其与葫芦素中毒风险联系。"
+    ],
+    "citation_audit_revision": "rev-1: separate whole foods from juice, powders, capsules and cultivar-specific interventions; exclude chili data from sweet pepper"
+  },
+  "entries": {
+    "avocado-puree": {
+      "id": "avocado-puree",
+      "name": "牛油果泥",
+      "volume": "新果蔬部",
+      "entry_type": "processed_food",
+      "family": "avocado-puree",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指仅由可食牛油果果肉捣碎或均质制成、不加盐、糖、酸味剂或其他配料的牛油果泥。调味鳄梨酱、蘸酱、预制三明治酱和含其他配料的复合食品不在本条范围内。",
+      "variables": "牛油果品种、成熟度、果肉份量、是否单纯捣碎或均质、氧化与储存、是否加入油盐或其他配料，以及它替代还是额外增加其他食物。",
+      "composition": "牛油果泥的主要成分仍来自牛油果果肉，含水分、脂肪、膳食纤维及钾等营养素；搅拌、储存和添加配料会改变实际暴露。USDA数据库中的鲜牛油果数据不能代替特定包装产品标签。",
+      "direct": "未检得以不加调味牛油果泥单独作为干预、并报告长期健康结局的充分人体试验。邻近的人体研究使用新鲜牛油果替代早餐部分碳水化合物或作为日常膳食替代；这些研究提示急性餐后血糖、胰岛素或血管指标可受整餐组成影响，但没有验证牛油果泥产品本身的独立长期作用。",
+      "specific": "一项31名超重或肥胖中年成人的随机交叉试验，在等能早餐中以68 g或136 g新鲜Hass牛油果替代部分碳水化合物，观察6小时；牛油果餐的餐后血糖、胰岛素反应较低，部分血流介导舒张指标较高。另一项93名超重或肥胖且有胰岛素抵抗成人的12周随机试验，以牛油果能量替代部分碳水食物，主要胰岛素敏感性终点组间差异不显著。研究对象、替代食物和整餐结构限制了对牛油果泥的外推。",
+      "safety": "牛油果过敏者应避免。牛油果果肉能量密度高于多数非淀粉类蔬菜；使用牛油果泥时应把份量和添加配料计入整体饮食。商品配料和冷藏说明需按标签核对。",
+      "body": "牛油果泥的原料和营养特征主要取决于牛油果品种与份量；调味产品可能另含盐、酸味剂或油。人体试验研究了新鲜牛油果作为膳食的一部分或替代其他食物，而不是纯牛油果泥本身。餐后指标的短期变化不能说明牛油果泥具有独立的长期治疗效果。",
+      "evidence_body": "纯牛油果泥的直接人体健康结局证据不足（E-0至E-C）。新鲜牛油果替代部分碳水的急性和12周试验不能直接等同于单独牛油果泥，也不支持疾病治疗结论。",
+      "care": "查看是否为100%牛油果以及添加盐、油或其他配料；按实际份量计入膳食。研究中的整果份量不是牛油果泥的治疗剂量。",
+      "taste_m": {},
+      "refs": [
+        "Park E, Edirisinghe I, Choy YY, Waterhouse A, Burton-Freeman B. ‘Avocado Fruit on Postprandial Markers of Cardio-Metabolic Risk: A Randomized Controlled Dose Response Trial in Overweight and Obese Men and Women.’ Nutrients. 2018;10(9):1287. DOI: https://doi.org/10.3390/nu10091287.",
+        "Zhang X, Xiao D, Maldonado Guzmán G, Edirisinghe I, Burton-Freeman B. ‘Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors: A Randomized Controlled Trial in Adults with Overweight or Obesity and Insulin Resistance.’ The Journal of Nutrition. 2022;152(8):1851–1861. DOI: https://doi.org/10.1093/jn/nxac126.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Park E, Edirisinghe I, Choy YY, Waterhouse A, Burton-Freeman B. ‘Avocado Fruit on Postprandial Markers of Cardio-Metabolic Risk: A Randomized Controlled Dose Response Trial in Overweight and Obese Men and Women.’ Nutrients. 2018;10(9):1287. DOI: https://doi.org/10.3390/nu10091287.",
+        "Zhang X, Xiao D, Maldonado Guzmán G, Edirisinghe I, Burton-Freeman B. ‘Avocado Consumption for 12 Weeks and Cardiometabolic Risk Factors: A Randomized Controlled Trial in Adults with Overweight or Obesity and Insulin Resistance.’ The Journal of Nutrition. 2022;152(8):1851–1861. DOI: https://doi.org/10.1093/jn/nxac126."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "单中心、随机、单盲、等能餐、三条件交叉试验，观察餐后6小时。",
+          "population": "31名超重或肥胖的中年成人。",
+          "exposure": "等能早餐中含0 g、68 g或136 g新鲜Hass牛油果；用牛油果替代部分碳水食物。",
+          "result": "含牛油果餐的餐后血糖和胰岛素反应较低，部分血流介导舒张指标较高。",
+          "limits": "急性整餐试验，不是牛油果泥单品长期试验；不能分离水果形态与整餐替代效应。",
+          "distance": "D1（新鲜牛油果果肉至不加调味牛油果泥）；调味产品距离更远。"
+        }
+      ],
+      "unknowns": "纯牛油果泥与整果在实际份量、质构、储存和饱腹感方面的差异；商品牛油果泥对长期临床结局的独立影响。",
+      "tradition": "传统母条索引未列现代牛油果泥。牛油果果肉的材料见母条 avocado；本轮不把现代均质制品写成古籍原有制品。",
+      "queries": [
+        "Randomized human feeding trials of fresh avocado replacing carbohydrate or other foods; distinguish mashed avocado, whole fruit, guacamole, and avocado oil.",
+        "USDA FoodData Central composition for raw avocado edible portion and product-label variability in plain avocado puree."
+      ],
+      "search_log": [
+        "检索牛油果整果替代型人体试验，限定提取食物形式、对照、时长及主要终点。",
+        "区分急性餐后研究、12周膳食替代试验与纯牛油果泥的证据；未把调味鳄梨酱并入。",
+        "以USDA FoodData Central核对组成数据来源；未做品牌抽样。"
+      ]
+    },
+    "frozen-berries": {
+      "id": "frozen-berries",
+      "name": "冷冻莓果",
+      "volume": "新果蔬部",
+      "entry_type": "composite_food",
+      "family": "frozen-berry-mix",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指不加糖、以常见可食浆果整果或切块冷冻制成的混合莓果。具体莓种和比例因商品而异；单一蓝莓、蔓越莓、树莓或黑莓条目、冻干粉、果汁和加糖冷冻甜品分别处理。",
+      "variables": "莓种和比例、品种、成熟度、是否整果或切块、冷冻前处理、储存时间、是否加糖及解冻方式。",
+      "composition": "冷冻本身不规定固定营养组成；果种、配比、成熟度和是否加糖决定主要成分。混合莓果不能用单一鲜果数据库条目代替，具体包装应核对配料与营养标签。",
+      "direct": "本轮未检得以不加糖冷冻混合莓果为明确干预、并能单独评估长期人体健康结局的试验。莓果研究常使用特定单一莓种的鲜果、冻干粉或混合饮品，食品形态和配比不同，不能据此形成冷冻混合莓果的独立功效结论。",
+      "specific": "冷冻莓果作为即食或配料食品有独立的食品安全问题。FDA记录了与新鲜及冷冻莓果相关的诺如病毒和甲型肝炎传播风险，并开展冷冻莓果监测；这些资料用于食品安全判断，不代表普通产品必然受污染。消费者应留意召回和所在地官方处理建议。",
+      "safety": "冷冻莓果曾与食品传播病毒暴发和召回相关。按包装说明储存和处理，关注监管部门召回通知；不得仅凭外观或气味判断微生物安全。",
+      "body": "冷冻莓果是莓种和比例不固定的混合食品，是否加糖也会改变实际成分。本轮未检得能单独回答不加糖冷冻混合莓果长期健康结局的直接人体试验；单一鲜果、冻干粉和果汁研究不能替代该混合食品证据。FDA资料也记录了冷冻莓果相关病毒污染监测与暴发风险，购买和处理时应查看召回与食品安全信息。",
+      "evidence_body": "不加糖冷冻混合莓果的直接人体健康结局证据不足（E-0）。食品安全方面存在官方记录的病毒污染暴发与监测资料，不能据此推定每件商品受污染。",
+      "care": "核对莓果配比和是否添加糖，按包装与当地食品安全部门说明处理，并查看召回信息。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Food and Drug Administration. ‘Summary of FDA’s Strategy to Prevent Human Norovirus and Hepatitis A Outbreaks Associated with Fresh and Frozen Berries.’ https://www.fda.gov/food/new-era-smarter-food-safety/summary-fdas-strategy-prevent-human-norovirus-and-hepatitis-outbreaks-associated-fresh-and-frozen.",
+        "U.S. Food and Drug Administration. ‘Microbiological Surveillance Sampling: FY 19-23 Frozen Berries (Strawberries, Raspberries and Blackberries).’ https://www.fda.gov/food/sampling-protect-food-supply/microbiological-surveillance-sampling-fy-19-23-frozen-berries-strawberries-raspberries-and.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "U.S. Food and Drug Administration. ‘Summary of FDA’s Strategy to Prevent Human Norovirus and Hepatitis A Outbreaks Associated with Fresh and Frozen Berries.’ https://www.fda.gov/food/new-era-smarter-food-safety/summary-fdas-strategy-prevent-human-norovirus-and-hepatitis-outbreaks-associated-fresh-and-frozen.",
+        "U.S. Food and Drug Administration. ‘Microbiological Surveillance Sampling: FY 19-23 Frozen Berries (Strawberries, Raspberries and Blackberries).’ https://www.fda.gov/food/sampling-protect-food-supply/microbiological-surveillance-sampling-fy-19-23-frozen-berries-strawberries-raspberries-and."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "FDA官方食品安全策略和监测资料，汇总新鲜及冷冻莓果相关病毒暴发与预防措施。",
+          "population": "消费者与莓果生产、加工、供应链环节。",
+          "exposure": "受污染风险涉及不同种类的新鲜和冷冻莓果。",
+          "result": "FDA将甲型肝炎病毒和诺如病毒列为莓果食品安全重点，并开展监测与预防工作。",
+          "limits": "监管监测不是临床干预或营养效果试验；结果不能估计每个市场产品的污染概率。",
+          "distance": "D0（冷冻莓果食品安全类别）；与健康功效问题无关。"
+        }
+      ],
+      "unknowns": "不同商品的莓种比例、冷冻前加工及冷链条件；不加糖冷冻混合莓果相对对应鲜果的长期人体健康结局。",
+      "tradition": "传统母条索引分别处理已有浆果条目；本轮不把单一浆果的传统材料合并为现代混合冷冻莓果的古籍母本。",
+      "queries": [
+        "Human randomized trials of plain frozen mixed berries, distinguishing whole frozen fruit from freeze-dried powders, juice and sweetened products.",
+        "FDA official frozen berry surveillance and foodborne norovirus or hepatitis A prevention guidance; USDA composition data for frozen berries."
+      ],
+      "search_log": [
+        "检索冷冻莓果整果和混合莓果的人体干预；未找到可将临床结局单独归因于该类别的研究。",
+        "核对FDA冷冻莓果监测及病毒暴发预防资料，限定其为食品安全证据。",
+        "将单一浆果、冻干粉和果汁证据排除出冷冻混合莓果直接效果。"
+      ]
+    },
+    "broccoli": {
+      "id": "broccoli",
+      "name": "西兰花",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "cruciferous-vegetables",
+      "research_depth": "R2",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指西兰花（Brassica oleracea var. italica）的可食花球和嫩茎。西兰花芽苗、浓缩提取物、萝卜硫素补充剂及高硫代葡萄糖苷育种品种分别标注，不视为所有普通商品的同等暴露。",
+      "variables": "品种及硫代葡萄糖苷含量、花球与茎比例、新鲜或冷冻、烹调方式和时长、食用份量及是否与其他十字花科蔬菜混合。",
+      "composition": "西兰花提供膳食纤维、维生素和十字花科植物特有的硫代葡萄糖苷；具体含量受品种、成熟度、储存和烹调影响。食品成分数据库数据不是临床结局证据。",
+      "direct": "两项随机饮食干预研究纳入共130名志愿者，比较每周400 g普通西兰花与高萝卜硫苷品种，持续12周。高含量品种组的LDL-C下降约5%至7%，普通西兰花组未见显著变化；合并分析显示两类西兰花间差异。结果针对特定高含量品种及血脂替代终点，不能推广为所有西兰花可降低心血管事件或预防癌症。",
+      "specific": "人体研究中常见西兰花芽、粉末、提取物或化学成分测量。其硫代葡萄糖苷剂量、芽苗阶段和加工与普通熟西兰花不同，不纳入普通西兰花的直接临床效应。",
+      "safety": "作为普通蔬菜食用时应清洗并按一般食品安全要求储存和烹调。服用华法林等维生素K相关药物者，不宜突然大幅改变富含维生素K蔬菜的摄入量；应遵循处方医嘱。",
+      "body": "西兰花人体试验中有一项较明确的品种差异：两项12周随机研究比较普通与高萝卜硫苷西兰花，每周食用400 g；高含量品种组的LDL-C下降约5%至7%，普通品种组未见显著变化。研究终点是血脂指标，不能说明所有市售西兰花具有相同效果，也没有证明它可预防癌症或心血管疾病。",
+      "evidence_body": "高萝卜硫苷西兰花对LDL-C的证据来自两项12周随机研究（E-C）；效应受品种影响，且终点为风险标志物，不是疾病发生率。",
+      "care": "普通膳食份量与研究中的品种和周摄入量不同。若使用华法林等相关药物，应保持维生素K摄入稳定并向医疗人员确认。",
+      "taste_m": {
+        "苦": "西兰花不同部位和烹调程度可带轻微苦味；只作食味记录，不推为功效。"
+      },
+      "refs": [
+        "Armah CN, Derdemezis C, Traka MH, et al. ‘Diet rich in high glucoraphanin broccoli reduces plasma LDL cholesterol: Evidence from randomised controlled trials.’ Molecular Nutrition & Food Research. 2015;59(5):918–926. DOI: https://doi.org/10.1002/mnfr.201400863.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Armah CN, Derdemezis C, Traka MH, et al. ‘Diet rich in high glucoraphanin broccoli reduces plasma LDL cholesterol: Evidence from randomised controlled trials.’ Molecular Nutrition & Food Research. 2015;59(5):918–926. DOI: https://doi.org/10.1002/mnfr.201400863."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两项独立、双盲、随机平行饮食干预研究。",
+          "population": "共130名志愿者；单项分别纳入37人与93人。",
+          "exposure": "每周400 g普通西兰花或高萝卜硫苷西兰花，连续12周。",
+          "result": "高含量西兰花两项研究中LDL-C分别下降约7.1%和5.1%；普通西兰花组降幅较小且未达统计显著，合并比较有组间差异。",
+          "limits": "具体高含量育种品种，样本与疗程有限；观察的是LDL-C替代指标，不是心血管事件或癌症。",
+          "distance": "D0（西兰花食物）；普通市售品种与高硫代葡萄糖苷品种之间仍有组成差异。"
+        }
+      ],
+      "unknowns": "普通品种和不同烹调方式下的长期人体结局；品种间活性成分差异对结果的影响；替代其他食物与额外增加西兰花的区别。",
+      "tradition": "传统母条索引未列与现代西兰花品种相对应的独立传统母本；不把其他芥菜、芥蓝或十字花科植物的记载自动移用于本条。",
+      "queries": [
+        "Randomized human dietary trials of whole broccoli and high-glucoraphanin broccoli; separate standard broccoli from sprouts, extracts and sulforaphane supplements.",
+        "Broccoli trial null findings, cultivar variation, cooking effects, safety and USDA FoodData Central composition."
+      ],
+      "search_log": [
+        "核对高萝卜硫苷与普通西兰花两项随机研究的样本、每周剂量、12周结局和组间差异。",
+        "检索普通西兰花、芽苗与补充剂的人体证据并分开记录食品形态。",
+        "以USDA FoodData Central作组成数据入口；传统索引未见直接对应条目。"
+      ]
+    },
+    "kale": {
+      "id": "kale",
+      "name": "羽衣甘蓝",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "leafy-cruciferous-vegetables",
+      "research_depth": "R2",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指羽衣甘蓝（Brassica oleracea var. acephala）的鲜叶。羽衣甘蓝汁、冻干粉、粉末棒、芽苗和提取物均作为不同食品形态记录；结球甘蓝或其他芥菜不属于本条。",
+      "variables": "品种、叶片成熟度、鲜叶份量、是否榨汁或冻干、加热方式、饮食替代关系及产品配方。",
+      "composition": "羽衣甘蓝属于叶用十字花科蔬菜，含纤维、维生素、矿物质和多种硫代葡萄糖苷；具体组成受品种、生长环境、叶片部位和加工影响。",
+      "direct": "一项12周随机、盲法对照试验研究冻干羽衣甘蓝粉制成的食品棒，30名2型糖尿病患者完成研究。每日干粉总量约78.75 g，约相当于341 g鲜羽衣甘蓝。干预组相对对照组的HbA1c、胰岛素抵抗、体重和能量摄入出现显著变化；空腹血糖、LDL-C及部分其他终点仅呈趋势或无组间显著差异。小样本、高摄入量和加工食品形态限制外推。",
+      "specific": "既有羽衣甘蓝汁单组研究或粉末产品研究不等同普通鲜叶。不同研究使用品种、剂量、食品基质和对照不同；目前不能把一个小型试验概括为鲜羽衣甘蓝治疗糖尿病或降压。",
+      "safety": "作为食物食用时按普通蔬菜处理。大量鲜叶或浓缩粉末的摄入与日常份量不同；服用华法林等维生素K相关药物者应保持摄入稳定并遵循处方医嘱。",
+      "body": "羽衣甘蓝人体试验包括一项小型12周随机研究：30名2型糖尿病患者完成干预，食用含冻干羽衣甘蓝粉的食品棒，粉末总量约78.75 g/日，约相当于341 g鲜叶。HbA1c、胰岛素抵抗、体重和能量摄入有组间差异，但空腹血糖、LDL-C和葡萄糖耐量主要终点没有一致显著改善。该剂量和食品形态不代表日常鲜叶，也不足以支持治疗建议。",
+      "evidence_body": "羽衣甘蓝粉食品棒对少数2型糖尿病患者的部分替代指标有一项小型随机试验（E-C）；样本少、退出较多、干预量大，普通鲜叶的长期临床效果仍不明确。",
+      "care": "试验粉末和食品棒份量远高于一般蔬菜摄入，不作为剂量建议。服用华法林者应避免自行大幅改变叶菜摄入。",
+      "taste_m": {
+        "苦": "羽衣甘蓝鲜叶有时带苦味或涩味，品种和成熟度会影响感官；仅记录食味。"
+      },
+      "refs": [
+        "Jeppesen PB, Dorner A, Yue Y, et al. ‘Beneficial Effects of a Freeze-Dried Kale Bar on Type 2 Diabetes Patients: A Randomized, Double-Blinded, Placebo-Controlled Clinical Trial.’ Nutrients. 2024;16(21):3641. DOI: https://doi.org/10.3390/nu16213641.",
+        "Kim SY, et al. ‘Kale Juice Improves Coronary Artery Disease Risk Factors in Hypercholesterolemic Men.’ Journal of Medicinal Food. 2008;11(3):479–484. Journal page: https://www.sciencedirect.com/science/article/pii/S0895398808600124.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Jeppesen PB, Dorner A, Yue Y, et al. ‘Beneficial Effects of a Freeze-Dried Kale Bar on Type 2 Diabetes Patients: A Randomized, Double-Blinded, Placebo-Controlled Clinical Trial.’ Nutrients. 2024;16(21):3641. DOI: https://doi.org/10.3390/nu16213641."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "12周随机、盲法、对照干预；比较冻干羽衣甘蓝粉食品棒与安慰剂棒。",
+          "population": "30名2型糖尿病患者完成研究；报告13人退出。",
+          "exposure": "每日3根食品棒；冻干粉总量约78.75 g/日，折合约341 g鲜羽衣甘蓝。",
+          "result": "HbA1c、胰岛素抵抗、体重和能量摄入在干预组相对对照组出现显著变化；空腹血糖、LDL-C和葡萄糖耐量未表现为一致显著组间差异。",
+          "limits": "样本小且退出多；食品棒含冻干粉，剂量很高；结果不等同于普通鲜叶或疾病治疗。",
+          "distance": "D1（羽衣甘蓝粉食品棒至鲜叶）；成品矩阵和摄入量不同。"
+        }
+      ],
+      "unknowns": "普通鲜羽衣甘蓝常见份量对疾病结局的长期影响；较小摄入量、不同烹调方式和不同品种能否产生可重复结果。",
+      "tradition": "传统母条索引未列可与现代羽衣甘蓝品种直接对应的独立条目；不移用结球甘蓝、芥菜或其他叶菜的古籍性味。",
+      "queries": [
+        "Human randomized trials of kale as fresh leaves, juice, powder and freeze-dried foods; compare type 2 diabetes and hypercholesterolemia populations.",
+        "Kale intervention null results, attrition, dose, food matrix, and directness to ordinary fresh kale."
+      ],
+      "search_log": [
+        "读取羽衣甘蓝粉食品棒随机试验全文，核对随机与完成样本、粉末总量、失访和组间结局。",
+        "另检索羽衣甘蓝汁研究，按单组前后比较与随机对照设计分层。",
+        "不将粉、汁或机制研究合并成普通鲜叶的统一效果。"
+      ]
+    },
+    "arugula": {
+      "id": "arugula",
+      "name": "芝麻菜",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "leafy-cruciferous-vegetables",
+      "research_depth": "R1",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指可食叶用芝麻菜或火箭菜（Eruca vesicaria / Eruca sativa，按商品身份核对）。芝麻菜籽油、浓缩硝酸盐、提取物和复合沙拉不是同一研究对象。",
+      "variables": "种与品种、叶片成熟度、鲜食或制成饮品、硝酸盐含量、份量、储存和与其他叶菜混合的比例。",
+      "composition": "芝麻菜是叶用十字花科蔬菜；营养和硝酸盐含量受品种、生长条件、收获期和处理影响。单一数据库记录不能代表不同市场样品。",
+      "direct": "一项半随机交叉试验纳入18名健康、血压正常成人，比较不同硝酸盐来源的定量饮品；芝麻菜饮品每次提供约800 mg硝酸盐，观察5小时。芝麻菜饮品后血浆硝酸盐、亚硝酸盐上升，收缩压在150分钟下降；研究测试的是定量饮品和短时替代指标，不是常见份量鲜芝麻菜或长期高血压结局。",
+      "specific": "其他高硝酸盐蔬菜或混合叶菜饮食研究不能单独归因于芝麻菜。芝麻菜提取物或分离成分研究与叶菜食品的剂量和矩阵也不同。",
+      "safety": "按一般叶菜清洗、冷藏和食用。硝酸盐含量会因种植和储存条件变化；不把研究用定量硝酸盐饮品转成自我治疗血压的建议。",
+      "body": "一项18名健康成人的半随机交叉试验使用硝酸盐定量的芝麻菜饮品，单次含约800 mg硝酸盐并观察5小时。研究记录到血浆硝酸盐、亚硝酸盐上升，以及短时收缩压下降。该结果不能说明日常鲜芝麻菜有长期降压效果，其他高硝酸盐蔬菜也不能并入芝麻菜单品结论。",
+      "evidence_body": "芝麻菜有一项小型急性交叉研究，干预为硝酸盐定量饮品、观察时间为5小时（E-D）；对日常鲜叶份量和长期疾病结局的证据不足。",
+      "care": "按普通叶菜份量食用；不要把单次饮品试验剂量当作补充剂或降压剂量。",
+      "taste_m": {
+        "辛": "芝麻菜叶片常有辛香或胡椒样感官特征；本条只把它记为食味，不推为传统药味。"
+      },
+      "refs": [
+        "Jonvik KL, Nyakayiru J, Pinckaers PJM, Senden JMG, van Loon LJC, Verdijk LB. ‘Nitrate-Rich Vegetables Increase Plasma Nitrate and Nitrite Concentrations and Lower Blood Pressure in Healthy Adults.’ The Journal of Nutrition. 2016;146(5):986–993. DOI: https://doi.org/10.3945/jn.116.229807.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Jonvik KL, Nyakayiru J, Pinckaers PJM, Senden JMG, van Loon LJC, Verdijk LB. ‘Nitrate-Rich Vegetables Increase Plasma Nitrate and Nitrite Concentrations and Lower Blood Pressure in Healthy Adults.’ The Journal of Nutrition. 2016;146(5):986–993. DOI: https://doi.org/10.3945/jn.116.229807."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "半随机交叉饮品试验，单次干预后随访0至300分钟。",
+          "population": "18名健康、血压正常成人，11男7女。",
+          "exposure": "含约800 mg硝酸盐的芝麻菜饮品；同时与甜菜根汁、菠菜饮品及硝酸钠比较。",
+          "result": "芝麻菜饮品后血浆硝酸盐和亚硝酸盐上升；收缩压于150分钟下降约6 mmHg。",
+          "limits": "样本小、急性终点、硝酸盐定量饮品；不等同普通芝麻菜份量或长期临床效果。",
+          "distance": "D1（芝麻菜饮品至鲜叶）；日常叶片硝酸盐剂量未按普通份量测试。"
+        }
+      ],
+      "unknowns": "鲜叶常见份量的硝酸盐暴露及长期血压结局；品种和储存对硝酸盐含量的影响。",
+      "tradition": "传统母条索引未列现代芝麻菜或火箭菜的直接对应条目；不把芥菜、荠菜等名称相近或同科蔬菜的记载转用。",
+      "queries": [
+        "Human feeding studies of rocket salad or arugula; distinguish nitrate-matched beverages, leafy salad meals, extracts and other high-nitrate vegetables.",
+        "Acute and longer-term blood pressure results, null findings, dose, population and official food-composition data."
+      ],
+      "search_log": [
+        "核对芝麻菜饮品交叉试验的人数、硝酸盐剂量、观察时间和血压变化。",
+        "检索鲜叶、饮品、提取物以及菠菜和甜菜等相邻硝酸盐来源，排除不能单独归因芝麻菜的结果。",
+        "以USDA FoodData Central作组成数据入口；未核到芝麻菜专属长期随机结局试验。"
+      ]
+    },
+    "brussels-sprouts": {
+      "id": "brussels-sprouts",
+      "name": "抱子甘蓝",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "cruciferous-vegetables",
+      "research_depth": "R1",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指抱子甘蓝（Brassica oleracea var. gemmifera）的可食叶芽。西兰花芽苗、球芽甘蓝提取物和其他结球甘蓝不视为同一食品。",
+      "variables": "品种、芽球大小和成熟度、鲜品或冷冻、烹调方式和时长、份量及其他十字花科蔬菜摄入。",
+      "composition": "抱子甘蓝含纤维、维生素及十字花科硫代葡萄糖苷；这些成分受品种、成熟度、储存和烹调影响。食品成分数据不证明疾病预防作用。",
+      "direct": "一项10名健康志愿者参与的随机交叉试验，比较每日至少300 g熟抱子甘蓝与低硫代葡萄糖苷蔬菜替代，两个时期各1周。男性的血浆谷胱甘肽转移酶α短期升高，女性未见同样变化；多项尿液和酶学指标无显著变化。该研究样本极小，终点是酶学替代指标，不是癌症、心血管疾病或临床症状。",
+      "specific": "十字花科蔬菜、提取物、芽苗或分离硫代葡萄糖苷的研究不能直接归为抱子甘蓝的疾病效果。不同烹调条件也会改变硫代葡萄糖苷和酶活性。",
+      "safety": "普通蔬菜份量按一般食品安全要求处理。大量改变十字花科蔬菜摄入可能影响维生素K摄入；服用华法林者应保持摄入稳定并遵循医嘱。",
+      "body": "抱子甘蓝的人体直接研究很少。一项仅10人的随机交叉试验每天食用300 g熟抱子甘蓝，持续1周，观察到男性血浆谷胱甘肽转移酶α短期升高，但其他相关指标多数没有变化。该替代指标研究不能说明抱子甘蓝可预防癌症或改变长期疾病风险。",
+      "evidence_body": "抱子甘蓝仅有一项样本极小、持续1周的生物标志物试验，临床结局证据不足（E-D至E-0）。",
+      "care": "试验每日300 g的份量不代表建议摄入量；服用华法林者不应突然大幅改变叶菜摄入。",
+      "taste_m": {
+        "苦": "抱子甘蓝的苦味会受品种、成熟度和烹调影响；仅记录感官，不转为功效。"
+      },
+      "refs": [
+        "Nijhoff WA, Mulder TP, Verhagen H, van Poppel G, Peters WHM. ‘Effects of consumption of Brussels sprouts on plasma and urinary glutathione S-transferase class-alpha and -pi in humans.’ Carcinogenesis. 1995;16(4):955–957. DOI: https://doi.org/10.1093/carcin/16.4.955.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Nijhoff WA, Mulder TP, Verhagen H, van Poppel G, Peters WHM. ‘Effects of consumption of Brussels sprouts on plasma and urinary glutathione S-transferase class-alpha and -pi in humans.’ Carcinogenesis. 1995;16(4):955–957. DOI: https://doi.org/10.1093/carcin/16.4.955."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两组随机分配、交叉膳食试验，膳食时期各1周。",
+          "population": "10名健康、不吸烟成人，5男5女。",
+          "exposure": "每日300 g熟抱子甘蓝，替代等量低硫代葡萄糖苷蔬菜。",
+          "result": "男性血浆GST-α增加约1.5倍；女性未见该变化，GST-π及多项尿液GST指标无变化。",
+          "limits": "样本极小、持续短；GST为生化替代终点，不能推断癌症风险或其他临床结果。",
+          "distance": "D0（熟抱子甘蓝）；结论限于指定短期剂量和生物标志物。"
+        }
+      ],
+      "unknowns": "普通份量鲜食或常见烹调抱子甘蓝的长期人体结局；品种与烹调对组成及反应的影响。",
+      "tradition": "传统母条索引未列抱子甘蓝这一现代栽培类型；不把结球甘蓝或其他芥菜类记载自动转写。",
+      "queries": [
+        "Human intervention trials of Brussels sprouts as food, including null outcomes and biomarkers; distinguish broccoli sprouts and glucosinolate extracts.",
+        "Dose, duration, cooked vegetable form, sample size, clinical outcomes, and USDA FoodData Central composition."
+      ],
+      "search_log": [
+        "核对抱子甘蓝随机交叉试验的10人样本、300 g每日剂量、各1周时段和GST结果。",
+        "检索十字花科芽苗和提取物试验，未将其当作抱子甘蓝整菜效果。",
+        "以USDA FoodData Central作组成数据入口；没有把替代终点写成疾病预防。"
+      ]
+    },
+    "bell-pepper": {
+      "id": "bell-pepper",
+      "name": "彩椒",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "sweet-pepper",
+      "research_depth": "R1",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指甜椒型彩椒（Capsicum annuum）的鲜果，可包括红、黄、橙或绿色甜椒。辣椒、朝天椒、辣椒素、辣酱和特定非辣辣椒提取物不纳入本条。",
+      "variables": "颜色和品种、成熟度、鲜食或烹调、份量、栽培条件、储存及是否与其他蔬菜共同食用。",
+      "composition": "彩椒的颜色对应成熟阶段和品种差异，维生素C、类胡萝卜素及糖酸组成可能不同。代表性营养数据库记录不能代替具体品种或市场抽样。",
+      "direct": "本轮未检得以常见鲜甜椒或彩椒为唯一干预、并报告长期临床结局的可靠随机试验。一个涉及CH-19非辣甜椒的短期研究同时比较辣椒素、绿茶和组合，并观察食欲或能量摄入；其制品和品种与普通彩椒不同，不作本条直接疗效证据。",
+      "specific": "辣椒或辣椒素的代谢、食欲和死亡率研究研究对象为辣椒或分离成分，不能套用于不辣彩椒。彩椒成分研究可用于解释营养构成，不支持疾病治疗。",
+      "safety": "对辣椒科蔬菜过敏者应避免相关食品；彩椒按新鲜蔬菜清洗、冷藏和烹调。商品颜色与名称不足以确认品种或营养含量。",
+      "body": "彩椒与辣椒的辣度和成分身份不同。人体研究中常见辣椒、辣椒素或特殊非辣品种制品；本轮未检得常见鲜彩椒单独干预的长期临床结局试验。彩椒的营养组成随颜色、品种和成熟度变化，但成分数据不能证明特定疾病效果。",
+      "evidence_body": "常见鲜彩椒单品的人体临床结局证据不足（E-0）；辣椒、辣椒素和特殊试验品种不作为等同证据。",
+      "care": "区分甜椒和彩椒与辣椒或辣椒素制品；选择加工产品时查看盐、油和其他配料。",
+      "taste_m": {
+        "甘": "成熟甜椒通常有清甜味，颜色和成熟度会影响味道；仅作为食味记录。"
+      },
+      "refs": [
+        "Ahuja KDK, Robertson IK, Geraghty DP, Ball MJ. ‘Effects of capsaicin, green tea and CH-19 sweet pepper on appetite and energy intake in humans in negative and positive energy balance.’ Clinical Nutrition. 2009;28(3):260–265. PMID: 19345452. https://pubmed.ncbi.nlm.nih.gov/19345452/.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Ahuja KDK, Robertson IK, Geraghty DP, Ball MJ. ‘Effects of capsaicin, green tea and CH-19 sweet pepper on appetite and energy intake in humans in negative and positive energy balance.’ Clinical Nutrition. 2009;28(3):260–265. PMID: 19345452. https://pubmed.ncbi.nlm.nih.gov/19345452/."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "27人随机交叉膳食研究，在正能量与负能量平衡期间分别进行多次测试日。",
+          "population": "27名成人。",
+          "exposure": "辣椒素、绿茶、CH-19非辣甜椒或组合制品；不是常见鲜彩椒整果干预。",
+          "result": "部分处理在特定能量平衡条件下影响能量摄入或食欲评分。",
+          "limits": "研究处理包含辣椒素、绿茶和特殊品种；无法归因于日常彩椒，也不提供长期临床结局。",
+          "distance": "D2–D3（特定试验品种/组合制品至常见鲜甜椒）。"
+        }
+      ],
+      "unknowns": "常见红、黄、橙、绿彩椒整果的长期单品人体结局；品种、成熟度与烹调对实际摄入成分的影响。",
+      "tradition": "传统母条索引未列现代彩椒品种对应条目；不引用辣椒或其他茄科植物的性味作为彩椒结论。",
+      "queries": [
+        "Human trials specifically of fresh sweet bell pepper, excluding hot chili, capsaicin, extracts and mixed-diet interventions.",
+        "Sweet pepper composition by color and cultivar; official USDA FoodData Central records and null clinical findings."
+      ],
+      "search_log": [
+        "检索常见彩椒人体干预，并将辣椒、辣椒素和特殊CH-19制品标为不直接适用。",
+        "按红、黄、橙、绿甜椒区分品种、成熟阶段及组成变化；未发现鲜彩椒单品长期RCT。",
+        "以USDA FoodData Central作组成入口，不将化学成分当作临床证据。"
+      ]
+    },
+    "okra": {
+      "id": "okra",
+      "name": "秋葵",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fruiting-vegetables",
+      "research_depth": "R2",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指秋葵（Abelmoschus esculentus）的可食嫩荚。秋葵籽、叶、提取物、浸泡水、粉末胶囊及添加秋葵粉的复合食品分别注明，不视为普通熟秋葵同一暴露。",
+      "variables": "品种、荚果成熟度、鲜食或冷冻、烹调方法、黏液质与纤维保留、份量、粉末加工，以及糖尿病人群的并用药物。",
+      "composition": "秋葵嫩荚含水分、膳食纤维和黏性多糖；品种、成熟度、储存和烹调影响质构与成分。粉末和胶囊的剂量不能按普通荚果份量直接换算。",
+      "direct": "秋葵对血糖的临床研究主要集中在2型糖尿病或糖尿病前期人群，并使用粉末胶囊、秋葵粉拌酸奶、浸泡水或复合配方。一项100名2型糖尿病患者的随机双盲安慰剂试验使用每次1 g秋葵果粉、每日3次、持续3个月，作为常规降糖治疗的辅助；报告空腹血糖、HbA1c和部分血脂变化。该结果针对粉末胶囊和特定治疗人群，不代表普通烹调秋葵单独治疗糖尿病。",
+      "specific": "已发表秋葵临床试验的制剂、对照、剂量和质量差异较大；部分研究为短期前后比较或多成分制品。现有结果尚不足以给出普通秋葵的通用有效剂量。",
+      "safety": "不应因秋葵研究自行停用或调整降糖药。试验中的秋葵粉和胶囊属于浓缩或加工暴露；大量摄入也可能引起胃肠不适。对秋葵过敏者应避免。",
+      "body": "秋葵的人体试验主要研究粉末、胶囊、浸泡水或秋葵粉拌食物，而不是普通份量的熟秋葵。一项100名2型糖尿病患者的随机双盲试验使用秋葵果粉胶囊作为常规治疗的辅助，疗程3个月并报告若干血糖和血脂指标变化。不同研究制剂和方法差异较大，这些结果不能作为普通秋葵治疗糖尿病的依据。",
+      "evidence_body": "秋葵粉末制剂在糖尿病人群有若干小型临床研究，但剂型和质量不一；普通熟秋葵的治疗效果尚未建立（E-C至E-0）。",
+      "care": "普通食物可按膳食偏好食用；不要把秋葵粉胶囊或试验剂量当作治疗建议，也不要自行调整降糖药。",
+      "taste_m": {
+        "甘": "秋葵嫩荚通常味淡带清甜，品种和熟度会改变感官；仅记录食味。"
+      },
+      "refs": [
+        "Tavakolizadeh M, Peyrovi S, Ghasemi-Moghaddam H, et al. ‘Clinical efficacy and safety of okra (Abelmoschus esculentus (L.) Moench) in type 2 diabetic patients: a randomized, double-blind, placebo-controlled, clinical trial.’ Acta Diabetologica. 2023;60(12):1685–1695. DOI: https://doi.org/10.1007/s00592-023-02149-1.",
+        "Ghasempour S, et al. ‘The effect of okra (Abelmoschus esculentus) on lipid profiles and glycemic indices in Type 2 diabetic adults: Randomized double blinded trials.’ Journal of Food and Drug Analysis. 2019;27(1):135–144. DOI: https://doi.org/10.1016/j.jfda.2018.07.004.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Tavakolizadeh M, Peyrovi S, Ghasemi-Moghaddam H, et al. ‘Clinical efficacy and safety of okra (Abelmoschus esculentus (L.) Moench) in type 2 diabetic patients: a randomized, double-blind, placebo-controlled, clinical trial.’ Acta Diabetologica. 2023;60(12):1685–1695. DOI: https://doi.org/10.1007/s00592-023-02149-1."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、安慰剂对照临床试验，持续3个月。",
+          "population": "100名40至60岁的2型糖尿病患者；继续接受标准降糖治疗和饮食安排。",
+          "exposure": "秋葵果粉胶囊每次1000 mg，每日3次，作为常规治疗辅助。",
+          "result": "论文报告秋葵组空腹血糖、HbA1c和部分血脂较基线及安慰剂组改善。",
+          "limits": "粉末胶囊而非普通整荚；并用常规治疗；单项研究且研究质量和结果需结合其他异质试验评估。",
+          "distance": "D1–D2（全果粉胶囊至日常熟秋葵；浓缩加工和剂量不同）。"
+        }
+      ],
+      "unknowns": "普通熟秋葵常见份量对糖尿病人群长期结局的直接作用；研究制剂、粉末剂量及常规膳食之间的可比性。",
+      "tradition": "传统母条索引未列秋葵与现行植物学身份明确对应的独立条目；本轮不把其他锦葵科植物或叶、籽研究作为秋葵嫩荚传统或现代证据。",
+      "queries": [
+        "Randomized human trials of Abelmoschus esculentus; distinguish fresh okra pods, whole-fruit powder, capsules, soaked water, extracts and multi-herb products.",
+        "Type 2 diabetes and prediabetes outcomes, negative or conflicting results, intervention dose, duration, co-treatment, and safety."
+      ],
+      "search_log": [
+        "核对秋葵果粉胶囊双盲试验的样本、每次剂量、每日次数、时长和并用降糖治疗。",
+        "对照秋葵粉拌酸奶及其他不同制剂研究，保留制品差异和结果异质性。",
+        "未把动物机制、复方制剂或普通鲜荚等同于胶囊研究。"
+      ]
+    },
+    "cherry-tomato": {
+      "id": "cherry-tomato",
+      "name": "樱桃番茄",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "tomato",
+      "research_depth": "R2",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指樱桃番茄（Solanum lycopersicum var. cerasiforme 等商品类型）的鲜果。大果番茄、加工番茄、番茄酱和番茄红素补充剂不视为同一食品；商品名称涵盖多个品种。",
+      "variables": "品种、颜色、成熟度、单次份量、鲜食或熟制、是否去皮、加工和储存，以及在整体膳食中的替代关系。",
+      "composition": "樱桃番茄提供水分、碳水化合物、维生素C及类胡萝卜素；熟制和加工会改变部分成分的浓度与生物利用度。单一番茄品种的数据不能代表全部小番茄。",
+      "direct": "一项60名超重绝经后女性参加的8周随机膳食试验比较对照饮食与每日两份番茄饮食。参与者可选择番茄汤、番茄汁、番茄酱、生番茄或每周一定量樱桃番茄，因此研究支持的是混合形态番茄饮食，不是樱桃番茄单独干预。若干代谢综合征风险指标出现组间变化，但样本、人群和共同膳食限制外推。",
+      "specific": "番茄酱、汁、粉末和番茄红素补充剂与鲜樱桃番茄在加工、剂量和食品矩阵上不同。其他番茄产品研究只能提供邻近背景，不能作为樱桃番茄整果直接证据。",
+      "safety": "对番茄过敏者应避免。鲜食前清洗并按冷藏要求保存；罐装或调味产品的钠、糖和油需另行核对。",
+      "body": "番茄膳食有小型人体试验，但没有把樱桃番茄单独作为唯一干预。一项60名超重绝经后女性参加的8周试验允许参与者以汤、汁、酱、生番茄或每周一定量樱桃番茄达到两份番茄摄入，因此观察结果不能归因于樱桃番茄品种或一种食用形态。",
+      "evidence_body": "樱桃番茄单品的人体健康结局证据不足（E-0至E-C）；现有番茄膳食试验包含多种品种和加工形态，不能单独归因。",
+      "care": "选购鲜果按一般果蔬清洗和储存；若使用番茄汁或酱，另查配料和营养标签。",
+      "taste_m": {
+        "甘": "成熟樱桃番茄通常有甜味并伴酸味，品种和成熟度影响平衡；只记录食味。"
+      },
+      "refs": [
+        "Chen C-Y, Chien Y-W. ‘Fresh Tomato (Lycopersicon esculentum Mill.) in the Diet Improves the Features of the Metabolic Syndrome: A Randomized Study in Postmenopausal Women.’ Biology. 2024;13(8):588. DOI: https://doi.org/10.3390/biology13080588.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Chen C-Y, Chien Y-W. ‘Fresh Tomato (Lycopersicon esculentum Mill.) in the Diet Improves the Features of the Metabolic Syndrome: A Randomized Study in Postmenopausal Women.’ Biology. 2024;13(8):588. DOI: https://doi.org/10.3390/biology13080588."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "8周随机膳食干预。",
+          "population": "60名45至70岁、超重的绝经后女性，分为对照和番茄饮食组。",
+          "exposure": "每日两份番茄；可选择番茄汤、汁、酱、生番茄或每周最多24颗樱桃番茄。",
+          "result": "论文报告身体组成和若干血脂、血压及血糖指标出现有利变化。",
+          "limits": "允许多种番茄品种和加工形式，不能分辨樱桃番茄的独立贡献；单中心、小样本、特定人群。",
+          "distance": "D1–D2（混合番茄膳食至鲜樱桃番茄单品）。"
+        }
+      ],
+      "unknowns": "樱桃番茄整果单独干预的健康结局；不同颜色、品种和成熟度的临床可比性。",
+      "tradition": "传统母条索引未列现代樱桃番茄品种的单独条目；不把传统茄、柿类或大果番茄的记录直接等同本条。",
+      "queries": [
+        "Human intervention studies of fresh cherry tomatoes specifically; separate them from mixed tomato diets, tomato juice, sauce, paste and lycopene supplements.",
+        "Exact intervention forms, participant outcomes, null results and USDA FoodData Central composition for raw cherry tomatoes."
+      ],
+      "search_log": [
+        "核对番茄膳食随机试验的60人样本、8周时长和每周樱桃番茄可选份量。",
+        "确认干预允许汤、汁、酱及不同生番茄，未把混合番茄结果归因于樱桃番茄。",
+        "区分番茄红素补充剂和鲜果；以USDA数据库作为组成入口。"
+      ]
+    },
+    "zucchini": {
+      "id": "zucchini",
+      "name": "西葫芦",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "summer-squash",
+      "research_depth": "R1",
+      "shared_parent": "fresh-vegetable-base",
+      "identity": "本条指作蔬菜食用的西葫芦或夏南瓜（Cucurbita pepo 的相应栽培类型）可食果实。籽、花、其他南瓜品种和提取物不自动纳入本条。",
+      "variables": "品种、采收成熟度、果实大小、去皮与否、鲜食或熟制、储存和是否出现异常强烈苦味。",
+      "composition": "西葫芦含水分、纤维和少量碳水化合物；具体数值随品种、成熟度和可食部变化。成分数据库不是临床效果证据。",
+      "direct": "本轮未检得以西葫芦整果为唯一干预、并报告人体健康结局的随机试验或高质量系统综述。关于西葫芦的人体资料主要涉及过敏病例、食品组成和食品安全，不支持特定治疗作用。",
+      "specific": "其他南瓜属植物、南瓜籽或葫芦科提取物的研究不能替代西葫芦整果证据。西葫芦异常苦味可能提示葫芦素含量过高，属于食品安全风险而不是食用功效。",
+      "safety": "若西葫芦有不同寻常的强烈苦味，不要食用并丢弃；日本农林水产省指出大量葫芦素可能引起腹痛、腹泻和呕吐。一般商品仍应按新鲜蔬菜清洗和保存。",
+      "body": "本轮未找到西葫芦整果作为唯一干预的人体健康结局试验，现有信息主要用于描述组成和食品安全。日本农林水产省提醒，若西葫芦出现不同寻常的强烈苦味，应停止食用并丢弃，因为高葫芦素可引起腹痛、腹泻或呕吐。",
+      "evidence_body": "西葫芦整果的人体健康结局证据不足（E-0）；强烈异常苦味对应的葫芦素风险有官方食品安全说明。",
+      "care": "试吃到异常强烈苦味时不要继续食用，也不要试图靠加热掩盖；丢弃该果实并清洗接触器具。",
+      "taste_m": {
+        "甘": "西葫芦通常味淡，嫩果可略带清甜；品种和成熟度影响感官，只作食味记录。"
+      },
+      "refs": [
+        "Ministry of Agriculture, Forestry and Fisheries of Japan. ‘苦味が強いズッキーニが稀にあるが、食べても大丈夫ですか。’ https://www.maff.go.jp/j/heya/sodan/1106/01.html.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Ministry of Agriculture, Forestry and Fisheries of Japan. ‘苦味が強いズッキーニが稀にあるが、食べても大丈夫ですか。’ https://www.maff.go.jp/j/heya/sodan/1106/01.html."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "日本农林水产省官方消费者食品安全问答。",
+          "population": "面向购买和食用西葫芦的消费者。",
+          "exposure": "异常强烈苦味的西葫芦及其天然葫芦素。",
+          "result": "高葫芦素摄入可引起腹痛、腹泻或呕吐；建议不食用有异常强烈苦味的果实。",
+          "limits": "安全提示不是健康效应试验，也不表示普通西葫芦常规含有有害剂量。",
+          "distance": "D0（西葫芦食品安全类别）；与临床功效结论无关。"
+        }
+      ],
+      "unknowns": "常见份量鲜食或熟食西葫芦的直接人体健康结局；品种和栽培条件对葫芦素风险的贡献。",
+      "tradition": "传统母条索引未列可与现代西葫芦栽培类型明确对应的独立条目；不把其他南瓜或葫芦的传统记载移作本条。",
+      "queries": [
+        "Human clinical intervention trials of edible zucchini or courgette fruit, excluding seeds, extracts and other Cucurbita species.",
+        "Official food safety advice on strongly bitter zucchini and cucurbitacin; USDA FoodData Central composition."
+      ],
+      "search_log": [
+        "检索西葫芦整果人体试验，未检得可支持特定健康结局的直接干预证据。",
+        "读取日本农林水产省关于强烈苦味西葫芦和葫芦素中毒的官方说明。",
+        "将南瓜籽、其他南瓜和葫芦科提取物排除；以USDA数据库核对组成来源。"
+      ]
+    }
+  }
+}

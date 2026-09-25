@@ -10,8 +10,9 @@ def load_data(batch_id):
     path = ROOT / "scripts" / "entry_batches" / f"{batch_id}.json"
     cfg = json.loads(path.read_text(encoding="utf-8"))
     entries = cfg["entries"]
-    if len(entries) != 10:
-        raise ValueError(f"Expected 10 entries, found {len(entries)}")
+    expected = cfg["batch"].get("entry_count")
+    if not 1 <= len(entries) <= 10 or expected != len(entries):
+        raise ValueError(f"Expected 1–10 entries matching batch.entry_count, found {len(entries)}")
     return cfg["batch"], entries
 
 def evidence_cards(p):
