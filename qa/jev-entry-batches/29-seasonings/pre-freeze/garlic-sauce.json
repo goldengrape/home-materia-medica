@@ -1,0 +1,10 @@
+{
+  "batch_id": "29-seasonings",
+  "entry_id": "garlic-sauce",
+  "summary_ref": "references/entries/garlic-sauce/summary.md",
+  "summary_sha256": "ba893b166e2ea4d30f7c8f67224fbbc7306bb5f037a827d9807bbccd11a5ecdc",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 蒜蓉酱\r\n\r\n**身份。** 以蒜或蒜蓉为主要风味，配油、盐、糖、醋或辣椒等制作的调味酱；蒜粉和单纯蒜泥另列。\r\n\r\n**组成与暴露。** 商品可能是油蒜酱、蒜蓉辣酱或冷藏蒜泥，不同类型营养和保存要求不同。 **关键变量：** 蒜含量、油和钠、糖、发酵、辣椒及每份食用量。\r\n\r\n**直接人体证据。** 未检得蒜蓉酱成品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** 中国调味品研究有蔬菜配料复合酱标签类别，147种产品钠中位数1900 mg/100g；没有将蒜蓉酱单独报告。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 含油蒜制品按包装保存；自制蒜在油中保存需遵守可靠的冷藏和时限要求，避免长时间室温存放。\r\n\r\n**传统来源。** 现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

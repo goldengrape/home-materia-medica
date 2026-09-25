@@ -1,0 +1,535 @@
+{
+  "batch": {
+    "id": "29-seasonings",
+    "title": "辣酱与复合调味料",
+    "catalog_order": 29,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; Chinese condiment nutrition-label database",
+    "web_search_calls": 4,
+    "web_search_queries": 13,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-29-seasonings",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "蔬菜配料酱的标签类别包含多种酱，不等于甜辣酱、辣椒酱、蒜蓉酱或黑胡椒酱单品。",
+      "火锅底料数据是浓缩品包装标签值，不能当作稀释汤底或每人摄入。",
+      "咖喱块属于近邻固体复合调料，调查没有单独给出咖喱块分组。",
+      "浓汤宝与bouillon cube相近，但品牌和商品配方可能不同。",
+      "鸡精每100克钠高，实际食用量应按克数和菜品稀释换算。",
+      "复合香辛料涵盖不同用途与粉酱形态，子类中位数不可互换。",
+      "火锅蘸酱的商品数据不能代表干燥蘸料粉。"
+    ],
+    "citation_audit_revision": "rev-1: distinguish concentrated labels from prepared servings and similar sauce/powder categories from individual products."
+  },
+  "entries": {
+    "sweet-chili-sauce": {
+      "id": "sweet-chili-sauce",
+      "name": "甜辣酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "sweet_chili_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以辣椒为主要风味并加入糖、醋、盐及其他调味料制成的甜辣型酱料；单纯辣椒酱和烧烤酱另列。",
+      "variables": "辣椒和糖的比例、钠、酸度、稠度、每次蘸用量和配伍食物。",
+      "composition": "糖、盐和辣椒配料比例随商品不同；少量蘸酱也会累积到一餐。",
+      "direct": "未检得甜辣酱单品特异的人体临床结局研究。",
+      "specific": "中国调味品标签研究中，最相近的蔬菜配料酱类别有147种产品，钠中位数1900 mg/100g；该合并类别不是甜辣酱专属。2015–2017年英中酱料标签调查发现，中国酱料盐含量中位数约为英国同类产品的4.4倍。",
+      "body": "未检得甜辣酱单品特异的人体临床结局研究。 中国调味品标签研究中，最相近的蔬菜配料酱类别有147种产品，钠中位数1900 mg/100g；该合并类别不是甜辣酱专属。2015–2017年英中酱料标签调查发现，中国酱料盐含量中位数约为英国同类产品的4.4倍。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "比较糖和钠每100克及每次实际用量；不同辣椒酱类别不应共用同一数值。",
+      "safety": "开封后按标签保存；查看小麦、大豆及其他复配过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据库横断面分析。",
+          "population": "2017–2022年从中国19省数据库取得1510种调味品标签。",
+          "exposure": "按15种调味品及子类别分析每100克营养组成。",
+          "result": "相近的蔬菜配料复合酱类别147种，钠中位数1900 mg/100g。",
+          "limits": "并非甜辣酱单类样品；产品标签不是实验室检测，品牌配方差异大。",
+          "distance": "D2：相邻复合辣酱类别。"
+        },
+        {
+          "ref": 2,
+          "design": "英国与中国酱料横断面标签调查。",
+          "population": "2015–2017年伦敦、北京和石家庄大型零售市场酱料。",
+          "exposure": "比较营养标签中的盐含量与同类别英国商品。",
+          "result": "中国酱料整体盐中位数约为同期英国同类商品的4.4倍。",
+          "limits": "跨国类别比较不是甜辣酱单独数据；标签覆盖和类别构成有限。",
+          "distance": "D2：酱类总体市场标签资料。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "sweet chili sauce China sodium sugar condiment label survey",
+        "UK China sauces salt cross-sectional survey 2015 2017"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "chili-sauce": {
+      "id": "chili-sauce",
+      "name": "辣椒酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "chili_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以辣椒或辣椒制品为主要原料，配盐、油、发酵物或其他香辛料制成的调味酱；甜辣酱、辣椒粉及火锅底料另列。",
+      "variables": "辣椒品种、油盐、发酵与否、辅料、钠含量、辣度和用量。",
+      "composition": "辣椒酱有油制、发酵、剁椒及复合酱等多种制法；产品名称不能确定盐油配比。",
+      "direct": "未检得所有辣椒酱类型通用的人体临床结局试验。",
+      "specific": "中国调味品标签数据库的蔬菜配料酱类别147种，钠中位数1900 mg/100g，但未将所有辣椒酱分成独立样品组。英中标签调查比较的是广义酱料。",
+      "body": "未检得所有辣椒酱类型通用的人体临床结局试验。 中国调味品标签数据库的蔬菜配料酱类别147种，钠中位数1900 mg/100g，但未将所有辣椒酱分成独立样品组。英中标签调查比较的是广义酱料。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "查看油、盐及发酵配料表；按使用量估算钠，不用辣度判断盐含量。",
+      "safety": "检查辣椒、芝麻、大豆及发酵配料中的过敏原；开封后依标签保存。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品标签营养调查。",
+          "population": "2017–2022年中国19省1510种调味品产品标签。",
+          "exposure": "按产品类别统计能量、脂肪、碳水化合物和钠。",
+          "result": "蔬菜配料复合酱类别钠中位数1900 mg/100g，含147种标签记录。",
+          "limits": "研究没有将油辣椒、剁椒、发酵辣椒酱等逐一分开；中位数不能代表任一品牌。",
+          "distance": "D2：辣椒酱所属蔬菜配料复合酱类别。"
+        },
+        {
+          "ref": 2,
+          "design": "伦敦、北京和石家庄零售市场酱料盐标签横断面调查。",
+          "population": "2015–2017年英国及中国主要零售渠道的酱料产品。",
+          "exposure": "比较相同或近似分类产品的盐标签。",
+          "result": "同期按酱料类别比较，中国商品盐中位数平均约为英国同类商品的4.4倍。",
+          "limits": "宽泛市场结果，不说明辣椒酱单品或实际蘸用量。",
+          "distance": "D3：酱类总体标签背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "辣椒酱 钠含量 配料标签 市场调查 中国",
+        "China UK sauce salt label cross sectional study chili sauce"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "garlic-sauce": {
+      "id": "garlic-sauce",
+      "name": "蒜蓉酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "garlic_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以蒜或蒜蓉为主要风味，配油、盐、糖、醋或辣椒等制作的调味酱；蒜粉和单纯蒜泥另列。",
+      "variables": "蒜含量、油和钠、糖、发酵、辣椒及每份食用量。",
+      "composition": "商品可能是油蒜酱、蒜蓉辣酱或冷藏蒜泥，不同类型营养和保存要求不同。",
+      "direct": "未检得蒜蓉酱成品特异的人体临床结局研究。",
+      "specific": "中国调味品研究有蔬菜配料复合酱标签类别，147种产品钠中位数1900 mg/100g；没有将蒜蓉酱单独报告。",
+      "body": "未检得蒜蓉酱成品特异的人体临床结局研究。 中国调味品研究有蔬菜配料复合酱标签类别，147种产品钠中位数1900 mg/100g；没有将蒜蓉酱单独报告。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "先确认是油蒜酱、发酵蒜酱或冷藏蒜泥，再看每份脂肪、钠及保存方式。",
+      "safety": "含油蒜制品按包装保存；自制蒜在油中保存需遵守可靠的冷藏和时限要求，避免长时间室温存放。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国调味品预包装营养标签数据库分析。",
+          "population": "1510种中国调味品，标签数据覆盖2017–2022年收集的商品。",
+          "exposure": "按类别汇总能量、脂肪、碳水化合物及钠。",
+          "result": "蔬菜配料复合酱类147种，钠中位数1900 mg/100g。",
+          "limits": "该类别包括不同配方，不等于蒜蓉酱专项抽样或实测。",
+          "distance": "D2：相近的复合蔬菜酱类别。"
+        },
+        {
+          "ref": 2,
+          "design": "英中零售酱料营养标签横断面调查。",
+          "population": "2015–2017年北京、石家庄和伦敦主要零售酱料。",
+          "exposure": "比较酱类盐含量标签。",
+          "result": "按酱料类别比较，中国商品盐中位数平均约为英国同类商品的4.4倍。",
+          "limits": "未单列蒜蓉酱；标签值受类别和市场范围影响。",
+          "distance": "D3：酱料类别总体数据。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "garlic sauce sodium oil label China survey",
+        "garlic in oil food safety storage government source"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "black-pepper-sauce": {
+      "id": "black-pepper-sauce",
+      "name": "黑胡椒酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "black_pepper_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以黑胡椒为主要风味，并可含酱油、肉汤、淀粉、糖和油制成的浓稠咸味酱；胡椒粉另列。",
+      "variables": "黑胡椒比例、酱油或肉汤、钠、油脂、糖、淀粉和每次浇用量。",
+      "composition": "有的商品以植物配料酱为主，有的含肉汤或复合调味料，原料和钠差异较大。",
+      "direct": "未检得黑胡椒酱成品特异的人体临床结局研究。",
+      "specific": "中国调味品研究将复合酱分成植物配料、动物配料和其他半固体类别；黑胡椒酱未作为单独统一配方报告，不能据类别中位数推断该产品。",
+      "body": "未检得黑胡椒酱成品特异的人体临床结局研究。 中国调味品研究将复合酱分成植物配料、动物配料和其他半固体类别；黑胡椒酱未作为单独统一配方报告，不能据类别中位数推断该产品。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "查看酱油、肉汤和每份钠；牛排或意面整餐还要计入酱料实际浇用量。",
+      "safety": "有些商品含大豆、小麦或动物源汤料，核对过敏原及素食标识。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Tan M, He FJ, Ding J, Li Y, Zhang P, MacGregor GA. Salt content of sauces in the UK and China: cross-sectional surveys. BMJ Open. 2019;9(9):e025623. DOI: https://doi.org/10.1136/bmjopen-2018-025623."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据分析。",
+          "population": "中国19省1510种调味品商品标签，按配料与产品属性分类。",
+          "exposure": "统计每100克营养素并区分若干复合调味酱类别。",
+          "result": "蔬菜配料酱、动物配料酱和其他半固体复合酱各自分布不同。",
+          "limits": "黑胡椒酱没有单独统一子类；产品类别不可直接互换。",
+          "distance": "D2：复合酱相邻类别资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中英酱类零售标签调查。",
+          "population": "北京、石家庄和伦敦2015–2017年零售商品。",
+          "exposure": "比较广义酱料的盐含量。",
+          "result": "研究报告中英同类酱料整体盐含量中位数存在差异。",
+          "limits": "不提供黑胡椒酱单品结论。",
+          "distance": "D3：酱类总体背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "black pepper sauce ingredients sodium food label China",
+        "China UK sauce labels salt survey 2015 2017"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "hot-pot-base": {
+      "id": "hot-pot-base",
+      "name": "火锅底料",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "hot_pot_base",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "用于火锅汤底的固态或半固态复合调味料，常含油、盐、辣椒、香辛料及豆瓣或其他发酵酱；火锅蘸料另列。",
+      "variables": "油脂和盐、固液形态、辣椒及香辛料、稀释水量、每锅使用量和是否饮汤。",
+      "composition": "浓缩底料用量通常按整锅计算；未稀释的每100克标签不能直接视作每人摄入量。",
+      "direct": "未检得火锅底料成品单独的人体临床结局试验。",
+      "specific": "中国调味品数据库对35款火锅底料标签统计：钠中位数4740 mg/100g，脂肪中位数55 g/100g；属于浓缩调味料标签，不等于稀释火锅汤或人均摄入量。",
+      "body": "未检得火锅底料成品单独的人体临床结局试验。 中国调味品数据库对35款火锅底料标签统计：钠中位数4740 mg/100g，脂肪中位数55 g/100g；属于浓缩调味料标签，不等于稀释火锅汤或人均摄入量。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "按底料实际克重和加水量计算；多人共享时再按食用汤和食材分配估算。",
+      "safety": "留意油脂喷溅和沸汤烫伤；开封保存依标签要求。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据分析。",
+          "population": "1510款中国调味品中，火锅底料子类35款。",
+          "exposure": "将标签数据换算为每100克并报告中位数、四分位距和范围。",
+          "result": "火锅底料钠中位数4740 mg/100g，脂肪中位数55 g/100g。",
+          "limits": "包装浓缩产品数据，不是稀释后的汤底测量，也不表示每位食客摄入量。",
+          "distance": "D0：火锅底料产品标签子类别。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "hot pot base sodium fat China product label study median 4740 55",
+        "hotpot base sodium labels 35 products China condiments"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "curry-cube": {
+      "id": "curry-cube",
+      "name": "咖喱块",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "curry_cube",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以油脂、淀粉、盐、香辛料及增稠或风味配料制成的固态调味块，用于炖煮咖喱菜；咖喱粉和即食咖喱另列。",
+      "variables": "块重、钠、脂肪、盐、淀粉、糖和整锅使用块数。",
+      "composition": "咖喱块是复合固体调料，并非单一香辛料；品牌间油、钠及配料比例不同。",
+      "direct": "未检得咖喱块成品特异的人体临床结局研究。",
+      "specific": "中国调味品标签研究中，其他固体复合调味料61款，钠中位数4630 mg/100g；这一近邻类别未单独列咖喱块，不能代替品牌标签。",
+      "body": "未检得咖喱块成品特异的人体临床结局研究。 中国调味品标签研究中，其他固体复合调味料61款，钠中位数4630 mg/100g；这一近邻类别未单独列咖喱块，不能代替品牌标签。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "依据包装规定块数与最终锅量计算每份；同时计入肉、椰浆和配菜。",
+      "safety": "核对小麦、乳、大豆等可能添加的过敏原；干燥保存并按标签使用。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签调查。",
+          "population": "1510种商品的复合调味料分类中，其他固体复合调味料有61款。",
+          "exposure": "按每100克标签统计钠及其他营养成分。",
+          "result": "该近邻类别钠中位数4630 mg/100g。",
+          "limits": "研究没有将咖喱块单独列出；产品原料与推荐使用量有差异。",
+          "distance": "D2：相邻固态复合调味料。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "curry roux cubes sodium China condiment label study",
+        "curry cube nutrition facts sodium fat brands"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "soup-stock-concentrate": {
+      "id": "soup-stock-concentrate",
+      "name": "浓汤宝",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "soup_stock_concentrate",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "用于煮汤或炖菜的浓缩调味块或膏，常含盐、肉类或酵母提取物、油脂和调味料；鸡精及即食高汤另列。",
+      "variables": "钠、块重、肉类或酵母提取物、油脂、稀释水量和每锅使用量。",
+      "composition": "商品以少量浓缩调味料配大量水使用；每100克标签与成汤每碗含量不同。",
+      "direct": "未检得浓汤宝单品特异的人体临床结局研究。",
+      "specific": "中国调味品调查中，25款bouillon cube的钠中位数7392.5 mg/100g；这与浓缩汤块相近，但不等于所有浓汤宝品牌或稀释后的成汤。",
+      "body": "未检得浓汤宝单品特异的人体临床结局研究。 中国调味品调查中，25款bouillon cube的钠中位数7392.5 mg/100g；这与浓缩汤块相近，但不等于所有浓汤宝品牌或稀释后的成汤。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "按实际块重、加水量和分碗数换算；避免只比较每100克浓缩块。",
+      "safety": "检查过敏原、肉源配料和开封后冷藏要求；按说明使用。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据库分析。",
+          "population": "bouillon cube类别25款中国市场调味品。",
+          "exposure": "按每100克标签汇总钠含量。",
+          "result": "钠中位数7392.5 mg/100g。",
+          "limits": "与浓缩汤块接近但非所有品牌的同义类别；高浓缩标签值不等同一碗汤摄入。",
+          "distance": "D1：相邻浓缩高汤块标签数据。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "bouillon cubes soup stock sodium China condiments 7392.5 mg 25 products",
+        "concentrated soup stock cube sodium label China"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "chicken-seasoning": {
+      "id": "chicken-seasoning",
+      "name": "鸡精",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "chicken_essence",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以盐、谷氨酸钠、呈味核苷酸及鸡肉或鸡肉风味原料等制成的复合鲜味调味料；鸡汤和鸡粉另列。",
+      "variables": "盐与钠、谷氨酸钠、呈味核苷酸、鸡肉原料、每次添加克数。",
+      "composition": "名称中的“鸡”不代表产品全部由鸡肉构成；实际成分依标签配方。",
+      "direct": "未检得鸡精成品单独的人体临床结局试验。",
+      "specific": "中国调味品标签研究中的鸡精子类41款，钠中位数19000 mg/100g，蛋白质中位数22 g/100g；这是浓缩调味料标签值，不是菜肴每份摄入。",
+      "body": "未检得鸡精成品单独的人体临床结局试验。 中国调味品标签研究中的鸡精子类41款，钠中位数19000 mg/100g，蛋白质中位数22 g/100g；这是浓缩调味料标签值，不是菜肴每份摄入。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "按实际添加克数计算钠；与盐、酱油、汤料及其他复合调味料共同核算。",
+      "safety": "检查鸡肉、谷物和大豆等过敏原；存放时防潮并使用干燥器具。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品商品标签横断面分析。",
+          "population": "中国市场鸡精/鸡粉类标签样品41款。",
+          "exposure": "汇总标签中每100克钠和其他核心营养素。",
+          "result": "钠中位数19000 mg/100g；蛋白质中位数22 g/100g。",
+          "limits": "类别标签值而非菜肴含量或临床结果；少量使用仍需按实际剂量换算。",
+          "distance": "D0：鸡精调味料商品标签子类。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "chicken essence sodium median 19000 China condiment labels 41 products",
+        "chicken essence chicken powder nutrition ingredients sodium study"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "compound-seasoning": {
+      "id": "compound-seasoning",
+      "name": "复合香辛料",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "compound_seasoning",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "由两种或以上香辛料、盐、糖、酵母提取物、鲜味剂或其他配料按用途调配的复合粉料或酱料；单一香辛料和方便面调味包另列。",
+      "variables": "配方用途、盐和钠、鲜味剂、糖、粉剂或酱体、每份用量。",
+      "composition": "同名复合调味料可用于不同菜式，盐、糖和风味增强剂含量随产品显著变化。",
+      "direct": "未检得所有复合香辛料配方通用的成品临床结局研究。",
+      "specific": "中国营养标签调查中302款复合调味料钠中位数2671.5 mg/100g；其中其他固体复合调料61款中位数4630 mg/100g。各子类相差较大。",
+      "body": "未检得所有复合香辛料配方通用的成品临床结局研究。 中国营养标签调查中302款复合调味料钠中位数2671.5 mg/100g；其中其他固体复合调料61款中位数4630 mg/100g。各子类相差较大。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "先看食品成分和每份用量；烹调时按调味包说明减盐，避免与额外盐和酱油叠加。",
+      "safety": "留意大豆、小麦、奶、芝麻及动物源配料等过敏原；存放于干燥处。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据库分析。",
+          "population": "复合调味料类别302款，包含植物基酱、动物基酱及固体调料子类。",
+          "exposure": "统计每100克标签钠及其他营养素。",
+          "result": "复合调味料总体钠中位数2671.5 mg/100g；其他固体类别61款中位数4630 mg/100g。",
+          "limits": "复合类别内部差异明显，整体中位数不能代替某一用途或品牌。",
+          "distance": "D0：复合调味品标签类别调查。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "compound seasoning sodium China label survey 302 products median 2671.5",
+        "Chinese compound spice seasoning labels sodium food categories"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    },
+    "dipping-spice-mix": {
+      "id": "dipping-spice-mix",
+      "name": "蘸料粉",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "dipping_spice_mix",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "干燥研磨或复配后用于蘸食的粉状调料，可含辣椒、孜然、芝麻、盐、糖及鲜味成分；火锅蘸酱和烧烤腌料另列。",
+      "variables": "盐和钠、香辛料组合、芝麻、糖、鲜味剂、干粉重量和蘸取频次。",
+      "composition": "粉料的基础香辛料和复配盐比例不同；干粉与加水、油调成的蘸酱不是同一形式。",
+      "direct": "未检得统一蘸料粉类别的成品人体临床结局试验。",
+      "specific": "中国调味品调查报告13款火锅蘸酱钠中位数2727 mg/100g，但这类是半固体酱而非干粉；这里只能作近邻参考。",
+      "body": "未检得统一蘸料粉类别的成品人体临床结局试验。 中国调味品调查报告13款火锅蘸酱钠中位数2727 mg/100g，但这类是半固体酱而非干粉；这里只能作近邻参考。",
+      "evidence_body": "证据来自中国商品营养标签数据库及英中酱料标签横断面调查；数据按原分类报告，不能代替实验室检测、单品数据或实际食用剂量。",
+      "care": "辨别干粉与湿酱类别，查看是否已加盐；小份多次蘸取也要计入整餐钠。",
+      "safety": "芝麻及复配调料可能含多种过敏原；使用干燥器具并密封保存。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品标签横断面统计。",
+          "population": "火锅蘸酱子类13款；另有其他香辛料和复合调味料类别。",
+          "exposure": "统计每100克商品标签钠含量。",
+          "result": "火锅蘸酱钠中位数2727 mg/100g。",
+          "limits": "蘸酱是半固体品类，不等于干燥蘸料粉；无法推断本条粉料含量。",
+          "distance": "D3：相邻火锅蘸酱商品类别。"
+        }
+      ],
+      "unknowns": "各品牌当前配方和按菜谱计算的实际用量；各调味品长期、单品特异的人体结局研究。",
+      "tradition": "现代复合调味品。本条按商品配方与使用量讨论，不把原料传统记载直接转为成品功效。",
+      "queries": [
+        "dipping spice powder salt sodium label China survey",
+        "hotpot dipping sauce sodium 2727 mg 13 products China"
+      ],
+      "search_log": [
+        "核对调味品的主料、产品形态和可用商品标签数据。",
+        "记录调查来源、类别和样本数，并区分单品与相邻类别。"
+      ]
+    }
+  }
+}
