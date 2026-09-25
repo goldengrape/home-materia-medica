@@ -1,0 +1,622 @@
+{
+  "batch": {
+    "id": "37-office-and-fitness-scenes",
+    "title": "夜间、办公室、通勤与训练前场景",
+    "catalog_order": 37,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-25",
+    "search_tool": "Web search; PubMed/PMC; Crossref/Europe PMC; FDA official sources; university research portals",
+    "web_search_calls": 10,
+    "web_search_queries": 37,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-37-office-and-fitness-scenes",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "深夜甜品、深夜奶茶没有找到直接的场景试验；晚餐和咖啡因时点研究仅作间接证据。",
+      "杏仁随机试验不代表全部坚果；能量棒试验研究的是包含谷物和营养棒的组合方案。",
+      "通勤咖啡研究包括模拟驾驶或凌晨长途公路任务，不能等同一般日间通勤或驾驶安全保证。",
+      "会议蔬菜、医院售货机与大学售货机研究分别测量摄入、销售商品组成或购买行为，终点不相互替代。",
+      "瓶装代餐的糖尿病特定配方研究不代表普通奶昔；训练前研究中的咖啡因剂量不能按咖啡杯数直接换算。"
+    ],
+    "citation_audit_revision": "rev-1: separated scene-specific outcomes from ingredient, product and environment studies; retained population, dose, setting and outcome limits."
+  },
+  "entries": {
+    "late-night-dessert": {
+      "name": "夜间甜品",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "夜间甜品",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在通常晚餐之后、临近夜间休息时食用蛋糕、冰品、布丁等甜品；不把具体甜品种类、配方和份量视作相同暴露。",
+      "variables": "甜品种类和份量、糖与脂肪、食用时间、距睡眠间隔、当天总摄入及个人作息。",
+      "composition": "甜品可能同时含糖、精制淀粉和脂肪；冰品、糕点和水果甜点的组成差异很大，应按产品标签和实际份量判断。",
+      "direct": "未检得针对夜间甜品这一具体组合的直接随机试验。相邻证据中，20名健康成人的随机交叉试验比较18:00与22:00等能量晚餐，较晚晚餐后的夜间葡萄糖和脂质代谢有所变化；24名健康成人居家交叉试验中，同一198千卡高碳水零食在晚间出现较低但更持久的葡萄糖反应。",
+      "specific": "两项研究比较的是晚餐或标准化零食，不是蛋糕、冰淇淋或甜品；受试者、睡眠时间和实验条件有限。现有结果不足以确认甜品本身或所有夜间进食都有相同效应。",
+      "safety": "记录实际份量和进食时间；含乳、坚果或其他过敏原的甜品应核对配料。若关注睡眠或血糖，应分别考虑甜品组成、睡前间隔、作息和个体状况，不以单项时间研究作个人诊断。",
+      "refs": [
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "body_refs": [
+        "Gu C, et al. Metabolic Effects of Late Dinner in Healthy Volunteers—A Randomized Crossover Clinical Trial. J Clin Endocrinol Metab. 2020;105(8):2789-2802. DOI: https://doi.org/10.1210/clinem/dgaa354. PMID: 32525525.",
+        "Timmer R, et al. A randomized crossover trial assessing time of day snack consumption and resulting postprandial glycemic response in a real-life setting among healthy adults. Chronobiol Int. 2022;39(10):1329-1339. DOI: https://doi.org/10.1080/07420528.2022.2105230. PMID: 36004426."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉控制晚餐试验。",
+          "population": "20名健康成人。",
+          "exposure": "在实验室比较18:00和22:00的等能量晚餐，并安排固定睡眠时段。",
+          "result": "较晚晚餐后的夜间餐后葡萄糖较高，并改变脂质代谢指标。",
+          "limits": "单次晚餐时点比较；不研究甜品，不能据此推断具体甜品或长期疾病风险。",
+          "distance": "D3：进食时点的间接证据。"
+        },
+        {
+          "ref": 2,
+          "design": "居家随机交叉试验，使用连续血糖监测。",
+          "population": "24名健康成人。",
+          "exposure": "受试者在早晨、下午、晚间食用相同的198千卡高碳水零食。",
+          "result": "晚间葡萄糖反应峰值较缓但持续时间较长；结果与部分实验室研究不一致。",
+          "limits": "标准姜饼零食，不是甜品种类比较；健康成人样本小，日常饮食仍有差异。",
+          "distance": "D3：零食时点的间接证据。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "late night dessert timing controlled trial human",
+        "late evening dessert snack meal composition sleep study randomized adults",
+        "late dinner randomized crossover 18:00 22:00 glucose PMID 32525525",
+        "evening carbohydrate snack real life continuous glucose monitoring 24 adults 36004426"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "未把晚餐和姜饼零食研究写成甜品直接证据；注明两项相邻研究的方向并不等于对所有夜食作统一结论。"
+      ]
+    },
+    "late-night-coffee": {
+      "name": "深夜咖啡",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "深夜咖啡",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在夜间或接近计划睡眠时饮用咖啡；咖啡因含量受豆种、萃取方式、杯量及是否脱咖啡因影响。",
+      "variables": "咖啡因毫克数、杯量和冲煮方式、饮用至就寝的间隔、个体敏感性、其他咖啡因来源及习惯性摄入。",
+      "composition": "咖啡主要提供水和咖啡因；加奶、糖浆或奶油会增加其他营养成分。无咖啡因咖啡通常仍可能含少量咖啡因。",
+      "direct": "针对24项研究的系统综述和荟萃分析发现，咖啡因平均与总睡眠时间减少45分钟、睡眠效率降低7%、入睡潜伏期延长9分钟相关；该分析的模型估算，107毫克咖啡因咖啡需在睡前约8.8小时以上饮用，以避免总睡眠时间下降。",
+      "specific": "8.8小时是群体研究模型估算，不是适用于每个人的医学界线；杯中咖啡因量有较大变化，荟萃分析也不只研究深夜咖啡。FDA指出，多数成年人每日400毫克通常不与负面影响相关，但个体敏感性、药物和疾病状态会改变反应。",
+      "safety": "查看咖啡因含量并把咖啡、茶、能量饮料及补充剂一并计入；若睡眠受影响，可观察减少剂量或提前饮用后的个人差异。孕期、特定疾病或药物使用时应依医疗专业人员意见调整。",
+      "refs": [
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101.",
+        "U.S. Food and Drug Administration. Spilling the Beans: How Much Caffeine is Too Much? https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+      ],
+      "body_refs": [
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101.",
+        "U.S. Food and Drug Administration. Spilling the Beans: How Much Caffeine is Too Much? https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与随机试验荟萃分析，纳入24项研究。",
+          "population": "研究对象为咖啡因与夜间睡眠研究中的成人。",
+          "exposure": "汇总咖啡因相对对照对睡眠时间、效率、入睡潜伏期和夜间清醒的影响。",
+          "result": "平均总睡眠时间减少45分钟，睡眠效率降低7%，入睡延长9分钟；剂量模型估算107毫克咖啡需距睡眠约8.8小时。",
+          "limits": "研究间咖啡因剂量、时点及受试者不同；估算不是个体处方，也非仅限咖啡研究。",
+          "distance": "D1/D3：咖啡因睡眠证据，咖啡场景迁移受剂量限制。"
+        },
+        {
+          "ref": 2,
+          "design": "美国FDA面向消费者的官方指导。",
+          "population": "一般消费者，分述多数成年人咖啡因摄入。",
+          "exposure": "汇总咖啡因摄入量和个体差异的安全信息。",
+          "result": "FDA称多数成年人每日400毫克通常不与负面影响相关，且反应受个体因素影响。",
+          "limits": "不是深夜咖啡试验；该数值不保证每个人无症状。",
+          "distance": "D3：咖啡因摄入背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "late night coffee caffeine sleep meta-analysis 24 studies 2023",
+        "coffee 107 mg 8.8 hours before bed caffeine meta analysis",
+        "FDA caffeine 400 mg daily most adults official",
+        "coffee timing sleep latency total sleep randomized evidence"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "保留模型估算和个人差异；没有把400毫克/日写成保证安全的个人上限。"
+      ]
+    },
+    "late-night-milk-tea": {
+      "name": "深夜奶茶",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "深夜奶茶",
+      "research_depth": "R2",
+      "shared_parent": "afternoon-and-night-scenes-base",
+      "identity": "在夜间或接近计划睡眠时饮用以茶、奶或奶替代品为基础的奶茶，可含糖浆、珍珠、奶盖及其他配料。",
+      "variables": "茶底及其咖啡因、杯量、甜度、糖浆、奶或替代品、珍珠和配料、距就寝时间。",
+      "composition": "奶茶是配方差异显著的复合饮品；咖啡因主要取决于茶底和份量，糖及能量也随甜度、奶盖和配料改变。",
+      "direct": "未检得针对深夜奶茶这一具体场景的直接人体试验。咖啡因睡眠系统综述纳入24项研究，汇总结果显示咖啡因与较短总睡眠时间、较低睡眠效率和较长入睡潜伏期相关；这仅支持对含咖啡因奶茶的邻近成分讨论。",
+      "specific": "该睡眠综述不是奶茶试验，也未测量门店奶茶的普遍咖啡因剂量。不同茶底、糖量、份量和加料差异大，不能由品名判断单杯咖啡因或糖含量。",
+      "safety": "查看店家提供的茶底、甜度、份量和咖啡因信息；若饮用时间靠近睡眠，可按个人反应选择小份、低甜或低咖啡因配方。对乳、坚果等过敏者应核对奶类替代品和配料。",
+      "refs": [
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101.",
+        "U.S. Food and Drug Administration. Spilling the Beans: How Much Caffeine is Too Much? https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+      ],
+      "body_refs": [
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101.",
+        "U.S. Food and Drug Administration. Spilling the Beans: How Much Caffeine is Too Much? https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与随机试验荟萃分析，纳入24项研究。",
+          "population": "咖啡因与成人夜间睡眠研究对象。",
+          "exposure": "汇总咖啡因对睡眠时间、睡眠效率和入睡潜伏期的影响。",
+          "result": "咖啡因平均与总睡眠时间减少45分钟、睡眠效率降低7%、入睡延长9分钟相关。",
+          "limits": "研究对象未限定奶茶；不能估算特定门店产品剂量或每个人的反应。",
+          "distance": "D3：茶中咖啡因可能涉及的成分背景。"
+        },
+        {
+          "ref": 2,
+          "design": "FDA官方消费者指导。",
+          "population": "一般咖啡因消费者。",
+          "exposure": "说明多数成年人每日摄入量的群体参考和个体差异。",
+          "result": "多数成年人每日400毫克通常不与负面影响相关，但个体反应会受健康状况、药物和敏感性影响。",
+          "limits": "不是奶茶组成调查或临床试验，也不为单杯含量提供数据。",
+          "distance": "D3：咖啡因摄入背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "late night milk tea caffeine sleep human trial",
+        "bubble tea milk tea caffeine amount tea base serving size study",
+        "caffeine subsequent sleep meta-analysis 2023 24 studies",
+        "FDA caffeine consumer guidance individual sensitivity"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "没有通用单杯奶茶咖啡因数据可支持时，直接写明产品信息未知，不以市场单品样本代表所有奶茶。"
+      ]
+    },
+    "office-nuts": {
+      "name": "办公室坚果",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "办公室坚果",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "在办公室工作时食用坚果或种子类零食；可能为原味或调味单品、混合坚果及分装小包。",
+      "variables": "坚果种类、份量、盐和糖、是否有果干或涂层、包装份量、过敏和共享接触。",
+      "composition": "坚果通常含不饱和脂肪、蛋白质和纤维，能量密度较高；盐焗、蜂蜜或混合果干配方的钠、糖和总能量不同。",
+      "direct": "一项4周随机平行试验纳入137名2型糖尿病风险较高成人，每日提供43克杏仁，安排与餐同食或上午/下午作零食；杏仁降低餐后葡萄糖反应，单独作零食时急性试验中的饥饿和进食欲望也较低。",
+      "specific": "在该4周研究中，各组体重和空腹血液指标无组间差异，且摄入者通过其他食物降低能量摄入。另一项16周随机试验中，每日2盎司杏仁未改变高HbA1c成人的血糖或HbA1c，但饮食质量评分改善；杏仁结果不能代替其他坚果或所有办公室份量。",
+      "safety": "按实际份量选择无盐或低盐产品，并查看混合食品中的糖和果干；共享坚果须考虑坚果过敏及交叉接触。美国FDA将树坚果和花生列为主要过敏原。",
+      "refs": [
+        "Tan SY, et al. Appetitive, dietary and health effects of almonds consumed with meals or as snacks: a randomized, controlled trial. Eur J Clin Nutr. 2013;67(11):1205-1214. DOI: https://doi.org/10.1038/ejcn.2013.184. PMID: 24084509.",
+        "Huang LC, Henderson GC, Mattes RD. Effects of daily almond consumption on glycaemia in adults with elevated risk for diabetes: a randomised controlled trial. Br J Nutr. 2024;132(10):1289-1299. DOI: https://doi.org/10.1017/S0007114524001053. PMID: 39431574.",
+        "U.S. Food and Drug Administration. Food Allergies. https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies"
+      ],
+      "body_refs": [
+        "Tan SY, et al. Appetitive, dietary and health effects of almonds consumed with meals or as snacks: a randomized, controlled trial. Eur J Clin Nutr. 2013;67(11):1205-1214. DOI: https://doi.org/10.1038/ejcn.2013.184. PMID: 24084509.",
+        "Huang LC, Henderson GC, Mattes RD. Effects of daily almond consumption on glycaemia in adults with elevated risk for diabetes: a randomised controlled trial. Br J Nutr. 2024;132(10):1289-1299. DOI: https://doi.org/10.1017/S0007114524001053. PMID: 39431574.",
+        "U.S. Food and Drug Administration. Food Allergies. https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "4周随机平行对照试验。",
+          "population": "137名2型糖尿病风险增加的成人。",
+          "exposure": "每日43克杏仁，安排早餐/午餐同食或上午/下午零食，并与不吃杏仁组比较。",
+          "result": "餐后血糖反应下降，零食组急性测试的饥饿和进食欲望降低；4周后体重和空腹血指标组间无差异。",
+          "limits": "具体为杏仁及较短试验；能量摄入补偿，不能推及任意坚果、长期结局或所有份量。",
+          "distance": "D1：杏仁零食证据。"
+        },
+        {
+          "ref": 2,
+          "design": "16周随机平行对照试验。",
+          "population": "81名HbA1c偏高成人。",
+          "exposure": "每日将2盎司生杏仁纳入自行选择饮食，与等能量零食比较。",
+          "result": "HbA1c、血糖及体重组间无显著差异；杏仁组饮食质量评分改善。",
+          "limits": "只测杏仁、特定人群和16周；不是办公室场景试验。",
+          "distance": "D1/D2：杏仁与日常零食比较。"
+        },
+        {
+          "ref": 3,
+          "design": "美国FDA官方食品过敏原资料。",
+          "population": "美国预包装食品消费者。",
+          "exposure": "说明主要过敏原标签和防止过敏原交叉接触的监管要求。",
+          "result": "树坚果及花生属于主要过敏原；FDA说明存在交叉接触风险。",
+          "limits": "监管范围有产品和销售场所例外；不研究办公室零食结果。",
+          "distance": "D3：过敏原安全背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "office nuts almonds snack randomized trial 43 g 137 adults PMID 24084509",
+        "almond 16 week randomized controlled trial HbA1c elevated risk adults PMID 39431574",
+        "nuts snack portion energy compensation workplace study",
+        "FDA tree nut peanut major food allergen cross contact"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "区分杏仁试验、一般坚果类名及办公室共享场景，不将杏仁结果直接外推到调味混合坚果。"
+      ]
+    },
+    "energy-bar-meal-replacement": {
+      "name": "能量棒代餐",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "能量棒代餐",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "将能量棒作为一餐的全部或主要替代品；本条不把普通零食棒、运动能量棒和有完整营养标示的代餐棒视为同一产品。",
+      "variables": "每条能量、蛋白质、膳食纤维、糖、脂肪、维生素矿物质、份量、替代哪一餐及饮用水或搭配食品。",
+      "composition": "能量棒可能以谷物、坚果、乳蛋白、植物蛋白、糖浆或纤维为主要成分；“能量棒”与“代餐”是用途不同的商品类别，需查标签。",
+      "direct": "一项随机对照临床试验纳入164名超重或肥胖成人，研究早餐谷物替代方案，其中两组配合营养棒；与对照组相比，介入组体重及部分围度下降更多。",
+      "specific": "该试验评估的是有饮食方案的早餐谷物替代组合，不是单独吃一根棒替代任意一餐。系统综述纳入23项、8253名成人的一年期代餐试验，研究间干预差异大，合并估计支持部分代餐方案，但不能证明任一商业棒营养完整或适合长期单独使用。",
+      "safety": "核对每份热量、蛋白质、纤维、糖及产品明确用途；若将其用于持续体重或疾病管理，结合整体饮食和专业建议评估营养充分性。不要把运动补给棒当作营养完整代餐。",
+      "refs": [
+        "Vander Wal JS, et al. Ready-to-eat cereal products as meal replacements for weight loss. Int J Food Sci Nutr. 2007;58(5):331-340. DOI: https://doi.org/10.1080/09637480701240802. PMID: 17558725.",
+        "Astbury NM, et al. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obes Rev. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816. PMID: 30675990."
+      ],
+      "body_refs": [
+        "Vander Wal JS, et al. Ready-to-eat cereal products as meal replacements for weight loss. Int J Food Sci Nutr. 2007;58(5):331-340. DOI: https://doi.org/10.1080/09637480701240802. PMID: 17558725.",
+        "Astbury NM, et al. A systematic review and meta-analysis of the effectiveness of meal replacements for weight loss. Obes Rev. 2019;20(4):569-587. DOI: https://doi.org/10.1111/obr.12816. PMID: 30675990."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照临床试验。",
+          "population": "164名18至65岁超重或肥胖成人。",
+          "exposure": "比较三种早餐谷物部分代餐方案，其中两组在替代组合中纳入营养棒，另设对照组。",
+          "result": "介入组体重、BMI及多个围度较对照下降更多；心血管风险指标、情绪和饱腹评分未见组间差异。",
+          "limits": "不是独立能量棒试验；含其他谷物替代、减重项目和特定商业产品。",
+          "distance": "D2：代餐组合中含营养棒的间接证据。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述与荟萃分析，纳入23项试验、8253名成人。",
+          "population": "超重或肥胖成人代餐减重项目。",
+          "exposure": "比较含部分代餐的减重干预与不含代餐的方案，关注一年体重变化。",
+          "result": "纳入研究中的代餐方案平均体重变化较对照更有利，合并比较的差异约1.44至3.87千克。",
+          "limits": "研究包括不同食品和支持方案；部分研究偏倚风险较高，且有研究者披露代餐企业资助；不能推及任一能量棒或单独一餐。",
+          "distance": "D2/D3：代餐方案背景，非特定棒产品证据。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "energy bar meal replacement randomized trial adults nutrient bar cereal 164 PMID 17558725",
+        "commercial meal replacement bars randomized trial 1 year systematic review 30675990",
+        "meal replacement bar nutritional adequacy protein fiber sugar study",
+        "food label difference energy bar snack bar meal replacement"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "把能量棒、运动棒与部分代餐项目区分；未找到单独能量棒替代餐的直接试验时明确写明。"
+      ]
+    },
+    "commute-coffee": {
+      "name": "通勤咖啡",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "通勤咖啡",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "在工作通勤前或途中饮用咖啡；通勤方式包括步行、骑行和驾驶，本条仅讨论咖啡与驾驶表现相关的邻近证据。",
+      "variables": "咖啡因剂量、饮用时点、通勤时长、睡眠不足、驾驶任务、交通条件及个体反应。",
+      "composition": "黑咖啡、含奶咖啡和加糖咖啡在咖啡因以外的组成不同；同一杯量也会因萃取方式改变咖啡因剂量。",
+      "direct": "一项24名健康成人参加的双盲交叉模拟高速公路驾驶试验，在两小时单调驾驶后给予约80毫克咖啡因咖啡或无咖啡因咖啡；含咖啡因咖啡组的车辆横向偏移和自评困倦在后续两小时较低。",
+      "specific": "模拟驾驶不是日常通勤试验。另一项仅有12名年轻男性的夜间公路试验观察到200毫克咖啡因咖啡改善夜间驾驶指标；这些结果不证明咖啡能消除疲劳或可安全驾驶，也不能推及所有通勤方式。",
+      "safety": "不要以咖啡代替睡眠或在明显困倦时继续驾驶；长途或夜间驾驶应安排休息并在安全地点停车。计入总咖啡因和睡前间隔，留意药物、心血管状况及个人敏感性。",
+      "refs": [
+        "De Valck E, et al. Effects of coffee on driving performance during prolonged simulated highway driving. Psychopharmacology (Berl). 2012;222(2):337-342. DOI: https://doi.org/10.1007/s00213-012-2647-7. PMID: 22315048.",
+        "Philip P, et al. The effects of coffee and napping on nighttime highway driving: a randomized trial. Ann Intern Med. 2006;144(11):785-791. DOI: https://doi.org/10.7326/0003-4819-144-11-200606060-00004. PMID: 16754920."
+      ],
+      "body_refs": [
+        "De Valck E, et al. Effects of coffee on driving performance during prolonged simulated highway driving. Psychopharmacology (Berl). 2012;222(2):337-342. DOI: https://doi.org/10.1007/s00213-012-2647-7. PMID: 22315048.",
+        "Philip P, et al. The effects of coffee and napping on nighttime highway driving: a randomized trial. Ann Intern Med. 2006;144(11):785-791. DOI: https://doi.org/10.7326/0003-4819-144-11-200606060-00004. PMID: 16754920."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲、安慰剂对照交叉模拟驾驶试验。",
+          "population": "24名健康、不缺觉的成人。",
+          "exposure": "连续模拟高速公路驾驶2小时后，在休息期间饮用含80毫克咖啡因咖啡或脱咖啡因咖啡，再驾驶2小时。",
+          "result": "含咖啡因咖啡组车辆横向位置变异、自评困倦和速度变异下降。",
+          "limits": "模拟高速公路任务，不是日常通勤或事故研究；样本小，不能推断驾驶者普遍获益。",
+          "distance": "D2：咖啡与驾驶任务的邻近证据。"
+        },
+        {
+          "ref": 2,
+          "design": "双盲随机交叉试验，真实开放道路夜间驾驶。",
+          "population": "12名年轻男性，平均约21岁。",
+          "exposure": "凌晨驾驶200公里前摄入200毫克咖啡因咖啡、脱咖啡因咖啡或小睡30分钟。",
+          "result": "咖啡组夜间不当压线指标较安慰剂低；研究只测试单一剂量。",
+          "limits": "夜间驾驶、年轻男性、小样本和极端任务，不等同日间通勤；咖啡不是消除疲劳的替代方式。",
+          "distance": "D2/D3：特定夜间驾驶背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "coffee driving randomized crossover 80 mg simulated highway 24 healthy adults PMID 22315048",
+        "coffee night highway driving 200 mg randomized crossover PMID 16754920",
+        "coffee commute workplace randomized trial commuter driving",
+        "caffeine sleep meta-analysis timing commute coffee"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "把模拟驾驶和夜间长途结果限定在研究任务内，未将其解释为所有通勤者的安全结论。"
+      ]
+    },
+    "meeting-snacks": {
+      "name": "会议零食",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "会议零食",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "工作会议中摆放或共同食用的零食，包括蔬菜、水果、坚果、饼干和糕点；本条关注可获得性与实际摄入。",
+      "variables": "食品种类、份量、摆放形式、是否单独分装、会议时长、与会人数和过敏原告知。",
+      "composition": "会议零食可从蔬果到甜咸加工食品不等；份量、营养成分和共享容器接触会影响实际摄入和安全。",
+      "direct": "荷兰医院及政府部门开展了三项工作会议现场试验。在提供蔬菜零食的会议中，人均平均食用74至87克；单人份条件的人均摄入97克，共享大碗条件为63克。",
+      "specific": "试验评估蔬菜的可获得性及摆放，不是所有会议零食的健康效果。额外提供饼干没有降低试验中蔬菜摄入；长期饮食变化和体重结局未测。",
+      "safety": "会议前确认参与者的过敏和饮食限制；标明食品成分并选择易于辨认的单人份。研究只支持特定场景下蔬菜供应和分装方式与摄入的关系。",
+      "refs": [
+        "Immink V, Kornelis M, Van Kleef E. Vegetable interventions at unconventional occasions: the effect of freely available snack vegetables at workplace meetings on consumption. Int J Workplace Health Manag. 2021;14(4):426-439. DOI: https://doi.org/10.1108/IJWHM-06-2020-0108.",
+        "Allan J, Querstret D, Banas K, de Bruin M. Environmental interventions for altering eating behaviours of employees in the workplace: a systematic review. Obes Rev. 2017;18(2):214-226. DOI: https://doi.org/10.1111/obr.12470. PMID: 27860169."
+      ],
+      "body_refs": [
+        "Immink V, Kornelis M, Van Kleef E. Vegetable interventions at unconventional occasions: the effect of freely available snack vegetables at workplace meetings on consumption. Int J Workplace Health Manag. 2021;14(4):426-439. DOI: https://doi.org/10.1108/IJWHM-06-2020-0108.",
+        "Allan J, Querstret D, Banas K, de Bruin M. Environmental interventions for altering eating behaviours of employees in the workplace: a systematic review. Obes Rev. 2017;18(2):214-226. DOI: https://doi.org/10.1111/obr.12470. PMID: 27860169."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "三项工作会议现场、组间试验。",
+          "population": "荷兰一所医院和三个政府部门的136、88及88场会议。",
+          "exposure": "免费供应蔬菜零食，并改变蔬菜种类提示、单人份/共享碗形式或是否另有饼干。",
+          "result": "每名参会者平均摄入约74至87克蔬菜；单人份约97克，共享碗约63克；饼干出现未改变蔬菜摄入。",
+          "limits": "不是会议零食总体比较；测量特定地区会议中的短期摄入，不报告长期健康结果。",
+          "distance": "D1：工作会议中蔬菜零食的直接情境证据。"
+        },
+        {
+          "ref": 2,
+          "design": "职场饮食环境干预系统综述。",
+          "population": "不同工作场所员工与干预研究。",
+          "exposure": "综述改变办公环境以影响员工饮食行为的研究。",
+          "result": "综述要求更严谨、报告充分并考虑代偿行为的研究，以判断饮食和体重结果。",
+          "limits": "干预类型和研究质量不一；并非会议零食的特定试验。",
+          "distance": "D3：职场饮食环境研究背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "workplace meeting snacks vegetables randomized field experiment 136 meetings 88 meetings DOI 10.1108/IJWHM-06-2020-0108",
+        "workplace meeting snack individual serving shared bowl vegetable intake",
+        "environmental interventions workplace eating systematic review compensation behaviors PMID 27860169",
+        "workplace meeting food allergens single portions food safety"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "将会议蔬菜实验的短期摄入与长期膳食结局分开陈述，并记录场景仅来自荷兰工作单位。"
+      ]
+    },
+    "bottled-meal-replacement": {
+      "name": "瓶装代餐",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "瓶装代餐",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "以即饮瓶装营养配方替代全部或部分一餐；普通蛋白饮料、奶昔、疾病特定配方和完整代餐不能仅凭包装形式视作同一产品。",
+      "variables": "产品用途声明、每瓶能量、蛋白质、糖、脂肪、纤维、维生素矿物质、饮用频率、替代餐次和贮存条件。",
+      "composition": "瓶装配方可由乳、植物蛋白、碳水化合物、油脂、纤维及微量营养素组成；单有蛋白质含量不能证明一瓶产品可作营养完整代餐。",
+      "direct": "一项2024年随机试验纳入235名2型糖尿病成人，比较糖尿病特定营养配方加标准照护与标准照护；第90天，前者HbA1c下降幅度较大且体重下降更多。",
+      "specific": "研究配方有特定营养组成，并与医疗标准照护共同实施；研究由配方生产商资助，且作者中有该公司研究人员；不能推及一般即饮奶昔。既往代餐荟萃分析汇总9项对照比较、961名超重/肥胖2型糖尿病成人，证据质量为低至中等，研究的是整体减重计划而非单瓶产品。",
+      "safety": "核对标签所列用途、份量、过敏原、储存和开封后处理；疾病特定配方和研究结果不替代医生或营养师制定的饮食方案。若产品仅标示蛋白饮料，不应默认其营养完整。",
+      "refs": [
+        "Tey SL, et al. Diabetes-specific formula with standard of care improves glycemic control, body composition, and cardiometabolic risk factors in overweight and obese adults with type 2 diabetes: results from a randomized controlled trial. Front Nutr. 2024;11:1400580. DOI: https://doi.org/10.3389/fnut.2024.1400580. PMID: 39077157.",
+        "Goldenberg JZ, et al. The Effect of Liquid Meal Replacements on Cardiometabolic Risk Factors in Overweight/Obese Individuals With Type 2 Diabetes: A Systematic Review and Meta-analysis of Randomized Controlled Trials. Diabetes Care. 2019;42(5):767-776. DOI: https://doi.org/10.2337/dc18-2270. PMID: 30923163."
+      ],
+      "body_refs": [
+        "Tey SL, et al. Diabetes-specific formula with standard of care improves glycemic control, body composition, and cardiometabolic risk factors in overweight and obese adults with type 2 diabetes: results from a randomized controlled trial. Front Nutr. 2024;11:1400580. DOI: https://doi.org/10.3389/fnut.2024.1400580. PMID: 39077157.",
+        "Goldenberg JZ, et al. The Effect of Liquid Meal Replacements on Cardiometabolic Risk Factors in Overweight/Obese Individuals With Type 2 Diabetes: A Systematic Review and Meta-analysis of Randomized Controlled Trials. Diabetes Care. 2019;42(5):767-776. DOI: https://doi.org/10.2337/dc18-2270. PMID: 30923163."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照试验。",
+          "population": "235名超重或肥胖2型糖尿病成人。",
+          "exposure": "糖尿病特定配方与标准照护联合，和标准照护单独比较，随访90天。",
+          "result": "配方组HbA1c改善较多且体重下降更多。",
+          "limits": "疾病特定产品与照护组合，研究获产品生产商资助且有公司研究人员参与；随访90天，不能外推到普通瓶装代餐或单独使用。",
+          "distance": "D1：特定瓶装营养配方的邻近证据。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述与随机对照试验荟萃分析。",
+          "population": "9项试验比较，共961名超重/肥胖2型糖尿病成人；中位随访24周。",
+          "exposure": "比较减重饮食中的液体代餐方案与传统减重饮食。",
+          "result": "代餐方案合并结果在体重、腰围及部分血糖指标上较有利；证据确定性低至中等。",
+          "limits": "评估的是完整减重计划，配方与照护各异，不代表任一即饮瓶或一般人群。",
+          "distance": "D2：液体代餐方案背景。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "ready to drink bottled meal replacement randomized trial diabetes formula 235 adults 90 days PMID 39077157",
+        "liquid meal replacement systematic review meta analysis 961 adults type 2 diabetes PMID 30923163",
+        "bottled nutrition shake meal replacement label nutritional completeness protein fiber vitamins",
+        "FDA packaged food allergens milk soy tree nuts labeling"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "明确疾病特定配方、一般奶昔与营养完整代餐的差别；实际 DOI 和引文须依已核对 PubMed/期刊记录。"
+      ]
+    },
+    "vending-machine-snacks": {
+      "name": "自动售货机零食",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "自动售货机零食",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "从办公室、医院或校园自动售货机购买的包装零食；售货机的位置和商品清单因机构而异。",
+      "variables": "商品可得性、价格、摆放、促销、购买者选择、包装份量和营养标签。",
+      "composition": "售货机可提供坚果、水果、饼干、糖果、薯片和饮料等商品；实际组成取决于机器补货，不能由机器类别推断单次摄入。",
+      "direct": "一项新西兰两所医院的比较研究在14台零食售货机上实施营养标准。干预后售出商品每100克的能量下降24%、总脂肪下降32%、饱和脂肪下降41%、总糖下降30%；销售量未受影响，员工满意度提高。",
+      "specific": "该研究是医院环境中的前后比较，不是随机个人饮食试验。高校售货机干预系统综述发现部分研究增加了健康商品销售，但研究集中于商品供应、价格与购买，不能证明对长期摄入或体重有效。",
+      "safety": "按营养标签和实际份量选择；留意饮料、零食和同一工作日其他摄入。机构可用商品标准及价格配置改变可选项，但现有研究不足以推断长期健康结局。",
+      "refs": [
+        "Gorton D, Carter J, Cvjetan B, Ni Mhurchu C. Healthier vending machines in workplaces: both possible and effective. N Z Med J. 2010;123(1311):43-52. PMID: 20360795.",
+        "Whatnall MC, Patterson AJ, Hutchesson MJ. Effectiveness of Nutrition Interventions in Vending Machines to Encourage the Purchase and Consumption of Healthier Food and Drinks in the University Setting: A Systematic Review. Nutrients. 2020;12(3):876. DOI: https://doi.org/10.3390/nu12030876. PMID: 32213973."
+      ],
+      "body_refs": [
+        "Gorton D, Carter J, Cvjetan B, Ni Mhurchu C. Healthier vending machines in workplaces: both possible and effective. N Z Med J. 2010;123(1311):43-52. PMID: 20360795.",
+        "Whatnall MC, Patterson AJ, Hutchesson MJ. Effectiveness of Nutrition Interventions in Vending Machines to Encourage the Purchase and Consumption of Healthier Food and Drinks in the University Setting: A Systematic Review. Nutrients. 2020;12(3):876. DOI: https://doi.org/10.3390/nu12030876. PMID: 32213973."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两家医院的工作场所售货机前后比较研究。",
+          "population": "新西兰奥克兰两处医院的14台零食售货机及员工。",
+          "exposure": "按营养标准调整售货商品；比较干预前后销售商品组成与员工满意度。",
+          "result": "售出食品每100克能量下降24%、脂肪32%、饱和脂肪41%、糖30%；销售量无明显变化，满意度提高。",
+          "limits": "非随机个体试验，仅两所医院；商品每100克组成不是个人实际摄入或长期健康结局。",
+          "distance": "D1：医院售货机环境干预。"
+        },
+        {
+          "ref": 2,
+          "design": "大学环境售货机营养干预系统综述。",
+          "population": "高校售货机研究，纳入13项研究。",
+          "exposure": "评估供应、价格、摆放和促销等干预对购买或消费的影响。",
+          "result": "部分研究报告健康选项销售增加，较常见有效策略为增加可得性和降价。",
+          "limits": "研究设计与偏倚风险不同，长期摄入与体重结果有限；不代表办公室或所有自动售货机。",
+          "distance": "D2：售货机购买行为综述。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "workplace vending healthier product guidelines 14 machines hospital sales nutrient 20360795",
+        "university vending machine nutrition intervention systematic review 2020 PMC7146342",
+        "vending machine healthier foods sales price placement randomized trial",
+        "workplace food vending nutrition content consumer behavior long term outcomes"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "分别呈现商品供应、销售组成和个人长期饮食结果；不把每100克营养变化当成实际摄入变化。"
+      ]
+    },
+    "pre-workout-coffee": {
+      "name": "训练前咖啡",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "训练前咖啡",
+      "research_depth": "R2",
+      "shared_parent": "office-and-fitness-scenes-base",
+      "identity": "在运动训练前饮用咖啡，通常意在摄入咖啡因；咖啡因剂量受杯量和制作方法影响，本条不等同于多成分训练前补剂。",
+      "variables": "咖啡因剂量和体重、饮用时点、运动种类、训练经验、习惯性摄入、睡前间隔、糖奶配料及个人耐受。",
+      "composition": "咖啡含咖啡因和其他咖啡成分；是否加糖奶会改变饮食组成。不同咖啡与纯咖啡因不能仅按杯数作等剂量比较。",
+      "direct": "国际运动营养学会立场文件总结，咖啡因补充在许多但非全部研究中可急性改善部分运动表现，常见研究剂量为每公斤体重3至6毫克。一项随机交叉试验中，9名受训男性进行抗阻运动，咖啡和脱咖啡因咖啡加咖啡因在部分测试中改善表现。",
+      "specific": "训练反应因运动类型和个人差异而变。9人试验样本很小且仅研究男性；运动营养立场文件讨论的是咖啡因，不证明普通一杯咖啡在任何训练、任何剂量下都有效。咖啡因可能影响之后睡眠。",
+      "safety": "先核对咖啡实际咖啡因含量，避免和训练前补剂、能量饮料重复摄入；根据训练时点和睡眠安排选择剂量。对咖啡因敏感或有相关疾病、用药者应谨慎，出现心悸等不适时停止并求助专业人员。",
+      "refs": [
+        "Guest NS, et al. International society of sports nutrition position stand: caffeine and exercise performance. J Int Soc Sports Nutr. 2021;18:1. DOI: https://doi.org/10.1186/s12970-020-00383-4. PMID: 33388079.",
+        "Richardson DL, Clarke ND. Effect of Coffee and Caffeine Ingestion on Resistance Exercise Performance. J Strength Cond Res. 2016;30(10):2892-2900. DOI: https://doi.org/10.1519/JSC.0000000000001382. PMID: 26890974.",
+        "Harty PS, et al. Caffeine Timing Improves Lower-Body Muscular Performance: A Randomized Trial. Front Nutr. 2020;7:585900. DOI: https://doi.org/10.3389/fnut.2020.585900. PMID: 33330586.",
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101."
+      ],
+      "body_refs": [
+        "Guest NS, et al. International society of sports nutrition position stand: caffeine and exercise performance. J Int Soc Sports Nutr. 2021;18:1. DOI: https://doi.org/10.1186/s12970-020-00383-4. PMID: 33388079.",
+        "Richardson DL, Clarke ND. Effect of Coffee and Caffeine Ingestion on Resistance Exercise Performance. J Strength Cond Res. 2016;30(10):2892-2900. DOI: https://doi.org/10.1519/JSC.0000000000001382. PMID: 26890974.",
+        "Harty PS, et al. Caffeine Timing Improves Lower-Body Muscular Performance: A Randomized Trial. Front Nutr. 2020;7:585900. DOI: https://doi.org/10.3389/fnut.2020.585900. PMID: 33330586.",
+        "Gardiner C, et al. The effect of caffeine on subsequent sleep: A systematic review and meta-analysis. Sleep Med Rev. 2023;69:101764. DOI: https://doi.org/10.1016/j.smrv.2023.101764. PMID: 36870101."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "国际运动营养学会立场文件。",
+          "population": "综合不同运动项目与成人咖啡因研究。",
+          "exposure": "评估运动前咖啡因补充与急性表现。",
+          "result": "文件总结咖啡因对许多但非全部试验的运动表现有急性帮助，常见研究剂量3至6毫克/公斤体重。",
+          "limits": "是咖啡因而非咖啡专属研究；剂量和效果存在个体差异，作者披露中包含行业联系。",
+          "distance": "D3：训练前咖啡因背景。"
+        },
+        {
+          "ref": 2,
+          "design": "随机对照交叉试验。",
+          "population": "9名受训男性。",
+          "exposure": "比较咖啡、脱咖啡因咖啡、咖啡因和安慰剂条件下的深蹲与卧推力竭次数。",
+          "result": "含咖啡因咖啡及脱咖啡因咖啡加咖啡因在部分抗阻表现指标上优于对照。",
+          "limits": "样本很小、只研究男性和单项训练协议；效果未必出现在多组训练或其他运动。",
+          "distance": "D1：咖啡训练前的小样本直接证据。"
+        },
+        {
+          "ref": 3,
+          "design": "随机、双盲、安慰剂对照交叉试验。",
+          "population": "29名健康、有抗阻训练经验的男女。",
+          "exposure": "比较运动前2小时、1小时或30分钟摄入6毫克/公斤咖啡因，与安慰剂下肢力量表现。",
+          "result": "在若干绝对力量和跳跃指标中，1小时前条件较一致地改善部分表现。",
+          "limits": "测试的是咖啡因溶液，不是咖啡；剂量高于一杯常见咖啡，项目和人群有限。",
+          "distance": "D3：摄入时间的咖啡因证据。"
+        },
+        {
+          "ref": 4,
+          "design": "系统综述与随机试验荟萃分析。",
+          "population": "咖啡因与夜间睡眠研究中的成人。",
+          "exposure": "分析咖啡因剂量与摄入时间对睡眠影响。",
+          "result": "汇总结果显示咖啡因与总睡眠减少、入睡延长及睡眠效率降低相关。",
+          "limits": "非运动前咖啡专门研究；群体平均值不代表每个人。",
+          "distance": "D3：训练时间需考虑睡眠的间接证据。"
+        }
+      ],
+      "unknowns": "该目录场景本身的长期、代表性人体比较研究；不同配方、份量、地区和人群下的结果，以及行为干预是否产生代偿。",
+      "tradition": "本条是现代饮食组合或进食场景。本轮未发现能把该具体组合与古籍条目直接对应的材料；单种食材的传统记载不转写为组合成品的药性或疗效。",
+      "queries": [
+        "pre exercise coffee resistance training randomized trial 9 men PMID 26890974",
+        "ISSN position stand caffeine exercise performance 3 to 6 mg kg PMID 33388079",
+        "caffeine timing 1 hour pre exercise randomized trial 29 trained adults PMID 33330586",
+        "caffeine exercise evening sleep meta-analysis 2023"
+      ],
+      "search_log": [
+        "检索该时间、地点或食品组合的直接人体研究，并界定与相邻场景的差异。",
+        "核对原研究题名、设计、人群、实际食品/剂量、结局和随访时间。",
+        "区分急性餐后指标、产品组成、选择行为和长期临床结局。",
+        "区分咖啡因补充证据和咖啡饮料直接证据；保留小样本、剂量及作者利益关系限制。"
+      ]
+    }
+  }
+}
