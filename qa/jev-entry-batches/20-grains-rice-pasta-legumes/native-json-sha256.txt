@@ -1,0 +1,10 @@
+a244877b466dcdb356e01db6726aa2c778e9c1410252f30b1c2b554ca118a366  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/quinoa.json
+8b7e8e2f9ed94a19c144bc051e62145c2db2b77214133f66d5f31f40d5bf8d0b  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/oat-groats.json
+e5975935ce7b2b6657314cc2165ae1fc126a106ca0533ce613b5e2fd940666b8  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/buckwheat-noodles.json
+e1e8191d050d67d2f29bc43453ab772723437af5aa8f914a5ed00ad235cef07d  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/whole-wheat-pasta.json
+b1de26fc2fe833c566ccf7b30577be41405d0cd1019494156cb2031638dcc3d6  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/brown-rice.json
+3dda03488dcbda287280971f41d1fdde34d7ba88799042587488f4858e20e6e4  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/mixed-grain-rice.json
+10879768b13a3d13f83c2199f9935e507eeff0d4f7f8ad0fe113bfb0ff1e7d15  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/hummus.json
+db8bb347f8bd1bfdda7d44dc497c06d1dd2c955de51207e569ff666e038ed268  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/chickpea-pasta.json
+b36d39c9cb5a5f053f736ea89451d41b092d447dcf7c10f7e23aaf3be399631d  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/italian-pasta.json
+5509e21cba9c51ebc8a4a01266ec075da1aa26a1ccd1ab2f9278407a0643d6e7  qa/jev-entry-batches/20-grains-rice-pasta-legumes/raw/udon.json
