@@ -1,0 +1,10 @@
+d230e8df4c8fbff6052d56f2f7072d19df5f49e936ffcd34b3783a9c6296187e  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/ham-sausage.json
+0350e609ad290a4c160682b637633a7dff16b3e6cf27f4b3493cc30791686a9c  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/luncheon-meat.json
+0c8d4f01a3f49cf0a027032ea2ccfa6b22d1f302dddd590355b8f009d00dab38  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/bacon.json
+207d97ed491ff192e30f2c7701864535e6bdf087e5a19ed3560d5206b88b2b42  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/pork-floss.json
+9010ea34fa9df90e77e5230cdcd618991e3c8106c26ac68de52117647c89a17c  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/latiao.json
+7f5044dfe136e5f647ba7972fcecf313c01b6b8e009c8d90993914301cf7b6c9  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/konjac-snack.json
+89798df1520366389f10706ea6c62f6befc1a96aa5b0447054668173206ec336  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/seasoned-dried-tofu.json
+e1b7e2fc0fb2c89520969c62b3a87b9e61d496b3273c736c5e12b1eba9183797  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/lo-mei-snacks.json
+57c8992e2739bbd8f9a34ea1b68e922c6ceb3b46f64ef9d245b2fe419a53b901  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/duck-neck.json
+0ce664fc9398fdfd06f89eb3f76019ecdee209adb16e11e9d59d111bd669002e  qa/jev-entry-batches/24-processed-meat-chinese-snacks/raw/boneless-chicken-feet.json
