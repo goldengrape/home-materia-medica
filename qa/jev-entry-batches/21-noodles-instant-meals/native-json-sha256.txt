@@ -1,0 +1,10 @@
+63400343f5ff9fdfa2c06e68d3bfae0eb48cf8b0a6fb22d695a25cb622527ac1  qa/jev-entry-batches/21-noodles-instant-meals/raw/ramen.json
+6e195851f9ec741b5d24eb66a814dad4030329b9cb5ca2144e7557e68f647480  qa/jev-entry-batches/21-noodles-instant-meals/raw/chilled-soba.json
+fbcbd3955af16420d21ffc2f933da0626e1b79d7f2032ad60fc1f214e7531610  qa/jev-entry-batches/21-noodles-instant-meals/raw/rice-vermicelli.json
+435dd1d60683815088fde534063b5db8e18e64863adf47b7bd7528fb13c2381a  qa/jev-entry-batches/21-noodles-instant-meals/raw/ho-fun.json
+259bdc5a8e2cf8c566d0ad339818e0c53e4a536667ad419d62cafbac0337a258  qa/jev-entry-batches/21-noodles-instant-meals/raw/luosifen.json
+4ae964797955ca7985612ed3c9f6d61bda82c1c5b04e0880840172fae33e66c7  qa/jev-entry-batches/21-noodles-instant-meals/raw/hot-sour-vermicelli.json
+a87a2b984a896a523c0055ad255b4b44726bfb67e71b9e16263a28d272d9c160  qa/jev-entry-batches/21-noodles-instant-meals/raw/instant-vermicelli.json
+eec89eb0f31b0361ce912e76f756bf308794ed8952abcaf21b4e770060f5d7ec  qa/jev-entry-batches/21-noodles-instant-meals/raw/instant-noodles.json
+6646670711f9d24be0551d8dcaa1a90b4ac332482a53526ef3843931a57b4b76  qa/jev-entry-batches/21-noodles-instant-meals/raw/cup-noodles.json
+ea5bacc062cfe8ed6e39711d46bc798155cdd1cac92c3a95fa9645bedc68222c  qa/jev-entry-batches/21-noodles-instant-meals/raw/self-heating-rice.json

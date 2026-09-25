@@ -1,17 +1,18 @@
 # 方便面
 
-面饼、调味包和最后留在碗里的汤，合起来才是一餐方便面。油炸与非油炸面饼、汤面与干拌、放多少调味料、是否喝汤，都会改变吃进去的钠和脂肪；再加蛋、肉或菜，整餐也会不同。
+方便面市场资料显示钠含量随国家和品牌差异很大：10国765款产品分析中，中国样本均值为1944毫克/100克。韩国6440名成年人的横断面调查发现方便面消费者平均摄入更多能量、脂肪和钠，但这类调查不能证明因果，也不能代表每个品牌。应按实际面饼和调料用量看包装营养。
 
-产品检测使钠和配方差异比较容易看清；有些非油炸产品的脂肪较低。韩国多项调查发现，高频食用方便面与代谢综合征或部分代谢指标存在关联（E-C，关联）。这些研究大多是横断面，饮食整体、生活方式与反向因果难排除，因此不能写成“方便面导致代谢综合征”（E-0）。一般面条或单一营养素的研究也不能替代方便面这一复合食品。
+方便面的直接长期干预证据有限；市场营养调查及横断面摄入调查只能描述产品和人群差异，不能证明疾病因果。
 
-**本草按。** 传统麦面、油盐与辣味调料不能机械相加为现代方便面的性味。Jev 在这份说明文档中选平，咸味分数只是模型的感官倾向；四气及归经的可追溯映射仍为 M-0。油炸、辣汤或吃后口渴是具体配方和服食条件，不足以给所有方便面固定“燥热”“伤脾胃”的称谓。
+**安全与选择。** 比较整包的钠、能量和饱和脂肪；按需减少调料或汤汁时仍以实际标签和使用量为准。
 
-需要留意钠时，可以从包装标示、调味包用量和汤汁入手。长期把方便面当唯一主餐的营养完整性，还取决于有没有其他食物搭配。
+**本草按。** Jev v0.4 的四气 Choice 为**平**（原生倾向分数 0.99；Choice confidence 0.98），该项 M：M-0。五味原生分数靠前的是咸 0.30、甘 0.09；感官类推标为（各味 M-0）。最高归经 Noul 为脾 0.09，完整方向结果见 Mapping 与 raw JSON。模型分数不是现实世界概率，也不能推成临床效应。
 
-研究底稿：[research.md](../references/entries/instant-noodles/research.md) · 分类与 M 记录：[mapping.md](../references/entries/instant-noodles/mapping.md)。
+现代包装方便面是工业加工食品，不以小麦条目推断其复合产品效果。
+
+研究底稿：[research.md](../references/entries/instant-noodles/research.md) · 冻结摘要：[summary.md](../references/entries/instant-noodles/summary.md) · Jev 与 M 记录：[mapping.md](../references/entries/instant-noodles/mapping.md)。
 
 **参考文献**
 
-1. Shin HJ, et al. “Instant noodle intake and dietary patterns are associated with distinct cardiometabolic risk factors in Korea.” *The Journal of Nutrition*. 2014;144(8):1247–1255. [doi:10.3945/jn.113.188441](https://doi.org/10.3945/jn.113.188441)
-2. Jang E, et al. “Short-Term Effect of Convenience Meal Intake on Glycemic Response and Satiety among Healthy College Students in South Korea.” *Clinical Nutrition Research*. 2017;6(3):215–220. [doi:10.7762/cnr.2017.6.3.215](https://doi.org/10.7762/cnr.2017.6.3.215)
-3. Hong Kong Centre for Food Safety. “Instant Noodles.” [官方资料](https://www.cfs.gov.hk/english/programme/programme_nifl/programme_nifl_Joint_Feature_Articles_01_instant_noodles.html).
+1. Farrand C, Charlton K, Crino M, Santos JA, Rodríguez-Fernández R, Ní Mhurchú C, et al. ‘Know Your Noodles! Assessing Variations in Sodium Content of Instant Noodles across Countries.’ Nutrients. 2017;9(6):612. DOI: https://doi.org/10.3390/nu9060612.
+2. Park J, Lee JS, Jang YA, Chung HR, Kim J. ‘A comparison of food and nutrient intake between instant noodle consumers and non-instant noodle consumers in Korean adults.’ Nutrition Research and Practice. 2011;5(5):443–449. DOI: https://doi.org/10.4162/nrp.2011.5.5.443.
