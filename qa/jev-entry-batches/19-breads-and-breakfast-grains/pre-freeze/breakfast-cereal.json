@@ -1,0 +1,10 @@
+{
+  "batch_id": "19-breads-and-breakfast-grains",
+  "entry_id": "breakfast-cereal",
+  "summary_ref": "references/entries/breakfast-cereal/summary.md",
+  "summary_sha256": "ff84ab8bee15527b67da93186f395b69b48f7c52196fb53b10074f67b5b37ec2",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 早餐谷物\r\n\r\n**身份。** 本条指开袋即食或需简单加热、通常与牛奶或植物饮料同食的早餐谷物类别，包括片状、膨化和燕麦型产品。谷物原料、糖、纤维、盐和份量没有统一标准。\r\n\r\n**组成与暴露。** 类别内配方差异大；添加糖、纤维、钠、蛋白质与能量应按具体品牌标签评估。 **关键变量：** 谷物种类及精制度、压片或膨化工艺、添加糖和盐、强化营养素、份量、配奶与水果。\r\n\r\n**直接人体证据。** 一项48名健康成人参加的随机交叉试验比较即食燕麦谷物Honey Nut Cheerios与即食燕麦粥。两种等能早餐含牛奶，4小时后供应午餐；燕麦粥组报告更高饱腹感并在午餐摄入较少能量。结果只适用于所测产品和早餐，不能代表全部早餐谷物。\r\n\r\n**产品/成分证据。** 这是单日比较即食谷物与燕麦粥的研究，产品的纤维、黏度和组成不同；不能单独证明早餐谷物类别会增加或降低体重。\r\n\r\n**共享背景。** 参见 bread-breakfast-cereal-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 查看过敏原、添加糖、钠和营养强化信息；加入牛奶、饮料、糖或水果后应按整餐计算。\r\n\r\n**传统来源。** 传统母条索引列有小麦、玉米等谷物，但未列现代即食早餐谷物类别；原粮材料不等同加工商品。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

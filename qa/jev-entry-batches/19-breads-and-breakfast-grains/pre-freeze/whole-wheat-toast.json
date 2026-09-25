@@ -1,0 +1,10 @@
+{
+  "batch_id": "19-breads-and-breakfast-grains",
+  "entry_id": "whole-wheat-toast",
+  "summary_ref": "references/entries/whole-wheat-toast/summary.md",
+  "summary_sha256": "f26b7f26da3d204e12c038dcecedee370f00b6c2474a53a65a2173ceb8df5265",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 全麦吐司\r\n\r\n**身份。** 本条指以全麦小麦粉或全谷物小麦为主制成、切片并烘烤的面包。标签中的“多谷物”或“麦香”不自动代表全麦；普通全麦面包卷与吐司也分开描述。\r\n\r\n**组成与暴露。** 膳食纤维与可利用碳水依全麦粉比例和配方变化；标签及商品名称需分别核实。 **关键变量：** 全麦粉比例、精制粉比例、种子和糖油添加、切片厚度、烘烤程度、份量及同餐食物。\r\n\r\n**直接人体证据。** 本轮未检得全麦吐司本身的临床试验。一项19名健康成人的随机交叉试验比较全麦面粉面包卷与精制小麦面包卷；每份提供50 g可利用碳水，全麦卷的GI和餐后血糖指标较低。该试验未测试吐司，结果只能作为邻近面包证据。\r\n\r\n**产品/成分证据。** 一项22名健康成人的面包随机交叉研究比较了西班牙几种白面包和全麦面包，显示不同制作工艺的GI有差异；这些样品不是全麦吐司，也不能代表所有全麦标签产品。\r\n\r\n**共享背景。** 参见 bread-breakfast-cereal-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 小麦过敏或需避免麸质者应核对配料；“全麦”标签不表示不含麸质。\r\n\r\n**传统来源。** 传统母条索引列有小麦；全麦粉和现代预切片吐司的加工品身份分别处理。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
