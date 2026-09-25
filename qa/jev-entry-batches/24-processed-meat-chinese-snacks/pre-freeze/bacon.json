@@ -1,0 +1,10 @@
+{
+  "batch_id": "24-processed-meat-chinese-snacks",
+  "entry_id": "bacon",
+  "summary_ref": "references/entries/bacon/summary.md",
+  "summary_sha256": "5e07cab143143d6cb399298dd1da63debbdb1370c33d772acbde2c9865cd45de",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 培根\r\n\r\n**身份。** 以猪肉腌制并常经烟熏、熟制或切片销售的加工肉；鲜猪肉和中式腊肉另列。\r\n\r\n**组成与暴露。** 肉、脂肪和腌制配料依商品而异；烹调会改变脂肪和加工产物暴露。 **关键变量：** 肉部位、腌制盐和亚硝酸盐、烟熏、脂肪、煎烤方式和份量。\r\n\r\n**直接人体证据。** 一项美国女性前瞻队列中，基线培根摄入较高者结直肠癌风险较高；该研究是观察性关联，不证明因果。\r\n\r\n**产品/成分证据。** Sister Study纳入48,704名35–74岁女性，中位随访8.7年、216例结直肠癌；培根最高摄入四分位相较最低四分位HR为1.46（95% CI 1.01–2.11）。\r\n\r\n**共享背景。** 参见 processed-meat-chinese-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 按加工肉看待并控制食用频率和份量；结合具体钠、脂肪标签及烹调方式判断。\r\n\r\n**传统来源。** 现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

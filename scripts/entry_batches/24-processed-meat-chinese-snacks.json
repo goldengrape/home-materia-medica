@@ -1,0 +1,559 @@
+{
+  "batch": {
+    "id": "24-processed-meat-chinese-snacks",
+    "title": "加工肉制品与中国特色零食",
+    "catalog_order": 24,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; government consumer testing and regulatory sources",
+    "web_search_calls": 5,
+    "web_search_queries": 20,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-24-processed-meat-chinese-snacks",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "火腿肠、罐头香肠和午餐肉是不同产品，近邻抽检须标明。",
+      "培根队列结果是女性观察性关联，不证明因果。",
+      "肉松零售抽样与实验肉松加工研究分别报告商品成分及工艺指标。",
+      "辣条官方分类是调味面制品，标签样本不是所有辣条检测值。",
+      "魔芋胶添加剂评估不等于魔芋爽成品研究。",
+      "豆制品整体钠含量不能代替调味豆干零食。",
+      "卤味盐度或熟食微生物研究不能代表全部包装卤味零食。",
+      "鸭脖保存剂研究仅测无锡四品牌，且年代较早。",
+      "无骨凤爪召回通报针对单品单批次；盐水鸡爪近似研究另行标明。"
+    ],
+    "citation_audit_revision": "rev-1: preserve product identity, geography, sample size, batch, exposure and study design boundaries."
+  },
+  "entries": {
+    "ham-sausage": {
+      "id": "ham-sausage",
+      "name": "火腿肠",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "processed_sausage",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以肉类、淀粉和调味配料制成并灌装熟制的常见即食肠类；广式腊肠、午餐肉和其他香肠另列。",
+      "variables": "肉种和比例、淀粉、钠、脂肪、添加剂、肠衣及每份重量。",
+      "composition": "商品配方可同时含肉、淀粉、油脂、盐和其他调味或加工配料，不能按纯肉计算。",
+      "direct": "未检得中国式火腿肠专属人体临床研究。",
+      "specific": "香港食安中心对一款中国产预包装腌制香肠抽检，钠实测1700 mg/100g，标签标示1050 mg/100g；这一结果只针对被抽检批次。香港消费者委员会另测试25款午餐肉和8款罐头香肠，后者钠为707–851 mg/100g，与火腿肠不是同一产品。",
+      "body": "未检得中国式火腿肠专属人体临床研究。 香港食安中心对一款中国产预包装腌制香肠抽检，钠实测1700 mg/100g，标签标示1050 mg/100g；这一结果只针对被抽检批次。香港消费者委员会另测试25款午餐肉和8款罐头香肠，后者钠为707–851 mg/100g，与火腿肠不是同一产品。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "查看配料、每份钠和脂肪；抽检中的单一标签差异不能推定所有品牌。",
+      "safety": "查看配料、每份钠和脂肪；抽检中的单一标签差异不能推定所有品牌。",
+      "taste_m": {},
+      "refs": [
+        "Centre for Food Safety, Hong Kong. Prepackaged preserved sausage not in compliance with nutrition label rules. 2023-12-07. https://www.cfs.gov.hk/english/unsat_samples/20231207_10687.html.",
+        "Consumer Council, Hong Kong. Luncheon Meat and Sausages with High Sodium Contents are Harmful; Veterinary Drug Residues Found in 1 Sample. 2017-06-15. https://www.consumer.org.hk/en/press-release/488-luncheon-meats-and-sausages."
+      ],
+      "body_refs": [
+        "Centre for Food Safety, Hong Kong. Prepackaged preserved sausage not in compliance with nutrition label rules. 2023-12-07. https://www.cfs.gov.hk/english/unsat_samples/20231207_10687.html.",
+        "Consumer Council, Hong Kong. Luncheon Meat and Sausages with High Sodium Contents are Harmful; Veterinary Drug Residues Found in 1 Sample. 2017-06-15. https://www.consumer.org.hk/en/press-release/488-luncheon-meats-and-sausages."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "监管机构对单一零售样品进行营养标签核验。",
+          "population": "香港零售市场一款中国产预包装腌制香肠。",
+          "exposure": "比较样品实测钠和包装标示值。",
+          "result": "钠实测1700 mg/100g，标签标示1050 mg/100g。",
+          "limits": "单一品牌和批次，不能估计火腿肠总体标签误差或健康效果。",
+          "distance": "D1：相近预包装肉肠的单品检测。"
+        },
+        {
+          "ref": 2,
+          "design": "消费者机构对商品营养标签和钠含量抽检。",
+          "population": "香港市场25款午餐肉与8款罐头香肠。",
+          "exposure": "各商品钠含量和标签值。",
+          "result": "罐头香肠钠为707–851 mg/100g；午餐肉均值718 mg/100g。",
+          "limits": "罐头香肠及午餐肉并非火腿肠；只适用于被抽检样品。",
+          "distance": "D2：近邻肉肠产品标签数据。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "Chinese ham sausage human study health outcomes",
+        "火腿肠 钠含量 标签 抽检 火腿肠 sodium survey China"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "luncheon-meat": {
+      "id": "luncheon-meat",
+      "name": "午餐肉",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "canned_meat",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以碎肉或肉糜为主要原料罐装熟制的即食肉品；火腿肠、肉松和新鲜熟肉不在本条范围。",
+      "variables": "肉种、脂肪、盐、亚硝酸盐、罐头规格、每份重量及加热方式。",
+      "composition": "含肉、脂肪、钠和加工配料；不同品牌钠与脂肪可有明显差别。",
+      "direct": "未检得午餐肉单品人体试验。",
+      "specific": "香港消费者委员会检测25款午餐肉，钠为517–1180 mg/100g，均值718 mg/100g；一款样品检出磺胺嘧啶199.3 μg/kg。",
+      "body": "未检得午餐肉单品人体试验。 香港消费者委员会检测25款午餐肉，钠为517–1180 mg/100g，均值718 mg/100g；一款样品检出磺胺嘧啶199.3 μg/kg。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "比较每份钠和脂肪；留意实际份量和标签，不把单款残留结果外推到全部午餐肉。",
+      "safety": "比较每份钠和脂肪；留意实际份量和标签，不把单款残留结果外推到全部午餐肉。",
+      "taste_m": {},
+      "refs": [
+        "Consumer Council, Hong Kong. Luncheon Meat and Sausages with High Sodium Contents are Harmful; Veterinary Drug Residues Found in 1 Sample. 2017-06-15. https://www.consumer.org.hk/en/press-release/488-luncheon-meats-and-sausages."
+      ],
+      "body_refs": [
+        "Consumer Council, Hong Kong. Luncheon Meat and Sausages with High Sodium Contents are Harmful; Veterinary Drug Residues Found in 1 Sample. 2017-06-15. https://www.consumer.org.hk/en/press-release/488-luncheon-meats-and-sausages."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港消费者机构商品营养和安全抽检。",
+          "population": "香港市场25款午餐肉样品。",
+          "exposure": "钠含量、亚硝酸盐和兽药残留检测。",
+          "result": "钠为517–1180 mg/100g，均值718 mg/100g；一款样品检出磺胺嘧啶199.3 μg/kg。",
+          "limits": "区域市场和有限商品；未测人体健康结局，单一残留阳性不能代表品类。",
+          "distance": "D0：午餐肉商品样品检测。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "luncheon meat human clinical health outcomes trial",
+        "Hong Kong Consumer Council luncheon meat 25 samples sodium 718 mg 2017"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "bacon": {
+      "id": "bacon",
+      "name": "培根",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "cured_meat",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以猪肉腌制并常经烟熏、熟制或切片销售的加工肉；鲜猪肉和中式腊肉另列。",
+      "variables": "肉部位、腌制盐和亚硝酸盐、烟熏、脂肪、煎烤方式和份量。",
+      "composition": "肉、脂肪和腌制配料依商品而异；烹调会改变脂肪和加工产物暴露。",
+      "direct": "一项美国女性前瞻队列中，基线培根摄入较高者结直肠癌风险较高；该研究是观察性关联，不证明因果。",
+      "specific": "Sister Study纳入48,704名35–74岁女性，中位随访8.7年、216例结直肠癌；培根最高摄入四分位相较最低四分位HR为1.46（95% CI 1.01–2.11）。",
+      "body": "一项美国女性前瞻队列中，基线培根摄入较高者结直肠癌风险较高；该研究是观察性关联，不证明因果。 Sister Study纳入48,704名35–74岁女性，中位随访8.7年、216例结直肠癌；培根最高摄入四分位相较最低四分位HR为1.46（95% CI 1.01–2.11）。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "按加工肉看待并控制食用频率和份量；结合具体钠、脂肪标签及烹调方式判断。",
+      "safety": "按加工肉看待并控制食用频率和份量；结合具体钠、脂肪标签及烹调方式判断。",
+      "taste_m": {},
+      "refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459."
+      ],
+      "body_refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "前瞻性观察队列，按基线自填饮食问卷分析并随访。",
+          "population": "48,704名美国及波多黎各35–74岁女性；中位随访8.7年，216例结直肠癌。",
+          "exposure": "培根及其他红肉和加工肉摄入。",
+          "result": "培根最高摄入四分位相较最低四分位HR 1.46（95% CI 1.01–2.11）。",
+          "limits": "观察性、自报饮食；研究人群为有乳腺癌患病姐妹的女性队列，不能证明因果。",
+          "distance": "D0：队列问卷中的培根摄入类别，但非指定商品试验。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "bacon randomized trial health outcome",
+        "Sister Study bacon colorectal cancer HR 1.46 2020"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "pork-floss": {
+      "id": "pork-floss",
+      "name": "肉松",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "dried_meat_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "猪肉等肉类经煮制、撕松、调味和炒干形成的纤维状肉类零食；猪肉脯、肉干及含肉松糕点另列。",
+      "variables": "肉种、糖盐调味、油脂、干燥炒制时间、每份重量及是否用于复合食品。",
+      "composition": "肉蛋白质之外，糖、钠和脂肪随配方变化；独立肉松与糕点馅料的总成分不同。",
+      "direct": "未检得肉松成品人体试验。",
+      "specific": "香港消费者委员会抽检8款猪肉松；30款肉类零食样品中糖均高于15 g/100g，肉松样品有7/8高钠，1款为573 mg/100g。",
+      "body": "未检得肉松成品人体试验。 香港消费者委员会抽检8款猪肉松；30款肉类零食样品中糖均高于15 g/100g，肉松样品有7/8高钠，1款为573 mg/100g。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "看每份钠、糖和脂肪；肉松常作为配料使用，计算整份食物时也要计入其他配料。",
+      "safety": "看每份钠、糖和脂肪；肉松常作为配料使用，计算整份食物时也要计入其他配料。",
+      "taste_m": {},
+      "refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks.",
+        "Pan T, Wang Z, Chen BH, Hui T, Zhang D. Frying oils with lower levels of saturated fatty acids induce less heterocyclic amine formation in meat floss (boiled, shredded and fried pork). International Journal of Food Science & Technology. 2020;55(2):823–832. DOI: https://doi.org/10.1111/ijfs.14368."
+      ],
+      "body_refs": [
+        "Consumer Council, Hong Kong. Nearly All Dried Meat Snack Samples High in Sugar and Sodium; Over 40% Found with Possibly Carcinogenic Contaminants. 2023-03-15. https://www.consumer.org.hk/en/press-release/p-557-dried-meat-snacks.",
+        "Pan T, Wang Z, Chen BH, Hui T, Zhang D. Frying oils with lower levels of saturated fatty acids induce less heterocyclic amine formation in meat floss (boiled, shredded and fried pork). International Journal of Food Science & Technology. 2020;55(2):823–832. DOI: https://doi.org/10.1111/ijfs.14368."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "消费者机构对零售肉类零食抽检营养和安全指标。",
+          "population": "香港市场30款肉类零食，包括8款猪肉松。",
+          "exposure": "糖、钠、脂肪、蛋白质和污染物检测。",
+          "result": "30款样品糖均超过15 g/100g；8款肉松中7款钠超过600 mg/100g，一款为573 mg/100g。",
+          "limits": "市场和样品有限；不能代表不同地区所有肉松，未测人体结局。",
+          "distance": "D0：猪肉松零售样品检测。"
+        },
+        {
+          "ref": 2,
+          "design": "实验室配方试验，比较不同油脂的肉松加工及杂环胺形成。",
+          "population": "无人体受试者；用猪后腿肉及多种烹调用油制作。",
+          "exposure": "肉松煮制、撕松、炒制及用油脂类型。",
+          "result": "研究报告油脂组成影响实验肉松中杂环胺生成。",
+          "limits": "实验室制作而非市售抽样或人群研究；检测的是加工中杂环胺，不是人体摄入后的临床结果。",
+          "distance": "D1：近似肉松加工实验。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "pork floss clinical human health trial",
+        "pork floss meat floss sugar sodium market survey samples study"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "latiao": {
+      "id": "latiao",
+      "name": "辣条",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "seasoned_wheat_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以小麦粉等制成并调味的即食调味面制品；豆制辣味零食不在本条范围。",
+      "variables": "面粉或谷朊粉比例、油盐糖、辣椒调料、膨化挤压工艺和每份重量。",
+      "composition": "常见品类以小麦粉制品和调味料为主；营养和添加剂依商品配方与监管执行而异。",
+      "direct": "未检得辣条成品人体临床结局研究。",
+      "specific": "国家市场监管总局将“辣条”类统一按方便食品中的调味面制品管理，并要求按添加剂标准生产、加强卫生控制及降低盐油糖。一项新疆医学院校内商品调查的30款调味面制品钠中位数为2400 mg/100g（IQR 2056–2496）。",
+      "body": "未检得辣条成品人体临床结局研究。 国家市场监管总局将“辣条”类统一按方便食品中的调味面制品管理，并要求按添加剂标准生产、加强卫生控制及降低盐油糖。一项新疆医学院校内商品调查的30款调味面制品钠中位数为2400 mg/100g（IQR 2056–2496）。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "查看钠、油脂和糖标签及生产许可信息；小包装也应按实际吃完的数量计算。",
+      "safety": "查看钠、油脂和糖标签及生产许可信息；小包装也应按实际吃完的数量计算。",
+      "taste_m": {},
+      "refs": [
+        "State Administration for Market Regulation of China. Announcement on Strengthening Quality and Safety Supervision of Seasoned Flour Products. 2019-12-10. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/spscs/art/2023/art_85ba6f1f31b04bdfa3328be69c4f64c6.html.",
+        "Aisikaier R, Kawuli N, Lu C, Wushuer R, Han J. 预包装食品钠含量现况及某医学院部分大学生对食盐认知情况调查 [Current status of sodium content in prepackaged foods]. 2026;42(4):480–? https://www.zyyjk.com.cn/CN/Y2026/V42/I4/480."
+      ],
+      "body_refs": [
+        "State Administration for Market Regulation of China. Announcement on Strengthening Quality and Safety Supervision of Seasoned Flour Products. 2019-12-10. https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/spscs/art/2023/art_85ba6f1f31b04bdfa3328be69c4f64c6.html.",
+        "Aisikaier R, Kawuli N, Lu C, Wushuer R, Han J. 预包装食品钠含量现况及某医学院部分大学生对食盐认知情况调查 [Current status of sodium content in prepackaged foods]. 2026;42(4):480–? https://www.zyyjk.com.cn/CN/Y2026/V42/I4/480."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "国家食品安全监管公告，规定调味面制品的许可类别、生产和监督要求。",
+          "population": "适用于中国监管范围内俗称辣条类的调味面制品。",
+          "exposure": "食品分类、添加剂使用、生产卫生和减盐减油减糖要求。",
+          "result": "公告要求辣条类按方便食品（调味面制品）管理并遵守添加剂标准。",
+          "limits": "监管规范不是人体研究，也不提供具体商品的成分检测。",
+          "distance": "D0：辣条类产品监管身份。"
+        },
+        {
+          "ref": 2,
+          "design": "预包装食品标签横断面调查。",
+          "population": "新疆某医学院校园商店2023年4月抽样；30款调味面制品。",
+          "exposure": "包装营养标签所列钠含量。",
+          "result": "调味面制品钠中位数2400 mg/100g（四分位距2056–2496），分类为高钠。",
+          "limits": "单一校园商店的标签样本，未检测产品本身，不代表全国市场或每款辣条。",
+          "distance": "D1：近似调味面制品标签数据。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "latiao human intervention clinical health outcome",
+        "seasoned flour products sodium 30 samples median 2400 2026 Xinjiang"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "konjac-snack": {
+      "id": "konjac-snack",
+      "name": "魔芋爽",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "konjac_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以魔芋凝胶或魔芋制品切条后调味的即食辣味零食；魔芋粉补充剂和无调味魔芋丝另列。",
+      "variables": "魔芋原料比例、盐油糖、辣味调料、胶体和每份重量。",
+      "composition": "魔芋制品含水量较高，包装调味汁和盐油会显著改变整份能量和钠；商品配方差异大。",
+      "direct": "未检得魔芋爽成品的人体试验。",
+      "specific": "EFSA评估的是食品添加剂魔芋胶/葡甘露聚糖E425，不是魔芋爽零食；其认为报告使用条件下未见一般人群安全忧虑，并指出3 g/日、12周补充试验中部分人有腹部不适、腹泻或便秘。",
+      "body": "未检得魔芋爽成品的人体试验。 EFSA评估的是食品添加剂魔芋胶/葡甘露聚糖E425，不是魔芋爽零食；其认为报告使用条件下未见一般人群安全忧虑，并指出3 g/日、12周补充试验中部分人有腹部不适、腹泻或便秘。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "看实际配料、钠和添加剂标示；高纤维补充剂研究不能替代产品标签或魔芋爽的人体研究。",
+      "safety": "看实际配料、钠和添加剂标示；高纤维补充剂研究不能替代产品标签或魔芋爽的人体研究。",
+      "taste_m": {},
+      "refs": [
+        "EFSA Panel on Food Additives and Nutrient Sources added to Food. Re-evaluation of konjac gum (E 425 i) and konjac glucomannan (E 425 ii) as food additives. EFSA Journal. 2017;15(6):e04864. DOI: https://doi.org/10.2903/j.efsa.2017.4864."
+      ],
+      "body_refs": [
+        "EFSA Panel on Food Additives and Nutrient Sources added to Food. Re-evaluation of konjac gum (E 425 i) and konjac glucomannan (E 425 ii) as food additives. EFSA Journal. 2017;15(6):e04864. DOI: https://doi.org/10.2903/j.efsa.2017.4864."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "监管食品添加剂安全评估，汇总毒理和有限人体补充试验资料。",
+          "population": "评估对象为食品添加剂E425的使用和人群暴露；不是魔芋爽消费者。",
+          "exposure": "报告许可条件下E425使用；另讨论成人约3 g/日葡甘露聚糖、持续12周的补充研究。",
+          "result": "EFSA认为报告食品添加剂使用条件下无一般人群安全忧虑；高剂量补充试验中有人出现腹部不适、腹泻或便秘。",
+          "limits": "评估不覆盖特定魔芋爽商品的完整配方、钠或临床效果；补充剂剂量不等同零食摄入。",
+          "distance": "D3：魔芋胶/葡甘露聚糖添加剂评估，不是魔芋爽成品研究。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "konjac snack strips human clinical study health effects",
+        "魔芋爽 商品 营养标签 钠 成分调查"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "seasoned-dried-tofu": {
+      "id": "seasoned-dried-tofu",
+      "name": "豆干零食",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "soy_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "经压制、卤制、调味或烘干后作为零食食用的豆腐干制品；清淡豆腐干和其他大豆食品另列。",
+      "variables": "大豆蛋白、压制含水率、卤汁、钠、糖、辣味调料及食用份量。",
+      "composition": "以大豆为基底；调味卤制会增加钠和糖，不能用未调味豆腐干数值代表零食款。",
+      "direct": "未检得豆干零食专属人体研究。",
+      "specific": "一项中国4082种市售食品钠含量调查中，豆制品大类平均钠为1326.1 mg/100g；该大类含其他豆制品，不能当作豆干零食专属均值。",
+      "body": "未检得豆干零食专属人体研究。 一项中国4082种市售食品钠含量调查中，豆制品大类平均钠为1326.1 mg/100g；该大类含其他豆制品，不能当作豆干零食专属均值。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "看每份钠和配料；留意大豆过敏原，比较时区分原味与卤制调味产品。",
+      "safety": "看每份钠和配料；留意大豆过敏原，比较时区分原味与卤制调味产品。",
+      "taste_m": {},
+      "refs": [
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908."
+      ],
+      "body_refs": [
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "市售商品营养标签及检测数据汇总分析。",
+          "population": "中国4082种商业食品，含4030种预包装食品和52种手工食品。",
+          "exposure": "各食品类别每100g钠含量。",
+          "result": "豆制品大类平均钠含量1326.1 mg/100g。",
+          "limits": "豆制品大类并非豆干零食子组；商品调查不能推断特定产品或人体结果。",
+          "distance": "D2：豆制品总体钠数据，对调味豆干零食为近邻资料。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "seasoned dried tofu snack human trial health outcomes",
+        "Chinese bean products sodium survey dried tofu snack nutrition 4082"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "lo-mei-snacks": {
+      "id": "lo-mei-snacks",
+      "name": "卤味零食",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "braised_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "将肉、禽、蛋或豆制品卤制调味后作为即食零食销售的食品类别；具体原料需按子条区分。",
+      "variables": "主料、卤汁盐糖、浸泡时间、冷却包装、冷藏条件和每份重量。",
+      "composition": "钠和脂肪依主料与卤汁变化；不同原料、门店与预包装产品不能合并为同一数值。",
+      "direct": "未检得卤味零食类别的人体结局试验。",
+      "specific": "香港食安中心与消费者委员会检测100款烧味及卤味样品，卤水鹅平均钠370 mg/100g、卤鹅胗610 mg/100g；南京超市熟食研究检出不同即食肉样本有微生物指标不合格及病原菌。两项研究对象都不代表所有包装卤味零食。",
+      "body": "未检得卤味零食类别的人体结局试验。 香港食安中心与消费者委员会检测100款烧味及卤味样品，卤水鹅平均钠370 mg/100g、卤鹅胗610 mg/100g；南京超市熟食研究检出不同即食肉样本有微生物指标不合格及病原菌。两项研究对象都不代表所有包装卤味零食。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "购买后依标签冷藏并及时食用；查看钠含量，注意熟食加工、贮存及交叉污染风险。",
+      "safety": "购买后依标签冷藏并及时食用；查看钠含量，注意熟食加工、贮存及交叉污染风险。",
+      "taste_m": {},
+      "refs": [
+        "Centre for Food Safety, Hong Kong. Sodium Content in Local Siu-mei and Lo-mei. January 2020. https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_28_abstract.html.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "body_refs": [
+        "Centre for Food Safety, Hong Kong. Sodium Content in Local Siu-mei and Lo-mei. January 2020. https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_n_01_28_abstract.html.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "香港官方与消费者组织对零售烧味和卤味样品的钠含量检测。",
+          "population": "100款、10类香港餐馆和零售样品，每类约10款。",
+          "exposure": "包括卤水鹅及卤鹅胗的钠含量。",
+          "result": "卤水鹅均值370 mg/100g；卤鹅胗均值610 mg/100g。",
+          "limits": "湿卤食物及特定地区商品，不等于预包装卤味零食整体。",
+          "distance": "D1：近似卤制食品钠检测。"
+        },
+        {
+          "ref": 2,
+          "design": "南京4家超市即食肉制品及加工销售环境微生物调查。",
+          "population": "96份样品，8类熟肉产品，每类12份。",
+          "exposure": "菌落总数、大肠菌群、沙门氏菌及金黄色葡萄球菌。",
+          "result": "总样品31.3%不合格；4/96检出沙门氏菌、2/96检出金黄色葡萄球菌。",
+          "limits": "单城超市样品；不是所有卤味或工厂包装零食。",
+          "distance": "D2：即食熟肉加工和售卖卫生近邻资料。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "lo-mei braised snack human clinical outcome trial",
+        "Hong Kong CFS lo-mei sodium 100 samples 2020 Nanjing ready-to-eat meat contamination 96"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "duck-neck": {
+      "id": "duck-neck",
+      "name": "鸭脖",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "braised_poultry_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "以鸭颈卤制、烟熏或辣味调制后作为即食零食销售的熟肉；其他卤味禽类另列。",
+      "variables": "鸭颈来源、卤汁盐糖、辣油、杀菌、真空包装、冷藏与保质期。",
+      "composition": "带骨鸭颈熟肉，盐油和调味随配方及食用的可食部分而异。",
+      "direct": "未检得鸭脖成品人体临床结局研究。",
+      "specific": "一项2017年研究检测无锡市场4个品牌各10件真空包装鸭脖中的防腐剂和微生物，并报告不同品牌间防腐剂含量差异；研究样品范围小，不能估计当前市场比例。",
+      "body": "未检得鸭脖成品人体临床结局研究。 一项2017年研究检测无锡市场4个品牌各10件真空包装鸭脖中的防腐剂和微生物，并报告不同品牌间防腐剂含量差异；研究样品范围小，不能估计当前市场比例。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "按包装储存和保质期食用；开封后尽快冷藏，检查包装状态及标签钠含量。",
+      "safety": "按包装储存和保质期食用；开封后尽快冷藏，检查包装状态及标签钠含量。",
+      "taste_m": {},
+      "refs": [
+        "Lou Z, Rahman MRT, Zhang J, Kou X, Nkhata SG, Song Z, Al-Hajj NQM. Determination of preservative residues and microbial contents of commercial Chinese duck neck meat. CyTA - Journal of Food. 2017;15(3):357–360. DOI: https://doi.org/10.1080/19476337.2016.1266390.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "body_refs": [
+        "Lou Z, Rahman MRT, Zhang J, Kou X, Nkhata SG, Song Z, Al-Hajj NQM. Determination of preservative residues and microbial contents of commercial Chinese duck neck meat. CyTA - Journal of Food. 2017;15(3):357–360. DOI: https://doi.org/10.1080/19476337.2016.1266390.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "对市售真空包装样品测定防腐剂及微生物指标。",
+          "population": "中国无锡4个品牌，每品牌10件真空包装鸭脖；2017年发表。",
+          "exposure": "测甲基对羟基苯甲酸酯、丙酸、苯甲酸、山梨酸及微生物数量。",
+          "result": "作者报告不同品牌间检测值有差异，并指出其中个别防腐剂检测值超过其引用的当时标准。",
+          "limits": "单城、少数品牌、年代较早；法规和市场商品可能变化，不能推断现售鸭脖普遍违规。",
+          "distance": "D0：鸭脖样品实验室检测。"
+        },
+        {
+          "ref": 2,
+          "design": "零售熟肉产品及售卖环境的微生物调查。",
+          "population": "南京4家超市96份样品，其中包括近似卤味熟肉，但未单列鸭脖。",
+          "exposure": "菌落总数、指示菌及病原菌。",
+          "result": "研究在总体即食肉样品中检出沙门氏菌和金黄色葡萄球菌。",
+          "limits": "并非鸭脖专项样本，不能估计鸭脖污染率。",
+          "distance": "D2：熟肉售卖环境近邻资料。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "duck neck snack human clinical research",
+        "Chinese duck neck preservative microbial 2017 four brands 40 samples"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    },
+    "boneless-chicken-feet": {
+      "id": "boneless-chicken-feet",
+      "name": "无骨凤爪",
+      "volume": "速食与零食部",
+      "entry_type": "processed_food",
+      "family": "braised_poultry_snack",
+      "research_depth": "R2",
+      "shared_parent": "processed-meat-chinese-snacks-base",
+      "identity": "去骨并经腌制、卤制或调味后即食的鸡爪零食；带骨凤爪和熟食鸡脚另列。",
+      "variables": "去骨加工卫生、调味盐糖、酸度、包装杀菌、冷藏温度和保质期。",
+      "composition": "以鸡皮、结缔组织和调味汁为主；产品营养随去骨、腌制与调料变化。",
+      "direct": "未检得无骨凤爪成品人体结局试验。",
+      "specific": "澳门政府2026年6月通报一款酸辣柠檬无骨凤爪抽检李斯特菌不合格，并要求停售和召回。南京超市研究的12份盐水鸡爪是近似带骨熟制品，不等于无骨凤爪。",
+      "body": "未检得无骨凤爪成品人体结局试验。 澳门政府2026年6月通报一款酸辣柠檬无骨凤爪抽检李斯特菌不合格，并要求停售和召回。南京超市研究的12份盐水鸡爪是近似带骨熟制品，不等于无骨凤爪。",
+      "evidence_body": "资料来自对应队列、商品抽检、监管规范或近似熟食研究；各条限制按原研究和抽样范围保留。",
+      "care": "依产品标签冷藏及开封后食用；胀袋、异味或过期产品不要食用。即食肉品注意储存温度和生熟交叉污染。",
+      "safety": "依产品标签冷藏及开封后食用；胀袋、异味或过期产品不要食用。即食肉品注意储存温度和生熟交叉污染。",
+      "taste_m": {},
+      "refs": [
+        "Municipal Affairs Bureau, Macao SAR Government. IAM suspends sale of boneless chicken feet item after sample tested positive for Listeria monocytogenes. 2026-06-12. https://www.gov.mo/en/news/402645/.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "body_refs": [
+        "Municipal Affairs Bureau, Macao SAR Government. IAM suspends sale of boneless chicken feet item after sample tested positive for Listeria monocytogenes. 2026-06-12. https://www.gov.mo/en/news/402645/.",
+        "Wang SK, Fu LM, Chen GW, Xiao HM, Pan D, Shi RF, Yang LG, Sun GJ. Multisite survey of bacterial contamination in ready-to-eat meat products throughout the cooking and selling processes in urban supermarket, Nanjing, China. Food Sci Nutr. 2020;8(5):2427–2435. DOI: https://doi.org/10.1002/fsn3.1532."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "澳门市政机构例行食品抽样及官方召回通报。",
+          "population": "单一加工企业的一款酸辣柠檬无骨凤爪样品。",
+          "exposure": "样品中李斯特菌水平。",
+          "result": "2026年6月通报称该样品结果不合格，机构要求停售和召回。",
+          "limits": "单一商品和批次，不能推断整个品类污染率；属于监管抽检，不是人体研究。",
+          "distance": "D0：无骨凤爪单品监管检测。"
+        },
+        {
+          "ref": 2,
+          "design": "南京零售即食肉品微生物调查。",
+          "population": "96份熟肉样品含12份盐水鸡爪，非无骨凤爪。",
+          "exposure": "细菌指标和病原体。",
+          "result": "样品总体检出沙门氏菌和金黄色葡萄球菌；文章未将结果归为无骨凤爪。",
+          "limits": "带骨盐水鸡爪与酸辣无骨凤爪形态和加工方式不同。",
+          "distance": "D2：近似熟鸡爪品类资料。"
+        }
+      ],
+      "unknowns": "不同品牌、市场和批次的代表性营养及安全数据；本条食品特异的人体长期研究。",
+      "tradition": "现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。",
+      "queries": [
+        "boneless chicken feet human health clinical trial",
+        "Macao boneless chicken feet Listeria June 2026 government recall Nanjing chicken claws 12 samples"
+      ],
+      "search_log": [
+        "核查本条食品身份、对应的市场抽检或人体资料，并区分相近产品。",
+        "记录样本、人群、检测或暴露条件及可外推范围。"
+      ]
+    }
+  }
+}

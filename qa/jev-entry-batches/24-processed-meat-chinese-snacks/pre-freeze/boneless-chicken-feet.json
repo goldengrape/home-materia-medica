@@ -1,0 +1,10 @@
+{
+  "batch_id": "24-processed-meat-chinese-snacks",
+  "entry_id": "boneless-chicken-feet",
+  "summary_ref": "references/entries/boneless-chicken-feet/summary.md",
+  "summary_sha256": "216f15f15b4daf1f50157bba02a6161e93fc2e08a053a13d9598202876f3a215",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 无骨凤爪\r\n\r\n**身份。** 去骨并经腌制、卤制或调味后即食的鸡爪零食；带骨凤爪和熟食鸡脚另列。\r\n\r\n**组成与暴露。** 以鸡皮、结缔组织和调味汁为主；产品营养随去骨、腌制与调料变化。 **关键变量：** 去骨加工卫生、调味盐糖、酸度、包装杀菌、冷藏温度和保质期。\r\n\r\n**直接人体证据。** 未检得无骨凤爪成品人体结局试验。\r\n\r\n**产品/成分证据。** 澳门政府2026年6月通报一款酸辣柠檬无骨凤爪抽检李斯特菌不合格，并要求停售和召回。南京超市研究的12份盐水鸡爪是近似带骨熟制品，不等于无骨凤爪。\r\n\r\n**共享背景。** 参见 processed-meat-chinese-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 依产品标签冷藏及开封后食用；胀袋、异味或过期产品不要食用。即食肉品注意储存温度和生熟交叉污染。\r\n\r\n**传统来源。** 现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

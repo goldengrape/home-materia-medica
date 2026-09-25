@@ -1,0 +1,10 @@
+{
+  "batch_id": "24-processed-meat-chinese-snacks",
+  "entry_id": "lo-mei-snacks",
+  "summary_ref": "references/entries/lo-mei-snacks/summary.md",
+  "summary_sha256": "abbe8933613bca0d74c59a1fcab1ee829c3f46dcde9667938d81073b032f69e0",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 卤味零食\r\n\r\n**身份。** 将肉、禽、蛋或豆制品卤制调味后作为即食零食销售的食品类别；具体原料需按子条区分。\r\n\r\n**组成与暴露。** 钠和脂肪依主料与卤汁变化；不同原料、门店与预包装产品不能合并为同一数值。 **关键变量：** 主料、卤汁盐糖、浸泡时间、冷却包装、冷藏条件和每份重量。\r\n\r\n**直接人体证据。** 未检得卤味零食类别的人体结局试验。\r\n\r\n**产品/成分证据。** 香港食安中心与消费者委员会检测100款烧味及卤味样品，卤水鹅平均钠370 mg/100g、卤鹅胗610 mg/100g；南京超市熟食研究检出不同即食肉样本有微生物指标不合格及病原菌。两项研究对象都不代表所有包装卤味零食。\r\n\r\n**共享背景。** 参见 processed-meat-chinese-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 购买后依标签冷藏并及时食用；查看钠含量，注意熟食加工、贮存及交叉污染风险。\r\n\r\n**传统来源。** 现代加工食品。本轮不把原料的古籍记载直接等同于该加工品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
