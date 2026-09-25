@@ -1,0 +1,10 @@
+92264363b1d31cf409d50ba9850c68ec35abf4d65f90f43ebcc8c24f110c80ad  qa/jev-entry-batches/18-vegetables-and-salads/raw/romaine-lettuce.json
+f93a00686e57197bde93c6a2a4be954065bfa553bd9e8ea2e94847ac36e269f1  qa/jev-entry-batches/18-vegetables-and-salads/raw/ice-plant.json
+17d71abf24a14b1e8988c1b6b340c17c44e2031800e43a0f4561eed63af142f7  qa/jev-entry-batches/18-vegetables-and-salads/raw/beetroot.json
+713f192991335a04c066e437b57534a9e9efdf17e7943a75acdee64cde734fa9  qa/jev-entry-batches/18-vegetables-and-salads/raw/vegetable-salad.json
+a2708f3b2b7fe44bc5d951fa09840f3d8698219fc6f7e652d455e7e5c57622f7  qa/jev-entry-batches/18-vegetables-and-salads/raw/grain-salad.json
+766e124124b5041afd979ab83fc1b01ff266a26d827491b6ad1ec9a4b3bf3971  qa/jev-entry-batches/18-vegetables-and-salads/raw/chicken-salad.json
+91f9a1fdf58e5ab968c2876c2212fb6735f4881bd884ffff69760d8d7b5133a2  qa/jev-entry-batches/18-vegetables-and-salads/raw/caesar-salad.json
+c78b887a9aa4315179c8988f3361b32873585d9f481ee72383d750144476eaa4  qa/jev-entry-batches/18-vegetables-and-salads/raw/avocado-salad.json
+07e6bf61766add07ec38f1126df4fb0578e272988720ebedc4a2710e11cb6236  qa/jev-entry-batches/18-vegetables-and-salads/raw/light-meal-bowl.json
+6d0386b416a25a0ee7377ff889893417e165a39150462c01957e8ee4c1650b5c  qa/jev-entry-batches/18-vegetables-and-salads/raw/poke-bowl.json
