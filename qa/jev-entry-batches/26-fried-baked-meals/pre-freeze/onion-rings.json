@@ -2,9 +2,9 @@
   "batch_id": "26-fried-baked-meals",
   "entry_id": "onion-rings",
   "summary_ref": "references/entries/onion-rings/summary.md",
-  "summary_sha256": "330380423edcc8a3f788feff16de6aba7a7fe20258ef19ebb77dd8c23ab94a73",
+  "summary_sha256": "f356c2f9c0d5efa86a8f28eecfaddd192f7edf6268cf418c9fc57b58ff394082",
   "reasoning_version": "jev-tcm-reasoning-v0.4",
   "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
   "snapshot_date": "2026-09-24",
-  "summary_text": "# Summary Document — 炸洋葱圈\r\n\r\n**身份。** 洋葱切圈后裹面糊或面包糠并油炸的配菜或零食；炒洋葱和天妇罗洋葱另列。\r\n\r\n**组成与暴露。** 洋葱外层裹粉并吸收油脂；成品的能量和钠不能按洋葱本身估算。 **关键变量：** 洋葱含量、面糊或面包糠、油炸油、钠、份量和蘸酱。\r\n\r\n**直接人体证据。** 未检得炸洋葱圈成品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** USDA Standard Reference 28将泛称快餐裹粉炸洋葱圈列为独立食物条目，数据库均值为钠776 mg/100g，基于6个数据点；不是现售品牌的市场代表性估计。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 查看小麦、蛋等裹粉配料和共用油炸设备的过敏原提示。\r\n\r\n**传统来源。** 现代加工或复合食品。本条按成品配方讨论，不把单一原料的传统记载直接推为成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+  "summary_text": "# Summary Document — 炸洋葱圈\n\n**身份。** 洋葱切圈后裹面糊或面包糠并油炸的配菜或零食；炒洋葱和天妇罗洋葱另列。\n\n**组成与暴露。** 洋葱外层裹粉并吸收油脂；成品的能量和钠不能按洋葱本身估算。 **关键变量：** 洋葱含量、面糊或面包糠、油炸油、钠、份量和蘸酱。\n\n**直接人体证据。** 未检得炸洋葱圈成品特异的人体临床结局研究。\n\n**产品/成分证据。** USDA Standard Reference 28将泛称快餐裹粉炸洋葱圈列为独立食物条目，数据库均值为钠776 mg/100g，基于6个数据点；不是现售品牌的市场代表性估计。\n\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\n\n**安全。** 查看小麦、蛋等裹粉配料和共用油炸设备的过敏原提示。\n\n**传统来源。** 现代加工或复合食品。本条按成品配方讨论，不把单一原料的传统记载直接推为成品功效。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
 }

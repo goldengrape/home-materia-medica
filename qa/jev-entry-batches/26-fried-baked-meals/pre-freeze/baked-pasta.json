@@ -2,9 +2,9 @@
   "batch_id": "26-fried-baked-meals",
   "entry_id": "baked-pasta",
   "summary_ref": "references/entries/baked-pasta/summary.md",
-  "summary_sha256": "b27b053919b1e0d57fa0ef68be862d47460fcdf366e03adf9969420476493812",
+  "summary_sha256": "7bf1c413e9c0a43396abae560588c920ea319526590b1274bdde0e8d3b8129a2",
   "reasoning_version": "jev-tcm-reasoning-v0.4",
   "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
   "snapshot_date": "2026-09-24",
-  "summary_text": "# Summary Document — 焗意面\r\n\r\n**身份。** 将煮制意面与酱汁、奶酪及肉类或蔬菜配料组合后烘烤的复合食品；单独意面和千层面另按目录归类。\r\n\r\n**组成与暴露。** 意面、酱汁、奶酪和配料共同构成；同名菜品可在面量和钠含量上相差较大。 **关键变量：** 面食份量、奶油或番茄酱、奶酪、肉馅、钠、脂肪及烘烤配方。\r\n\r\n**直接人体证据。** 未检得焗意面成品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** NHANES钠来源分析将pasta mixed dishes作为类别；美国哨点监测中有包装制备的macaroni and cheese等相邻食品，但未将焗意面单独列为统一样品。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 小麦和乳制品过敏者核对配方；含肉奶酱汁的熟食及时冷藏并充分加热。\r\n\r\n**传统来源。** 现代复合烘烤食品。本条按意面及配料组合描述，不把小麦或乳品单一原料的资料视作成品证据。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+  "summary_text": "# Summary Document — 焗意面\n\n**身份。** 将煮制意面与酱汁、奶酪及肉类或蔬菜配料组合后烘烤的复合食品；单独意面和千层面另按目录归类。\n\n**组成与暴露。** 意面、酱汁、奶酪和配料共同构成；同名菜品可在面量和钠含量上相差较大。 **关键变量：** 面食份量、奶油或番茄酱、奶酪、肉馅、钠、脂肪及烘烤配方。\n\n**直接人体证据。** 未检得焗意面成品特异的人体临床结局研究。\n\n**产品/成分证据。** NHANES钠来源分析将pasta mixed dishes作为类别；美国哨点监测中有包装制备的macaroni and cheese等相邻食品，但未将焗意面单独列为统一样品。\n\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\n\n**安全。** 小麦和乳制品过敏者核对配方；含肉奶酱汁的熟食及时冷藏并充分加热。\n\n**传统来源。** 现代复合烘烤食品。本条按意面及配料组合描述，不把小麦或乳品单一原料的资料视作成品证据。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
 }

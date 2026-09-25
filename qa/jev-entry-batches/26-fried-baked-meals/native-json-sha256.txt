@@ -1,0 +1,10 @@
+c3a2652abecdec8bfe6e653f170c96b402baa76d39f154b792c951130672aa43  qa/jev-entry-batches/26-fried-baked-meals/raw/chicken-nuggets.json
+13b94ec160feb4c4920c3925c9c041636cefb13a9f879ff90f9bf67ac74360cc  qa/jev-entry-batches/26-fried-baked-meals/raw/popcorn-chicken.json
+af3d391b51049755b2cf4ecfc2a4a356635c355b3d74da4be7d2f3c6955c03d1  qa/jev-entry-batches/26-fried-baked-meals/raw/fried-fish.json
+bc08ba17cb947574d0999d315a5162f177ce3266c10afb561261eee6f17c29a4  qa/jev-entry-batches/26-fried-baked-meals/raw/onion-rings.json
+f0beef440e5d9fbed79d0bd6cca2d627bb69022cdf8147f3679b2b5bbc6dd173  qa/jev-entry-batches/26-fried-baked-meals/raw/grilled-chicken-wings.json
+4919f8b0a11eac123bf368eb09f597b542fa0edd2d59831d97fc9282986777a9  qa/jev-entry-batches/26-fried-baked-meals/raw/grilled-sausage.json
+e0e996e088adadc52b3deabd71a5e02a9ce664825927ee25e2a6ed1b69b6b62b  qa/jev-entry-batches/26-fried-baked-meals/raw/meat-skewers.json
+285a8650c25af293c8da770e01a18264e30bc56f17d3830c00e53b1eb355a9ba  qa/jev-entry-batches/26-fried-baked-meals/raw/pizza.json
+a1416abea1396d839188b408d193d1fb6e70d21c854a5cc6dd3d9c8149bef21b  qa/jev-entry-batches/26-fried-baked-meals/raw/baked-rice.json
+4b55fb8894b4b4e8f9235b4d5d5183642477004fd48bea3007c64f274e235a32  qa/jev-entry-batches/26-fried-baked-meals/raw/baked-pasta.json

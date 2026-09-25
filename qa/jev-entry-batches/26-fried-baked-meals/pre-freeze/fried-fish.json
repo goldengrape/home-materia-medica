@@ -2,9 +2,9 @@
   "batch_id": "26-fried-baked-meals",
   "entry_id": "fried-fish",
   "summary_ref": "references/entries/fried-fish/summary.md",
-  "summary_sha256": "8cfd185adec6b00332c02c254ee227a65b30925e94f8bd40ce8d84440952b3e1",
+  "summary_sha256": "7ffd6ea4416ba8e327d72c9e7315efba1df16ab589ebeb5fa2a2a21a77ce10ac",
   "reasoning_version": "jev-tcm-reasoning-v0.4",
   "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
   "snapshot_date": "2026-09-24",
-  "summary_text": "# Summary Document — 炸鱼\r\n\r\n**身份。** 将鱼块或鱼片裹粉、面包糠或面糊后油炸的食品；鱼排、炸鱼三明治及炸鱼薯条套餐按具体形态区分。\r\n\r\n**组成与暴露。** 鱼肉、裹粉和油脂共同构成；单独鱼块与含芝士、塔塔酱的三明治不是同一食品。 **关键变量：** 鱼种和部位、裹粉、油炸油、钠、份量、蘸酱及搭配主食。\r\n\r\n**直接人体证据。** 未检得炸鱼单品特异的长期人体结局研究。\r\n\r\n**产品/成分证据。** USDA旧版成分数据库记录一种含塔塔酱的快餐鱼三明治，钠602 mg/100g、样本数据点6；该复合餐不能代表单独炸鱼或当前各商品。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 鱼类过敏者避免食用；生鱼与熟食分开处理，鱼肉充分加热。\r\n\r\n**传统来源。** 现代加工或复合食品。本条按成品配方讨论，不把单一原料的传统记载直接推为成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+  "summary_text": "# Summary Document — 炸鱼\n\n**身份。** 将鱼块或鱼片裹粉、面包糠或面糊后油炸的食品；鱼排、炸鱼三明治及炸鱼薯条套餐按具体形态区分。\n\n**组成与暴露。** 鱼肉、裹粉和油脂共同构成；单独鱼块与含芝士、塔塔酱的三明治不是同一食品。 **关键变量：** 鱼种和部位、裹粉、油炸油、钠、份量、蘸酱及搭配主食。\n\n**直接人体证据。** 未检得炸鱼单品特异的长期人体结局研究。\n\n**产品/成分证据。** USDA旧版成分数据库记录一种含塔塔酱的快餐鱼三明治，钠602 mg/100g、样本数据点6；该复合餐不能代表单独炸鱼或当前各商品。\n\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\n\n**安全。** 鱼类过敏者避免食用；生鱼与熟食分开处理，鱼肉充分加热。\n\n**传统来源。** 现代加工或复合食品。本条按成品配方讨论，不把单一原料的传统记载直接推为成品功效。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
 }
