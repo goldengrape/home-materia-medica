@@ -1,0 +1,547 @@
+{
+  "batch": {
+    "id": "27-cheese-chinese-meals",
+    "title": "芝士配餐与中式复合快餐",
+    "catalog_order": 27,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; USDA FoodData Central; China restaurant dish surveys",
+    "web_search_calls": 7,
+    "web_search_queries": 25,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-27-cheese-chinese-meals",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "芝士薯条有美国数据库的复合品类，但并非中国餐馆实测样本。",
+      "芝士玉米没有单品数据；奶酪营养不能代表整道菜。",
+      "麻辣烫、冒菜与火锅做法相近但目录分列，汤菜总数值不能替代任一单品。",
+      "麻辣香锅和干锅虽为炒制菜，配方分类研究没有单独报告这两道菜。",
+      "重庆火锅称重研究反映当地特定就餐样本，不测人体健康结局。",
+      "中国烧烤PAH研究是样品抽检和风险模型，不是疾病随访。",
+      "烤鱼在现有烧烤水产研究中未单列结果。",
+      "黄焖鸡米饭在中国餐厅钠调查中未单独报告。"
+    ],
+    "citation_audit_revision": "rev-1: retain dish identity, measurement method, geographic and category limits; no menu-level estimate presented as item-specific lab measurement."
+  },
+  "entries": {
+    "cheese-fries": {
+      "id": "cheese-fries",
+      "name": "芝士薯条",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "cheese_fries",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "薯条浇淋或搭配奶酪酱、融化芝士制成的复合配餐；普通薯条和芝士玉米另列。",
+      "variables": "薯条份量、炸制方式、奶酪或芝士酱的种类和用量、钠及蘸料。",
+      "composition": "马铃薯、油脂与奶制品构成；薯条及芝士酱各自配方会改变整份钠和能量。",
+      "direct": "未检得芝士薯条成品特异的人体临床结局研究。",
+      "specific": "USDA FoodData Central FNDDS收录“含芝士快餐薯条”的独立复合食物编码；该记录是美国数据库条目，并非某个中国品牌或餐馆的实测样品。",
+      "body": "未检得芝士薯条成品特异的人体临床结局研究。 USDA FoodData Central FNDDS收录“含芝士快餐薯条”的独立复合食物编码；该记录是美国数据库条目，并非某个中国品牌或餐馆的实测样品。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "比较整份薯条与芝士酱的钠和份量；过敏者核对奶类和共用炸锅信息。",
+      "safety": "奶类过敏者避免奶酪配料；油炸食品出锅后注意烫伤。",
+      "taste_m": {},
+      "refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, FNDDS: Potato, french fries, with cheese, fast food/restaurant. FDC ID 2709465; release 2024-10-31. https://fdc.nal.usda.gov/food-details/2709465/nutrients.",
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908."
+      ],
+      "body_refs": [
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, FNDDS: Potato, french fries, with cheese, fast food/restaurant. FDC ID 2709465; release 2024-10-31. https://fdc.nal.usda.gov/food-details/2709465/nutrients.",
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国农业部FoodData Central的FNDDS复合食品数据记录。",
+          "population": "美国餐馆/快餐食品分类中的薯条加芝士条目。",
+          "exposure": "按统一食品代码记录配料组合和营养数据库值。",
+          "result": "数据库将含芝士薯条作为独立复合食品类型。",
+          "limits": "数据库类别并非单一商品或现行各店的代表性抽样；不同芝士和份量差异大。",
+          "distance": "D0：成分数据库中明确的芝士薯条复合品类。"
+        },
+        {
+          "ref": 2,
+          "design": "中国市售商业食品标签数据汇总。",
+          "population": "中国4082种商业食品，含4030种预包装食品和52种手工食品。",
+          "exposure": "收集食品标签钠含量并按类别汇总；奶酪是独立子类。",
+          "result": "奶酪类别样品的平均钠为484.4 mg/100g。",
+          "limits": "奶酪单项标签数据不能代替芝士薯条整体成品；市场抽样和年份有限。",
+          "distance": "D3：单一奶酪配料的市场组成背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "USDA FoodData Central FNDDS potato french fries with cheese fast food restaurant 2709465",
+        "China packaged food sodium cheese products 4082 foods 2022"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "cheese-corn": {
+      "id": "cheese-corn",
+      "name": "芝士玉米",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "cheese_corn",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以玉米粒、玉米段或玉米杯配奶酪、芝士酱或奶油制成的复合小食；爆米花和膨化玉米零食另列。",
+      "variables": "玉米形式、芝士类型与用量、黄油或奶油、糖盐和食用份量。",
+      "composition": "玉米与奶酪、油脂或酱汁共同构成；不同做法的碳水化合物、钠和脂肪差异明显。",
+      "direct": "未检得芝士玉米成品特异的人体临床研究。",
+      "specific": "中国商业食品钠调查报告奶酪产品样品的钠含量，但没有单列芝士玉米；该原料类别不能当作整份成品营养值。",
+      "body": "未检得芝士玉米成品特异的人体临床研究。 中国商业食品钠调查报告奶酪产品样品的钠含量，但没有单列芝士玉米；该原料类别不能当作整份成品营养值。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "留意奶酪及黄油的用量和整份份量；与纯玉米的营养组成不同。",
+      "safety": "奶类过敏者避免奶酪配料；冷藏奶油或乳酪制品按保存说明处理。",
+      "taste_m": {},
+      "refs": [
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Hao Z, Liang L, Pu D, Zhang Y. Analysis of Sodium Content in 4082 Kinds of Commercial Foods in China. Nutrients. 2022;14(14):2908. DOI: https://doi.org/10.3390/nu14142908.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装及手工商业食品的标签数据汇总。",
+          "population": "中国4082种商业食品中奶酪子类有112种产品。",
+          "exposure": "按标签钠值汇总奶酪类食品。",
+          "result": "奶酪产品平均钠484.4 mg/100g，范围30–1490 mg/100g。",
+          "limits": "研究对象是各类奶酪，不是芝士玉米；该值不能代表奶酪玉米成品。",
+          "distance": "D3：奶酪配料数据。"
+        },
+        {
+          "ref": 2,
+          "design": "中国餐厅菜品横断面调查，按配方和中国食物成分表估算钠。",
+          "population": "2019年6省192家餐厅的8131道畅销菜。",
+          "exposure": "按菜品配料和餐厅菜单估算每份钠含量。",
+          "result": "整体样本中每份钠中位数2543.7 mg，菜品间差异较大。",
+          "limits": "未单列芝士玉米，整体统计仅作餐饮复合食品背景。",
+          "distance": "D4：广义餐厅菜品背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "cheese corn snack nutrition sodium study China",
+        "Chinese restaurant menu sodium cheese corn food composition"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "malatang": {
+      "id": "malatang",
+      "name": "麻辣烫",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "malatang",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将肉、蔬菜、豆制品、主食等按份选取后在调味汤底中烫煮并连汤或配蘸料食用的复合餐；冒菜和火锅另列。",
+      "variables": "食材种类和重量、汤底油盐、是否饮汤、蘸料、主食及每餐总份量。",
+      "composition": "钠和能量取决于所选食材、汤底、蘸料及食用汤量；按重量或价格计费会改变实际份量。",
+      "direct": "未检得麻辣烫单品特异的长期人体结局试验。",
+      "specific": "中国餐厅研究分析192家餐厅8131道畅销菜的配方估算钠，整体每份钠中位数2543.7 mg；汤类中位数每100克687.0 mg。没有单列麻辣烫，该类别数据只提供餐饮汤品背景。",
+      "body": "未检得麻辣烫单品特异的长期人体结局试验。 中国餐厅研究分析192家餐厅8131道畅销菜的配方估算钠，整体每份钠中位数2543.7 mg；汤类中位数每100克687.0 mg。没有单列麻辣烫，该类别数据只提供餐饮汤品背景。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "控制汤底和蘸料用量，按实际食材和份量判断；不喝汤可减少汤中溶出钠的摄入，但不改变食材原有钠。",
+      "safety": "生熟食材分开夹取，食物充分煮熟；汤锅高温，注意烫伤。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐厅菜品横断面调查，以菜品详细配方及中国食物成分表估算钠。",
+          "population": "2019年中国6省192家餐厅8131道畅销菜。",
+          "exposure": "记录配方，计算每100克及每份钠；包含246道汤类菜品。",
+          "result": "全体菜品每份钠中位数2543.7 mg；汤类每100克钠中位数687.0 mg。",
+          "limits": "麻辣烫未单独报告；不是餐品实验室抽检，配方和每份重量估算值不能代表所有店。",
+          "distance": "D2：相邻中式汤菜与餐馆菜品数据。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "malatang sodium content China restaurant nutrition study",
+        "Chinese restaurant dishes soup sodium cross-sectional 2019 8131"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "maocai": {
+      "id": "maocai",
+      "name": "冒菜",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "maocai",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将多种肉类、蔬菜、豆制品或主食烫熟后按份盛出，配麻辣汤汁或调料的复合餐；麻辣烫和火锅另列。",
+      "variables": "菜品选择、肉菜比例、汤汁是否浇入、盐油、蘸料及主食份量。",
+      "composition": "常为单人份的组合餐，实际营养由食材重量、汤汁和调料共同决定。",
+      "direct": "未检得冒菜单品特异的人体临床结局研究。",
+      "specific": "中国餐厅钠研究按配方统计汤类及其他菜品，报告整体每份钠中位数2543.7 mg；研究未用“冒菜”作为单独类别，不能把总样本数据视为本条菜品值。",
+      "body": "未检得冒菜单品特异的人体临床结局研究。 中国餐厅钠研究按配方统计汤类及其他菜品，报告整体每份钠中位数2543.7 mg；研究未用“冒菜”作为单独类别，不能把总样本数据视为本条菜品值。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "按实际选菜量控制份量，汤汁和蘸料单独考虑；比较每份而不只看每100克。",
+      "safety": "即食熟食尽快食用；生食材、夹具和已煮熟食材分开，避免交叉污染。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐厅菜品横断面调查，以成分表和餐厅菜品配方计算钠。",
+          "population": "2019年6省192家餐厅8131道畅销菜，分汤、热菜及其他类别。",
+          "exposure": "按菜品配方估算钠密度和每份含量。",
+          "result": "总体每份钠中位数2543.7 mg；汤类每100克中位数687.0 mg。",
+          "limits": "冒菜不是研究的单独分类，调查的配方估算也非实验室逐道测定。",
+          "distance": "D2：相邻中式汤菜类别背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "maocai sodium restaurant nutrition China study",
+        "Chinese restaurant dishes sodium soup category 2019"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "mala-xiangguo": {
+      "id": "mala-xiangguo",
+      "name": "麻辣香锅",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "mala_xiang_guo",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将肉、蔬菜、豆制品等食材分别处理后与麻辣调味料和油炒拌制的复合热菜；干锅和火锅另列。",
+      "variables": "主辅料比例、预处理油炸、炒制用油、盐和酱料、每份大小。",
+      "composition": "菜品可同时含肉、蔬菜、加工豆制品和浓味调料；多种食材及加工步骤导致配方差异大。",
+      "direct": "未检得麻辣香锅单品特异的人体临床结局研究。",
+      "specific": "中国餐厅钠横断面调查覆盖8131道畅销菜，约83.9%归入研究定义的炒/煎炸菜类；该研究未单列麻辣香锅，不能将类别中位数套用于本菜。",
+      "body": "未检得麻辣香锅单品特异的人体临床结局研究。 中国餐厅钠横断面调查覆盖8131道畅销菜，约83.9%归入研究定义的炒/煎炸菜类；该研究未单列麻辣香锅，不能将类别中位数套用于本菜。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "注意整锅分量、加工食材、油和调味料；多人分食时按个人实际摄入判断。",
+      "safety": "充分加热肉类和豆制品；刚出锅的油锅及铁锅有烫伤风险。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐厅菜品横断面调查，以配方和食物成分表计算钠。",
+          "population": "2019年6省192家餐厅8131道畅销菜，其中6819道归入研究定义的煎炒类。",
+          "exposure": "估算每100克和每份钠含量及主要钠来源。",
+          "result": "整体样本每份钠中位数2543.7 mg；菜品类别和份量差异较大。",
+          "limits": "未单列麻辣香锅；分类名称不能替代该菜的实测配方。",
+          "distance": "D2：中式炒制菜品与餐馆钠资料。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "mala xiang guo sodium nutrition China restaurant study",
+        "Chinese restaurant dishes fried dishes sodium 8131 menu recipes"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "hotpot": {
+      "id": "hotpot",
+      "name": "火锅",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "hotpot",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将肉类、蔬菜、豆制品、海鲜和主食等放入共享锅底煮熟后食用的餐食；川渝麻辣锅等地域锅底可另作变量，不重复立条。",
+      "variables": "汤底油盐、食材种类与重量、蘸料、是否饮汤、就餐时长和共享份量。",
+      "composition": "火锅是一餐的食物组合；锅底、食材与蘸料组成及食用量因地区和就餐人数变化。",
+      "direct": "未检得所有火锅类型通用的临床试验。",
+      "specific": "重庆一项为期一年的直接称重调查报告人均每餐食物消耗588.7 g，其中约70%为动物来源食物；调查集中于重庆火锅场景，不测疾病结局，也不代表所有地区火锅。",
+      "body": "未检得所有火锅类型通用的临床试验。 重庆一项为期一年的直接称重调查报告人均每餐食物消耗588.7 g，其中约70%为动物来源食物；调查集中于重庆火锅场景，不测疾病结局，也不代表所有地区火锅。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "控制锅底、蘸料及个人取食量，增加蔬菜豆制品选择；共享锅不饮用久煮汤底可减少汤中钠摄入。",
+      "safety": "生熟食材和夹具分开，肉类、海鲜充分煮熟；沸汤和锅具注意烫伤。",
+      "taste_m": {},
+      "refs": [
+        "Pang M, Zhang Q, Zhou J, et al. Dietary patterns and environmental impacts of Chongqing hotpot in China. Resources, Conservation and Recycling. 2023;198:107118. DOI: https://doi.org/10.1016/j.resconrec.2023.107118.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Pang M, Zhang Q, Zhou J, et al. Dietary patterns and environmental impacts of Chongqing hotpot in China. Resources, Conservation and Recycling. 2023;198:107118. DOI: https://doi.org/10.1016/j.resconrec.2023.107118.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "重庆火锅现场消费调查，直接称量点餐和剩余食物，并估算膳食组成。",
+          "population": "重庆消费者的火锅就餐；持续一年，样本来自获准调查的餐馆场景。",
+          "exposure": "按人均进食量和食物组构成计算每餐消费结构。",
+          "result": "人均每餐消费588.7 g，动物来源食物约占70%。",
+          "limits": "不是人体健康试验；地区和餐馆样本有限，不应代表全国所有火锅。",
+          "distance": "D0：重庆火锅就餐消费量与组成调查。"
+        },
+        {
+          "ref": 2,
+          "design": "中国餐厅菜品钠横断面调查，按菜品配方估算钠。",
+          "population": "6省192家餐厅8131道畅销菜，包括汤菜但非火锅专门样本。",
+          "exposure": "估算每份及每100克钠含量。",
+          "result": "整体每份钠中位数2543.7 mg；菜品差异较大。",
+          "limits": "未将共享火锅作为可比单一菜品，不能当作火锅实测值。",
+          "distance": "D3：餐馆菜品钠背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代餐饮组合。本条研究就餐方式和一餐组成，不把某一种锅底或蘸料的传统记载推为整餐结论。",
+      "queries": [
+        "Chongqing hotpot direct weighing 588.7 g per capita meal study",
+        "hot pot sodium composition China restaurant study"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "dry-pot": {
+      "id": "dry-pot",
+      "name": "干锅",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "dry_pot",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将肉、蔬菜或豆制品先行处理，再以较少汤汁和调味料在锅中加热、炒制并整锅上桌的复合菜；麻辣香锅和火锅另列。",
+      "variables": "主料、预处理炸制、油盐和酱料、每锅份量及是否多人分食。",
+      "composition": "食材吸油和调味比例因菜谱不同；干锅的名称不等于低油或低钠。",
+      "direct": "未检得干锅菜品单独的人体临床结局研究。",
+      "specific": "中国餐厅菜品横断面调查按详细配方估算8131道菜的钠；广义炒制菜平均每100克钠密度480.9 mg，但未单列干锅。",
+      "body": "未检得干锅菜品单独的人体临床结局研究。 中国餐厅菜品横断面调查按详细配方估算8131道菜的钠；广义炒制菜平均每100克钠密度480.9 mg，但未单列干锅。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "留意整锅用油、调味和食用份量；多人分食可按个人实际摄入估算。",
+      "safety": "肉类和水产充分加热；热锅与桌边加热设备注意烫伤。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐厅菜品横断面调查，以菜品配方及中国食物成分表估算。",
+          "population": "2019年6省192家餐厅8131道畅销菜；研究的煎炒菜类别有6819道。",
+          "exposure": "按食品类别估算钠密度和每份含量。",
+          "result": "煎炒菜类别中位钠密度480.9 mg/100g。",
+          "limits": "干锅未单列，研究以成分表和菜单配方计算而非实验室测定；不能用类别统计替代某份干锅。",
+          "distance": "D2：相邻餐馆炒菜类别资料。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "dry pot sodium study China restaurant dish composition",
+        "Chinese restaurant cooking sodium fried dishes 2019 8131"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "barbecue": {
+      "id": "barbecue",
+      "name": "烧烤",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "barbecue",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "对肉类、禽类、水产、蔬菜或豆制品进行明火、炭火或电烤后食用的烹调菜品集合；具体肉串、烤翅和烤鱼另立条。",
+      "variables": "食材种类、直接接触火焰、燃料、温度和时间、焦化、腌料与份量。",
+      "composition": "烧烤不是单一配方；明火、烟气和高温可使某些食品产生多环芳烃，具体暴露依食物和制法而变。",
+      "direct": "未检得“烧烤”这一混合菜品集合对应的统一人体结局试验。",
+      "specific": "中国街头食品抽样研究以HPLC检测25类烧烤食品PAH4，8类样品超过中国BaP限值，风险模型将14类列为升高；这是样品污染物检测及模型估计，并非消费者疾病观察。",
+      "body": "未检得“烧烤”这一混合菜品集合对应的统一人体结局试验。 中国街头食品抽样研究以HPLC检测25类烧烤食品PAH4，8类样品超过中国BaP限值，风险模型将14类列为升高；这是样品污染物检测及模型估计，并非消费者疾病观察。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "减少焦化和直接烟熏接触，避免把不同肉类、蔬菜和水产归作相同暴露。",
+      "safety": "肉、水产和禽类充分熟制，生熟分开；炭火及热油注意灼伤。",
+      "taste_m": {},
+      "refs": [
+        "Yu J, Wang Z, Wu W, Yuan L, Yang Z, Wang S, Cai X. Distribution of polycyclic aromatic hydrocarbons and carcinogenic risk assessment in street-barbecued foods in China. Journal of Food Composition and Analysis. 2025;137(A):106890. DOI: https://doi.org/10.1016/j.jfca.2024.106890.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Yu J, Wang Z, Wu W, Yuan L, Yang Z, Wang S, Cai X. Distribution of polycyclic aromatic hydrocarbons and carcinogenic risk assessment in street-barbecued foods in China. Journal of Food Composition and Analysis. 2025;137(A):106890. DOI: https://doi.org/10.1016/j.jfca.2024.106890.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "街头食品抽样、HPLC测定PAH4，并进行毒性当量与终生风险模型估算。",
+          "population": "中国高人流街边摊位25类烧烤食品，含肉、蔬菜、水产、淀粉及豆制品。",
+          "exposure": "测BaP等4种多环芳烃并与限值比较。",
+          "result": "8类样品超过中国BaP限值；研究用模型估计14类潜在风险升高。",
+          "limits": "摊位和样品范围有限，模型输出不是人体疾病率；不能概括所有烧烤菜品。",
+          "distance": "D0：多类街头烧烤食品样品检测。"
+        },
+        {
+          "ref": 2,
+          "design": "中国餐厅菜品横断面调查。",
+          "population": "6省192家餐厅的8131道畅销菜。",
+          "exposure": "以食材配方估算钠，按菜类汇总。",
+          "result": "整体每份钠中位数2543.7 mg，餐馆菜之间差异显著。",
+          "limits": "未单列烧烤品种；数据来自配方计算，非烧烤成品检测。",
+          "distance": "D3：餐饮菜品钠背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "China street barbecued foods PAH4 25 categories BaP 2025",
+        "Chinese barbecue food sodium restaurant survey"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "grilled-fish": {
+      "id": "grilled-fish",
+      "name": "烤鱼",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "grilled_fish",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "将整鱼或鱼段烤熟并可配辣椒、油、蔬菜和汤汁的复合水产菜；普通烤鱼片及鱼串另按形态区分。",
+      "variables": "鱼种、重量、腌料、油和盐、烤制热源、汤汁和配菜。",
+      "composition": "鱼体与调味汁、油及配菜构成整道菜；餐馆常见大份共享，按整锅总重量估算不等于个人摄入。",
+      "direct": "未检得烤鱼成品特异的长期人体结局研究。",
+      "specific": "中国街头烧烤研究的样本类别包括水产，但报告未单独给出烤鱼品种结果；另有中国餐馆菜品钠研究，但同样未单列烤鱼。",
+      "body": "未检得烤鱼成品特异的长期人体结局研究。 中国街头烧烤研究的样本类别包括水产，但报告未单独给出烤鱼品种结果；另有中国餐馆菜品钠研究，但同样未单列烤鱼。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "确认鱼种和过敏原，按个人份量考虑油、盐和配菜；不要把水产类别统计当作单条烤鱼数据。",
+      "safety": "鱼类充分加热，注意鱼刺；生鱼与熟食和配菜分开处理。",
+      "taste_m": {},
+      "refs": [
+        "Yu J, Wang Z, Wu W, Yuan L, Yang Z, Wang S, Cai X. Distribution of polycyclic aromatic hydrocarbons and carcinogenic risk assessment in street-barbecued foods in China. Journal of Food Composition and Analysis. 2025;137(A):106890. DOI: https://doi.org/10.1016/j.jfca.2024.106890.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Yu J, Wang Z, Wu W, Yuan L, Yang Z, Wang S, Cai X. Distribution of polycyclic aromatic hydrocarbons and carcinogenic risk assessment in street-barbecued foods in China. Journal of Food Composition and Analysis. 2025;137(A):106890. DOI: https://doi.org/10.1016/j.jfca.2024.106890.",
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "街头烧烤食品抽样与HPLC测定多环芳烃。",
+          "population": "中国街边摊位的25类食品样品，包含水产类别。",
+          "exposure": "检测PAH4并按品类与食品限值比较。",
+          "result": "研究报告不同食品类别之间PAH检出和含量不同。",
+          "limits": "公开摘要未给出单独烤鱼结果；水产合类不能代替某鱼种或餐馆烤鱼。",
+          "distance": "D2：街头烧烤水产品类资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国餐厅菜品横断面调查，以菜品配方估算钠。",
+          "population": "2019年6省192家餐厅8131道畅销菜。",
+          "exposure": "汇总餐馆菜品每100克及每份钠。",
+          "result": "全体样本每份钠中位数2543.7 mg，菜品间范围较大。",
+          "limits": "未单列烤鱼，整体数值不能作为烤鱼营养值。",
+          "distance": "D3：广义中国餐馆菜品数据。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。",
+      "queries": [
+        "Chinese grilled fish restaurant sodium PAH sample research",
+        "China street barbecue aquatic foods PAH4 fish 2025"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    },
+    "huangmen-chicken-rice": {
+      "id": "huangmen-chicken-rice",
+      "name": "黄焖鸡米饭",
+      "volume": "复合餐食部",
+      "entry_type": "processed_food",
+      "family": "huangmen_chicken_rice",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "鸡肉与酱汁焖煮后连同米饭作为一份餐食的中式复合菜；黄焖鸡单独菜品、盖浇鸡饭和卤肉饭另列。",
+      "variables": "鸡肉部位、米饭克重、酱油及盐、土豆或蔬菜、汤汁和套餐配菜。",
+      "composition": "鸡肉、米饭、酱汁和配菜共同构成；单份钠和能量受酱汁及米饭比例影响。",
+      "direct": "未检得黄焖鸡米饭成品特异的人体临床结局研究。",
+      "specific": "中国餐厅调查将8131道菜单菜品按详细配方估算钠，显示菜品每份钠中位数2543.7 mg，但没有单独报告黄焖鸡米饭。",
+      "body": "未检得黄焖鸡米饭成品特异的人体临床结局研究。 中国餐厅调查将8131道菜单菜品按详细配方估算钠，显示菜品每份钠中位数2543.7 mg，但没有单独报告黄焖鸡米饭。",
+      "evidence_body": "证据分别来自餐厅菜品配方估算、现场食物称重、官方食物成分数据库或污染物样品检测；类别、样本和研究目的的限制按来源保留。",
+      "care": "按整份米饭和菜品合并比较钠和份量；酱汁和米饭摄入量会改变实际暴露。",
+      "safety": "鸡肉充分加热，熟食与生肉分开；剩余米饭和鸡肉及时冷藏并充分复热。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐厅菜单横断面调查，按菜品详细配方和中国食物成分表估算钠。",
+          "population": "2019年6省192家餐厅8131道畅销菜。",
+          "exposure": "按每100克及每份估算钠并比较菜品类别。",
+          "result": "整体菜品每份钠中位数2543.7 mg，份量和类别影响每份数值。",
+          "limits": "黄焖鸡米饭未单独列为结果；总体菜单数据不是此菜的测量结果。",
+          "distance": "D3：中式餐馆复合菜背景。"
+        }
+      ],
+      "unknowns": "中国市场各地配方、门店和份量的代表性资料；本条整体菜品特异的长期人体结局研究。",
+      "tradition": "现代套餐型复合餐食。本条是鸡肉、酱汁和米饭的整体，不把单一原料的传统记载等同于整餐功效。",
+      "queries": [
+        "huangmen chicken rice nutrition sodium study China restaurant menu",
+        "Chinese restaurant dishes sodium recipe survey 8131 192 restaurants"
+      ],
+      "search_log": [
+        "核对菜品定义、主要配料、烹调方式与直接研究。",
+        "区分现场测量、配方估算、成分数据库及模型风险评估，不混写其结论。"
+      ]
+    }
+  }
+}

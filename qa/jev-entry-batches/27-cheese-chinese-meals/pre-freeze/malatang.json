@@ -1,0 +1,10 @@
+{
+  "batch_id": "27-cheese-chinese-meals",
+  "entry_id": "malatang",
+  "summary_ref": "references/entries/malatang/summary.md",
+  "summary_sha256": "ab3d3c8ffecfc4c0eb564bc0f5f5bb59a4117633b0a79ddd300328f5ce3ee95e",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 麻辣烫\r\n\r\n**身份。** 将肉、蔬菜、豆制品、主食等按份选取后在调味汤底中烫煮并连汤或配蘸料食用的复合餐；冒菜和火锅另列。\r\n\r\n**组成与暴露。** 钠和能量取决于所选食材、汤底、蘸料及食用汤量；按重量或价格计费会改变实际份量。 **关键变量：** 食材种类和重量、汤底油盐、是否饮汤、蘸料、主食及每餐总份量。\r\n\r\n**直接人体证据。** 未检得麻辣烫单品特异的长期人体结局试验。\r\n\r\n**产品/成分证据。** 中国餐厅研究分析192家餐厅8131道畅销菜的配方估算钠，整体每份钠中位数2543.7 mg；汤类中位数每100克687.0 mg。没有单列麻辣烫，该类别数据只提供餐饮汤品背景。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 生熟食材分开夹取，食物充分煮熟；汤锅高温，注意烫伤。\r\n\r\n**传统来源。** 现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

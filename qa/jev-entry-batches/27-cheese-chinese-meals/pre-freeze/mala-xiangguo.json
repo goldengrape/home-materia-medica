@@ -1,0 +1,10 @@
+{
+  "batch_id": "27-cheese-chinese-meals",
+  "entry_id": "mala-xiangguo",
+  "summary_ref": "references/entries/mala-xiangguo/summary.md",
+  "summary_sha256": "c5fa25f41a25e328d274fbbd3a1721bb86b83e801b6c03143ea485fd5acc5b58",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 麻辣香锅\r\n\r\n**身份。** 将肉、蔬菜、豆制品等食材分别处理后与麻辣调味料和油炒拌制的复合热菜；干锅和火锅另列。\r\n\r\n**组成与暴露。** 菜品可同时含肉、蔬菜、加工豆制品和浓味调料；多种食材及加工步骤导致配方差异大。 **关键变量：** 主辅料比例、预处理油炸、炒制用油、盐和酱料、每份大小。\r\n\r\n**直接人体证据。** 未检得麻辣香锅单品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** 中国餐厅钠横断面调查覆盖8131道畅销菜，约83.9%归入研究定义的炒/煎炸菜类；该研究未单列麻辣香锅，不能将类别中位数套用于本菜。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 充分加热肉类和豆制品；刚出锅的油锅及铁锅有烫伤风险。\r\n\r\n**传统来源。** 现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
