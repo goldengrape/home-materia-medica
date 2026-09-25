@@ -1,0 +1,10 @@
+f9d39b7c4016f1c4e23c26391471f85826015a4f3f0acc6ea89ef2deb042d13d  qa/jev-entry-batches/23-snacks-dried-meat/raw/shrimp-crackers.json
+8463fa2e2d04f77faa508ef5db0f7e2eca18e25211f074ea24e7247e52cf844d  qa/jev-entry-batches/23-snacks-dried-meat/raw/guoba.json
+7576a5a37b6d4ae15d24f966d4fca4699193f80d443ff4b56b384b308e755fdc  qa/jev-entry-batches/23-snacks-dried-meat/raw/rice-crackers.json
+4ff22c6c047d95966f0490e03eb372a1c8a53ddcaf69f3efaa7ab81ff50e7467  qa/jev-entry-batches/23-snacks-dried-meat/raw/seaweed-crisps.json
+a28bcc4e7cb4f2d5111ce16c3e0af6f8d327b176fec791e73fefb6d1b775676a  qa/jev-entry-batches/23-snacks-dried-meat/raw/vegetable-chips.json
+1c7a828ae68b00e4cca130a099d0ac50c1740bb34c3d6fe8e4a038409a4b3946  qa/jev-entry-batches/23-snacks-dried-meat/raw/freeze-dried-fruit.json
+835ff4ceb4c3a73096d202bed3f4392356327f415bed8b9b7da5376da89d48c4  qa/jev-entry-batches/23-snacks-dried-meat/raw/beef-jerky.json
+f8ffb09416ae57640c187aa6b2444883fb9d1d454be3fc7e45991a232acb4ba3  qa/jev-entry-batches/23-snacks-dried-meat/raw/pork-jerky.json
+1536d491da5378672fc4be103650b88c8308592c7e4a9c43362379dde299386b  qa/jev-entry-batches/23-snacks-dried-meat/raw/chicken-breast-jerky.json
+06d33389bce98fa697dfffca35adda339fbeab59b60906828cd234946446fe0c  qa/jev-entry-batches/23-snacks-dried-meat/raw/sausage.json

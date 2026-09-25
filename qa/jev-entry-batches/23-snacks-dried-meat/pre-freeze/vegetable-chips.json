@@ -2,9 +2,9 @@
   "batch_id": "23-snacks-dried-meat",
   "entry_id": "vegetable-chips",
   "summary_ref": "references/entries/vegetable-chips/summary.md",
-  "summary_sha256": "1da129af357617e58a3b805333c6facf6f913f1e35ac532bd4e1e62b3003a38e",
+  "summary_sha256": "af21e2c58bf4f7b638b3c6f864e31412db023e7bdcd56d469d530132bef73123",
   "reasoning_version": "jev-tcm-reasoning-v0.4",
   "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
   "snapshot_date": "2026-09-24",
-  "summary_text": "# Summary Document — 蔬菜脆片\r\n\r\n**身份。** 以马铃薯以外蔬菜切片或成型后烘烤、油炸或脱水制成的脆食；马铃薯薯片另列。\r\n\r\n**组成与暴露。** 蔬菜种类、加工温度、油盐及份量会改变成品组成。 **关键变量：** 原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。\r\n\r\n**直接人体证据。** 未检得蔬菜脆片成品人体试验。\r\n\r\n**产品/成分证据。** 丹麦市场检测29款马铃薯和16款替代蔬菜脆片；胡萝卜脆片样品平均丙烯酰胺2893 μg/kg。检测及暴露估算不是人体疾病结果，也不代表每款产品。\r\n\r\n**共享背景。** 参见 snack-and-processed-meat-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 查看配料、钠、油和份量；蔬菜名称不保证低油低钠，避免食用焦黑部分。\r\n\r\n**传统来源。** 现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+  "summary_text": "# Summary Document — 蔬菜脆片\n\n**身份。** 以马铃薯以外蔬菜切片或成型后烘烤、油炸或脱水制成的脆食；马铃薯薯片另列。\n\n**组成与暴露。** 蔬菜种类、加工温度、油盐及份量会改变成品组成。 **关键变量：** 原料比例、配方调味、加工方式、含水量及每份重量会改变实际组成和摄入。\n\n**直接人体证据。** 未检得蔬菜脆片成品人体试验。\n\n**产品/成分证据。** 丹麦市场检测29款马铃薯和16款替代蔬菜脆片；胡萝卜脆片样品平均丙烯酰胺2893 μg/kg。检测及暴露估算不是人体疾病结果，也不代表每款产品。\n\n**共享背景。** 参见 snack-and-processed-meat-base；共享结论不自动等于本成品结论。\n\n**安全。** 查看配料、钠、油和份量；蔬菜名称不保证低油低钠，避免食用焦黑部分。\n\n**传统来源。** 现代加工食品。本轮没有将古籍对原料的记载直接映射为该商品的药性或疗效。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
 }
