@@ -1,0 +1,10 @@
+175941cab1e3a602661ef2ec1b26a9ded810f0e0ae039129fd0288e04615b38a  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/avocado-puree.json
+f7bd8ccf3c2ef8a8108450fcec35cd93f4d412c49f1773dc9bc713c1b22803ae  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/frozen-berries.json
+858955ffa82a2e0e8b7796054effb4cf057dcb36c67237dc65dc147a7391de33  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/broccoli.json
+64ad77d60036efa74d44a8060d3cb789e58f68491738001ee6b1e90712dc806a  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/kale.json
+0fd8c48f52973c6024da729eae30a6cdd8637fa883d7116862508c0d75cd5d5a  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/arugula.json
+a79b4e1aaa87f74ca7c6157340f4dcf96ab8a72cb58d4c2f60c0f76f8c203c48  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/brussels-sprouts.json
+197c275b5def60ad278df703294505212d57a15565ecea0753927909afaeb761  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/bell-pepper.json
+e9fff34eacf4b3488d94b95fd740d1d0c429028c5febd58ed7fc21fc4cdf3638  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/okra.json
+f549e8947839ac06abe9a820cea84ac65f019db2b782b577520779078e518f80  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/cherry-tomato.json
+248cba117a492ff3f3792d0c76b72af6414ca02e2a0b38ea5dfe14f740a64e83  qa/jev-entry-batches/17-modern-fruits-and-vegetables/raw/zucchini.json
