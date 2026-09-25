@@ -128,7 +128,7 @@ def summary(entry_id, p):
 
 **身份。** {p['identity']}
 
-**组成与暴露。** {p['composition']} {p['variables']}
+**组成与暴露。** {p['composition']} **关键变量：** {p['variables']}
 
 **直接人体证据。** {p['direct']}
 

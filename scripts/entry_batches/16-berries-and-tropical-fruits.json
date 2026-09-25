@@ -1,0 +1,571 @@
+{
+  "batch": {
+    "id": "16-berries-and-tropical-fruits",
+    "title": "浆果与热带水果",
+    "catalog_order": 16,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Exa web search/fetch; PubMed; Cochrane; FDA; USDA FoodData Central",
+    "exa_search_calls": 12,
+    "exa_hits": 48,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-16-berries-and-tropical-fruits",
+    "identity_red_team": [
+      "蓝莓试验常用冻干粉、果汁或提取物；不得把不同制品合成新鲜整果的统一疗效。",
+      "蔓越莓预防尿路感染的证据涉及果汁、片剂和胶囊；不代表鲜果可治疗已发生的感染。",
+      "树莓随机试验使用高份量冷冻红树莓，主要代谢指标未显著改变。",
+      "黑莓试验每日约600 g、仅7天且限于超重男性和高脂控制膳食，不能写成一般减重效果。",
+      "西柚与部分药物相互作用；药物种类、剂量和个体情况不同，应按具体药品信息核对。",
+      "猕猴桃便秘试验使用特定绿色品种和每日两枚；与全品类心代谢证据分开评估。",
+      "红肉火龙果粉末试验人数少、时间短，终点是血管功能指标，不是心血管疾病结局。",
+      "百香果混合饮品同时含洛神花提取物，果皮粉也不等于鲜果果肉。",
+      "榴莲试验为16人短时交叉研究；进食后的血压、心率和血脂变化不能外推成长期结果。",
+      "释迦按番荔枝属 Annona squamosa 可食果肉定义；叶、籽、果皮提取物研究不得代替果肉证据。"
+    ],
+    "citation_audit_revision": "rev-1: fruit form boundaries, cranberry prevention vs treatment, and cultivar-specific kiwi and dragon-fruit trials"
+  },
+  "entries": {
+    "blueberry": {
+      "id": "blueberry",
+      "name": "蓝莓",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-berries",
+      "research_depth": "R2",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指新鲜或冷冻、完整可食的蓝莓果实（Vaccinium spp.，以常见栽培蓝莓为主）。不把蓝莓汁、冻干粉、提取物、黑果越橘或其他浆果当作同一研究对象；不同品种和份量会改变组成。",
+      "variables": "品种、成熟度、鲜果或冷冻、份量、是否制成果汁或冻干粉、研究产品的花青素含量及是否替代其他食物。",
+      "composition": "蓝莓提供水分、碳水化合物、膳食纤维及多酚，组成随品种和加工变化。食物成分数据库中的代表品种数据不能代替实际商品或食用份量。",
+      "direct": "一项纳入49项随机对照人体试验的浆果花青素系统综述，包含蓝莓、黑加仑、黑莓等多种来源以及粉、汁、提取物等不同制品。综述报告记忆与血管功能方面有部分阳性信号；心代谢指标结果不一致。蓝莓相关研究多数使用冻干粉或提取物，不能据此断定普通鲜蓝莓对疾病有预防或治疗作用。",
+      "specific": "综述中的制品、剂量、研究时长和人群差异明显；复合浆果花青素证据不能视为蓝莓整果的独立汇总效应。未据机制或单一多酚成分推导整果疗效。",
+      "safety": "蓝莓作为普通食物的安全性通常不构成特殊问题；对蓝莓或相关浆果过敏者应避免。试验补充剂和浓缩制品的暴露不同于日常鲜果。",
+      "body": "蓝莓的营养组成会随品种、成熟度、储存和食用份量变化。人体研究中常见冻干粉、果汁或提取物。一项浆果花青素随机试验系统综述纳入49项研究，记忆和部分血管指标出现阳性结果，但多种浆果和制品混在同一证据体内，心代谢指标也不一致。因此，这些结果不能直接说明普通鲜蓝莓可以预防或治疗疾病。",
+      "evidence_body": "鲜蓝莓具体长期健康结局证据有限（E-C至E-0）。系统综述混合了不同浆果和加工制品，主要结局是认知任务、血管功能或风险标志物，不是疾病发生率。",
+      "care": "按普通水果食用并核对实际份量；不要把浓缩提取物或冻干粉的研究剂量换算为鲜果的保健剂量。",
+      "taste_m": {
+        "甘": "成熟蓝莓通常呈甜味，品种、成熟度及酸甜平衡会影响感官描述；仅记录食味，不推为传统药味或功效。"
+      },
+      "refs": [
+        "Ahles S, Joris PJ, Plat J. ‘Effects of Berry Anthocyanins on Cognitive Performance, Vascular Function and Cardiometabolic Risk Markers: A Systematic Review of Randomized Placebo-Controlled Intervention Studies in Humans.’ International Journal of Molecular Sciences. 2021;22(12):6482. DOI: https://doi.org/10.3390/ijms22126482.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Ahles S, Joris PJ, Plat J. ‘Effects of Berry Anthocyanins on Cognitive Performance, Vascular Function and Cardiometabolic Risk Markers: A Systematic Review of Randomized Placebo-Controlled Intervention Studies in Humans.’ International Journal of Molecular Sciences. 2021;22(12):6482. DOI: https://doi.org/10.3390/ijms22126482.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机对照人体干预试验的系统综述；纳入49项研究，按认知、血管功能和心代谢指标分组。",
+          "population": "健康成人、儿童、老年人及少量代谢风险人群。",
+          "exposure": "多种浆果的果汁、粉末、提取物或花青素产品；其中蓝莓研究常用冻干粉。",
+          "result": "部分认知和血管指标有改善信号；心代谢指标结果不一致。",
+          "limits": "食物种类与制品异质，不能单独归因于鲜蓝莓；多为替代指标且疗程有限。",
+          "distance": "D1–D3（蓝莓制品至其他浆果或提取物，按研究逐项判断）"
+        }
+      ],
+      "unknowns": "不同鲜果品种和份量的长期人体结局；鲜蓝莓整果与冻干粉、汁和混合浆果制品之间的可比性；观察到的短期替代指标能否对应临床结局。",
+      "tradition": "本项目传统母条索引未列蓝莓的传统母本。本轮未核到能与现代栽培蓝莓身份直接对应的古籍材料，不移用其他浆果或越橘的性味记载。",
+      "queries": [
+        "Blueberry whole fruit consumption randomized controlled trials and systematic reviews in humans; distinguish fresh fruit from juice, freeze-dried powder, extracts, bilberry and mixed berry products.",
+        "Systematic review of berry anthocyanin randomized human trials; extract blueberry-specific populations, interventions, outcomes and limitations; USDA FoodData Central composition for raw blueberries."
+      ],
+      "search_log": [
+        "检索蓝莓和多种浆果的人体随机试验系统综述；逐项核对研究对象、制品形式和主要结局。",
+        "核对49项试验的综述范围及其制品异质性，避免把混合浆果结论写成鲜蓝莓整果结果。",
+        "以USDA FoodData Central作为组成数据入口；本轮未进行市场抽样。"
+      ]
+    },
+    "cranberry": {
+      "id": "cranberry",
+      "name": "蔓越莓",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-berries",
+      "research_depth": "R2",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指蔓越莓果实（主要为 Vaccinium macrocarpon）及常见未浓缩食品形态。鲜果、加糖干果、果汁饮料和标准化粉剂在酸度、添加糖、果实含量及原花青素暴露方面差异很大；胶囊和提取物不视作普通果实。",
+      "variables": "果品种类、鲜果或干果、果汁浓度与添加糖、原花青素含量、份量、尿路感染风险人群及是否使用药物。",
+      "composition": "蔓越莓味酸，市售果汁饮料和干果可能加入糖；商品名称不能说明真实果汁比例或原花青素剂量。应查配料表和每份营养标示。",
+      "direct": "2023年Cochrane综述纳入50项随机试验、8857人，研究果汁、片剂或胶囊。总体上，特定人群的有症状、培养证实尿路感染风险可能下降：复发感染女性RR 0.74（8项研究，1555人），儿童RR 0.46（5项研究，504人）；孕妇及部分机构老人未见明确获益。该结果针对预防且产品差异大，不支持用蔓越莓治疗已经发生的尿路感染，也不能直接套用于鲜果。",
+      "specific": "综述中产品剂量、原花青素标示和依从性不一。果汁饮品和胶囊都不是同等于鲜果的可互换暴露；没有确定的通用有效剂量。",
+      "safety": "大份量可能引起胃肠不适；关于蔓越莓与华法林相互作用的证据相互矛盾。正在服用华法林或其他长期用药者应核对药品说明并咨询药师。蔓越莓不能替代尿路感染诊断和治疗。",
+      "body": "蔓越莓可作鲜果、加糖干果或果汁饮料食用，产品中的果汁比例、添加糖和原花青素含量差别很大。Cochrane于2023年汇总50项随机试验，发现某些人群使用蔓越莓产品后，预防有症状尿路感染的风险可能下降；结果在复发感染女性和儿童较明确，但不同产品和人群差异较大。研究不支持把蔓越莓当作现有感染的治疗，也不能把果汁或胶囊结果直接换成鲜果结论。",
+      "evidence_body": "蔓越莓产品用于特定人群预防复发尿路感染有中等确定性证据；证据覆盖果汁、片剂和胶囊，不能专门归因于鲜果。对已发生感染的治疗效果未获支持（E-C；按产品和人群分层）。",
+      "care": "看清果汁饮料和干果的添加糖。若正在服用华法林，因相互作用证据冲突，应先向药师确认；出现尿路感染症状应寻求诊治，不以果品代替治疗。",
+      "taste_m": {
+        "酸": "蔓越莓果实及未加糖果汁通常酸味明显；市售产品甜度受添加糖影响，仅作感官记录。"
+      },
+      "refs": [
+        "Williams G, Hahn D, Stephens JH, Craig JC, Hodson EM. ‘Cranberries for preventing urinary tract infections.’ Cochrane Database of Systematic Reviews. 2023;11:CD001321. DOI: https://doi.org/10.1002/14651858.CD001321.pub6.",
+        "National Center for Complementary and Integrative Health. ‘Herb-Drug Interactions: What the Science Says.’ Cranberry section. https://www.nccih.nih.gov/health/providers/digest/herb-drug-interactions-science.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Williams G, Hahn D, Stephens JH, Craig JC, Hodson EM. ‘Cranberries for preventing urinary tract infections.’ Cochrane Database of Systematic Reviews. 2023;11:CD001321. DOI: https://doi.org/10.1002/14651858.CD001321.pub6.",
+        "National Center for Complementary and Integrative Health. ‘Herb-Drug Interactions: What the Science Says.’ https://www.nccih.nih.gov/health/providers/digest/herb-drug-interactions-science."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "系统综述与Meta分析；50项随机或准随机试验、8857人。",
+          "population": "复发性尿路感染女性、儿童、介入后易感人群、孕妇及长期照护机构居民等。",
+          "exposure": "果汁、片剂或胶囊；各制品、剂量和原花青素含量不同。",
+          "result": "总体和部分人群的有症状培养证实尿路感染风险下降；另一些人群结果不明确。",
+          "limits": "证据是预防而非治疗；产品异质，不能推出鲜蔓越莓的等效剂量或效果。",
+          "distance": "D1–D3（果汁、全果粉至胶囊/标准化制品；不等于鲜果）"
+        }
+      ],
+      "unknowns": "不同市售果汁、干果和鲜果的实际原花青素暴露；鲜果本身对尿路感染预防的直接效果；最适剂量、依从性和长期安全性。",
+      "tradition": "本项目传统母条索引未列蔓越莓的传统母本；本轮未确认可与北美蔓越莓品种对应的古籍来源。",
+      "queries": [
+        "Cochrane systematic review cranberry products randomized trials prevention symptomatic culture-verified urinary tract infection population-specific results 2023.",
+        "Cranberry safety warfarin interaction authoritative NCCIH source; compare fresh fruit, sweetened dried cranberries, juice beverages and capsules."
+      ],
+      "search_log": [
+        "核对Cochrane 2023综述中的人群分组、效应量和产品形态，结论限定为预防。",
+        "读取NCCIH对华法林相互作用的说明，保留其证据冲突状态。",
+        "明确鲜果、加糖干果、果汁饮料和胶囊不是同一暴露。"
+      ]
+    },
+    "raspberry": {
+      "id": "raspberry",
+      "name": "树莓（红树莓）",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-berries",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条按常见红树莓（Rubus idaeus）可食果实定义，含鲜果和冷冻整果。黑树莓、覆盆子叶茶、提取物、果渣粉和多种浆果混合物不视为同一食品。",
+      "variables": "品种、鲜果或冷冻、份量、成熟度、加工成汁或粉、是否与其他浆果混合，以及与原饮食的替代关系。",
+      "composition": "红树莓含水分、糖类、膳食纤维和多酚，营养数值受品种、成熟度和加工影响；加糖果酱、果汁和果渣产品的组成不同。",
+      "direct": "一项随机对照试验将59名超重或腹型肥胖且有轻度代谢风险的成人分配为每天280 g冷冻红树莓或维持原饮食，持续8周。研究未发现空腹胰岛素、血糖、炎症指标或血压的显著组间改变；部分基因表达和代谢组变化属于探索性结果。",
+      "specific": "该试验样本有限，且控制组未接受等能量水果替代；每日280 g也不能代表常见份量。试验不支持将树莓写成调节血糖、减重或治疗代谢综合征的手段。",
+      "safety": "普通食用的主要实际差异是份量、加工和是否加糖；对浆果过敏者应避免。高纤维份量可能引起个体胃肠不适。",
+      "body": "一项59名有轻度代谢风险成人参加的随机试验，每天提供280 g冷冻红树莓，持续8周。研究没有发现空腹血糖、胰岛素、炎症指标或血压的显著组间变化；探索性基因和代谢物变化不能作为疾病疗效证据。该试验采用较大份量冷冻整果，不能直接说明普通份量鲜树莓的长期效果。",
+      "evidence_body": "红树莓整果的人体随机证据目前有限；一项小型8周试验未见主要空腹代谢指标显著改善（E-C）。研究对象有代谢风险，份量较大，不能外推为减重或糖尿病治疗。",
+      "care": "选择整果时留意实际份量；果汁、果酱和加糖冷冻制品的糖量需单独核对。",
+      "taste_m": {
+        "酸": "红树莓通常有酸甜味，成熟度和品种会改变酸度；只记感官，不推成传统分类。",
+        "甘": "红树莓的甜味随成熟度和品种变化；只记感官，不推成传统分类。"
+      },
+      "refs": [
+        "Franck M, et al. ‘Effects of Daily Raspberry Consumption on Immune-Metabolic Health in Subjects at Risk of Metabolic Syndrome: A Randomized Controlled Trial.’ Nutrients. 2020;12(12):3858. DOI: https://doi.org/10.3390/nu12123858.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Franck M, et al. ‘Effects of Daily Raspberry Consumption on Immune-Metabolic Health in Subjects at Risk of Metabolic Syndrome: A Randomized Controlled Trial.’ Nutrients. 2020;12(12):3858. DOI: https://doi.org/10.3390/nu12123858.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两组平行随机对照试验，8周。",
+          "population": "59名超重或腹型肥胖、轻度高胰岛素血症或高甘油三酯成人。",
+          "exposure": "每日280 g冷冻红树莓；对照维持常规饮食。",
+          "result": "空腹血糖、胰岛素、炎症标志物及血压未见显著组间改善；发现部分探索性组学变化。",
+          "limits": "样本量小、对照未匹配水果能量，单一高份量产品和短时替代指标。",
+          "distance": "D0（冷冻红树莓整果）"
+        }
+      ],
+      "unknowns": "常见食用份量下鲜果的长期人体结局；不同红树莓品种和加工形式的差异；试验中的组学变化是否可重复并有临床意义。",
+      "tradition": "本项目传统母条索引未列现代红树莓品种的传统母本；未以覆盆子叶或其他悬钩子属植物资料替代果实证据。",
+      "queries": [
+        "Randomized human trial of daily whole red raspberry consumption exact dose duration metabolic outcomes and limitations.",
+        "Raw red raspberry composition USDA FoodData Central; distinguish raspberry fruit from leaf, black raspberry, extract and mixed berry trials."
+      ],
+      "search_log": [
+        "核对59名成人、每日280 g冷冻红树莓、8周的随机试验；区分主要阴性指标与探索性组学结果。",
+        "检索红树莓整果与浆果混合物的证据，未将提取物机制作为整果人体结局。",
+        "以USDA FoodData Central核对普通鲜果组成数据入口。"
+      ]
+    },
+    "blackberry": {
+      "id": "blackberry",
+      "name": "黑莓",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-berries",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指常见栽培黑莓（Rubus spp.）的完整可食果实，可为鲜果或冷冻果。黑树莓（Rubus occidentalis）、黑加仑、果汁、提取物及复合浆果饮品另行区分。",
+      "variables": "品种、鲜果或冷冻、份量、成熟度、食用时间、是否在控制膳食中替代其他食物，以及研究参与者的人群特征。",
+      "composition": "黑莓含水分、碳水化合物、纤维及花青素等多酚；品种、成熟度和加工会改变组成。冷冻整果与汁、籽油或提取物不能按重量直接换算。",
+      "direct": "一项随机、安慰剂对照交叉试验纳入27名超重或肥胖男性，在高脂控制膳食中每天食用600 g黑莓或等热量明胶对照，连续7天。黑莓期胰岛素曲线下面积较低、部分脂肪氧化指标改变，但葡萄糖曲线下面积无显著差异。",
+      "specific": "干预份量极大且持续仅一周；热量控制膳食、男性样本和替代终点限制外推。不能从该试验得出日常食量减重、降糖或疾病预防结论。",
+      "safety": "普通食用通常没有特别限制；对浆果过敏者应避免。一次摄入远高于日常份量时，可能出现个体胃肠不适。",
+      "body": "现有一项黑莓整果随机交叉试验仅有27名超重或肥胖男性。参加者在控制高脂膳食中每天吃600 g黑莓，连续7天；部分胰岛素和能量代谢替代指标有变化，但葡萄糖曲线下面积未显著变化。试验时间短、份量很大，不能说明普通份量黑莓能减重或预防糖尿病。",
+      "evidence_body": "黑莓整果直接人体证据很有限（E-D至E-C）：一项小型短期控制膳食试验的主要信号来自替代指标；对血糖和长期临床结局未证实。",
+      "care": "按普通水果份量食用；不要把试验用的每日600 g解释为建议剂量。",
+      "taste_m": {
+        "酸": "黑莓成熟度不同，常有酸甜变化；这里只记录感官，不推成传统分类。",
+        "甘": "成熟黑莓可有甜味，品种和储存影响明显；这里只记录感官，不推成传统分类。"
+      },
+      "refs": [
+        "Solverson P, et al. ‘Blackberry Feeding Increases Fat Oxidation and Improves Insulin Sensitivity in Overweight and Obese Males.’ Nutrients. 2018;10(8):1048. DOI: https://doi.org/10.3390/nu10081048.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Solverson P, et al. ‘Blackberry Feeding Increases Fat Oxidation and Improves Insulin Sensitivity in Overweight and Obese Males.’ Nutrients. 2018;10(8):1048. DOI: https://doi.org/10.3390/nu10081048.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、对照交叉试验；两个7天处理期，中间有7天洗脱。",
+          "population": "27名超重或肥胖男性；部分能量代谢数据因设备故障缺失。",
+          "exposure": "高脂控制膳食中每日600 g黑莓，对照为等热量、匹配碳水的明胶制品。",
+          "result": "24小时呼吸商和胰岛素AUC有组间差异；葡萄糖AUC未显著不同。",
+          "limits": "份量高、时间短、单一男性风险人群、控制膳食和替代指标；临床意义不清。",
+          "distance": "D0（冷冻黑莓整果）"
+        }
+      ],
+      "unknowns": "常见食量下黑莓整果的长期人体结局；其他性别、年龄及不同膳食背景中的重复性。",
+      "tradition": "本项目传统母条索引未列黑莓的传统母本；本轮不移用黑树莓、覆盆子叶或其他浆果的古籍资料。",
+      "queries": [
+        "Whole blackberry feeding randomized controlled crossover trial dose duration population insulin glucose and energy metabolism outcomes.",
+        "Blackberry fruit composition and distinction from black raspberry, blackcurrant, leaf and berry extract; USDA FoodData Central."
+      ],
+      "search_log": [
+        "核对27人黑莓交叉试验中干预剂量、控制饮食、缺失数据和葡萄糖阴性结果。",
+        "区分黑莓、黑树莓和黑加仑，未将其他浆果数据合并。",
+        "核对USDA FoodData Central中的鲜黑莓组成数据入口。"
+      ]
+    },
+    "grapefruit": {
+      "id": "grapefruit",
+      "name": "西柚",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "citrus-fruit",
+      "research_depth": "R2",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指葡萄柚（Citrus × paradisi）的鲜果可食部。整果、果汁、浓缩汁和以葡萄柚命名的杂交柑橘在组成和药物相互作用暴露上不完全相同；不把柚（Citrus maxima）等同于西柚。",
+      "variables": "品种、果肉或果汁、食用量、与膳食限制或替代饮食的关系，以及同时使用的具体药物。",
+      "composition": "西柚含水分、碳水化合物、膳食纤维及维生素C；果肉和果汁的纤维及食用速度不同。具体营养取决于品种和份量。",
+      "direct": "一项85名肥胖成人的随机研究在能量限制计划中比较餐前127 g西柚、相应西柚汁或水，持续12周。各组总体平均减重约7.1%，三组之间体重变化无显著差异；西柚组的部分HDL变化与水组不同。结果不能证明西柚单独减重。",
+      "specific": "美国FDA指出西柚果实或果汁可影响部分口服药物的代谢，包括部分他汀、降压药、免疫抑制剂和其他药物；并非同类所有药物都受影响，具体程度取决于药品、食用量和个人情况。",
+      "safety": "服用药物者需核对具体药品标签或向药师确认是否应避开西柚；不能仅按药物类别自行停药或减量。西柚与柚不是同一植物身份，其他柑橘的相互作用也需按具体产品查证。",
+      "body": "一项85名肥胖成人参加的12周研究，把127 g西柚或相应果汁作为能量限制饮食中的餐前食物，与水对照比较。三组总体均减重，组间体重差异不显著，因此不能把变化归因于西柚本身。西柚果实和果汁还会与部分药物相互作用；服药者应先核对具体药品说明或咨询药师。",
+      "evidence_body": "减重效应未显示西柚组相对水组的优势（E-C）。试验是在能量限制饮食中进行，样本为肥胖成人；不能推成西柚具有独立减重作用。药物相互作用是独立安全问题。",
+      "care": "正在服药时，按具体处方说明或咨询药师确认是否需要避开西柚及其果汁；不要自行停药或调量。",
+      "taste_m": {
+        "酸": "西柚果肉一般带酸味，品种、成熟度和苦味程度会影响感官记录；不据此推导药性。",
+        "苦": "部分西柚果肉和白色内皮有苦味，随品种和食用部位变化；不据此推导药性。"
+      },
+      "refs": [
+        "Silver HJ, Dietrich MS, Niswender KD. ‘Effects of grapefruit, grapefruit juice and water preloads on energy balance, weight loss, body composition, and cardiometabolic risk in free-living obese adults.’ Nutrition & Metabolism. 2011;8:8. DOI: https://doi.org/10.1186/1743-7075-8-8.",
+        "U.S. Food and Drug Administration. ‘Grapefruit Juice and Some Drugs Don’t Mix.’ https://www.fda.gov/consumers/consumer-updates/grapefruit-juice-and-some-drugs-dont-mix.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Silver HJ, Dietrich MS, Niswender KD. ‘Effects of grapefruit, grapefruit juice and water preloads on energy balance, weight loss, body composition, and cardiometabolic risk in free-living obese adults.’ Nutrition & Metabolism. 2011;8:8. DOI: https://doi.org/10.1186/1743-7075-8-8.",
+        "U.S. Food and Drug Administration. ‘Grapefruit Juice and Some Drugs Don’t Mix.’ https://www.fda.gov/consumers/consumer-updates/grapefruit-juice-and-some-drugs-dont-mix."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机分组、12周自由生活干预；各组均接受能量限制方案。",
+          "population": "85名肥胖成人。",
+          "exposure": "餐前127 g西柚、等量西柚汁或水。",
+          "result": "各组总体减重，组间体重差异不显著；部分血脂变化存在组间差异。",
+          "limits": "共同的能量限制是主要背景；不能单独归因于西柚，也未评价长期疾病结局。",
+          "distance": "D0–D1（鲜果与果汁，按干预组区分）"
+        }
+      ],
+      "unknowns": "不同西柚品种和份量的药物相互作用差异；日常自由食用对长期体重和心代谢结局的影响；西柚与不同药物的个体差异。",
+      "tradition": "本条定义为近代引入的葡萄柚（Citrus × paradisi），不等同传统柚（Citrus maxima）。本轮未建立该现代杂交品种与古籍柚类记载之间的直接身份对应。",
+      "queries": [
+        "Randomized trial comparing whole grapefruit, grapefruit juice and water before meals during caloric restriction; exact sample, dose, duration, between-group outcomes.",
+        "FDA official grapefruit and medication interaction guidance; distinguish grapefruit from pomelo and identify medication-label limits."
+      ],
+      "search_log": [
+        "核对85人随机研究的分组、127 g剂量、12周结局和组间比较；没有把共同减重归因于西柚。",
+        "读取FDA药物相互作用说明，记录其仅涉及特定药物并需按具体药品核对。",
+        "按植物身份区分葡萄柚与传统柚类。"
+      ]
+    },
+    "kiwi": {
+      "id": "kiwi",
+      "name": "猕猴桃",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-fruit",
+      "research_depth": "R2",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指新鲜猕猴桃（Actinidia spp.）可食果实，涵盖常见绿肉和黄肉品种；不同品种的糖、酸、纤维和蛋白酶活性不同。特定随机试验使用绿肉Hayward品种；果汁、提取物和混合水果制品单独判断。",
+      "variables": "品种、每日食用枚数、果肉或带皮、成熟度、份量、肠道基础状况及是否与膳食纤维补充剂比较。",
+      "composition": "猕猴桃提供维生素C、膳食纤维、糖类和有机酸；品种、果实大小和成熟度会影响每枚含量。带皮或去皮食用的纤维暴露不同。",
+      "direct": "一项跨新西兰、意大利和日本的随机交叉对照试验纳入184名健康对照、功能性便秘和便秘型肠易激综合征参与者，比较每日2枚绿肉Hayward猕猴桃与7.5 g车前子各4周。功能性便秘和IBS-C组每周完全自发排便次数平均增加约1.5至1.7次，胃肠舒适度也改善；未报告显著不良事件。",
+      "specific": "2024年纳入6项RCT的Meta分析发现猕猴桃与LDL-C小幅下降有关，但总胆固醇、甘油三酯、血糖和体重等未显著改变。样本和研究数较少，心代谢结果与便秘结局应分开表述。",
+      "safety": "猕猴桃可引起过敏反应；已知对猕猴桃过敏者避免食用。试验中的每日2枚指特定绿肉品种和便秘人群，不能作为适合所有人的固定剂量。",
+      "body": "一项184人随机交叉试验比较每日2枚绿肉Hayward猕猴桃与7.5 g车前子，连续各4周，并纳入健康人、功能性便秘和便秘型肠易激综合征参与者。便秘组每周完全自发排便次数增加，胃肠舒适度改善。这个结果针对特定绿肉品种和人群。另一项仅纳入6项试验的Meta分析提示LDL-C可能小幅下降，但多数心代谢和体重指标没有显著变化。",
+      "evidence_body": "每日2枚特定绿肉猕猴桃对便秘人群的排便频率和胃肠舒适度有随机试验证据（E-B至E-C，结局限于4周）。心代谢证据仅6项RCT且多数终点不显著，不能合并为全面健康功效。",
+      "care": "猕猴桃过敏者避免食用。若把猕猴桃用于便秘日常饮食，研究剂量和时间只适用于对应试验条件；持续或伴警示症状的便秘应寻求医疗评估。",
+      "taste_m": {
+        "酸": "猕猴桃常带酸甜味，品种和成熟度对酸度影响明显；只记录感官，不推成传统药味。",
+        "甘": "成熟猕猴桃有甜味，品种和成熟度会影响甜度；只记录感官，不推成传统药味。"
+      },
+      "refs": [
+        "Gearry RB, Fukudo S, Barbara G, et al. ‘Consumption of 2 Green Kiwifruits Daily Improves Constipation and Abdominal Comfort—Results of an International Multicenter Randomized Controlled Trial.’ American Journal of Gastroenterology. 2023;118:1058–1068. DOI: https://doi.org/10.14309/ajg.0000000000002124.",
+        "Pam P, Goudarzi MA, Mohammadi SG, et al. ‘The effects of kiwifruit consumption on anthropometric and cardiometabolic indices in adults: A systematic review and meta-analysis.’ Food Science & Nutrition. 2024;12(10):7017–7032. DOI: https://doi.org/10.1002/fsn3.4385.",
+        "李时珍.《本草纲目》卷三十三，果之五，《猕猴桃》条。明代文本校录：https://www.shidianguji.com/book/SK1491/chapter/1l94kja1mry80.",
+        "Ferguson AR. ‘1904—the year kiwifruit (Actinidia deliciosa) came to New Zealand.’ New Zealand Journal of Crop and Horticultural Science. 2004;32(1):3–27. National Library of New Zealand record: https://natlib.govt.nz/records/31145282.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Gearry RB, Fukudo S, Barbara G, et al. ‘Consumption of 2 Green Kiwifruits Daily Improves Constipation and Abdominal Comfort—Results of an International Multicenter Randomized Controlled Trial.’ American Journal of Gastroenterology. 2023;118:1058–1068. DOI: https://doi.org/10.14309/ajg.0000000000002124.",
+        "Pam P, Goudarzi MA, Mohammadi SG, et al. ‘The effects of kiwifruit consumption on anthropometric and cardiometabolic indices in adults: A systematic review and meta-analysis.’ Food Science & Nutrition. 2024;12(10):7017–7032. DOI: https://doi.org/10.1002/fsn3.4385.",
+        "李时珍.《本草纲目》卷三十三，果之五，《猕猴桃》条。https://www.shidianguji.com/book/SK1491/chapter/1l94kja1mry80.",
+        "Ferguson AR. ‘1904—the year kiwifruit (Actinidia deliciosa) came to New Zealand.’ New Zealand Journal of Crop and Horticultural Science. 2004;32(1):3–27. https://natlib.govt.nz/records/31145282."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "多中心、单盲、随机交叉对照试验；4周干预、4周洗脱、交叉至另一组治疗。",
+          "population": "184名参与者：健康对照63人、功能性便秘60人、便秘型肠易激综合征61人。",
+          "exposure": "每日2枚绿肉Hayward猕猴桃，与每日7.5 g车前子比较。",
+          "result": "便秘组每周完全自发排便次数增加约1.5–1.7次，胃肠舒适度改善；未见显著不良事件。",
+          "limits": "结果来自特定品种、剂量和便秘人群；干预每期仅4周，不能外推为治愈或所有人群疗效。",
+          "distance": "D0（明确绿肉猕猴桃）"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述与随机效应Meta分析，纳入6项RCT。",
+          "population": "成人，研究地区与健康特征不同。",
+          "exposure": "整果或果汁；试验剂量和持续时间不同。",
+          "result": "LDL-C平均变化约−9.30 mg/dL；体重、BMI、血糖和多个血脂终点总体未见显著改变。",
+          "limits": "研究数少，结果异质；仅支持有限的替代指标信号，不代表临床事件获益。",
+          "distance": "D0–D1（整果或果汁，按纳入研究区分）"
+        }
+      ],
+      "unknowns": "不同绿肉与黄肉品种在便秘结局上的可比性；长期食用和不同人群结果；心代谢替代指标的临床意义及与疾病事件的关系。",
+      "tradition": "明李时珍《本草纲目》卷三十三果之五《猕猴桃》条沿录宋《开宝》记载，释名见猕猴梨、藤梨和闽人所称阳桃；条下记‘实气味酸、甘，寒，无毒’，并同时保留多食冷脾胃、动泄的旧说。该条是历史上的猕猴桃类记载，但没有现代植物分类学鉴定；现代绿肉Hayward品种来源于20世纪初从中国引入新西兰的种子后代，不能据名称直接认定与原典所指完全相同。",
+      "queries": [
+        "International multicenter randomized crossover trial 2 green Hayward kiwifruit daily versus psyllium constipation complete spontaneous bowel movements dose duration sample adverse events.",
+        "Systematic review meta-analysis whole kiwifruit RCT cardiometabolic outcomes; distinguish cultivar, fruit versus juice, and bowel outcomes; USDA FoodData Central."
+      ],
+      "search_log": [
+        "核对跨三国184人绿肉猕猴桃交叉试验的样本、剂量、时长、主要结局和安全报告。",
+        "核对2024年6项RCT的心代谢Meta分析，并把LDL-C结果与不显著终点并列。",
+        "核对《本草纲目》卷三十三猕猴桃条及现代Hayward品种引种记录；保留古今物种和品种身份的不确定性。"
+      ]
+    },
+    "dragon-fruit": {
+      "id": "dragon-fruit",
+      "name": "火龙果",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-fruit",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指火龙果属（Selenicereus/Hylocereus）鲜果果肉，常见白肉和红肉类型。关键人体试验研究红肉 Hylocereus polyrhizus 冻干果肉粉；黄皮品种、提取物和仙人掌梨不等同于该干预。",
+      "variables": "物种和果肉颜色、鲜果或冻干粉、份量、花青素/甜菜色素含量及试验人群。",
+      "composition": "不同火龙果品种的色素、糖和纤维含量存在差异；颜色不能说明特定营养剂量。冻干粉的每克暴露高于鲜果，需按水分去除情况解读。",
+      "direct": "一项双盲随机交叉试验纳入19名健康成人、18人完成；每日24 g红肉火龙果冻干全果粉（含约33 mg甜菜色素）或匹配对照，持续14天。研究报告短期血流介导舒张功能（FMD）和部分动脉僵硬指标变化，外周及中心血压无显著差异。",
+      "specific": "样本小、干预短、制品为冻干粉且结局是血管替代指标。结果不能说明鲜果降低临床心血管事件风险。",
+      "safety": "对火龙果过敏者避免食用。研究干预用冻干果粉，不据此推荐相同剂量的粉末或鲜果用于疾病预防。",
+      "body": "一项18人完成的随机交叉试验，使用每日24 g红肉火龙果冻干全果粉，连续14天。部分血流介导舒张和动脉僵硬替代指标发生变化，但血压没有显著变化。研究短小且使用浓缩后的冻干粉，不能据此推断日常鲜果可降低心血管病风险。",
+      "evidence_body": "红肉火龙果冻干全果粉有一项小型14天人体交叉试验，观察到部分血管功能替代指标变化（E-D）；血压无显著变化，长期疾病结局未知。",
+      "care": "按鲜果食用，不把冻干粉试验剂量直接换算为鲜果建议量；加工粉、饮料的配料与糖量需单独核对。",
+      "taste_m": {
+        "甘": "火龙果果肉多为清甜，甜度因物种、成熟度而异；只记录感官，不推成传统分类。"
+      },
+      "refs": [
+        "Cheok A, Xu Y, Zhang Z, Caton PW, Rodriguez-Mateos A. ‘Betalain-rich dragon fruit (pitaya) consumption improves vascular function in men and women: a double-blind, randomized controlled crossover trial.’ American Journal of Clinical Nutrition. 2022;115(5):1418–1431. DOI: https://doi.org/10.1093/ajcn/nqab410.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Cheok A, Xu Y, Zhang Z, Caton PW, Rodriguez-Mateos A. ‘Betalain-rich dragon fruit (pitaya) consumption improves vascular function in men and women: a double-blind, randomized controlled crossover trial.’ American Journal of Clinical Nutrition. 2022;115(5):1418–1431. DOI: https://doi.org/10.1093/ajcn/nqab410.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "双盲、安慰剂对照、随机交叉试验；急性观察并有14天每日干预。",
+          "population": "19名健康、不吸烟成人随机分组，18人完成。",
+          "exposure": "每日24 g红肉 Hylocereus polyrhizus 冻干果肉粉，约含33 mg甜菜色素。",
+          "result": "FMD在摄入后2–4小时及14天时有组间差异；外周和中心血压未见差异。",
+          "limits": "样本小、时间短、粉末而非鲜果；终点是血管替代指标而非疾病结局。",
+          "distance": "D1（红肉火龙果全果冻干粉）"
+        }
+      ],
+      "unknowns": "鲜白肉与红肉火龙果的可比性；常见份量鲜果的人体结局；短期FMD变化的重复性和临床意义。",
+      "tradition": "本项目传统母条索引未列火龙果传统母本；本轮未核到可与现代火龙果品种直接对应的古籍来源。",
+      "queries": [
+        "Randomized placebo-controlled crossover trial red dragon fruit whole-fruit powder vascular function human sample dose duration blood pressure results.",
+        "Human studies of whole dragon fruit versus red-fruit powder and other pitaya species; official food composition data for fresh fruit."
+      ],
+      "search_log": [
+        "核对19人红肉火龙果冻干全果粉试验的品种、剂量、14天时长和各血管结局。",
+        "把FMD和动脉僵硬替代指标与无显著血压变化一并记录。",
+        "不把火龙果粉末、不同果肉颜色或仙人掌梨合并为单一制品。"
+      ]
+    },
+    "passion-fruit": {
+      "id": "passion-fruit",
+      "name": "百香果",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-fruit",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指常见百香果（Passiflora edulis）成熟果实的可食浆囊及种子。黄色与紫色品种、鲜果、果汁浓缩物和果皮粉属于不同暴露；西番莲花或叶类制品不属于本条。",
+      "variables": "黄色或紫色品种、果肉与种子比例、鲜果或浓缩汁、添加糖、份量、是否与其他植物提取物混合。",
+      "composition": "百香果酸香明显，含籽浆囊的水分、糖和纤维随品种、成熟度及稀释方式变化。市售饮品可添加糖或混合其他果汁，不能按果名推断实际含果量。",
+      "direct": "本轮未找到可将健康结局单独归因于普通百香果整果的高质量人体试验。一项43名血脂异常成人的随机试验使用含百香果果汁浓缩物和洛神花萼提取物的混合凝胶饮品，持续8周；个别血脂指标变化不能拆分归因给百香果。一项54名2型糖尿病成人的开放随机试验使用黄色百香果果皮粉12 g、每日3次、8周，血糖和HbA1c组间差异未显著；果皮粉不等于果肉。",
+      "specific": "混合饮品、果皮粉或提取物不代表百香果果肉的效果。混合干预存在归因困难，单项小试验不支持普遍的降脂或降糖建议。",
+      "safety": "百香果果肉与果皮/叶提取物的食用安全资料不能相互替代。对百香果过敏者避免食用；饮品需查看真实果汁比例和添加糖。",
+      "body": "百香果人体研究常涉及果皮粉或多成分饮品，而不是单独食用鲜果果肉。一项混合洛神花提取物与百香果浓缩汁的研究不能分辨哪种成分造成变化；另一项果皮粉随机试验未发现血糖或HbA1c的显著组间差异。现有资料不足以证明普通百香果整果有特定治疗作用。",
+      "evidence_body": "普通百香果整果果肉的直接健康结局证据不足（E-0）。混合饮品和果皮粉试验分别存在共同干预与食品形态不匹配，不能作为整果功效证据。",
+      "care": "选择果汁或饮品时查看果汁比例、稀释方式和添加糖；不以果皮粉、叶类提取物或混合配方替代诊治。",
+      "taste_m": {
+        "酸": "百香果果浆通常酸味明显，成熟度和加糖会改变整体酸甜感；仅为感官描述。"
+      },
+      "refs": [
+        "Khongrum J, et al. ‘Antidyslipidemic, Antioxidant, and Anti-inflammatory Effects of Jelly Drink Containing Polyphenol-Rich Roselle Calyces Extract and Passion Fruit Juice with Pulp in Adults with Dyslipidemia: A Randomized, Double-Blind, Placebo-Controlled Trial.’ Oxidative Medicine and Cellular Longevity. 2022. PMID: 36187334. https://pubmed.ncbi.nlm.nih.gov/36187334/.",
+        "de Araújo MFM, et al. ‘The effect of flour from the rind of the yellow passion fruit on glycemic control of people with diabetes mellitus type 2: a randomized clinical trial.’ Journal of Diabetes & Metabolic Disorders. 2017;16:18. DOI: https://doi.org/10.1186/s40200-017-0300-z.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Khongrum J, et al. ‘Antidyslipidemic, Antioxidant, and Anti-inflammatory Effects of Jelly Drink Containing Polyphenol-Rich Roselle Calyces Extract and Passion Fruit Juice with Pulp in Adults with Dyslipidemia: A Randomized, Double-Blind, Placebo-Controlled Trial.’ Oxidative Medicine and Cellular Longevity. 2022. PMID: 36187334. https://pubmed.ncbi.nlm.nih.gov/36187334/.",
+        "de Araújo MFM, et al. ‘The effect of flour from the rind of the yellow passion fruit on glycemic control of people with diabetes mellitus type 2: a randomized clinical trial.’ Journal of Diabetes & Metabolic Disorders. 2017;16:18. DOI: https://doi.org/10.1186/s40200-017-0300-z."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机、双盲、安慰剂对照试验，8周。",
+          "population": "43名血脂异常成人。",
+          "exposure": "含洛神花萼多酚提取物及百香果果汁浓缩物的混合凝胶饮品。",
+          "result": "报告部分血脂指标随时间变化；无法把变化单独归因于百香果。",
+          "limits": "多成分共同干预，不是普通鲜果试验；样本有限。",
+          "distance": "D2（含百香果汁的多成分制品）"
+        },
+        {
+          "ref": 2,
+          "design": "开放、前瞻性随机临床试验，8周。",
+          "population": "54名2型糖尿病成人。",
+          "exposure": "黄色百香果果皮粉，每日3次、每次12 g。",
+          "result": "组间毛细血管血糖、空腹血糖和HbA1c差异均未显著。",
+          "limits": "果皮粉不等于果肉，开放设计且依从性有限；结果未支持降糖效果。",
+          "distance": "D3（果皮粉）"
+        }
+      ],
+      "unknowns": "普通成熟百香果果肉单独食用的人体临床结局；不同品种和果汁加工的实际暴露；鲜果的长期结局和安全数据。",
+      "tradition": "本项目传统母条索引未列百香果的传统母本；本轮未将西番莲花、叶或其他 Passiflora 种的传统及现代研究转用于 Passiflora edulis 果肉。",
+      "queries": [
+        "Human randomized trials of whole Passiflora edulis passion fruit pulp or juice alone; distinguish pulp from peel flour, leaf/flower extracts and mixed beverages.",
+        "Randomized human trials of passion fruit peel flour and mixed roselle-passion-fruit drinks; verify whether findings can be attributed to whole fruit pulp."
+      ],
+      "search_log": [
+        "检索百香果果肉单独食用的人体试验；现有可核对的干预涉及混合洛神花饮品或果皮粉。",
+        "核对混合饮品样本为43人、8周，并明确不能单独归因于百香果。",
+        "核对果皮粉RCT的54人、剂量和血糖阴性结果，未把果皮粉转写成果肉证据。"
+      ]
+    },
+    "durian": {
+      "id": "durian",
+      "name": "榴莲",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-fruit",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指常见榴莲（Durio zibethinus）成熟果实的可食假种皮。品种、成熟度和份量差异较大；种子、叶、果壳、冻干粉和提取物不等同鲜果果肉。",
+      "variables": "品种、可食部重量、成熟度、单次份量、鲜果或加工品、与其他食物等能量比较及餐后观察时间。",
+      "composition": "榴莲可食部相较多数鲜果含较多能量，并含碳水化合物和脂肪；含量因品种和成熟度变化。以鲜果重量或热量比较时，需要记录实际品种和份量。",
+      "direct": "一项随机交叉研究纳入16名年轻健康成人，比较一份约367.5 kcal的榴莲（约250 g，Musang King）和等热量香蕉，观察进食后3小时。榴莲摄入后甘油三酯和心率短期上升、血压下降，血糖升高程度与香蕉相近。",
+      "specific": "样本非常小，单次餐后观察，且只测试一个品种和等热量香蕉对照。短时生理变化不等于长期高血脂、降压或其他临床获益。",
+      "safety": "榴莲份量较大时可贡献较多能量和糖；糖尿病患者应把份量纳入个人饮食计划。试验记录到短时心率和血脂变化，不可外推为普遍危险或疗效。",
+      "body": "一项16名健康成人参加的随机交叉研究，比较约250 g、约367.5 kcal的榴莲与等热量香蕉，观察3小时。榴莲组短时甘油三酯和心率上升，血压下降；血糖变化与香蕉相近。研究人数少、时间短，不能据此推断长期心血管风险或降压效果。榴莲能量和糖较多，份量应按个人饮食情况考虑。",
+      "evidence_body": "榴莲整果仅有小样本急性交叉研究；血压、心率和血脂是短时餐后指标（E-D），无长期疾病结局证据。",
+      "care": "注意单次食用份量；有血糖管理需求者将榴莲纳入整体膳食安排。不能凭单次试验自行调整药物或疾病管理。",
+      "taste_m": {
+        "甘": "成熟榴莲果肉常有甜味，品种和成熟度会改变香气与甜度；只作感官描述。"
+      },
+      "refs": [
+        "Yiin CL, Yeo MTY, Kang Y, Ng SM, Bi X, Henry CJ. ‘Comparative Effects of Durian and Banana Consumption on Thermic Effect of Food and Metabolic Responses in Healthy Adults.’ Journal of the American Nutrition Association. 2025;44(4):283–291. DOI: https://doi.org/10.1080/27697061.2024.2426563.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Yiin CL, Yeo MTY, Kang Y, Ng SM, Bi X, Henry CJ. ‘Comparative Effects of Durian and Banana Consumption on Thermic Effect of Food and Metabolic Responses in Healthy Adults.’ Journal of the American Nutrition Association. 2025;44(4):283–291. DOI: https://doi.org/10.1080/27697061.2024.2426563.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉餐后研究，两种等热量水果，至少5天洗脱。",
+          "population": "16名年轻健康华人成人，8男、8女。",
+          "exposure": "约250 g Musang King榴莲或417.6 g香蕉，每种约367.5 kcal。",
+          "result": "榴莲后3小时甘油三酯上升、心率上升和血压下降；血糖变化与香蕉相近。",
+          "limits": "单次暴露、小样本、仅健康年轻成人和一种榴莲品种；无长期临床结局。",
+          "distance": "D0（明确品种的榴莲可食果肉）"
+        }
+      ],
+      "unknowns": "不同榴莲品种和日常份量的长期人体结局；短时餐后变化的重复性和临床意义；糖尿病、心血管疾病或老年人群中的适用性。",
+      "tradition": "本轮未确认现代榴莲品种与传统本草中同名或近名果品的植物身份对应；不根据食用后自觉反应预设性味。",
+      "queries": [
+        "Randomized crossover human study durian fruit versus banana exact cultivar dose participants and acute metabolic outcomes DOI.",
+        "Fresh durian composition by edible portion USDA FoodData Central; separate durian pulp from seeds and extracts."
+      ],
+      "search_log": [
+        "以PubMed和原始研究核对16人、约250 g Musang King、等热量对照及餐后三小时结局。",
+        "分别记录甘油三酯、心率、血压和血糖，未把单次变化写成长期作用。",
+        "通过食品成分数据库确认组成数据入口，未将种子或提取物研究并入。"
+      ]
+    },
+    "custard-apple": {
+      "id": "custard-apple",
+      "name": "释迦（番荔枝）",
+      "volume": "新果蔬部",
+      "entry_type": "ingredient",
+      "family": "fresh-fruit",
+      "research_depth": "R1",
+      "shared_parent": "fresh-fruit-base",
+      "identity": "本条指释迦（糖苹果，Annona squamosa L.）成熟果实的可食果肉。不同地区的番荔枝属水果中文名可能混用；本条不含刺果番荔枝（A. muricata）、牛心番荔枝（A. reticulata）、叶、种子、果皮或提取物。",
+      "variables": "品种、成熟度、可食果肉重量、产地、鲜果或加工品，以及消费者是否误把番荔枝属其他植物当作同一水果。",
+      "composition": "释迦果肉含水分、碳水化合物和矿物质，品种、成熟度和产地会改变组成。不同番荔枝属物种和果实部位的化学分析不能直接互换。",
+      "direct": "本轮未找到以整颗释迦果肉为干预、检验人体健康结局的临床试验。已有一项2021年研究分析两个番荔枝品种的果肉、果皮和种子成分，并报告体外抗氧化、抗菌及细胞实验；这类实验不能证明食用果肉有预防或治疗效果。",
+      "specific": "化学成分和体外细胞活性不是人体效应；研究中的品种、提取方法和果实部位不同。种子或叶研究不适用于常见食用果肉。",
+      "safety": "按成熟果肉作为普通食品食用，不摄入种子或自行使用叶、果皮提取物。番荔枝属植物身份需核对；对该水果过敏者应避免。",
+      "body": "目前未找到以释迦整果果肉为干预的人体健康结局试验。已有研究比较番荔枝不同品种的果肉、果皮和种子化学组成，并进行抗氧化或细胞实验；这些结果不能说明食用果肉可以预防或治疗疾病。中文商品名有时会混用番荔枝属不同水果，本条限定为 Annona squamosa 的可食果肉。",
+      "evidence_body": "释迦整果果肉的直接人体结局证据不足（E-0）。现有成分或体外研究不能替代人体证据，也不支持具体临床功效。",
+      "care": "只食用作为水果销售的成熟果肉；不要把种子、叶或果皮提取物的研究解释为食用建议。核对商品植物身份，避免与其他番荔枝属水果混淆。",
+      "taste_m": {
+        "甘": "成熟释迦果肉有明显甜味，成熟度和品种会影响甜度；只作感官描述。"
+      },
+      "refs": [
+        "Shehata MG, et al. ‘Nutritional, phytochemical, and in vitro anticancer potential of sugar apple (Annona squamosa) fruits.’ Scientific Reports. 2021. DOI: https://doi.org/10.1038/s41598-021-85772-8.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Shehata MG, et al. ‘Nutritional, phytochemical, and in vitro anticancer potential of sugar apple (Annona squamosa) fruits.’ Scientific Reports. 2021. DOI: https://doi.org/10.1038/s41598-021-85772-8.",
+        "U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两个番荔枝品种的不同果实部位组成分析及体外实验；非人体干预研究。",
+          "population": "不适用；检测对象为果肉、果皮、种子及实验细胞。",
+          "exposure": "植物样品提取物和细胞培养条件；不是膳食摄入。",
+          "result": "不同品种和部位的营养/植物化学组成存在差异，并报告体外活性。",
+          "limits": "不能推断食用果肉的人体疗效；结果不适用于其他番荔枝属物种。",
+          "distance": "D3（成分和体外机制，非人体食用证据）"
+        }
+      ],
+      "unknowns": "不同市场品种和成熟度的标准营养组成；整果果肉人体研究；地区俗名与植物学身份的一致性。",
+      "tradition": "本轮未找到可核验且能与现代 Annona squamosa 直接对应的传统本草原典。本条不把其他番荔枝属或异名植物的记载移作释迦果肉分类。",
+      "queries": [
+        "Annona squamosa sugar apple whole edible fruit human clinical intervention trials; exclude leaves, seeds, peel and extracts.",
+        "Sugar apple fruit pulp composition and species identity Annona squamosa; distinguish custard apple, soursop, bullock's heart and plant parts."
+      ],
+      "search_log": [
+        "检索Annona squamosa整果食用的人体干预；未检得符合对象定义的临床结局试验。",
+        "核对2021年不同品种和果实部位成分研究；仅用作组成背景，不转写体外抗癌或其他疗效。",
+        "在条目身份中限定为Annona squamosa果肉，排除同属其他物种及种子、叶、果皮。"
+      ]
+    }
+  }
+}

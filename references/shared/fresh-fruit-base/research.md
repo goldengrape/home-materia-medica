@@ -1,7 +1,7 @@
 # Research Parent — 鲜果果肉
 
 > entry_type: research_parent；publish: false；evidence_cutoff: 2026-09-24
-> child_entries: avocado
+> child_entries: avocado, blueberry, cranberry, raspberry, blackberry, grapefruit, kiwi, dragon-fruit, passion-fruit, durian, custard-apple
 > inheritance_rule: regrade_D_on_use；no class-wide health-effect inheritance
 
 ## 共享身份边界
