@@ -160,3 +160,4 @@
 ## Actions 运行记录
 
 待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+- Workflow run 36120072670: status failure; intermediate and native artifacts are retained for 30 days where uploaded.
