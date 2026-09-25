@@ -1,0 +1,729 @@
+{
+  "batch": {
+    "id": "34-low-carb-and-modern-foods",
+    "title": "低糖低碳食品与新加工食品",
+    "catalog_order": 34,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; Crossref; ADA consensus, NHC, EFSA, CDC and FDA official sources",
+    "web_search_calls": 9,
+    "web_search_queries": 33,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-34-low-carb-and-modern-foods",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "低碳、生酮、低糖、无添加糖是不同声明；按配方、标签口径及食用份量判断，不把某个单品研究扩展到整个品类。",
+      "魔芋面食品与葡甘露聚糖补充剂的摄入方式不同；保留样本、剂量、饮水条件与证据距离。",
+      "植物酸奶和冻干酸奶块不因名称而自动含有足量活菌，营养强化和菌株必须查看具体产品。",
+      "冻干咖啡与其他速溶咖啡工艺的成分差异不能转成健康效果；咖啡因受粉量和品牌影响。",
+      "即食鸡胸肉是熟制食品，冷藏即食肉的李斯特菌风险和生鸡肉烹调温度分别说明，避免混为同一产品处理方法。"
+    ],
+    "citation_audit_revision": "rev-1: distinguish category labels and single-product studies; retain dose, population, formulation, and storage limits; separate food-form evidence from supplement or ingredient evidence."
+  },
+  "entries": {
+    "plant-based-yogurt": {
+      "name": "植物酸奶",
+      "volume": "替代与新技术食品部",
+      "entry_type": "fermented_food",
+      "family": "植物酸奶",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以豆类、坚果、谷物或椰子等植物基底发酵或调制成酸奶样产品；发酵型与仅酸化型产品、不同基底之间营养组成不同。",
+      "variables": "植物基底、发酵菌种、每份蛋白质和糖、钙及维生素强化、活菌标注、份量与保存温度。",
+      "composition": "系统综述指出豆类基底产品的蛋白质较接近乳制酸奶；瑞典市场222款植物乳品调查显示多数植物酸奶的蛋白质低于乳制品，豆基产品例外较多，调味植物酸奶含糖较高。强化和发酵菌种因产品而异。",
+      "direct": "未检得足以代表商业植物酸奶整体的长期人体健康结局试验。现有研究主要是配方、营养标签或具体产品资料；不能从“植物”或“酸奶”名称推断其蛋白质、钙或活菌水平。",
+      "specific": "2025年植物食品系统综述认为植物酸奶中只有部分豆类配方在蛋白质上接近乳制品。市场标签调查不能代表所有国家或品牌，也未验证临床健康结局。",
+      "body": "未检得足以代表商业植物酸奶整体的长期人体健康结局试验。现有研究主要是配方、营养标签或具体产品资料；不能从“植物”或“酸奶”名称推断其蛋白质、钙或活菌水平。 2025年植物食品系统综述认为植物酸奶中只有部分豆类配方在蛋白质上接近乳制品。市场标签调查不能代表所有国家或品牌，也未验证临床健康结局。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "查看每份蛋白质、添加糖、钙和维生素D强化情况，并核对是否含活菌及储存要求。大豆、坚果、燕麦等可能构成过敏原；有乳品替代需要者不宜假定所有产品营养等同乳制品。",
+      "taste_m": {},
+      "refs": [
+        "Plant-Based Yogurt: A Comprehensive Review of Its Nutritional Profile and Impact on Health. Nutrients. 2021;13(11):4069. https://www.mdpi.com/2072-6643/13/11/4069",
+        "Systematic review of novel plant-based foods and their nutritional composition. Nutrition Reviews. 2025;83(7):e1626. https://academic.oup.com/nutritionreviews/article/83/7/e1626/7656938",
+        "Swedish plant-based dairy market survey, 222 products. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11016899/"
+      ],
+      "body_refs": [
+        "Plant-Based Yogurt: A Comprehensive Review of Its Nutritional Profile and Impact on Health. Nutrients. 2021;13(11):4069. https://www.mdpi.com/2072-6643/13/11/4069",
+        "Systematic review of novel plant-based foods and their nutritional composition. Nutrition Reviews. 2025;83(7):e1626. https://academic.oup.com/nutritionreviews/article/83/7/e1626/7656938",
+        "Swedish plant-based dairy market survey, 222 products. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11016899/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "营养综述。",
+          "population": "商业植物酸奶产品及其配方研究。",
+          "exposure": "总结植物基底、宏量营养素与强化营养素差异。",
+          "result": "植物酸奶蛋白质、脂肪、糖和微量营养素随基底变化明显。",
+          "limits": "综述纳入研究和产品有限，不能给任一品牌定量；不提供统一临床效果。",
+          "distance": "D1：同类产品营养研究。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述。",
+          "population": "多类新型植物食品，含植物酸奶。",
+          "exposure": "比较植物替代食品营养组成。",
+          "result": "只有部分豆类植物酸奶在蛋白质上接近乳制品。",
+          "limits": "不同国家的产品、配方和比较基准异质；不是人体临床研究。",
+          "distance": "D1：同类产品营养证据。"
+        },
+        {
+          "ref": 3,
+          "design": "市场营养标签横断面调查。",
+          "population": "瑞典市场222款植物乳品。",
+          "exposure": "记录各类植物乳品营养标签和配方。",
+          "result": "植物酸奶蛋白质多低于乳制品，豆基产品较接近；调味产品糖较高。",
+          "limits": "地区和时期有限，标签并非实验室检测，无健康终点。",
+          "distance": "D0：市场标签资料。"
+        }
+      ],
+      "unknowns": "不同国家和新上市产品的代表性标签、强化情况与商业植物酸奶成品长期人体研究。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "plant yogurt nutritional composition systematic review legume protein",
+        "Swedish plant-based dairy 222 products yogurt sugar protein survey",
+        "plant based yogurt clinical health outcome trials",
+        "plant yogurt calcium vitamin D fortification labels"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "low-carb-bread": {
+      "name": "低碳面包",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "低碳面包",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以降低可利用碳水为卖点的面包类产品；配方可能以蛋白粉、纤维、籽类或抗性淀粉替代部分面粉。没有一致的通用“低碳”定义，需按营养标签和份量确认。",
+      "variables": "每份可利用碳水、总碳水和纤维、蛋白质、脂肪、钠、面包片重量、配方及比较食品。",
+      "composition": "产品常用麸质、种子、坚果粉、蛋清或膳食纤维替代部分小麦淀粉，因此蛋白质、纤维、能量、钠和口感均可能与普通面包不同。按销售和生产日期适用中国标签标准；GB 28050-2025已发布，2027年3月16日起实施。",
+      "direct": "一项41名2型糖尿病患者的短期试餐研究，用低碳面包替代普通面包；研究报告低碳面包试餐后的餐后血糖、胰岛素、GIP和甘油三酯较低。这是特定面包和短期餐后结局，不能推断其他低碳面包或长期糖尿病控制。",
+      "specific": "美国糖尿病协会共识指出低碳饮食没有单一一致定义。试验支持的只是该面包及搭配餐的急性反应，不代表所有带低碳标签的产品。",
+      "body": "一项41名2型糖尿病患者的短期试餐研究，用低碳面包替代普通面包；研究报告低碳面包试餐后的餐后血糖、胰岛素、GIP和甘油三酯较低。这是特定面包和短期餐后结局，不能推断其他低碳面包或长期糖尿病控制。 美国糖尿病协会共识指出低碳饮食没有单一一致定义。试验支持的只是该面包及搭配餐的急性反应，不代表所有带低碳标签的产品。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "比较每片净碳水、能量、钠、纤维和实际份量。检查麸质、鸡蛋、乳、大豆、坚果等过敏原；高纤维产品应配合饮水并考虑个人耐受。",
+      "taste_m": {},
+      "refs": [
+        "Evert AB, et al. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. https://diabetesjournals.org/care/article/42/5/731/40480/Nutrition-Therapy-for-Adults-With-Diabetes-or",
+        "Kondo-Ando M, et al. Low-carbohydrate diet by staple change attenuates postprandial GIP and CPR levels in type 2 diabetes patients. Journal of Diabetes and its Complications. 2019;33(11):107415. DOI: https://doi.org/10.1016/j.jdiacomp.2019.107415. https://pubmed.ncbi.nlm.nih.gov/31466840/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Evert AB, et al. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. https://diabetesjournals.org/care/article/42/5/731/40480/Nutrition-Therapy-for-Adults-With-Diabetes-or",
+        "Kondo-Ando M, et al. Low-carbohydrate diet by staple change attenuates postprandial GIP and CPR levels in type 2 diabetes patients. Journal of Diabetes and its Complications. 2019;33(11):107415. DOI: https://doi.org/10.1016/j.jdiacomp.2019.107415. https://pubmed.ncbi.nlm.nih.gov/31466840/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "营养治疗共识报告。",
+          "population": "成人糖尿病或糖尿病前期营养治疗。",
+          "exposure": "评估不同饮食模式及其定义。",
+          "result": "报告指出低碳饮食没有一致的单一界定方式。",
+          "limits": "共识并非低碳面包成品试验；个体饮食安排需结合医疗情况。",
+          "distance": "D2：饮食模式背景。"
+        },
+        {
+          "ref": 2,
+          "design": "短期试餐研究。",
+          "population": "41名2型糖尿病患者。",
+          "exposure": "每隔一天以低碳面包或普通碳水面包搭配配菜作为早餐。",
+          "result": "低碳面包早餐后的餐后血糖、胰岛素、GIP和甘油三酯较低。",
+          "limits": "短期、特定产品及配餐，没有建立长期血糖或健康结局。",
+          "distance": "D1：低碳面包成品的急性试餐证据。"
+        },
+        {
+          "ref": 3,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "中国预包装食品标签。",
+          "exposure": "说明营养成分表标示和新标准要求。",
+          "result": "GB 28050-2025营养标签标准将于2027年3月16日实施；此前生产食品适用过渡安排。标签可帮助核对营养成分，不能仅凭宣传语判断。",
+          "limits": "标签规则及其实施日期不提供健康效果证据；应按食品生产日期和适用标准读取。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "不同市场低碳声明口径、代表性产品的实验室成分，以及糖尿病人群中长期替代普通面包的临床结局。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "low carbohydrate bread randomized trial type 2 diabetes postprandial glucose Kondo-Ando",
+        "low carbohydrate staple bread 41 patients GIP C-peptide triglyceride",
+        "ADA consensus definition low carbohydrate diet 2019",
+        "China GB 28050-2025 nutrition label FAQ"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "konjac-noodles": {
+      "name": "魔芋面",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "魔芋面",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以魔芋葡甘露聚糖凝胶制成或作为主要低能量基底的面条状食品；鲜湿魔芋凝胶、干燥魔芋面和混合谷物面在成分与份量上不同。",
+      "variables": "魔芋比例、干湿重、每份能量和可利用碳水、配料中的淀粉及盐、冲洗或烹调方法、搭配酱料。",
+      "composition": "魔芋葡甘露聚糖吸水形成凝胶，单独魔芋面通常可利用碳水和能量较低；复合产品、调味料和实际份量会改变膳食暴露。",
+      "direct": "16名健康成人的小型随机交叉试验以魔芋凝胶面替代部分或全部意面，降低了该餐的能量摄入，但未证明长期减重或代谢获益。葡甘露聚糖补充剂荟萃分析未显示稳定减重效果，且报告胃肠不适。",
+      "specific": "魔芋葡甘露聚糖的欧盟健康声称只在指定剂量、能量限制饮食和饮水条件下适用；这是特定监管声称条件，不应转作所有魔芋面的效果。干燥凝胶产品需注意吞咽和饮水风险。",
+      "body": "16名健康成人的小型随机交叉试验以魔芋凝胶面替代部分或全部意面，降低了该餐的能量摄入，但未证明长期减重或代谢获益。葡甘露聚糖补充剂荟萃分析未显示稳定减重效果，且报告胃肠不适。 魔芋葡甘露聚糖的欧盟健康声称只在指定剂量、能量限制饮食和饮水条件下适用；这是特定监管声称条件，不应转作所有魔芋面的效果。干燥凝胶产品需注意吞咽和饮水风险。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "按干重或成品份量核对能量与碳水，避免只看每100克含水凝胶数据。吞咽困难者避免高膨胀凝胶形态；纤维敏感者从少量开始并留意腹胀、腹泻或便秘。",
+      "taste_m": {},
+      "refs": [
+        "Onakpoya I, Posadzki P, Ernst E. The efficacy of glucomannan supplementation in overweight and obesity: a systematic review and meta-analysis of randomized clinical trials. Journal of the American College of Nutrition. 2014;33(1):70-78. DOI: https://doi.org/10.1080/07315724.2014.870013. https://pubmed.ncbi.nlm.nih.gov/24533610/",
+        "2024 systematic review and meta-analysis of konjac glucomannan and blood lipids. https://pmc.ncbi.nlm.nih.gov/articles/PMC11465682/",
+        "A randomized crossover study of konjac gel noodles and subsequent food intake in healthy adults. https://pubmed.ncbi.nlm.nih.gov/29202887/",
+        "European Commission. Commission Regulation (EU) No 432/2012, authorized glucomannan health-claim conditions and warning. https://eur-lex.europa.eu/legal-content/EN/TXT/%20PDF/?uri=OJ%3AL%3A2012%3A136%3AFULL",
+        "EFSA. Re-evaluation of konjac gum (E 425) as a food additive. 2017. https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
+      ],
+      "body_refs": [
+        "Onakpoya I, Posadzki P, Ernst E. The efficacy of glucomannan supplementation in overweight and obesity: a systematic review and meta-analysis of randomized clinical trials. Journal of the American College of Nutrition. 2014;33(1):70-78. DOI: https://doi.org/10.1080/07315724.2014.870013. https://pubmed.ncbi.nlm.nih.gov/24533610/",
+        "2024 systematic review and meta-analysis of konjac glucomannan and blood lipids. https://pmc.ncbi.nlm.nih.gov/articles/PMC11465682/",
+        "A randomized crossover study of konjac gel noodles and subsequent food intake in healthy adults. https://pubmed.ncbi.nlm.nih.gov/29202887/",
+        "European Commission. Commission Regulation (EU) No 432/2012, authorized glucomannan health-claim conditions and warning. https://eur-lex.europa.eu/legal-content/EN/TXT/%20PDF/?uri=OJ%3AL%3A2012%3A136%3AFULL",
+        "EFSA. Re-evaluation of konjac gum (E 425) as a food additive. 2017. https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
+      ],
+      "evidence_records": [
+        {
+          "ref": 3,
+          "design": "随机交叉人体试验。",
+          "population": "16名健康成人。",
+          "exposure": "将意面的一部分或全部替换为魔芋凝胶面。",
+          "result": "替代餐的能量下降，参与者没有在随后进食中完全补回该能量。",
+          "limits": "样本小、单餐设计，不能证明长期体重或疾病结局。",
+          "distance": "D1：同类魔芋凝胶面短期证据。"
+        },
+        {
+          "ref": 1,
+          "design": "随机试验荟萃分析。",
+          "population": "超重或肥胖成人的葡甘露聚糖补充试验。",
+          "exposure": "评估补充剂对体重的影响。",
+          "result": "汇总结果未显示有统计学意义的稳定体重下降；报告腹部不适、腹泻或便秘等胃肠反应。",
+          "limits": "补充剂剂量与面条食品不同，研究数量及样本有限。",
+          "distance": "D3：单一成分补充剂证据。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述与荟萃分析。",
+          "population": "葡甘露聚糖对血脂研究人群。",
+          "exposure": "分析总胆固醇和LDL等指标。",
+          "result": "作者报告部分血脂指标变化，但研究间异质性较高。",
+          "limits": "高异质性且补充剂与食物暴露不同，不代表魔芋面有明确临床效果。",
+          "distance": "D3：单一成分证据。"
+        },
+        {
+          "ref": 4,
+          "design": "欧盟授权健康声称法规。",
+          "population": "法规所列能量限制饮食中的超重成人。",
+          "exposure": "葡甘露聚糖每日3克分三次、每次随1至2杯水，在餐前服用。",
+          "result": "健康声称仅在规定剂量与饮食条件下使用，并须标示充分饮水及窒息风险警告。",
+          "limits": "法规条件并不是魔芋面产品的临床试验或中国使用规则。",
+          "distance": "D2：特定成分的监管条件。"
+        },
+        {
+          "ref": 5,
+          "design": "食品添加剂风险评估。",
+          "population": "含魔芋胶食品及暴露资料。",
+          "exposure": "评估膨胀凝胶与食物添加剂安全性。",
+          "result": "对吞咽困难或水分不足时的阻塞风险提出关注。",
+          "limits": "风险评估不量化所有具体产品风险，形态与食用方式很重要。",
+          "distance": "D2：成分安全资料。"
+        }
+      ],
+      "unknowns": "不同市售干湿产品的实测能量和纤维、长期以魔芋面替代主食的人体研究及适宜摄入量。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "konjac glucomannan noodles randomized crossover human calorie intake",
+        "glucomannan weight loss randomized trial meta analysis gastrointestinal adverse events",
+        "konjac noodles lipid meta-analysis heterogeneity 2024",
+        "EFSA glucomannan 3 g water choking warning"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "tofu-noodles": {
+      "name": "豆腐面",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "豆腐面",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以豆腐或大豆蛋白为主要原料制成面条状产品；其范围不包括仅在普通面粉面条中配少量豆粉的产品。",
+      "variables": "豆腐和大豆蛋白比例、是否加入淀粉或谷物、每份蛋白质和钠、干湿重、烹调与酱料。",
+      "composition": "一项产品研究以含60%全豆腐的面团制作干面条，使用凝胶多糖及静置工艺改善面团和烹煮性能。全豆腐保留豆渣；研究结果只适用于该配方，市场商品不一定相同。",
+      "direct": "未检得豆腐面成品的人体健康结局试验。现有证据主要是一项特定全豆腐面条的配方和加工性能研究，不能由此推断所有豆腐面的营养或疾病效果。",
+      "specific": "研究面条以60%全豆腐制成，并评估凝胶多糖和静置时间对弹性、烹煮时间及烹煮损失的影响；它没有提供商业豆腐面的市场代表性资料或消费者试验。",
+      "body": "未检得豆腐面成品的人体健康结局试验。现有证据主要是一项特定全豆腐面条的配方和加工性能研究，不能由此推断所有豆腐面的营养或疾病效果。 研究面条以60%全豆腐制成，并评估凝胶多糖和静置时间对弹性、烹煮时间及烹煮损失的影响；它没有提供商业豆腐面的市场代表性资料或消费者试验。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "查看每份蛋白质、钠、纤维和大豆过敏原，并核对是否含小麦或麸质。若以其替代主食，还应考虑总能量及蔬菜、脂肪和其他蛋白来源的搭配。",
+      "taste_m": {},
+      "refs": [
+        "Lee E, Kim J, Kim E, Choi YJ, Hahn J. The effect of curdlan and the resting process on the quality of the dried whole tofu noodles. Food Science and Biotechnology. 2022;31(1):61-68. DOI: https://doi.org/10.1007/s10068-021-01020-9. https://pmc.ncbi.nlm.nih.gov/articles/PMC8733043/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Lee E, Kim J, Kim E, Choi YJ, Hahn J. The effect of curdlan and the resting process on the quality of the dried whole tofu noodles. Food Science and Biotechnology. 2022;31(1):61-68. DOI: https://doi.org/10.1007/s10068-021-01020-9. https://pmc.ncbi.nlm.nih.gov/articles/PMC8733043/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "配方及加工性能研究。",
+          "population": "实验室制作的整豆腐面条。",
+          "exposure": "测量营养组成与面条加工特性。",
+          "result": "研究以60%全豆腐制作干面条；添加凝胶多糖与45°C静置工艺改善了该配方的加工和烹煮性能。",
+          "limits": "单一实验室配方，重点是质构和烹煮性能，不是市场代表性营养调查或人体研究。",
+          "distance": "D1：具体豆腐面配方分析。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "中国预包装食品标签。",
+          "exposure": "说明营养成分表信息。",
+          "result": "消费者可按每份和每100克标签比较具体产品。",
+          "limits": "标签信息不能证明特定健康效果。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "市售豆腐面的配方分布、营养实测、份量标准及成品人体研究。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "whole tofu dried noodle product formulation curdlan processing quality",
+        "tofu noodles commercial nutrition sodium protein label",
+        "tofu-based noodles human health clinical trial",
+        "China nutrition label requirements carbohydrate protein sodium"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "low-sugar-ice-cream": {
+      "name": "低糖冰淇淋",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "低糖冰淇淋",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以减少添加糖或总糖为卖点的冰淇淋类商品；含乳糖等天然糖的产品也可能标称无添加糖。应区分无添加糖、低糖和无糖的标签含义。",
+      "variables": "总糖与添加糖、总碳水、每份能量和份量、甜味剂类型、乳糖或其他天然糖、脂肪和糖醇含量。",
+      "composition": "减糖产品可使用甜味剂、多元醇、膳食纤维或改变配方；糖减少不必然使总能量降低，产品可能仍含乳糖、淀粉、脂肪或糖醇。中国GB 28050-2025营养标签标准已发布，将于2027年3月16日实施；应按生产日期适用的标准理解标签声明。",
+      "direct": "一项在2型糖尿病成人中进行的随机交叉试验比较特定无添加糖冰淇淋与常规产品，观察到单餐血糖反应较低；试验产品仍含天然糖，且是单一配方，不能推断所有低糖冰淇淋。",
+      "specific": "多元醇系统综述指出，胃肠耐受与种类和摄入量相关。低糖或无添加糖标签不能替代对总碳水、份量、脂肪和能量的查看。",
+      "body": "一项在2型糖尿病成人中进行的随机交叉试验比较特定无添加糖冰淇淋与常规产品，观察到单餐血糖反应较低；试验产品仍含天然糖，且是单一配方，不能推断所有低糖冰淇淋。 多元醇系统综述指出，胃肠耐受与种类和摄入量相关。低糖或无添加糖标签不能替代对总碳水、份量、脂肪和能量的查看。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "查看每份总碳水、总糖、能量和脂肪；糖醇摄入较多时可能出现腹胀或腹泻。对乳蛋白过敏者须查看乳成分，不能仅凭无添加糖判断适合。",
+      "taste_m": {},
+      "refs": [
+        "Reformulating ice cream to improve postprandial glucose response: an opportunity for industry to create shared value. Frontiers in Nutrition. 2024. DOI: https://doi.org/10.3389/fnut.2024.1349392. https://pmc.ncbi.nlm.nih.gov/articles/PMC11288177/",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Reformulating ice cream to improve postprandial glucose response: an opportunity for industry to create shared value. Frontiers in Nutrition. 2024. DOI: https://doi.org/10.3389/fnut.2024.1349392. https://pmc.ncbi.nlm.nih.gov/articles/PMC11288177/",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉单餐试验。",
+          "population": "2型糖尿病成人。",
+          "exposure": "比较一款无添加糖冰淇淋与常规冰淇淋。",
+          "result": "研究产品餐后血糖反应较低，但仍含天然糖。",
+          "limits": "单一特定配方、300克单餐暴露和有限人群；不代表所有低糖产品或长期效果。",
+          "distance": "D1：特定低添加糖成品试验。"
+        },
+        {
+          "ref": 2,
+          "design": "多元醇胃肠耐受综述。",
+          "population": "多元醇摄入研究。",
+          "exposure": "总结糖醇作为糖替代物的耐受情况。",
+          "result": "部分糖醇在较高摄入量时可能导致腹胀、腹泻等胃肠症状。",
+          "limits": "不同糖醇与个体阈值不同；不能单凭该综述判断某一产品份量。",
+          "distance": "D3：配料安全资料。"
+        },
+        {
+          "ref": 3,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "中国预包装食品标签。",
+          "exposure": "说明糖等营养成分标示和声明要求。",
+          "result": "中国GB 28050-2025营养标签标准将于2027年3月16日实施；应按产品生产日期适用的标准查看声明及营养表。",
+          "limits": "监管资料不能证明代谢或体重效果。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "不同国家低糖声明的适用条件、各类甜味剂产品的营养实测，以及多品牌成品对血糖和能量摄入的比较研究。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "no added sugar ice cream randomized crossover type 2 diabetes glycemic response",
+        "low sugar ice cream polyol sugar alcohol gastrointestinal tolerance",
+        "low sugar no added sugar total sugars nutrition label rules China",
+        "low sugar ice cream energy carbohydrate product comparison"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "keto-dessert": {
+      "name": "生酮甜点",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "生酮甜点",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "为符合生酮或极低碳水饮食而制作的甜点商品；“生酮”配方无统一标准，可能使用坚果粉、椰子粉、油脂、蛋类和非糖甜味剂。",
+      "variables": "每份可利用碳水、总碳水、纤维和糖醇、能量、饱和脂肪、蛋白质、份量及所依据的生酮定义。",
+      "composition": "生酮甜点通常降低糖或淀粉，并提高脂肪或纤维；坚果粉、奶油、椰子油和糖醇会改变能量及脂肪构成。产品名称不能说明是否达到个人膳食中的碳水限制。",
+      "direct": "未检得生酮甜点类别的人体临床试验。19名健康成人的随机试验比较一种低碳蛋糕与普通蛋糕，主要终点（餐后60分钟血糖）无显著差异，部分次要餐后指标较低；研究没有测量长期酮症或疾病结局。",
+      "specific": "ADA共识指出低碳模式没有一致单一界定；生酮甜点证据不能与完整生酮膳食研究混同。多元醇可能在较大摄入量时引起胃肠反应。",
+      "body": "未检得生酮甜点类别的人体临床试验。19名健康成人的随机试验比较一种低碳蛋糕与普通蛋糕，主要终点（餐后60分钟血糖）无显著差异，部分次要餐后指标较低；研究没有测量长期酮症或疾病结局。 ADA共识指出低碳模式没有一致单一界定；生酮甜点证据不能与完整生酮膳食研究混同。多元醇可能在较大摄入量时引起胃肠反应。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "按每份可利用碳水、总能量、饱和脂肪和糖醇判断实际摄入。糖醇可能影响胃肠耐受；有糖尿病或需限制特定营养素者应结合个人饮食计划使用。",
+      "taste_m": {},
+      "refs": [
+        "Low-carbohydrate cake and postprandial glucose in healthy adults: randomized study. Journal of the Japan Diabetes Society. 2023;66(3):199. https://www.jstage.jst.go.jp/article/tonyobyo/66/3/66_199/_article/-char/en",
+        "Evert AB, et al. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. https://diabetesjournals.org/care/article/42/5/731/40480/Nutrition-Therapy-for-Adults-With-Diabetes-or",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Low-carbohydrate cake and postprandial glucose in healthy adults: randomized study. Journal of the Japan Diabetes Society. 2023;66(3):199. https://www.jstage.jst.go.jp/article/tonyobyo/66/3/66_199/_article/-char/en",
+        "Evert AB, et al. Nutrition Therapy for Adults With Diabetes or Prediabetes: A Consensus Report. Diabetes Care. 2019;42(5):731-754. https://diabetesjournals.org/care/article/42/5/731/40480/Nutrition-Therapy-for-Adults-With-Diabetes-or",
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机单餐研究。",
+          "population": "19名健康成人。",
+          "exposure": "比较特定低碳蛋糕后的餐后反应。",
+          "result": "主要终点（餐后60分钟血糖）无显著差异；部分次要餐后血糖及胰岛素指标较低。",
+          "limits": "19名健康成人、单一蛋糕配方和短期餐后结局，不能代表生酮甜点类别或长期效果。",
+          "distance": "D2：邻近低碳烘焙食品证据。"
+        },
+        {
+          "ref": 2,
+          "design": "营养治疗共识报告。",
+          "population": "成人糖尿病或糖尿病前期。",
+          "exposure": "评估不同饮食模式及定义。",
+          "result": "报告低碳饮食没有统一定义。",
+          "limits": "不涉及生酮甜点成品，也不证明此类食品的临床效果。",
+          "distance": "D2：饮食模式背景。"
+        },
+        {
+          "ref": 3,
+          "design": "多元醇胃肠耐受综述。",
+          "population": "多元醇摄入研究。",
+          "exposure": "总结糖醇摄入与胃肠症状。",
+          "result": "耐受性受糖醇类型和剂量影响。",
+          "limits": "不同配方与个人反应差异较大。",
+          "distance": "D3：配料安全证据。"
+        },
+        {
+          "ref": 4,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "中国预包装食品标签。",
+          "exposure": "说明营养成分标示和标签要求。",
+          "result": "可据标签核对产品碳水、糖和能量。",
+          "limits": "标签本身不确定该产品是否造成酮症。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "“生酮”声明的统一产品标准、商业成品是否影响血酮的受控研究，以及不同甜味剂和份量的长期耐受。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "keto dessert low carbohydrate cake randomized trial 19 adults",
+        "keto diet definition low carbohydrate consensus ADA",
+        "keto dessert product human ketone response study",
+        "polyol gastrointestinal tolerance dose systematic review"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "low-sugar-chocolate": {
+      "name": "低糖巧克力",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "低糖巧克力",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以降低糖含量为卖点的巧克力或巧克力制品；可使用糖醇、非糖甜味剂或较高可可固形物。低糖声明不说明能量、饱和脂肪或实际份量较低。",
+      "variables": "每份总糖和添加糖、碳水、能量、可可比例、脂肪、糖醇种类和剂量、份量及配料过敏原。",
+      "composition": "不同产品通过减少蔗糖、使用糖醇或改变可可和脂肪比例来调整甜度；配方可能仍含较多脂肪和能量。标签和营养组成因地区标准及产品而异。",
+      "direct": "15名志愿者参加的随机双盲交叉试验比较含麦芽糖醇和蔗糖的高可可黄烷醇巧克力；麦芽糖醇配方后的总黄烷醇吸收较低。该结果涉及特定配方的黄烷醇生物利用度，不是低糖巧克力对血糖、体重或心血管健康的临床效果。",
+      "specific": "多元醇系统综述显示胃肠反应与糖醇种类和摄入量相关。麦芽糖醇巧克力试验与胃肠耐受无关；低糖标签也不能说明能量或饱和脂肪较低。",
+      "body": "15名志愿者参加的随机双盲交叉试验比较含麦芽糖醇和蔗糖的高可可黄烷醇巧克力；麦芽糖醇配方后的总黄烷醇吸收较低。该结果涉及特定配方的黄烷醇生物利用度，不是低糖巧克力对血糖、体重或心血管健康的临床效果。 多元醇系统综述显示胃肠反应与糖醇种类和摄入量相关。麦芽糖醇巧克力试验与胃肠耐受无关；低糖标签也不能说明能量或饱和脂肪较低。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "查看每份总糖、能量、饱和脂肪及糖醇种类和份量。含麦芽糖醇等多元醇的产品可能导致部分人腹胀或稀便；同时核对乳、坚果和大豆等过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "Rodriguez-Mateos A, et al. Influence of sugar type on the bioavailability of cocoa flavanols. British Journal of Nutrition. 2012;108(12):2243-2250. DOI: https://doi.org/10.1017/S0007114512000475. https://pubmed.ncbi.nlm.nih.gov/22397837/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Lenhart A, Chey WD. A Systematic Review of the Effects of Polyols on Gastrointestinal Health and Irritable Bowel Syndrome. Advances in Nutrition. 2017;8(4):587-596. DOI: https://doi.org/10.3945/an.117.015560. https://pmc.ncbi.nlm.nih.gov/articles/PMC5508768/",
+        "Rodriguez-Mateos A, et al. Influence of sugar type on the bioavailability of cocoa flavanols. British Journal of Nutrition. 2012;108(12):2243-2250. DOI: https://doi.org/10.1017/S0007114512000475. https://pubmed.ncbi.nlm.nih.gov/22397837/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 2,
+          "design": "小型随机交叉试验。",
+          "population": "15名志愿者。",
+          "exposure": "比较多元醇甜味巧克力与蔗糖巧克力。",
+          "result": "麦芽糖醇甜味巧克力后的总可可黄烷醇吸收低于含蔗糖的高黄烷醇对照巧克力。",
+          "limits": "15人、短期、特定高黄烷醇配方；结局为黄烷醇生物利用度，不是胃肠耐受或长期健康结局。",
+          "distance": "D1：单一甜味巧克力配方。"
+        },
+        {
+          "ref": 1,
+          "design": "多元醇胃肠耐受综述。",
+          "population": "不同糖醇摄入研究。",
+          "exposure": "汇总糖醇替代糖的胃肠影响。",
+          "result": "摄入较多某些糖醇可能引起腹胀或稀便，个体阈值不同。",
+          "limits": "不能直接预测不同巧克力的实际摄入反应。",
+          "distance": "D3：成分安全资料。"
+        },
+        {
+          "ref": 3,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "中国预包装食品标签。",
+          "exposure": "说明糖与其他营养成分标示。",
+          "result": "中国GB 28050-2025营养标签标准将于2027年3月16日实施；应按产品生产日期适用的标准查看声明及营养表。",
+          "limits": "标签不提供低糖产品健康获益证据。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "各类低糖巧克力的代表性营养调查、不同甜味剂的长期食用耐受以及同等份量的临床比较。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "low sugar chocolate maltitol polyol gastrointestinal tolerance study",
+        "polyol chocolate crossover trial 15 volunteers",
+        "low sugar chocolate total energy saturated fat label survey",
+        "China nutrition label low sugar claim standard"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "freeze-dried-yogurt-bites": {
+      "name": "冻干酸奶块",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "冻干酸奶块",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "将酸奶或酸奶配料冻干制成的块状零食；冻干后产品的含水量、糖和脂肪浓度上升，且活菌是否存活需看具体工艺、菌种和储存资料。",
+      "variables": "冻干前乳基底和糖量、每份重量、含水量、冻干工艺、菌种和活菌数、储存温湿度及包装。",
+      "composition": "冻干移除水分，可延长常温货架储存并使单位重量营养素浓缩；糖、脂肪和能量按每100克看可能高于原酸奶。冻干过程和储存会影响微生物活性。",
+      "direct": "未检得商业冻干酸奶块成品的人体临床效果试验。冻干菌种的研究表明存活率受菌株、保护剂、工艺及储存影响；不能仅凭酸奶或冻干名称认定产品含有足量活菌或具有益生菌作用。",
+      "specific": "一项冻干酸奶菌研究考察加工和储存条件下的微生物存活，不是消费者健康试验。实际产品还可能经加热、含糖或未标示活菌。",
+      "body": "未检得商业冻干酸奶块成品的人体临床效果试验。冻干菌种的研究表明存活率受菌株、保护剂、工艺及储存影响；不能仅凭酸奶或冻干名称认定产品含有足量活菌或具有益生菌作用。 一项冻干酸奶菌研究考察加工和储存条件下的微生物存活，不是消费者健康试验。实际产品还可能经加热、含糖或未标示活菌。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "按实际食用份量比较能量、糖和脂肪；需活菌时核对菌株、活菌量标示时点及储存条件。乳过敏或乳糖不耐者应查看具体配方和耐受情况，幼儿还需注意块状食品的噎食风险。",
+      "taste_m": {},
+      "refs": [
+        "Quality and microstructure of freeze-dried yoghurt fortified with additives as protective agents. 2020. https://pubmed.ncbi.nlm.nih.gov/33088960/. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560582/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "Quality and microstructure of freeze-dried yoghurt fortified with additives as protective agents. 2020. https://pubmed.ncbi.nlm.nih.gov/33088960/. https://pmc.ncbi.nlm.nih.gov/articles/PMC7560582/",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "冻干加工及储存实验。",
+          "population": "特定酸奶菌株与冻干配方。",
+          "exposure": "考察保护剂、干燥与储存对活菌存活的影响。",
+          "result": "活菌存活会随菌株、冻干条件、保护剂和储存变化。",
+          "limits": "实验室产品不是商业冻干酸奶块的普遍检测，未评估人体健康结局。",
+          "distance": "D2：相近冻干发酵菌制品研究。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "预包装食品营养标签。",
+          "exposure": "说明营养成分标示规则。",
+          "result": "应以冻干成品标签和实际份量判断糖、脂肪与能量。",
+          "limits": "标签资料本身不证明活菌或益生作用。",
+          "distance": "D2：中国监管资料。"
+        }
+      ],
+      "unknowns": "商业产品冻干前后菌种与活菌量的独立检测、货架期数据以及该成品形态的人体研究。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "freeze dried yogurt bites probiotic viability storage study",
+        "freeze drying yogurt culture protective additives shelf life",
+        "commercial freeze dried yogurt bites nutrition sugar serving",
+        "freeze dried yogurt products human clinical trial"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "freeze-dried-coffee": {
+      "name": "冻干咖啡",
+      "volume": "替代与新技术食品部",
+      "entry_type": "beverage",
+      "family": "冻干咖啡",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "以冻结浓缩咖啡液再升华干燥制成的速溶咖啡。应与喷雾干燥速溶咖啡、冻干咖啡粉添加剂和即饮咖啡区分。",
+      "variables": "咖啡豆与烘焙度、冻干或喷雾干燥工艺、每份粉量和冲调水量、咖啡因、糖奶添加和饮用时间。",
+      "composition": "冻干是速溶咖啡的一种干燥工艺；不同原料和萃取条件造成咖啡因及多酚含量差异。无添加的黑咖啡能量较低，但加糖、奶精或植脂末后营养构成改变。",
+      "direct": "未检得冻干咖啡相较其他咖啡工艺的人体健康结局试验。冻干与喷雾干燥样品的化学成分比较研究未证明冻干方式带来临床健康优势；咖啡因摄入仍取决于原料和冲调份量。",
+      "specific": "一项速溶咖啡成分研究主要分析化学成分和实验室指标，不足以推断免疫、代谢或临床效果。工艺名称不能替代每份咖啡因含量。",
+      "body": "未检得冻干咖啡相较其他咖啡工艺的人体健康结局试验。冻干与喷雾干燥样品的化学成分比较研究未证明冻干方式带来临床健康优势；咖啡因摄入仍取决于原料和冲调份量。 一项速溶咖啡成分研究主要分析化学成分和实验室指标，不足以推断免疫、代谢或临床效果。工艺名称不能替代每份咖啡因含量。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "关注实际粉量、咖啡因与饮用时间；孕期、睡眠敏感或对咖啡因敏感者应按个人情况限制摄入。检查调味速溶产品的糖、植脂末和饱和脂肪。",
+      "taste_m": {},
+      "refs": [
+        "Coffea arabica instant coffee—Chemical view and immunomodulating properties. Carbohydrate Polymers. 2014;113:62-70. DOI: https://doi.org/10.1016/j.carbpol.2013.12.068. https://www.sciencedirect.com/science/article/pii/S0144861713012836"
+      ],
+      "body_refs": [
+        "Coffea arabica instant coffee—Chemical view and immunomodulating properties. Carbohydrate Polymers. 2014;113:62-70. DOI: https://doi.org/10.1016/j.carbpol.2013.12.068. https://www.sciencedirect.com/science/article/pii/S0144861713012836"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "不同干燥工艺的化学成分比较。",
+          "population": "冻干和喷雾干燥速溶咖啡样品。",
+          "exposure": "比较咖啡因及其他化学成分。",
+          "result": "研究样品的咖啡因约为3.0%与3.4%，碳水约37%与38%，差异未显示冻干的临床优势。",
+          "limits": "产品样品有限，部分指标为实验室或体外分析；不能外推到所有品牌或健康结局。",
+          "distance": "D1：速溶咖啡工艺研究。"
+        }
+      ],
+      "unknowns": "不同品牌每份咖啡因及污染物的代表性实测、冻干工艺对感官和成分的独立复现，以及与其他冲煮方式直接比较的人体试验。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "freeze dried instant coffee caffeine composition spray dried comparison",
+        "freeze dried soluble coffee human health clinical outcomes",
+        "instant coffee caffeine per serving product variation",
+        "freeze dried coffee manufacturing process composition study"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    },
+    "ready-to-eat-chicken-breast": {
+      "name": "即食鸡胸肉",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "即食鸡胸肉",
+      "research_depth": "R2",
+      "shared_parent": "low-carb-and-modern-foods-base",
+      "identity": "经熟制并包装、开袋即可食用的鸡胸肉；冷藏、冷冻及常温商业无菌产品的杀菌和储存条件不同。开袋后还应遵守标签的冷藏与食用期限。",
+      "variables": "熟制和包装工艺、冷藏或常温储存、每份蛋白质和钠、调味与腌制、保质期、开封后保存以及加热方式。",
+      "composition": "产品通常以鸡胸肉为主要原料，调味、注水、盐和其他配料造成每份钠及蛋白质差异。即食状态降低家庭烹调步骤，但冷藏即食肉仍需防范食源性污染。",
+      "direct": "本轮未检得即食鸡胸肉品类针对健康结局的人体试验。现有直接证据主要是监管与公共卫生资料：即食冷藏肉品可能受到李斯特菌污染，妥善冷藏、遵守日期标示及高风险人群充分加热可降低风险。",
+      "specific": "CDC建议孕妇、65岁及以上成人和免疫功能低下者将冷藏即食熟肉加热至冒热气后食用。冷藏不能完全阻止李斯特菌生长；不同包装方式和保质期不能相互套用。",
+      "body": "本轮未检得即食鸡胸肉品类针对健康结局的人体试验。现有直接证据主要是监管与公共卫生资料：即食冷藏肉品可能受到李斯特菌污染，妥善冷藏、遵守日期标示及高风险人群充分加热可降低风险。 CDC建议孕妇、65岁及以上成人和免疫功能低下者将冷藏即食熟肉加热至冒热气后食用。冷藏不能完全阻止李斯特菌生长；不同包装方式和保质期不能相互套用。",
+      "evidence_body": "证据限于所列产品形态、成分、剂量、人群和结局；本条是类别条目，不代表任一品牌的固定配方或已证实功效。",
+      "care": "按实际用途比较完整配料表、营养成分、份量和保存说明；类别名称不能代替对具体产品的判断。",
+      "safety": "比较每份蛋白质和钠，并按产品说明冷藏和在保质期内食用。孕妇、老年人和免疫功能低下者应遵守当地即食熟肉加热建议；开封后及时冷藏，避免生熟食物交叉接触。",
+      "taste_m": {},
+      "refs": [
+        "CDC. Listeria and ready-to-eat deli foods: storage, handling and reheating advice. https://www.cdc.gov/listeria/causes/deli-ready-to-eat-foods.html",
+        "CDC. Food safety: chicken. https://cdc.gov/food-safety/foods/chicken.html",
+        "FDA. Are You Storing Food Safely? https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "body_refs": [
+        "CDC. Listeria and ready-to-eat deli foods: storage, handling and reheating advice. https://www.cdc.gov/listeria/causes/deli-ready-to-eat-foods.html",
+        "CDC. Food safety: chicken. https://cdc.gov/food-safety/foods/chicken.html",
+        "FDA. Are You Storing Food Safely? https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+        "National Health Commission of the PRC. FAQ on GB 28050-2025 nutrition labeling standard: the standard takes effect on 2027-03-16; foods produced before that date may be sold through their shelf life. https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "公共卫生食品安全指南。",
+          "population": "冷藏即食熟肉消费者，重点包括孕妇、老年人及免疫功能低下者。",
+          "exposure": "说明李斯特菌污染风险、冷藏、日期管理及加热措施。",
+          "result": "冷藏即食肉品可能带有李斯特菌；高风险人群应将其加热至冒热气后食用。",
+          "limits": "这是类别风险和消费者建议，不代表每个鸡胸肉批次被污染；应依标签和当地规定处理。",
+          "distance": "D2：即食熟肉安全资料。"
+        },
+        {
+          "ref": 2,
+          "design": "公共卫生鸡肉食品安全指南。",
+          "population": "生鸡肉家庭处理。",
+          "exposure": "给出防交叉污染与充分加热建议。",
+          "result": "鸡肉应达到安全内部温度并避免生熟食物交叉接触。",
+          "limits": "主要针对生鸡肉处理；对已经熟制包装品应优先看包装说明。",
+          "distance": "D2：邻近鸡肉安全资料。"
+        },
+        {
+          "ref": 3,
+          "design": "食品储存指南。",
+          "population": "需冷藏易腐食品。",
+          "exposure": "说明冷藏温度和及时冷藏原则。",
+          "result": "冷藏应保持在4°C及以下，并按时限管理易腐食品。",
+          "limits": "不同产品包装及开封后的规定可能不同。",
+          "distance": "D2：食品储存背景。"
+        },
+        {
+          "ref": 4,
+          "design": "中国预包装食品营养标签标准问答。",
+          "population": "预包装食品标签。",
+          "exposure": "说明营养信息读取。",
+          "result": "消费者可比较钠、蛋白质及能量。",
+          "limits": "营养标签不能代替微生物安全控制。",
+          "distance": "D2：中国标签资料。"
+        }
+      ],
+      "unknowns": "中国市场不同包装工艺的微生物监测数据、开封后安全期限和具体即食鸡胸肉的人体膳食替代研究。",
+      "tradition": "现代加工或复合食品。未发现能把该类具体商品与古籍条目直接对应的材料；传统原料记载不转写为成品疗效。",
+      "queries": [
+        "CDC ready to eat refrigerated meat Listeria chicken breast storage reheating",
+        "CDC chicken food safety cooking cross contamination",
+        "FDA refrigerated food storage 4 C ready to eat meat",
+        "ready to eat chicken breast sodium protein nutrition label"
+      ],
+      "search_log": [
+        "核对条目定义、主要配方差异及与相邻类别的边界。",
+        "检索类别研究、成分资料和官方安全或标签资料，区分成品证据与邻近成分证据。",
+        "按样本、人群、研究时长、配方和结局检查可迁移范围，并记录证据空缺。"
+      ]
+    }
+  }
+}
