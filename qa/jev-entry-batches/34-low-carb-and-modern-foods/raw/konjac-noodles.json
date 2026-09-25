@@ -1,0 +1,129 @@
+{
+  "batch_id": "34-low-carb-and-modern-foods",
+  "entry_id": "konjac-noodles",
+  "summary_ref": "references/entries/konjac-noodles/summary.md",
+  "summary_sha256": "19b6ad1cf0f8ab057189d3b214c97cbdc088cf571b85b07e71c8a4f10f4e350a",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "requested_model": "jev-latest",
+  "run_timestamp_utc": "2026-09-25T09:04:49.606161+00:00",
+  "runs": [
+    {
+      "index": 1,
+      "actual_model": "jev-1.13.0",
+      "native_answers": {
+        "qi": {
+          "type": "choice",
+          "choice": "平",
+          "confidence": 0.98,
+          "probabilities": {
+            "平": 0.99,
+            "凉": 0.0,
+            "寒": 0.01,
+            "温": 0.0,
+            "热": 0.0
+          }
+        },
+        "taste_sour": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "taste_bitter": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "taste_sweet": {
+          "type": "noul",
+          "noul": 0.1
+        },
+        "taste_pungent": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "taste_salty": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "meridian_heart": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "meridian_liver": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "meridian_spleen": {
+          "type": "noul",
+          "noul": 0.15
+        },
+        "meridian_lung": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "meridian_kidney": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "heart_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.38,
+          "probabilities": {
+            "阴+": 0.04,
+            "阴-": 0.53,
+            "阳-": 0.31,
+            "阳+": 0.12
+          }
+        },
+        "liver_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.55,
+          "probabilities": {
+            "阴+": 0.02,
+            "阴-": 0.66,
+            "阳-": 0.28,
+            "阳+": 0.03
+          }
+        },
+        "spleen_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.85,
+          "probabilities": {
+            "阴+": 0.02,
+            "阴-": 0.89,
+            "阳-": 0.01,
+            "阳+": 0.08
+          }
+        },
+        "lung_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.69,
+          "probabilities": {
+            "阴+": 0.12,
+            "阴-": 0.76,
+            "阳-": 0.08,
+            "阳+": 0.04
+          }
+        },
+        "kidney_direction": {
+          "type": "choice",
+          "choice": "阴-",
+          "confidence": 0.86,
+          "probabilities": {
+            "阴+": 0.04,
+            "阴-": 0.9,
+            "阳-": 0.04,
+            "阳+": 0.02
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 8639,
+        "output_tokens": 480
+      }
+    }
+  ]
+}
