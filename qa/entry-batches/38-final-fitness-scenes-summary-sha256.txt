@@ -1,3 +1,3 @@
-de6e56fce7a0e4a86fe12e33171f56bf88e73c1ee883de8868abb9cfd5918e7b  references/entries/post-workout-protein-shake/summary.md
-fc3a3a26c9a8792d5fe45202422b07f61e606321953407b30232ea50fc144806  references/entries/sports-electrolyte-drink/summary.md
-a4042937da5d189421d1719f571044206dffa4e4767e6aab6bd7e8e57ba2d4a2  references/entries/high-protein-yogurt-snack/summary.md
+21077d5d5fe4c3c841ad550b759b34001d7068414e16a728929370fc5f963ff1  references/entries/post-workout-protein-shake/summary.md
+dc2c8c4807a137e9ad56989a2b1a57485bcad4d70c222f67ef001be3d4a82429  references/entries/sports-electrolyte-drink/summary.md
+9616b2522bec92cdd862e4085b2571f5b937c2ca3d53381ab744b2c0d71f3a19  references/entries/high-protein-yogurt-snack/summary.md

@@ -1,0 +1,3 @@
+05d57eb3d25e9666c9960feaaada11b3a2491450e02b4d5e906a4a46e2b553df  qa/jev-entry-batches/38-final-fitness-scenes/raw/post-workout-protein-shake.json
+4569e0897a0ead748f4a7c9d65de8d27bccae7f1d407d5280e6732aa8668ff7d  qa/jev-entry-batches/38-final-fitness-scenes/raw/sports-electrolyte-drink.json
+90a923227064d0a6dc9298c01435900cd89b70e93be26fd7d6b2946e2bf6ee71  qa/jev-entry-batches/38-final-fitness-scenes/raw/high-protein-yogurt-snack.json

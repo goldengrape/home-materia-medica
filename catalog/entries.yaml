@@ -2572,3 +2572,24 @@ entries:
   research_depth: R2
   status: summary_frozen_R2
   evidence_cutoff: 2026-09-25
+- id: post-workout-protein-shake
+  name: 训练后蛋白奶昔
+  volume: 食方与生活场景部
+  entry_type: meal_scene
+  research_depth: R2
+  status: summary_frozen_R2
+  evidence_cutoff: 2026-09-25
+- id: sports-electrolyte-drink
+  name: 电解质饮料配运动
+  volume: 食方与生活场景部
+  entry_type: meal_scene
+  research_depth: R2
+  status: summary_frozen_R2
+  evidence_cutoff: 2026-09-25
+- id: high-protein-yogurt-snack
+  name: 高蛋白酸奶加餐
+  volume: 食方与生活场景部
+  entry_type: meal_scene
+  research_depth: R2
+  status: summary_frozen_R2
+  evidence_cutoff: 2026-09-25

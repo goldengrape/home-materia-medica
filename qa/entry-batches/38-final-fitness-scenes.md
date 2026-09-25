@@ -67,3 +67,14 @@
 ## Actions 运行记录
 
 待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+
+## 判与写完成记录
+
+- Workflow run: 36120745831; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10857510344; uploaded by this run with 30-day retention.
+- 3 raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
+- Per-file raw JSON SHA-256: qa/jev-entry-batches/38-final-fitness-scenes/native-json-sha256.txt.
+- 3 Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
+- 3 reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
+- catalog/entries.yaml updated with this batch's 3 frozen entries.
+- Workflow run 36120745831: status success; intermediate and native artifacts are retained for 30 days where uploaded.
