@@ -1,0 +1,10 @@
+b14b81c049abcbfe85b7afe7ad3f529abe45bc6d3fbc936d71ea72ee23c5a1b4  qa/jev-entry-batches/28-condiments/raw/braised-pork-rice.json
+26e33194533ea79a9f79bf7089812027829474f33a6c87dfff69c4e40a749fad  qa/jev-entry-batches/28-condiments/raw/tomato-ketchup.json
+de16cc2744e57b75a0ca637f7770259ff4a5e3dde91e75ba2d58ad7e783a0663  qa/jev-entry-batches/28-condiments/raw/mayonnaise.json
+2260848f1068452696bcb90531664d3943999aeda451e6e24b229769c99e6a15  qa/jev-entry-batches/28-condiments/raw/salad-dressing.json
+6605cc549ab034c22ec6b4c4c22d9551b59376509e6e01f77a779294dca4aa17  qa/jev-entry-batches/28-condiments/raw/thousand-island-dressing.json
+a1cf6a4a666c3acdfb593f6aa5ee2272a4d4da50b810a234ea5898fcabe73811  qa/jev-entry-batches/28-condiments/raw/caesar-dressing.json
+ffde8a4eb347d927d2a540aa117dcbf3d4b737de9156beafb4ae010688eaaaa2  qa/jev-entry-batches/28-condiments/raw/mustard-sauce.json
+c71279990a8b0bd98fb9c2238f1acf0dd4b2c15b5b1808756cc15c78d3cafe86  qa/jev-entry-batches/28-condiments/raw/yellow-mustard-sauce.json
+5ba5c8facbe860379e631eae6551bea29403e4527ff69939b8a2629e2c62c484  qa/jev-entry-batches/28-condiments/raw/barbecue-sauce.json
+d6820e67c26a73d3cf592887758012039faf160ee9f67622c52d5adf57b134e7  qa/jev-entry-batches/28-condiments/raw/teriyaki-sauce.json
