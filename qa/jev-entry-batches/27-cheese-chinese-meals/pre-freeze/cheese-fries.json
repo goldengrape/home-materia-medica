@@ -2,9 +2,9 @@
   "batch_id": "27-cheese-chinese-meals",
   "entry_id": "cheese-fries",
   "summary_ref": "references/entries/cheese-fries/summary.md",
-  "summary_sha256": "c1dcd7e9ec7a491c6d51db9f8a0ae703c7d1d036a7bb42b4da3beb588542d572",
+  "summary_sha256": "a4179846e33f45008d212604cf04491542bf2bd316dbfc5d2f79c1b8ba6502fc",
   "reasoning_version": "jev-tcm-reasoning-v0.4",
   "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
   "snapshot_date": "2026-09-24",
-  "summary_text": "# Summary Document — 芝士薯条\r\n\r\n**身份。** 薯条浇淋或搭配奶酪酱、融化芝士制成的复合配餐；普通薯条和芝士玉米另列。\r\n\r\n**组成与暴露。** 马铃薯、油脂与奶制品构成；薯条及芝士酱各自配方会改变整份钠和能量。 **关键变量：** 薯条份量、炸制方式、奶酪或芝士酱的种类和用量、钠及蘸料。\r\n\r\n**直接人体证据。** 未检得芝士薯条成品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** USDA FoodData Central FNDDS收录“含芝士快餐薯条”的独立复合食物编码；该记录是美国数据库条目，并非某个中国品牌或餐馆的实测样品。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 奶类过敏者避免奶酪配料；油炸食品出锅后注意烫伤。\r\n\r\n**传统来源。** 现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+  "summary_text": "# Summary Document — 芝士薯条\n\n**身份。** 薯条浇淋或搭配奶酪酱、融化芝士制成的复合配餐；普通薯条和芝士玉米另列。\n\n**组成与暴露。** 马铃薯、油脂与奶制品构成；薯条及芝士酱各自配方会改变整份钠和能量。 **关键变量：** 薯条份量、炸制方式、奶酪或芝士酱的种类和用量、钠及蘸料。\n\n**直接人体证据。** 未检得芝士薯条成品特异的人体临床结局研究。\n\n**产品/成分证据。** USDA FoodData Central FNDDS收录“含芝士快餐薯条”的独立复合食物编码；该记录是美国数据库条目，并非某个中国品牌或餐馆的实测样品。\n\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\n\n**安全。** 奶类过敏者避免奶酪配料；油炸食品出锅后注意烫伤。\n\n**传统来源。** 现代复合餐食。本条按实际配方和制法讨论，不把某个原料的传统记载直接转为整道菜的功效。\n\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\n"
 }

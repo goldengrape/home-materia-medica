@@ -143,3 +143,14 @@
 ## Actions 运行记录
 
 待补录 workflow run、artifact、模型版本、原始 JSON 哈希与 QA 结果。
+
+## 判与写完成记录
+
+- Workflow run: 36110123486; Jev API key sourced from GitHub Environment API_KEYS, secret JEV_API_KEY.
+- Native artifact ID: 10853240341; uploaded by this run with 30-day retention.
+- 10 raw outputs match frozen summary hashes; actual model(s): jev-1.13.0; each file has one run and 16 native answers.
+- Per-file raw JSON SHA-256: qa/jev-entry-batches/27-cheese-chinese-meals/native-json-sha256.txt.
+- 10 Mapping files preserve original probabilities, Noul, confidence and all direction probabilities; M annotations remain separate.
+- 10 reader entries link research, frozen summary and Mapping; English paper titles and verified DOI links are retained.
+- catalog/entries.yaml updated with this batch's 10 frozen entries.
+- Workflow run 36110123486: status success; intermediate and native artifacts are retained for 30 days where uploaded.

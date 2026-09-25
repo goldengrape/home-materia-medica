@@ -1,0 +1,10 @@
+fcbc64c305985ab97d5f6018c18925f5576e7121d4c44384b3c81097fb3b4fd3  qa/jev-entry-batches/27-cheese-chinese-meals/raw/cheese-fries.json
+4d4b682752665fccff43d9f51b03a11f8c2d2764c1bf850a571d742772dbf822  qa/jev-entry-batches/27-cheese-chinese-meals/raw/cheese-corn.json
+81ecec1e265fbcdfc7050cc36842bc193b483db1368382efb6e61482944d5f97  qa/jev-entry-batches/27-cheese-chinese-meals/raw/malatang.json
+6a1c9502a414cd7d19b33f08ed2214730e68ed6da004da3afbfd32683230d094  qa/jev-entry-batches/27-cheese-chinese-meals/raw/maocai.json
+fd085890c4401612e553efaa3282f589ca7d53fc9a2200dcaf26fb2495f0cbab  qa/jev-entry-batches/27-cheese-chinese-meals/raw/mala-xiangguo.json
+3b4904b9a5b654811493e40cd1c88e1e9871321bfc197bfb490fedfc6cd42272  qa/jev-entry-batches/27-cheese-chinese-meals/raw/hotpot.json
+e297c6e3455f71c97c727073b69133b2c387cd526cc9b3042852cf7b24846169  qa/jev-entry-batches/27-cheese-chinese-meals/raw/dry-pot.json
+383a3a97310e501d9755a56da52fea11fccc35480cd6b5882dfe47d193d9a5c9  qa/jev-entry-batches/27-cheese-chinese-meals/raw/barbecue.json
+e02880c0e38d7986e39470ba76aadaada324cb75d374a96da418081e75f1147f  qa/jev-entry-batches/27-cheese-chinese-meals/raw/grilled-fish.json
+acc9de55353682c1fae006d116c1bd1eadb794ea25eaac5b6f33b0c87eeea76b  qa/jev-entry-batches/27-cheese-chinese-meals/raw/huangmen-chicken-rice.json
