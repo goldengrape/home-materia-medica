@@ -1,0 +1,10 @@
+{
+  "batch_id": "35-new-foods-and-breakfast",
+  "entry_id": "insect-protein-food",
+  "summary_ref": "references/entries/insect-protein-food/summary.md",
+  "summary_sha256": "ace23fb2192ef10cfe5ff7eab7ecc7edc5a76a177fbf9b0b011b3db1a1a78e1d",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 昆虫蛋白食品\r\n\r\n**身份。** 以特定食用昆虫全虫、粉末或提取成分为原料的食品。物种、生命阶段、热处理、脱脂程度和用途均需明确。\r\n\r\n**组成与暴露。** 昆虫食品可能同时含蛋白质、脂肪、几丁质及来自饲料的成分。营养和过敏性随物种、加工和最终食品变化。 **关键变量：** 昆虫物种和形态、加工处理、添加量、最终食品、饲料来源、交叉接触、过敏史及所在地授权。\r\n\r\n**直接人体证据。** 未检得足以证明昆虫蛋白食品整体改善人群长期健康结局的代表性人体试验。监管安全结论针对经评估的具体物种、形态、用途和使用水平。\r\n\r\n**产品/成分证据。** EFSA认为特定干燥黄粉虫在拟定用途和水平下安全，同时提示可能对黄粉虫蛋白发生致敏，并可能与甲壳类或尘螨过敏交叉反应。欧盟2025年授权的是经UV处理的黄粉虫粉，授权条件和标签要求具体，不代表所有昆虫或全球市场。\r\n\r\n**共享背景。** 参见 novel-foods-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 确认具体物种、处理和销售地授权。对甲壳类、尘螨或相关昆虫过敏者需留意交叉反应及标签；饲料来源成分也可能影响过敏原信息。\r\n\r\n**传统来源。** 本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

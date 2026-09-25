@@ -1,0 +1,727 @@
+{
+  "batch": {
+    "id": "35-new-foods-and-breakfast",
+    "title": "新加工食品与早餐组合",
+    "catalog_order": 35,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC and NCBI E-utilities; Crossref/Europe PMC metadata verification; FDA, USDA-FSIS, EFSA, European Commission and UK FSA official sources",
+    "web_search_calls": 10,
+    "web_search_queries": 40,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-35-new-foods-and-breakfast",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "未开封商业即食米饭与家庭熟饭剩菜分开；常温料理包只有满足具体定义的产品才适用LACF监管说明。",
+      "3D打印描述制造方法，不据此推断营养或临床获益；细胞培养食品的监管状态按产品、物种和地区记录。",
+      "精密发酵β-乳球蛋白仍是牛乳蛋白；藻类和昆虫条目保留物种、制剂、剂量与安全证据边界。",
+      "早餐场景证据为特定饮料、谷物、酸奶或水果组合研究；不得将其结果泛化到日常“拿铁加面包”“甜味谷物配奶”或“酸奶水果碗”。"
+    ],
+    "citation_audit_revision": "rev-1: verified bibliographic identifiers and official regulatory pages; retained jurisdiction, product, population and acute-outcome limits."
+  },
+  "entries": {
+    "ready-to-eat-brown-rice": {
+      "name": "即食糙米饭",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "即食糙米饭",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "经熟制并包装、可加热或即食的糙米产品。常温无菌商业包装、冷藏包装及家庭煮熟后分装的米饭是不同产品与储存情形。",
+      "variables": "糙米品种、碾磨程度、米水比、熟制和包装工艺、份量、调味及储运温度。",
+      "composition": "糙米保留米糠和胚芽；即食产品可能含油、盐或其他谷物。包装方式决定保存条件，不能只凭“即食”推定为常温稳定。",
+      "direct": "一项随机交叉试验比较同批次糙米和精白米，纳入10名健康成人及9名2型糖尿病患者，糙米餐的餐后血糖反应较低。该研究不是商业即食糙米饭试验。",
+      "specific": "另一项21名健康成人的小型试验显示，米种、烹调和冷藏会影响白米抗性淀粉及餐后反应，结果依品种和方法而异。英国FSA提示熟米饭须及时冷却并冷藏；这些家庭剩饭建议不等同于未开封商业无菌包装的处理方式。",
+      "body": "一项随机交叉试验比较同批次糙米和精白米，纳入10名健康成人及9名2型糖尿病患者，糙米餐的餐后血糖反应较低。该研究不是商业即食糙米饭试验。 另一项21名健康成人的小型试验显示，米种、烹调和冷藏会影响白米抗性淀粉及餐后反应，结果依品种和方法而异。英国FSA提示熟米饭须及时冷却并冷藏；这些家庭剩饭建议不等同于未开封商业无菌包装的处理方式。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "按包装标示区分常温与冷藏产品。家庭熟饭应及时冷却、冷藏并在建议时间内食用；商业低酸密封食品的安全依赖具体工艺与生产控制。",
+      "safety": "按包装标示区分常温与冷藏产品。家庭熟饭应及时冷却、冷藏并在建议时间内食用；商业低酸密封食品的安全依赖具体工艺与生产控制。",
+      "taste_m": {},
+      "refs": [
+        "Panlasigui LN, Thompson LU. Blood glucose lowering effects of brown rice in normal and diabetic subjects. Int J Food Sci Nutr. 2006;57(3-4):151-158. DOI: https://doi.org/10.1080/09637480500410879. PMID: 17127465.",
+        "Chiu YT, Stewart ML. Effect of variety and cooking method on resistant starch content of white rice and subsequent postprandial glucose response and appetite in humans. Asia Pac J Clin Nutr. 2013;22(3):372-379. DOI: https://doi.org/10.6133/apjcn.2013.22.3.08. PMID: 23945407.",
+        "UK Food Standards Agency. Cooking your food: rice safety advice. https://www.food.gov.uk/safety-hygiene/cooking-your-food",
+        "FDA. Guidance for Industry: Low-Acid Foods Packaged in Hermetically Sealed Containers (LACF). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-low-acid-foods-packaged-hermetically-sealed-containers-lacf-regulation-and-fda"
+      ],
+      "body_refs": [
+        "Panlasigui LN, Thompson LU. Blood glucose lowering effects of brown rice in normal and diabetic subjects. Int J Food Sci Nutr. 2006;57(3-4):151-158. DOI: https://doi.org/10.1080/09637480500410879. PMID: 17127465.",
+        "Chiu YT, Stewart ML. Effect of variety and cooking method on resistant starch content of white rice and subsequent postprandial glucose response and appetite in humans. Asia Pac J Clin Nutr. 2013;22(3):372-379. DOI: https://doi.org/10.6133/apjcn.2013.22.3.08. PMID: 23945407.",
+        "UK Food Standards Agency. Cooking your food: rice safety advice. https://www.food.gov.uk/safety-hygiene/cooking-your-food",
+        "FDA. Guidance for Industry: Low-Acid Foods Packaged in Hermetically Sealed Containers (LACF). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-low-acid-foods-packaged-hermetically-sealed-containers-lacf-regulation-and-fda"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉人体试验。",
+          "population": "10名健康成人与9名2型糖尿病患者。",
+          "exposure": "比较同一批次、同一品种的糙米与精白米餐。",
+          "result": "糙米餐的餐后血糖反应较低。",
+          "limits": "样本小，非商业即食糙米饭；研究结局为急性餐后反应。",
+          "distance": "D2：共享原料与熟米饭的急性人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "米种和烹调方法试验，含21名健康成人的餐后试验。",
+          "population": "健康成人及实验室米样。",
+          "exposure": "比较不同白米品种、烹调和冷藏处理。",
+          "result": "抗性淀粉和餐后反应随米种及加工处理改变。",
+          "limits": "不是糙米包装饭，结果不能指定到某商品。",
+          "distance": "D2：米饭加工与餐后反应背景。"
+        },
+        {
+          "ref": 3,
+          "design": "英国官方食品安全指导。",
+          "population": "家庭烹制米饭消费者。",
+          "exposure": "熟饭冷却、冷藏和再加热。",
+          "result": "强调快速冷却和适当冷藏，以减少蜡样芽孢杆菌风险。",
+          "limits": "英国指导；不适用于未开封商业无菌包装的储存说明。",
+          "distance": "D2：家庭剩饭安全建议。"
+        },
+        {
+          "ref": 4,
+          "design": "美国FDA监管指导。",
+          "population": "美国低酸、密封包装食品生产者。",
+          "exposure": "商业加工及预定热处理申报要求。",
+          "result": "相关商业生产须按具体产品、包装和工艺遵守注册及计划加工要求。",
+          "limits": "仅适用于符合LACF定义的产品及美国监管范围。",
+          "distance": "D3：特定监管背景。"
+        }
+      ],
+      "unknowns": "商业即食糙米饭按品牌和包装方式区分的代表性营养数据、直接人体试验及长期结局。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "ready-to-eat brown rice glycemic response trial",
+        "brown rice versus milled rice randomized crossover type 2 diabetes PMID 17127465",
+        "rice cooking cooling resistant starch postprandial glucose trial",
+        "FSA cooked rice food safety commercial retort pouch LACF FDA"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "重点区分未开封商业包装米饭与家庭煮熟剩饭，并核对糙米研究能否迁移到即食产品。"
+      ]
+    },
+    "shelf-stable-meal-pouch": {
+      "name": "常温料理包",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "常温料理包",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "经商业热加工或其他经验证方法包装、未开封时可在室温储存的预制菜肴。非无菌冷藏包装和家庭装袋食品不自动属于本条范围。",
+      "variables": "酸度、水分活度、热处理强度、包装密封、配方、份量、钠含量、储存条件及开封后处理。",
+      "composition": "可能含熟肉、谷物、豆类、酱汁、油盐和蔬菜；能量、钠及营养构成随配方变化。常温稳定性来自经过验证的产品与工艺，不由“料理包”名称决定。",
+      "direct": "未检得能代表常温料理包整体的长期人体健康结局试验。对该类食品的营养判断需按具体标签、配方和食用份量进行。",
+      "specific": "美国FDA的低酸密封包装食品制度要求相应商业生产者按产品、容器和加工方法履行注册及计划加工申报。是否适用取决于定义与司法辖区，不能据此假定所有料理包均属低酸罐藏食品。",
+      "body": "未检得能代表常温料理包整体的长期人体健康结局试验。对该类食品的营养判断需按具体标签、配方和食用份量进行。 美国FDA的低酸密封包装食品制度要求相应商业生产者按产品、容器和加工方法履行注册及计划加工申报。是否适用取决于定义与司法辖区，不能据此假定所有料理包均属低酸罐藏食品。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "未开封时按包装储存说明保存；包装膨胀、渗漏或破损时不要食用。开封后按标签冷藏或尽快食用。加热方式和保存期限遵循具体产品说明。",
+      "safety": "未开封时按包装储存说明保存；包装膨胀、渗漏或破损时不要食用。开封后按标签冷藏或尽快食用。加热方式和保存期限遵循具体产品说明。",
+      "taste_m": {},
+      "refs": [
+        "FDA. Guidance for Industry: Low-Acid Foods Packaged in Hermetically Sealed Containers (LACF). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-low-acid-foods-packaged-hermetically-sealed-containers-lacf-regulation-and-fda",
+        "UK Food Standards Agency. Cooking your food: rice safety advice. https://www.food.gov.uk/safety-hygiene/cooking-your-food",
+        "FDA. Acidified and Low-Acid Canned Foods: Guidance and Regulatory Information. https://www.fda.gov/food/guidance-documents-regulatory-information-topic-food-and-dietary-supplements/acidified-low-acid-canned-foods-guidance-documents-regulatory-information"
+      ],
+      "body_refs": [
+        "FDA. Guidance for Industry: Low-Acid Foods Packaged in Hermetically Sealed Containers (LACF). https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-low-acid-foods-packaged-hermetically-sealed-containers-lacf-regulation-and-fda",
+        "UK Food Standards Agency. Cooking your food: rice safety advice. https://www.food.gov.uk/safety-hygiene/cooking-your-food",
+        "FDA. Acidified and Low-Acid Canned Foods: Guidance and Regulatory Information. https://www.fda.gov/food/guidance-documents-regulatory-information-topic-food-and-dietary-supplements/acidified-low-acid-canned-foods-guidance-documents-regulatory-information"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国FDA官方监管指导。",
+          "population": "美国商业低酸密封包装食品生产者。",
+          "exposure": "说明注册、计划加工和容器/工艺特异要求。",
+          "result": "适用产品需按具体工艺满足相应监管要求。",
+          "limits": "法规资料并非料理包健康试验；适用范围由产品定义和美国法规决定。",
+          "distance": "D3：加工监管信息。"
+        },
+        {
+          "ref": 2,
+          "design": "英国官方家庭烹调和储存指导。",
+          "population": "家庭烹饪和剩饭储存。",
+          "exposure": "熟饭及时冷却、冷藏及再加热。",
+          "result": "提醒蜡样芽孢杆菌孢子可在烹调后存活，错误储存会增加风险。",
+          "limits": "仅用于家庭熟饭场景，不能替代商业产品工艺验证。",
+          "distance": "D3：特定食品安全背景。"
+        },
+        {
+          "ref": 3,
+          "design": "美国FDA专题监管资料。",
+          "population": "美国酸化及低酸罐藏食品生产者。",
+          "exposure": "介绍罐藏食品法规与官方指导文件。",
+          "result": "监管要求与酸度、密封包装及计划加工相关。",
+          "limits": "不能外推至所有室温预制菜或其他地区。",
+          "distance": "D3：加工监管背景。"
+        }
+      ],
+      "unknowns": "不同地区料理包品类的市场构成、钠和营养素分布，以及按配方和工艺定义的产品特异人体研究。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "shelf stable ready meal pouch nutrition clinical trials",
+        "FDA low acid foods hermetically sealed containers scheduled process pouch",
+        "FDA acidified low acid canned foods guidance pouch",
+        "retort pouch food safety temperature commercial sterile packaging"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "查FDA关于商业低酸密封包装食品的指导，保留其适用定义、地区和生产端范围。"
+      ]
+    },
+    "3d-printed-food": {
+      "name": "3D打印食品",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "3D打印食品",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "将可食用食品材料按数字模型逐层挤出或沉积成形的食品；打印本身描述制造方式，不限定营养组成、熟制状态或健康效果。",
+      "variables": "食品墨水配方、原料、打印温度与速度、后续热处理、卫生控制、份量和食用人群。",
+      "composition": "可使用泥状、凝胶状、面团或其他可打印材料；营养成分取决于输入原料和后处理，不由形状打印工艺自动决定。",
+      "direct": "未检得足以证明3D打印食品整体改善人群营养状况、饮食质量或临床结局的大型人体试验。现有研究多关注材料、打印性能和潜在应用。",
+      "specific": "2023年批判性综述讨论吞咽障碍饮食和个性化营养等应用，同时指出证据与实际应用限制。食品形状或质地可被定制，不足以证明营养改善或临床获益。",
+      "body": "未检得足以证明3D打印食品整体改善人群营养状况、饮食质量或临床结局的大型人体试验。现有研究多关注材料、打印性能和潜在应用。 2023年批判性综述讨论吞咽障碍饮食和个性化营养等应用，同时指出证据与实际应用限制。食品形状或质地可被定制，不足以证明营养改善或临床获益。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "核对可食用原料、过敏原、加工和后续熟制、设备清洁及储存条件。食品安全由原料和完整加工过程决定，不能只凭打印成形判断。",
+      "safety": "核对可食用原料、过敏原、加工和后续熟制、设备清洁及储存条件。食品安全由原料和完整加工过程决定，不能只凭打印成形判断。",
+      "taste_m": {},
+      "refs": [
+        "Zhu W, et al. Three-Dimensional Printing of Foods: A Critical Review of the Present State in Healthcare Applications, and Potential Risks and Benefits. Foods. 2023;12(17):3287. DOI: https://doi.org/10.3390/foods12173287. PMCID: PMC10487194.",
+        "Baegbali M, et al. The Impact of Food-Shaping Techniques on Nutrition, Mealtime Experiences, and Quality of Life for Older Adults in Aged Care Settings: A Systematic Review. Curr Nutr Rep. 2023. DOI: https://doi.org/10.1007/s13668-023-00493-w."
+      ],
+      "body_refs": [
+        "Zhu W, et al. Three-Dimensional Printing of Foods: A Critical Review of the Present State in Healthcare Applications, and Potential Risks and Benefits. Foods. 2023;12(17):3287. DOI: https://doi.org/10.3390/foods12173287. PMCID: PMC10487194.",
+        "Baegbali M, et al. The Impact of Food-Shaping Techniques on Nutrition, Mealtime Experiences, and Quality of Life for Older Adults in Aged Care Settings: A Systematic Review. Curr Nutr Rep. 2023. DOI: https://doi.org/10.1007/s13668-023-00493-w."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "批判性综述。",
+          "population": "食品打印技术研究，重点讨论医疗与营养应用。",
+          "exposure": "归纳材料、打印、吞咽障碍饮食及个性化营养研究。",
+          "result": "技术可调整食品形状、质地或配方；临床应用证据仍有限。",
+          "limits": "叙述性综述；潜在用途不等于大型临床试验验证的效果。",
+          "distance": "D2：打印食品技术与营养应用背景。"
+        },
+        {
+          "ref": 2,
+          "design": "系统综述。",
+          "population": "养老机构老年人食品塑形技术研究。",
+          "exposure": "评估塑形技术与营养、用餐体验、生活质量的研究。",
+          "result": "现有研究多为综述或小规模证据，纳入消费者的原始研究有限。",
+          "limits": "技术形态多样，不能把全部结果归于3D打印食品。",
+          "distance": "D3：相邻食品塑形证据。"
+        }
+      ],
+      "unknowns": "真实消费场景下不同打印食品的营养可及性、卫生控制、长期接受度和临床结局。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "3D printed food clinical trial patient nutrition status diet quality review",
+        "3D food printing dysphagia clinical evidence systematic review older adults",
+        "Foods 2023 3287 3D printing foods critical review healthcare applications",
+        "food 3D printing safety allergen hygiene processing review"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "将技术可行性与临床营养效果分开，核对系统综述中纳入的终点与原始研究。"
+      ]
+    },
+    "cultivated-meat": {
+      "name": "细胞培养肉",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "细胞培养肉",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "由动物细胞在受控培养条件下增殖并收获、作为食品原料或产品的动物细胞培养食品。产品可能含其他配料，不等同于完整肉块或固定营养构成。",
+      "variables": "物种、细胞系、培养基和生产过程、收获物组成、后续配方、监管辖区及产品标签。",
+      "composition": "培养细胞物料的组成和后续食品形式取决于物种、细胞系、培养过程与配方；不能从“培养肉”类别名推断蛋白质、脂肪、微量营养素或添加物。",
+      "direct": "未检得足以确定细胞培养肉相对传统肉类长期人体健康结局的比较试验。现有监管审查关注特定产品和生产流程的食品安全资料，不等于人群营养获益证据。",
+      "specific": "美国FDA对细胞收集、细胞库和增殖/分化进行监管；适用畜禽物种在收获阶段转由USDA-FSIS监管加工与标签。FDA的上市前咨询按产品开展，完成咨询不应称为FDA对整个类别的批准。英国RP-2307页面截至2026-08-07列为评估中；欧盟新食品授权另按具体申请判断。",
+      "body": "未检得足以确定细胞培养肉相对传统肉类长期人体健康结局的比较试验。现有监管审查关注特定产品和生产流程的食品安全资料，不等于人群营养获益证据。 美国FDA对细胞收集、细胞库和增殖/分化进行监管；适用畜禽物种在收获阶段转由USDA-FSIS监管加工与标签。FDA的上市前咨询按产品开展，完成咨询不应称为FDA对整个类别的批准。英国RP-2307页面截至2026-08-07列为评估中；欧盟新食品授权另按具体申请判断。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "检查销售地的具体产品授权、成分和标签。监管状态按国家、物种和产品区分；不要把一种产品的审查结果扩展到全部细胞培养食品。",
+      "safety": "检查销售地的具体产品授权、成分和标签。监管状态按国家、物种和产品区分；不要把一种产品的审查结果扩展到全部细胞培养食品。",
+      "taste_m": {},
+      "refs": [
+        "FDA. Human Food Made with Cultured Animal Cells. https://www.fda.gov/food/food-ingredients-packaging/human-food-made-cultured-animal-cells",
+        "FDA. Inventory of Completed Pre-market Consultations for Human Food Made with Cultured Animal Cells. https://www.fda.gov/food/human-food-made-cultured-animal-cells/inventory-completed-pre-market-consultations-human-food-made-cultured-animal-cells",
+        "UK Food Standards Agency. RP-2307: Mosa Meat B.V. Cell-cultured bovine fat biomass. https://data.food.gov.uk/regulated-product-applications/id/application/RP-2307.html",
+        "EFSA. Novel food. https://www.efsa.europa.eu/en/topics/topic/novel-food"
+      ],
+      "body_refs": [
+        "FDA. Human Food Made with Cultured Animal Cells. https://www.fda.gov/food/food-ingredients-packaging/human-food-made-cultured-animal-cells",
+        "FDA. Inventory of Completed Pre-market Consultations for Human Food Made with Cultured Animal Cells. https://www.fda.gov/food/human-food-made-cultured-animal-cells/inventory-completed-pre-market-consultations-human-food-made-cultured-animal-cells",
+        "UK Food Standards Agency. RP-2307: Mosa Meat B.V. Cell-cultured bovine fat biomass. https://data.food.gov.uk/regulated-product-applications/id/application/RP-2307.html",
+        "EFSA. Novel food. https://www.efsa.europa.eu/en/topics/topic/novel-food"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国FDA官方监管说明。",
+          "population": "细胞培养食品生产者与适用畜禽产品。",
+          "exposure": "描述FDA和USDA-FSIS各阶段职责。",
+          "result": "FDA负责细胞收集、细胞库和培养阶段；USDA-FSIS在收获后接管适用畜禽肉类的加工与标签监管。",
+          "limits": "仅说明美国监管安排，不是临床营养试验，也不适用于全球监管。",
+          "distance": "D3：美国监管背景。"
+        },
+        {
+          "ref": 2,
+          "design": "美国FDA官方已完成咨询清单。",
+          "population": "完成特定FDA上市前咨询的申报产品。",
+          "exposure": "按产品列出咨询资料和FDA答复。",
+          "result": "咨询逐产品评估；FDA表示对提交者安全结论暂时无进一步问题。",
+          "limits": "完成咨询不等同于对整个类别的概括性批准或临床获益证明。",
+          "distance": "D3：特定产品监管信息。"
+        },
+        {
+          "ref": 3,
+          "design": "英国官方申请记录。",
+          "population": "Mosa Meat培养牛脂生物质申请。",
+          "exposure": "新食品审批申请阶段信息。",
+          "result": "页面最后修改日期为2026-08-07，状态为in progress。",
+          "limits": "只针对该申请和英国授权流程；状态之后可能变化。",
+          "distance": "D3：单一申请监管信息。"
+        },
+        {
+          "ref": 4,
+          "design": "欧盟食品安全局官方主题说明。",
+          "population": "欧盟新食品申请和授权。",
+          "exposure": "说明新食品审批框架与动物细胞食品申请。",
+          "result": "应按具体申请与授权状态确认欧盟上市情况。",
+          "limits": "主题页状态随时间变化，不替代单个申请决定。",
+          "distance": "D3：欧盟监管背景。"
+        }
+      ],
+      "unknowns": "各种细胞系和工艺的最终营养构成、感官特征、长期人体结局与不同法域后续授权变化。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "FDA cultivated meat human food premarket consultation inventory latest",
+        "FDA USDA FSIS cell cultured food regulatory approach harvest labeling",
+        "UK FSA RP-2307 Mosa Meat cultured bovine fat status",
+        "EFSA novel food animal cell culture authorization EU status"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "核对FDA最新咨询清单、美国FDA/USDA职责，以及英国申请状态和欧盟新食品框架。"
+      ]
+    },
+    "precision-fermented-dairy-protein": {
+      "name": "精密发酵乳蛋白食品",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "精密发酵乳蛋白食品",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "使用微生物发酵表达特定乳蛋白、随后分离纯化并加入食品的产品。不同蛋白、宿主、生产流程和最终配方不能视为同一产品。",
+      "variables": "目标蛋白、微生物宿主、纯化和残留控制、每份蛋白剂量、配方、标签与销售地区。",
+      "composition": "精密发酵产生的目标乳蛋白在分子层面可与相应乳源蛋白相同；最终产品是否含乳糖、其他乳成分或特定过敏原需查看产品资料。",
+      "direct": "未检得足以证明精密发酵乳蛋白食品整体的长期人体临床获益试验。FDA GRN 1247记录的是特定菌株生产的β-乳球蛋白及通知中所列预期用途，不代表所有发酵乳蛋白或产品均已评估。",
+      "specific": "FDA于2025-09-19对GRN 1247回复“无进一步问题”，所述原料是β-乳球蛋白。β-乳球蛋白属于牛乳蛋白；发酵生产来源不会自动消除该目标蛋白对乳过敏者的过敏风险。",
+      "body": "未检得足以证明精密发酵乳蛋白食品整体的长期人体临床获益试验。FDA GRN 1247记录的是特定菌株生产的β-乳球蛋白及通知中所列预期用途，不代表所有发酵乳蛋白或产品均已评估。 FDA于2025-09-19对GRN 1247回复“无进一步问题”，所述原料是β-乳球蛋白。β-乳球蛋白属于牛乳蛋白；发酵生产来源不会自动消除该目标蛋白对乳过敏者的过敏风险。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "对牛乳蛋白过敏者，应按目标蛋白和成品标签判断，不能因“非动物发酵”而认为无乳过敏风险。GRAS通知的用途、菌株和生产规格有限，不能外推至不同成分或工艺。",
+      "safety": "对牛乳蛋白过敏者，应按目标蛋白和成品标签判断，不能因“非动物发酵”而认为无乳过敏风险。GRAS通知的用途、菌株和生产规格有限，不能外推至不同成分或工艺。",
+      "taste_m": {},
+      "refs": [
+        "FDA. GRAS Notice No. 1247: β-Lactoglobulin produced by Kluyveromyces lactis CCTCC M20241460. https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1247&set=grasnotices",
+        "FDA. Food Allergies. https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies",
+        "FDA. FDA Response to GRN 1247, dated September 19, 2025. https://www.fda.gov/media/188996/download?attachment="
+      ],
+      "body_refs": [
+        "FDA. GRAS Notice No. 1247: β-Lactoglobulin produced by Kluyveromyces lactis CCTCC M20241460. https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1247&set=grasnotices",
+        "FDA. Food Allergies. https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies",
+        "FDA. FDA Response to GRN 1247, dated September 19, 2025. https://www.fda.gov/media/188996/download?attachment="
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国FDA GRAS通知数据库记录。",
+          "population": "特定生产菌株与拟定食品用途。",
+          "exposure": "Kluyveromyces lactis CCTCC M20241460生产的β-乳球蛋白，列明若干拟定用途。",
+          "result": "FDA记录通知于2025-09-19结案并给出“无进一步问题”答复。",
+          "limits": "特定通知人、成分、菌株、规格和用途；不是整个精密发酵行业的审批。",
+          "distance": "D1：特定发酵乳蛋白原料监管记录。"
+        },
+        {
+          "ref": 2,
+          "design": "美国FDA过敏原标识指导。",
+          "population": "美国预包装食品和消费者。",
+          "exposure": "说明主要食品过敏原的标签要求。",
+          "result": "牛奶属于需申报的主要食品过敏原。",
+          "limits": "标签要求和产品判定取决于具体组成与适用法规。",
+          "distance": "D3：过敏原监管背景。"
+        },
+        {
+          "ref": 3,
+          "design": "美国FDA对GRN 1247的官方答复。",
+          "population": "该通知中所述β-乳球蛋白原料及预期用途。",
+          "exposure": "针对通知人的安全结论作答。",
+          "result": "FDA称目前没有进一步问题。",
+          "limits": "不构成其他蛋白、用途、配方或商业产品的结论。",
+          "distance": "D1：特定原料监管答复。"
+        }
+      ],
+      "unknowns": "其他目标乳蛋白和生产菌株的监管资料、成品营养差异、乳过敏临床风险及长期人体研究。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "FDA GRAS 1247 beta lactoglobulin Kluyveromyces lactis",
+        "precision fermentation dairy beta lactoglobulin milk allergy allergen labeling",
+        "FDA GRN 1247 no questions September 19 2025",
+        "precision fermented whey protein human clinical trials"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "把单一β-乳球蛋白GRAS通知与乳过敏原身份分别核对，不作类别整体推断。"
+      ]
+    },
+    "algae-protein-food": {
+      "name": "藻类蛋白食品",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "藻类蛋白食品",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "以微藻或大型藻类及其蛋白组分作为主要或部分蛋白来源的食品。物种、全细胞或分离蛋白、培养与加工方式差异很大。",
+      "variables": "藻种、细胞壁处理、蛋白浓度与消化率、污染物检测、配方、每份剂量和食用频率。",
+      "composition": "产品可能含全藻细胞、破壁藻粉或分离蛋白；蛋白含量、氨基酸可利用度、色泽、味道及其他营养成分依物种和处理而异。",
+      "direct": "一项随机双盲交叉餐试验纳入10名健康年轻成人，以含20克蛋白质和75克碳水的饮品比较Chlorella、Arthrospira与乳蛋白；血浆氨基酸反应不同，餐后血糖控制相近。该急性试验不能说明长期代谢或肌肉结局。",
+      "specific": "2024年综述指出微藻蛋白的消化率受菌种、细胞壁和加工影响，研究间方法异质。该结果不能代表所有藻类蛋白食品。",
+      "body": "一项随机双盲交叉餐试验纳入10名健康年轻成人，以含20克蛋白质和75克碳水的饮品比较Chlorella、Arthrospira与乳蛋白；血浆氨基酸反应不同，餐后血糖控制相近。该急性试验不能说明长期代谢或肌肉结局。 2024年综述指出微藻蛋白的消化率受菌种、细胞壁和加工影响，研究间方法异质。该结果不能代表所有藻类蛋白食品。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "查看明确藻种、产品检测、生产来源及标签；不同藻种和批次的质量控制不能互相替代。藻类成品不自动等同于分离蛋白。",
+      "safety": "查看明确藻种、产品检测、生产来源及标签；不同藻种和批次的质量控制不能互相替代。藻类成品不自动等同于分离蛋白。",
+      "taste_m": {},
+      "refs": [
+        "“Ingestion of ‘whole cell’ or ‘split cell’ Chlorella sp., Arthrospira sp., and milk protein show divergent postprandial plasma amino acid responses with similar postprandial blood glucose control in humans.” 2024. PMCID: PMC11602285. https://pmc.ncbi.nlm.nih.gov/articles/PMC11602285/",
+        "Microalgae protein digestibility: How to crack open the black box? 2024. PMID: 38975868. https://pubmed.ncbi.nlm.nih.gov/38975868/"
+      ],
+      "body_refs": [
+        "“Ingestion of ‘whole cell’ or ‘split cell’ Chlorella sp., Arthrospira sp., and milk protein show divergent postprandial plasma amino acid responses with similar postprandial blood glucose control in humans.” 2024. PMCID: PMC11602285. https://pmc.ncbi.nlm.nih.gov/articles/PMC11602285/",
+        "Microalgae protein digestibility: How to crack open the black box? 2024. PMID: 38975868. https://pubmed.ncbi.nlm.nih.gov/38975868/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机双盲交叉急性餐试验。",
+          "population": "10名健康年轻成人。",
+          "exposure": "比较Chlorella、Arthrospira和乳蛋白饮品，各含20克蛋白质并配含碳水试餐。",
+          "result": "不同来源呈现不同餐后血浆氨基酸反应，血糖反应相似。",
+          "limits": "样本小、单次试餐、健康年轻人；不测长期疾病或肌肉结局。",
+          "distance": "D1：指定藻种和制剂的急性人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "微藻蛋白消化率综述。",
+          "population": "不同微藻种类、细胞形态和蛋白制剂研究。",
+          "exposure": "评估蛋白质消化率测量及影响因素。",
+          "result": "消化率随菌种、细胞壁、处理和检测方法而变化。",
+          "limits": "研究异质，无法赋予整个藻类食品统一消化率。",
+          "distance": "D2：成分与加工证据。"
+        }
+      ],
+      "unknowns": "大样本长期人体研究、不同藻种产品的代表性成分、消化率比较与特定人群安全性。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "Chlorella Arthrospira milk protein randomized crossover plasma amino acid human trial 2024",
+        "microalgae protein digestibility species cell wall processing review 2024",
+        "whole cell split cell algae protein postprandial blood glucose trial",
+        "algae protein food contaminants regulatory safety species"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "核对小型急性试餐的蛋白剂量、藻种和人群，并保留微藻蛋白消化率的工艺依赖性。"
+      ]
+    },
+    "insect-protein-food": {
+      "name": "昆虫蛋白食品",
+      "volume": "替代与新技术食品部",
+      "entry_type": "processed_food",
+      "family": "昆虫蛋白食品",
+      "research_depth": "R2",
+      "shared_parent": "novel-foods-base",
+      "identity": "以特定食用昆虫全虫、粉末或提取成分为原料的食品。物种、生命阶段、热处理、脱脂程度和用途均需明确。",
+      "variables": "昆虫物种和形态、加工处理、添加量、最终食品、饲料来源、交叉接触、过敏史及所在地授权。",
+      "composition": "昆虫食品可能同时含蛋白质、脂肪、几丁质及来自饲料的成分。营养和过敏性随物种、加工和最终食品变化。",
+      "direct": "未检得足以证明昆虫蛋白食品整体改善人群长期健康结局的代表性人体试验。监管安全结论针对经评估的具体物种、形态、用途和使用水平。",
+      "specific": "EFSA认为特定干燥黄粉虫在拟定用途和水平下安全，同时提示可能对黄粉虫蛋白发生致敏，并可能与甲壳类或尘螨过敏交叉反应。欧盟2025年授权的是经UV处理的黄粉虫粉，授权条件和标签要求具体，不代表所有昆虫或全球市场。",
+      "body": "未检得足以证明昆虫蛋白食品整体改善人群长期健康结局的代表性人体试验。监管安全结论针对经评估的具体物种、形态、用途和使用水平。 EFSA认为特定干燥黄粉虫在拟定用途和水平下安全，同时提示可能对黄粉虫蛋白发生致敏，并可能与甲壳类或尘螨过敏交叉反应。欧盟2025年授权的是经UV处理的黄粉虫粉，授权条件和标签要求具体，不代表所有昆虫或全球市场。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "确认具体物种、处理和销售地授权。对甲壳类、尘螨或相关昆虫过敏者需留意交叉反应及标签；饲料来源成分也可能影响过敏原信息。",
+      "safety": "确认具体物种、处理和销售地授权。对甲壳类、尘螨或相关昆虫过敏者需留意交叉反应及标签；饲料来源成分也可能影响过敏原信息。",
+      "taste_m": {},
+      "refs": [
+        "EFSA NDA Panel. Safety of UV-treated powder of whole yellow mealworm (Tenebrio molitor larva) as a novel food pursuant to Regulation (EU) 2015/2283. EFSA Journal. 2023;21(5):8009. DOI: https://doi.org/10.2903/j.efsa.2023.8009.",
+        "European Commission. Approval of another insect/insect-derived food as a Novel Food (UV-treated Tenebrio molitor powder, authorised 20 January 2025). https://food.ec.europa.eu/food-safety/novel-food/authorisations/approval-insect-novel-food_en",
+        "Commission Implementing Regulation (EU) 2025/89 authorising the placing on the market of UV-treated powder of whole Tenebrio molitor larvae. https://eur-lex.europa.eu/eli/reg_impl/2025/89/oj/eng"
+      ],
+      "body_refs": [
+        "EFSA NDA Panel. Safety of UV-treated powder of whole yellow mealworm (Tenebrio molitor larva) as a novel food pursuant to Regulation (EU) 2015/2283. EFSA Journal. 2023;21(5):8009. DOI: https://doi.org/10.2903/j.efsa.2023.8009.",
+        "European Commission. Approval of another insect/insect-derived food as a Novel Food (UV-treated Tenebrio molitor powder, authorised 20 January 2025). https://food.ec.europa.eu/food-safety/novel-food/authorisations/approval-insect-novel-food_en",
+        "Commission Implementing Regulation (EU) 2025/89 authorising the placing on the market of UV-treated powder of whole Tenebrio molitor larvae. https://eur-lex.europa.eu/eli/reg_impl/2025/89/oj/eng"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "EFSA新食品安全风险评估。",
+          "population": "指定的UV处理Tenebrio molitor全幼虫粉及拟定食用人群。",
+          "exposure": "评估全黄粉虫经热处理、干燥和UV处理后的粉末及拟定用途。",
+          "result": "EFSA认为该新食品在申请提出的使用条件和水平下安全，并提示对甲壳类或尘螨过敏者可能发生过敏反应，也可能有饲料来源过敏原。",
+          "limits": "结论限于该物种、UV处理形态、用途和申请资料。",
+          "distance": "D1：具体物种与形态的风险评估。"
+        },
+        {
+          "ref": 2,
+          "design": "欧盟委员会授权说明。",
+          "population": "欧盟食品经营者及拟定消费者。",
+          "exposure": "经热处理并研磨的全黄粉虫UVB处理粉，依授权条件用于食品。",
+          "result": "于2025-01-20获准作为新食品投放欧盟市场，并有用途及标签条件。",
+          "limits": "特定产品和授权条件；不代表其他昆虫或其他地区。",
+          "distance": "D3：欧盟特定产品监管记录。"
+        },
+        {
+          "ref": 3,
+          "design": "欧盟实施法规。",
+          "population": "欧盟市场中的特定UV处理黄粉虫全幼虫粉。",
+          "exposure": "依法规列明的食品类别、最高使用量和标签要求。",
+          "result": "法规要求对甲壳类和尘螨过敏者作近邻提示；授权限于具体产品和条件。",
+          "limits": "不代表其他昆虫、其他形态或欧盟以外地区。",
+          "distance": "D3：欧盟特定产品法规。"
+        }
+      ],
+      "unknowns": "不同昆虫物种和加工形态的临床过敏发生率、长期食用结局及各地区动态授权情况。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "EFSA Tenebrio molitor allergen crustacean dust mite safe proposed uses 2021",
+        "EU UV treated whole yellow mealworm powder authorisation 20 January 2025 conditions labels",
+        "insect protein food clinical trials long term health outcome review",
+        "Tenebrio molitor novel food feed allergens cross contact"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "逐项核对欧盟具体黄粉虫物种、形态和授权时间，记录甲壳类及尘螨交叉过敏提示。"
+      ]
+    },
+    "latte-with-bread": {
+      "name": "拿铁加面包",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "拿铁加面包",
+      "research_depth": "R2",
+      "shared_parent": "breakfast-scenes-base",
+      "identity": "以含咖啡和牛奶或奶替代品的拿铁，与面包同一进食场景构成的早餐或加餐。咖啡因、糖、奶量、面包种类和份量均可变化。",
+      "variables": "咖啡因或脱咖啡因、奶和糖用量、杯量、面包种类及份量、空腹状态、进食顺序和个体代谢状况。",
+      "composition": "咖啡提供咖啡因（除非脱咖啡因）及少量咖啡固形物；牛奶、糖和面包增加不同量的蛋白质、脂肪、糖和淀粉。",
+      "direct": "未检得直接比较日常“拿铁加面包”组合的长期人体试验。一项21名健康成人的急性交叉试验发现，餐前摄入加奶加糖的脱咖啡因咖啡后接高GI餐，相较水对照的血糖增量曲线下面积低14%；该研究不等于拿铁配面包。",
+      "specific": "另一项20名2型糖尿病成人试验报告，餐前摄入含咖啡因咖啡可加重特定混合餐后的血糖和胰岛素反应。两项研究在人群、咖啡因、饮料和餐食上不同，不能概括所有咖啡或面包组合。",
+      "body": "未检得直接比较日常“拿铁加面包”组合的长期人体试验。一项21名健康成人的急性交叉试验发现，餐前摄入加奶加糖的脱咖啡因咖啡后接高GI餐，相较水对照的血糖增量曲线下面积低14%；该研究不等于拿铁配面包。 另一项20名2型糖尿病成人试验报告，餐前摄入含咖啡因咖啡可加重特定混合餐后的血糖和胰岛素反应。两项研究在人群、咖啡因、饮料和餐食上不同，不能概括所有咖啡或面包组合。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "查看咖啡因、糖和份量；咖啡因敏感、睡眠受影响或有血糖管理需要者可按个人情况调整。单项餐前饮料研究不能用于抵消高糖或高精制淀粉组合的影响。",
+      "safety": "查看咖啡因、糖和份量；咖啡因敏感、睡眠受影响或有血糖管理需要者可按个人情况调整。单项餐前饮料研究不能用于抵消高糖或高精制淀粉组合的影响。",
+      "taste_m": {},
+      "refs": [
+        "Wong THT, et al. Consuming decaffeinated coffee with milk and sugar added before a high-glycaemic index meal improves postprandial glycaemic and insulinaemic responses in healthy adults. Br J Nutr. 2020;124(8):785-796. DOI: https://doi.org/10.1017/S0007114520001750. PMID: 32418547.",
+        "Lane JD, et al. Exaggeration of postprandial hyperglycemia in patients with type 2 diabetes by administration of caffeine in coffee. Endocr Pract. 2007;13(3):239-243. PMID: 17599854. https://pubmed.ncbi.nlm.nih.gov/17599854/"
+      ],
+      "body_refs": [
+        "Wong THT, et al. Consuming decaffeinated coffee with milk and sugar added before a high-glycaemic index meal improves postprandial glycaemic and insulinaemic responses in healthy adults. Br J Nutr. 2020;124(8):785-796. DOI: https://doi.org/10.1017/S0007114520001750. PMID: 32418547.",
+        "Lane JD, et al. Exaggeration of postprandial hyperglycemia in patients with type 2 diabetes by administration of caffeine in coffee. Endocr Pract. 2007;13(3):239-243. PMID: 17599854. https://pubmed.ncbi.nlm.nih.gov/17599854/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉急性喂养试验。",
+          "population": "21名表面健康成人。",
+          "exposure": "在高GI餐前测试不同咖啡饮料，包括加奶加糖的脱咖啡因咖啡。",
+          "result": "仅加奶加糖脱咖啡因咖啡组相较水对照的葡萄糖iAUC降低14%。",
+          "limits": "并非日常拿铁加面包；单次研究，特定饮料和高GI餐。",
+          "distance": "D2：咖啡饮料餐前时序的近邻证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉餐前咖啡因试验。",
+          "population": "20名2型糖尿病成人。",
+          "exposure": "摄入含咖啡因咖啡后食用混合餐。",
+          "result": "咖啡因条件下餐后血糖和胰岛素反应增加。",
+          "limits": "样本小，特定咖啡因剂量与餐食；不能直接预测拿铁配面包。",
+          "distance": "D2：咖啡因与混合餐的近邻证据。"
+        }
+      ],
+      "unknowns": "日常拿铁配具体面包的餐后反应研究，以及该组合对长期代谢、饱腹和睡眠的直接研究。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "latte bread breakfast glycemic response clinical trial",
+        "decaffeinated coffee milk sugar high glycemic meal crossover 21 healthy adults PMID 32418547",
+        "caffeine coffee type 2 diabetes postprandial mixed meal trial PMID 17599854",
+        "coffee caffeine bread breakfast glycemia milk sugar randomized trial"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "确认咖啡试验的饮料、进餐时序、人群与比较餐，避免把单独咖啡结果写成拿铁面包组合效果。"
+      ]
+    },
+    "sweetened-cereal-with-milk": {
+      "name": "甜味早餐谷物配奶",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "甜味早餐谷物配奶",
+      "research_depth": "R2",
+      "shared_parent": "breakfast-scenes-base",
+      "identity": "以加糖或甜味早餐谷物与牛奶或替代饮品共同食用的组合。谷物种类、糖、纤维、奶品和份量差异大。",
+      "variables": "谷物配方与加工、添加糖和纤维、奶的种类和份量、是否加水果坚果、总碳水、份量及食用者代谢状态。",
+      "composition": "组合含谷物淀粉和可能的添加糖；牛奶增加蛋白质、乳糖及脂肪（依品种而异）。甜味谷物的糖、纤维和钠含量依产品变化。",
+      "direct": "一项1992年随机交叉研究纳入14名接受胰岛素治疗的2型糖尿病成人，两周期间比较牛奶搭配muesli或cornflakes；这是小型、旧且配方特异的试验。另一项16名健康男性试验比较等量可利用碳水的谷物加奶及加水果坚果早餐与葡萄糖饮料，餐后曲线不同。",
+      "specific": "这些研究不覆盖所有甜味早餐谷物。美国FDA建议查看Nutrition Facts中的添加糖；食品标签可用于比较产品，不能替代该组合的临床结局研究。",
+      "body": "一项1992年随机交叉研究纳入14名接受胰岛素治疗的2型糖尿病成人，两周期间比较牛奶搭配muesli或cornflakes；这是小型、旧且配方特异的试验。另一项16名健康男性试验比较等量可利用碳水的谷物加奶及加水果坚果早餐与葡萄糖饮料，餐后曲线不同。 这些研究不覆盖所有甜味早餐谷物。美国FDA建议查看Nutrition Facts中的添加糖；食品标签可用于比较产品，不能替代该组合的临床结局研究。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "查看每份添加糖、纤维、钠和实际份量，并将奶品计入总营养。牛奶或谷物中的过敏原需按产品配料核对。",
+      "safety": "查看每份添加糖、纤维、钠和实际份量，并将奶品计入总营养。牛奶或谷物中的过敏原需按产品配料核对。",
+      "taste_m": {},
+      "refs": [
+        "Golay A, Koellreutter B, Bloise D, Assal JP, Würsch P. The effect of muesli or cornflakes at breakfast on carbohydrate metabolism in type 2 diabetic patients. Diabetes Res Clin Pract. 1992;15(2):135-141. DOI: https://doi.org/10.1016/0168-8227(92)90017-L. PMID: 1563329.",
+        "Bandyopadhyay S, et al. Effect of a cereal and milk meal with or without fruits and nuts on the postprandial glycemic response in Indian men. Asia Pac J Clin Nutr. 2018;27(6):1243-1251. DOI: https://doi.org/10.6133/apjcn.201811_27(6).0011. PMID: 30485923.",
+        "FDA. Added Sugars on the Nutrition Facts Label. https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
+      ],
+      "body_refs": [
+        "Golay A, Koellreutter B, Bloise D, Assal JP, Würsch P. The effect of muesli or cornflakes at breakfast on carbohydrate metabolism in type 2 diabetic patients. Diabetes Res Clin Pract. 1992;15(2):135-141. DOI: https://doi.org/10.1016/0168-8227(92)90017-L. PMID: 1563329.",
+        "Bandyopadhyay S, et al. Effect of a cereal and milk meal with or without fruits and nuts on the postprandial glycemic response in Indian men. Asia Pac J Clin Nutr. 2018;27(6):1243-1251. DOI: https://doi.org/10.6133/apjcn.201811_27(6).0011. PMID: 30485923.",
+        "FDA. Added Sugars on the Nutrition Facts Label. https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "两周期随机交叉临床试验。",
+          "population": "14名超重且使用胰岛素的2型糖尿病患者。",
+          "exposure": "连续两周早餐选择牛奶配muesli或cornflakes。",
+          "result": "研究报告两种早餐对部分日常碳水代谢指标有差异；同一论文也报告两种谷物餐的试餐反应。",
+          "limits": "样本小、1992年产品和饮食背景，不能外推到当代所有甜味谷物。",
+          "distance": "D1：特定谷物加奶早餐人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉餐试验。",
+          "population": "16名18至45岁健康印度男性。",
+          "exposure": "等量可利用碳水的葡萄糖饮料、谷物加奶、谷物奶加水果坚果。",
+          "result": "谷物餐后的葡萄糖及胰岛素时间曲线与参考饮料不同。",
+          "limits": "不比较不同甜味谷物品牌，也不提供长期结局。",
+          "distance": "D1：特定谷物加奶组合的急性人体证据。"
+        },
+        {
+          "ref": 3,
+          "design": "美国FDA营养标签说明。",
+          "population": "美国预包装食品消费者。",
+          "exposure": "说明添加糖在营养标签中的标示。",
+          "result": "消费者可在标签上核对添加糖克数及占每日参考值百分比。",
+          "limits": "标签资料不提供健康效果，且法规适用地域有限。",
+          "distance": "D3：营养信息背景。"
+        }
+      ],
+      "unknowns": "当代高糖早餐谷物与具体奶品、份量搭配的代表性长期研究，以及不同人群的饱腹和代谢结局。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "sweetened breakfast cereal milk randomized crossover glycemic trial adults",
+        "muesli cornflakes milk type 2 diabetes 14 crossover PMID 1563329",
+        "cereal milk breakfast fruits nuts postprandial glucose randomized 16 Indian men PMID 30485923",
+        "FDA added sugars Nutrition Facts label cereal"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "保留旧糖尿病患者试验、健康男性急性试验与营养标签资料之间的证据差别。"
+      ]
+    },
+    "yogurt-fruit-bowl": {
+      "name": "酸奶水果碗",
+      "volume": "食方与生活场景部",
+      "entry_type": "meal_scene",
+      "family": "酸奶水果碗",
+      "research_depth": "R2",
+      "shared_parent": "breakfast-scenes-base",
+      "identity": "以酸奶为基底并加入一种或多种水果的冷食组合；可额外加入谷物、坚果、蜂蜜或糖浆。酸奶类型与配料决定实际营养构成。",
+      "variables": "酸奶种类和糖含量、活菌与否、水果种类和重量、谷物坚果添加、蜂蜜或糖浆、总份量和食用者耐受。",
+      "composition": "酸奶提供蛋白质、乳糖和脂肪（依品类而异）；水果提供糖、纤维及水分。额外谷物、蜂蜜和坚果会改变能量、碳水与脂肪总量。",
+      "direct": "未检得直接针对常见酸奶水果碗的长期临床试验。19名健康成人的随机交叉试验比较含Riceberry米花青素提取物与对照的特定酸奶，观察到急性餐后血糖反应差异；该产品不是常规水果碗。",
+      "specific": "12名健康成人的另一项试验将浆果与蔗糖同食，报告餐后葡萄糖、胰岛素和GLP-1的短时反应变化；没有酸奶。两项小型试验都不能确定普通水果酸奶碗的长期效果。",
+      "body": "未检得直接针对常见酸奶水果碗的长期临床试验。19名健康成人的随机交叉试验比较含Riceberry米花青素提取物与对照的特定酸奶，观察到急性餐后血糖反应差异；该产品不是常规水果碗。 12名健康成人的另一项试验将浆果与蔗糖同食，报告餐后葡萄糖、胰岛素和GLP-1的短时反应变化；没有酸奶。两项小型试验都不能确定普通水果酸奶碗的长期效果。",
+      "evidence_body": "证据限于所列研究对象、食品形态、人群、剂量与结局；本条是类别或场景条目，不代表固定品牌配方或已证实的长期功效。",
+      "care": "查看酸奶添加糖、乳过敏或乳糖不耐受情况，以及水果、谷物和坚果造成的过敏原与份量差异。",
+      "safety": "查看酸奶添加糖、乳过敏或乳糖不耐受情况，以及水果、谷物和坚果造成的过敏原与份量差异。",
+      "taste_m": {},
+      "refs": [
+        "Anuyahong T, Chusak C, Thilavech T, Adisakwattana S. Postprandial Effect of Yogurt Enriched with Anthocyanins from Riceberry Rice on Glycemic Response and Antioxidant Capacity in Healthy Adults. Nutrients. 2020;12(10):2930. DOI: https://doi.org/10.3390/nu12102930. PMID: 32987943.",
+        "Törrönen R, et al. Postprandial glucose, insulin and glucagon-like peptide 1 responses to sucrose ingested with berries in healthy subjects. Br J Nutr. 2012. PMID: 21929838. https://pubmed.ncbi.nlm.nih.gov/21929838/",
+        "USDA FoodData Central. FoodData Central search: yogurt and fruit entries. https://fdc.nal.usda.gov/"
+      ],
+      "body_refs": [
+        "Anuyahong T, Chusak C, Thilavech T, Adisakwattana S. Postprandial Effect of Yogurt Enriched with Anthocyanins from Riceberry Rice on Glycemic Response and Antioxidant Capacity in Healthy Adults. Nutrients. 2020;12(10):2930. DOI: https://doi.org/10.3390/nu12102930. PMID: 32987943.",
+        "Törrönen R, et al. Postprandial glucose, insulin and glucagon-like peptide 1 responses to sucrose ingested with berries in healthy subjects. Br J Nutr. 2012. PMID: 21929838. https://pubmed.ncbi.nlm.nih.gov/21929838/",
+        "USDA FoodData Central. FoodData Central search: yogurt and fruit entries. https://fdc.nal.usda.gov/"
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "随机交叉急性餐试验。",
+          "population": "19名健康成人。",
+          "exposure": "摄入350克对照酸奶或添加0.25% Riceberry米提取物的特定酸奶。",
+          "result": "研究报告该特定添加物酸奶的餐后血糖iAUC较低，主观饱腹评分未见显著差异。",
+          "limits": "小样本；特殊提取物酸奶；不是含鲜果的常规组合；无长期结局。",
+          "distance": "D2：特定酸奶配方的急性人体证据。"
+        },
+        {
+          "ref": 2,
+          "design": "随机交叉急性餐试验。",
+          "population": "12名健康受试者。",
+          "exposure": "将浆果与蔗糖共同食用，并与蔗糖对照比较。",
+          "result": "餐后葡萄糖、胰岛素及GLP-1的早期反应随浆果同食而变化。",
+          "limits": "不含酸奶，样本小且单次试餐。",
+          "distance": "D2：水果与糖同食的近邻证据。"
+        },
+        {
+          "ref": 3,
+          "design": "美国农业部食品成分数据库。",
+          "population": "数据库中的一般食品条目。",
+          "exposure": "查询不同酸奶和水果的营养成分记录。",
+          "result": "酸奶与水果的营养数值按食品类型和具体条目区分。",
+          "limits": "数据库条目不能代替特定品牌标签或临床研究。",
+          "distance": "D3：组成参考资料。"
+        }
+      ],
+      "unknowns": "常见酸奶水果碗的直接人体研究、配料比例与长期代谢及饱腹结局。",
+      "tradition": "本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。",
+      "queries": [
+        "yogurt fruit bowl glycemic response clinical trial acute study",
+        "Riceberry yogurt anthocyanin randomized crossover 19 adults PMID 32987943",
+        "berries sucrose postprandial glucose insulin GLP-1 healthy subjects PMID 21929838",
+        "yogurt fruit breakfast composition added sugar protein label"
+      ],
+      "search_log": [
+        "检索条目对应的食品形态、加工方式或组合边界，避免把相邻类别当成本条直接证据。",
+        "查找人体研究与产品/官方资料；逐项核对题名、样本、人群、暴露、结局和适用地域。",
+        "把急性餐后试验、营养组成、风险评估和法规资料分开记录；没有长期直接研究时明确写出空缺。",
+        "分别记录特定花青素酸奶、浆果蔗糖同食和一般水果碗，不把单一研究写成组合结论。"
+      ]
+    }
+  }
+}

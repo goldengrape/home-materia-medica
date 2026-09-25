@@ -1,0 +1,10 @@
+{
+  "batch_id": "35-new-foods-and-breakfast",
+  "entry_id": "precision-fermented-dairy-protein",
+  "summary_ref": "references/entries/precision-fermented-dairy-protein/summary.md",
+  "summary_sha256": "eec5eefba46486d01735eddf283c626b2f0ae9cbf4dcf40e89c0177d9f3b24ce",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 精密发酵乳蛋白食品\r\n\r\n**身份。** 使用微生物发酵表达特定乳蛋白、随后分离纯化并加入食品的产品。不同蛋白、宿主、生产流程和最终配方不能视为同一产品。\r\n\r\n**组成与暴露。** 精密发酵产生的目标乳蛋白在分子层面可与相应乳源蛋白相同；最终产品是否含乳糖、其他乳成分或特定过敏原需查看产品资料。 **关键变量：** 目标蛋白、微生物宿主、纯化和残留控制、每份蛋白剂量、配方、标签与销售地区。\r\n\r\n**直接人体证据。** 未检得足以证明精密发酵乳蛋白食品整体的长期人体临床获益试验。FDA GRN 1247记录的是特定菌株生产的β-乳球蛋白及通知中所列预期用途，不代表所有发酵乳蛋白或产品均已评估。\r\n\r\n**产品/成分证据。** FDA于2025-09-19对GRN 1247回复“无进一步问题”，所述原料是β-乳球蛋白。β-乳球蛋白属于牛乳蛋白；发酵生产来源不会自动消除该目标蛋白对乳过敏者的过敏风险。\r\n\r\n**共享背景。** 参见 novel-foods-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 对牛乳蛋白过敏者，应按目标蛋白和成品标签判断，不能因“非动物发酵”而认为无乳过敏风险。GRAS通知的用途、菌株和生产规格有限，不能外推至不同成分或工艺。\r\n\r\n**传统来源。** 本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

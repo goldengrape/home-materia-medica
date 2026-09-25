@@ -178,7 +178,7 @@ def main():
         f"> 日期：{CUTOFF}",
         f"> 研究深度：逐条按 R1/R2 配置定向检索，不是系统综述。",
         f"> 证据截止：{batch['research_cutoff']}。",
-        f"> 检索记录：Exa {batch['exa_search_calls']} 次检索、{batch['exa_hits']} 条结果；另对可用原始研究、期刊页面及官方来源作题名、DOI、样本、剂量和结局核验。",
+        f"> 检索记录：网页搜索 {batch.get('web_search_calls', 0)} 次、{batch.get('web_search_queries', 0)} 条查询；Exa {batch.get('exa_search_calls', 0)} 次、{batch.get('exa_hits', 0)} 条结果；另核验原始研究、期刊页面及官方来源中的题名、DOI、样本、剂量和结局。",
         "",
         "## 本批目录顺序",
         "",

@@ -1,0 +1,10 @@
+{
+  "batch_id": "35-new-foods-and-breakfast",
+  "entry_id": "algae-protein-food",
+  "summary_ref": "references/entries/algae-protein-food/summary.md",
+  "summary_sha256": "a09c14a4e8f18159391555cc5e838b31f345f91a16827304c21891dbd4f2a2af",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 藻类蛋白食品\r\n\r\n**身份。** 以微藻或大型藻类及其蛋白组分作为主要或部分蛋白来源的食品。物种、全细胞或分离蛋白、培养与加工方式差异很大。\r\n\r\n**组成与暴露。** 产品可能含全藻细胞、破壁藻粉或分离蛋白；蛋白含量、氨基酸可利用度、色泽、味道及其他营养成分依物种和处理而异。 **关键变量：** 藻种、细胞壁处理、蛋白浓度与消化率、污染物检测、配方、每份剂量和食用频率。\r\n\r\n**直接人体证据。** 一项随机双盲交叉餐试验纳入10名健康年轻成人，以含20克蛋白质和75克碳水的饮品比较Chlorella、Arthrospira与乳蛋白；血浆氨基酸反应不同，餐后血糖控制相近。该急性试验不能说明长期代谢或肌肉结局。\r\n\r\n**产品/成分证据。** 2024年综述指出微藻蛋白的消化率受菌种、细胞壁和加工影响，研究间方法异质。该结果不能代表所有藻类蛋白食品。\r\n\r\n**共享背景。** 参见 novel-foods-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 查看明确藻种、产品检测、生产来源及标签；不同藻种和批次的质量控制不能互相替代。藻类成品不自动等同于分离蛋白。\r\n\r\n**传统来源。** 本条是现代加工食品或复合饮食场景。本轮未发现足以将该具体成品或组合与古籍条目直接对应的材料；传统原料记载不转写为现代成品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
