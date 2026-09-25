@@ -1,0 +1,10 @@
+4700a89ffcbc01f6c80759ee52694c758c39849fb6234bbcb80b465f6d6563ac  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/ready-to-eat-brown-rice.json
+b2354db87ca3d904271f25071dbee26076b368caf78f6ac8fb14c6d32b3b2069  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/shelf-stable-meal-pouch.json
+d0d54f9cd3e66cd16d3bf00d7c3eacd3e0aa032d0c258f13da1f8bb446da1cab  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/3d-printed-food.json
+529a443121301cd6778970f0aab2eb39bb1ce92e5b698fc31c4d883d9d7831dc  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/cultivated-meat.json
+90c6fd221b3a082e6febf15cf79d3e545d95133c322c1d7eedcaa97a3181b261  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/precision-fermented-dairy-protein.json
+4d941999381a1e09c63a4429b00608ef7699257dcf4f63c7a2d906d8ed651197  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/algae-protein-food.json
+00bfa24417e8e6cf43b97dc6094fc993599ce9a192f4d0245d892a40d7114c18  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/insect-protein-food.json
+10b29db6db087c7a78251c84ed9525a84dda7350937967fd779f5aa9d67816b0  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/latte-with-bread.json
+190d7ec07b0b3fe5f3cf601cc02dbaaeaf7865a08941558c87eea75e150af1dc  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/sweetened-cereal-with-milk.json
+bfdbe09739bccbc6e882f304e932ced77861464529de858a8692b15c9a040c3b  qa/jev-entry-batches/35-new-foods-and-breakfast/raw/yogurt-fruit-bowl.json
