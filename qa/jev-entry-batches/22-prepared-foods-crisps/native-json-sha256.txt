@@ -1,0 +1,10 @@
+1756cc6161ee5b0a56e00e572f7fb193a375a7987fe4e762169dddf268e09922  qa/jev-entry-batches/22-prepared-foods-crisps/raw/self-heating-hotpot.json
+aa40914c9f66587b3aae2820bd450b61d519cbdc47a97055e34ebf6ace073ab1  qa/jev-entry-batches/22-prepared-foods-crisps/raw/frozen-dumplings.json
+62f429ea660f578d5c2fcbbc5c7c6713cf63303d99f34eb99b31a1e4eb0979c7  qa/jev-entry-batches/22-prepared-foods-crisps/raw/frozen-wontons.json
+4631c91c50f611839fd939b97450e9406c953947fff06d586e69d2c282a3bd4e  qa/jev-entry-batches/22-prepared-foods-crisps/raw/frozen-pizza.json
+7441e0f2caa28c033b77d94547e72e5ae8fc0cb831af4a62ad061e9f88059d6e  qa/jev-entry-batches/22-prepared-foods-crisps/raw/microwave-lunchbox.json
+5705ff332c34091537a5f1a7ab0a4480ab4b361c6e303eac051522242566e3aa  qa/jev-entry-batches/22-prepared-foods-crisps/raw/prepared-rice-bowl.json
+4b5408093edd93b1610b6a0f06302e2d12583601d63400531569a8e77b3d6364  qa/jev-entry-batches/22-prepared-foods-crisps/raw/potato-chips.json
+628106e1d9601a2d4b3ae83bdf0b8139e4318df9f7f19322d232ff9b2ac28990  qa/jev-entry-batches/22-prepared-foods-crisps/raw/french-fries.json
+f6e4d0d0e1d0806171477bab5272ec12942ae62fa76496158337c1d8371c148d  qa/jev-entry-batches/22-prepared-foods-crisps/raw/corn-chips.json
+d77fa2d400cb0f06ac5ae9787a4185d75996c3ce65fef9b5de03b2dde0598ec1  qa/jev-entry-batches/22-prepared-foods-crisps/raw/popcorn.json
