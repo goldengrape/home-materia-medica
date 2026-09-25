@@ -1,0 +1,10 @@
+70978a1e2cbdcd199944c04227cc8e2d6c9f5d74485a104974f000e2fa1de2a0  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/white-toast.json
+30f9b94241efd81cec3564528f74a2be43785ec22b07a0f1d49b713f5c11fb8b  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/whole-wheat-toast.json
+cee7df67d3a155ee52811cea360912e43384d24b59b0c48f0b27e45e627727a7  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/bagel.json
+ec7374bccc376bc060f6a9eab69af3ef3b58ded39ae91ea18337b5a3397af19f  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/baguette.json
+fd7a1ca8cb1a4f8150cd9da70a3d03fd18d00c963bb7fa58592f3d9c3a928b33  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/pita-bread.json
+0e069fcc4657ca5ee6224b0ca308bb3c297a9491ceaa2c00408725fcc1b41769  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/corn-flakes.json
+727a3e3ef414ddcf600a0750eaaa2abad45973cdc38de394c8d34f2f8bf78a88  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/breakfast-cereal.json
+2fca023c53726e7ec949ac73857dcd50a5b88313f7248ec8fdc35d903b3f2bb9  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/sweet-breakfast-cereal.json
+d7dcb7bcb75754eab108a844a8cda2dd85199c3b32b9f3e90b19a3f840116209  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/instant-oatmeal.json
+6b754b62f2bf1c728f4bc3e75ad57afd0f4460de65494f4752ee6008f271612e  qa/jev-entry-batches/19-breads-and-breakfast-grains/raw/overnight-oats.json
