@@ -1,0 +1,10 @@
+{
+  "batch_id": "25-fish-tofu-meals",
+  "entry_id": "fried-chicken",
+  "summary_ref": "references/entries/fried-chicken/summary.md",
+  "summary_sha256": "3ca3b86ec9120d0c06e1c4b5d3943f7ca393a9e08031d2e0b10e4c4d122f4417",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 炸鸡\r\n\r\n**身份。** 以鸡肉裹粉或调味后油炸制成的熟食，含带骨鸡块及无骨炸鸡；炸鸡汉堡和鸡块另立条目。\r\n\r\n**组成与暴露。** 鸡肉、裹粉、吸收油脂和调味料共同决定营养；门店配方、部位和带骨比例不同。 **关键变量：** 鸡肉部位、裹粉和腌料、油炸温度与用油、吸油量、盐和份量。\r\n\r\n**直接人体证据。** 未检得炸鸡成品特异的随机人体长期结局试验。\r\n\r\n**产品/成分证据。** 一项六国快餐菜单调查报告所纳入鸡肉产品盐含量有差异：总体均值约1.6 g/100 g，英国样品均值1.1 g/100 g、美国1.8 g/100 g。研究涵盖鸡肉菜单品类，不等于中国市场所有炸鸡的实测值。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 鸡肉需充分加热并防止生熟交叉污染；对小麦、蛋、奶、大豆过敏者查看裹粉和腌料信息。\r\n\r\n**传统来源。** 现代油炸禽肉食品。本条不把鸡肉或烹调方式的传统说法当作炸鸡成品的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

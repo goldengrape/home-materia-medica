@@ -1,0 +1,10 @@
+{
+  "batch_id": "25-fish-tofu-meals",
+  "entry_id": "wrap",
+  "summary_ref": "references/entries/wrap/summary.md",
+  "summary_sha256": "473fc8e71783eaa43dd4ef503f17fb9d3f76d633aad2bf5b5786240c61a23fb9",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 卷饼\r\n\r\n**身份。** 以薄饼或面饼包裹肉、蛋、蔬菜和酱料的手持夹食；墨西哥卷按目录另列。\r\n\r\n**组成与暴露。** 面饼和馅料组合多变；同名卷饼可包含不同肉类、蔬菜、奶酪和酱汁。 **关键变量：** 面饼种类和大小、馅料、酱料、钠、份量及加工和保存方式。\r\n\r\n**直接人体证据。** 未检得可适用于所有卷饼配方的人体临床试验。\r\n\r\n**产品/成分证据。** 六国快餐菜单调查将非早餐卷和wrap归入sandwiches类别；所研究的六国菜单盐含量有明显国家、公司与品类差异。美国NHANES研究没有把所有卷饼单列为统一类别，因此相关三明治或墨西哥餐分类不能直接代表本条。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 小麦饼皮及乳、蛋、大豆等馅料可能含常见过敏原；肉蛋馅料需充分加热或持续冷藏。\r\n\r\n**传统来源。** 现代复合夹食。本条不因饼皮或馅料的传统用途推定整份卷饼具有特定食疗效果。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

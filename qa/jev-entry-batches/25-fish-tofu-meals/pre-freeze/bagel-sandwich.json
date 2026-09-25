@@ -1,0 +1,10 @@
+{
+  "batch_id": "25-fish-tofu-meals",
+  "entry_id": "bagel-sandwich",
+  "summary_ref": "references/entries/bagel-sandwich/summary.md",
+  "summary_sha256": "5e9c1d6ac5809a4fd52a29a703c046f634894298cbb9e5fe95b435dfbfb94452",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 贝果三明治\r\n\r\n**身份。** 以贝果切开夹入蛋、肉、奶酪或蔬菜构成的三明治；空贝果和普通面包三明治另列。\r\n\r\n**组成与暴露。** 贝果面包和夹馅共同构成；面包本身、加工肉、奶酪及酱汁均会影响整份营养组成。 **关键变量：** 贝果大小和钠、夹馅、奶酪、腌肉、酱料及整份重量。\r\n\r\n**直接人体证据。** 未检得贝果三明治成品特异的人体结局研究。\r\n\r\n**产品/成分证据。** 美国连锁餐厅菜单调查报告三明治类别钠中位数1330 mg/项；未单独报告贝果三明治。NHANES将多种三明治按食物编码分析，也不能从总体类别推断贝果三明治含量。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 贝果含小麦；夹馅可能含蛋、乳、大豆、芝麻等过敏原。冷藏含蛋奶或肉类馅料，并注意交叉污染。\r\n\r\n**传统来源。** 现代复合面食。本条按贝果及具体夹馅描述，不将原料记载转写为该成品的功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

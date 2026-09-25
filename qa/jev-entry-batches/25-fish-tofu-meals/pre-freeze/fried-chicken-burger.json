@@ -1,0 +1,10 @@
+{
+  "batch_id": "25-fish-tofu-meals",
+  "entry_id": "fried-chicken-burger",
+  "summary_ref": "references/entries/fried-chicken-burger/summary.md",
+  "summary_sha256": "015f8fdbb0d78046d518a0d59b1e42c0f37ee3ca395e471d58f44ada56a871d0",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 炸鸡汉堡\r\n\r\n**身份。** 以裹粉或炸制鸡肉夹入面包胚并配酱料、蔬菜等制成的汉堡；烤鸡汉堡和单独炸鸡另列。\r\n\r\n**组成与暴露。** 鸡肉、裹粉、吸油量、面包和酱料共同决定营养组成；不同门店配方差异较大。 **关键变量：** 鸡肉部位和重量、裹粉、油炸用油、面包、酱料、钠、配餐和实际份量。\r\n\r\n**直接人体证据。** 未检得炸鸡汉堡成品特异的人体长期结局研究。\r\n\r\n**产品/成分证据。** 美国连锁餐厅菜单调查将三明治和汉堡作为菜单类别，类别钠中位数均超过1150 mg/项；它没有单独报告炸鸡汉堡。六国菜单研究将鸡肉食品和夹食类列为可比较品类，且明确把非早餐卷饼计入sandwich，但没有提供中国商品数据。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 留意小麦、鸡蛋、奶、大豆等过敏原；炸油管理和鸡肉充分加热按门店及产品规范执行。\r\n\r\n**传统来源。** 现代复合快餐。本条不把鸡肉或油炸方式的传统说法当作具体汉堡的药性或疗效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

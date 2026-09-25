@@ -1,0 +1,558 @@
+{
+  "batch": {
+    "id": "25-fish-tofu-meals",
+    "title": "鱼豆腐与汉堡夹食",
+    "catalog_order": 25,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; journal pages and U.S. national dietary survey",
+    "web_search_calls": 9,
+    "web_search_queries": 22,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-25-fish-tofu-meals",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "鱼豆腐是鱼糜、淀粉等构成的成品，不等于豆腐或纯鱼肉。",
+      "牛肉汉堡队列结果仅涉及特定人群和烹调类别，不能推作因果。",
+      "炸鸡汉堡菜单数据来自汉堡或三明治宽泛类别，没有单独报告炸鸡汉堡。",
+      "植物肉试验覆盖多种替代肉和饮食阶段，不是植物肉汉堡单品试验。",
+      "热狗、三明治、卷饼及墨西哥卷的美国钠来源分类不能代表中国品牌或份量。",
+      "贝果三明治未在菜单或膳食调查中单独拆分。",
+      "炸鸡六国菜单类别包含不同鸡肉产品，不能视作炸鸡专项抽检。"
+    ],
+    "citation_audit_revision": "rev-1: preserve product identity, geography, sample size, exposure, design and food-category boundaries."
+  },
+  "entries": {
+    "fish-tofu": {
+      "id": "fish-tofu",
+      "name": "鱼豆腐",
+      "volume": "速食与零食部",
+      "family": "fish_cake",
+      "identity": "以鱼糜为主要原料并加入淀粉、油脂及调味配料成型熟制的鱼糕类食品；豆腐和其他鱼糜制品另列。",
+      "variables": "鱼肉比例、淀粉和油脂、钠、成型方式、冷冻与复热、每份重量。",
+      "composition": "鱼糜蛋白质与淀粉、油脂和调味料共同构成；商品配方和营养含量因品牌而异。",
+      "direct": "未检得鱼豆腐成品人体临床结局试验。",
+      "specific": "一项中国研究分析3个品牌市售即食鱼豆腐，蛋白质为22.02%–25.63%，水分为65.94%–69.34%；研究测的是商品成分和凝胶性能，不是健康结局。",
+      "care": "查看鱼类过敏原、钠和配料表；冷冻品按包装说明充分加热，避免将鱼豆腐按纯鱼肉计算。",
+      "safety": "鱼类过敏者应避开含鱼糜产品；冷冻、解冻和加热按标签执行。",
+      "queries": [
+        "ready-to-eat fish tofu human clinical study",
+        "3 种即食鱼豆腐 营养成分 三品牌 2017"
+      ],
+      "tradition": "现代鱼糜复合食品。本条不把鱼类原料的传统记载等同于鱼豆腐成品的药性或疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得鱼豆腐成品人体临床结局试验。 一项中国研究分析3个品牌市售即食鱼豆腐，蛋白质为22.02%–25.63%，水分为65.94%–69.34%；研究测的是商品成分和凝胶性能，不是健康结局。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Xu Z, Dai Z, Chen K, Ma X, Xue J. Nutritional Components and Gelling Properties of Three Brands of Commercial Ready-to-Eat Fish Tofu. Food Science. 2017;38(18):93–98. DOI: https://doi.org/10.7506/spkx1002-6630-201718015."
+      ],
+      "body_refs": [
+        "Xu Z, Dai Z, Chen K, Ma X, Xue J. Nutritional Components and Gelling Properties of Three Brands of Commercial Ready-to-Eat Fish Tofu. Food Science. 2017;38(18):93–98. DOI: https://doi.org/10.7506/spkx1002-6630-201718015."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "商品成分与凝胶性质实验室分析。",
+          "population": "中国市场3个品牌的即食鱼豆腐A、B、C。",
+          "exposure": "检测营养成分、氨基酸、脂肪酸和凝胶性能。",
+          "result": "三款样品水分65.94%–69.34%，粗蛋白质22.02%–25.63%。",
+          "limits": "仅3个品牌样品，不能代表所有配方或批次；未测人体结局。",
+          "distance": "D0：即食鱼豆腐商品分析。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "beef-burger": {
+      "id": "beef-burger",
+      "name": "牛肉汉堡",
+      "volume": "复合餐食部",
+      "family": "beef_burger",
+      "identity": "以面包胚夹牛肉饼及可选酱料、芝士或蔬菜制成的汉堡；牛肉饼和其他汉堡另列。",
+      "variables": "牛肉比例与脂肪、饼重、煎烤方式、面包、芝士、酱料、钠和套餐配餐。",
+      "composition": "由面包、牛肉饼和可选配料组成；肉饼大小、脂肪、酱料、芝士及薯条饮料会显著改变整餐组成。",
+      "direct": "一项美国女性前瞻队列报告，烤或炙烤汉堡摄入较高与结直肠癌风险升高相关；观察性研究不能证明因果，也不是具体商品试验。",
+      "specific": "Sister Study纳入48,704名35–74岁女性，中位随访8.7年、216例结直肠癌；烤或炙烤汉堡最高摄入组相对最低组HR为1.98（95% CI 1.00–3.91）。另有美国91家连锁餐厅菜单调查显示，汉堡类别每份钠的中位数超过1150 mg。",
+      "care": "比较肉饼份量、钠、饱和脂肪和套餐配餐；观察队列关联不能用于预测个人风险。",
+      "safety": "确认牛奶、小麦、大豆、芝麻等过敏原信息；注意生熟肉交叉污染，肉饼充分加热。",
+      "queries": [
+        "beef hamburger colorectal cancer Sister Study grilled burger HR 1.98",
+        "US restaurant burger menu sodium median 1150 mg 91 chains"
+      ],
+      "tradition": "现代复合餐食。本条不把牛肉的传统记载直接转成汉堡成品的药性或疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "一项美国女性前瞻队列报告，烤或炙烤汉堡摄入较高与结直肠癌风险升高相关；观察性研究不能证明因果，也不是具体商品试验。 Sister Study纳入48,704名35–74岁女性，中位随访8.7年、216例结直肠癌；烤或炙烤汉堡最高摄入组相对最低组HR为1.98（95% CI 1.00–3.91）。另有美国91家连锁餐厅菜单调查显示，汉堡类别每份钠的中位数超过1150 mg。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459.",
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797."
+      ],
+      "body_refs": [
+        "Mehta S, Arroyave WD, Lunn RM, Park YM, Boyd WA, Sandler DP. A Prospective Analysis of Red and Processed Meat Consumption and Risk of Colorectal Cancer in Women. Cancer Epidemiol Biomarkers Prev. 2020;29(1):141–150. DOI: https://doi.org/10.1158/1055-9965.EPI-19-0459.",
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "前瞻性观察队列，基线自填饮食问卷并随访结直肠癌。",
+          "population": "48,704名美国及波多黎各35–74岁女性；中位随访8.7年，216例结直肠癌。",
+          "exposure": "烤或炙烤牛肉及汉堡摄入。",
+          "result": "烤或炙烤汉堡最高摄入组相对最低组HR 1.98（95% CI 1.00–3.91）。",
+          "limits": "观察性、自报饮食，女性队列；关联不证明因果，不能外推到所有牛肉汉堡或烹调法。",
+          "distance": "D1：烹调方式特定的汉堡摄入队列资料。"
+        },
+        {
+          "ref": 2,
+          "design": "2019年连锁餐厅菜单钠数据横断面分析。",
+          "population": "美国91家连锁餐厅的19,038项有钠数据菜单项目。",
+          "exposure": "按菜单食品类别分析单项钠含量。",
+          "result": "汉堡和三明治类别每项钠中位数均超过1150 mg。",
+          "limits": "美国连锁餐厅菜单数据，不是实验室测量；汉堡子型和配料不单独报告。",
+          "distance": "D1：连锁菜单汉堡类别资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "fried-chicken-burger": {
+      "id": "fried-chicken-burger",
+      "name": "炸鸡汉堡",
+      "volume": "复合餐食部",
+      "family": "fried_chicken_sandwich",
+      "identity": "以裹粉或炸制鸡肉夹入面包胚并配酱料、蔬菜等制成的汉堡；烤鸡汉堡和单独炸鸡另列。",
+      "variables": "鸡肉部位和重量、裹粉、油炸用油、面包、酱料、钠、配餐和实际份量。",
+      "composition": "鸡肉、裹粉、吸油量、面包和酱料共同决定营养组成；不同门店配方差异较大。",
+      "direct": "未检得炸鸡汉堡成品特异的人体长期结局研究。",
+      "specific": "美国连锁餐厅菜单调查将三明治和汉堡作为菜单类别，类别钠中位数均超过1150 mg/项；它没有单独报告炸鸡汉堡。六国菜单研究将鸡肉食品和夹食类列为可比较品类，且明确把非早餐卷饼计入sandwich，但没有提供中国商品数据。",
+      "care": "查看单项钠和整套餐配料；炸制鸡肉、面包和酱料各自都可能贡献钠和能量，不能用鸡肉本身概括整份汉堡。",
+      "safety": "留意小麦、鸡蛋、奶、大豆等过敏原；炸油管理和鸡肉充分加热按门店及产品规范执行。",
+      "queries": [
+        "fried chicken burger clinical health outcome study",
+        "fast food burger sandwich menu sodium 91 restaurant chains 2024",
+        "six countries fast food chicken sandwich wrap salt 2012"
+      ],
+      "tradition": "现代复合快餐。本条不把鸡肉或油炸方式的传统说法当作具体汉堡的药性或疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得炸鸡汉堡成品特异的人体长期结局研究。 美国连锁餐厅菜单调查将三明治和汉堡作为菜单类别，类别钠中位数均超过1150 mg/项；它没有单独报告炸鸡汉堡。六国菜单研究将鸡肉食品和夹食类列为可比较品类，且明确把非早餐卷饼计入sandwich，但没有提供中国商品数据。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895."
+      ],
+      "body_refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "连锁餐厅菜单营养数据横断面分析。",
+          "population": "美国91家连锁餐厅菜单中有钠数据的19,038项食品。",
+          "exposure": "sandwiches与burgers类别的每项钠含量。",
+          "result": "三明治和汉堡类别的钠中位数均超过1150 mg/项。",
+          "limits": "未单列炸鸡汉堡；菜单标示数据仅覆盖美国连锁餐厅样本。",
+          "distance": "D2：相邻的连锁汉堡/三明治菜单类别。"
+        },
+        {
+          "ref": 2,
+          "design": "六国连锁快餐菜单营养资料调查。",
+          "population": "澳大利亚、加拿大、法国、新西兰、英国和美国的6家跨国快餐连锁。",
+          "exposure": "2010年菜单报告的盐含量；夹食类别包括非早餐三明治、卷和wrap。",
+          "result": "鸡肉产品及夹食类别盐含量在国家、企业和产品间有差异。",
+          "limits": "菜单调查而非人体研究；炸鸡汉堡没有独立结果，年代较早且不代表中国市场。",
+          "distance": "D2：跨国快餐菜单类别资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "plant-based-burger": {
+      "id": "plant-based-burger",
+      "name": "植物肉汉堡",
+      "volume": "复合餐食部",
+      "family": "plant_based_burger",
+      "identity": "以植物蛋白制成的肉饼替代动物肉饼并夹于面包中的复合食品；豆腐汉堡和蔬菜饼另列。",
+      "variables": "蛋白原料、钠、饱和脂肪、椰子油等脂肪来源、肉饼份量、面包、芝士和酱料。",
+      "composition": "肉饼可能由豆类或其他植物蛋白、油脂、淀粉、调味料和强化营养素制成；不能仅凭植物来源推定钠或脂肪较低。",
+      "direct": "SWAP-MEAT随机交叉试验比较植物肉替代品与动物肉饮食各8周；完整分析36人。植物阶段LDL-C和体重较低，但干预包含不同植物肉与动物肉产品，不是单一汉堡产品试验，也未评价长期疾病结局。",
+      "specific": "LDL-C均值为109.9对120.7 mg/dL（P=0.002）；体重为78.7对79.6 kg（P<0.001）。美国连锁菜单调查显示，汉堡类别每项钠中位数超过1150 mg，但未单列植物肉汉堡。",
+      "care": "比较每份蛋白质、钠、饱和脂肪和配料；植物肉与牛肉饼的成分不能按类别名称直接判断。",
+      "safety": "核对大豆、豌豆、小麦等植物蛋白过敏原，以及芝士和酱料中的牛奶、蛋类成分。",
+      "queries": [
+        "SWAP-MEAT randomized crossover plant-based meat LDL 36 adults 8 weeks",
+        "plant based burger sodium nutrition menu label study"
+      ],
+      "tradition": "现代植物蛋白复合食品。本条不把豆类等原料的传统记载直接推为植物肉饼或汉堡的疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "SWAP-MEAT随机交叉试验比较植物肉替代品与动物肉饮食各8周；完整分析36人。植物阶段LDL-C和体重较低，但干预包含不同植物肉与动物肉产品，不是单一汉堡产品试验，也未评价长期疾病结局。 LDL-C均值为109.9对120.7 mg/dL（P=0.002）；体重为78.7对79.6 kg（P<0.001）。美国连锁菜单调查显示，汉堡类别每项钠中位数超过1150 mg，但未单列植物肉汉堡。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Crimarco A, et al. A randomized crossover trial on the effect of plant-based compared with animal-based meat on trimethylamine-N-oxide and cardiovascular disease risk factors in generally healthy adults: SWAP-MEAT. Am J Clin Nutr. 2020;112(5):1188–1199. DOI: https://doi.org/10.1093/ajcn/nqaa203.",
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797."
+      ],
+      "body_refs": [
+        "Crimarco A, et al. A randomized crossover trial on the effect of plant-based compared with animal-based meat on trimethylamine-N-oxide and cardiovascular disease risk factors in generally healthy adults: SWAP-MEAT. Am J Clin Nutr. 2020;112(5):1188–1199. DOI: https://doi.org/10.1093/ajcn/nqaa203.",
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "单中心随机交叉饮食试验。",
+          "population": "一般健康成人，37人完成干预、36人纳入完整分析；两阶段各8周。",
+          "exposure": "食用植物肉替代品与主要为牛肉和猪肉的动物肉，按随机顺序交叉。",
+          "result": "植物阶段LDL-C为109.9±4.5，对动物阶段120.7±4.5 mg/dL（P=0.002）；体重78.7对79.6 kg（P<0.001）。",
+          "limits": "短期、小样本、多个替代品与饮食改变；不是植物肉汉堡单品试验，不能推出长期疾病结局。",
+          "distance": "D2：植物肉替代品整体饮食试验，非汉堡专属。"
+        },
+        {
+          "ref": 2,
+          "design": "美国连锁菜单标签数据横断面分析。",
+          "population": "91家美国连锁餐厅的菜单项目。",
+          "exposure": "按汉堡类别比较菜单标示钠。",
+          "result": "汉堡类别钠中位数超过1150 mg/项。",
+          "limits": "未分植物肉和动物肉汉堡；不能代表所有商品或门店。",
+          "distance": "D2：美国连锁汉堡类别菜单数据。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "hot-dog": {
+      "id": "hot-dog",
+      "name": "热狗",
+      "volume": "复合餐食部",
+      "family": "hot_dog",
+      "identity": "以熟制香肠夹入长形面包并可加酱料制成的夹食；单独香肠、火腿肠和早餐肠另列。",
+      "variables": "香肠肉种与加工配料、钠、面包、调味酱、香肠数量及每份重量。",
+      "composition": "熟制香肠、面包和酱料共同构成；包装热狗和餐饮现制热狗的配方和份量不同。",
+      "direct": "未检得热狗整份餐食特异的随机人体结局试验。",
+      "specific": "美国NHANES 2009–2018饮食资料分析按购买来源区分食品，并把hot dogs列为钠摄入贡献较大的子类之一；它是人群饮食摄入估算，不是商品实验室抽检或疾病关联研究。",
+      "care": "比较香肠与面包酱料的每份钠；热狗香肠属于加工肉制品，注意份量和食用频率。",
+      "safety": "核对小麦、乳、芥末、大豆等过敏原；即食香肠按包装冷藏、复热和开封后食用说明处理。",
+      "queries": [
+        "hot dog sodium intake NHANES 2009 2018 store bought restaurant prepared",
+        "hot dog sandwich randomized clinical health outcome"
+      ],
+      "tradition": "现代加工肉类夹食。本条不把肉类或面食原料的传统记载直接等同于热狗的药性或疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得热狗整份餐食特异的随机人体结局试验。 美国NHANES 2009–2018饮食资料分析按购买来源区分食品，并把hot dogs列为钠摄入贡献较大的子类之一；它是人群饮食摄入估算，不是商品实验室抽检或疾病关联研究。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "body_refs": [
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国国家饮食调查的二次分析，估算食物钠含量及摄入来源。",
+          "population": "NHANES 2009–2018，40,082名美国居民的膳食回顾资料。",
+          "exposure": "按食品类别和购买来源分析钠含量及膳食钠贡献。",
+          "result": "研究列出商店购买热狗等子类为重要钠来源。",
+          "limits": "美国居民饮食分类，不能代表中国配方；类别贡献不是热狗单品的实验室含量或人体因果结论。",
+          "distance": "D2：饮食数据库中热狗分类的钠摄入资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "sandwich": {
+      "id": "sandwich",
+      "name": "三明治",
+      "volume": "复合餐食部",
+      "family": "sandwich",
+      "identity": "由面包或其他主食夹入肉、蛋、奶酪、蔬菜和酱料组成的便餐；汉堡、卷饼及贝果三明治按目录另列。",
+      "variables": "面包种类、夹馅、酱料、钠、份量、冷藏时间及是否为套餐。",
+      "composition": "面包、蛋白质馅料、蔬菜和酱料组合多样，配方变化使能量、钠和过敏原差异较大。",
+      "direct": "未检得可适用于所有三明治配方的人体临床试验；营养效应取决于具体配方和份量。",
+      "specific": "美国91家连锁餐厅菜单调查中，sandwiches类别每项钠中位数为1330 mg，样本1868项；NHANES 2009–2018分析显示三明治类是美国膳食钠的重要来源。二者类别范围广，不能代表具体三明治。",
+      "care": "按整份比较钠、蛋白质、蔬菜和酱料；冷藏夹馅需按食品安全要求保存。",
+      "safety": "常见过敏原包括小麦、蛋、奶、大豆、芝麻及鱼类；含肉蛋奶馅料需控制冷藏时间并避免交叉污染。",
+      "queries": [
+        "sandwich menu sodium 1868 items median 1330 91 restaurants 2024",
+        "NHANES sandwich sodium contribution 2009 2018"
+      ],
+      "tradition": "现代复合便餐。本条按整体配方描述，不从单一馅料推断整份三明治的传统属性。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得可适用于所有三明治配方的人体临床试验；营养效应取决于具体配方和份量。 美国91家连锁餐厅菜单调查中，sandwiches类别每项钠中位数为1330 mg，样本1868项；NHANES 2009–2018分析显示三明治类是美国膳食钠的重要来源。二者类别范围广，不能代表具体三明治。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "body_refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "连锁餐厅菜单营养数据库横断面分析。",
+          "population": "美国91家连锁餐厅中1,868项sandwich菜单食品。",
+          "exposure": "比较每项钠含量分布。",
+          "result": "三明治钠中位数为1,330 mg/项。",
+          "limits": "菜单数据，不是实验室测定；门店、馅料和份量差异大，不能代表所有三明治。",
+          "distance": "D1：连锁餐厅sandwich类别菜单数据。"
+        },
+        {
+          "ref": 2,
+          "design": "美国全国膳食回顾调查的二次分析。",
+          "population": "NHANES 2009–2018，美国2岁及以上居民；总分析样本40,082人。",
+          "exposure": "估算食品购买来源和混合食品类别对钠摄入的贡献。",
+          "result": "三明治类是美国饮食钠的重要来源之一。",
+          "limits": "分类包括多种夹食；摄入贡献不等于三明治单品钠浓度或临床结局。",
+          "distance": "D2：人群饮食类别数据。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "wrap": {
+      "id": "wrap",
+      "name": "卷饼",
+      "volume": "复合餐食部",
+      "family": "wrap",
+      "identity": "以薄饼或面饼包裹肉、蛋、蔬菜和酱料的手持夹食；墨西哥卷按目录另列。",
+      "variables": "面饼种类和大小、馅料、酱料、钠、份量及加工和保存方式。",
+      "composition": "面饼和馅料组合多变；同名卷饼可包含不同肉类、蔬菜、奶酪和酱汁。",
+      "direct": "未检得可适用于所有卷饼配方的人体临床试验。",
+      "specific": "六国快餐菜单调查将非早餐卷和wrap归入sandwiches类别；所研究的六国菜单盐含量有明显国家、公司与品类差异。美国NHANES研究没有把所有卷饼单列为统一类别，因此相关三明治或墨西哥餐分类不能直接代表本条。",
+      "care": "查看整份钠、酱料和馅料份量；冷藏即食卷饼应按标签保存，避免室温久放。",
+      "safety": "小麦饼皮及乳、蛋、大豆等馅料可能含常见过敏原；肉蛋馅料需充分加热或持续冷藏。",
+      "queries": [
+        "fast food wraps sodium salt menu six countries 2012 CMAJ",
+        "wrap sandwich human clinical trial health outcomes"
+      ],
+      "tradition": "现代复合夹食。本条不因饼皮或馅料的传统用途推定整份卷饼具有特定食疗效果。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得可适用于所有卷饼配方的人体临床试验。 六国快餐菜单调查将非早餐卷和wrap归入sandwiches类别；所研究的六国菜单盐含量有明显国家、公司与品类差异。美国NHANES研究没有把所有卷饼单列为统一类别，因此相关三明治或墨西哥餐分类不能直接代表本条。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895."
+      ],
+      "body_refs": [
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "六国跨国快餐菜单营养资料调查。",
+          "population": "澳大利亚、加拿大、法国、新西兰、英国和美国的6家快餐连锁。",
+          "exposure": "调查2010年公开菜单盐含量；sandwich类别包括非早餐卷及wrap。",
+          "result": "盐含量随食品类别、公司及国家变化。",
+          "limits": "菜单数据来自特定跨国连锁与旧年份；wrap未单独汇报，且不代表中国市场。",
+          "distance": "D2：夹食类别中的wrap合并数据。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "burrito": {
+      "id": "burrito",
+      "name": "墨西哥卷",
+      "volume": "复合餐食部",
+      "family": "burrito",
+      "identity": "以大型面饼包裹肉类或豆类、米饭、蔬菜、奶酪及酱料的墨西哥风格复合餐；其他卷饼按目录另列。",
+      "variables": "饼皮大小、肉或豆馅、米饭、奶酪、盐、酱汁、份量和套餐配餐。",
+      "composition": "面饼包裹多个馅料，单份重量、配方及钠含量因餐馆和商品而异。",
+      "direct": "未检得墨西哥卷单品特异的人体临床结局试验。",
+      "specific": "NHANES 2009–2018二次分析把burritos and tacos作为食品类别，并分别考虑商店购买和餐馆制作；研究评估膳食钠贡献，不能替代具体卷饼的商品标签或配方检测。",
+      "care": "关注面饼、奶酪、肉馅、豆馅和酱料合并后的整份钠及能量；比较相同份量。",
+      "safety": "核对小麦、乳、大豆等过敏原；含熟肉、米饭和奶制品的成品需按规定及时冷藏或加热。",
+      "queries": [
+        "NHANES sodium burritos tacos store bought restaurant prepared 2009 2018",
+        "burrito sodium content restaurant survey"
+      ],
+      "tradition": "现代墨西哥风格复合食品。本条不把单项原料的传统记载当作整份墨西哥卷的功效证据。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得墨西哥卷单品特异的人体临床结局试验。 NHANES 2009–2018二次分析把burritos and tacos作为食品类别，并分别考虑商店购买和餐馆制作；研究评估膳食钠贡献，不能替代具体卷饼的商品标签或配方检测。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "body_refs": [
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "美国全国膳食回顾调查的二次分析。",
+          "population": "NHANES 2009–2018，美国居民膳食资料。",
+          "exposure": "按食品来源与类别估算burritos and tacos的钠含量和摄入贡献。",
+          "result": "商店购买和餐馆制作的burritos/tacos均纳入钠来源分析。",
+          "limits": "burritos与tacos合并类或相邻类分析，不等于单独墨西哥卷的检测值；美国分类不能代表中国商品。",
+          "distance": "D2：美国膳食类别中的burrito/taco资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "bagel-sandwich": {
+      "id": "bagel-sandwich",
+      "name": "贝果三明治",
+      "volume": "复合餐食部",
+      "family": "bagel_sandwich",
+      "identity": "以贝果切开夹入蛋、肉、奶酪或蔬菜构成的三明治；空贝果和普通面包三明治另列。",
+      "variables": "贝果大小和钠、夹馅、奶酪、腌肉、酱料及整份重量。",
+      "composition": "贝果面包和夹馅共同构成；面包本身、加工肉、奶酪及酱汁均会影响整份营养组成。",
+      "direct": "未检得贝果三明治成品特异的人体结局研究。",
+      "specific": "美国连锁餐厅菜单调查报告三明治类别钠中位数1330 mg/项；未单独报告贝果三明治。NHANES将多种三明治按食物编码分析，也不能从总体类别推断贝果三明治含量。",
+      "care": "比较贝果与夹馅的整份钠及份量，尤其注意加工肉、奶酪和调味酱。",
+      "safety": "贝果含小麦；夹馅可能含蛋、乳、大豆、芝麻等过敏原。冷藏含蛋奶或肉类馅料，并注意交叉污染。",
+      "queries": [
+        "bagel sandwich sodium nutrition survey restaurant menu",
+        "sandwich sodium menu median 1330 mg 1868 items"
+      ],
+      "tradition": "现代复合面食。本条按贝果及具体夹馅描述，不将原料记载转写为该成品的功效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得贝果三明治成品特异的人体结局研究。 美国连锁餐厅菜单调查报告三明治类别钠中位数1330 mg/项；未单独报告贝果三明治。NHANES将多种三明治按食物编码分析，也不能从总体类别推断贝果三明治含量。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "body_refs": [
+        "Hill A, Nara D, Sorscher S, Musicus AA, Lurie P. How Salty Is Too Salty? Designing Sodium Warning Label Policies to Identify High-Sodium Items on Restaurant Menus in the United States. Nutrients. 2024;16(12):1797. DOI: https://doi.org/10.3390/nu16121797.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "连锁餐厅菜单营养数据库横断面分析。",
+          "population": "美国91家连锁餐厅的菜单样本，sandwich类别1,868项。",
+          "exposure": "按sandwich类别分析每项钠。",
+          "result": "该类别钠中位数为1,330 mg/项。",
+          "limits": "未单列贝果夹食；不能推断某一款贝果三明治的实际钠含量。",
+          "distance": "D2：贝果三明治所属的广义菜单类别。"
+        },
+        {
+          "ref": 2,
+          "design": "美国国家膳食调查二次分析。",
+          "population": "NHANES 2009–2018居民饮食回顾资料。",
+          "exposure": "以混合食物代码合并不同来源和夹食类别。",
+          "result": "三明治类别是人群膳食钠的重要来源。",
+          "limits": "没有把贝果三明治单独拆分；摄入贡献不是单品测量。",
+          "distance": "D2：广义三明治类人群资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    },
+    "fried-chicken": {
+      "id": "fried-chicken",
+      "name": "炸鸡",
+      "volume": "复合餐食部",
+      "family": "fried_chicken",
+      "identity": "以鸡肉裹粉或调味后油炸制成的熟食，含带骨鸡块及无骨炸鸡；炸鸡汉堡和鸡块另立条目。",
+      "variables": "鸡肉部位、裹粉和腌料、油炸温度与用油、吸油量、盐和份量。",
+      "composition": "鸡肉、裹粉、吸收油脂和调味料共同决定营养；门店配方、部位和带骨比例不同。",
+      "direct": "未检得炸鸡成品特异的随机人体长期结局试验。",
+      "specific": "一项六国快餐菜单调查报告所纳入鸡肉产品盐含量有差异：总体均值约1.6 g/100 g，英国样品均值1.1 g/100 g、美国1.8 g/100 g。研究涵盖鸡肉菜单品类，不等于中国市场所有炸鸡的实测值。",
+      "care": "比较每份钠和份量，留意裹粉和腌料；不同部位与门店之间不能直接用单一数据代表。",
+      "safety": "鸡肉需充分加热并防止生熟交叉污染；对小麦、蛋、奶、大豆过敏者查看裹粉和腌料信息。",
+      "queries": [
+        "fast food fried chicken salt sodium menu six countries 2012",
+        "fried chicken sodium NHANES food category restaurant prepared"
+      ],
+      "tradition": "现代油炸禽肉食品。本条不把鸡肉或烹调方式的传统说法当作炸鸡成品的药性或疗效。",
+      "entry_type": "processed_food",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "body": "未检得炸鸡成品特异的随机人体长期结局试验。 一项六国快餐菜单调查报告所纳入鸡肉产品盐含量有差异：总体均值约1.6 g/100 g，英国样品均值1.1 g/100 g、美国1.8 g/100 g。研究涵盖鸡肉菜单品类，不等于中国市场所有炸鸡的实测值。",
+      "evidence_body": "证据来自商品成分分析、短期随机试验、连锁菜单调查或全国饮食调查；研究设计、样本和食品类别限制按原研究保留。",
+      "taste_m": {},
+      "refs": [
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "body_refs": [
+        "Dunford E, Webster J, Woodward M, et al. The variability of reported salt levels in fast foods across six countries: opportunities for salt reduction. CMAJ. 2012;184(9):1023–1028. DOI: https://doi.org/10.1503/cmaj.111895.",
+        "Keast DR, Guenther PM. Sodium Content and Sodium Intake Contributions of Store-Bought and Restaurant-Prepared Foods in Their As-Eaten Form: National Health and Nutrition Examination Survey, 2009–2018. Curr Dev Nutr. 2024;8(10):104455. DOI: https://doi.org/10.1016/j.cdnut.2024.104455."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "六国快餐连锁公开菜单营养资料调查。",
+          "population": "澳大利亚、加拿大、法国、新西兰、英国和美国的6家跨国快餐连锁。",
+          "exposure": "比较2010年菜单鸡肉食品的报告盐含量。",
+          "result": "所纳入鸡肉品类平均盐约1.6 g/100 g；英国均值1.1 g/100 g，美国均值1.8 g/100 g。",
+          "limits": "鸡肉类别包含不同菜品，并非炸鸡单一子型；菜单报告、旧年份，不能外推到中国门店或所有商品。",
+          "distance": "D1：快餐鸡肉品类菜单数据，品型并未完全分开。"
+        },
+        {
+          "ref": 2,
+          "design": "美国全国膳食调查二次分析。",
+          "population": "NHANES 2009–2018居民饮食回顾数据。",
+          "exposure": "分析餐馆与商店来源食物的钠摄入贡献。",
+          "result": "研究按鸡肉及其他家禽类等分类估算钠贡献。",
+          "limits": "分类含不同烹调法和鸡肉产品，不能视为炸鸡专项检测或健康结局。",
+          "distance": "D2：家禽类别人群膳食资料。"
+        }
+      ],
+      "unknowns": "中国市场不同品牌和门店的代表性营养数据；本条食品特异的长期人体结局研究。",
+      "search_log": [
+        "核验食品定义、配方边界、对应研究与数据来源。",
+        "记录样本、研究设计、暴露或菜单类别，并限制对单品和其他市场的外推。"
+      ]
+    }
+  }
+}

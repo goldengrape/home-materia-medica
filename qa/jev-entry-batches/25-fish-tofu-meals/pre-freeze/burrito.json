@@ -1,0 +1,10 @@
+{
+  "batch_id": "25-fish-tofu-meals",
+  "entry_id": "burrito",
+  "summary_ref": "references/entries/burrito/summary.md",
+  "summary_sha256": "c88ed76d7ad977f3f3974cbfb27b25de88c6e4b095dcee5a93cf555a16db83f7",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 墨西哥卷\r\n\r\n**身份。** 以大型面饼包裹肉类或豆类、米饭、蔬菜、奶酪及酱料的墨西哥风格复合餐；其他卷饼按目录另列。\r\n\r\n**组成与暴露。** 面饼包裹多个馅料，单份重量、配方及钠含量因餐馆和商品而异。 **关键变量：** 饼皮大小、肉或豆馅、米饭、奶酪、盐、酱汁、份量和套餐配餐。\r\n\r\n**直接人体证据。** 未检得墨西哥卷单品特异的人体临床结局试验。\r\n\r\n**产品/成分证据。** NHANES 2009–2018二次分析把burritos and tacos作为食品类别，并分别考虑商店购买和餐馆制作；研究评估膳食钠贡献，不能替代具体卷饼的商品标签或配方检测。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 核对小麦、乳、大豆等过敏原；含熟肉、米饭和奶制品的成品需按规定及时冷藏或加热。\r\n\r\n**传统来源。** 现代墨西哥风格复合食品。本条不把单项原料的传统记载当作整份墨西哥卷的功效证据。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
