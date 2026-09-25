@@ -1,0 +1,10 @@
+{
+  "batch_id": "28-condiments",
+  "entry_id": "braised-pork-rice",
+  "summary_ref": "references/entries/braised-pork-rice/summary.md",
+  "summary_sha256": "31ea010dc34346d1d25073109fc1eba9e46407b2945351f522af11a309f0cfb6",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 卤肉饭\r\n\r\n**身份。** 以卤煮或焖煮调味猪肉连同卤汁浇在米饭上的复合主食；黄焖鸡米饭、叉烧饭及卤肉单品另列。\r\n\r\n**组成与暴露。** 猪肉、米饭、卤汁及配菜共同构成；肉和汁的比例会影响每份钠、脂肪和能量。 **关键变量：** 猪肉部位和肥瘦、每份米饭与肉量、卤汁、酱油、糖、腌菜及配菜。\r\n\r\n**直接人体证据。** 未检得卤肉饭单品特异的长期人体结局试验。\r\n\r\n**产品/成分证据。** 中国餐厅菜品研究纳入6省192家餐厅的8131道畅销菜，依据菜谱和《中国食物成分表》估算钠；没有单独报告卤肉饭。整体菜品每份钠中位数2543.7 mg，不能作为本菜数值。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 猪肉充分煮熟；熟饭和肉汁及时冷藏并充分复热，注意生熟分开。\r\n\r\n**传统来源。** 现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

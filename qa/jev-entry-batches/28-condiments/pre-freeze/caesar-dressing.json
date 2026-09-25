@@ -1,0 +1,10 @@
+{
+  "batch_id": "28-condiments",
+  "entry_id": "caesar-dressing",
+  "summary_ref": "references/entries/caesar-dressing/summary.md",
+  "summary_sha256": "b410430c65cb98119bd297164dc0863f4fde2ae4e3b1abbb401bfb0e04ee5ab2",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 凯撒酱\r\n\r\n**身份。** 以油脂和酸性配料为基底并加入奶酪、蒜、芥末或其他调味料制成的沙拉酱；千岛酱及普通蛋黄酱另列。\r\n\r\n**组成与暴露。** 配方可含奶酪、蛋或鱼类成分；不同品牌的能量、钠和过敏原差异明显。 **关键变量：** 油和乳化基底、奶酪、盐、腌制鱼类或风味料、每份用量。\r\n\r\n**直接人体证据。** 未检得凯撒酱单品特异的人体临床结局研究。\r\n\r\n**产品/成分证据。** 中国标签研究分析预包装调味品能量、脂肪与钠，并覆盖沙拉调味品类别；没有将凯撒酱作为独立人体研究对象。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 可能含蛋、乳、鱼类或芥末；过敏者查看配料和交叉接触说明。\r\n\r\n**传统来源。** 现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

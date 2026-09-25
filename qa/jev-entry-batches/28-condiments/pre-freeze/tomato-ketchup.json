@@ -1,0 +1,10 @@
+{
+  "batch_id": "28-condiments",
+  "entry_id": "tomato-ketchup",
+  "summary_ref": "references/entries/tomato-ketchup/summary.md",
+  "summary_sha256": "f2cc90b5cc27e2b68e3af3ed4e18a7ab81f4bf06b7938f6c0f0bfcdc6191f909",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 番茄酱\r\n\r\n**身份。** 以番茄或番茄制品为主，配合糖、盐、醋及香辛料制成的即食调味酱；番茄膏和意面番茄酱另列。\r\n\r\n**组成与暴露。** 不同品牌的番茄、糖、盐和调味比例不同；小份挤用与多次蘸食会改变实际摄入。 **关键变量：** 番茄固形物、添加糖、钠、醋酸、份量及与餐食搭配。\r\n\r\n**直接人体证据。** 未检得番茄酱单品特异的人体临床结局试验。\r\n\r\n**产品/成分证据。** 中国2017–2022年预包装调味品标签调查包括1510种调味品并比较15类；研究列有番茄酱钠基准类别，但调查总体数据不能代替具体品牌的标签。\r\n\r\n**共享背景。** 参见 prepared-meals-snacks-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 开封后依标签冷藏或保存，检查过敏原与保质期。\r\n\r\n**传统来源。** 现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}

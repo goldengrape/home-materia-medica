@@ -1,0 +1,578 @@
+{
+  "batch": {
+    "id": "28-condiments",
+    "title": "卤肉饭与常用调味酱",
+    "catalog_order": 28,
+    "entry_count": 10,
+    "research_cutoff": "2026-09-24",
+    "search_tool": "Web search; PubMed/PMC; Chinese condiment and restaurant menu label datasets",
+    "web_search_calls": 6,
+    "web_search_queries": 20,
+    "exa_search_calls": 0,
+    "exa_hits": 0,
+    "reasoning_version": "jev-tcm-reasoning-v0.4",
+    "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+    "native_schema": "16 answers per run",
+    "branch": "feat/entry-batch-28-condiments",
+    "new_formal_entry_count": 10,
+    "identity_red_team": [
+      "卤肉饭整体菜单研究未单列本菜，不能把全体餐馆数值记作卤肉饭测定值。",
+      "中国调味品标签调查记录的是每100克标签组成，不是实际每餐用量。",
+      "沙拉酱类别不等同于千岛酱或凯撒酱单品。",
+      "芥末酱中文名可能指芥菜籽、辣根或山葵，须按配料表区分。",
+      "烧烤酱和照烧酱可能同含糖和酱油，但用途与配方不可互换。",
+      "“96.6%高钠”来自酱、蘸料和沙拉酱合并类别，不应套用到每个子类。"
+    ],
+    "citation_audit_revision": "rev-1: distinguish condiment identity and report category-label methods separately from actual serving exposure and clinical outcomes."
+  },
+  "entries": {
+    "braised-pork-rice": {
+      "id": "braised-pork-rice",
+      "name": "卤肉饭",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "braised-pork-rice",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以卤煮或焖煮调味猪肉连同卤汁浇在米饭上的复合主食；黄焖鸡米饭、叉烧饭及卤肉单品另列。",
+      "variables": "猪肉部位和肥瘦、每份米饭与肉量、卤汁、酱油、糖、腌菜及配菜。",
+      "composition": "猪肉、米饭、卤汁及配菜共同构成；肉和汁的比例会影响每份钠、脂肪和能量。",
+      "direct": "未检得卤肉饭单品特异的长期人体结局试验。",
+      "specific": "中国餐厅菜品研究纳入6省192家餐厅的8131道畅销菜，依据菜谱和《中国食物成分表》估算钠；没有单独报告卤肉饭。整体菜品每份钠中位数2543.7 mg，不能作为本菜数值。",
+      "body": "未检得卤肉饭单品特异的长期人体结局试验。 中国餐厅菜品研究纳入6省192家餐厅的8131道畅销菜，依据菜谱和《中国食物成分表》估算钠；没有单独报告卤肉饭。整体菜品每份钠中位数2543.7 mg，不能作为本菜数值。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "把米饭和卤肉汁按整份计算；可分别调整浇汁量，并查看腌菜和加工配料。",
+      "safety": "猪肉充分煮熟；熟饭和肉汁及时冷藏并充分复热，注意生熟分开。",
+      "taste_m": {},
+      "refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "body_refs": [
+        "Du W, Wang H, Zhang J, Zhang X, Wei N, Li Y, Tan M, Zhang P, He FJ. Sodium content of restaurant dishes in China: a cross-sectional survey. Nutrition Journal. 2022;21:10. DOI: https://doi.org/10.1186/s12937-022-00762-4."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国餐馆菜品横断面调查，依据详细配方和中国食物成分表计算钠。",
+          "population": "2019年中国6省192家餐厅8131道畅销菜。",
+          "exposure": "按每100克和每份估算菜品钠，比较食品类别。",
+          "result": "整体菜品每份钠中位数2543.7 mg，菜品间差异明显。",
+          "limits": "没有单列卤肉饭；菜谱估算而非该菜逐份实验室检测。",
+          "distance": "D3：中式餐馆复合菜的一般背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "卤肉饭 钠含量 营养标签 调查",
+        "Chinese restaurant dish sodium 8131 recipes pork rice"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "tomato-ketchup": {
+      "id": "tomato-ketchup",
+      "name": "番茄酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "tomato-ketchup",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以番茄或番茄制品为主，配合糖、盐、醋及香辛料制成的即食调味酱；番茄膏和意面番茄酱另列。",
+      "variables": "番茄固形物、添加糖、钠、醋酸、份量及与餐食搭配。",
+      "composition": "不同品牌的番茄、糖、盐和调味比例不同；小份挤用与多次蘸食会改变实际摄入。",
+      "direct": "未检得番茄酱单品特异的人体临床结局试验。",
+      "specific": "中国2017–2022年预包装调味品标签调查包括1510种调味品并比较15类；研究列有番茄酱钠基准类别，但调查总体数据不能代替具体品牌的标签。",
+      "body": "未检得番茄酱单品特异的人体临床结局试验。 中国2017–2022年预包装调味品标签调查包括1510种调味品并比较15类；研究列有番茄酱钠基准类别，但调查总体数据不能代替具体品牌的标签。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "比较糖和钠的每100克及每次用量；注意儿童餐中反复添加造成的额外糖和盐。",
+      "safety": "开封后依标签冷藏或保存，检查过敏原与保质期。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签横断面描述分析。",
+          "population": "2017–2022年中国19省预包装食品标签数据库的1510种调味品。",
+          "exposure": "提取能量、蛋白质、脂肪、碳水化合物和钠，按15种调味品类别比较。",
+          "result": "研究覆盖番茄酱所在调味品范围，并比较其营养标签与WHO类别基准。",
+          "limits": "不是实验室检测或人体研究；品牌、类别配方及每次食用量差异大。",
+          "distance": "D1：番茄酱调味品标签类别研究。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品标签分析。",
+          "population": "中国市场多个预包装食品类别，含酱、蘸料和沙拉酱类别。",
+          "exposure": "按每100克钠标签值与WHO基准分类。",
+          "result": "酱、蘸料和调味酱类别中96.6%被归为高钠产品。",
+          "limits": "宽泛类别数据，不能代表单一番茄酱品牌或食用量。",
+          "distance": "D2：邻近调味品标签资料。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "tomato ketchup sugar sodium China condiment label survey",
+        "China condiment nutrition label dataset 1510 ketchup sodium"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "mayonnaise": {
+      "id": "mayonnaise",
+      "name": "蛋黄酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "mayonnaise",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以食用油为主要连续相，通常由蛋或蛋黄、酸性配料和水相乳化制成的酱；蛋黄沙拉酱和千岛酱另列。",
+      "variables": "用油种类与比例、蛋黄、酸度、钠、糖及每份使用量。",
+      "composition": "商品配方和乳化用油比例不同；低脂、减盐等名称须按营养标签和配料表核对。",
+      "direct": "未检得蛋黄酱单品特异的人体长期结局研究。",
+      "specific": "中国调味品标签研究收集1510种调味品，统计能量、脂肪、碳水化合物和钠；但该调查的类别分布不能替代指定品牌蛋黄酱配方。",
+      "body": "未检得蛋黄酱单品特异的人体长期结局研究。 中国调味品标签研究收集1510种调味品，统计能量、脂肪、碳水化合物和钠；但该调查的类别分布不能替代指定品牌蛋黄酱配方。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "按每次使用量比较总脂肪、能量和钠；用量常比单看每100克更能反映一餐的实际暴露。",
+      "safety": "蛋过敏者核对配方；开封后按标签冷藏，避免室温久放。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签数据的横断面描述分析。",
+          "population": "中国19省标签数据库中1510种调味品，来自2017–2022年收集。",
+          "exposure": "提取能量、脂肪、碳水化合物、蛋白质及钠并作类别统计。",
+          "result": "研究覆盖蛋黄酱/沙拉调味品范围，并显示不同调味品营养组成有差异。",
+          "limits": "具体产品数据依品牌和配方变化；标签调查不能给出个体食用量或临床效果。",
+          "distance": "D1：蛋黄酱所属调味品类别标签资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品标签分析。",
+          "population": "中国市场酱、蘸料和调味酱类商品。",
+          "exposure": "比较标签钠含量与全球基准类别。",
+          "result": "研究中酱、蘸料和调味酱宽泛类别96.6%为高钠食品。",
+          "limits": "没有单独报告蛋黄酱的这一比例；不得视为蛋黄酱类别结论。",
+          "distance": "D2：邻近调味品类别背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "mayonnaise nutrition fat sodium China prepackaged condiment study",
+        "China condiments 1510 nutrition labels mayonnaise salad dressing"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "salad-dressing": {
+      "id": "salad-dressing",
+      "name": "沙拉酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "salad-dressing",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "供沙拉或冷菜调味的广义酱汁，包括油醋汁、乳化型和奶油型产品；千岛酱、凯撒酱按目录分列。",
+      "variables": "油水比例、乳化剂、糖、钠、酸度、乳品或蛋类及每份用量。",
+      "composition": "不同沙拉酱可能以植物油、糖、盐、醋、奶制品或蛋为主，名称本身不能确定脂肪和钠。",
+      "direct": "未检得所有沙拉酱配方通用的人体临床结局试验。",
+      "specific": "中国预包装调味品研究覆盖1510种调味品；另一项预包装食品标签分析将酱、蘸料和沙拉酱作为宽泛类别，其中96.6%被按WHO基准归为高钠。该数值不是沙拉酱单类比例。",
+      "body": "未检得所有沙拉酱配方通用的人体临床结局试验。 中国预包装调味品研究覆盖1510种调味品；另一项预包装食品标签分析将酱、蘸料和沙拉酱作为宽泛类别，其中96.6%被按WHO基准归为高钠。该数值不是沙拉酱单类比例。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "依据具体类型查看每份能量、脂肪、糖和钠；把酱汁份量与沙拉食材分开判断。",
+      "safety": "核对乳、蛋、大豆等过敏原；开封后依标签冷藏和使用期限食用。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国调味品预包装标签数据库分析。",
+          "population": "2017–2022年中国19省1510种预包装调味品。",
+          "exposure": "统计能量、脂肪、碳水化合物和钠的类别分布。",
+          "result": "研究对包括沙拉调味品在内的15类调味品作营养描述。",
+          "limits": "宽类别及标签调查不等于每种沙拉酱的独立配方检测；油醋汁与乳化酱差异大。",
+          "distance": "D1：沙拉酱所在调味品类别数据。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装食品钠标签横断面分析。",
+          "population": "中国预包装酱、蘸料和沙拉酱宽泛食品类别。",
+          "exposure": "按标签值与WHO全球钠基准比较。",
+          "result": "该合并类别96.6%的产品被判为高钠。",
+          "limits": "分类包含多个调味品子类，比例不能单独用于沙拉酱。",
+          "distance": "D2：合并类别的邻近数据。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "salad dressing sodium fat China label survey",
+        "China sauces dips dressings 96.6 percent high sodium packaged labels"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "thousand-island-dressing": {
+      "id": "thousand-island-dressing",
+      "name": "千岛酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "thousand_island_dressing",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以蛋黄酱或乳化酱为基底，常加入番茄类调味料、醋、糖及碎料的沙拉酱；普通蛋黄酱和凯撒酱另列。",
+      "variables": "基底油脂、糖、钠、酸度、蔬菜碎料、份量和冷藏时间。",
+      "composition": "商品配方从蛋黄酱型到低脂型不一，添加糖、钠和脂肪应以具体标签判断。",
+      "direct": "未检得千岛酱单品特异的人体临床结局研究。",
+      "specific": "中国调味品标签分析包括1510种商品、涵盖能量和钠等营养指标，但公开的总体统计未将千岛酱作为独立临床或品牌结果。",
+      "body": "未检得千岛酱单品特异的人体临床结局研究。 中国调味品标签分析包括1510种商品、涵盖能量和钠等营养指标，但公开的总体统计未将千岛酱作为独立临床或品牌结果。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "查看每份能量、脂肪、糖和钠；按蘸用量计算，避免直接套用其他沙拉酱品种标签。",
+      "safety": "常见配方含蛋或奶；按包装说明冷藏，检查过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签描述分析。",
+          "population": "2017–2022年中国19省预包装食品数据库的1510种调味品。",
+          "exposure": "对营养标签按调味品类型汇总并作跨国类别比较。",
+          "result": "研究覆盖沙拉调味品类型，但没有给出千岛酱单品临床结局。",
+          "limits": "未分离出千岛酱品牌或单一配方的代表值。",
+          "distance": "D2：广义沙拉酱类别资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装酱和沙拉酱标签分析。",
+          "population": "中国预包装酱、蘸料和沙拉酱的合并类别。",
+          "exposure": "按WHO钠基准分类商品标签。",
+          "result": "合并类别96.6%的商品属于高钠。",
+          "limits": "并非千岛酱单独比例或指定产品的实测值。",
+          "distance": "D3：广义类别背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "thousand island dressing China sodium nutrition label",
+        "thousand island sauce ingredients sugar sodium product survey"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "caesar-dressing": {
+      "id": "caesar-dressing",
+      "name": "凯撒酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "caesar_dressing",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以油脂和酸性配料为基底并加入奶酪、蒜、芥末或其他调味料制成的沙拉酱；千岛酱及普通蛋黄酱另列。",
+      "variables": "油和乳化基底、奶酪、盐、腌制鱼类或风味料、每份用量。",
+      "composition": "配方可含奶酪、蛋或鱼类成分；不同品牌的能量、钠和过敏原差异明显。",
+      "direct": "未检得凯撒酱单品特异的人体临床结局研究。",
+      "specific": "中国标签研究分析预包装调味品能量、脂肪与钠，并覆盖沙拉调味品类别；没有将凯撒酱作为独立人体研究对象。",
+      "body": "未检得凯撒酱单品特异的人体临床结局研究。 中国标签研究分析预包装调味品能量、脂肪与钠，并覆盖沙拉调味品类别；没有将凯撒酱作为独立人体研究对象。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "比较每份钠和脂肪；检查具体配方中的奶酪、腌制配料和份量。",
+      "safety": "可能含蛋、乳、鱼类或芥末；过敏者查看配料和交叉接触说明。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品标签分析。",
+          "population": "2017–2022年中国19省1510种调味品。",
+          "exposure": "汇总调味品标签的能量、脂肪、碳水化合物、蛋白质和钠。",
+          "result": "研究纳入沙拉调味品类别，但未单独评价凯撒酱临床效果。",
+          "limits": "类别结果不能代替凯撒酱品牌标签；不同配方差别较大。",
+          "distance": "D2：沙拉酱近邻类别资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装酱、蘸料和沙拉酱标签调查。",
+          "population": "中国市场的合并调味品类别。",
+          "exposure": "按WHO钠基准分析包装标签。",
+          "result": "合并类别中96.6%被归为高钠。",
+          "limits": "非凯撒酱单品比例。",
+          "distance": "D3：邻近类别背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "Caesar dressing sodium nutrition China product label survey",
+        "Caesar dressing ingredient allergen nutrient variation study"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "mustard-sauce": {
+      "id": "mustard-sauce",
+      "name": "芥末酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "mustard_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以芥菜籽、辣根或山葵等辛辣原料制成的调味酱；不同中文商品名对应的植物和配方可能不同，黄芥末酱另列。",
+      "variables": "植物原料、醋或水、钠、糖、油脂、加工方式及每次蘸用量。",
+      "composition": "籽芥末、辣根酱和山葵风味酱不是同一配方；应按商品原料表确认身份。",
+      "direct": "未检得“芥末酱”这一多配方类别的成品人体临床结局研究。",
+      "specific": "中国调味品营养调查按产品类型和配方收集1510种预包装调味品；对具体芥末酱子类的代表性品牌结果不足，不能将辣根、籽芥末或山葵互相替代。",
+      "body": "未检得“芥末酱”这一多配方类别的成品人体临床结局研究。 中国调味品营养调查按产品类型和配方收集1510种预包装调味品；对具体芥末酱子类的代表性品牌结果不足，不能将辣根、籽芥末或山葵互相替代。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "先核对产品究竟是籽芥末、辣根或山葵制品，再比较钠、糖和单次用量。",
+      "safety": "芥末籽及复合调味料可引起过敏；查看配料表并避免与个人已知过敏原接触。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品标签数据库横断面描述分析。",
+          "population": "2017–2022年收集的1510种中国预包装调味品。",
+          "exposure": "提取商品配料与营养标签并按15类调味品归类。",
+          "result": "研究说明商品按植物原料、工艺及配方进行分类并比较营养分布。",
+          "limits": "公开总结未提供所有芥末具体亚型的独立估计；中文俗名可能对应不同原料。",
+          "distance": "D2：芥末调味品市场标签类别背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "mustard sauce China condiment ingredient sodium label analysis",
+        "Chinese mustard sauce wasabi horseradish product identity nutrition"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "yellow-mustard-sauce": {
+      "id": "yellow-mustard-sauce",
+      "name": "黄芥末酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "yellow_mustard_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以芥菜籽、醋、水和香辛料制成、颜色通常偏黄的调味酱；辣根或山葵酱、芥末粉另列。",
+      "variables": "芥菜籽比例、醋、盐、糖、着色或香辛配料、钠和用量。",
+      "composition": "商品配方和酸度不同；有些包装会与蜂蜜或其他调味料复配，需读实际配料。",
+      "direct": "未检得黄芥末酱单品特异的人体临床结局研究。",
+      "specific": "中国预包装调味品标签研究按类别分析产品营养，但没有给出黄芥末酱单独的品牌代表值；调味品整体结果只提示应查看标签。",
+      "body": "未检得黄芥末酱单品特异的人体临床结局研究。 中国预包装调味品标签研究按类别分析产品营养，但没有给出黄芥末酱单独的品牌代表值；调味品整体结果只提示应查看标签。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "核对芥菜籽及钠含量，按蘸用量估算；勿把黄芥末标签套用于辣根或山葵酱。",
+      "safety": "对芥菜籽过敏者避免食用；查看复合产品中的蜂蜜、蛋或其他过敏原。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签调查。",
+          "population": "中国19省1510种调味品标签数据。",
+          "exposure": "按预设调味品类别统计能量和核心营养素。",
+          "result": "研究报告不同调味品类型的营养构成存在差异。",
+          "limits": "未单列黄芥末酱的临床或品牌结论；分类跨度较大。",
+          "distance": "D2：相邻芥末/酱料标签资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装酱、蘸料与沙拉酱标签分析。",
+          "population": "中国预包装调味品合并类别。",
+          "exposure": "按包装钠含量与WHO基准分类。",
+          "result": "该宽泛类别96.6%的样品被判为高钠。",
+          "limits": "不是黄芥末酱的单类结果。",
+          "distance": "D3：调味酱总体背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "yellow mustard sauce sodium China packaged condiment study",
+        "yellow mustard vs wasabi horseradish Chinese condiment labels"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "barbecue-sauce": {
+      "id": "barbecue-sauce",
+      "name": "烧烤酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "barbecue_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "用于腌制、刷涂或蘸食烧烤食品的复合调味酱，常含番茄制品、糖、醋和香辛料；烧烤干粉和甜辣酱另列。",
+      "variables": "糖及糖浆、钠、番茄基料、酸度、烟熏风味、份量和使用方式。",
+      "composition": "配方可同时含添加糖和盐；刷涂、腌制或蘸食会造成不同实际用量。",
+      "direct": "未检得烧烤酱单品特异的人体临床结局试验。",
+      "specific": "中国调味品标签研究纳入1510种产品并分析钠和碳水化合物；预包装酱和蘸料研究显示合并类别钠偏高，但没有给出所有烧烤酱品牌的统一值。",
+      "body": "未检得烧烤酱单品特异的人体临床结局试验。 中国调味品标签研究纳入1510种产品并分析钠和碳水化合物；预包装酱和蘸料研究显示合并类别钠偏高，但没有给出所有烧烤酱品牌的统一值。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "比较糖与钠每100克标签，并估算腌制和食用时留下的实际用量。",
+      "safety": "含糖酱料高温刷烤可能焦化；注意开封储存、过敏原和生肉接触后的弃置要求。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品商品标签分析。",
+          "population": "来自2017–2022年中国19省数据库的1510种调味品。",
+          "exposure": "记录每100克能量、脂肪、碳水化合物及钠。",
+          "result": "研究报告15类调味品营养分布，并指出部分酱料钠和脂肪较高。",
+          "limits": "没有对每一类烧烤酱都作品牌外推；标签不是批次实验室检测。",
+          "distance": "D1：烧烤酱所在复合调味品标签资料。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装酱、蘸料和沙拉调味品钠标签研究。",
+          "population": "中国包装酱类合并类别。",
+          "exposure": "依WHO钠基准分类。",
+          "result": "96.6%的合并类别商品被判定为高钠。",
+          "limits": "不等于烧烤酱单类的比例；商品类型混合。",
+          "distance": "D2：邻近调味品类别资料。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "barbecue sauce sugar sodium China condiment label survey",
+        "China prepackaged sauces dips sodium benchmark 2023"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    },
+    "teriyaki-sauce": {
+      "id": "teriyaki-sauce",
+      "name": "照烧酱",
+      "volume": "调味与甜味料部",
+      "entry_type": "processed_food",
+      "family": "teriyaki_sauce",
+      "research_depth": "R2",
+      "shared_parent": "prepared-meals-snacks-base",
+      "identity": "以酱油、糖或糖浆、酒类及调味配料调成，用于照烧腌制、刷涂或浇淋的复合酱；酱油和烧烤酱另列。",
+      "variables": "酱油基料、糖和糖浆、酒类、钠、黏度、腌制量及烹调失水。",
+      "composition": "商品通常把咸味酱油与甜味配料组合，钠和糖含量取决于配方及浓缩程度。",
+      "direct": "未检得照烧酱单品特异的人体临床结局研究。",
+      "specific": "中国预包装调味品调查涵盖复合调味品并比较标签钠；报告中1510种产品的总体范围不能代替照烧酱品牌或酱油稀释后的烹调剂量。",
+      "body": "未检得照烧酱单品特异的人体临床结局研究。 中国预包装调味品调查涵盖复合调味品并比较标签钠；报告中1510种产品的总体范围不能代替照烧酱品牌或酱油稀释后的烹调剂量。",
+      "evidence_body": "调味料证据主要来自商品包装营养标签汇总和餐馆菜品配方估算；数据不等同于每个品牌的实验室检测、人体试验或实际用量。",
+      "care": "把照烧酱与酱油基料的每份用量合并计算钠与糖；腌制汁与最后食用的酱汁分开估计。",
+      "safety": "含大豆、小麦或酒类成分时核对过敏原和饮食限制；生肉腌汁不要直接作为蘸酱复用。",
+      "taste_m": {},
+      "refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "body_refs": [
+        "Lv W, Ding X, Liu Y, Ma A, Yang Y, Wang Z, Gao C. Evaluating the Energy and Core Nutrients of Condiments in China. Nutrients. 2023;15(20):4346. DOI: https://doi.org/10.3390/nu15204346.",
+        "Ding X, Lv W, Liu Y, et al. Sodium Content in Pre-Packaged Foods in China: A Food Label Analysis. Nutrients. 2023;15(23):4862. DOI: https://doi.org/10.3390/nu15234862."
+      ],
+      "evidence_records": [
+        {
+          "ref": 1,
+          "design": "中国预包装调味品营养标签调查。",
+          "population": "中国19省2017–2022年标签数据库中的1510种调味品。",
+          "exposure": "按产品类别提取核心营养标签并比较分布。",
+          "result": "研究包括复合调味品类，显示不同调味品类别营养差异明显。",
+          "limits": "照烧酱未必被单列，不能把复合调味品总统计当作具体品牌数据。",
+          "distance": "D2：相邻复合酱料类别信息。"
+        },
+        {
+          "ref": 2,
+          "design": "中国预包装酱和调味品钠标签分析。",
+          "population": "中国包装酱、蘸料及调味品类别。",
+          "exposure": "按每100克钠基准分类。",
+          "result": "研究报告酱和蘸料类别中较高比例标签钠超过基准。",
+          "limits": "宽泛类别分析，不给出照烧酱单独估计。",
+          "distance": "D3：邻近类别背景。"
+        }
+      ],
+      "unknowns": "各品牌当前配方、每次实际使用量和长期成品特异人体结局研究；商品营养标签与实际家庭用量的关系。",
+      "tradition": "现代加工调味品。本条按具体产品形态与配方讨论，不把其中单一原料的传统记载转成成品功效。",
+      "queries": [
+        "teriyaki sauce sodium sugar China condiments nutrition labels",
+        "teriyaki marinade sodium sugar nutrition food composition"
+      ],
+      "search_log": [
+        "核验名称所指产品、主要原料、包装标签和研究类别。",
+        "区分类别标签数据、菜谱钠估算与人体研究，不从调味品名称推断健康效果。"
+      ]
+    }
+  }
+}
