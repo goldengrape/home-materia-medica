@@ -1,0 +1,10 @@
+{
+  "batch_id": "20-grains-rice-pasta-legumes",
+  "entry_id": "mixed-grain-rice",
+  "summary_ref": "references/entries/mixed-grain-rice/summary.md",
+  "summary_sha256": "c06dd408df55dbd4d3ea1c3fb6b80c65dcba1d5c9b93ed846413777aafa2f51f",
+  "reasoning_version": "jev-tcm-reasoning-v0.4",
+  "five_shot_version": "jev-tcm-pilot-fixtures-v0.4",
+  "snapshot_date": "2026-09-24",
+  "summary_text": "# Summary Document — 杂粮饭\r\n\r\n**身份。** 本条指以米饭为主体并加入其他谷物、豆类或种子同煮的主食。杂粮种类、白米比例、预煮处理和配料比例依商品或食谱而异。\r\n\r\n**组成与暴露。** 复合餐成分不能由白米或单一杂粮数据库代替；豆类、坚果和种子会改变蛋白质、脂肪、纤维及能量。 **关键变量：** 谷物和豆类种类、白米与杂粮比例、浸泡和烹煮方式、熟饭水分、份量及配菜。\r\n\r\n**直接人体证据。** 一项餐食随机试验从81名筛查者中随机分配13名亚洲裔2型糖尿病成人，比较白米与特定米饭混合物。混合物含60%白米和40%的豆类、坚果及种子，3小时血糖浓度比白米低21%。研究没有发现两餐饱腹感差异。\r\n\r\n**产品/成分证据。** 研究样本只有13人，测试配方并非常见商品中所有“杂粮饭”的组成，也没有长期随访。结果不构成杂粮饭治疗糖尿病的建议。\r\n\r\n**共享背景。** 参见 grain-staple-base；共享结论不自动等于本成品结论。\r\n\r\n**安全。** 豆类、坚果和种子可能增加过敏原；按配料表核对。米饭熟食应及时冷藏并充分复热。\r\n\r\n**传统来源。** 本条为多种谷物和配料组成的现代混合餐，不用单一谷物母条替代整道菜的证据。\r\n\r\n本摘要只复述 Research Dossier 的可追溯事实，不预设 Jev 分类或 M 等级。未检得仅表示本轮 R2 检索范围。\r\n"
+}
